@@ -1,0 +1,43 @@
+{
+ "entries": [
+  {
+   "speaker": "John von Neumann",
+   "work": "Letter to Kurt Gödel (German original), in Kurt Gödel, Collected Works, Vol. V: Correspondence H–Z (Oxford, 2003), pp. 340–345",
+   "locus": "p. 340, first paragraph",
+   "date": "12 January 1931",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+   "source_url": "https://archive.org/details/kurt-godel-solomon-feferman-collected-works.-vol.-5.-correspondence-h-z",
+   "quote": "Übrigens habe ich (mir) neulich eine Methode überlegt, die bei Aussagen, die allein mit Hilfe der Begriffe „nein“, „oder“ (also auch „und“, „folgt“, u.s.w.), „Beweisbar“ aufgebaut sind (etwa von der identischen Wahrheit ausgehend) — die Widerspruch[s]freiheit ist z. B. eine solche Aussage), stets eine endliche Entscheidung der effektiven Beweisbarkeitsfrage ermöglicht. (Natürlich unter Voraussetzung der ω-Widerspruch[s]freiheit.) Vielleicht, interessiert es Sie, oder Sie haben noch nicht daran gedacht, dann kann ich es aufschreiben.",
+   "context": "The printed text carries a struck-through “eine” immediately before “stets”, and “[s]” marks editorial supply in “Widerspruch[s]freiheit”.",
+   "caution": "German original read from page images of the printed Collected Works Vol. V at 300dpi and checked character by character. The printed text is a diplomatic transcription of the handwritten letter and reproduces von Neumann’s own deletions with strike-through; those are marked here where they fall. NOTE: the sentence “(Natürlich unter Voraussetzung der ω-Widerspruch[s]freiheit.)” is present in the German and ABSENT from the English translation held on disk. Any use of the English should restore it."
+  },
+  {
+   "speaker": "John von Neumann",
+   "work": "Letter to Kurt Gödel (German original), in Kurt Gödel, Collected Works, Vol. V: Correspondence H–Z (Oxford, 2003), pp. 340–345",
+   "locus": "p. 342",
+   "date": "12 January 1931",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+   "source_url": "https://archive.org/details/kurt-godel-solomon-feferman-collected-works.-vol.-5.-correspondence-h-z",
+   "quote": "Aber es steht doch fest, dass keine einzige solche Konstruktion der genannten Art bekannt ist, die nicht in A formalisierbar ist, und das[s] kein lebender Logiker in der Lage ist, eine solche anzugeben? Oder irre ich, und kennen Sie eine (effektive) intuitionistische arithmetische Konstruktion, deren Formalisierung in A Schwierigkeiten macht? Und sollte dies, zu meiner grössten Überraschung, der Fall sein, so geht doch sicher die Formalisierung in M oder in Z!",
+   "context": "The printed text carries two struck-through passages inside this sentence — “und das kein lebend” after “bekannt ist,” and “intuition” before “(effektive) intuitionistische” — reproduced from the manuscript and omitted here.",
+   "caution": "German original read from page images of the printed Collected Works Vol. V at 300dpi and checked character by character. The printed text is a diplomatic transcription of the handwritten letter and reproduces von Neumann’s own deletions with strike-through; those are marked here where they fall. “kein lebender Logiker” — logician, not mathematician. “grössten” is printed with ss."
+  },
+  {
+   "speaker": "Wilfried Sieg",
+   "work": "Introductory note to the Gödel–von Neumann correspondence, in Kurt Gödel, Collected Works, Vol. V: Correspondence H–Z (Oxford, 2003), pp. 340–345",
+   "locus": "p. 332",
+   "date": "2003",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://archive.org/details/kurt-godel-solomon-feferman-collected-works.-vol.-5.-correspondence-h-z",
+   "quote": "This observation seemingly anticipates (and announces a solution to) a problem Harvey Friedman formulated in 1975 as the 35th of his one hundred and two problems. Boolos 1976 provided the first published solution.",
+   "context": "“This observation” is von Neumann’s decision-procedure claim in the first paragraph of the letter of 12 January 1931.",
+   "caution": "The editor of the correspondence writing about the letter, not von Neumann. Sieg’s accompanying footnote records that Claudio Bernardi and Franco Montagna reached a solution at nearly the same time as Boolos; their paper was submitted to the Journal of Symbolic Logic shortly after his and was never published."
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "entries": [
+  {
+   "speaker": "Stanislaw Ulam",
+   "quote": "Returning to Los Alamos in 1957 after a year's leave of absence at MIT, I was asked by Bradbury to accept one of the two newly created positions of research advisor to the director of the laboratory. The other advisor was to be John Manley, a physicist who had held important administrative posts at Los Alamos during the war and wanted to return to New Mexico after a long absence as professor at the University of Washington in Seattle. Administratively, research advisors were to be on the same level as division leaders, and their duties were to oversee the research activities throughout the laboratory, in the various divisions: theoretical, physics, chemistry and metallurgy, weapons, health, \"Rover\" (nuclear rocket), and others. Together we tried to influence the various programs of the lab. This was an arduous and many-sided task, and talking with many people about their research activities enabled me to broaden my own interests. I held this position until 1967 when I retired from Los Alamos and joined the mathematics department at the University of Colorado in Boulder. In laboratory jargon, Manley and I were respectively known as RAJM and RASU.",
+   "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part IV, ch. 13, \"Government Science 1957-1967\"",
+   "locus": "pp. 249-250",
+   "date": "1976",
+   "theme": "secrecy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+   "context": "Opening of the chapter covering 1957 onward, immediately following ch. 12, \"The Death of Two Pioneers,\" which covers the deaths of Fermi and von Neumann. The chapter's running head is dated 1957-1967.",
+   "caution": "Transcribed by this session from the scanned Scribner 1976 printing held in the repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi and read back against the page images. Printed page numbers taken from the running footers (249), (250). OCR rendered the chapter's running-head date as '1957-1907'; the contents page gives ch. 13 at p. 249 and ch. 14 at p. 266."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "quote": "A few years before Johnny's death and increasingly so after, as a result of my work on the hydrogen bomb, I became drawn into a maze of involvements. These had to do precisely with government science and with work as a member of various Space and Air Force committees. Also, in some circles I became regarded as Teller's opponent, and I suspect I was consulted as a sort of counterweight.",
+   "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\"",
+   "locus": "p. 251",
+   "date": "1976",
+   "theme": "secrecy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+   "context": "Preceded by Ulam's account of the postwar growth of government science: \"Beginning with Bush and Conant, Oppenheimer, von Neumann, and many others became government 'sages.' Government science peaked and committees proliferated under the Eisenhower, Kennedy, and Johnson administrations, and even I found myself called upon.\"",
+   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'Johnny' is von Neumann."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "quote": "Until then I had always resisted being drawn into any kind of organizational position; for years I could claim that my only administrative job had been on the Wine Tasting Committee of the Society of Fellows back in my early Harvard days.",
+   "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\"",
+   "locus": "p. 251",
+   "date": "1976",
+   "theme": "secrecy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+   "context": "Ulam's own statement about administrative work, immediately before his account of being drawn into government committees after von Neumann's death.",
+   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "quote": "To the end he maintained this complete discretion. Even though I was perhaps one of his closest friends he never broached to me classified or military subjects in which I was not involved. Our usual conversations were either about mathematics or about his new interest in a theory of automata.",
+   "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 12, \"The Death of Two Pioneers\"",
+   "locus": "p. 241",
+   "date": "1976",
+   "theme": "secrecy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+   "context": "Preceding sentences: \"During his illness Johnny did not talk to me about his important work on the ICBM Committee; only later I learned that he was Chairman and that it was called the von Neumann Committee. As he grew increasingly ill, some of the meetings were held in his house and later at the Woodner Hotel to which the von Neumanns had moved so as to be closer to Walter Reed Hospital, where he was undergoing treatment.\"",
+   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. OCR rendered 'ICBM' as '[CBM' at the first occurrence; corrected against the page image."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "quote": "It is evident that Johnny's ideas on a future theory of automata and organisms had roots that went back in time, but his more concrete ideas developed after his involvement with electronic machines. I think that one of his motives for pressing for the development of electronic computers was his fascination with the working of the nervous system and the organization of the brain itself. After his death some of his collaborators collected his writings on the outlines of the theory of automata. Published posthumously, his book on the brain had merely the barest sketches of what he planned to think about. He died so prematurely, seeing the promised land but hardly entering it.",
+   "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 12, \"The Death of Two Pioneers\"",
+   "locus": "pp. 241-242",
+   "date": "1976",
+   "theme": "brain-and-machine",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+   "context": "Follows Ulam's account of proposing the cellular framework: \"I proposed to him some of my own ideas about automata consisting of cells in a crystal-like arrangement. This model is described in the book edited by Arthur Burks, Cellular Automata, and in Burks's own book on the theory of automata.\"",
+   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'his book on the brain' is The Computer and the Brain (Yale, 1958)."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "quote": "One of these was J. Carson Mark, leader of the theoretical division in Los Alamos since the middle forties. … His direction of the theoretical division was an example of intelligent management of a scientific group without exercising undue pressures for programmatic work. He was able to encourage free scientific pursuits in areas which were only indirectly related to the tasks of the laboratory, and he supported theoretical physics and applied mathematics in the best sense.",
+   "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\"",
+   "locus": "p. 250",
+   "date": "1976",
+   "theme": "secrecy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+   "context": "The elision replaces: \"Mark is a Canadian mathematician who came to Los Alamos towards the end of the war with the British Mission. He became an American citizen some years later. He bore the brunt of the difficulties with Teller with remarkable calm and objectivity; he is one of the few mathematicians I know who have an understanding for the problems of physics and associated technology in a broad sense.\"",
+   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. Carson Mark is the division leader who invited Metropolis to set up the Los Alamos computing facility."
+  }
+ ]
+}

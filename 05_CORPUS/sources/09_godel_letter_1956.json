@@ -1,0 +1,82 @@
+{
+ "entries": [
+  {
+   "speaker": "Kurt Gödel",
+   "quote": "With the greatest sorrow I have learned of your illness. The news came to me as quite unexpected. Morgenstern already last summer told me of a bout of weakness you once had, but at that time he thought that this was not of any greater significance. As I hear, in the last months you have undergone a radical treatment and I am happy that this treatment was successful as desired, and that you are now doing better. I hope and wish for you that your condition will soon improve even more and that the newest medical discoveries, if possible, will lead to a complete recovery.",
+   "work": "Letter to John von Neumann",
+   "locus": "opening paragraph",
+   "date": "20 March 1956",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+   "source_url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf",
+   "context": "",
+   "caution": "Written in GERMAN. English translation by Peter Clote and Jan Krajíček, first published in their Arithmetic, Proof Theory and Computational Complexity (Oxford, 1993); revised text dated 11 September 2006, read from the translator’s own posting, which prints the German facing it. The autograph is in the John von Neumann Papers, Library of Congress; the Institute for Advanced Study authorised the translators to quote the letter in full. A second independent translation (Wensinger with Istrail, in Sipser, STOC 1992, pp. 610–612) agrees on every point checked; Collected Works Vol. V was not obtainable and was not read."
+  },
+  {
+   "speaker": "Kurt Gödel",
+   "quote": "Since you now, as I hear, are feeling stronger, I would like to allow myself to write you about a mathematical problem, of which your opinion would very much interest me: One can obviously easily construct a Turing machine, which for every formula F in first order predicate logic and every natural number n, allows one to decide if there is a proof of F of length n (length = number of symbols). Let ψ(F, n) be the number of steps the machine requires for this and let φ(n) = maxF ψ(F, n). The question is how fast φ(n) grows for an optimal machine. One can show that φ(n) ≥ k · n.",
+   "work": "Letter to John von Neumann",
+   "locus": "second paragraph, opening",
+   "date": "20 March 1956",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+   "source_url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf",
+   "context": "",
+   "caution": "Written in GERMAN. English translation by Peter Clote and Jan Krajíček, first published in their Arithmetic, Proof Theory and Computational Complexity (Oxford, 1993); revised text dated 11 September 2006, read from the translator’s own posting, which prints the German facing it. The autograph is in the John von Neumann Papers, Library of Congress; the Institute for Advanced Study authorised the translators to quote the letter in full. A second independent translation (Wensinger with Istrail, in Sipser, STOC 1992, pp. 610–612) agrees on every point checked; Collected Works Vol. V was not obtainable and was not read."
+  },
+  {
+   "speaker": "Kurt Gödel",
+   "quote": "If there really were a machine with φ(n) ∼ k · n (or even ∼ k · n²), this would have consequences of the greatest importance [Tragweite]. Namely, it would obviously mean that in spite of the undecidability of the Entscheidungsproblem, the mental work of a mathematician concerning Yes-or-No questions could be completely replaced by a machine. After all, one would simply have to choose the natural number n so large that when the machine does not deliver a result, it makes no sense to think more about the problem.",
+   "work": "Letter to John von Neumann",
+   "locus": "second paragraph",
+   "date": "20 March 1956",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+   "source_url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf",
+   "context": "Footnote 3, attached to “completely”, reads in full: “except for the setting up of axioms.”",
+   "caution": "Written in GERMAN. English translation by Peter Clote and Jan Krajíček, first published in their Arithmetic, Proof Theory and Computational Complexity (Oxford, 1993); revised text dated 11 September 2006, read from the translator’s own posting, which prints the German facing it. The autograph is in the John von Neumann Papers, Library of Congress; the Institute for Advanced Study authorised the translators to quote the letter in full. A second independent translation (Wensinger with Istrail, in Sipser, STOC 1992, pp. 610–612) agrees on every point checked; Collected Works Vol. V was not obtainable and was not read."
+  },
+  {
+   "speaker": "Kurt Gödel",
+   "quote": "Now it seems to me, however, to be completely within the realm of possibility that φ(n) grows that slowly. Since (1) it seems that φ(n) ≥ k · n is the only estimation which one can obtain by a generalization of the proof of the undecidability of the Entscheidungsproblem; and (2) after all φ(n) ∼ k · n (or ∼ k · n²) only means that the number of steps as opposed to trial and error can be reduced from N to log N (or (log N)²).",
+   "work": "Letter to John von Neumann",
+   "locus": "second paragraph",
+   "date": "20 March 1956",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+   "source_url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf",
+   "context": "",
+   "caution": "Written in GERMAN. English translation by Peter Clote and Jan Krajíček, first published in their Arithmetic, Proof Theory and Computational Complexity (Oxford, 1993); revised text dated 11 September 2006, read from the translator’s own posting, which prints the German facing it. The autograph is in the John von Neumann Papers, Library of Congress; the Institute for Advanced Study authorised the translators to quote the letter in full. A second independent translation (Wensinger with Istrail, in Sipser, STOC 1992, pp. 610–612) agrees on every point checked; Collected Works Vol. V was not obtainable and was not read."
+  },
+  {
+   "speaker": "Kurt Gödel",
+   "quote": "However, such strong reductions appear in other finite problems, for example in the computation of the quadratic residue symbol using repeated application of the law of reciprocity. It would be interesting to know, for instance, the situation concerning the determination of primality of a number and how strongly in general the number of steps in finite combinatorial problems can be reduced with respect to simple exhaustive search.",
+   "work": "Letter to John von Neumann",
+   "locus": "second paragraph, close",
+   "date": "20 March 1956",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+   "source_url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf",
+   "context": "",
+   "caution": "Written in GERMAN. English translation by Peter Clote and Jan Krajíček, first published in their Arithmetic, Proof Theory and Computational Complexity (Oxford, 1993); revised text dated 11 September 2006, read from the translator’s own posting, which prints the German facing it. The autograph is in the John von Neumann Papers, Library of Congress; the Institute for Advanced Study authorised the translators to quote the letter in full. A second independent translation (Wensinger with Istrail, in Sipser, STOC 1992, pp. 610–612) agrees on every point checked; Collected Works Vol. V was not obtainable and was not read."
+  },
+  {
+   "speaker": "Kurt Gödel",
+   "quote": "I would be very happy to hear something from you personally. Please let me know if there is something that I can do for you.",
+   "work": "Letter to John von Neumann",
+   "locus": "closing",
+   "date": "20 March 1956",
+   "theme": "letters",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+   "source_url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf",
+   "context": "",
+   "caution": "Written in GERMAN. English translation by Peter Clote and Jan Krajíček, first published in their Arithmetic, Proof Theory and Computational Complexity (Oxford, 1993); revised text dated 11 September 2006, read from the translator’s own posting, which prints the German facing it. The autograph is in the John von Neumann Papers, Library of Congress; the Institute for Advanced Study authorised the translators to quote the letter in full. A second independent translation (Wensinger with Istrail, in Sipser, STOC 1992, pp. 610–612) agrees on every point checked; Collected Works Vol. V was not obtainable and was not read."
+  }
+ ]
+}

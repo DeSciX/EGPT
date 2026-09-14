@@ -1,0 +1,30 @@
+{
+ "entries": [
+  {
+   "speaker": "John von Neumann",
+   "quote": "Without further investigation, a direct solution of the problem appears to require n[!] steps, — the testing of each permutation to find the optimal permutations giving the maximum …",
+   "work": "\"A Certain Zero-Sum Two-Person Game Equivalent to the Optimal Assignment Problem,\" in H. W. Kuhn and A. W. Tucker (eds.), Contributions to the Theory of Games, Volume II, Annals of Mathematics Studies 28 (Princeton University Press, 1953), pp. 5–12",
+   "locus": "p. 5, opening paragraph",
+   "date": "26 October 1951",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://archive.org/details/dli.ernet.90090",
+   "context": "The elided tail is the summation over the permutation P of the assignment values a(i,j); the scan's OCR renders it unreadably.",
+   "caution": "Read from the scanned published text (Internet Archive item dli.ernet.90090), page 5 of the printed volume. The published text carries an editors' note on the same page: \"This is a transcript, prepared under Office of Naval Research sponsorship by Hartley Rogers, Jr., of a seminar talk given by Professor von Neumann at Princeton University, October 26, 1951.\" The words are therefore a transcription of speech, not authored prose; the date field carries the date of the talk, the work field the 1953 printing. The scan's OCR renders \"n!\" as \"ni\"; the factorial is restored in brackets."
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "(The game matrix for this game will be 2n x n². From this it is not difficult to infer how many steps are needed to get significant approximate solutions with the method of G. W. Brown and J. von Neumann. … It turns out that this number is a moderate power of n, i.e., considerably smaller than the \"obvious\" estimate n[!] mentioned earlier.)",
+   "work": "\"A Certain Zero-Sum Two-Person Game Equivalent to the Optimal Assignment Problem,\" in H. W. Kuhn and A. W. Tucker (eds.), Contributions to the Theory of Games, Volume II, Annals of Mathematics Studies 28 (Princeton University Press, 1953), pp. 5–12",
+   "locus": "p. 5, parenthesis",
+   "date": "26 October 1951",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://archive.org/details/dli.ernet.90090",
+   "context": "The ellipsis elides the citation von Neumann gives for the method: [Cf.: \"Contributions to the Theory of Games,\" Annals of Mathematics Studies, No. 24, Princeton University Press, 1950 -- pp. 75-79, especially § 5.]",
+   "caution": "Read from the scanned published text (Internet Archive item dli.ernet.90090), page 5 of the printed volume. The published text carries an editors' note on the same page: \"This is a transcript, prepared under Office of Naval Research sponsorship by Hartley Rogers, Jr., of a seminar talk given by Professor von Neumann at Princeton University, October 26, 1951.\" The words are therefore a transcription of speech, not authored prose; the date field carries the date of the talk, the work field the 1953 printing. The scan's OCR renders \"n!\" as \"ni\"; the factorial is restored in brackets. Alexander Schrijver quotes this sentence with \"n!\" in \"On the history of combinatorial optimization (till 1960)\", section \"The complexity issue\", p. 8, and adds that no further argumentation is given. The \"x\" in \"2n x n²\" is the volume's multiplication sign."
+  }
+ ]
+}

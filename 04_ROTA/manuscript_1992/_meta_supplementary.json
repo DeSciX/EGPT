@@ -1,0 +1,74 @@
+{
+  "book_title": "Introduction to Probability and Random Processes",
+  "author": "Gian-Carlo Rota",
+  "edition": "1992",
+  "supplementary_materials": [
+    {
+      "filename": "Lecture_Notes_1.md",
+      "title": "Lecture Notes 1 — MIT 18.313, Spring 1993",
+      "type": "lecture_notes",
+      "summary": "Handwritten lecture notes from Rota's 18.313 course (Feb 1 - Mar 10, 1993). Covers: concept of probability, Bernoulli sample space, finite sample spaces (Maxwell-Boltzmann, Bose-Einstein, Fermi-Dirac statistics), dispositions, random variables, probability distributions, independence, expectation, identically distributed variables, waiting times, inclusion-exclusion principle, indicator random variables, joint densities of continuous random variables, and application to expectation. Contains detailed worked examples with balls-in-boxes models, dice problems, birthday problem, and card deck fixpoints.",
+      "egpt_relevance": "The Bernoulli process as a bit stream generator (pp. 6-7 of the notes) is the exact physical model underlying EGPT's IIDParticleSource and the ParticlePath-to-N bijection. The Maxwell-Boltzmann / Bose-Einstein / Fermi-Dirac trichotomy maps directly to EGPT's three counting regimes. The expectation linearity proof via indicator random variables foreshadows the additive entropy structure central to EGPT. The inclusion-exclusion derivation connects to Rota's later work on Moebius functions and the combinatorial underpinning of the Rota Entropy Theorem.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "judgement_calls": [
+        "Date '2/22/93' interpreted as Feb 22 (not Feb 21), consistent with MWF lecture schedule.",
+        "Page 12 contains doodles/scribbles at top that appear to be idle drawings, not mathematical content — omitted.",
+        "Pink/red annotations throughout are attributed to the student (Abadir) rather than to Rota, based on ink color and handwriting style differences.",
+        "The notation '<n>_k' for rising factorials was interpreted from the handwritten angle-bracket style; some instances could be read as '(n)_k' but context confirms rising factorial.",
+        "Pages 8, 16, 20, 24 are blank and omitted from transcription.",
+        "The multinomial coefficient formula on p.24 of the scanned PDF has a handwritten '0!=1' annotation that is transcribed as a separate note."
+      ],
+      "original_pdf": "Lecture Notes 1.pdf"
+    },
+    {
+      "filename": "Lecture_Notes_2.md",
+      "title": "Lecture Notes 2 — MIT 18.313 Problem Sets and Supplementary Materials, Spring 1993",
+      "type": "lecture_notes",
+      "summary": "Heterogeneous collection of student materials: (1) Rota's 'Famous Unsolved Problems' lecture covering hard spheres, postage stamp folding, self-avoiding random walks, cell growth, percolation, cluster analysis, geometric probability, and Brownian motion; (2) graded Problem Set #1 for 18.313 with Rota's marking (scores 98 and 88); (3) a 17.109 legal philosophy lecture on Hart's response to the rule-skeptic; (4) an 18.085 Applied Mathematics syllabus (Strang); (5) an 18.445 probability assignment (Feb 1994) with problems on MB/FD statistics, zero-one law, and Borel-Cantelli lemma; (6) variant copies of early 18.313 lectures on probability axioms and the Bernoulli process.",
+      "egpt_relevance": "The 'Famous Unsolved Problems' page is significant: Rota's discussion of self-avoiding random walks (problem 3) and percolation (problem 5) directly connects to EGPT's particle path model. The self-avoiding walk constraint is the physical basis for the ParticlePath bijection — each path encodes a unique natural number precisely because it cannot revisit vertices. The 18.445 assignment (problem 6) asks about convergence of the series sum(Y_n/n) for iid +/-1 variables, which is closely related to the harmonic weight 1/N that appears in the Rota RH Addendum. The Bernoulli process lecture variants reinforce the 'fair coin generates all integers' framework.",
+      "idea_tags": ["ID1", "ID3", "ID4", "ID5"],
+      "judgement_calls": [
+        "Pages 4, 6, 8, 10, 12, 13, 14, 16 are mostly blank, heavily faded, or contain only grading marks — described but not transcribed in detail.",
+        "The 17.109 legal philosophy notes (Hart's response to the rule-skeptic) are included because they were in the PDF, despite being unrelated to probability.",
+        "The 18.085 syllabus and 18.445 assignment are from different courses and years (1993-94) but were bound together in the scan.",
+        "Problem Set page 2 (score 88) is severely faded; only fragmentary content could be recovered.",
+        "The 'Famous Unsolved Problems' page has no explicit date but is attributed to early in the semester based on its position and introductory tone.",
+        "PS#1 problem P.63 #10 received a -10 deduction; the error appears to be that A and B (no same birthdays vs. no adjacent birthdays) are NOT disjoint, contradicting the student's claim."
+      ],
+      "original_pdf": "Lecture Notes 2.pdf"
+    },
+    {
+      "filename": "Index.md",
+      "title": "Index — Introduction to Probability and Random Processes",
+      "type": "index",
+      "summary": "Complete alphabetical index for Rota's 1992 probability manuscript, spanning pages 421-424. Contains approximately 300 entries covering the full scope of the book: combinatorics (permutations, multisets, occupancy models), probability theory (distributions, Bayes' law, conditional probability), statistics (tests, confidence intervals, standard deviation), information theory (entropy, coding, Shannon theorem), and stochastic processes (Bernoulli, Poisson, Markov chains, random walks, Wiener process). Notable entries include: Boltzmann entropy (p.362), Shannon Coding Theorem (p.352), entropy uniqueness (p.350), zero-one law (p.174), and entropy properties (p.348).",
+      "egpt_relevance": "The index confirms that Rota's manuscript covers the complete chain from combinatorics through entropy to coding theory — exactly the intellectual pathway that EGPT formalizes. Key entries: 'Entropy, uniqueness, 350' corresponds to EGPT's RotaUniformTheorem; 'Shannon Coding Theorem, 352' maps to the LFTA; 'Bernoulli process' (11 page references) is the foundation of EGPT's IIDParticleSource; 'Partition' entries (342-344) connect to EGPT's entropy-as-partition-refinement framework. The index also shows that Rota covered physics models (Maxwell-Boltzmann, Bose-Einstein, Fermi-Dirac) alongside information theory — the same unification EGPT pursues.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "judgement_calls": [
+        "The scanned PDF contained supplementary course materials (18.085 syllabus, 18.445 assignment) after the index pages. These were transcribed in Lecture_Notes_2.md rather than the Index file.",
+        "Page numbers in the index (421-424) indicate this is from near the end of a ~424-page manuscript.",
+        "Entry 'Cauchy distribution, see Gangster distribution' preserves Rota's characteristic humor in naming.",
+        "Some index entries have slightly ambiguous page numbers due to scan quality; all numbers transcribed as best-effort from the typeset original.",
+        "Cross-references (e.g., 'Average, see Expectation') are preserved with italic 'see' format."
+      ],
+      "original_pdf": "Index.pdf"
+    },
+    {
+      "filename": "My Posthumous Addendum/Rota_RH_Proof_Book_Addendum.md",
+      "title": "An Addendum on Entropy and the Zeta Function",
+      "type": "addendum",
+      "summary": "A posthumous addendum to Rota's probability manuscript, written by Essam Abadir in December 2025, in Rota's voice. Derives the Riemann Hypothesis as a necessary consequence of entropy axioms and the fair Bernoulli process. The argument proceeds: (1) review of five entropy axioms yielding Shannon entropy uniqueness; (2) a fair Bernoulli process generates all integers with harmonic weight 1/N, and the Fundamental Theorem of Arithmetic becomes additive under logarithm (the LFTA); (3) the Euler product is the entropy-generating function of an infinite IID process over primes; (4) the functional equation xi(s) = xi(1-s) is the analytic mirror of fair-coin symmetry, forcing zeros to the critical line Re(s) = 1/2; (5) primes are irreducible information codes, and RH asserts their arrival occurs with maximum symmetry. Includes an afterword connecting 'the zeros of the Taylor series' to Rota's legacy, and an appendix mapping 9 key concepts to their Lean formalizations in the EGPT codebase.",
+      "egpt_relevance": "This is the keystone document connecting Rota's probability framework to EGPT. The LFTA derived here (log N = sum e_j log p_j) is formalized in EGPT as EGPT_Fundamental_Theorem_of_Arithmetic_via_Information. The five entropy axioms map to EGPT's Lean formalization of the Rota Entropy Theorem (RotaUniformTheorem). The 'primes as unique codes' interpretation is the information-theoretic foundation of EGPT's ParticlePath encoding. The fair Bernoulli process generating integers with weight 1/N is precisely IIDParticleSource. The Appendix table directly maps mathematical claims to Lean proofs, providing formal verification of the addendum's foundations. This document completes the chain: Rota's entropy axioms -> Shannon uniqueness -> LFTA -> Euler product as entropy generator -> RH as maximum symmetry.",
+      "idea_tags": ["ID1", "ID2", "ID3", "ID4", "ID5"],
+      "judgement_calls": [
+        "The PDF and TeX source are identical in content; the markdown was transcribed primarily from the TeX source for maximum accuracy, cross-checked against the rendered PDF.",
+        "The Notes.md file in the same directory contains earlier draft sections (3, 4, 5) that were revised into the final addendum. The final version incorporates the 'Fair Sample' hypothesis from the draft but reorganizes the sections.",
+        "The Appendix table's Lean proof locations (line numbers) may drift as the codebase evolves; they were accurate as of December 2025.",
+        "The addendum is written 'in Rota's voice' by Abadir — it is not by Rota himself. This is clearly stated in the NB section but bears emphasizing for attribution purposes.",
+        "Mathematical content in sections 3-5 was checked against both the TeX source and the rendered PDF; the TeX is authoritative where they differ.",
+        "The title 'A Probabilistic Derivation of the Riemann Hypothesis' is used in the body text; the document title page says 'An Addendum on Entropy and the Zeta Function'. Both are preserved."
+      ],
+      "original_pdf": "My Posthumous Addendum/Rota_RH_Proof_Book_Addendum.pdf"
+    }
+  ]
+}

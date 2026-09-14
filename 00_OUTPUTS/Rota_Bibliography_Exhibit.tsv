@@ -1,0 +1,190 @@
+year	title	venue	coauthors	cat	domain
+1956	Extension theory of ordinary linear differential operators (PhD dissertation)	Yale University	sole	A	analysis
+1958	Extension theory of differential operators I	Comm. Pure Appl. Math. 11, 23-65	sole	A	analysis
+1959	Note on the invariant subspaces of linear operators	Rend. Circ. Mat. Palermo (2) 8, 182-184	sole	A	analysis
+1960	On models for linear operators	Comm. Pure Appl. Math. 13, 469-472	sole	A	analysis
+1960	Spectral theory of smoothing operators	Proc. Natl. Acad. Sci. USA 46, 863-868	sole	A	analysis
+1960	Une generalisation de l'esperance mathematique conditionnelle (turbulence)	C. R. Acad. Sci. Paris 251, 624-626	sole	A	probability
+1960	Endomorphismes de Reynolds et theorie ergodique	C. R. Acad. Sci. Paris 250, 2791-2793	sole	A	ergodic theory
+1960	Representation des operateurs de Reynolds	C. R. Acad. Sci. Paris 250, 2831-2833	sole	A	ergodic theory
+1960	On the representation of averaging operators	Rend. Sem. Mat. Univ. Padova 30, 52-64	sole	A	ergodic theory
+1960	A note on the joint spectral radius	Nederl. Akad. Wet. Proc. A 63, 379-381	W. G. Strang	A	analysis
+1960	On Reynolds operators in finite-dimensional algebras	J. Math. Mech. 9, 927-932	M. Billik	A	algebra
+1960	On the completeness of Sturm-Liouville expansions	Amer. Math. Monthly 67, 835-841	G. Birkhoff	A	analysis
+1961	Une theorie unifiee des martingales et des moyennes ergodiques	C. R. Acad. Sci. Paris 252, 2064-2066	sole	A	probability
+1961	On the spectra of singular boundary value problems	J. Math. Mech. 10, 83-90	sole	A	analysis
+1961	On the eigenvalues of positive operators	Bull. Amer. Math. Soc. 67, 556-558	sole	A	analysis
+1962	On Alternierende Verfahren for general positive operators	Bull. Amer. Math. Soc. 68, 95-102	sole	A	ergodic theory
+1962	On the classification of periodic flows	Proc. Amer. Math. Soc. 13, 659-662	sole	A	ergodic theory
+1962	Ordinary differential equations	Ginn and Company	G. Birkhoff	B	textbook
+1962	Introductory Lectures in Combinatorial Analysis (MIT 18.17)	unpublished mimeographed MIT notes	notes by Feldman, Levinger, Stanley	C	combinatorics
+1963	On the maximal ergodic theorem for Abel limits	Proc. Amer. Math. Soc. 14, 722-723	sole	A	ergodic theory
+1963	A limit theorem for the time-dependent evolution equation	CIME Varenna 1963	sole	A	analysis
+1963	The Mobius function for partitions of a set	Scientia (Valparaiso) 122, 111-115	R. Frucht	A	combinatorics
+1964	On the foundations of combinatorial theory I: Mobius functions	Z. Wahrscheinlichkeitstheorie 2, 340-368	sole	A	combinatorics
+1964	The number of partitions of a set	Amer. Math. Monthly 71, 498-504	sole	A	combinatorics
+1964	Reynolds operators	Proc. Sympos. Appl. Math. 16, 70-83	sole	A	ergodic theory
+1965	Review of Dunford and Schwartz, Linear Operators II	Bull. Amer. Math. Soc. 71, 705-709	sole	B	review
+1969	Baxter algebras and combinatorial identities I	Bull. Amer. Math. Soc. 75, 325-329	sole	A	combinatorics
+1969	Baxter algebras and combinatorial identities II	Bull. Amer. Math. Soc. 75, 330-334	sole	A	combinatorics
+1969	The number of subspaces of a vector space	Proc. 3rd Waterloo Conf. 75-83	J. Goldman	A	combinatorics
+1969	Ordinary differential equations 2nd ed.	Blaisdell	G. Birkhoff	B	textbook
+1970	On the foundations of combinatorial theory II: Combinatorial geometries	Stud. Appl. Math. 49, 109-133	H. Crapo	A	combinatorics
+1970	On the foundations of combinatorial theory III: Binomial enumeration	Graph Theory and its Applications 167-213	R. Mullin	A	combinatorics
+1970	On the foundations of combinatorial theory IV: Finite vector spaces	Stud. Appl. Math. 49, 239-258	J. Goldman	A	combinatorics
+1970	On the foundations of combinatorial theory IV (conference version)	Colloq. Math. Soc. Janos Bolyai 4, 477-509	J. Goldman	A	combinatorics
+1970	Combinatorial geometries (preliminary edition)	MIT Press	H. Crapo	A	combinatorics
+1970	On the inequality for norms of f, f', f''	Inequalities II, 187-192	R. R. Kallman	A	analysis
+1970	Trends in lattice theory (contributed chapter)	Van Nostrand Reinhold Math. Studies 31	various	B	survey
+1971	On the combinatorics of the Euler characteristic	Studies in Pure Mathematics 221-233	sole	A	combinatorics
+1971	Combinatorial theory, old and new	Actes Congres Internat. Math. 1970, vol 3, 229-233	sole	B	survey
+1971	Frobenius reciprocity in ergodic theory	Bull. Amer. Math. Soc. 77, 713-718	K. Lange, A. Ramsay	A	ergodic theory
+1971	Matching theory, an introduction	Advances in Probability 1, 169-215	L. H. Harper	B	survey
+1971	Simplicial geometries	Proc. Sympos. Pure Math. 19, 71-75	H. Crapo	A	combinatorics
+1971	Foreword	Mathematics in Science and Engineering	sole	B	editorial
+1972	Fluctuation theory and Baxter algebras	Symposia Mathematica 9, 179-201	D. A. Smith	A	probability
+1972	On the foundations of combinatorial theory VI: Generating functions	Proc. 6th Berkeley Sympos. vol 2, 267-318	P. Doubilet, R. Stanley	A	combinatorics
+1973	On the foundations of combinatorial theory VIII: Finite operator calculus	J. Math. Anal. Appl. 42, 684-760	D. Kahaner, A. Odlyzko	A	combinatorics
+1973	The valuation ring of a distributive lattice	Proc. Houston Lattice Theory Conf. 574-628	sole	A	combinatorics
+1973	Significance arithmetic: the carrying algorithm	J. Combin. Theory A 14, 386-421	N. Metropolis, S. Tanny	A	computation
+1973	Some problems in combinatorial geometry	A Survey of Combinatorial Theory 309-312	D. Kelly	A	combinatorics
+1973	Edmund Husserl and the reform of logic	Explorations in Phenomenology 299-305	sole	B	philosophy
+1974	On the foundations of combinatorial theory IX: Invariant theory	Stud. Appl. Math. 53, 185-216	P. Doubilet, J. Stein	A	invariant theory
+1974	Significance arithmetic: on the algebra of binary strings	Studies in Numerical Analysis 241-251	N. Metropolis	A	computation
+1974	Review of Kline, Mathematical Thought	Bull. Amer. Math. Soc. 80, 805-808	sole	B	review
+1975	Finite Operator Calculus	Academic Press	with named collaborators	A	combinatorics
+1975	The real numbers as a wreath product	Adv. Math. 16, 278-304	F. Faltin, N. Metropolis, B. Ross	A	computation
+1975	Book review	Philosophia Mathematica s1-12, 76-80	sole	B	review
+1976	Skew-symmetric invariant theory	Adv. Math. 21, 196-201	P. Doubilet	A	invariant theory
+1976	Applications of Cayley algebras	Colloquio Internazionale sulle Teorie Combinatorie II, 71-97	J. Stein	A	invariant theory
+1976	Surveys in Applied Mathematics: Essays dedicated to S. M. Ulam	Academic Press	N. Metropolis, S. Orszag (eds)	B	editorial
+1977	Enumeration under group action	Ann. Sc. Norm. Super. Pisa (4) 4, 637-646	D. A. Smith	A	combinatorics
+1977	A Boolean analysis of addition and multiplication	Stud. Appl. Math. 56, 147-158	F. Faltin, N. Metropolis, B. Ross	A	computation
+1978	The umbral calculus	Adv. Math. 27, 95-188	S. M. Roman	A	combinatorics
+1978	Invariant theory, Young bitableaux, and combinatorics	Adv. Math. 27, 63-92	J. Desarmenien, J. Kung	A	invariant theory
+1978	A measure theoretic approach to logical quantification	Rend. Sem. Mat. Univ. Padova 59, 227-246	D. P. Ellerman	A	logic
+1978	Combinatorial structure of the faces of the n-cube	SIAM J. Appl. Math. 35, 689-694	N. Metropolis	A	computation
+1978	On the lattice of faces of the n-cube	Bull. Amer. Math. Soc. 84, 284-286	N. Metropolis	A	computation
+1978	Two rings connected with the inclusion-exclusion principle	J. Combin. Theory A 24, 395-402	O. D'Antona	A	combinatorics
+1978	Partitions into chains of a class of partially ordered sets	Proc. Amer. Math. Soc. 71, 193-196	N. Metropolis, V. Strehl, N. White	A	combinatorics
+1978	Hopf algebra methods in combinatorics	Colloq. Int. CNRS 260, 363-365	sole	B	survey
+1978	Ordinary differential equations 3rd ed.	Wiley	G. Birkhoff	B	textbook
+1978	Studies in Foundations and Combinatorics	Adv. Math. Suppl. Studies 1	editor	B	editorial
+1978	Studies in Probability and Ergodic Theory	Adv. Math. Suppl. Studies 2	editor	B	editorial
+1978	Introduction to MacMahon Collected Papers I	MIT Press	G. E. Andrews (vol. ed.)	B	editorial
+1979	Coalgebras and bialgebras in combinatorics	Stud. Appl. Math. 61, 93-139	S. A. Joni	A	combinatorics
+1979	Studies in Analysis	Adv. Math. Suppl. Studies 4	editor	B	editorial
+1979	Studies in Algebraic Topology	Adv. Math. Suppl. Studies 5	editor	B	editorial
+1979	Studies in Algebra and Number Theory	Adv. Math. Suppl. Studies 6	editor	B	editorial
+1979	Introduction to Probability and Random Processes	circulated MIT course manuscript, never submitted	K. Baclawski	C	probability
+1980	Sistemi di coefficienti sezionali I	Rend. Circ. Mat. Palermo (2) 29, 457-484	M. Barnabei, A. Brini	A	combinatorics
+1980	On restricted bases for finite fields	Ann. Discrete Math. 6, 215-217	S. A. Joni	A	combinatorics
+1980	Section coefficients and section sequences	Atti Accad. Naz. Lincei (8) 68, 5-12	M. Barnabei, A. Brini	A	combinatorics
+1980	Introduction to Davis and Hersh, The Mathematical Experience	Birkhauser	P. J. Davis, R. Hersh	B	editorial
+1980	A History of Computing in the Twentieth Century	Academic Press	N. Metropolis, J. Howlett (eds)	B	editorial
+1980	Congruences derived from group action	European J. Combin. 1, 67-76	B. Sagan	A	combinatorics
+1980	The elementary theory of the symmetric group	Lecture Notes Pure Appl. Math. 57, 31-65	P. Doubilet, J. Fox	A	representation theory
+1980	A vector space analog of permutations with restricted position	J. Combin. Theory A 29, 59-73	S. A. Joni	A	combinatorics
+1980	On the Redei zeta function	J. Number Theory 12, 421-436	J. Kung, M. R. Murty	A	number theory
+1980	A cyclic derivative in noncommutative algebra	J. Algebra 64, 54-75	B. Sagan, P. R. Stein	A	algebra
+1981	A new class of symmetric functions	Adv. Math. Suppl. Studies 7B, 563-575	N. Metropolis, G. Nicoletti	A	combinatorics
+1981	Sistemi di coefficienti sezionali II	Rend. Circ. Mat. Palermo (2) 30, 161-198	M. Barnabei, A. Brini	A	combinatorics
+1981	From sets to functions: three elementary examples	Discrete Math. 37, 193-202	S. A. Joni, B. Sagan	A	combinatorics
+1981	On the differential invariants of a linear ordinary differential equation	Proc. Roy. Soc. Edinburgh A 89, 111-123	J. Kung	A	invariant theory
+1982	Introduction to Study, Methoden zur Theorie der ternaeren Formen (reprint)	Springer	E. Study (author)	B	editorial
+1982	Coalgebras and bialgebras in combinatorics	Contemp. Math. 6, 1-47	S. A. Joni	A	combinatorics
+1983	Witt vectors and the algebra of necklaces	Adv. Math. 50, 95-125	N. Metropolis	A	combinatorics
+1983	Combinatorics on Words (Lothaire), series editor	Encyclopedia of Math. and its Appl. 17	M. Lothaire (author)	B	editorial
+1984	Introduzione alla probabilita	Unione Matematica Italiana, Bologna	K. Baclawski, M. Cerasoli	B	textbook
+1984	On the invariant theory of binary forms	Bull. Amer. Math. Soc. (N.S.) 10, 27-85	J. Kung	A	invariant theory
+1984	George Polya Collected Papers III: Analysis	MIT Press	J. Hersch (co-ed)	B	editorial
+1984	George Polya Collected Papers IV	MIT Press	editor	B	editorial
+1984	The cyclotomic identity	Contemp. Math. 34, 19-27	N. Metropolis	A	combinatorics
+1984	Words spoken at the memorial service for S. M. Ulam	Math. Intelligencer 6 no 4, 40-42	sole	B	memorial
+1985	Plethysm, categories and combinatorics	Adv. Math. 58, 61-88	O. Nava	A	combinatorics
+1985	On the exterior calculus of invariant theory	J. Algebra 96, 120-160	M. Barnabei, A. Brini	A	invariant theory
+1986	Introduction to MacMahon Collected Papers II	MIT Press	G. E. Andrews (ed.)	B	editorial
+1986	Probability, Statistical Mechanics, and Number Theory (Kac volume)	Adv. Math. Suppl. Studies 9	editor	B	editorial
+1986	Symmetric functions and symmetric species	Ann. Discrete Math. 30, 107-113	F. Bonetti, D. Senato, A. M. Venezia	A	combinatorics
+1986	The theory of Mobius functions	Russian Math. Surveys 41 no 3, 135-188	M. Barnabei, A. Brini	A	combinatorics
+1986	Symbolic method in invariant theory	Proc. Natl. Acad. Sci. USA 83, 844-847	J. A. Stein	A	invariant theory
+1986	Discrete Thoughts	Birkhauser	M. Kac, J. T. Schwartz	B	essays
+1986	In memoriam of Stan Ulam: The barrier of meaning	Physica D 22, 1-3	sole	B	memorial
+1987	Invariant Theory and Superalgebras	AMS CBMS 69	F. D. Grosshans, J. A. Stein	A	invariant theory
+1987	Classic Papers in Combinatorics	Birkhauser	I. Gessel (co-ed)	B	editorial
+1988	Symmetric functions: a bijective identity	Proc. Amer. Math. Soc. 102, 218-220	N. Metropolis	A	combinatorics
+1988	Syntax, semantics, and the identity of mathematical objects	Philosophy of Science 55, 376-386	D. H. Sharp, R. Sokolowski	B	philosophy
+1989	The barrier of meaning: in memoriam Stanislaw Ulam	Notices Amer. Math. Soc. 36 no 2, 141-143	sole	B	memorial
+1989	Supersymmetric algebra, supersymmetric space, and invariant theory	Symmetry in Nature 407-432	R. Q. Huang, J. A. Stein	A	invariant theory
+1989	On artificial intelligence (in Bulgarian)	Fiz.-Mat. Spisanie 31(64) no 1, 19-27	sole	B	philosophy
+1989	Standard basis in supersymplectic algebras	Proc. Natl. Acad. Sci. USA 86, 2521-2524	J. A. Stein	A	invariant theory
+1989	Formal power series of logarithmic type	Adv. Math. 75, 1-118	D. E. Loeb	A	combinatorics
+1989	Fine Hall in its golden age	A Century of Mathematics in America II, 223-236	sole	B	history
+1989	Mikio Sato: impressions	Algebraic Analysis 1, 13-15	sole	B	memorial
+1989	Fundierung as a logical concept	The Monist 72 no 1, 70-77	sole	B	philosophy
+1989	The Lost Cafe	Los Alamos Science Ulam memorial issue	sole	B	memorial
+1990	Mots: melanges offerts a M.-P. Schuetzenberger	Editions Hermes	co-editor	B	editorial
+1990	Supersymmetric bracket algebra and invariant theory	Acta Appl. Math. 21, 193-246	R. Q. Huang, J. A. Stein	A	invariant theory
+1990	Introduzione alla probabilita 2nd ed.	Unione Matematica Italiana, Bologna	K. Baclawski, M. Cerasoli	B	textbook
+1990	Preface to Stanley, Enumerative Combinatorics (Russian transl.)	Mir, Moscow	R. P. Stanley (author)	B	editorial
+1990	Matematica e filosofia: storia di un equivoco	Boll. Un. Mat. Ital. A (7) 4, 295-307	sole	B	philosophy
+1990	Mathematics and philosophy: the story of a misunderstanding	Review of Metaphysics 44, 259-271	sole	B	philosophy
+1990	Supersymmetric Hilbert space	Proc. Natl. Acad. Sci. USA 87, 653-657	J. A. Stein	A	invariant theory
+1990	Schur maps, Young tableaux, and supersymmetric algebra	Proc. Natl. Acad. Sci. USA 87, 9250-9254	J. A. Stein	A	invariant theory
+1990	Introduction to invariant theory in superalgebras	IMA Vol. Math. Appl. 19, 1-35	B. Sturmfels	A	invariant theory
+1990	Les ambiguites de la pensee mathematique	Gazette des Mathematiciens 45, 54-64	sole	B	philosophy
+1991	Theory of symmetry classes	Proc. Natl. Acad. Sci. USA 88, 8415-8419	N. Metropolis, J. A. Stein	A	invariant theory
+1991	Higher-order syzygies for the bracket algebra	Proc. Natl. Acad. Sci. USA 88, 8087-8090	D. Anick	A	invariant theory
+1991	Recent contributions to the calculus of finite differences: a survey	Lecture Notes Pure Appl. Math. 132, 239-276	D. Loeb	B	survey
+1991	Las ambiguedades de la verdad matematica	Revista SIGMA 6, 3-18	sole	B	philosophy
+1991	The pernicious influence of mathematics upon philosophy	Synthese 88, 165-178	sole	B	philosophy
+1991	Symmetry classes: functions of three variables	Amer. Math. Monthly 98, 328-332	N. Metropolis	A	invariant theory
+1991	The concept of mathematical truth	Review of Metaphysics 44, 483-494	sole	B	philosophy
+1992	Discrete Thoughts, revised ed.	Birkhauser	M. Kac, J. T. Schwartz	B	essays
+1992	q-analogs of the inclusion-exclusion principle	Discrete Math. 104, 7-22	W. Y. C. Chen	A	combinatorics
+1992	On the foundations of combinatorial theory X: Symmetric functions	Stud. Appl. Math. 86, 1-29	F. Bonetti, D. Senato, A. M. Venezia	A	combinatorics
+1992	Alternating groups as quotients of two generator groups	Adv. Math. 96, 113-121	Q. Mushtaq	A	algebra
+1993	Artificial intelligence today	Chebyshev memorial volume, World Scientific, 483-493	sole	B	philosophy
+1993	Apolarity and canonical forms for homogeneous polynomials	European J. Combin. 14, 157-181	R. Ehrenborg	A	invariant theory
+1993	Projective resolutions of Weyl modules	Proc. Natl. Acad. Sci. USA 90, 2448-2450	D. A. Buchsbaum	A	representation theory
+1993	On the span of supersymmetric Young tableaux	Proc. Natl. Acad. Sci. USA 90, 700-701	J. A. Stein	A	invariant theory
+1993	A stochastic interpretation of the Riemann zeta-function	Proc. Natl. Acad. Sci. USA 90, 697-699	K. S. Alexander, K. Baclawski	A	probability
+1993	An introduction to the umbral calculus	Riemann Legacy Volume II, 513-525	B. D. Taylor	A	combinatorics
+1994	Plethystic algebras and vector symmetric functions	Proc. Natl. Acad. Sci. USA 91, 13062-13066	J. A. Stein	A	invariant theory
+1994	Plethystic Hopf algebras	Proc. Natl. Acad. Sci. USA 91, 13057-13061	J. A. Stein	A	invariant theory
+1994	A new construction in homological algebra	Proc. Natl. Acad. Sci. USA 91, 4115-4119	D. A. Buchsbaum	A	algebra
+1994	The classical umbral calculus	SIAM J. Math. Anal. 25, 694-711	B. D. Taylor	A	combinatorics
+1994	Totally invariant set functions of polynomial type	Comm. Pure Appl. Math. 47, 187-197	B. Chen	A	combinatorics
+1994	On the relations of various conjectures on Latin squares	Discrete Math. 128, 225-236	R. Huang	A	combinatorics
+1994	Sul calcolo umbrale	Ricerche di Matematica 43, 129-162	A. Di Crescenzo	A	combinatorics
+1995	The resolving bracket	Invariant Methods in Discrete and Computational Geometry 197-222	H. Crapo	A	invariant theory
+1995	The power of positive thinking	Invariant Methods in Discrete and Computational Geometry 1-36	W. Chan, J. Stein	A	invariant theory
+1995	Gian-Carlo Rota on Combinatorics	Birkhauser	J. Kung (ed.)	B	editorial
+1995	Symmetry classes of functions	J. Algebra 171, 845-866	N. Metropolis, J. A. Stein	A	invariant theory
+1996	The logic of commuting equivalence relations	Lecture Notes Pure Appl. Math. 180, 69-96	D. Finberg, M. Mainetti	A	logic
+1996	Report on the present state of combinatorics	Discrete Math. 153, 289-303	sole	B	survey
+1996	Light shadows: remembrances of Yale in the early fifties	Math. Intelligencer 18 no 3, 44-51	sole	B	history
+1997	Indiscrete Thoughts	Birkhauser	ed. F. Palombi	B	essays
+1997	A continuous analogue of Sperner's theorem	Comm. Pure Appl. Math. 50, 205-223	D. A. Klain	A	combinatorics
+1997	All polynomials of binomial type are represented by Abel polynomials	Ann. Scuola Norm. Sup. Pisa (4) 25, 731-738	J. Shen, B. D. Taylor	A	combinatorics
+1997	The phenomenology of mathematical proof	Synthese 111, 183-196	sole	B	philosophy
+1997	The phenomenology of mathematical beauty	Synthese 111, 171-182	sole	B	philosophy
+1997	Introduction to geometric probability (videotape lecture)	AMS Selected Lectures in Mathematics	sole	B	exposition
+1997	Ten lessons I wish I had been taught	Notices Amer. Math. Soc. 44 no 1, 22-25	sole	B	exposition
+1997	The many lives of lattice theory	Notices Amer. Math. Soc. 44 no 11, 1440-1445	sole	B	history
+1997	Zehn ungelehrte Lektionen	Mitt. Dtsch. Math.-Ver. 5 no 2, 34-38	sole	B	exposition
+1997	Ten lessons I wish I had been taught (Czech transl.)	Pokroky Mat. Fyz. Astronom. 42, 217-222	sole	B	exposition
+1997	Introduction to Geometric Probability	Cambridge University Press, Lezioni Lincee	D. A. Klain	A	geometric probability
+1997	Stochastic integrals: a combinatorial approach	Ann. Probab. 25, 1257-1283	T. C. Wallstrom	A	probability
+1997	Combinatorics on Words 2nd ed. (Lothaire), series editor	Cambridge University Press	M. Lothaire (author)	B	editorial
+1998	Cinque dilemmi sull'era della comunicazione	Boll. Un. Mat. Ital. Sez. A (8) 1, 25-30	sole	B	philosophy
+1998	Ten mathematics problems I will never solve	Mitt. Dtsch. Math.-Ver. 6 no 2, 45-52	sole	B	exposition
+1998	Combinatorics, representation theory and invariant theory	Discrete Math. 193, 5-16	sole	B	history
+1998	The phenomenology of mathematical truth (Czech transl.)	Pokroky Mat. Fyz. Astronom. 43, 65-72	sole	B	philosophy
+1998	Geometric probability	Math. Intelligencer 20 no 4, 11-16	sole	B	exposition
+1998	Umbral calculus in Hilbert space	Progress in Mathematics 161, 213-238	A. Di Bucchianico, D. E. Loeb	A	combinatorics
+1998	Invariant theory, old and new (AMS Colloquium Lectures text)	circulated lecture text	sole	C	invariant theory
+1999	Combinatorial snapshots	Math. Intelligencer 21 no 2, 8-14	sole	B	exposition
+1999	Foreword to Stanley, Enumerative Combinatorics I (corrected reprint)	Cambridge University Press	R. P. Stanley (author)	B	editorial
+1999	Probability set functions	Ann. Comb. 3, 13-25	W. J. Bruno, D. C. Torney	A	probability
+1999	Two turning points in invariant theory	Math. Intelligencer 21 no 1, 20-27	sole	B	history

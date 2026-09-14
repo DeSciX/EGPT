@@ -1,0 +1,108 @@
+{
+ "entries": [
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "The Feynman path integral is the mathematicians' pons asinorum. Attempts to put it on a sound footing have generated more mathematics than any subject in physics since the hydrogen atom. To no avail. The mystery remains, and it will stay with us for a long time.",
+   "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
+   "locus": "pp. 229–230",
+   "date": "1997",
+   "theme": "feynman-integral",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed. “pons asinorum” is italicised in the printing."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "The Feynman integral, one of the most useful ideas in physics, stands as a challenge to mathematicians. While formally similar to Brownian motion, and while admitting some of the same manipulations as the ones that were made rigorous long ago for Brownian motion, it has withstood all attempts at rigor. Behind the Feynman integral there lurks an even more enticing (and even less rigorous) concept: that of an amplitude which is meant to be the quantum-mechanical analog of probability (one gets probabilities by taking the absolute values of amplitudes and squaring them: hence the slogan “quantum mechanics is the imaginary square root of probability theory”). A concept similar to that of a sample space should be brought into existence for amplitudes and quantum mechanics should be developed starting from this concept.",
+   "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
+   "locus": "pp. 229–230",
+   "date": "1997",
+   "theme": "feynman-integral",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed. The inner quotation marks around the slogan are the printing’s own."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "The theory of functional integration is one of those rare meeting points of several branches of mathematics. There is the algebra of creation and annihilation operators, the topology of Feynman diagrams, the combinatorics of Wick products, the analysis of the normal distribution, the probability of Wiener integrals, the physics of second quantization.",
+   "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
+   "locus": "pp. 229–230",
+   "date": "1997",
+   "theme": "feynman-integral",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed. The printed page break [230] falls inside this passage, after “the algebra of creation”."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "The maximum entropy principle is one of the hot potatoes of our day. It has not split the world of statistics as has Bayes' law, but no one has yet succeeded in finding a justification for it. Maybe we should make it one of the axioms of statistics.",
+   "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
+   "locus": "p. 229",
+   "date": "1997",
+   "theme": "entropy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "To the problem solver, the supreme achievement in mathematics is the solution to a problem that had been given up as hopeless. It matters little that the solution may be clumsy; all that counts is that it should be the first and that the proof be correct. Once the problem solver finds the solution, he will permanently lose interest in it, and will listen to new and simplified proofs with an air of condescension suffused with boredom.",
+   "work": "Indiscrete Thoughts, ch. III “Problem Solvers and Theorizers”",
+   "locus": "p. 45",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "To the theorizer, the supreme achievement of mathematics is a theory that sheds sudden light on some incomprehensible phenomenon. Success in mathematics does not lie in solving problems but in their trivialization. The moment of glory comes with the discovery of a new theory that does not solve any of the old problems but renders them irrelevant.",
+   "work": "Indiscrete Thoughts, ch. III “Problem Solvers and Theorizers”",
+   "locus": "p. 45",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed. Supersedes an earlier record of this passage taken from an OCR’d excerpt block in the same file, which read “a the¬ ory” and “does not he in solving”. This is the transcription of the page itself."
+  },
+  {
+   "speaker": "Robert Sokolowski",
+   "quote": "One of the phenomena that he develops in this book is that of “evidence.” Most people think that in mathematics truth is reached by proof, specifically by deriving theorems from axioms. Rota shows that such proof is only secondary and derivative. It is not the primary instance of truth. More basic than proof is evidence, which is the self-presentation of a given mathematical object or fact. We can know that some things are true, and we can even know that they must be true, before we have found axiomatic proofs to manifest that truth. We know more than we can prove. Rota shows that axiomatic derivations are ways in which we present mathematical objects and facts, ways in which we try to convey the evidence of the thing in question, ways in which we bring out the possibilities or virtualities of mathematical things. Proofs are valuable not because they bring us assurance that the theorem is in fact true, but because they show the power of the theorem: how the theorem can present itself and hence what it can be.",
+   "work": "Indiscrete Thoughts, Foreword by Robert Sokolowski",
+   "locus": "pp. xv–xvi",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed. “We know more than we can prove” is SOKOLOWSKI’S sentence, in his Foreword, describing Rota’s position — not a quotation of Rota. The book carries two forewords: Reuben Hersh (pp. ix–xii) and Robert Sokolowski (pp. xiii–xviii). The Hersh foreword and Rota’s own Introduction are not in this transcription, so if a second occurrence exists in either, it is not on disk."
+  },
+  {
+   "speaker": "Robert Sokolowski",
+   "quote": "Rota correctly observes that the depsychologizing of evidence is one of the great achievements of phenomenology.",
+   "work": "Indiscrete Thoughts, Foreword by Robert Sokolowski",
+   "locus": "p. xvi",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from a partial transcription of Indiscrete Thoughts (Birkhäuser, 1997), which carries the book’s own printed page markers in square brackets. The transcription is incomplete — the Hersh Foreword (pp. ix–xii), Rota’s own Introduction (pp. xix–xxv), Chapters I–II, most of Chapter VI and all of Part II are marked untranscribed. Sokolowski on Rota, not Rota’s own words."
+  }
+ ]
+}

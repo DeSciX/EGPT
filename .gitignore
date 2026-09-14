@@ -1,0 +1,17 @@
+# OS and Office noise
+.DS_Store
+*.tmp
+~$*
+
+# Out of tree by the author's copyright determination: these works are cited to their
+# published editions (see URLS.md) and their relied-upon passages are in 05_CORPUS/.
+# Listed so a stray copy cannot be committed by accident.
+Ulam_Adventures_of_a_Mathematician_Scribner_1976.pdf
+von_Neumann_The_Computer_and_the_Brain.pdf
+Adventures_ch12-13_OCR.txt
+
+# Correspondence not reproduced here; see URLS.md.
+Aspire Ventures Mail - A Gift in Quantum Computing Patent*.pdf
+
+# Staging area; nothing here is part of the collection.
+_to_delete/

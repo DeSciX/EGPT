@@ -1,0 +1,95 @@
+{
+ "entries": [
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter I: Introduction",
+   "locus": "opening paragraph",
+   "date": "c. 1992–93",
+   "theme": "probability",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/1992_Edition/ch1_Intro_and_Chapter_I.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from the 1992/93 Baclawski–Rota–Billis manuscript, \"Introduction to Probability Theory, Second Preliminary Edition\" — unpublished class text, not a published printing. Chapter numbering is the manuscript’s own.",
+   "quote": "Probability is one of the greatest achievements of this century. Like geometry, it is a way of looking at nature. There are many ways of approaching natural problems, many points of view. The geometrical point of view has been with us for thousands of years. The probabilistic point of view is another way of focusing on problems that has been successful in many instances. The purpose of this course is to learn to think probabilistically. Unfortunately the only way to learn to think probabilistically is to learn the theorems of probability. Only later, as one has mastered the theorems, does the probabilistic point of view begin to emerge while the specific theorems fade in one's memory, much as the grin on the Cheshire cat."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter I",
+   "locus": "following the opening paragraph",
+   "date": "c. 1992–93",
+   "theme": "probability",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/1992_Edition/ch1_Intro_and_Chapter_I.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from the 1992/93 Baclawski–Rota–Billis manuscript, \"Introduction to Probability Theory, Second Preliminary Edition\" — unpublished class text, not a published printing. Chapter numbering is the manuscript’s own.",
+   "quote": "We begin by giving a bird's-eye view of probability by examining some of the great unsolved problems of probability theory. It's only by seeing what the unsolved problems are that one gets a feeling for a field."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII: Entropy and Information",
+   "locus": "chapter opening",
+   "date": "c. 1992–93",
+   "theme": "entropy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from the 1992/93 Baclawski–Rota–Billis manuscript, \"Introduction to Probability Theory, Second Preliminary Edition\" — unpublished class text, not a published printing. Chapter numbering is the manuscript’s own.",
+   "quote": "That probability is closely connected with information should come as no surprise after problems such as exercise V.5 (the jailer paradox). What entropy does is to make this connection precise. In section 1, we discuss entropy for finite-valued random variables. In the next section we give a dramatic application of the law of large numbers to information theory: the Shannon Coding Theorem. Finally in section 3, we turn to the case of continuous random variables and prove that essentially all the interesting distributions we have seen in probability theory may be defined by entropy considerations."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII, §2 “The Shannon Coding Theorem”",
+   "locus": "§2, statement of the theorem",
+   "date": "c. 1992–93",
+   "theme": "entropy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from the 1992/93 Baclawski–Rota–Billis manuscript, \"Introduction to Probability Theory, Second Preliminary Edition\" — unpublished class text, not a published printing. Chapter numbering is the manuscript’s own. Mathematical notation is rendered in LaTeX in the on-disk file and has been dropped from this plain-text quotation; the sentence is otherwise verbatim.",
+   "quote": "Shannon's Theorem states that for any finite-valued random variable X, it is possible to encode efficiently a sequence of independent copies of X provided that: (1) one encodes a block X₁, X₂, …, Xₙ all at one time, (2) one is willing to accept a small probability of error, ε > 0, that a block is incorrectly coded, such that ε can be made arbitrarily small."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy”",
+   "locus": "§3, closing remark",
+   "date": "c. 1992–93",
+   "theme": "entropy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from the 1992/93 Baclawski–Rota–Billis manuscript, \"Introduction to Probability Theory, Second Preliminary Edition\" — unpublished class text, not a published printing. Chapter numbering is the manuscript’s own. This is the nearest sentence in the manuscript to the claim that the physics distributions are scaled Shannon entropy; the manuscript does not state that claim in those terms. Maxwell–Boltzmann, Fermi–Dirac and Bose–Einstein are named in Chapter III, not Chapter VIII.",
+   "quote": "There are more distributions determined by maximum entropy, especially those in statistical thermodynamics and quantum mechanics, but I trust that you now see the basic ideas."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy”",
+   "locus": "§3, on standard entropy",
+   "date": "c. 1992–93",
+   "theme": "entropy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from the 1992/93 Baclawski–Rota–Billis manuscript, \"Introduction to Probability Theory, Second Preliminary Edition\" — unpublished class text, not a published printing. Chapter numbering is the manuscript’s own.",
+   "quote": "In order to speak of the entropy of the phenomenon represented by a random variable, independent of scale changes, we introduce yet one more notion of entropy. The standard entropy of a random variable is the Boltzmann entropy of its standardization."
+  },
+  {
+   "speaker": "Essam Abadir",
+   "work": "RET Excerpt (LaTeX source, author's own document)",
+   "locus": "“Theorem (Informal)”",
+   "date": "",
+   "theme": "entropy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/Books/Rota/Rota_Entropy_Theorem/RET_Excerpt.tex",
+   "source_url": "",
+   "context": "",
+   "caution": "Filed so the record shows where this formulation actually sits. The document names Essam Abadir as its author; the Rota manuscript excerpted within it is separately marked by that document as the Baclawski–Rota–Billis class text. This sentence is the author’s own statement of the theorem, not a quotation from Rota.",
+   "quote": "All fundamental “continuous” physics distributions – notably the Maxwell–Boltzmann (MB), Fermi–Dirac (FD), and Bose–Einstein (BE) statistics – can be expressed as scaled versions of the discrete Shannon entropy functional."
+  }
+ ]
+}

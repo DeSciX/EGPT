@@ -1,0 +1,51 @@
+                        Kurt Gödel’s Letter to John von Neumann - 1956
+
+Princeton, 20 March 1956
+
+Dear Mr. von Neumann:
+
+With the greatest sorrow I have learned of your illness. The news came to me as quite unexpected. Morgen-
+stern already last summer told me of a bout of weakness you once had, but at that time he thought that this
+was not of any greater significance. As I hear, in the last months you have undergone a radical treatment
+and I am happy that this treatment was successful as desired, and that you are now doing better. I hope
+and wish for you that your condition will soon improve even more and that the newest medical discoveries,
+if possible, will lead to a complete recovery.
+
+Since you now, as I hear, are feeling stronger, I would like to allow myself to write you about a mathe-
+matical problem, of which your opinion would very much interest me: One can obviously easily construct a
+Turing machine, which for every formula F in first order predicate logic and every natural number n, allows
+one to decide if there is a proof of F of length n (length = number of symbols). Let Ψ(F, n) be the number of
+steps the machine requires for this and let ϕ(n) = maxF Ψ(F, n). The question is how fast ϕ(n) grows for an
+optimal machine. One can show that ϕ(n) ≥ k · n. If there really were a machine with ϕ(n) ∼ k · n (or even
+∼ k · n2 ), this would have consequences of the greatest importance. Namely, it would obviously mean that
+in spite of the undecidability of the Entscheidungsproblem, the mental work of a mathematician concerning
+Yes-or-No questions could be completely replaced by a machine. After all, one would simply have to choose
+the natural number n so large that when the machine does not deliver a result, it makes no sense to think
+more about the problem. Now it seems to me, however, to be completely within the realm of possibility
+that ϕ(n) grows that slowly. Since it seems that ϕ(n) ≥ k · n is the only estimation which one can obtain
+by a generalization of the proof of the undecidability of the Entscheidungsproblem and after all ϕ(n) ∼ k · n
+(or ∼ k · n2 ) only means that the number of steps as opposed to trial and error can be reduced from N to
+log N (or (log N )2 ). However, such strong reductions appear in other finite problems, for example in the
+computation of the quadratic residue symbol using repeated application of the law of reciprocity. It would
+be interesting to know, for instance, the situation concerning the determination of primality of a number and
+how strongly in general the number of steps in finite combinatorial problems can be reduced with respect to
+simple exhaustive search.
+
+I do not know if you have heard that “Post’s problem”, whether there are degrees of unsolvability among
+problems of the form (∃y)ϕ(y, x), where ϕ is recursive, has been solved in the positive sense by a very
+young man by the name of Richard Friedberg. The solution is very elegant. Unfortunately, Friedberg does
+not intend to study mathematics, but rather medicine (apparently under the influence of his father). By
+the way, what do you think of the attempts to build the foundations of analysis on ramified type theory,
+which have recently gained momentum? You are probably aware that Paul Lorenzen has pushed ahead with
+this approach to the theory of Lebesgue measure. However, I believe that in important parts of analysis
+non-eliminable impredicative proof methods do appear.
+
+I would be very happy to hear something from you personally. Please let me know if there is something that
+I can do for you. With my best greetings and wishes, as well to your wife,
+
+Sincerely yours,
+
+Kurt Gödel
+
+P.S. I heartily congratulate you on the award that the American government has given to you.
+

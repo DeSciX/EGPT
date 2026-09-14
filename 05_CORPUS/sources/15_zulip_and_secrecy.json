@@ -1,0 +1,69 @@
+{
+ "entries": [
+  {
+   "speaker": "Mario Carneiro",
+   "date": "26-30 April 2025",
+   "locus": "4:45 AM, marked EDITED",
+   "quote": "A good start would be to determine which of SCT or RET is more likely to be false (or mis-stated / misinterpreted). From your description, I’m inclined to say RET is the suspicious one: Physics is not able to magically solve NP complete problems on its own without a lengthy annealing process in practice, so I suspect something is being idealized incorrectly here.",
+   "work": "Lean Zulip, #Program verification > \"Request for Feedback: Lean 4 Proof related to P=NP\"",
+   "theme": "godel",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/",
+   "context": "SCT is Shannon's Coding Theorem; RET is Rota's Entropy Theorem.",
+   "caution": "Public Zulip thread. Read from the author's own PDF capture of the thread, dated 30 April 2025, mirrored in the evidence collection at 06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf and extracted with pdftotext. Timestamps are as the capture renders them; the capture does not print a date against every message, so the date field gives the thread's span."
+  },
+  {
+   "speaker": "Mario Carneiro",
+   "date": "26-30 April 2025",
+   "locus": "4:43 AM",
+   "quote": "I and many others have strong intuitions that say that P = NP is not provable, so it is probably not necessary to actually go as far as a formal proof to find the “minimal unintuitive lemma” buried in your derivation.",
+   "work": "Lean Zulip, #Program verification > \"Request for Feedback: Lean 4 Proof related to P=NP\"",
+   "theme": "godel",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/",
+   "context": "",
+   "caution": "Public Zulip thread. Read from the author's own PDF capture of the thread, dated 30 April 2025, mirrored in the evidence collection at 06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf and extracted with pdftotext. Timestamps are as the capture renders them; the capture does not print a date against every message, so the date field gives the thread's span."
+  },
+  {
+   "speaker": "Mario Carneiro",
+   "date": "26-30 April 2025",
+   "locus": "5:43 AM, marked EDITED",
+   "quote": "By the way, when I said “it will draw extreme skepticism” earlier that was euphemistic for “people will think you are a crank”. More skepticism is not always a good thing; if you crank it up too much, rather than getting maximal scrutiny you will get everyone ignoring your work, being dismissive, and/or not assuming you are acting in good faith, which is really not a recipe for productive interaction.",
+   "work": "Lean Zulip, #Program verification > \"Request for Feedback: Lean 4 Proof related to P=NP\"",
+   "theme": "godel",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/",
+   "context": "Carneiro continues: “I find this a slightly unfortunate aspect of mathematical research work; mathematicians working on a big theorem are known to keep the headline tightly under wraps until they’ve triple checked everything in order to be able to weather the inevitable storm of skepticism.”",
+   "caution": "Public Zulip thread. Read from the author's own PDF capture of the thread, dated 30 April 2025, mirrored in the evidence collection at 06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf and extracted with pdftotext. Timestamps are as the capture renders them; the capture does not print a date against every message, so the date field gives the thread's span."
+  },
+  {
+   "speaker": "Essam Abadir",
+   "date": "26-30 April 2025",
+   "locus": "quoted back by Mario Carneiro at 5:43 AM",
+   "quote": "Yes, I put the headline theorem right at the top. That violates the usual etiquette of “under-promise, over-deliver”, and I did it on purpose. I wanted maximal scrutiny: if the foundation is sand, better the tower collapses in public.",
+   "work": "Lean Zulip, #Program verification > \"Request for Feedback: Lean 4 Proof related to P=NP\"",
+   "theme": "godel",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/",
+   "context": "",
+   "caution": "Public Zulip thread. Read from the author's own PDF capture of the thread, dated 30 April 2025, mirrored in the evidence collection at 06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf and extracted with pdftotext. Timestamps are as the capture renders them; the capture does not print a date against every message, so the date field gives the thread's span."
+  },
+  {
+   "speaker": "United States Congress",
+   "date": "1951",
+   "locus": "§ 181, first paragraph",
+   "quote": "Whenever publication or disclosure by the publication of an application or by the grant of a patent on an invention in which the Government has a property interest might, in the opinion of the head of the interested Government agency, be detrimental to the national security, the Commissioner of Patents upon being so notified shall order that the invention be kept secret and shall withhold the publication of the application or the grant of a patent therefor under the conditions set forth hereinafter.",
+   "work": "Invention Secrecy Act, 35 U.S.C. § 181 — “Secrecy of certain inventions and withholding of patent”",
+   "theme": "secrecy",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://www.law.cornell.edu/uscode/text/35/181",
+   "context": "",
+   "caution": "Statutory text as currently codified, read at Cornell LII via web fetch, which passes page content through an intermediate summarising model; not read from a printed copy."
+  }
+ ]
+}

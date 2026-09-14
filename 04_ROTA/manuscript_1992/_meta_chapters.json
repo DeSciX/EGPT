@@ -1,0 +1,126 @@
+{
+  "book_title": "Introduction to Probability and Random Processes",
+  "author": "Gian-Carlo Rota",
+  "edition": "1992",
+  "institution": "MIT",
+  "course": "18.313",
+  "chapters": [
+    {
+      "filename": "ch1_Intro_and_Chapter_I.md",
+      "chapter": 1,
+      "title": "Introduction and Chapter I",
+      "summary": "Foundations of probability theory: sample spaces, events, axioms of probability. Introduces the Bernoulli process as a fair coin toss generating bit sequences. Covers finite sample spaces, combinatorial counting (Maxwell-Boltzmann, Bose-Einstein, Fermi-Dirac statistics), and the basic framework for all subsequent chapters.",
+      "egpt_relevance": "The Bernoulli process as an IID bit-stream generator is the exact physical model underlying EGPT's IIDParticleSource. The three counting regimes (MB, BE, FD) map directly to EGPT's particle statistics. The axiomatization of probability from sample spaces is the starting point for the Rota Entropy Theorem's derivation of Shannon entropy from first principles.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "original_pdf": "ch1 - Intro and Chapter I.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": 2,
+      "title": "Sets, Events, and Probability",
+      "summary": "Formal set-theoretic foundations: sigma-algebras, event spaces, probability measures. Covers combinatorics of sets, binomial coefficients, multinomial coefficients, occupancy problems, and the inclusion-exclusion principle. Establishes the mathematical infrastructure for defining random variables and processes.",
+      "egpt_relevance": "The combinatorial identities (binomial coefficients, multinomial expansions) reappear throughout EGPT's number theory. The inclusion-exclusion principle connects to Rota's later work on Moebius functions on lattices, which underpins the algebraic structure of the Rota Entropy Theorem.",
+      "idea_tags": ["ID1", "ID3"],
+      "original_pdf": "ch2 - Sets, Events, and Probability.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": 3,
+      "title": "Finite Processes",
+      "summary": "Stochastic processes on finite sample spaces: Bernoulli trials, binomial distribution, random walks on integers. Introduces waiting times, the geometric distribution, and the negative binomial distribution. Covers the ballot problem and reflection principle.",
+      "egpt_relevance": "Random walks on the integers are the discrete prototype for EGPT's ParticlePath model. The waiting time analysis (geometric distribution from Bernoulli trials) is the probabilistic foundation for the 1/N harmonic measure that appears in the LFTA and the Rota RH Addendum. The reflection principle connects to symmetry arguments used in EGPT's proof of the Continuum Hypothesis.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "original_pdf": "ch3 - Finite Processes.pdf"
+    },
+    {
+      "filename": "ch4_Random_Variables.md",
+      "chapter": 4,
+      "title": "Random Variables",
+      "summary": "Formal treatment of random variables: distributions, expectation, variance, moments, generating functions. Covers indicator random variables, linearity of expectation, independence of random variables, and the law of large numbers. Introduces moment generating functions and characteristic functions.",
+      "egpt_relevance": "The generating function framework is the algebraic backbone of EGPT's encoding: the PPF representation of natural numbers is essentially a generating function over prime factors. Linearity of expectation via indicator random variables foreshadows the additive entropy structure central to EGPT. The law of large numbers provides the probabilistic guarantee that IID processes converge, which is essential for the ParticlePath bijection's well-definedness.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "original_pdf": "ch4 - Random Variables.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": "4.2",
+      "title": "Random Variables — Exercises",
+      "summary": "Exercise supplement for Chapter IV covering applications of random variable theory: computing expectations and variances for various distributions, generating function problems, applications of the law of large numbers.",
+      "egpt_relevance": "Computational practice with the tools that become EGPT's core machinery.",
+      "idea_tags": ["ID1", "ID3"],
+      "original_pdf": "ch4.2 - Random Variables Part 2.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": 5,
+      "title": "Statistics and the Normal Distribution",
+      "summary": "The normal (Gaussian) distribution as the limiting distribution of sums of independent random variables. Central Limit Theorem, confidence intervals, hypothesis testing, standard deviation. Covers the de Moivre-Laplace theorem, continuity correction, and applications to statistical inference.",
+      "egpt_relevance": "The Central Limit Theorem's universality — that all sufficiently well-behaved sums converge to the same distribution regardless of the underlying process — is an early instance of the 'address is the map' principle: the limiting behavior is determined by the structure (mean and variance) rather than the specific details. The normal distribution's maximum entropy property among distributions with fixed variance connects directly to Rota's entropy uniqueness theorem.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "original_pdf": "ch5.1 - Statistics and the Normal Distribution.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": "5.2",
+      "title": "Statistics and the Normal Distribution — Exercises",
+      "summary": "Exercise supplement for Chapter V covering applications of the normal distribution: CLT computations, confidence interval construction, hypothesis testing problems.",
+      "egpt_relevance": "Practice with the Gaussian machinery that reappears in EGPT's analysis of random walk convergence.",
+      "idea_tags": ["ID1", "ID3"],
+      "original_pdf": "ch5.2 - Statistics and The Normal Distribution Exercises.pdf"
+    },
+    {
+      "filename": "ch6_Conditional_Probability.md",
+      "chapter": 6,
+      "title": "Conditional Probability",
+      "summary": "Conditional probability, law of alternatives, Bayes' law, conditional expectation. Covers conditional distributions, independence revisited through conditional probability, and the chain rule. Introduces the concept of information gain through conditioning — observing an event changes probabilities.",
+      "egpt_relevance": "Conditional probability is the mathematical formalization of 'updating information.' The law of alternatives and Bayes' law are the computational tools that connect EGPT's information-theoretic framework to classical probability. The idea that conditioning reduces uncertainty is a direct precursor to entropy as information measure, formalized in Chapter VIII.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "original_pdf": "ch6 - Conditional Probability.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": "6.2",
+      "title": "Conditional Probability — Exercises",
+      "summary": "Exercise supplement for Chapter VI covering applications of conditional probability: Bayesian inference problems, conditional expectation computations, and paradoxes of conditional reasoning.",
+      "egpt_relevance": "Exercises that sharpen intuition about information update — the probabilistic operation that EGPT elevates to a foundational principle.",
+      "idea_tags": ["ID1", "ID3"],
+      "original_pdf": "ch6.2 - Conditional Probability Exercises.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": 7,
+      "title": "The Poisson Process",
+      "summary": "The Poisson distribution as the limit of rare events. Poisson process: memoryless arrivals, exponential waiting times, superposition and thinning. Covers the relationship between Poisson and binomial distributions, and applications to queuing theory, radioactive decay, and telephone networks.",
+      "egpt_relevance": "The Poisson process's memoryless property is the continuous-time analog of the Markov property that Chapter IX formalizes for discrete chains. The exponential waiting time distribution's maximum entropy property (among distributions with fixed mean on the positive reals) parallels the discrete entropy uniqueness that Rota proves for Shannon entropy. The Poisson-prime connection (primes arrive like Poisson events with density 1/log n) is the bridge to the Euler product and the Riemann Hypothesis in the Rota RH Addendum.",
+      "idea_tags": ["ID1", "ID3", "ID4"],
+      "original_pdf": "ch7 - The Poisson Process.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": "7.2",
+      "title": "The Poisson Process — Exercises",
+      "summary": "Exercise supplement for Chapter VII covering Poisson process applications: queuing problems, compound Poisson processes, and waiting time calculations.",
+      "egpt_relevance": "Computational exercises with the process models that underlie EGPT's discrete-to-continuous correspondence.",
+      "idea_tags": ["ID1", "ID3"],
+      "original_pdf": "ch7.2 - Poisson Process Excercises.pdf"
+    },
+    {
+      "filename": null,
+      "chapter": 8,
+      "title": "Entropy and Information",
+      "summary": "Shannon entropy: definition, properties, uniqueness theorem. Covers entropy of partitions, conditional entropy, mutual information, the Shannon coding theorem, and data compression. Proves that Shannon entropy is the unique function satisfying natural axioms (continuity, maximality at uniform distribution, additivity for independent events). Source coding and channel capacity.",
+      "egpt_relevance": "This is the single most important chapter for EGPT. Rota's entropy uniqueness theorem (that Shannon entropy is the unique measure satisfying natural axioms) is formalized in EGPT as RotaUniformTheorem. The Shannon coding theorem becomes EGPT's LFTA (Logarithmic Fundamental Theorem of Arithmetic): log N = sum e_j log p_j. The 'fair Bernoulli process generates all integers' insight, combined with entropy uniqueness, is the foundation for the entire EGPT proof chain from ParticlePath through P=NP. The additive structure of entropy over independent partitions maps directly to the multiplicative structure of natural numbers via the Fundamental Theorem of Arithmetic.",
+      "idea_tags": ["ID1", "ID2", "ID3", "ID4", "ID5"],
+      "original_pdf": "ch8 - Entropy and Information.pdf"
+    },
+    {
+      "filename": "ch9_Markov_Chains.md",
+      "chapter": 9,
+      "title": "Markov Chains",
+      "summary": "Discrete-time Markov chains: the Markov property, transition matrices, homogeneous chains. Covers the gambler's ruin problem via difference equations, graphs of Markov chains, the Ehrenfest diffusion model, genetics models (Hardy-Weinberg law), balls-into-boxes. Defines the Markov sample space, connectivity, persistence and transience, periodicity. Introduces ergodic Markov chains and proves the Recurrence Theorem: steady state distributions exist and equal the inverse of mean recurrence times. Extensive exercises on chemical reactions, random walks with barriers, and genetic drift.",
+      "egpt_relevance": "Markov chains on discrete state spaces are the mathematical formalization of random walks on graphs — exactly the model underlying EGPT's ParticlePath representation. The Ehrenfest diffusion model (particles in urns converging to binomial distribution = fair coin tosses) is a physical demonstration of the 'address is the map' principle: the steady state is determined by the structure, not the initial conditions. The Recurrence Theorem's statement that steady state probabilities equal inverse mean recurrence times is the probabilistic analog of EGPT's claim that in maximally compressed information space, the address of an element determines its computational cost. The ergodic theorem's independence from initial conditions parallels EGPT's central claim that P=NP in information space — the computational path is determined by the structure of the problem, not by the algorithm chosen.",
+      "idea_tags": ["ID1", "ID3", "ID4", "ID5"],
+      "original_pdf": "ch9 - Markov Chains.pdf"
+    }
+  ]
+}

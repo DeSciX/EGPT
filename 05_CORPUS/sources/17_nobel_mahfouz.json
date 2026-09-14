@@ -1,0 +1,43 @@
+{
+ "entries": [
+  {
+   "speaker": "Sture Allén",
+   "quote": "Your rich and complex work invites us to reconsider the fundamental things in life.",
+   "work": "Presentation speech for the Nobel Prize in Literature 1988, awarded to Naguib Mahfouz, on behalf of the Swedish Academy",
+   "locus": "closing address to the laureate",
+   "date": "10 December 1988",
+   "theme": "understanding-and-meaning",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://www.nobelprize.org/prizes/literature/1988/ceremony-speech/",
+   "context": "The speech quotes Mahfouz on time — “Time cuts like a sword. If you don’t kill it, it kills you.” — and speaks of love as a source of strength in an inexplicable world.",
+   "caution": "Read at nobelprize.org via web fetch, which passes page content through an intermediate summarising model; not collated against the printed Nobel Lectures volume."
+  },
+  {
+   "speaker": "The Swedish Academy",
+   "quote": "the forming of an Arabian narrative art that applies to all mankind",
+   "work": "Nobel Prize in Literature 1988, prize motivation",
+   "locus": "",
+   "date": "1988",
+   "theme": "understanding-and-meaning",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://www.nobelprize.org/prizes/literature/1988/ceremony-speech/",
+   "context": "",
+   "caution": "Read at nobelprize.org via web fetch, which passes page content through an intermediate summarising model."
+  },
+  {
+   "speaker": "The Nobel Foundation",
+   "quote": "God’s World : an Anthology of Short Stories / transl. with an introd. by Akef Abadir and Roger Allen. – Minneapolis : Bibl. Islamica, 1973",
+   "work": "Naguib Mahfouz — Bibliography, nobelprize.org",
+   "locus": "works in English translation",
+   "date": "1988",
+   "theme": "understanding-and-meaning",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://www.nobelprize.org/prizes/literature/1988/mahfouz/bibliography/",
+   "context": "",
+   "caution": "A bibliographic entry, not a spoken or authored sentence; transcribed exactly as the Nobel bibliography prints it, abbreviations included. Read at nobelprize.org via web fetch, which passes page content through an intermediate summarising model."
+  }
+ ]
+}

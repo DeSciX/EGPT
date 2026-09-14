@@ -1,0 +1,108 @@
+{
+ "entries": [
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Ten: “Mathematics is still the queen of the sciences”",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number. “desigers” for “designers” is in the capture. This is the passage sometimes recalled as being in the Los Alamos Science No. 12 dialogue with David Sharp; it is not. All fifteen pages of LA-UR-85-2000 were read and contain no mention of number theory, cryptography or “useless”.",
+   "quote": "It is a fact, confirmed by the history of science since Galileo and Newton, that the more theoretical and removed from immediate applications a scientific topic appears to be, the more likely it is to eventually find the most striking practical applications. Consider number theory, which only 20 years ago was believed to be the most useless chapter of mathematics and is today the core of computer security. The efficient factorization of integers into prime numbers, a topic of seemingly breathtaking obscurity, is now cultivated with equal passion by software desigers and code breakers."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Ten",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number. “practicially” for “practically” is in the capture.",
+   "quote": "I am often asked why there are so few applied mathematicians in the department at MIT. The reason is that all of MIT is one huge applied mathematics department; you can find applied mathematicians in practicially every department at MIT except mathematics."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Ten",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number.",
+   "quote": "When an undergraduate asks me whether he or she should major in mathematics rather than in another field that I will simply call X, my answer is the following: “If you major in mathematics, you can switch to X anytime you want to, but not the other way around.”"
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Four: “In science and engineering, you can fool very little of the time”",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number. “know dearly” appears where “know clearly” or “know dearly what” would be expected; reproduced as captured.",
+   "quote": "An education in engineering and science is an education in intellectual honesty. Students cannot avoid learning to acknowledge whether or not they have really learned. Once they have taken their first quiz, all MIT undergraduates know dearly they will pay if they fool themselves into believing they know more than is the case."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Three: “By and large, ‘knowing how’ matters more than ‘knowing what’”",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number. “asses” for “assess” is in the capture.",
+   "quote": "It is my theory that “knowing how” is revered because it can be tested. One can test whether a student can apply quantum mechanics, communicate in French, or clone a gene. It is much more difficult to asses an interpretation of a poem, the negotiation of a complex technical compromise, or grasp of the social dynamics of a small, diverse working group. Where you can test, you can set a high standard of proficiency on which everyone is agreed; where you cannot test precisely, proficiency becomes something of a judgment call."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Five: “You don’t have to be a genius to do creative work”",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number.",
+   "quote": "The idea of genius elaborated during the Romantic Age (late 18th and 19th centuries) has done harm to education. It is demoralizing to give a young person role models of Beethoven, Einstein, and Feynman, presented as saintly figures who moved from insight to insight without a misstep. Scientific biographies often fail to give a realistic description of personality, and thereby create a false idea of scientific work."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Five",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number.",
+   "quote": "Students learn that some of the best ideas arise in groups of scientists and engineers working together, and the source of these ideas can seldom be pinned on specific individuals. The MIT model of scientific work is closer to the communion of artists that was found in the large shops of the Renaissance than to the image of the lonely Romantic genius."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "work": "“Ten Lessons of an MIT Education”",
+   "locus": "Lesson Two: “You learn what you don’t know you are learning”",
+   "date": "1997",
+   "theme": "rota-thought",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+   "source_url": "",
+   "context": "",
+   "caution": "Read on disk from an HTML capture of the essay, published in the MIT Faculty Newsletter / MIT Technology Review (also collected as the closing essay of Indiscrete Thoughts). The capture carries typographic and typing errors that are reproduced verbatim here — flagged per quotation. It has no page apparatus, so the citation is by lesson number.",
+   "quote": "But I know that by making the effort to understand the solution of a truly difficult problem discovered by one of their peers, students learn more than they would by working out some less demanding exercise."
+  }
+ ]
+}
