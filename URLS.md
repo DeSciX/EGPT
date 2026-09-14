@@ -52,12 +52,12 @@ describes has since published, and the publication is the citation of record.
 | Inventor | Essam Abadir |
 | Filed | 6 November 2024 |
 | Published | 7 May 2026 |
-| Full text | https://patents.google.com/patent/US20260127327A1/en |
+| Full text (USPTO) | https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260127327 |
+| Full text (mirror) | https://patents.google.com/patent/US20260127327A1/en |
 
-The publication number is the stable citation. The All-In letter links the document through the
-USPTO Patent Public Search download endpoint, and that URL carries a per-session request token —
-it is the link as it was sent, and it is not expected to resolve for another reader. Cite the
-number.
+The publication number is the stable citation. Both links above were checked and serve the
+document itself; the USPTO one returns the 15-page publication PDF, whose front page reads
+"Pub. No.: US 2026/0127327 A1 … Pub. Date: May 7, 2026".
 
 ## Web sources cited in the update letter
 

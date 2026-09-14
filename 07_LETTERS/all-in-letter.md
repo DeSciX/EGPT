@@ -30,7 +30,7 @@ So when I tell you that I have multiple MIT degrees and a JD, exits to Intel and
 
 As founders, you know that all that matters is whether you built the thing. All that matters is that I've actually built Ulam and von Neumann's fusion of AI with quantum computing “Thing" \- and it runs efficiently enough to use on an iPhone.
 
-The relevant patent application here \- "QUANTUM COMPUTING FRACTAL COMPRESSION AND DECENTRALIZED COMPUTING FOR PREDICTIVE PHYSICS SIMULATION" \- was filed two years ago. The product is built, and it is called FRQTL, for Frame and QuanTum Language (pronounced "fractal"). The patent application was under publication hold for security review for over a year and [its publication was just recently made available](https://ppubs.uspto.gov/api/pdf/downloadPdf/US-20260127327-A1?source=US-PGPUB&requestToken=eyJzdWIiOiJmMmE3ZWIzYS00YjdiLTQ4NWYtOTk5NC0xZmE5NjRhZjExNzYiLCJ2ZXIiOiI3NzFiMzQ5NC00YWNiLTQxNDMtOGNhMS0wY2UyNGU3ZGY1ZmQiLCJleHAiOjB9).
+The relevant patent application here \- "QUANTUM COMPUTING FRACTAL COMPRESSION AND DECENTRALIZED COMPUTING FOR PREDICTIVE PHYSICS SIMULATION" \- was filed two years ago. The product is built, and it is called FRQTL, for Frame and QuanTum Language (pronounced "fractal"). The patent application was under publication hold for security review for over a year and [its publication was just recently made available](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260127327).
 
 ## My ask
 

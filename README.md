@@ -86,6 +86,30 @@ the decision to publish. The earlier patent correspondence is not reproduced
 here; the patent application it concerns is now published as US 2026/0127327 A1
 and is cited in `URLS.md`.
 
+## Edits made for public access
+
+A few items were edited so the collection could be published. All of them are non-substantive —
+none changes what a document says, argues or evidences — and they are listed here rather than
+left to be discovered, because a collection that asks to be checked should say where it has been
+touched.
+
+- **`02_VON_NEUMANN/letters_to_godel/1956-LETTER-PROVENANCE.md`** — a closing section of internal
+  working notes was removed: task assignments to other people, and paths inside the author's
+  private repository. The provenance record itself, the recovery facts and the table comparing the
+  authoritative letter against the earlier reconstruction are untouched.
+- **`05_CORPUS/sources/15_zulip_and_secrecy.json`** — four sourcing notes said the Zulip thread was
+  read from a capture held in a folder on the author's machine. They now name the capture as it is
+  mirrored here, at `06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf`, so the
+  provenance resolves for a reader instead of pointing at a disk they cannot see.
+- **`07_LETTERS/all-in-letter.md`** — the patent link was changed. As sent it reached the document
+  through a Patent Public Search URL carrying a per-session token, which does not resolve for
+  anyone else; it now points at the USPTO's permanent document URL for the same publication,
+  US 2026/0127327 A1. The link is different; the document is the same one.
+
+Separately, some works are cited but not reproduced here at all — two in copyright, and the patent
+correspondence. Those are named in `URLS.md`, with the corpus records that carry what the report
+and the letter draw from them.
+
 ## What this collection is not
 
 It is not neutral and does not present itself as neutral: it is the evidentiary
