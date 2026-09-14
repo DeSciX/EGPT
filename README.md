@@ -83,7 +83,8 @@ proof-chain records and `EGPT_InformationTheory_Basic.lean`, where
 
 **`07_LETTERS/`** — the original All-In letter and the update letter announcing
 the decision to publish. The earlier patent correspondence is not reproduced
-here; see `URLS.md`.
+here; the patent application it concerns is now published as US 2026/0127327 A1
+and is cited in `URLS.md`.
 
 ## What this collection is not
 

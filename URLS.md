@@ -40,6 +40,25 @@ follows the citation to the published book rather than to a scan.
 | Stanislaw M. Ulam, *Adventures of a Mathematician* (New York: Charles Scribner's Sons, 1976); University of California Press reprint, 1991 | In print; widely held. The Scribner and UC Press printings carry the same pagination for the passages cited. | 13 records: the 1957 research-adviser appointment and Carson Mark (ch. 13, pp. 249–251), von Neumann's last years and the cellular-automata proposal (ch. 12, pp. 241–242), the Monte Carlo passage (pp. 196–197), and the Bohr and complementarity material with Fermi on the Schrödinger equation (pp. 165–168). |
 | John von Neumann, *The Computer and the Brain* (New Haven: Yale University Press, 1958); Yale Nota Bene 2000; 3rd edition 2012 | In print; widely held. Page numbers in the corpus name the printing they were read in, which differs between the 1958 first edition and the Yale reprints for front matter. | 14 records: the complete-code and short-code definitions (pp. 70–73), the precision-for-reliability trade (p. 80), the closing section on the language of the brain (pp. 81–83), and Klara von Neumann's preface. |
 
+## The patent, and the correspondence about it
+
+The January 2025 letter offering the token gift is not reproduced here. The patent application it
+describes has since published, and the publication is the citation of record.
+
+| | |
+|---|---|
+| Publication number | **US 2026/0127327 A1** |
+| Title | Quantum Computing Fractal Compression and Decentralized Computing for Predictive Physics Simulation |
+| Inventor | Essam Abadir |
+| Filed | 6 November 2024 |
+| Published | 7 May 2026 |
+| Full text | https://patents.google.com/patent/US20260127327A1/en |
+
+The publication number is the stable citation. The All-In letter links the document through the
+USPTO Patent Public Search download endpoint, and that URL carries a per-session request token —
+it is the link as it was sent, and it is not expected to resolve for another reader. Cite the
+number.
+
 ## Web sources cited in the update letter
 
 | Item | URL |

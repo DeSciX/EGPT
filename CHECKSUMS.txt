@@ -1,8 +1,8 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 135 files, 101005803 bytes.
+# 135 files, 101041982 bytes.
 2b622e149c0b0293c93b79ab5aca6d4468c9abfbaf0640dc1e37392d6b3435b2  00_OUTPUTS/Departure_Not_Complement_Quote_Pack.md
-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  00_OUTPUTS/EGPT_Backstory.md
+e01996399ad1d12648ba1cff4159beeb98d841e44197b841cd1c3e8070c383ff  00_OUTPUTS/EGPT_Backstory.md
 e98a7b4241a1fe2b88e5c62573a132f3cb528e6a8212dc83c050a42f2308107e  00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx
 c8a296427c7e0446cce071c465e2971eab83e15e1e634874ec9a510442366dc6  00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf
 9463232d6ddc1d5a5d5357a409a8849d17839c193a185f6d80abf0d4e954d486  00_OUTPUTS/Rota_Bibliography_Exhibit.tsv
@@ -133,6 +133,6 @@ e664e3d9eca1e8ffd341498bceb4382c03baa4365533ad6402c6734082dcb383  06_LEAN_MATHLI
 5e5de3a0211e761ebaada4a65967cef04446078595b3af2845ae7f1cc452ba0d  06_LEAN_MATHLIB/zulip-2025-08-thread-and-dm-reactions.png
 c2646137aa80243b2074088435c192f3c85aeb320940663c3b407a2de06398b9  06_LEAN_MATHLIB/zulip-account-suspension-2026-04-01.png
 c1f6f22441179eeb6497254c601beebeff3a408d593e11f8561d8ac41ef2a89e  06_LEAN_MATHLIB/zulip-moderation-and-conduct.md
-f61a1a49af6a9d644539dccb75a369c78c896d3c1ce6293a9c1b8c8fc6eda165  07_LETTERS/all-in-letter.md
+01217327d8982d960035684b78c17b9ec458a83ba4e24cf2169e20c418b3334d  07_LETTERS/all-in-letter.md
 430217ec58941930bb078e81bde0b949125641c5f43f47fb989e706e91692563  07_LETTERS/all-in-update-letter-decision-to-publish.md
 15062f21e3b54ce4f40f04ecdb21d69768ffc58ec903b42d24e4ffba50d390df  07_LETTERS/realists-vs-morons-quotes.md
