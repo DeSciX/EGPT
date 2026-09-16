@@ -1,6 +1,6 @@
 # Sources held only as links
 
-Everything in `MANIFEST.tsv` is mirrored in this folder. The items below are
+Everything in `CHECKSUMS.txt` is mirrored in this folder. The items below are
 not. They are cited in the report or the letter, and they live somewhere else.
 This file exists so that the boundary between what is held here and what is
 merely pointed at is stated rather than implied.

@@ -27,12 +27,12 @@
     },
     "restored": {"type":"string","description":"The words an ellipsis or an unmarked cut removed, verbatim. Empty when nothing was cut. Says so explicitly when the elided text was not recovered. NEVER interpretation."},
     "sourcing": {"type":"string","description":"Mechanical and sourcing facts ONLY: printing read, secondary-source chains, OCR and ligature repair, spelling variants, whose emphasis, who is actually speaking, divergent printings. NEVER a characterisation of what the work argues, proves or extends; never a ranking of a source's standing; never a claim of influence between authors."},
-    "verification": {"enum":["PRIMARY-TEXT-READ","SECONDARY-SOURCE","PARTIAL","PENDING-VERIFY","RECONSTRUCTED","NOT-FOUND"],
-      "description":"PRIMARY-TEXT-READ = the printing itself was read. SECONDARY-SOURCE = reached through an identified intermediary whose rendering is the text quoted. PARTIAL = read, but a portion was unreadable or unavailable. PENDING-VERIFY = wording is circulating and no intermediary is identified. RECONSTRUCTED = the on-disk text declares itself a reconstruction, not a transcription; DO NOT PRINT AS A QUOTATION. NOT-FOUND = searched for and demonstrably absent; the row records the negative result."},
+    "verification": {"enum":["PRIMARY-TEXT-READ","SECONDARY-SOURCE","PARTIAL","PENDING-VERIFY","RECONSTRUCTED"],
+      "description":"PRIMARY-TEXT-READ = the printing itself was read. SECONDARY-SOURCE = reached through an identified intermediary whose rendering is the text quoted. PARTIAL = read, but a portion was unreadable or unavailable. PENDING-VERIFY = wording is circulating and no intermediary is identified. RECONSTRUCTED = the on-disk text declares itself a reconstruction, not a transcription; DO NOT PRINT AS A QUOTATION. A record with no quote is not a record and is rejected by the build."},
     "years": {"type":"array","items":{"type":"integer"},"description":"Every four-digit year in the `date` field, and ONLY that field. The `work` field is deliberately excluded because it carries publication, translation and revision years for the printing a passage was read in, which are not the year the thing was said: a 1956 letter read in a 2006 revision of a 1993 translation is a 1956 quotation. A record may carry more than one year when the date itself names more than one — an address and its later printing, say — and matches a range filter if any of them falls inside it."},
     "themes": {"type":"array","items":{"type":"string"}},
     "collections": {"type":"array","items":{"type":"string"},"description":"which extraction pass produced it; a record found by more than one pass carries both"},
-    "quote_sha256": {"type":["string","null"],"description":"sha256 of the whitespace-normalised quote. Null for NOT-FOUND rows. Dedupe and integrity key."},
+    "quote_sha256": {"type":["string","null"],"description":"sha256 of the whitespace-normalised quote. Dedupe and integrity key."},
     "embed_text": {"type":"string","description":"Concatenation built for vectorisation: speaker | work | locus | date | quote | restored. Regenerate if any component changes."}
   }
 }

@@ -29,12 +29,11 @@ Read it before quoting anything.
 | `PARTIAL` | read, but part was unreadable or unavailable |
 | `PENDING-VERIFY` | wording circulates and no intermediary is identified. Distinct from `SECONDARY-SOURCE`: a known, named intermediary is a chain of custody, not an unknown |
 | `RECONSTRUCTED` | the source file declares itself a reconstruction — **do not print as a quotation** |
-| `NOT-FOUND` | searched for and demonstrably absent; the row records the negative result |
 
-`NOT-FOUND` rows have an empty `quote` and a null `quote_sha256`. One is kept only when the absence
-is itself the finding and no record replaces it. When a passage later turns up, the `NOT-FOUND` row
-is **deleted** and the negative result folded into the sourcing note of the record that now carries
-the text — there is one record per passage, and no pointer rows.
+Every record carries a passage. A record with an empty `quote` is rejected by the build: a search
+that found nothing cannot be quoted and a reader cannot check it, so it is not evidence and is not
+kept here. Where a search bears on a passage that IS held, it belongs in that record's sourcing
+note — one record per passage, and no pointer rows.
 
 When a better text of a passage is obtained, the earlier record is **replaced, not annotated**. The
 corpus holds one text per passage; it is not a changelog.

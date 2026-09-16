@@ -1,7 +1,5 @@
 # Quotations
 
-> Picking this up cold? Read [`AGENT_HANDOFF.md`](AGENT_HANDOFF.md) first.
-
 One place for every quotation gathered for the robotic-imagination work: a single record format,
 the extraction passes that produced it, and a composer for writing new papers out of it.
 
@@ -15,23 +13,19 @@ the extraction passes that produced it, and a composer for writing new papers ou
     build_corpus.py    sources/ -> corpus/    (deterministic)
     build_composer.py  corpus/  -> composer/composer.html
 
-## 254 quotations, 58 speakers
+## 295 quotations, 66 speakers
 
 | verification | n | |
 |---|---:|---|
-| `PRIMARY-TEXT-READ` | 214 | the printing itself was read, or the author holds the physical book |
-| `SECONDARY-SOURCE` | 33 | reached through an identified intermediary whose rendering is the text quoted |
-| `PARTIAL` | 5 | read, but part was unreadable or unavailable |
+| `PRIMARY-TEXT-READ` | 256 | the printing itself was read, or the author holds the physical book |
+| `SECONDARY-SOURCE` | 35 | reached through an identified intermediary whose rendering is the text quoted |
+| `PARTIAL` | 4 | read, but part was unreadable or unavailable |
 | `RECONSTRUCTED` | 0 | defined, currently unused: a source file that declares itself a reconstruction — **do not print as a quotation** |
-| `NOT-FOUND` | 2 | searched for and demonstrably absent |
 | `PENDING-VERIFY` | 0 | defined, currently unused: wording circulates and no intermediary is identified |
 
-The two `NOT-FOUND` rows record absences that nothing replaces: no von Neumann statement naming or
-endorsing Shannon appears anywhere in the complete Macy transcripts, the Hixon automata paper or
-Heims. A documented absence of that kind is a finding and is kept.
-
-When a passage later turns up, its `NOT-FOUND` row is deleted and the negative result folded into
-the sourcing note of the record that carries the text — so the number-theory search lives in the
+Every record is a passage someone wrote or said. A search that found nothing is not a record: it
+cannot be quoted and a reader cannot check it against anything. Where a search bears on a passage
+that IS held, it belongs in that record's sourcing note — so the number-theory search lives in the
 *Ten Lessons* record, which also states that the passage is not in the Los Alamos dialogue. One
 record per passage; no pointer rows, no superseded rows, no banners. The corpus is the current state
 of the evidence, not its history.
@@ -64,7 +58,7 @@ interpretation. What a work argues, proves or extends is for the paper you write
 Open `composer/composer.html` in a browser. Nothing to install and nothing to serve — the corpus is
 inlined, so it works from `file://` and offline.
 
-Three panes. **Library** filters 223 quotations by speaker (listed by last name), theme, verification, year
+Three panes. **Library** filters 295 quotations by speaker (listed by last name), theme, verification, year
 range and full text; click one to add it. The year range hides undated quotations while it is set,
 and says so. **Paper** is the document: quotes plus your own headings, prose and holding blocks,
 reordered by drag or by the arrows. **Preview** renders it live and exports a self-contained HTML
@@ -139,3 +133,20 @@ Drop a JSON file in `sources/` shaped `{"entries":[{speaker, quote, work, locus,
 caution, theme, verification?, file?, source_url?}]}` and run both build scripts. Records are
 deduplicated by the sha256 of the normalised quote, so re-extracting the same passage merges rather
 than duplicates.
+
+---
+
+## A note on this published copy
+
+This is a **published build** of the corpus, not a hand copy. It is generated from the source
+JSON in the author's private repository by `publish_corpus.py`, and one field is rewritten in
+the crossing.
+
+`source.file` records the path of the on-disk text a passage was read from. In the private tree
+that is a path under the working repository, which would mean nothing to a reader here. In this
+copy it is rewritten to the file's path **in this collection**, so it resolves. Where the text is
+not reproduced here — a book in copyright, cited to its published edition instead — the field is
+empty and the record's `sourcing` says so in a sentence.
+
+Nothing else is altered. The quotes, speakers, loci, dates, verification states and hashes are
+the authority's own, and `quote_sha256` can be checked against the quote text in either tree.

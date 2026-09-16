@@ -1,0 +1,51 @@
+:root{--paper:#F4F5F3;--paper-2:#EAEBE7;--ink:#14181D;--ink-2:#3C444E;--ink-3:#6B7480;
+--rule:#C9CCC6;--rule-strong:#9AA09B;--rec:#3A5A8C;--ppc:#C0761A;--hold:#EFECE4;--measure:40rem;
+--f-display:"Newsreader",Georgia,"Times New Roman",serif;--f-mono:"Courier Prime","Courier New",monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#15191E;--paper-2:#1D222A;
+--ink:#E7E9E5;--ink-2:#B4BBC3;--ink-3:#848C96;--rule:#2C333B;--rule-strong:#454E58;
+--rec:#84A6DB;--ppc:#E0A24E;--hold:#1E2129}}
+:root[data-theme="dark"]{--paper:#15191E;--paper-2:#1D222A;--ink:#E7E9E5;--ink-2:#B4BBC3;--ink-3:#848C96;
+--rule:#2C333B;--rule-strong:#454E58;--rec:#84A6DB;--ppc:#E0A24E;--hold:#1E2129}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-display);
+font-optical-sizing:auto;font-size:clamp(1.02rem,.98rem + .25vw,1.13rem);line-height:1.6;
+-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--measure);margin:0 auto;padding:clamp(2.5rem,7vh,4.5rem) 1.4rem 5rem}
+h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.2rem,1.8rem + 2.2vw,3.2rem);line-height:1.06;letter-spacing:-.02em;font-weight:300;margin-bottom:1rem}
+h2{font-size:clamp(1.35rem,1.2rem + .7vw,1.7rem);line-height:1.18;letter-spacing:-.012em;margin:2.4rem 0 .9rem}
+p{margin:0 0 1.05em}
+.standfirst{font-size:1.15rem;line-height:1.45;color:var(--ink-2);font-weight:300;margin-bottom:1.6rem}
+.byline{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;color:var(--ink-3);
+border-bottom:1px solid var(--rule);padding-bottom:1.4rem;margin-bottom:2rem}
+blockquote{background:var(--hold);padding:1rem 1.15rem;margin:1.4rem 0 .6rem;font-size:1.04rem;line-height:1.5}
+blockquote p{margin:0}
+.qrow{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.4rem 0 .6rem}
+/* the quote row divides the SAME measure as the prose — the article keeps one width */
+@media(min-width:760px){.qrow.withCmt{grid-template-columns:1fr 12rem}}
+.qrow blockquote{margin:0}
+.aside{background:var(--paper-2);border-left:2px solid var(--rec);padding:.85rem .95rem;
+  font-size:.92rem;line-height:1.5;color:var(--ink-2);align-self:start}
+.aside .lbl2{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--rec);margin-bottom:.4rem}
+.aside p{margin:0 0 .65em}
+.aside p:last-child{margin:0}
+.src{font-family:var(--f-mono);font-size:.7rem;line-height:1.75;color:var(--ink-2);margin:0 0 1.5rem}
+.caut{font-family:var(--f-mono);font-size:.68rem;line-height:1.75;color:var(--ink-3);
+border-left:2px solid var(--rule-strong);padding:.1rem 0 .1rem .7rem;margin:-1.1rem 0 1.5rem}
+.caut b{font-weight:400;letter-spacing:.12em;text-transform:uppercase;font-size:.6rem}
+.holding{background:var(--hold);border-top:2px solid var(--ppc);border-bottom:1px solid var(--rule);
+padding:1.1rem 1.2rem;margin:1.4rem 0;font-size:1.05rem;line-height:1.48}
+.holding p{margin:0}
+a{color:inherit;text-decoration-color:var(--rule-strong);text-underline-offset:2.5px}
+:focus-visible{outline:2px solid var(--ppc);outline-offset:3px}
+.enref{font-size:.72em;line-height:0;vertical-align:super;font-weight:600}
+.enref a{text-decoration:none;color:var(--ppc)}
+.endnotes{border-top:1px solid var(--rule);margin-top:2.2em;padding-top:.6em}
+.endnotes h2{font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;color:#666;margin:0 0 .5em}
+.endnotes ol{padding-left:1.4em;margin:0}
+.endnotes li{margin:0 0 .85em;font-size:.9em;line-height:1.5}
+.endnotes .enq{font-style:italic}
+.endnotes .ensrc{display:block;font-size:.9em;color:#555;margin-top:.15em}
+.endnotes .encmt{display:block;font-size:.9em;color:#555;margin-top:.15em}
+.endnotes .enback{text-decoration:none;color:var(--ppc)}

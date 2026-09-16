@@ -1,0 +1,74 @@
+<div id="app">
+  <header class="bar">
+    <h1>Quote Composer</h1>
+    <span class="count" id="corpusCount"></span>
+    <span class="count" id="draftState"></span>
+    <span class="drafts">
+      <span class="lbl">Drafts</span>
+      <select id="draftSel" title="Saved drafts in this browser"><option value="">— none saved —</option></select>
+      <button class="btn" id="btnLoad" title="Load the selected draft">Open</button>
+      <button class="btn" id="btnSave" title="Save over the selected draft">Save</button>
+      <button class="btn" id="btnSaveAs" title="Save under a new name">Save as…</button>
+      <button class="btn" id="btnDel" title="Delete the selected draft">Delete</button>
+    </span>
+    <span class="sp"></span>
+    <button class="btn" id="btnNew">New paper</button>
+    <button class="btn" id="btnBackup" title="Download every draft as a JSON file">Back up</button>
+    <button class="btn" id="btnRestore" title="Load drafts from a backup file">Restore</button>
+    <input type="file" id="restoreFile" accept="application/json,.json" hidden>
+    <button class="btn" id="btnFull" title="Hide the library and editor; read the paper full width (Esc to exit)">Read full width</button>
+    <button class="btn p" id="btnExport">Export HTML</button>
+  </header>
+
+  <section class="col" id="libCol">
+    <div class="colhead">
+      <span class="lbl">Library</span>
+      <input type="search" id="q" placeholder="Search quote, speaker, work…" autocomplete="off">
+      <div class="filters">
+        <select id="fSpeaker"><option value="">Every speaker</option></select>
+        <select id="fTheme"><option value="">Every theme</option></select>
+        <select id="fVerif"><option value="">Any verification</option></select>
+      </div>
+      <div class="filters">
+        <span class="lbl yrlbl">Years</span>
+        <input type="number" id="yFrom" placeholder="from" min="1500" max="2100" step="1">
+        <span class="lbl">–</span>
+        <input type="number" id="yTo" placeholder="to" min="1500" max="2100" step="1">
+        <button class="btn sm" id="yClear">Clear</button>
+      </div>
+      <div class="opts"><span id="libCount"></span></div>
+    </div>
+    <div id="list"></div>
+  </section>
+
+  <section class="col" id="docCol">
+    <div class="colhead">
+      <span class="lbl">Paper</span>
+      <input type="text" id="docTitle" placeholder="Title" value="Untitled">
+      <input type="text" id="docSub" placeholder="Standfirst — one sentence" style="margin-top:.35rem">
+      <input type="text" id="docBy" placeholder="Byline" value="Essam Abadir" style="margin-top:.35rem">
+      <div class="filters" style="margin-top:.5rem">
+        <button class="btn" data-add="h2">+ Heading</button>
+        <button class="btn" data-add="prose">+ Prose</button>
+        <button class="btn" data-add="holding">+ Holding</button>
+      </div>
+      <div class="opts"><span id="docCount"></span> &middot; drag the grip to reorder</div>
+    </div>
+    <div id="doc"></div>
+  </section>
+
+  <section class="col" id="prevCol">
+    <div class="colhead"><span class="lbl">Preview</span></div>
+    <div id="preview"></div>
+    <div id="exportWrap">
+      <span class="lbl">Export</span>
+      <div class="opts" style="margin-bottom:.4rem">
+        <label><input type="checkbox" id="optSourcing"> include sourcing notes</label>
+        <label><input type="checkbox" id="optRestored" checked> include restored text</label>
+      </div>
+      <button class="btn" id="btnDownload">Download .html</button>
+      <button class="btn" id="btnShow">Show source</button>
+      <textarea id="exportOut" spellcheck="false"></textarea>
+    </div>
+  </section>
+</div>

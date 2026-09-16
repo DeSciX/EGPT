@@ -97,7 +97,6 @@ SEC   = re.compile(r'reaches the report through a secondary source|Reconstructed
 def verification(entry, sourcing, has_quote):
     v = norm(entry.get('verification'))
     if v: return v
-    if not has_quote:            return 'NOT-FOUND'
     if RECON.search(sourcing):   return 'RECONSTRUCTED'
     if PEND.search(sourcing):    return 'PENDING-VERIFY'
     if SEC.search(sourcing):     return 'SECONDARY-SOURCE'
@@ -110,9 +109,17 @@ def main():
     recs, seen = [], {}
     for path in files:
         coll = re.sub(r'^\d+_', '', path.stem)
-        for e in json.load(open(path, encoding='utf-8'))['entries']:
+        for n, e in enumerate(json.load(open(path, encoding='utf-8'))['entries']):
             q = norm(e.get('quote'))
-            h = hashlib.sha256(q.encode()).hexdigest() if q else None
+            if not q:
+                # A search that found nothing is not a record: it cannot be quoted and a reader
+                # cannot check it against anything. Such rows are not kept in this corpus.
+                sys.exit(f'{path.name} entry {n}: empty quote.\n'
+                         f'  work: {norm(e.get("work"))[:90]}\n'
+                         f'  Every record must carry a passage someone wrote or said. If this '
+                         f'records a search that found nothing, delete it and put the finding in '
+                         f'the sourcing note of the record that DOES carry the text.')
+            h = hashlib.sha256(q.encode()).hexdigest()
             if h and h in seen:
                 prev = seen[h]
                 if coll not in prev['collections']: prev['collections'].append(coll)

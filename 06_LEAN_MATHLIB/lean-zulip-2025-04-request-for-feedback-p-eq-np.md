@@ -65,7 +65,7 @@ physical-SAT axiom, Rota's Entropy Theorem, and Shannon's Coding Theorem):
 
 The first concedes the entailment and locates the doubt in the premises — a falsifiable
 prediction, and the same move von Neumann made to Gödel in 1931 (*"no living logician is in the
-position of naming such [a construction]"*, `content/SSG_History/JvM_Letters/Letter3_Jan12_1931.md`),
+position of naming such [a construction]"*, `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md`),
 stated as a location rather than a name.
 
 The second is advice that was then followed: stop leading with P=NP, go prove Shannon's Coding

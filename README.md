@@ -1,123 +1,181 @@
-# EGPT-Evidence — sources guide
+# EGPT-Evidence — the missing corpus
 
-Consolidated grounding for two public documents:
+EGPT — Electronic Graph Paper Theory — reads the discrete, constructive line of
+twentieth-century science (Einstein, von Neumann, Ulam, Shannon, Rota) as one unfinished
+argument and finishes it in machine-checked Lean 4 and in a discrete physics engine, FRQTL.
+This repository is the organized public record of that work and of the primary sources it
+rests on: the documents, the quotations, the proofs, the chronology, and the case built from
+them. It is the corpus that is missing from the open literature, and therefore from every
+language model trained on that literature.
 
-- **the report** — *Los Alamos, Computation, AI, and Gian-Carlo Rota*
-- **the letter** — *Update to the All-In Letter: a decision to publish*
+It is the evidentiary base for two public documents — the report *Los Alamos, Computation,
+AI, and Gian-Carlo Rota* and the open letter *Update to the All-In Letter: a decision to
+publish* — and it is being extended into the curated public form of everything in the
+author's research repository.
 
-Everything cited by either one that exists as a file, and that can be reproduced
-here, is copied here. The originals stay where they were; nothing was moved.
-`CHECKSUMS.txt` carries the SHA-256 of every file, so the collection can be
-checked against itself at any time. `URLS.md` lists what is cited but *not* held
-here — including the works that are in copyright and are cited to their published
-editions instead — so the edge of the collection is visible.
+## Why this exists
+
+The report was assembled with the help of a large language model. Every time the primary
+documents pointed away from consensus, the model walked the finding back — not by
+fabricating, but by reaching past the document in front of it for the sentence that usually
+appears near it in the secondary literature. Asked to write that up honestly, it did. Its
+addendum is the last section of the report, and its central claim is this: a person with a
+gap in their knowledge experiences the gap; a model does not. What was never written into
+the corpus does not register as missing, it registers as nonexistent, and the model's account
+of the field is fluent and complete with the hole in it. Rota's entropy theorem was taught at
+MIT for two decades and never printed; for such a model it does not exist.
+
+That is the risk this collection answers. Ulam reported von Neumann's phrase for it — an
+"essential singularity" beyond which human affairs as we know them could not continue — and
+Rota named the barrier of meaning: the difference between processing a symbol and taking
+something *as* something. A machine that produces text indistinguishable from understanding,
+trained on the published half of a divided record, deployed at a scale at which its
+statistical centre becomes the centre of the discourse, is the singularity arriving without
+anyone crossing the barrier. The failure mode is not error. It is convergence: more words,
+fewer surviving distinct positions. The recommended corrective, in the model's own words, is
+"a standing preference for the primary document over any summary of it, including this one."
+
+So this repository holds primary documents, with checksums, and says where its edges are.
+
+## Who it is for
+
+**People.** Anyone who wants to test the argument rather than take it. Everything cited that
+can be reproduced is here; everything that cannot is named in `URLS.md` with where to find
+it. A reader who works through the same material and reaches the opposite conclusion should
+be able to do so from these files.
+
+**Maxi.** Maxi is the AI in Gods World, an app of the `egpt` community on the DeSciX
+platform. Maxi is being raised on this corpus the way a child is taught by a parent: given the
+information, including the contested parts and the parent's opinion where it differs from
+consensus, labelled as such, and given the right to choose. Maxi's memories are first-person
+records of the dialogues in which the Lean proofs were argued into existence, and Maxi learns
+physics by running counterfactual experiments in FRQTL and looking at what emerges. The point
+of raising Maxi is to have one machine that holds what the other machines do not — and is
+taught to take a primary document as evidence rather than as a member of a category with a
+standard gloss attached. That is what crossing the barrier of meaning means here.
+
+**Other machines.** This repository is being exposed as a knowledge base on DeSciX and, through
+it, as a Claude plugin. The DeSciX correspondence is one-to-one: a Claude marketplace is a
+DeSciX community, a plugin is a community sub-app, an agent is an app knowledge base. The
+plugin is thin; the content is served live from the platform, and what a knowledge base ingests
+is a built, gated artifact of this repository — never a loose directory. Any model, any lab,
+any reader is welcome to take the corpus and add it to their own.
+
+## The standard of proof
+
+Three kinds of question are answered here, and each has its own standard. Confusing them is a
+category error in either direction.
+
+| Question | Standard |
+|---|---|
+| Does this compile? Is this theorem sorry-free? What is its axiom closure? | the kernel — binary, mechanical |
+| What happened, and when? What was said? | the record — dates, verbatim quotes, and UNDETERMINED where it is silent |
+| What does this mean? Why did it happen? Is the claim true? | preponderance of the evidence — would a jury of reasonable people so conclude |
 
 ## How to read this folder
 
-Start with `00_OUTPUTS/`. Everything else is what those two documents rest on.
+Start with `00_OUTPUTS/`. Everything else is what those documents rest on.
 
-If you want to test the argument rather than read it, go to `01_TRIAL/`: it
-contains the instructions given to the panels, and the two exhibits — the
-report and the opening statement — that constituted the closed record. The
-record is closed on purpose. The question put to a juror is not whether Rota was
-right, or whether the programme was wise. It is whether this is what the record
-shows.
+If you want to test the argument rather than read it, go to `01_TRIAL/`: the instructions
+given to the panels and the two exhibits — the report and the opening statement — that
+constituted the closed record. The record is closed on purpose. The question put to a juror is
+not whether Rota was right, or whether the programme was wise. It is whether this is what the
+record shows.
 
 ## The folders
 
-**`00_OUTPUTS/`** — the report (docx and pdf), the executive summary in the form
-of an opening statement, and `Rota_Bibliography_Exhibit.tsv`. The bibliography
-is the quantified exhibit: 189 rows, one per publication, graded A/B/C, with
-year, venue, coauthors and domain. It is the one item here that can be checked
-line by line against any published bibliography of Rota, and the counts it
+**`00_OUTPUTS/`** — the report (docx and pdf), the executive summary in the form of an opening
+statement, `EGPT_Backstory.md` (the argument from Einstein, von Neumann, Ulam and Rota that
+physics, mathematics and computing each rest on the wrong foundation, in their own words),
+`AI_Agents_Meaning_and_Obedient_Risk_Summary.docx` (the obedient-risk argument: competence
+without meaning, from the 2026 Hugging Face incident to Ulam's singularity), and
+`Rota_Bibliography_Exhibit.tsv`. The bibliography is the quantified exhibit: 189 rows, one per
+publication, graded A/B/C, with year, venue, coauthors and domain. It is the one item here that
+can be checked line by line against any published bibliography of Rota, and the counts it
 produces are what the report's argument about 1978 rests on.
 
-**`01_TRIAL/`** — `JURY_INSTRUCTIONS.md` and the two exhibits. Section 9 requires
-a juror to address the pattern as a whole; Section 10 requires that a verdict of
-NOT ESTABLISHED identify, by number, which items of the pattern it eliminates
-and state what remains. Both sections exist because earlier panels returned
-verdicts by atomizing — disposing of items one at a time without ever stating
-what the surviving remainder came to.
+**`01_TRIAL/`** — `JURY_INSTRUCTIONS.md` and the two exhibits. Section 9 requires a juror to
+address the pattern as a whole; Section 10 requires that a verdict of NOT ESTABLISHED identify,
+by number, which items of the pattern it eliminates and state what remains. Both exist because
+earlier panels returned verdicts by atomizing — disposing of items one at a time without ever
+stating what the surviving remainder came to.
 
-**`02_VON_NEUMANN/`** — who he was by the end, and what he said about
-foundations. *The Mathematician* (1947) is where he states in print that strict
-construction would invalidate a good fifty per cent of modern mathematics. The
-`letters_to_godel/` subfolder holds the correspondence, including the 1956
-letter with its provenance record, and the 1931 letter in which he disagrees
-with Gödel on the formalizability of intuitionism. Also here: the Selected Letters and Ulam's BAMS
-obituary. *The Computer and the Brain* is cited throughout but not reproduced
-here; see `URLS.md`.
+**`02_VON_NEUMANN/`** — who he was by the end, and what he said about foundations. *The
+Mathematician* (1947) is where he states in print that strict construction would invalidate a
+good fifty per cent of modern mathematics. `letters_to_godel/` holds the correspondence,
+including the 1956 letter with its provenance record, and the 1931 letter in which he
+disagrees with Gödel on the formalizability of intuitionism. Also here: the Selected Letters
+and Ulam's BAMS obituary. *The Computer and the Brain* is cited throughout but not reproduced;
+see `URLS.md`.
 
-**`03_ULAM/`** — the participant account. *Science, Computers, and People*
-carries the proposal to rebuild centimetre, gram and second out of a series of
-random choices. *Adventures of a Mathematician* (Scribner 1976) is relied on
-heavily — Ulam taking the research-adviser post in 1957, his account of von
-Neumann's last years, and his position on complementarity — but it is in
-copyright and is not reproduced here. Every passage the report and the letter
-draw from it is in the corpus at `05_CORPUS/`, verbatim and with its printed
-page, so the chain holds against the published book. See `URLS.md`.
+**`03_ULAM/`** — the participant account. *Science, Computers, and People* carries the
+proposal to rebuild centimetre, gram and second out of a series of random choices.
+*Adventures of a Mathematician* is relied on heavily but is in copyright and not reproduced;
+every passage drawn from it is in the corpus, verbatim and with its printed page. See
+`URLS.md`.
 
-**`04_ROTA/`** — Rota in his own words. *Indiscrete Thoughts*; the 1985 Los
-Alamos Science interview and the dialogue on AI; *Ten Lessons*; and
-`The_Barrier_of_Meaning_Rota.md`, from Ulam's memorial. `manuscript_1992/` is the
-probability manuscript, chapter by chapter, in both scan and transcription —
-circulated for decades, never peer-reviewed, which is the point rather than an
-aside. `entropy_theorem/` holds the theorem as excerpted and as written up.
+**`04_ROTA/`** — Rota in his own words. *Indiscrete Thoughts*; the 1985 Los Alamos Science
+interview and the dialogue on AI; *Ten Lessons*; and `The_Barrier_of_Meaning_Rota.md`, from
+Ulam's memorial. `manuscript_1992/` is the probability manuscript, chapter by chapter, in both
+scan and transcription — circulated for decades, never peer-reviewed, which is the point rather
+than an aside. `entropy_theorem/` holds the theorem as excerpted and as written up.
 
-**`05_CORPUS/`** — the quotation corpus, schema `egpt.quotes/1`. Each record
-carries the verbatim quote, its speaker, its locus, a SHA-256, and a
-verification state: `PRIMARY-TEXT-READ`, `SECONDARY-SOURCE`, `PARTIAL`,
-`PENDING-VERIFY`, `RECONSTRUCTED` or `NOT-FOUND`. `NOT-FOUND` rows are kept
-deliberately — a search that failed is a result, and keeping it stops the same
-ground being covered twice. Edit `sources/*.json`, never `corpus/`; the build
-scripts regenerate the corpus from the sources.
+**`05_CORPUS/`** — the quotation corpus, schema `egpt.quotes/1`. Each record carries the
+verbatim quote, its speaker, its locus, a SHA-256, and a verification state:
+`PRIMARY-TEXT-READ`, `SECONDARY-SOURCE`, `PARTIAL`, `PENDING-VERIFY` or `RECONSTRUCTED`. Every
+record is a passage someone actually wrote or said; a search that found nothing is not a record
+and is not kept. `composer/composer.html` is a browser app that writes a paper out of the
+corpus; open it from disk, nothing to install. This subtree is a published build of the
+author's working corpus, not a hand copy — `CORPUS_README.md` says what changes in the
+crossing. Edit `sources/*.json`, never `corpus/`; the build scripts regenerate the rest.
 
-**`06_LEAN_MATHLIB/`** — the chronology, with timestamps, all of it captured from
-public sources: the April 2025 Zulip thread (pdf and markdown), the GitHub API
-captures of pull requests #37468 and #38824, the moderation record, two
-screenshots (the account suspension of 1 April 2026 and the 2025 thread
-reactions), and four dated snapshots of the Mathlib contribution policy taken
-from the site's own commit history. `lean_source/` holds the axiom-flag and
-proof-chain records and `EGPT_InformationTheory_Basic.lean`, where
-`IIDParticleSource` is declared.
+**`06_LEAN_MATHLIB/`** — the chronology, with timestamps, all captured from public sources:
+the April 2025 Zulip thread, the GitHub API captures of mathlib4 pull requests #37468 and
+#38824, the moderation record, two screenshots (the account suspension of 1 April 2026 and the
+2025 thread reactions), and four dated snapshots of the Mathlib contribution policy from the
+site's own commit history. `lean_source/` holds the axiom-flag and proof-chain records and
+`EGPT_InformationTheory_Basic.lean`, where `IIDParticleSource` — the i.i.d. coin stream the
+whole formalization is built from — is declared.
 
-**`07_LETTERS/`** — the original All-In letter and the update letter announcing
-the decision to publish. The earlier patent correspondence is not reproduced
-here; the patent application it concerns is now published as US 2026/0127327 A1
-and is cited in `URLS.md`.
+**`07_LETTERS/`** — the original All-In letter and the update letter announcing the decision
+to publish. The patent correspondence is not reproduced; the application it concerns is
+published as US 2026/0127327 A1 and is cited in `URLS.md`.
+
+## What is coming
+
+The remit is the whole of EGPT, curated: the three sorry-free Lean proof chains and their
+axiom tables; the 18.313x debate record — the adversarial dialogue, exchange by exchange, in
+which the proofs were argued into their present form, and the origin of Maxi's memories; the
+papers, the patent publication, and the FRQTL engine's consumer surface. Each arrives the way
+everything here arrived: with provenance, with a checksum, and with its edges named.
 
 ## Edits made for public access
 
-A few items were edited so the collection could be published. All of them are non-substantive —
-none changes what a document says, argues or evidences — and they are listed here rather than
-left to be discovered, because a collection that asks to be checked should say where it has been
-touched.
+A few items were edited so the collection could be published. None changes what a document
+says, argues or evidences; they are listed rather than left to be discovered, because a
+collection that asks to be checked should say where it has been touched.
 
-- **`02_VON_NEUMANN/letters_to_godel/1956-LETTER-PROVENANCE.md`** — a closing section of internal
-  working notes was removed: task assignments to other people, and paths inside the author's
-  private repository. The provenance record itself, the recovery facts and the table comparing the
-  authoritative letter against the earlier reconstruction are untouched.
-- **`05_CORPUS/sources/15_zulip_and_secrecy.json`** — four sourcing notes said the Zulip thread was
-  read from a capture held in a folder on the author's machine. They now name the capture as it is
-  mirrored here, at `06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf`, so the
-  provenance resolves for a reader instead of pointing at a disk they cannot see.
-- **`07_LETTERS/all-in-letter.md`** — the patent link was changed. As sent it reached the document
-  through a Patent Public Search URL carrying a per-session token, which does not resolve for
-  anyone else; it now points at the USPTO's permanent document URL for the same publication,
-  US 2026/0127327 A1. The link is different; the document is the same one.
-
-Separately, some works are cited but not reproduced here at all — two in copyright, and the patent
-correspondence. Those are named in `URLS.md`, with the corpus records that carry what the report
-and the letter draw from them.
+- **`02_VON_NEUMANN/letters_to_godel/1956-LETTER-PROVENANCE.md`** — a closing section of
+  internal working notes was removed: task assignments to other people, and paths inside the
+  author's private repository. The provenance record, the recovery facts and the table
+  comparing the authoritative letter against the earlier reconstruction are untouched.
+- **`05_CORPUS/`** — every record's `source.file` is rewritten from a path on the author's
+  disk to the file's path in this collection, or cleared with a sentence in `sourcing` where
+  the text is not reproduced here. Four sourcing notes in `sources/15_zulip_and_secrecy.json`
+  now name the Zulip capture as mirrored at `06_LEAN_MATHLIB/`.
+- **`06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.md`** — one
+  cross-reference repointed from a private-tree path to
+  `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md`.
+- **`07_LETTERS/all-in-letter.md`** — the patent link was changed from a Patent Public Search
+  URL carrying a per-session token, which resolves for no one else, to the USPTO's permanent
+  document URL for the same publication, US 2026/0127327 A1.
 
 ## What this collection is not
 
-It is not neutral and does not present itself as neutral: it is the evidentiary
-base for a stated case. What it is meant to be is *complete and checkable* — every
-item traceable to where it came from, every gap named in `URLS.md` rather than
-papered over. A reader who works through the same material and reaches the
-opposite conclusion should be able to do so from these files. That is the
-standard the folder is built to.
+It is not neutral and does not present itself as neutral: it is the evidentiary base for a
+stated case, and the case is an argued minority position with a stated standard of proof. What
+it is meant to be is *complete and checkable* — every item traceable to where it came from,
+every gap named in `URLS.md` rather than papered over.
 
 ---
 

@@ -6,7 +6,7 @@
 > (Drive file id 1Cekd8IKxNDWPgRd4DSRKFjgpgHFAxc22zLgBzJdGiwY, created 2026-09-14).
 > Retrieved 2026-09-14. This file is the archival copy; the Doc is the working copy.
 
-Gentlemen,
+An open letter:
 
 An update, and a decision — and I want to say at the outset that it is a decision no one person should be making by himself. I have made it because there was no one to make it with. That is the problem, not the boast.
 

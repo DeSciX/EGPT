@@ -1,95 +1,95 @@
 {
-  "entries": [
-    {
-      "speaker": "Nicholas Metropolis",
-      "quote": "Johnny let it be known that construction of the ENIAC was nearing completion, and he wondered whether Stan Frankel and I would be interested in preparing a preliminary computational model of a thermonuclear reaction for the ENIAC.",
-      "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130",
-      "locus": "pp. 125–130 (exact page not confirmed; passage falls in the opening ENIAC section, c. p. 126)",
-      "date": "1987",
-      "theme": "machines",
-      "verification": "PRIMARY-TEXT-READ",
-      "file": "",
-      "source_url": "https://fermatslibrary.com/s/the-beginning-of-the-monte-carlo-method",
-      "context": "Metropolis is describing von Neumann's role as a consultant to both Aberdeen and Los Alamos in 1945, immediately before the March 1945 visit to the Moore School. “Johnny” throughout the article is von Neumann.",
-      "caution": "Retrieved from the Fermat's Library hosted scan of the Los Alamos Science article via web fetch, which passes page content through an intermediate summarising model; not read from a raw PDF or a printed copy. The LANL and FAS mirrors of the PDF (library.lanl.gov getfile?00326866.pdf; sgp.fas.org/othergov/doe/lanl/pubs/) were not retrievable by this agent — robots.txt refusal — so the page number could not be fixed from the printed pagination. Sibling entries already in this corpus from the same article carry pp. 126, 127 and 128."
-    },
-    {
-      "speaker": "Nicholas Metropolis",
-      "quote": "In March, 1945, Johnny, Frankel, and I visited the Moore School of Electrical Engineering at the University of Pennsylvania for an advance glimpse of the ENIAC. We were impressed.",
-      "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130",
-      "locus": "pp. 125–130 (exact page not confirmed; c. p. 126)",
-      "date": "1987",
-      "theme": "machines",
-      "verification": "PRIMARY-TEXT-READ",
-      "file": "",
-      "source_url": "https://fermatslibrary.com/s/the-beginning-of-the-monte-carlo-method",
-      "context": "Frankel is Stanley Frankel, Los Alamos; Johnny is von Neumann. The visit precedes the Los Alamos thermonuclear feasibility calculation run on the ENIAC.",
-      "caution": "Retrieved from the Fermat's Library hosted scan via web fetch, which passes page content through an intermediate summarising model. Printed pagination not confirmed for this passage."
-    },
-    {
-      "speaker": "Nicholas Metropolis",
-      "quote": "Johnny von Neumann who was very, very quick—I mean, you have no idea how quickly he would infer things and extrapolate them. Well, he was fantastic. Stan Ulam was here during the war, but he didn't do very much during the war. I mean, mathematicians were not as prevalent as they are today. Although Johnny von Neumann was very, very good and very quick and very sharp. He just was a universalist. He was not a mathematician.",
-      "work": "Nicholas Metropolis, oral history interview conducted by Richard Rhodes; transcript published by the Atomic Heritage Foundation / National Museum of Nuclear Science & History, Voices of the Manhattan Project",
-      "locus": "transcript, unpaginated",
-      "date": "12 September 1993",
-      "theme": "machines",
-      "verification": "PRIMARY-TEXT-READ",
-      "file": "",
-      "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
-      "context": "Metropolis is answering on the wartime Los Alamos scientific staff. The next sentence in the transcript continues: “That was just a side issue as far as he was concerned, because he knew so much about physics and philosophy and even things like history.”",
-      "caution": "A transcriber's rendering of spoken words, not a text written by Metropolis. The transcript is published by the Atomic Heritage Foundation and carries their transcription conventions (em-dash for self-interruption). Retrieved by web fetch, which passes page content through an intermediate summarising model; the transcript page is unpaginated."
-    },
-    {
-      "speaker": "Nicholas Metropolis",
-      "quote": "He suggested that Stan Frankel and I look after the ENIAC and see if we can set up the problems there.",
-      "work": "Nicholas Metropolis, oral history interview conducted by Richard Rhodes; transcript published by the Atomic Heritage Foundation / National Museum of Nuclear Science & History, Voices of the Manhattan Project",
-      "locus": "transcript, unpaginated",
-      "date": "12 September 1993",
-      "theme": "machines",
-      "verification": "PRIMARY-TEXT-READ",
-      "file": "",
-      "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
-      "context": "“He” is John von Neumann. Metropolis is recounting how he and Stanley Frankel came to be the Los Alamos personnel who programmed the ENIAC.",
-      "caution": "A transcriber's rendering of spoken words. Retrieved by web fetch through an intermediate summarising model; transcript unpaginated."
-    },
-    {
-      "speaker": "Nicholas Metropolis",
-      "quote": "Johnny had a very good argument for letting us do the shakedown cruise, as it was called, because we could test out about 95% of the control units, whereas the problems that the Ballistics Research Laboratory had were about 25%.",
-      "work": "Nicholas Metropolis, oral history interview conducted by Richard Rhodes; transcript published by the Atomic Heritage Foundation / National Museum of Nuclear Science & History, Voices of the Manhattan Project",
-      "locus": "transcript, unpaginated",
-      "date": "12 September 1993",
-      "theme": "machines",
-      "verification": "PRIMARY-TEXT-READ",
-      "file": "",
-      "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
-      "context": "Metropolis on how the Los Alamos problem, rather than the Ballistic Research Laboratory's own ballistics work, came to be the ENIAC's first large calculation. “Johnny” is von Neumann.",
-      "caution": "A transcriber's rendering of spoken words. Retrieved by web fetch through an intermediate summarising model; transcript unpaginated."
-    },
-    {
-      "speaker": "MIT News Office",
-      "quote": "He had been a consultant to the Los Alamos Scientific Laboratory since 1966, and for the Rand Corporation from 1966-71 and Brookhaven National Laboratory from 1969-1973. A book entitled Essays of the Future, edited by Dr. Rota, is dedicated to Nick Metropolis, the sole survivor of the original Los Alamos group. The book, scheduled for publication in October, was conceived entirely by Dr. Rota.",
-      "work": "“MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office",
-      "locus": "news item, unpaginated",
-      "date": "22 April 1999",
-      "theme": "rota",
-      "verification": "PRIMARY-TEXT-READ",
-      "file": "",
-      "source_url": "https://news.mit.edu/1999/rota",
-      "context": "The same item records: “Dr. Rota apparently died in his sleep. He was found in bed in his night clothes on the afternoon of Monday, April 19, after failing to arrive in Philadelphia Sunday afternoon for a series of three lectures he was to give this week at Temple University. The cause of death was atherosclotic cardiovascular disease, according to the Middlesex County Medical Examiner.”",
-      "caution": "The title of the book is given by MIT News as “Essays of the Future”; the volume as published is Essays on the Future: In Honor of Nick Metropolis, eds. Siegfried S. Hecker and Gian-Carlo Rota, Birkhäuser Boston, 2000 (ISBN 978-0-8176-3856-6). The item also spells “atherosclotic” for atherosclerotic and gives the day of discovery, 19 April, not the date of death; standard references (MacTutor, AMS memorial issue) give Rota's death as 18 April 1999. Retrieved by web fetch, which passes page content through an intermediate summarising model. This is an institutional press office, not Rota's own words."
-    },
-    {
-      "speaker": "Gian-Carlo Rota",
-      "quote": "Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–1971. Brookhaven National Laboratory, 1969–1973.",
-      "work": "Gian-Carlo Rota, curriculum vitae, Massachusetts Institute of Technology, under the heading “Consultant”",
-      "locus": "heading “Consultant”",
-      "date": "1996",
-      "theme": "rota",
-      "verification": "SECONDARY-SOURCE",
-      "file": "content/SSG_History/Rota/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx",
-      "source_url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt",
-      "context": "The same CV carries, under “Honors,” “Director's Office Fellow, Los Alamos National Laboratory, 1971–”; under “Security Clearances,” “Top Secret Clearance (Air Force) 1969–1971. Q – Clearance (DOE), 1966–. SI – Clearance (NSA), 1981–”; and under “Administrative positions,” “Trustee, The Santa Fe Institute, 1985–1990.”",
-      "caution": "Not read at source by this agent: the Internet Archive capture was blocked to this agent's fetch tool. The wording is taken from the quotation of the archived CV in this repository's own report, Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx (notes 78–79), which cites the capture of 19 February 1999. The CV is dated 1996 in that report. Graded SECONDARY-SOURCE for that reason and not for any doubt about the wording."
-    }
-  ]
+ "entries": [
+  {
+   "speaker": "Nicholas Metropolis",
+   "quote": "Johnny let it be known that construction of the ENIAC was nearing completion, and he wondered whether Stan Frankel and I would be interested in preparing a preliminary computational model of a thermonuclear reaction for the ENIAC.",
+   "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130",
+   "locus": "pp. 125–130 (exact page not confirmed; passage falls in the opening ENIAC section, c. p. 126)",
+   "date": "1987",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://fermatslibrary.com/s/the-beginning-of-the-monte-carlo-method",
+   "context": "Metropolis is describing von Neumann's role as a consultant to both Aberdeen and Los Alamos in 1945, immediately before the March 1945 visit to the Moore School. “Johnny” throughout the article is von Neumann.",
+   "caution": "Retrieved from the Fermat's Library hosted scan of the Los Alamos Science article via web fetch, which passes page content through an intermediate summarising model; not read from a raw PDF or a printed copy. The LANL and FAS mirrors of the PDF (library.lanl.gov getfile?00326866.pdf; sgp.fas.org/othergov/doe/lanl/pubs/) were not retrievable by this agent — robots.txt refusal — so the page number could not be fixed from the printed pagination. Sibling entries already in this corpus from the same article carry pp. 126, 127 and 128."
+  },
+  {
+   "speaker": "Nicholas Metropolis",
+   "quote": "In March, 1945, Johnny, Frankel, and I visited the Moore School of Electrical Engineering at the University of Pennsylvania for an advance glimpse of the ENIAC. We were impressed.",
+   "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130",
+   "locus": "pp. 125–130 (exact page not confirmed; c. p. 126)",
+   "date": "1987",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://fermatslibrary.com/s/the-beginning-of-the-monte-carlo-method",
+   "context": "Frankel is Stanley Frankel, Los Alamos; Johnny is von Neumann. The visit precedes the Los Alamos thermonuclear feasibility calculation run on the ENIAC.",
+   "caution": "Retrieved from the Fermat's Library hosted scan via web fetch, which passes page content through an intermediate summarising model. Printed pagination not confirmed for this passage."
+  },
+  {
+   "speaker": "Nicholas Metropolis",
+   "quote": "Johnny von Neumann who was very, very quick—I mean, you have no idea how quickly he would infer things and extrapolate them. Well, he was fantastic. Stan Ulam was here during the war, but he didn't do very much during the war. I mean, mathematicians were not as prevalent as they are today. Although Johnny von Neumann was very, very good and very quick and very sharp. He just was a universalist. He was not a mathematician.",
+   "work": "Nicholas Metropolis, oral history interview conducted by Richard Rhodes; transcript published by the Atomic Heritage Foundation / National Museum of Nuclear Science & History, Voices of the Manhattan Project",
+   "locus": "transcript, unpaginated",
+   "date": "12 September 1993",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
+   "context": "Metropolis is answering on the wartime Los Alamos scientific staff. The next sentence in the transcript continues: “That was just a side issue as far as he was concerned, because he knew so much about physics and philosophy and even things like history.”",
+   "caution": "A transcriber's rendering of spoken words, not a text written by Metropolis. The transcript is published by the Atomic Heritage Foundation and carries their transcription conventions (em-dash for self-interruption). Retrieved by web fetch, which passes page content through an intermediate summarising model; the transcript page is unpaginated."
+  },
+  {
+   "speaker": "Nicholas Metropolis",
+   "quote": "He suggested that Stan Frankel and I look after the ENIAC and see if we can set up the problems there.",
+   "work": "Nicholas Metropolis, oral history interview conducted by Richard Rhodes; transcript published by the Atomic Heritage Foundation / National Museum of Nuclear Science & History, Voices of the Manhattan Project",
+   "locus": "transcript, unpaginated",
+   "date": "12 September 1993",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
+   "context": "“He” is John von Neumann. Metropolis is recounting how he and Stanley Frankel came to be the Los Alamos personnel who programmed the ENIAC.",
+   "caution": "A transcriber's rendering of spoken words. Retrieved by web fetch through an intermediate summarising model; transcript unpaginated."
+  },
+  {
+   "speaker": "Nicholas Metropolis",
+   "quote": "Johnny had a very good argument for letting us do the shakedown cruise, as it was called, because we could test out about 95% of the control units, whereas the problems that the Ballistics Research Laboratory had were about 25%.",
+   "work": "Nicholas Metropolis, oral history interview conducted by Richard Rhodes; transcript published by the Atomic Heritage Foundation / National Museum of Nuclear Science & History, Voices of the Manhattan Project",
+   "locus": "transcript, unpaginated",
+   "date": "12 September 1993",
+   "theme": "machines",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
+   "context": "Metropolis on how the Los Alamos problem, rather than the Ballistic Research Laboratory's own ballistics work, came to be the ENIAC's first large calculation. “Johnny” is von Neumann.",
+   "caution": "A transcriber's rendering of spoken words. Retrieved by web fetch through an intermediate summarising model; transcript unpaginated."
+  },
+  {
+   "speaker": "MIT News Office",
+   "quote": "He had been a consultant to the Los Alamos Scientific Laboratory since 1966, and for the Rand Corporation from 1966-71 and Brookhaven National Laboratory from 1969-1973. A book entitled Essays of the Future, edited by Dr. Rota, is dedicated to Nick Metropolis, the sole survivor of the original Los Alamos group. The book, scheduled for publication in October, was conceived entirely by Dr. Rota.",
+   "work": "“MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office",
+   "locus": "news item, unpaginated",
+   "date": "22 April 1999",
+   "theme": "rota",
+   "verification": "PRIMARY-TEXT-READ",
+   "file": "",
+   "source_url": "https://news.mit.edu/1999/rota",
+   "context": "The same item records: “Dr. Rota apparently died in his sleep. He was found in bed in his night clothes on the afternoon of Monday, April 19, after failing to arrive in Philadelphia Sunday afternoon for a series of three lectures he was to give this week at Temple University. The cause of death was atherosclotic cardiovascular disease, according to the Middlesex County Medical Examiner.”",
+   "caution": "The title of the book is given by MIT News as “Essays of the Future”; the volume as published is Essays on the Future: In Honor of Nick Metropolis, eds. Siegfried S. Hecker and Gian-Carlo Rota, Birkhäuser Boston, 2000 (ISBN 978-0-8176-3856-6). The item also spells “atherosclotic” for atherosclerotic and gives the day of discovery, 19 April, not the date of death; standard references (MacTutor, AMS memorial issue) give Rota's death as 18 April 1999. Retrieved by web fetch, which passes page content through an intermediate summarising model. This is an institutional press office, not Rota's own words."
+  },
+  {
+   "speaker": "Gian-Carlo Rota",
+   "quote": "Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–1971. Brookhaven National Laboratory, 1969–1973.",
+   "work": "Gian-Carlo Rota, curriculum vitae, Massachusetts Institute of Technology, under the heading “Consultant”",
+   "locus": "heading “Consultant”",
+   "date": "1996",
+   "theme": "rota",
+   "verification": "SECONDARY-SOURCE",
+   "file": "00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx",
+   "source_url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt",
+   "context": "The same CV carries, under “Honors,” “Director's Office Fellow, Los Alamos National Laboratory, 1971–”; under “Security Clearances,” “Top Secret Clearance (Air Force) 1969–1971. Q – Clearance (DOE), 1966–. SI – Clearance (NSA), 1981–”; and under “Administrative positions,” “Trustee, The Santa Fe Institute, 1985–1990.”",
+   "caution": "Not read at source by this agent: the Internet Archive capture was blocked to this agent's fetch tool. The wording is taken from the quotation of the archived CV in this repository's own report, Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx (notes 78–79), which cites the capture of 19 February 1999. The CV is dated 1996 in that report. Graded SECONDARY-SOURCE for that reason and not for any doubt about the wording."
+  }
+ ]
 }

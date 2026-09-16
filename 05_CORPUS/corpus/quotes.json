@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 299,
+ "count": 295,
  "note": "Verbatim quotations with provenance. 'restored' holds text removed by an ellipsis. 'sourcing' holds mechanical and sourcing facts only — no interpretation.",
  "records": [
   {
@@ -78,7 +78,7 @@
     "work": "RET Excerpt (LaTeX source, author's own document)",
     "locus": "“Theorem (Informal)”",
     "date": "",
-    "file": "EGPT-research/content/Books/Rota/Rota_Entropy_Theorem/RET_Excerpt.tex",
+    "file": "04_ROTA/entropy_theorem/RET_Excerpt.tex",
     "url": ""
    },
    "restored": "",
@@ -908,7 +908,7 @@
     "work": "“A Boolean Analysis of Addition and Multiplication” (published abstract), Studies in Applied Mathematics 56 no. 2, pp. 147–158",
     "locus": "Abstract. DOI 10.1002/sapm1977562147; OSTI ID 6234187",
     "date": "1977",
-    "file": "EGPT-Evidence/04_ROTA/Boolean_Analysis_1977_OSTI_record.png",
+    "file": "04_ROTA/Boolean_Analysis_1977_OSTI_record.png",
     "url": "https://www.osti.gov/biblio/6234187"
    },
    "restored": "This is the last paper Rota published on binary representation and computational complexity but one pair — the two n-cube papers of 1978 — and the abstract states the programme in its own terms. All four authors are named on the OSTI record; Metropolis is the Los Alamos connection. OSTI lists it as a Journal Article, 01 January 1977, Stud. Appl. Math. (United States).",
@@ -939,11 +939,11 @@
     "work": "quoted in Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part III, \"Los Alamos\"",
     "locus": "p. 165",
     "date": "1976 (book); the exchange is dated by Ulam to after the war",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "On a downhill walk in Frijoles Canyon after the war. Ulam had told Fermi that in his last year of high school he read popular accounts of Heisenberg, Schrodinger and De Broglie, learned that solving the Schrodinger equation gives hydrogen levels to six decimals, and wondered \"how such an artificially abstracted equation could work to better than one part in a million. A partial differential equation pulled out of thin air, it seemed to me, despite the appearances of derivation by analogies.\" The bracketed gloss \"[the Schrodinger equation]\" is Ulam's, as printed.",
-   "sourcing": "Transcribed from the scanned Scribner 1976 printing held in the private repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi (PDF page 170) and read back against the page image. Printed page number taken from the running footer (165). The printing spells 'Schrodinger' without the umlaut throughout this passage. EXHIBIT_report.md note 74 cites pp. 165-166 for this and the following remark from the 1991 University of California Press reprint; the Scribner 1976 printing carries the same pagination, verified against the running footers.",
+   "sourcing": "Transcribed from the scanned Scribner 1976 printing held in the private repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi (PDF page 170) and read back against the page image. Printed page number taken from the running footer (165). The printing spells 'Schrodinger' without the umlaut throughout this passage. EXHIBIT_report.md note 74 cites pp. 165-166 for this and the following remark from the 1991 University of California Press reprint; the Scribner 1976 printing carries the same pagination, verified against the running footers. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -970,11 +970,11 @@
     "work": "quoted in Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part III, \"Los Alamos\"",
     "locus": "p. 166",
     "date": "1976 (book); reported of the summer following the Frijoles Canyon walk",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Immediately follows the Frijoles Canyon exchange. Fermi \"went on to say that in the fall he intended to give a really logical introduction and derivation of quantum theory in his course at the University of Chicago. He apparently worked at it, but told me the next summer, when he returned to Los Alamos\" — then this sentence. Ulam's own comment follows: \"It is not just a question of axioms as some naive purist might think. The question is why such and no other axiom? Any working algorithm can be axiomatized.\"",
-   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 171) and read back against the page image. Printed page number from the running footer (166). OCR rendered the opening double quotation mark as a doubled mark and broke 'satisfaction' across the line as 'satisfac-tion'; both repaired against the page image. Note that Fermi says 'logical' when stating the intention and 'rational' when reporting the failure; both readings are as printed.",
+   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 171) and read back against the page image. Printed page number from the running footer (166). OCR rendered the opening double quotation mark as a doubled mark and broke 'satisfaction' across the line as 'satisfac-tion'; both repaired against the page image. Note that Fermi says 'logical' when stating the intention and 'rational' when reporting the failure; both readings are as printed. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -1298,11 +1298,11 @@
     "work": "Preface to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Birkhäuser, 1986)",
     "locus": "p. viii",
     "date": "1986",
-    "file": "EGPT-research/content/SSG_History/Ulam/Science Computers And People (1).md",
+    "file": "",
     "url": ""
    },
    "restored": "The full list Gardner gives is “Cellular automata theory, which he proposed to von Neumann; the Monte Carlo method of solving intractable problems, not only in probability theory but in areas such as number theory where the method would not have been thought applicable; and his work on nonlinear processes that anticipated today’s interest in solitons and ‘chaos.’”",
-   "sourcing": "Gardner’s preface, not Ulam’s or von Neumann’s words. Read from the transcription on disk; the “Preface by Martin Gardner” heading is at line 42 of that file.",
+   "sourcing": "Gardner’s preface, not Ulam’s or von Neumann’s words. Read from the transcription on disk; the “Preface by Martin Gardner” heading is at line 42 of that file. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "SECONDARY-SOURCE",
    "years": [
     1986
@@ -1329,11 +1329,11 @@
     "work": "Preface to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Birkhäuser, 1986)",
     "locus": "p. viii",
     "date": "1986",
-    "file": "EGPT-research/content/SSG_History/Ulam/Science Computers And People (1).md",
+    "file": "",
     "url": ""
    },
    "restored": "",
-   "sourcing": "Gardner’s preface, not Ulam’s words. Read from the transcription on disk.",
+   "sourcing": "Gardner’s preface, not Ulam’s words. Read from the transcription on disk. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "SECONDARY-SOURCE",
    "years": [
     1986
@@ -1547,7 +1547,7 @@
     "work": "Letter to John von Neumann",
     "locus": "closing",
     "date": "20 March 1956",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md",
     "url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
    },
    "restored": "",
@@ -1578,7 +1578,7 @@
     "work": "Letter to John von Neumann",
     "locus": "opening paragraph",
     "date": "20 March 1956",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md",
     "url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
    },
    "restored": "",
@@ -1609,7 +1609,7 @@
     "work": "Letter to John von Neumann",
     "locus": "second paragraph",
     "date": "20 March 1956",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md",
     "url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
    },
    "restored": "Footnote 3, attached to “completely”, reads in full: “except for the setting up of axioms.”",
@@ -1640,7 +1640,7 @@
     "work": "Letter to John von Neumann",
     "locus": "second paragraph",
     "date": "20 March 1956",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md",
     "url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
    },
    "restored": "",
@@ -1671,7 +1671,7 @@
     "work": "Letter to John von Neumann",
     "locus": "second paragraph, close",
     "date": "20 March 1956",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md",
     "url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
    },
    "restored": "",
@@ -1702,7 +1702,7 @@
     "work": "Letter to John von Neumann",
     "locus": "second paragraph, opening",
     "date": "20 March 1956",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Godel_Letter_to_Von_Neumann.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md",
     "url": "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
    },
    "restored": "",
@@ -2590,66 +2590,6 @@
    "embed_text": "Howard Morland | Howard Morland on the Progressive case, Federation of American Scientists electronic reprint | I had many printed resources and, finally, in the spring of 1978, an unexpected assignment from The Progressive magazine to visit the H-bomb factories and take the unclassified guided tours."
   },
   {
-   "id": "q-n-a-claim-of-a-specific--notfound",
-   "quote": "",
-   "speaker": {
-    "name": "N/A",
-    "role": "author",
-    "sort": "n/a",
-    "as_given": "N/A"
-   },
-   "source": {
-    "work": "claim of a specific documented von Neumann statement explicitly endorsing Shannon's entropy measure, or on the entropy/redundancy of language, made by von Neumann himself",
-    "locus": "n/a",
-    "date": "n/a",
-    "file": "",
-    "url": ""
-   },
-   "restored": "",
-   "sourcing": "After full-text search of (a) the entire Pias 2016 'Complete Transactions' of all ten Macy Cybernetics conferences (1946-1953), (b) von Neumann's 'The General and Logical Theory of Automata' (1948/1951), and (c) Heims's The Cybernetics Group (1991), no instance was found of von Neumann himself, in his own recorded words, naming Shannon, citing Shannon's 1948 paper, or commenting on entropy/redundancy of language. Von Neumann's recorded Macy remarks on 'information' (see entries above) concern neural coding/digital-analogical questions, not Shannon's communication theory specifically. Do not substitute the historians' general statements that von Neumann and Shannon were both 'cybernetics' figures (e.g. the Bateson quotation above) for an actual von Neumann endorsement of Shannon's measure; no such endorsement was located.",
-   "verification": "NOT-FOUND",
-   "years": [],
-   "themes": [
-    "macy"
-   ],
-   "collections": [
-    "codes_entropy_language"
-   ],
-   "quote_sha256": null,
-   "embed_text": "N/A | claim of a specific documented von Neumann statement explicitly endorsing Shannon's entropy measure, or on the entropy/redundancy of language, made by von Neumann himself | n/a | n/a"
-  },
-  {
-   "id": "q-n-a-discussion-transcrip-notfound",
-   "quote": "",
-   "speaker": {
-    "name": "N/A",
-    "role": "author",
-    "sort": "n/a",
-    "as_given": "N/A"
-   },
-   "source": {
-    "work": "discussion transcript following Shannon's \"The Redundancy of English,\" Transactions of the Seventh Conference on Cybernetics (1951)",
-    "locus": "original Transactions pp.123-149 (Pias Complete Transactions pp.248-272), full discussion section searched",
-    "date": "1950-03-23",
-    "file": "",
-    "url": "http://medientheorie.com/doc/shannon_redundancy.pdf"
-   },
-   "restored": "",
-   "sourcing": "Exhaustive text search (both the standalone excerpt PDF and the full Pias 2016 'Complete Transactions' text) of the entire discussion following Shannon's talk turns up NO speaker turn attributed to 'Von Neumann' anywhere in this session. Discussants who do speak are: Pitts, Teuber, McCulloch, Wiener, Savage, Bigelow, Stroud, Klüver, Werner, Mead, Frank, Gerard, Hutchinson, Brosin, Licklider, Bavelas, and Von Foerster. Von Neumann was a listed member of the Seventh Conference (see separate roster entry) but the stenotype record contains no recorded remark by him during this particular session. Do not construct or infer a von Neumann-Shannon exchange for this session; none exists in the transcript.",
-   "verification": "NOT-FOUND",
-   "years": [
-    1950
-   ],
-   "themes": [
-    "macy"
-   ],
-   "collections": [
-    "codes_entropy_language"
-   ],
-   "quote_sha256": null,
-   "embed_text": "N/A | discussion transcript following Shannon's \"The Redundancy of English,\" Transactions of the Seventh Conference on Cybernetics (1951) | original Transactions pp.123-149 (Pias Complete Transactions pp.248-272), full discussion section searched | 1950-03-23"
-  },
-  {
    "id": "q-n-a-participants-r-participants-seventh-31ac2639",
    "quote": "JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Study; Princeton, N.J. [...] CLAUDE E. SHANNON Bell Laboratories; Murray Hill, N.J.",
    "speaker": {
@@ -3127,7 +3067,7 @@
     "work": "\"The Barrier of Meaning,\" Letters in Mathematical Physics 10 (1985), pp. 97-99; opening address at the conference \"Evolution, Games and Learning,\" Los Alamos National Laboratory, 20-25 May 1985; reprinted in Indiscrete Thoughts",
     "locus": "p. 97",
     "date": "20-25 May 1985",
-    "file": "EGPT-research/content/SSG_History/Rota/The_Barrier_of_Meaning_Rota.md",
+    "file": "04_ROTA/The_Barrier_of_Meaning_Rota.md",
     "url": ""
    },
    "restored": "",
@@ -3158,7 +3098,7 @@
     "work": "\"The Barrier of Meaning,\" Letters in Mathematical Physics 10 (1985), pp. 97-99; opening address at the conference \"Evolution, Games and Learning,\" Los Alamos National Laboratory, 20-25 May 1985; reprinted in Indiscrete Thoughts",
     "locus": "p. 97",
     "date": "20-25 May 1985",
-    "file": "EGPT-research/content/SSG_History/Rota/The_Barrier_of_Meaning_Rota.md",
+    "file": "04_ROTA/The_Barrier_of_Meaning_Rota.md",
     "url": ""
    },
    "restored": "",
@@ -3189,7 +3129,7 @@
     "work": "\"The Barrier of Meaning,\" Letters in Mathematical Physics 10 (1985), pp. 97-99; opening address at the conference \"Evolution, Games and Learning,\" Los Alamos National Laboratory, 20-25 May 1985; reprinted in Indiscrete Thoughts",
     "locus": "p. 97",
     "date": "20-25 May 1985",
-    "file": "EGPT-research/content/SSG_History/Rota/The_Barrier_of_Meaning_Rota.md",
+    "file": "04_ROTA/The_Barrier_of_Meaning_Rota.md",
     "url": ""
    },
    "restored": "",
@@ -3220,7 +3160,7 @@
     "work": "\"The Barrier of Meaning,\" Letters in Mathematical Physics 10 (1985), pp. 97-99; opening address at the conference \"Evolution, Games and Learning,\" Los Alamos National Laboratory, 20-25 May 1985; reprinted in Indiscrete Thoughts",
     "locus": "p. 97",
     "date": "20-25 May 1985",
-    "file": "EGPT-research/content/SSG_History/Rota/The_Barrier_of_Meaning_Rota.md",
+    "file": "04_ROTA/The_Barrier_of_Meaning_Rota.md",
     "url": ""
    },
    "restored": "",
@@ -3251,11 +3191,11 @@
     "work": "Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser)",
     "locus": "ch. VI, “The Lost Café,” p. 78",
     "date": "1997",
-    "file": "content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "Rota is describing Ulam's life at Los Alamos in the decade after the hydrogen bomb. The preceding sentences describe Ulam's new standing as “an international celebrity and as the resident genius of the Los Alamos Laboratory” and record that “His attention span, already short, now decreased to a dangerous low.”",
-   "sourcing": "Rota's characterisation of Ulam, not Ulam's own words. Read from the repository's on-disk transcription of Indiscrete Thoughts at content/Books/Rota/Indiscrete Thoughts.md; the bracketed page markers in that file ([78]) are the transcription's own and locate this passage on p. 78. Rota does not name the second research adviser.",
+   "sourcing": "Rota's characterisation of Ulam, not Ulam's own words. Read from the author's on-disk transcription of Indiscrete Thoughts at 04_ROTA/Indiscrete Thoughts.md; the bracketed page markers in that file ([78]) are the transcription's own and locate this passage on p. 78. Rota does not name the second research adviser.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1997
@@ -3282,11 +3222,11 @@
     "work": "Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser)",
     "locus": "ch. VI, “The Lost Café,” p. 81",
     "date": "1997",
-    "file": "content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "Immediately following Rota's account of Ulam asking him “Isn't it true that I am a charlatan?” and preceding “He fancied himself a grand seigneur of bottomless means…”",
-   "sourcing": "Rota's characterisation of Ulam, not Ulam's own words. Read from the repository's on-disk transcription at content/Books/Rota/Indiscrete Thoughts.md; the transcription's bracketed page marker [81] falls in the sentence immediately preceding.",
+   "sourcing": "Rota's characterisation of Ulam, not Ulam's own words. Read from the author's on-disk transcription at 04_ROTA/Indiscrete Thoughts.md; the transcription's bracketed page marker [81] falls in the sentence immediately preceding.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1997
@@ -3313,11 +3253,11 @@
     "work": "Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser)",
     "locus": "ch. VI, “The Lost Café,” pp. 79–80",
     "date": "1997",
-    "file": "content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "Followed in the printing by: “Those who knew Stan and did not know what to make of him covered up the mixture of envy and resentment they felt toward him by pronouncing him lazy. He was proverbially lazy.”",
-   "sourcing": "Rota's characterisation of Ulam, not Ulam's own words. Read from the repository's on-disk transcription at content/Books/Rota/Indiscrete Thoughts.md; the transcription's bracketed page marker [80] falls immediately after the sentences that follow this one.",
+   "sourcing": "Rota's characterisation of Ulam, not Ulam's own words. Read from the author's on-disk transcription at 04_ROTA/Indiscrete Thoughts.md; the transcription's bracketed page marker [80] falls immediately after the sentences that follow this one.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1997
@@ -3344,7 +3284,7 @@
     "work": "Gian-Carlo Rota, curriculum vitae, Massachusetts Institute of Technology, under the heading “Consultant”",
     "locus": "heading “Consultant”",
     "date": "1996",
-    "file": "content/SSG_History/Rota/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx",
+    "file": "00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.docx",
     "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
    },
    "restored": "The same CV carries, under “Honors,” “Director's Office Fellow, Los Alamos National Laboratory, 1971–”; under “Security Clearances,” “Top Secret Clearance (Air Force) 1969–1971. Q – Clearance (DOE), 1966–. SI – Clearance (NSA), 1981–”; and under “Administrative positions,” “Trustee, The Santa Fe Institute, 1985–1990.”",
@@ -3654,7 +3594,7 @@
     "work": "Indiscrete Thoughts, ch. III “Problem Solvers and Theorizers”",
     "locus": "p. 45",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -3685,7 +3625,7 @@
     "work": "Indiscrete Thoughts, ch. III “Problem Solvers and Theorizers”",
     "locus": "p. 45",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -3716,7 +3656,7 @@
     "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
     "locus": "p. 229",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -3747,7 +3687,7 @@
     "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
     "locus": "pp. 229–230",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -3778,7 +3718,7 @@
     "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
     "locus": "pp. 229–230",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -3809,7 +3749,7 @@
     "work": "Indiscrete Thoughts, ch. XX “A Mathematician’s Gossip”",
     "locus": "pp. 229–230",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -3840,7 +3780,7 @@
     "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter I",
     "locus": "following the opening paragraph",
     "date": "c. 1992–93",
-    "file": "EGPT-research/content/Books/Rota/1992_Edition/ch1_Intro_and_Chapter_I.md",
+    "file": "04_ROTA/manuscript_1992/ch1_Intro_and_Chapter_I.md",
     "url": ""
    },
    "restored": "",
@@ -3871,7 +3811,7 @@
     "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter I: Introduction",
     "locus": "opening paragraph",
     "date": "c. 1992–93",
-    "file": "EGPT-research/content/Books/Rota/1992_Edition/ch1_Intro_and_Chapter_I.md",
+    "file": "04_ROTA/manuscript_1992/ch1_Intro_and_Chapter_I.md",
     "url": ""
    },
    "restored": "",
@@ -3902,7 +3842,7 @@
     "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII, §2 “The Shannon Coding Theorem”",
     "locus": "§2, statement of the theorem",
     "date": "c. 1992–93",
-    "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+    "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
     "url": ""
    },
    "restored": "",
@@ -3933,7 +3873,7 @@
     "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy”",
     "locus": "§3, closing remark",
     "date": "c. 1992–93",
-    "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+    "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
     "url": ""
    },
    "restored": "",
@@ -3964,7 +3904,7 @@
     "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy”",
     "locus": "§3, on standard entropy",
     "date": "c. 1992–93",
-    "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+    "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
     "url": ""
    },
    "restored": "",
@@ -3995,7 +3935,7 @@
     "work": "Introduction to Probability Theory (Baclawski, Rota & Billis), Chapter VIII: Entropy and Information",
     "locus": "chapter opening",
     "date": "c. 1992–93",
-    "file": "EGPT-research/content/Books/Rota/1992_Edition/ch8_Entropy_and_Information.md",
+    "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
     "url": ""
    },
    "restored": "",
@@ -4026,11 +3966,11 @@
     "work": "Ulam and Rota discuss von Neumann, MacTutor",
     "locus": "Gainesville",
     "date": "January 1974",
-    "file": "EGPT-research/content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": ""
    },
    "restored": "Rota’s immediate reply to the diagonalization passage above.",
-   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical.",
+   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -4119,7 +4059,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Five",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4150,7 +4090,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Five: “You don’t have to be a genius to do creative work”",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4181,7 +4121,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Four: “In science and engineering, you can fool very little of the time”",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4212,7 +4152,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Ten",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4243,7 +4183,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Ten",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4274,7 +4214,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Ten: “Mathematics is still the queen of the sciences”",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4305,7 +4245,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Three: “By and large, ‘knowing how’ matters more than ‘knowing what’”",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4336,7 +4276,7 @@
     "work": "“Ten Lessons of an MIT Education”",
     "locus": "Lesson Two: “You learn what you don’t know you are learning”",
     "date": "1997",
-    "file": "EGPT-research/content/SSG_History/Rota/Ten lessons of an MIT Education.html",
+    "file": "04_ROTA/Ten lessons of an MIT Education.html",
     "url": ""
    },
    "restored": "",
@@ -4460,7 +4400,7 @@
     "work": "Introductory commentary to John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005)",
     "locus": "§5.3",
     "date": "2005",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/IntroComments_05_Quantum_Mechanics.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md",
     "url": ""
    },
    "restored": "",
@@ -5514,7 +5454,7 @@
     "work": "Indiscrete Thoughts, Foreword by Robert Sokolowski",
     "locus": "p. xvi",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -5545,7 +5485,7 @@
     "work": "Indiscrete Thoughts, Foreword by Robert Sokolowski",
     "locus": "pp. xv–xvi",
     "date": "1997",
-    "file": "EGPT-research/content/Books/Rota/Indiscrete Thoughts.md",
+    "file": "04_ROTA/Indiscrete Thoughts.md",
     "url": ""
    },
    "restored": "",
@@ -5729,13 +5669,13 @@
    },
    "source": {
     "work": "Adventures of a Mathematician",
-    "locus": "pp. 196–197",
+    "locus": "pp. 197–198",
     "date": "1976",
     "file": "",
     "url": ""
    },
-   "restored": "Elided text not recovered.",
-   "sourcing": "Primary: the author holds his own scans of the physical book. The wording carried here was keyed from a secondary transcription (Gil Press, Substack) during extraction and has not yet been reconciled against those scans; the specific point to check is the singular/plural variant — some transcriptions read “all the chain of possibilities”.",
+   "restored": "The ellipsis spans three paragraphs, now recovered from the printing: “It occurred to me then that this could be equally true of all processes involving branching of events, as in the production and further multiplication of neutrons in some kind of material containing uranium or other fissile elements. At each stage of the process, there are many possibilities determining the fate of the neutron. It can scatter at one angle, change its velocity, be absorbed, or produce more neutrons by a fission of the target nucleus, and so on. The elementary probabilities for each of these possibilities are individually known, to some extent, from the knowledge of the cross sections. But the problem is to know what a succession and branching of perhaps hundreds of thousands or millions will do. One can write differential equations or integral differential equations for the ‘expected values,’ but to solve them or even to get an approximative idea of the properties of the solution, is an entirely different matter. The idea was to try out thousands of such possibilities and, at each stage, to select by chance, by means of a ‘random number’ with suitable probability, the fate or kind of event, to follow it in a line, so to speak, instead of considering all branches. After examining the possible histories of only a few thousand, one will have a good sample and an approximate answer to the problem. All one needed was to have the means of producing such sample histories.” The sentence before the quoted passage introduces the solitaire analogy: laying down the cards and noticing what proportion comes out successfully “rather than to try to compute all the combinatorial possibilities which are an exponentially increasing number.”",
+   "sourcing": "Reconciled against the author's scan of the Scribner 1976 printing, 14 September 2026. The PDF carries no text layer; pages were rendered at 200 dpi and read by Tesseract, then read back against the page images. TWO CORRECTIONS from the earlier record, which had been keyed from a secondary transcription (Gil Press, Substack): (1) the singular/plural variant is settled — the printing reads “all the chains of possibilities”, plural, as carried here, so transcriptions reading “all the chain of possibilities” are wrong; (2) the locus was recorded as pp. 196–197 and is in fact pp. 197–198 — the first sentence closes a paragraph on p. 197 (running footer 197, PDF page 202) and “It so happened that computing machines were coming into exis-” is the last line of that same page, completing on p. 198. The quoted wording itself was verbatim and is unchanged; line-break hyphenation in “exis-tence” is the printing's, not the text's.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -5747,7 +5687,7 @@
     "register"
    ],
    "quote_sha256": "d148ff9418b549016f93c5cb730b5b079bf20a22d2ace6cb0df390ca88fe33c9",
-   "embed_text": "Stanislaw Ulam | Adventures of a Mathematician | pp. 196–197 | 1976 | In a sufficiently complicated problem, actual sampling is better than an examination of all the chains of possibilities…. It so happened that computing machines were coming into existence, and here was something suitable for machine calculation. | Elided text not recovered."
+   "embed_text": "Stanislaw Ulam | Adventures of a Mathematician | pp. 197–198 | 1976 | In a sufficiently complicated problem, actual sampling is better than an examination of all the chains of possibilities…. It so happened that computing machines were coming into existence, and here was something suitable for machine calculation. | The ellipsis spans three paragraphs, now recovered from the printing: “It occurred to me then that this could be equally true of all processes involving branching of events, as in the production and further multiplication of neutrons in some kind of material containing uranium or other fissile elements. At each stage of the process, there are many possibilities determining the fate of the neutron. It can scatter at one angle, change its velocity, be absorbed, or produce more neutrons by a fission of the target nucleus, and so on. The elementary probabilities for each of these possibilities are individually known, to some extent, from the knowledge of the cross sections. But the problem is to know what a succession and branching of perhaps hundreds of thousands or millions will do. One can write differential equations or integral differential equations for the ‘expected values,’ but to solve them or even to get an approximative idea of the properties of the solution, is an entirely different matter. The idea was to try out thousands of such possibilities and, at each stage, to select by chance, by means of a ‘random number’ with suitable probability, the fate or kind of event, to follow it in a line, so to speak, instead of considering all branches. After examining the possible histories of only a few thousand, one will have a good sample and an approximate answer to the problem. All one needed was to have the means of producing such sample histories.” The sentence before the quoted passage introduces the solitaire analogy: laying down the cards and noticing what proportion comes out successfully “rather than to try to compute all the combinatorial possibilities which are an exponentially increasing number.”"
   },
   {
    "id": "q-stanislaw-ulam-s-ulam-john-von-neum-b791e92c",
@@ -5762,11 +5702,11 @@
     "work": "S. Ulam, “John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64 (3), Part 2 (May 1958), pp. 1–49",
     "locus": "p. 1 (opening paragraph)",
     "date": "1958",
-    "file": "content/SSG_History/Ulam/Ulam_JvN_Obituary.md",
+    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
     "url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
    },
    "restored": "The article's first sentences. The paragraph continues: “Many eminent voices have already described and praised his contributions. It is my aim to add here a brief account of his life and of his work from a background of personal acquaintance and friendship extending over a period of 25 years.”",
-   "sourcing": "Read from the repository's on-disk OCR transcription of the BAMS memorial at content/SSG_History/Ulam/Ulam_JvN_Obituary.md, not from the printed issue or the Project Euclid scan. That transcription splits words across the original line breaks (e.g. ‘organ izational’, ‘con tains’); this passage contains no such split. Page number derived from the running-head markers in the same file.",
+   "sourcing": "Read from the author's on-disk OCR transcription of the BAMS memorial at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md, not from the printed issue or the Project Euclid scan. That transcription splits words across the original line breaks (e.g. ‘organ izational’, ‘con tains’); this passage contains no such split. Page number derived from the running-head markers in the same file.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1958
@@ -5793,11 +5733,11 @@
     "work": "S. Ulam, “John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64 (3), Part 2 (May 1958), pp. 1–49",
     "locus": "p. 4",
     "date": "1958",
-    "file": "content/SSG_History/Ulam/Ulam_JvN_Obituary.md",
+    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
     "url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
    },
    "restored": "Immediately followed in the printing by an indented quotation from Lewis Strauss beginning “During the period between the date of his confirmation and the late autumn, 1955, Johnny functioned magnificently…”",
-   "sourcing": "Read from the repository's on-disk OCR transcription at content/SSG_History/Ulam/Ulam_JvN_Obituary.md. In that transcription the word ‘occurred’ is broken by a page turn as ‘oc curred’; it is restored here to its printed form without brackets because the split is an OCR artefact of the line break, not a feature of the printing. Page number derived from the running-head markers in the same file.",
+   "sourcing": "Read from the author's on-disk OCR transcription at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md. In that transcription the word ‘occurred’ is broken by a page turn as ‘oc curred’; it is restored here to its printed form without brackets because the split is an OCR artefact of the line break, not a feature of the printing. Page number derived from the running-head markers in the same file.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1958
@@ -5824,11 +5764,11 @@
     "work": "S. Ulam, “John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64 (3), Part 2 (May 1958), pp. 1–49",
     "locus": "p. 42",
     "date": "1958",
-    "file": "content/SSG_History/Ulam/Ulam_JvN_Obituary.md",
+    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
     "url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
    },
    "restored": "The list Ulam promises earlier in the memorial when he writes that “A list of his positions, organizational memberships, etc., will be found at the end of this article.” It appears in the closing biographical apparatus before the bibliography of von Neumann's publications.",
-   "sourcing": "Read from the repository's on-disk OCR transcription at content/SSG_History/Ulam/Ulam_JvN_Obituary.md. That transcription splits five words across original line breaks — ‘con tains’, ‘Scien tific’, ‘presi dential’ — and renders one date range as ‘1949- 1954’ with an inserted space; all four are rejoined here as printed, without brackets, because the splits are OCR artefacts of line breaks. The comma-for-period after ‘Washington, D. C’ is as the OCR gives it and has not been corrected. Page number derived from the running-head markers in the same file.",
+   "sourcing": "Read from the author's on-disk OCR transcription at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md. That transcription splits five words across original line breaks — ‘con tains’, ‘Scien tific’, ‘presi dential’ — and renders one date range as ‘1949- 1954’ with an inserted space; all four are rejoined here as printed, without brackets, because the splits are OCR artefacts of line breaks. The comma-for-period after ‘Washington, D. C’ is as the OCR gives it and has not been corrected. Page number derived from the running-head markers in the same file.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1958
@@ -5855,11 +5795,11 @@
     "work": "S. Ulam, “John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64 (3), Part 2 (May 1958), pp. 1–49",
     "locus": "p. 5",
     "date": "1958",
-    "file": "content/SSG_History/Ulam/Ulam_JvN_Obituary.md",
+    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
     "url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
    },
    "restored": "Stands as its own paragraph, between Ulam's account of von Neumann's conversational evaluations of other scientists and his account of von Neumann's lack of a certain self-confidence.",
-   "sourcing": "Read from the repository's on-disk OCR transcription at content/SSG_History/Ulam/Ulam_JvN_Obituary.md. The OCR renders this paragraph without word-splitting. Page number derived from the running-head markers in the same file.",
+   "sourcing": "Read from the author's on-disk OCR transcription at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md. The OCR renders this paragraph without word-splitting. Page number derived from the running-head markers in the same file.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1958
@@ -5886,7 +5826,7 @@
     "work": "Science, Computers, and People, ch. 18",
     "locus": "p. 227",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -5917,7 +5857,7 @@
     "work": "Science, Computers, and People, ch. 18",
     "locus": "p. 228",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -5948,7 +5888,7 @@
     "work": "Science, Computers, and People, ch. 18",
     "locus": "p. 229",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -5979,7 +5919,7 @@
     "work": "Science, Computers, and People, ch. 18",
     "locus": "p. 229",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -6010,7 +5950,7 @@
     "work": "Science, Computers, and People, ch. 18",
     "locus": "pp. 228–229",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "The page break [229] falls inside this sentence, after “must have”.",
@@ -6041,7 +5981,7 @@
     "work": "Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain”",
     "locus": "pp. 223–224",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "The page break [224] falls earlier in the paragraph, after “Beyond the mere bulk”.",
@@ -6072,7 +6012,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "p. 39",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -6103,7 +6043,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "p. 41",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -6134,7 +6074,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "p. 42",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "Final paragraph of the transcribed portion of ch. 5.",
@@ -6165,7 +6105,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "pp. 38–39",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "The page break [39] falls inside this passage, after “various velocities,”.",
@@ -6196,7 +6136,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "pp. 39–40",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "“n” is italicised in the source. The page break [40] falls after “or triple system? A”.",
@@ -6227,7 +6167,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "pp. 40–41",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "The page break [41] falls after “A great deal of work is now”.",
@@ -6258,7 +6198,7 @@
     "work": "Science, Computers, and People, ch. 5",
     "locus": "pp. 41–42",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -6289,7 +6229,7 @@
     "work": "Science, Computers, and People, ch. 5, “A First Look at Computing: A Personal Retrospective”",
     "locus": "pp. 38–39",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -6320,7 +6260,7 @@
     "work": "Science, Computers, and People, ch. 9",
     "locus": "p. 78",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "",
@@ -6351,7 +6291,7 @@
     "work": "Science, Computers, and People, ch. 9, “Patterns of Growth of Figures”",
     "locus": "pp. 77–78",
     "date": "1986",
-    "file": "EGPT-research/content/Books/Ulam/Science Computers And People.md",
+    "file": "03_ULAM/Science Computers And People.md",
     "url": ""
    },
    "restored": "The page break [78] falls after “how much ‘information’”.",
@@ -6382,11 +6322,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part III, \"Los Alamos\"",
     "locus": "p. 167",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Ulam on Niels Bohr, who \"was in Los Alamos for several months\": \"He was not very old. To me at thirty-five, he seemed ancient, even though Bohr in his late fifties was very active and energetic, physically as well as mentally. He walked, skied, and hiked in the Los Alamos mountains.\" This is the paragraph of praise that precedes the criticism of complementarity.",
-   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 172) and read back against the page image. Printed page number from the running footer (167). The parentheses around the second sentence are as printed.",
+   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 172) and read back against the page image. Printed page number from the running footer (167). The parentheses around the second sentence are as printed. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6413,11 +6353,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part III, \"Los Alamos\"",
     "locus": "p. 167",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Stands as its own paragraph between Ulam's praise of Bohr's wisdom (p. 167) and his criticism of complementarity (pp. 167-168). Fermi's remark is reported by Ulam in indirect speech, not quoted.",
-   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 172) and read back against the page image. Printed page number from the running footer (167). The printing reads 'It was an iconoclastic statement'; EXHIBIT_report.md renders the same clause as Ulam calling this 'an iconoclastic statement, since so many physicists are still under the spell of Bohr,' which adapts the leading pronoun to the reporting sentence. Fermi's remark itself is Ulam's indirect report and carries no quotation marks in the printing.",
+   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 172) and read back against the page image. Printed page number from the running footer (167). The printing reads 'It was an iconoclastic statement'; EXHIBIT_report.md renders the same clause as Ulam calling this 'an iconoclastic statement, since so many physicists are still under the spell of Bohr,' which adapts the leading pronoun to the reporting sentence. Fermi's remark itself is Ulam's indirect report and carries no quotation marks in the printing. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6444,11 +6384,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part III, \"Los Alamos\"",
     "locus": "p. 168",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Opens the run of Bohr anecdotes that follows the complementarity passage: the Ruby Scherr 'Guess how much?' story, Bohr's wartime pseudonym Nicholas Baker, and Weisskopf's slip at the colloquium.",
-   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 173) and read back against the page image. Printed page number from the running footer (168). EXHIBIT_report.md note 74 quotes this with a marked ellipsis as 'Bohr's speech was very difficult to understand ... Most of the time it was impossible to get his exact words.'; the elided words are 'and anecdotes about him abound.'",
+   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 173) and read back against the page image. Printed page number from the running footer (168). EXHIBIT_report.md note 74 quotes this with a marked ellipsis as 'Bohr's speech was very difficult to understand ... Most of the time it was impossible to get his exact words.'; the elided words are 'and anecdotes about him abound.' The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6475,11 +6415,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part III, \"Los Alamos\"",
     "locus": "pp. 167-168",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Ulam's own position on complementarity, following the paragraph of praise for Bohr personally and the reported Fermi remark. The passage spans a page break: it begins at the foot of p. 167 ('He had his own kind of genius...') and continues on p. 168. The last three sentences ('It seems to me...troubles me.') are a separate paragraph in the printing.",
-   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF pages 172-173) and read back against the page images. Printed page numbers from the running footers (167), (168). The suspension points inside the first inner quotation are set as '. . .' in the printing and are Bohr's manner of speaking as Ulam renders it, not an editorial elision. EXHIBIT_report.md quotes this passage with a marked ellipsis in place of 'But he still has many admirers. Victor F. Weisskopf is one.'; the full text is carried here so that elision can be checked.",
+   "sourcing": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF pages 172-173) and read back against the page images. Printed page numbers from the running footers (167), (168). The suspension points inside the first inner quotation are set as '. . .' in the printing and are Bohr's manner of speaking as Ulam renders it, not an editorial elision. EXHIBIT_report.md quotes this passage with a marked ellipsis in place of 'But he still has many admirers. Victor F. Weisskopf is one.'; the full text is carried here so that elision can be checked. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6506,11 +6446,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), Part IV, ch. 13, \"Government Science 1957-1967\"",
     "locus": "pp. 249-250",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Opening of the chapter covering 1957 onward, immediately following ch. 12, \"The Death of Two Pioneers,\" which covers the deaths of Fermi and von Neumann. The chapter's running head is dated 1957-1967.",
-   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing held in the repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi and read back against the page images. Printed page numbers taken from the running footers (249), (250). OCR rendered the chapter's running-head date as '1957-1907'; the contents page gives ch. 13 at p. 249 and ch. 14 at p. 266.",
+   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing held in the repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi and read back against the page images. Printed page numbers taken from the running footers (249), (250). OCR rendered the chapter's running-head date as '1957-1907'; the contents page gives ch. 13 at p. 249 and ch. 14 at p. 266. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6537,11 +6477,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 12, \"The Death of Two Pioneers\"",
     "locus": "p. 241",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Preceding sentences: \"During his illness Johnny did not talk to me about his important work on the ICBM Committee; only later I learned that he was Chairman and that it was called the von Neumann Committee. As he grew increasingly ill, some of the meetings were held in his house and later at the Woodner Hotel to which the von Neumanns had moved so as to be closer to Walter Reed Hospital, where he was undergoing treatment.\"",
-   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. OCR rendered 'ICBM' as '[CBM' at the first occurrence; corrected against the page image.",
+   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. OCR rendered 'ICBM' as '[CBM' at the first occurrence; corrected against the page image. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6568,11 +6508,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 12, \"The Death of Two Pioneers\"",
     "locus": "pp. 241-242",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Follows Ulam's account of proposing the cellular framework: \"I proposed to him some of my own ideas about automata consisting of cells in a crystal-like arrangement. This model is described in the book edited by Arthur Burks, Cellular Automata, and in Burks's own book on the theory of automata.\"",
-   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'his book on the brain' is The Computer and the Brain (Yale, 1958).",
+   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'his book on the brain' is The Computer and the Brain (Yale, 1958). The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6599,11 +6539,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\"",
     "locus": "p. 250",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "The elision replaces: \"Mark is a Canadian mathematician who came to Los Alamos towards the end of the war with the British Mission. He became an American citizen some years later. He bore the brunt of the difficulties with Teller with remarkable calm and objectivity; he is one of the few mathematicians I know who have an understanding for the problems of physics and associated technology in a broad sense.\"",
-   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. Carson Mark is the division leader who invited Metropolis to set up the Los Alamos computing facility.",
+   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. Carson Mark is the division leader who invited Metropolis to set up the Los Alamos computing facility. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6630,11 +6570,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\"",
     "locus": "p. 251",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Preceded by Ulam's account of the postwar growth of government science: \"Beginning with Bush and Conant, Oppenheimer, von Neumann, and many others became government 'sages.' Government science peaked and committees proliferated under the Eisenhower, Kennedy, and Johnson administrations, and even I found myself called upon.\"",
-   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'Johnny' is von Neumann.",
+   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'Johnny' is von Neumann. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6661,11 +6601,11 @@
     "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\"",
     "locus": "p. 251",
     "date": "1976",
-    "file": "content/Books/Ulam/461281549-Stanislaw-M-Ulam-Adventures-of-a-mathematician-Scribner-1976-pdf.pdf",
+    "file": "",
     "url": ""
    },
    "restored": "Ulam's own statement about administrative work, immediately before his account of being drawn into government committees after von Neumann's death.",
-   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image.",
+   "sourcing": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1976
@@ -6692,11 +6632,11 @@
     "work": "Ulam and Rota discuss von Neumann, MacTutor",
     "locus": "Gainesville",
     "date": "January 1974",
-    "file": "EGPT-research/content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": ""
    },
    "restored": "",
-   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical.",
+   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -6723,11 +6663,11 @@
     "work": "Ulam and Rota discuss von Neumann, MacTutor",
     "locus": "Gainesville",
     "date": "January 1974",
-    "file": "EGPT-research/content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": ""
    },
    "restored": "The printed wording is “merely a diagonal method” and “In a sense it is a diagonalization” — not “mere diagonalization.”",
-   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical.",
+   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -6754,11 +6694,11 @@
     "work": "Ulam and Rota discuss von Neumann, MacTutor",
     "locus": "Gainesville",
     "date": "January 1974",
-    "file": "EGPT-research/content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": ""
    },
    "restored": "The trailing ellipsis is the source’s own, not an editorial cut. Rota answers: “Not to speak of poor von Neumann.”",
-   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical.",
+   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -6785,11 +6725,11 @@
     "work": "Ulam and Rota discuss von Neumann, MacTutor",
     "locus": "Gainesville",
     "date": "January 1974",
-    "file": "EGPT-research/content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": ""
    },
    "restored": "",
-   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. Note the British spelling “axiomatisation”/“realise” in this printing.",
+   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. Note the British spelling “axiomatisation”/“realise” in this printing. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -6816,11 +6756,11 @@
     "work": "Ulam and Rota discuss von Neumann, MacTutor",
     "locus": "Gainesville",
     "date": "January 1974",
-    "file": "EGPT-research/content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": ""
    },
    "restored": "Answering Rota’s question “What was he working on at Los Alamos during the war?” The aside about Rota is addressed to Rota in the second person. Quotation marks around “influencers” and “influencee” are the source’s.",
-   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical.",
+   "sourcing": "MacTutor History of Mathematics, University of St Andrews; the on-disk file was converted from a PDF printout of the web page captured 1 March 2026. The MacTutor editors state: “We have made a few small editorial changes to the text.” The source prints “Godel” without the umlaut throughout; reproduced as printed. The same Gainesville conversation was also printed in Los Alamos Science 15 (1987) under different editing — the two texts are not word-identical. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -6847,7 +6787,7 @@
     "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10 (1985), pp. 97-99",
     "locus": "p. 97",
     "date": "20-25 May 1985",
-    "file": "EGPT-research/content/SSG_History/Rota/The_Barrier_of_Meaning_Rota.md",
+    "file": "04_ROTA/The_Barrier_of_Meaning_Rota.md",
     "url": ""
    },
    "restored": "Rota’s framing: he had asked Ulam why he constantly wanted company, “and his answer gave him away.”",
@@ -7344,11 +7284,11 @@
     "work": "“Ulam and Rota discuss von Neumann,” conversation at Gainesville, Florida; published by MacTutor History of Mathematics, University of St Andrews",
     "locus": "transcript, unpaginated",
     "date": "1974",
-    "file": "content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md",
+    "file": "",
     "url": "https://mathshistory.st-andrews.ac.uk/Extras/Ulam_Rota/"
    },
    "restored": "Ulam is answering Rota's question “But actual work?” about von Neumann at Los Alamos.",
-   "sourcing": "A transcribed conversation; the MacTutor editors state “We have made a few small editorial changes to the text.” Read from the repository's on-disk conversion of the MacTutor page (captured 2026-03-01) at content/SSG_History/Ulam_Rota_Discuss_Von_Neumann.md. Ulam's dating is internally inconsistent with the printed record: von Neumann died 8 February 1957 and Sputnik launched 4 October 1957, so the ICBM committee he chaired cannot have been established after Sputnik; Ulam's own 1958 BAMS memorial dates the chairmanship of the Advisory Committee on Guided Missiles to 1954–1957.",
+   "sourcing": "A transcribed conversation; the MacTutor editors state “We have made a few small editorial changes to the text.” Read from the author's on-disk conversion of the MacTutor page (captured 2026-03-01), which is not reproduced in this collection. Ulam's dating is internally inconsistent with the printed record: von Neumann died 8 February 1957 and Sputnik launched 4 October 1957, so the ICBM committee he chaired cannot have been established after Sputnik; Ulam's own 1958 BAMS memorial dates the chairmanship of the Advisory Committee on Guided Missiles to 1954–1957. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1974
@@ -7718,7 +7658,7 @@
     "work": "Letter to Erwin Schrödinger, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005)",
     "locus": "pp. 211-213; quoted in Rédei’s introductory commentary §5.3",
     "date": "11 April 1936",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/IntroComments_05_Quantum_Mechanics.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md",
     "url": ""
    },
    "restored": "Rédei’s framing: “Von Neumann’s position is that the presence of correlations between spatially separated quantum systems is not, in and by itself, reason for concern.”",
@@ -7749,7 +7689,7 @@
     "work": "Letter to Erwin Schrödinger, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005)",
     "locus": "pp. 211-213; quoted in Rédei’s introductory commentary §5.4",
     "date": "11 April 1936",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/IntroComments_05_Quantum_Mechanics.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md",
     "url": ""
    },
    "restored": "",
@@ -7780,7 +7720,7 @@
     "work": "Letter to Kurt Gödel",
     "locus": "Berlin",
     "date": "12 January 1931",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md",
     "url": ""
    },
    "restored": "The bracketed “[and]” is the translator’s or editors’ interpolation.",
@@ -7811,7 +7751,7 @@
     "work": "Letter to Kurt Gödel",
     "locus": "Berlin",
     "date": "12 January 1931",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md",
     "url": ""
    },
    "restored": "",
@@ -7842,7 +7782,7 @@
     "work": "Letter to Kurt Gödel",
     "locus": "Berlin",
     "date": "12 January 1931",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md",
     "url": ""
    },
    "restored": "The printed word is LOGICIAN, not “mathematician.” “construction of arithmetic” is italicised in the source. The double hyphen is the source’s. A, M and Z are defined in the preceding paragraph of the letter as, respectively, the arithmetical axiom system with number variables only; that system with first-order function variables added; and von Neumann’s own set-theoretic axiom system.",
@@ -7873,7 +7813,7 @@
     "work": "Letter to Kurt Gödel (German original), in Kurt Gödel, Collected Works, Vol. V: Correspondence H–Z (Oxford, 2003), pp. 340–345",
     "locus": "p. 340, first paragraph",
     "date": "12 January 1931",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md",
     "url": "https://archive.org/details/kurt-godel-solomon-feferman-collected-works.-vol.-5.-correspondence-h-z"
    },
    "restored": "The printed text carries a struck-through “eine” immediately before “stets”, and “[s]” marks editorial supply in “Widerspruch[s]freiheit”.",
@@ -7904,7 +7844,7 @@
     "work": "Letter to Kurt Gödel (German original), in Kurt Gödel, Collected Works, Vol. V: Correspondence H–Z (Oxford, 2003), pp. 340–345",
     "locus": "p. 342",
     "date": "12 January 1931",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/Letter3_Jan12_1931.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md",
     "url": "https://archive.org/details/kurt-godel-solomon-feferman-collected-works.-vol.-5.-correspondence-h-z"
    },
    "restored": "The printed text carries two struck-through passages inside this sentence — “und das kein lebend” after “bekannt ist,” and “intuition” before “(effektive) intuitionistische” — reproduced from the manuscript and omitted here.",
@@ -7935,7 +7875,7 @@
     "work": "Letter to P. A. M. Dirac, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005)",
     "locus": "quoted in Rédei’s introductory commentary §5.4",
     "date": "27 January 1934",
-    "file": "EGPT-research/content/SSG_History/JvN/JvN_Letters/IntroComments_05_Quantum_Mechanics.md",
+    "file": "02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md",
     "url": ""
    },
    "restored": "Rédei’s framing: to avoid the divergence arising from point-likeness of charges, von Neumann tried to quantize space.",
@@ -8344,13 +8284,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "The source reads “modem” here — an OCR artifact for “modern.”",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8362,7 +8302,7 @@
     "godel_thread"
    ],
    "quote_sha256": "b7e03f0548eb08d2a19aec94740830cfc7691b51b24055da322557c9c09a101c",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | A system of mathematics which was free of these undesirable traits, “intuitionism,” was developed by Brouwer. In this system the difficulties and contradiction of set theory did not arise. However, a good fifty per cent of modern mathematics, in its most vital - and up to then unquestioned - parts, especially in analysis, were also affected by this “purge”: they either became invalid or had to be justified by very complicated subsidiary considerations. And in this latter process one usually lost appreciably in generality of validity and elegance of deduction. | The source reads “modem” here — an OCR artifact for “modern.”"
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | A system of mathematics which was free of these undesirable traits, “intuitionism,” was developed by Brouwer. In this system the difficulties and contradiction of set theory did not arise. However, a good fifty per cent of modern mathematics, in its most vital - and up to then unquestioned - parts, especially in analysis, were also affected by this “purge”: they either became invalid or had to be justified by very complicated subsidiary considerations. And in this latter process one usually lost appreciably in generality of validity and elegance of deduction. | The source reads “modem” here — an OCR artifact for “modern.”"
   },
   {
    "id": "q-john-von-neumann-the-mathematician-3cfbdf16",
@@ -8375,13 +8315,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8393,7 +8333,7 @@
     "godel_thread"
    ],
    "quote_sha256": "3cfbdf16b1b2853e68ad8bed4d716aa4bc5eaefb28a28b1965d4f5f721a46585",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | The main hope of a justification of classical mathematics - in the sense of Hilbert or of Brouwer and Weyl - being gone, most mathematicians decided to use that system anyway. After all, classical mathematics was producing results which were both elegant and useful, and, even though one could never again be absolutely certain of its reliability, it stood on at least as sound a foundation as, for example, the existence of the electron. Hence, if one was willing to accept the sciences, one might as well accept the classical system of mathematics."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | The main hope of a justification of classical mathematics - in the sense of Hilbert or of Brouwer and Weyl - being gone, most mathematicians decided to use that system anyway. After all, classical mathematics was producing results which were both elegant and useful, and, even though one could never again be absolutely certain of its reliability, it stood on at least as sound a foundation as, for example, the existence of the electron. Hence, if one was willing to accept the sciences, one might as well accept the classical system of mathematics."
   },
   {
    "id": "q-john-von-neumann-the-mathematician-9aedde2b",
@@ -8406,13 +8346,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "Preceded by: “Gödel’s proof satisfied the strictest criterion of mathematical rigour - the intuitionistic one.”",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8424,7 +8364,7 @@
     "godel_thread"
    ],
    "quote_sha256": "9aedde2bffb0ed90cca5039ac86bd73faf8c576d40bf9ce590f14d4b4a98261f",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | My personal opinion, which is shared by many others, is, that Gödel has shown that Hilbert’s program is essentially hopeless. | Preceded by: “Gödel’s proof satisfied the strictest criterion of mathematical rigour - the intuitionistic one.”"
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | My personal opinion, which is shared by many others, is, that Gödel has shown that Hilbert’s program is essentially hopeless. | Preceded by: “Gödel’s proof satisfied the strictest criterion of mathematical rigour - the intuitionistic one.”"
   },
   {
    "id": "q-john-von-neumann-the-mathematician-f7bc9b22",
@@ -8437,13 +8377,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "The stray comma in “in such, detail” is in the source text.",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8455,7 +8395,7 @@
     "godel_thread"
    ],
    "quote_sha256": "f7bc9b222847e7f5d4b9f612c7c2fec40c774b4ceeb6469d84ca21de752b1ac7",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | I have told the story of this controversy in such, detail, because I think that it constitutes the best caution against taking the immovable rigour of mathematics too much for granted. This happened in our own lifetime, and I know myself how humiliatingly easily my own views regarding the absolute mathematical truth changed during this episode, and how they changed three times in succession! | The stray comma in “in such, detail” is in the source text."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | I have told the story of this controversy in such, detail, because I think that it constitutes the best caution against taking the immovable rigour of mathematics too much for granted. This happened in our own lifetime, and I know myself how humiliatingly easily my own views regarding the absolute mathematical truth changed during this episode, and how they changed three times in succession! | The stray comma in “in such, detail” is in the source text."
   },
   {
    "id": "q-john-von-neumann-the-mathematician-bea12fa8",
@@ -8468,13 +8408,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8486,7 +8426,7 @@
     "godel_thread"
    ],
    "quote_sha256": "bea12fa836ee4de9dce5def7cc442555c65d75b20bc691b49aa4778c123bf520",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | As a mathematical discipline travels far from its empirical source, or still more, if it is a second and third generation only indirectly inspired by ideas coming from “reality” it is beset with very grave dangers. It becomes more and more purely aestheticizing, more and more purely l’art pour l’art. This need not be bad, if the field is surrounded by correlated subjects, which still have closer empirical connections, or if the discipline is under the influence of men with an exceptionally well-developed taste. But there is a grave danger that the subject will develop along the line of least resistance, that the stream, so far from its source, will separate into a multitude of insignificant branches, and that the discipline will become a disorganized mass of details and complexities."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | As a mathematical discipline travels far from its empirical source, or still more, if it is a second and third generation only indirectly inspired by ideas coming from “reality” it is beset with very grave dangers. It becomes more and more purely aestheticizing, more and more purely l’art pour l’art. This need not be bad, if the field is surrounded by correlated subjects, which still have closer empirical connections, or if the discipline is under the influence of men with an exceptionally well-developed taste. But there is a grave danger that the subject will develop along the line of least resistance, that the stream, so far from its source, will separate into a multitude of insignificant branches, and that the discipline will become a disorganized mass of details and complexities."
   },
   {
    "id": "q-john-von-neumann-the-mathematician-adac7864",
@@ -8499,13 +8439,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "Followed by: “It would be easy to give examples, to trace specific evolutions into the baroque and the very high baroque, but this, again, would be too technical.”",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8517,7 +8457,7 @@
     "godel_thread"
    ],
    "quote_sha256": "adac786478fa06bd0f41562635ab912ea288e891188a3c5da17be1f5c280992b",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | In other words, at a great distance from its empirical source, or after much “abstract” inbreeding, a mathematical subject is in danger of degeneration. At the inception the style is usually classical; when it shows signs of becoming baroque, then the danger signal is up. | Followed by: “It would be easy to give examples, to trace specific evolutions into the baroque and the very high baroque, but this, again, would be too technical.”"
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | In other words, at a great distance from its empirical source, or after much “abstract” inbreeding, a mathematical subject is in danger of degeneration. At the inception the style is usually classical; when it shows signs of becoming baroque, then the danger signal is up. | Followed by: “It would be easy to give examples, to trace specific evolutions into the baroque and the very high baroque, but this, again, would be too technical.”"
   },
   {
    "id": "q-john-von-neumann-the-mathematician-70e7f946",
@@ -8530,13 +8470,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "The source sentence ends without a full stop.",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8548,7 +8488,7 @@
     "godel_thread"
    ],
    "quote_sha256": "70e7f946f181f3b2fe564d9abef574d7abf99a1a49db04db7c237a3c128cf601",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | In any event, whenever this stage is reached, the only remedy seems to me to be the rejuvenating return to the source: the re-injection of more or less directly empirical ideas. I am convinced that this was a necessary condition to conserve the freshness and the vitality of the subject and that this will remain equally true in the future | The source sentence ends without a full stop."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | In any event, whenever this stage is reached, the only remedy seems to me to be the rejuvenating return to the source: the re-injection of more or less directly empirical ideas. I am convinced that this was a necessary condition to conserve the freshness and the vitality of the subject and that this will remain equally true in the future | The source sentence ends without a full stop."
   },
   {
    "id": "q-john-von-neumann-the-mathematician-7f92b655",
@@ -8561,13 +8501,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8579,7 +8519,7 @@
     "godel_thread"
    ],
    "quote_sha256": "7f92b65521aaa720b88698d965b9dcb17152a914529ab4aa31a585dc743ea3c6",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | Thus we are now comparing mathematics with the empirical science that lies closest to it and with which it has, as I hope I have shown, much in common - with theoretical physics. The differences in the actual modus procedendi are nevertheless great and basic. The aims of theoretical physics are in the main given from the “outside,” in most cases by the needs of experimental physics."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | Thus we are now comparing mathematics with the empirical science that lies closest to it and with which it has, as I hope I have shown, much in common - with theoretical physics. The differences in the actual modus procedendi are nevertheless great and basic. The aims of theoretical physics are in the main given from the “outside,” in most cases by the needs of experimental physics."
   },
   {
    "id": "q-john-von-neumann-the-mathematician-37cbc636",
@@ -8592,13 +8532,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Distinct from the “one-third” figure Ulam reports von Neumann giving him in the 1958 Bulletin memorial.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Distinct from the “one-third” figure Ulam reports von Neumann giving him in the 1958 Bulletin memorial. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8610,7 +8550,7 @@
     "godel_thread"
    ],
    "quote_sha256": "37cbc63659b06c0cbeadca86e3528a894398719c6abc120a2c27a692580fa157",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | A good theoretical physicist may today still have a working knowledge of more than half of his subject. I doubt that any mathematician now living has much of a relationship to more than a quarter."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | A good theoretical physicist may today still have a working knowledge of more than half of his subject. I doubt that any mathematician now living has much of a relationship to more than a quarter."
   },
   {
    "id": "q-john-von-neumann-the-mathematician-fa0480fc",
@@ -8623,13 +8563,13 @@
    },
    "source": {
     "work": "The Mathematician",
-    "locus": "",
+    "locus": "MacTutor Part 2",
     "date": "1947",
-    "file": "EGPT-research/content/SSG_History/JvN/The_Mathematician_JvM.md",
-    "url": ""
+    "file": "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "url": "https://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2/"
    },
    "restored": "",
-   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here.",
+   "sourcing": "The essay was published in 1947 in R. B. Heywood (ed.), The Works of the Mind. The on-disk text carries OCR artifacts — “modem” for “modern” at four points, “merita” for “merits,” and “It we may be permitted a simile” for “If we may.” Quotation marks around terms are the source’s own; the file prints “Gödel” with the umlaut here. Full text verified against the MacTutor History of Mathematics archive's reproduction of the essay, Part 2, on 14 September 2026; every passage the report draws from this essay falls in Part 2. MacTutor gives the bibliographic header “Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180–196” but reproduces no original pagination, so the printed page within 180–196 is not fixed for this passage. MacTutor's text does not carry the on-disk copy's OCR artefacts.",
    "verification": "PRIMARY-TEXT-READ",
    "years": [
     1947
@@ -8641,7 +8581,7 @@
     "godel_thread"
    ],
    "quote_sha256": "fa0480fc939232871da16c2e1ce62fe6e7a7721b524354dfdc89e9194b051966",
-   "embed_text": "John von Neumann | The Mathematician | 1947 | Furthermore, the attitude that theoretical physics does not explain phenomena, but only classifies and correlates, is today accepted by most theoretical physicists. This means that the criterion of success for such a theory is simply whether it can, by a simple and elegant classifying and correlating scheme, cover very many phenomena, which without this scheme would seem complicated and heterogeneous, and whether the scheme even covers phenomena which were not considered or even not known at the time when the scheme was evolved."
+   "embed_text": "John von Neumann | The Mathematician | MacTutor Part 2 | 1947 | Furthermore, the attitude that theoretical physics does not explain phenomena, but only classifies and correlates, is today accepted by most theoretical physicists. This means that the criterion of success for such a theory is simply whether it can, by a simple and elegant classifying and correlating scheme, cover very many phenomena, which without this scheme would seem complicated and heterogeneous, and whether the scheme even covers phenomena which were not considered or even not known at the time when the scheme was evolved."
   },
   {
    "id": "q-john-von-neumann-letter-to-r-d-richtm-402bbc7d",
@@ -9200,68 +9140,6 @@
    ],
    "quote_sha256": "663ffc21bdcfc3fb9180f8dd02fea5b600f991a6fd9786ddbc9f53fadea7e5c5",
    "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | 26 August 2026 | So my claim is, if you don’t know the story of John Aristotle Phillips, the substandard physicist who in his Princeton PhD thesis is the Princeton mascot, said, look, I’m not very good, Freeman Dyson, I want to use the fact that I’m not very good to do something amazing. Tell me whether or not you will let me come up with the plan for an atomic bomb. And Freeman Dyson said, I will give you no help, but I’ll tell you whether it will work. So the substandard physicists put together this and he submitted his junior thesis. And I forget whether it’s page 24, but that thesis is not in the library and the government removed the page that has the plan. | Follows the Morland passage in the transcript."
-  },
-  {
-   "id": "q-x-negative-search-find-eb62b5e4",
-   "quote": "NOT-FOUND: this agent found no statement by Edward Teller, and no statement about Edward Teller in any source consulted, placing him in von Neumann's theory-of-automata programme, in computing-machine development, or in the design or direction of any computer. Teller's documented contact with the discrete/stochastic programme in the sources consulted is confined to co-authorship of Metropolis, Rosenbluth, Rosenbluth, Teller and Teller, “Equation of State Calculations by Fast Computing Machines,” Journal of Chemical Physics 21 (1953), pp. 1087–1092, computed on the Los Alamos MANIAC.",
-   "speaker": {
-    "name": "—",
-    "role": "author",
-    "sort": "—",
-    "as_given": "—"
-   },
-   "source": {
-    "work": "Negative search finding: Edward Teller and the automata / computing-machine programme, 1945–1960",
-    "locus": "n/a",
-    "date": "1957",
-    "file": "",
-    "url": "https://en.wikipedia.org/wiki/Equation_of_State_Calculations_by_Fast_Computing_Machines"
-   },
-   "restored": "Searched: the repository corpus (quotations/corpus/quotes.jsonl, 271 records) and content/SSG_History/; Ulam's 1958 BAMS memorial; Shannon's 1958 BAMS companion article on von Neumann and automata theory; Rota, “The Lost Café”; the Lawrence Livermore National Laboratory directorate biography of Teller; the Metropolis–Rhodes 1993 oral history; and web searches pairing Teller with automata theory, cellular automata, computer design and the LARC.",
-   "sourcing": "MECHANICAL FINDING, recording the extent of the search only. The 1953 Journal of Chemical Physics co-authorship is positively attested; on Edward Teller's share of it the English Wikipedia article on that paper reports Marshall Rosenbluth's 2003 statement crediting Teller with “a crucial but early suggestion to ‘take advantage of statistical mechanics and take ensemble averages instead of following detailed kinematics’” and crediting Metropolis with no role beyond providing computer time. This agent did not read Rosenbluth's 2003 source directly. Absence in the sources consulted is not evidence of absence in the record at large.",
-   "verification": "NOT-FOUND",
-   "years": [
-    1957
-   ],
-   "themes": [
-    "machines"
-   ],
-   "collections": [
-    "succession_1957"
-   ],
-   "quote_sha256": "eb62b5e44c03fe4eea4553d7aa0f25e1f9b39db95f9f32c51e2a9d426277bcbc",
-   "embed_text": "— | Negative search finding: Edward Teller and the automata / computing-machine programme, 1945–1960 | n/a | 1957 | NOT-FOUND: this agent found no statement by Edward Teller, and no statement about Edward Teller in any source consulted, placing him in von Neumann's theory-of-automata programme, in computing-machine development, or in the design or direction of any computer. Teller's documented contact with the discrete/stochastic programme in the sources consulted is confined to co-authorship of Metropolis, Rosenbluth, Rosenbluth, Teller and Teller, “Equation of State Calculations by Fast Computing Machines,” Journal of Chemical Physics 21 (1953), pp. 1087–1092, computed on the Los Alamos MANIAC. | Searched: the repository corpus (quotations/corpus/quotes.jsonl, 271 records) and content/SSG_History/; Ulam's 1958 BAMS memorial; Shannon's 1958 BAMS companion article on von Neumann and automata theory; Rota, “The Lost Café”; the Lawrence Livermore National Laboratory directorate biography of Teller; the Metropolis–Rhodes 1993 oral history; and web searches pairing Teller with automata theory, cellular automata, computer design and the LARC."
-  },
-  {
-   "id": "q-x-planning-and-coding--d1b0d8f3",
-   "quote": "NOT-FOUND: the paired terminology 'short code' / 'complete code' as such does not appear in the digitized text of Goldstine & von Neumann, 'Planning and Coding of Problems for an Electronic Computing Instrument,' Part II, Volume I (Institute for Advanced Study, 1 April 1947).",
-   "speaker": {
-    "name": "—",
-    "role": "author",
-    "sort": "—",
-    "as_given": ""
-   },
-   "source": {
-    "work": "Planning and Coding of Problems for an Electronic Computing Instrument, Part II, Vol. I",
-    "locus": "whole volume searched (chapters 7–12, i.e. lines covering '7.0 GENERAL PRINCIPLES OF CODING AND FLOW-DIAGRAMMING' through the report's later chapters)",
-    "date": "1947 (report dated 1 April 1947)",
-    "file": "",
-    "url": "https://archive.org/details/planningcodingof0103inst"
-   },
-   "restored": "",
-   "sourcing": "MECHANICAL FINDING: I obtained and full-text-searched the OCR transcription (djvu.txt) of archive.org item 'planningcodingof0103inst' (identified via historyofinformation.com as Goldstine & von Neumann's 1947 Part II, Vol. I). Searches for 'short code', 'complete code', and the standalone word 'short' (4 hits, none adjacent to 'code' in this sense) and 'complete' (30+ hits, all modifying 'flow diagram' or 'description', never 'code') found no instance of the short-code/complete-code dichotomy. The report instead uses 'the code' generically (e.g. section 7.1: 'The actual code for a problem is that sequence of coded symbols...') and defines and uses 'flow diagram' extensively (chapter 7.0: 'GENERAL PRINCIPLES OF CODING AND FLOW-DIAGRAMMING'; section 7.4: 'The flow diagram of C, as described...'). This is Volume I of Part II only (a Volume II 'will follow within a few months' per the report's own preface, line 144-145 of the OCR text) — I did not locate or search Volume II or Part I/Part III, so absence there is not verified. CONCLUSION drawn strictly from what was read: the short-code/complete-code terminological pair, as instructed by the task, is a formulation that appears in 'The Computer and the Brain' (1958), not (so far as searched) in this volume of the 1947 Planning and Coding report.",
-   "verification": "PARTIAL",
-   "years": [
-    1947
-   ],
-   "themes": [
-    "vncodes"
-   ],
-   "collections": [
-    "codes_entropy_language"
-   ],
-   "quote_sha256": "d1b0d8f3ab7400da45bfaa4e34717bc47c8b116741297bee5ae1dc72920114ab",
-   "embed_text": "— | Planning and Coding of Problems for an Electronic Computing Instrument, Part II, Vol. I | whole volume searched (chapters 7–12, i.e. lines covering '7.0 GENERAL PRINCIPLES OF CODING AND FLOW-DIAGRAMMING' through the report's later chapters) | 1947 (report dated 1 April 1947) | NOT-FOUND: the paired terminology 'short code' / 'complete code' as such does not appear in the digitized text of Goldstine & von Neumann, 'Planning and Coding of Problems for an Electronic Computing Instrument,' Part II, Volume I (Institute for Advanced Study, 1 April 1947)."
   }
  ]
 }
