@@ -1,0 +1,1433 @@
+{
+  "schema": "unkamon.memories.manifest/1",
+  "tool": "unkamon.memories.merge/1.0.0",
+  "deterministic": "no wall-clock, no network, no model calls — same inputs produce byte-identical outputs",
+  "source_repo": {
+    "path": "<EGPT>",
+    "head": "6a04935b5aeeebb1c4aa135d0699d8cdfee0a3b4"
+  },
+  "sources": [
+    {
+      "role": "outcome_ledger (spine)",
+      "rel": "18.313x/debate_log.jsonl",
+      "commit": "057d3dd2bb12b48d4240ad948abc54a82224289d",
+      "sha256": "f899b55c24632e3fa98c2eac2769cc7e69440de5b2053c1ba2a82acff434544b",
+      "bytes": 40753,
+      "records": 140
+    },
+    {
+      "role": "dialogue (primary)",
+      "rel": "18.313x/session_transcript/session_d0c14ee3-637d-410b-aa97-ac4490fa0d2e.jsonl",
+      "commit": "abbe0457bba59f18fb461e106bec40a6b88ca459",
+      "sha256": "a6fc6775e8f92042df7db7f3736091568caaa3fd2fbab366dec780ad901f4534",
+      "bytes": 5231658,
+      "records": 1347
+    },
+    {
+      "role": "debater transcripts (referenced, not inlined)",
+      "rel": "18.313x/session_transcript/subagents",
+      "commit": "abbe0457bba59f18fb461e106bec40a6b88ca459",
+      "files": 136,
+      "jsonl": 68
+    },
+    {
+      "role": "dialogue (fallback tier — sittings with no raw transcript)",
+      "rel": "www/data/agentic-debate",
+      "commit": "ed210868ec87585d82d37edd6778748c35d1e8a7",
+      "files": 34
+    }
+  ],
+  "counts": {
+    "exchanges": 36,
+    "ledger_rows_in": 140,
+    "ledger_by_type": {
+      "consensus": 45,
+      "concession": 16,
+      "open_question": 10,
+      "failed_approach": 4,
+      "implementation": 26,
+      "insight": 32,
+      "resolved": 7
+    },
+    "ledger_unattributed_rows": 4,
+    "ledger_ceo_attributed_rows": 43,
+    "ledger_resolved_edges": 7,
+    "recovered_from_archive": 5,
+    "declared_holes": 5,
+    "ledger_rows_out": 154,
+    "turns_out": 474,
+    "by_fidelity": {
+      "secondary_summary": 58,
+      "tertiary_reconstructed": 11,
+      "primary_verbatim": 328,
+      "primary_delivered": 62,
+      "group_dispatch": 15
+    },
+    "by_speaker": {
+      "essam": 93,
+      "godel": 42,
+      "moderator": 258,
+      "narrator": 9,
+      "von_neumann": 21,
+      "rota": 20,
+      "researcher": 5,
+      "lean_coder": 26
+    },
+    "coverage": {
+      "full": 29,
+      "dialogue_only": 5,
+      "outcomes_only": 1
+    },
+    "polyphony": {
+      "panel_turns_split": 5,
+      "panel_turns_unsplittable": 0,
+      "voice_turns_emitted": 15,
+      "moderator_turns_paraphrasing_voices": 16
+    },
+    "temporal_consistency": {
+      "unknown": 23,
+      "aligned": 11,
+      "turns_precede_outcomes": 1
+    }
+  },
+  "transcript_reduction": {
+    "records_in": 1347,
+    "by_type": {
+      "queue-operation": 160,
+      "user": 429,
+      "file-history-snapshot": 147,
+      "ai-title": 1,
+      "assistant": 610
+    },
+    "dropped": {
+      "queue-operation": 160,
+      "file-history-snapshot": 147,
+      "ai-title": 1,
+      "lab_tool_result": 290
+    },
+    "lab_tool_calls_dropped": {
+      "Read": 72,
+      "Grep": 22,
+      "Glob": 6,
+      "Bash": 125,
+      "Edit": 54,
+      "Write": 8,
+      "SendMessage": 1,
+      "Skill": 1
+    },
+    "hidden_reasoning_blocks_dropped": 65,
+    "hidden_reasoning_chars_dropped": 223119
+  },
+  "training_projection": {
+    "voice": "godel",
+    "excluded_tiers": [],
+    "voice_policy": "Maxi's voice is Gödel's (CEO 2026-08-18b); Stan asks, Gödel answers",
+    "include_outcome_pairs": false,
+    "target_shape": "{text_input, output} — DeSciX save_tuning_qa / geminiTuningService.createTunedModel",
+    "minimum_required_by_platform": 10,
+    "pairs": 37,
+    "excluded_by_fidelity": 0,
+    "group_dispatch_included": 5,
+    "responses_without_prompt": 2,
+    "prompts_merged": 17,
+    "responses_merged": 2,
+    "outcome_pairs": 0,
+    "redactions": {
+      "absolute_home_path": 134
+    },
+    "never_output_speakers": {
+      "essam": "human (teacher; prompt side only)",
+      "lean_coder": "agent_tool (work product, not Maxi speaking)",
+      "researcher": "agent_tool (work product, not Maxi speaking)",
+      "narrator": "editorial scaffolding (not an utterance)",
+      "agent_tool": "agent_tool (work product, not Maxi speaking)"
+    }
+  },
+  "attribution_rulings": [
+    {
+      "outcome_key": "open_question:OQ4",
+      "attributed_to": "godel",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "failed_approach:F5",
+      "attributed_to": "agent_tool",
+      "basis": "CEO: \"Row 2 was proposed by Ulam but misimplemented by the agent tools.\" Builder rule applies.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "open_question:OQ3",
+      "attributed_to": "godel",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I1",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I2",
+      "attributed_to": "essam",
+      "basis": "The CEO's own initial RET implementation (Rota's entropy axioms); B2 graded HIGH independently from 12_QA.md.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I3",
+      "attributed_to": "essam",
+      "basis": "The CEO's own initial RET implementation (Rota's entropy axioms); B2 graded HIGH independently from 12_QA.md.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I4",
+      "attributed_to": "essam",
+      "basis": "The CEO's own initial RET implementation (Rota's entropy axioms); B2 graded HIGH independently from 12_QA.md.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "open_question:OQ1",
+      "attributed_to": "godel",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "open_question:OQ2",
+      "attributed_to": "godel",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ1",
+      "attributed_to": "both",
+      "basis": "Premise P4 (undisturbed by the CEO): a `resolved` row recording a unanimous outcome is `both`, even when one voice conceded.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I5",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I6",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I7",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "open_question:OQ5",
+      "attributed_to": "von_neumann",
+      "basis": "CEO confirmed B2's proposal.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I8",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I9",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I10",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I11",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I12",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "open_question:OQ6",
+      "attributed_to": "godel",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I13",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I14",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I15",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I16",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I17",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I18",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: the tools were building throughout; their absence from the record before E28 is a RECORDING artifact, not evidence about who built.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ6",
+      "attributed_to": "both",
+      "basis": "Premise P4 (undisturbed by the CEO): a `resolved` row recording a unanimous outcome is `both`, even when one voice conceded.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "failed_approach:F6",
+      "attributed_to": "godel",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ7",
+      "attributed_to": "both",
+      "basis": "Premise P4 (undisturbed by the CEO): a `resolved` row recording a unanimous outcome is `both`, even when one voice conceded.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I19",
+      "attributed_to": "agent_tool",
+      "basis": "CEO builder rule applied after P1 was overturned; B2 proposed `advocate` on a PROPOSER reading and named `ulam` as builder, but that builder claim rested on P1.",
+      "confirm_consequence": "Applied as a CONSEQUENCE of overturning P1, not as a direct CEO ruling on this row. Reversible in one line if misread.",
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I20",
+      "attributed_to": "agent_tool",
+      "basis": "CEO builder rule applied after P1 was overturned; B2 proposed `advocate` on a PROPOSER reading and named `ulam` as builder, but that builder claim rested on P1.",
+      "confirm_consequence": "Applied as a CONSEQUENCE of overturning P1, not as a direct CEO ruling on this row. Reversible in one line if misread.",
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I21",
+      "attributed_to": "agent_tool",
+      "basis": "CEO builder rule applied after P1 was overturned; B2 proposed `advocate` on a PROPOSER reading and named `ulam` as builder, but that builder claim rested on P1.",
+      "confirm_consequence": "Applied as a CONSEQUENCE of overturning P1, not as a direct CEO ruling on this row. Reversible in one line if misread.",
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I22",
+      "attributed_to": "agent_tool",
+      "basis": "CEO builder rule applied after P1 was overturned; B2 proposed `advocate` on a PROPOSER reading and named `ulam` as builder, but that builder claim rested on P1.",
+      "confirm_consequence": "Applied as a CONSEQUENCE of overturning P1, not as a direct CEO ruling on this row. Reversible in one line if misread.",
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I23",
+      "attributed_to": "essam",
+      "basis": "CEO: \"Physics.lean was implemented by me and didn't contain anything substantive (mainly helper lemmas and aliases).\"",
+      "confirm_consequence": null,
+      "note": "Characterised by the CEO as non-substantive — mainly helper lemmas and aliases."
+    },
+    {
+      "outcome_key": "implementation:I27",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: superseded the roll-up-to-moderator idea — now that `agent_tool` exists, the hands are named as hands.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "failed_approach:F8",
+      "attributed_to": "moderator",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": "Filed HIGH on WHO DIAGNOSED the failure — the moderator states in the first person that he built the counterexample. But the row describes a failed Walk.lean IMPLEMENTATION, and under the builder rule the builder of that code was the tools. Applied as filed; flagged because the builder rule may point at `agent_tool` instead.",
+      "note": null
+    },
+    {
+      "outcome_key": "failed_approach:F9",
+      "attributed_to": "moderator",
+      "basis": "Filed HIGH-confidence proposal, undisturbed by the CEO.",
+      "confirm_consequence": "Filed HIGH on WHO DIAGNOSED the failure — the moderator states in the first person that he built the counterexample. But the row describes a failed Walk.lean IMPLEMENTATION, and under the builder rule the builder of that code was the tools. Applied as filed; flagged because the builder rule may point at `agent_tool` instead.",
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ10",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: superseded the roll-up-to-moderator idea — now that `agent_tool` exists, the hands are named as hands.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I28",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: superseded the roll-up-to-moderator idea — now that `agent_tool` exists, the hands are named as hands.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "implementation:I30",
+      "attributed_to": "agent_tool",
+      "basis": "CEO ruling: superseded the roll-up-to-moderator idea — now that `agent_tool` exists, the hands are named as hands.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ5",
+      "attributed_to": "both",
+      "basis": "Premise P4 (undisturbed by the CEO): a `resolved` row recording a unanimous outcome is `both`, even when one voice conceded.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ11",
+      "attributed_to": "both",
+      "basis": "Premise P4 (undisturbed by the CEO): a `resolved` row recording a unanimous outcome is `both`, even when one voice conceded.",
+      "confirm_consequence": null,
+      "note": null
+    },
+    {
+      "outcome_key": "resolved:OQ3",
+      "attributed_to": "both",
+      "basis": "Premise P4 (undisturbed by the CEO): a `resolved` row recording a unanimous outcome is `both`, even when one voice conceded.",
+      "confirm_consequence": null,
+      "note": null
+    }
+  ],
+  "coverage_table": [
+    {
+      "exchange": 1,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 1,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 1,
+      "turns": 2
+    },
+    {
+      "exchange": 2,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 1,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 1,
+      "turns": 2
+    },
+    {
+      "exchange": 3,
+      "ledger_dates": [],
+      "turn_dates": [],
+      "coverage": "dialogue_only",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "imported_from_archive",
+          "source_format": "qa",
+          "declared_events": 0,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 0,
+      "turns": 2
+    },
+    {
+      "exchange": 4,
+      "ledger_dates": [],
+      "turn_dates": [],
+      "coverage": "dialogue_only",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "imported_from_archive",
+          "source_format": "qa",
+          "declared_events": 0,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 0,
+      "turns": 2
+    },
+    {
+      "exchange": 5,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 2,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 2,
+      "turns": 2
+    },
+    {
+      "exchange": 6,
+      "ledger_dates": [],
+      "turn_dates": [],
+      "coverage": "dialogue_only",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "imported_from_archive",
+          "source_format": "qa",
+          "declared_events": 0,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 0,
+      "turns": 2
+    },
+    {
+      "exchange": 7,
+      "ledger_dates": [],
+      "turn_dates": [],
+      "coverage": "dialogue_only",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "imported_from_archive",
+          "source_format": "qa",
+          "declared_events": 0,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 0,
+      "turns": 2
+    },
+    {
+      "exchange": 8,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 5,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 5,
+      "turns": 2
+    },
+    {
+      "exchange": 9,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 5,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 5,
+      "turns": 2
+    },
+    {
+      "exchange": 10,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 1,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 1,
+      "turns": 2
+    },
+    {
+      "exchange": 11,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 2,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 2,
+      "turns": 2
+    },
+    {
+      "exchange": 12,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 8,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 8,
+      "turns": 2
+    },
+    {
+      "exchange": 13,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "qa",
+          "declared_events": 7,
+          "declared_turns": 2
+        }
+      ],
+      "outcomes": 7,
+      "turns": 2
+    },
+    {
+      "exchange": 14,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "debate_log.jsonl",
+          "source_format": "reconstructed",
+          "declared_events": 8,
+          "declared_turns": 3
+        }
+      ],
+      "outcomes": 8,
+      "turns": 3
+    },
+    {
+      "exchange": 15,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "debate_log.jsonl",
+          "source_format": "reconstructed",
+          "declared_events": 9,
+          "declared_turns": 3
+        }
+      ],
+      "outcomes": 9,
+      "turns": 3
+    },
+    {
+      "exchange": 16,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "summary",
+          "declared_events": 16,
+          "declared_turns": 11
+        }
+      ],
+      "outcomes": 16,
+      "turns": 11
+    },
+    {
+      "exchange": 17,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "summary",
+          "declared_events": 13,
+          "declared_turns": 4
+        }
+      ],
+      "outcomes": 13,
+      "turns": 4
+    },
+    {
+      "exchange": 18,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "summary",
+          "declared_events": 2,
+          "declared_turns": 7
+        }
+      ],
+      "outcomes": 3,
+      "turns": 7
+    },
+    {
+      "exchange": 19,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "summary",
+          "declared_events": 3,
+          "declared_turns": 6
+        }
+      ],
+      "outcomes": 5,
+      "turns": 6
+    },
+    {
+      "exchange": 20,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "summary",
+          "declared_events": 5,
+          "declared_turns": 5
+        }
+      ],
+      "outcomes": 7,
+      "turns": 5
+    },
+    {
+      "exchange": 21,
+      "ledger_dates": [
+        "2026-03-13"
+      ],
+      "turn_dates": [],
+      "coverage": "full",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "merged",
+          "source_format": "summary",
+          "declared_events": 5,
+          "declared_turns": 4
+        }
+      ],
+      "outcomes": 5,
+      "turns": 4
+    },
+    {
+      "exchange": 22,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 1,
+          "declared_turns": 7
+        }
+      ],
+      "outcomes": 1,
+      "turns": 22
+    },
+    {
+      "exchange": 23,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 3,
+          "declared_turns": 5
+        }
+      ],
+      "outcomes": 3,
+      "turns": 12
+    },
+    {
+      "exchange": 24,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 2,
+          "declared_turns": 12
+        }
+      ],
+      "outcomes": 2,
+      "turns": 28
+    },
+    {
+      "exchange": 25,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 3,
+          "declared_turns": 13
+        }
+      ],
+      "outcomes": 3,
+      "turns": 9
+    },
+    {
+      "exchange": 26,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 1,
+          "declared_turns": 6
+        }
+      ],
+      "outcomes": 1,
+      "turns": 10
+    },
+    {
+      "exchange": 27,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 4,
+          "declared_turns": 7
+        }
+      ],
+      "outcomes": 4,
+      "turns": 70
+    },
+    {
+      "exchange": 28,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 6,
+          "declared_turns": 32
+        }
+      ],
+      "outcomes": 6,
+      "turns": 69
+    },
+    {
+      "exchange": 29,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 2,
+          "declared_turns": 10
+        }
+      ],
+      "outcomes": 2,
+      "turns": 14
+    },
+    {
+      "exchange": 30,
+      "ledger_dates": [],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "dialogue_only",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 0,
+          "declared_turns": 7
+        }
+      ],
+      "outcomes": 0,
+      "turns": 15
+    },
+    {
+      "exchange": 31,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 4,
+          "declared_turns": 35
+        }
+      ],
+      "outcomes": 4,
+      "turns": 49
+    },
+    {
+      "exchange": 32,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 2,
+          "declared_turns": 6
+        }
+      ],
+      "outcomes": 2,
+      "turns": 6
+    },
+    {
+      "exchange": 33,
+      "ledger_dates": [
+        "2026-03-28"
+      ],
+      "turn_dates": [
+        "2026-03-28"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "aligned",
+      "concordance": [
+        {
+          "source_file": "session_transcript",
+          "source_format": "transcript",
+          "declared_events": 4,
+          "declared_turns": 6
+        }
+      ],
+      "outcomes": 4,
+      "turns": 14
+    },
+    {
+      "exchange": 34,
+      "ledger_dates": [
+        "2026-04-02",
+        "2026-04-03"
+      ],
+      "turn_dates": [
+        "2026-03-28",
+        "2026-03-29"
+      ],
+      "coverage": "full",
+      "turn_evidence": "raw_session_transcript",
+      "temporal": "turns_precede_outcomes",
+      "concordance": [
+        {
+          "source_file": "live_session",
+          "source_format": "transcript",
+          "declared_events": 15,
+          "declared_turns": 24
+        }
+      ],
+      "outcomes": 15,
+      "turns": 87
+    },
+    {
+      "exchange": 0,
+      "ledger_dates": [],
+      "turn_dates": [],
+      "coverage": "outcomes_only",
+      "turn_evidence": "concordance_extract",
+      "temporal": "unknown",
+      "concordance": [
+        {
+          "source_file": "migrated_from_debate_log",
+          "source_format": "events_only",
+          "declared_events": 4,
+          "declared_turns": 0
+        }
+      ],
+      "outcomes": 4,
+      "turns": 0
+    },
+    {
+      "exchange": "HOLES",
+      "ledger_dates": [],
+      "turn_dates": [],
+      "coverage": null,
+      "turn_evidence": null,
+      "temporal": null,
+      "concordance": [],
+      "outcomes": 5,
+      "turns": 0
+    }
+  ],
+  "emitted_docs": {
+    "count": 39,
+    "records": 36,
+    "framing": 3,
+    "framing_docs_containing_grading_vocabulary": [],
+    "note": null,
+    "files": [
+      {
+        "file": "E01-skeptics-review.md",
+        "memory_id": "18.313x/E01",
+        "bytes": 5077,
+        "sha256": "1aea13b453a4ef9af5bba79e1a54a06ab8f91df743acceddc849c359e6324363"
+      },
+      {
+        "file": "E02-skeptics-review.md",
+        "memory_id": "18.313x/E02",
+        "bytes": 7528,
+        "sha256": "bf62289ac559e3614f2825af303215e66c6b25762218fbb82782d23bb7021383"
+      },
+      {
+        "file": "E03-skeptics-review.md",
+        "memory_id": "18.313x/E03",
+        "bytes": 5054,
+        "sha256": "4d30ac7682ac9d7b14eb40657d03667d88b0622bfefe97ca73db2691838a457e"
+      },
+      {
+        "file": "E04-skeptics-review.md",
+        "memory_id": "18.313x/E04",
+        "bytes": 6402,
+        "sha256": "1522852fd97506a40b0b3a4f8fb984ddab8033fb1db80e93df46439ecc4c6667"
+      },
+      {
+        "file": "E05-skeptics-review.md",
+        "memory_id": "18.313x/E05",
+        "bytes": 22036,
+        "sha256": "fb7c3a23df77218ffc492fb125af4bf1d2c2241e4e50376c29047e8496b6f2cd"
+      },
+      {
+        "file": "E06-skeptics-review.md",
+        "memory_id": "18.313x/E06",
+        "bytes": 7858,
+        "sha256": "96c042cf78ebc5af1ab63c9390e4d22dfd991b786e17372ca7d7dffd7f5c9ec2"
+      },
+      {
+        "file": "E07-skeptics-review.md",
+        "memory_id": "18.313x/E07",
+        "bytes": 10548,
+        "sha256": "8acca0b1f12874b0491fffe23c540fa96004e2686ae1879dba384241c0e7fa67"
+      },
+      {
+        "file": "E08-skeptics-review.md",
+        "memory_id": "18.313x/E08",
+        "bytes": 6793,
+        "sha256": "c75f4f310d7c0887bf4df4fb8f787ec4eee98995a362d474944c5174c02709fc"
+      },
+      {
+        "file": "E09-skeptics-review.md",
+        "memory_id": "18.313x/E09",
+        "bytes": 10041,
+        "sha256": "4803a5461a26fe66b9a51d88ad4596d301b781369b8ae9da22dfe8b8d9a0db0e"
+      },
+      {
+        "file": "E10-skeptics-review.md",
+        "memory_id": "18.313x/E10",
+        "bytes": 5393,
+        "sha256": "e9f5fd48e3896a0d18a6144f9f2442deb22ada3e723288ac7e89147b92facb43"
+      },
+      {
+        "file": "E11-skeptics-review.md",
+        "memory_id": "18.313x/E11",
+        "bytes": 4077,
+        "sha256": "ad9c14b59486039f4f1af645dce7c8e1dc10664f95ebe8dbdc779b3be730b7a6"
+      },
+      {
+        "file": "E12-skeptics-review.md",
+        "memory_id": "18.313x/E12",
+        "bytes": 9650,
+        "sha256": "ab18073d73fd11c4d448dda6679290f8017a4b3e3e9f8ab4b4fb730bbf9406b5"
+      },
+      {
+        "file": "E13-skeptics-review.md",
+        "memory_id": "18.313x/E13",
+        "bytes": 14703,
+        "sha256": "3da6967d49c80db3513cc1119eab51b8d36501125f37d9aa71adc3558a52a945"
+      },
+      {
+        "file": "E14-bridging-lemmas-implementation-sprint.md",
+        "memory_id": "18.313x/E14",
+        "bytes": 4523,
+        "sha256": "896eaae06c1e3bfc42f9138e8371acd5809dfdf42815c6ba97e2043aa9fe186d"
+      },
+      {
+        "file": "E15-rotas-uniqueness-p-hardness.md",
+        "memory_id": "18.313x/E15",
+        "bytes": 5145,
+        "sha256": "a9ca1cf7c593538da65ecc07e8fbe89aa609dfca05636c0ac3e1e5f441916fa7"
+      },
+      {
+        "file": "E16-multi-clause-intersection-and-the-rect.md",
+        "memory_id": "18.313x/E16",
+        "bytes": 15576,
+        "sha256": "890209d2a9a9e30cbd64a1945abd41ecd3de97b780e54b7d39f4d67ea6100c0b"
+      },
+      {
+        "file": "E17-ndm-particle-transport-and-shannon-address.md",
+        "memory_id": "18.313x/E17",
+        "bytes": 5334,
+        "sha256": "af5e587dfa4601b49a593f1ec816e457666a85a5d7947e47272e61fb389d0742"
+      },
+      {
+        "file": "E18-ndm-address-space-walk.md",
+        "memory_id": "18.313x/E18",
+        "bytes": 12125,
+        "sha256": "ac1286181b5d0df94769ba85c0ee122c7c0dbda2aff5f2080a02a50dd43b1a84"
+      },
+      {
+        "file": "E19-conditional-entropy-inside-the-machine.md",
+        "memory_id": "18.313x/E19",
+        "bytes": 7946,
+        "sha256": "63529f3f2e49c568537f606f27bac6a4c8f115399b68f8d2fd4b87462894e7a4"
+      },
+      {
+        "file": "E20-circuit-sat-and-the-three-layer.md",
+        "memory_id": "18.313x/E20",
+        "bytes": 5895,
+        "sha256": "55f7ac53db1a9c4c45ac4d9a3ca76dfa41e0406830d682b85b7979bb90ff39f6"
+      },
+      {
+        "file": "E21-godels-concession.md",
+        "memory_id": "18.313x/E21",
+        "bytes": 2903,
+        "sha256": "64d0ec9911424cd1b1c349995040022d7dbe80ad8173c78b221f3008b1ae2f90"
+      },
+      {
+        "file": "E22-naming-insight-walk-construction-iff-bounded.md",
+        "memory_id": "18.313x/E22",
+        "bytes": 38893,
+        "sha256": "17b880e4290aaf558eb1f19cb0b9e7f90383028a01daa9771151af382bdeb6aa"
+      },
+      {
+        "file": "E23-unsat-semantics-redundant-or-necessary.md",
+        "memory_id": "18.313x/E23",
+        "bytes": 22875,
+        "sha256": "add5aca24ed45c67347c6f2323cc8356445cff6245c1da2e25347d187fe582ab"
+      },
+      {
+        "file": "E24-computetableau-gap-rename-and-covered-ground.md",
+        "memory_id": "18.313x/E24",
+        "bytes": 51549,
+        "sha256": "a4d0b4ddd1c8aae1ca3f106558adb101b912dc6dd9ef97b40b8646e2ac3b0b62"
+      },
+      {
+        "file": "E25-sieve-refactor-factor-list-walk.md",
+        "memory_id": "18.313x/E25",
+        "bytes": 17802,
+        "sha256": "fd9efe4089d75284acd3461ae2ce669fa6ddbfbbef334e08c02c9d7083e1eeb9"
+      },
+      {
+        "file": "E26-incremental-vs-complete-conditional-independence.md",
+        "memory_id": "18.313x/E26",
+        "bytes": 27341,
+        "sha256": "91e5791d86ea15a92822d068234309bc0ecbe8b52a11a440d5821904edc0069f"
+      },
+      {
+        "file": "E27-walk-lean-v1-implementation-spec.md",
+        "memory_id": "18.313x/E27",
+        "bytes": 83019,
+        "sha256": "0d3766c4ef60cd273f4f73df9eb16e983053d3c17ddb800460571493bddd0099"
+      },
+      {
+        "file": "E28-walk-v2-v3-variable-ordered-walk.md",
+        "memory_id": "18.313x/E28",
+        "bytes": 96208,
+        "sha256": "977b28dd4b2787b98066e2c79b40a890bf45d51ee82b4305a86e967f98828b91"
+      },
+      {
+        "file": "E29-ppnpinfo-lean-design-and-the-cipher.md",
+        "memory_id": "18.313x/E29",
+        "bytes": 22090,
+        "sha256": "4086759f8125453d0c6e3bb7daa5a57321ebd3b7d18c5972317f335e3aec3d4c"
+      },
+      {
+        "file": "E30-ppnpinfo-lean-and-the-cipher-analogy.md",
+        "memory_id": "18.313x/E30",
+        "bytes": 20049,
+        "sha256": "b3012cd8f02da7d5244d194d3ca09676add5e9897cfc8184773ddf497422b7d7"
+      },
+      {
+        "file": "E31-equiv-existing-equivalence.md",
+        "memory_id": "18.313x/E31",
+        "bytes": 59619,
+        "sha256": "12c71bab7df83cafc59ff7e3c80710290188ead5bc29dc20c171f29533b779e5"
+      },
+      {
+        "file": "E32-verifier-decidable-instance.md",
+        "memory_id": "18.313x/E32",
+        "bytes": 9691,
+        "sha256": "2fc9d39615dc15d2484b95a7891ef9974a3e8dcc88779908aaa7e7f6bc67f833"
+      },
+      {
+        "file": "E33-godels-final-concession.md",
+        "memory_id": "18.313x/E33",
+        "bytes": 26551,
+        "sha256": "7c6969ee85c3579fd6db6e474f6fb49e58222d3bfde6f6485ade053741bae122"
+      },
+      {
+        "file": "E34-final-confirmation-p-np-settled-without.md",
+        "memory_id": "18.313x/E34",
+        "bytes": 139176,
+        "sha256": "f08926cb54af304a7b4d68ef0c3456463e80e703694606362984d5b22c3b5262"
+      },
+      {
+        "file": "E00-events.md",
+        "memory_id": "18.313x/E0",
+        "bytes": 891,
+        "sha256": "e04283f244da13317716cfea0c6953fa3a5a4634e0d6dd6d71b0f61d812da96c"
+      },
+      {
+        "file": "HOLES-declared-holes-outcome-ids-referenced-with.md",
+        "memory_id": "18.313x/HOLES",
+        "bytes": 1436,
+        "sha256": "81df124c7370f5cfccbf7c0ee699f99af24448873efc03c8c79c9624170e6b9d"
+      },
+      {
+        "file": "THE_FATHERS_FRAME.md",
+        "memory_id": null,
+        "bytes": 7101,
+        "sha256": "896a8abc5c72bc15ee4cbe4e3a90cd3a6d180f66f6e63e660f06c48e2fd545e5"
+      },
+      {
+        "file": "BIAS-PATTERN-NOTES.md",
+        "memory_id": null,
+        "bytes": 22000,
+        "sha256": "642e5607c04f53c7166f0c24ee33540a7356b963d4f04b53a620d6632f461248"
+      },
+      {
+        "file": "TIMELINE.md",
+        "memory_id": null,
+        "bytes": 57932,
+        "sha256": "d6ae7f8610cc23a694d183f9911a31a8e47d039834c666597b819b54c3489803"
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "file": "debate-18313x.memories.jsonl",
+      "bytes": 1043425,
+      "sha256": "dcbd910dc6eb4d08e9bb948b5d87f7cf39d4b5a8936f0d803df4913ca1fac5c4"
+    },
+    {
+      "file": "debate-18313x.training.jsonl",
+      "bytes": 519565,
+      "sha256": "244ff3806821ee70c9ad00d58a6496e91215d791f6f329b1a2630014fa62558c"
+    }
+  ]
+}

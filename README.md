@@ -133,21 +133,34 @@ crossing. Edit `sources/*.json`, never `corpus/`; the build scripts regenerate t
 the April 2025 Zulip thread, the GitHub API captures of mathlib4 pull requests #37468 and
 #38824, the moderation record, two screenshots (the account suspension of 1 April 2026 and the
 2025 thread reactions), and four dated snapshots of the Mathlib contribution policy from the
-site's own commit history. `lean_source/` holds the axiom-flag and proof-chain records and
-`EGPT_InformationTheory_Basic.lean`, where `IIDParticleSource` — the i.i.d. coin stream the
-whole formalization is built from — is declared.
+site's own commit history. `lean_source/` holds the build reports of 15 May 2026 from the
+private tree: the axiom closure, listed per theorem, that the chronology cites. The source
+itself is in `08_LEAN/`.
 
 **`07_LETTERS/`** — the original All-In letter and the update letter announcing the decision
 to publish. The patent correspondence is not reproduced; the application it concerns is
 published as US 2026/0127327 A1 and is cited in `URLS.md`.
 
+**`08_LEAN/`** — the Lean source, mirrored byte-for-byte from the public repository
+eabadir/EGPT-Lean, branch `lean-archive-proofs`, at a pinned commit named in its README.
+`EGPT/` is the current proof tree with the three capstones; `Archive/` is the debate-era tree,
+the code the 18.313x debate was about; `EGPT/InformationTheory/Basic.lean` declares
+`IIDParticleSource`, the i.i.d. coin stream the whole formalization is built from. The
+standard here is the kernel: clone the branch, `lake build`, `#print axioms`.
+
+**`09_DEBATE/`** — the 18.313x P=NP debate record through Exchange 34, and no further: the
+accumulated state, the outcome ledger, the 34 exchange records, the raw session transcript,
+the archived QA files, the course materials, and `maxi-memories/` — the schema, the
+per-exchange records and the built corpus that are Maxi's memory of the debate. Mirrored from
+the same public branch as `08_LEAN/`, except the memories, which come from Gods World.
+Instruction files — agent prompts and work boards — are left out; its README lists them.
+
 ## What is coming
 
-The remit is the whole of EGPT, curated: the three sorry-free Lean proof chains and their
-axiom tables; the 18.313x debate record — the adversarial dialogue, exchange by exchange, in
-which the proofs were argued into their present form, and the origin of Maxi's memories; the
-papers, the patent publication, and the FRQTL engine's consumer surface. Each arrives the way
-everything here arrived: with provenance, with a checksum, and with its edges named.
+The remit is the whole of EGPT, curated. The Lean source and the debate record are here. Still
+to come: the papers, the patent publication, and the FRQTL engine's consumer surface. Each
+arrives the way everything here arrived: with provenance, with a checksum, and with its edges
+named.
 
 ## Edits made for public access
 
