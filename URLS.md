@@ -42,22 +42,11 @@ follows the citation to the published book rather than to a scan.
 
 ## The patent, and the correspondence about it
 
-The January 2025 letter offering the token gift is not reproduced here. The patent application it
-describes has since published, and the publication is the citation of record.
+The patent application is no longer a link: the USPTO publication itself is held in this
+collection at `11_PATENT/`, which carries the numbers, the dates and both full-text links.
 
-| | |
-|---|---|
-| Publication number | **US 2026/0127327 A1** |
-| Title | Quantum Computing Fractal Compression and Decentralized Computing for Predictive Physics Simulation |
-| Inventor | Essam Abadir |
-| Filed | 6 November 2024 |
-| Published | 7 May 2026 |
-| Full text (USPTO) | https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20260127327 |
-| Full text (mirror) | https://patents.google.com/patent/US20260127327A1/en |
-
-The publication number is the stable citation. Both links above were checked and serve the
-document itself; the USPTO one returns the 15-page publication PDF, whose front page reads
-"Pub. No.: US 2026/0127327 A1 … Pub. Date: May 7, 2026".
+The January 2025 letter offering the token gift, which concerns that application, is still not
+reproduced here. The publication is the citation of record.
 
 ## Web sources cited in the update letter
 

@@ -155,10 +155,26 @@ per-exchange records and the built corpus that are Maxi's memory of the debate. 
 the same public branch as `08_LEAN/`, except the memories, which come from Gods World.
 Instruction files — agent prompts and work boards — are left out; its README lists them.
 
+**`10_PAPERS/`** — eight papers, each as its PDF and its LaTeX source. Four are published
+preprints on ResearchGate and are cited to their DOI; the source held here may be a later edit
+than the published version, and for two of them it is. Four have not been published anywhere
+before: the Circuit SAT whitepaper, the gravity paper with Nile Abadir, the structural-security
+argument for why P=NP does not break RSA, and Rota's Entropy Theorem, which sits with the rest
+of the Rota material in `04_ROTA/` rather than being duplicated. Its README explains why most of
+these papers carry no reliable date of their own.
+
+**`11_PATENT/`** — the patent application as published by the USPTO: US 2026/0127327 A1,
+*Quantum Computing Fractal Compression and Decentralized Computing for Predictive Physics
+Simulation*, filed 6 November 2024 and published 7 May 2026. This is the application the update
+letter describes as having sat under a publication hold for security review, and its abstract
+describes the mechanism the FRQTL engine implements.
+
 ## What is coming
 
-The remit is the whole of EGPT, curated. The Lean source and the debate record are here. Still
-to come: the papers, the patent publication, and the FRQTL engine's consumer surface. Each
+The remit is the whole of EGPT, curated. The Lean source, the debate record, the papers and the
+patent publication are here. Still to come: the FRQTL engine's consumer surface, including the
+notebook's analysis of why what is published here does not break factoring. That analysis
+becomes public for the first time in this collection, alongside the FRQTL app itself. It
 arrives the way everything here arrived: with provenance, with a checksum, and with its edges
 named.
 
