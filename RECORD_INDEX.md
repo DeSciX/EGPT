@@ -102,6 +102,7 @@ text is not reproduced here and the corpus record says where it was read.
 | EXHIBIT_report.md | determined by maximum entropy. | `q-kenneth-baclawski--introduction-to-prob-413ba930` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_report.md | Cellular automata theory, which he proposed to von Neumann; the Monte … | `q-martin-gardner-preface-to-stanislaw-5bb40637` | SECONDARY-SOURCE |  |
 | EXHIBIT_report.md | We still do not know — it remains a government secret — what jumped in… | `q-martin-gardner-preface-to-stanislaw-9d931b66` | SECONDARY-SOURCE |  |
+| EXHIBIT_report.md | One conversation centered on the ever accelerating progress of technol… | `q-stanislaw-ulam-john-von-neumann-190-a3511ae4` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_report.md | In the next section we give a dramatic application of the law of large… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_report.md | In order to speak of the entropy of the phenomenon represented by a ra… | `q-gian-carlo-rota-introduction-to-prob-11b215bb` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` | PRIMARY-TEXT-READ |  |

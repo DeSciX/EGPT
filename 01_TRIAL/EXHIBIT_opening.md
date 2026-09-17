@@ -5,7 +5,7 @@
 
 ## The case
 
-This case is about a science that three men said they were building, that no journal has ever published, and that has no name.
+This case is about a science that three men, John von Neumann, Stanislaw Ulam, and Gian-Carlo Rota said they were building and which they explicitly said was counter to the Bohr-Godel orthodoxy of physics and mathematics. It is a science that that no journal has ever published, and that has no name.
 
 It is also about a fork. After 1945 the public scientific world divided computation into two subjects and pursued them apart. One road runs from Claude Shannon: information as a measurable quantity indifferent to whatever carries it — coding, compression, statistical learning, and in the end the large language model. The other runs from Richard Feynman’s keynote at MIT in May 1981: accept quantum mechanics as it stands, build hardware that obeys it — quantum computing. Both roads are public, published and funded. They are travelled by different people in different departments who read different journals.
 
@@ -13,6 +13,25 @@ John von Neumann and Stanislaw Ulam did not see two subjects. They saw one. That
 
 The standard here is the ordinary civil one, more probable than not, and the question is what a reasonable person concludes from the whole pattern rather than from any single item in it.
 
+## What is actually in dispute
+
+Almost nothing above is contested. Two claims are, and they are the only two this report argues.
+
+First, that von Neumann considered this new science which we would now call AI to be of utmost strategic importance to the US military, directed the trajectory of classified United States research toward that science, and that the details of it stayed inside the group that had done the Super work.
+
+Second, that Ulam continued the work on the new AI science at Los Alamos, as did Rota after him, and that the the entropy material Rota taught for twenty years and never submitted — the uniqueness of the entropy function, and the distributions of physics as determined by it — is central to that science.
+
+Everything else — the offices, the clearances, the appointments, the conference programmes, the editorial control, the publication counts, the award citations, and the statements the participants made over their own names — is evidence, placed before the reader to weigh.
+
+## What the evidence shows
+
+One man held the science, the machines and the authority, and said in public which way he thought physics and mathematics had to go. He died with the science unwritten, and the official record says a part of it existed only in his colleagues’ memories. The authority passed out of science. The machines on the east coast were switched off within eighteen months. And at the laboratory where the work had actually been done, in that same year, two new posts were created with oversight of research across every division, and one went to the man who had given von Neumann the cellular framework; the man who had built the machines carried them to Chicago and back; and a mathematician with a Q clearance, an editorship of the journals where new mathematics arrives for judgment, and later a National Security Agency compartment clearance, joined them and published, for the remaining twenty one years of his life, not one paper in the one subject they shared.
+
+Meanwhile the public world built out both of its roads. Feynman’s became quantum computing. Shannon’s became artificial intelligence, and this document is being read on the second road taken to scale — a machine trained on a corpus that holds the open half of a divided record and treats the division as the natural order of the subject.
+
+The reader is asked to do what a juror does: take the facts in the order they occurred, and decide whether the pattern is more probably the result of an authorized and continuing programme, or of coincidence.
+
+This summary states what the full report documents. Sources, quotations, the year by year publication exhibit, the bibliography and the notes are in Los Alamos, Computation, Artificial Intelligence and Gian-Carlo Rota. The record’s own words for each premise in the supplemental questions put to LLM jurors, and where each is found, are set out in PROVENANCE_section11e.md.
 
 ## The facts not in dispute
 
@@ -59,24 +78,3 @@ Von Neumann and Ulam never divided them, and the evidence is in what they built.
 
 Which is what makes that chapter the centre of this case rather than a footnote to it. The distributions of statistical thermodynamics and quantum mechanics are determined by maximum entropy, and there is exactly one entropy. Both statements are Rota’s, in the same chapter. The entropy of physics and the entropy of information are therefore not two quantities that share an algebraic form. The published literature divides along the same seam as the world: the axiomatic tradition after Shannon fixes the functional and derives no physical distribution; Jaynes and maximum entropy assume the functional and obtain distributions by maximising it. Rota taught both halves in one chapter and submitted neither.
 
-
-## What is actually in dispute
-
-Almost nothing above is contested. Two claims are, and they are the only two this report argues.
-
-First, that von Neumann directed the trajectory of classified United States research toward that science, and that the details of it stayed inside the group that had done the Super work.
-
-Second, that the entropy material Rota taught for twenty years and never submitted — the uniqueness of the entropy function, and the distributions of physics as determined by it — is central to that science.
-
-Everything else — the offices, the clearances, the appointments, the conference programmes, the editorial control, the publication counts, the award citations, and the statements the participants made over their own names — is evidence, placed before the reader to weigh.
-
-
-## What the evidence shows
-
-One man held the science, the machines and the authority, and said in public which way he thought physics and mathematics had to go. He died with the science unwritten, and the official record says a part of it existed only in his colleagues’ memories. The authority passed out of science. The machines on the east coast were switched off within eighteen months. And at the laboratory where the work had actually been done, in that same year, two new posts were created with oversight of research across every division, and one went to the man who had given von Neumann the cellular framework; the man who had built the machines carried them to Chicago and back; and a mathematician with a Q clearance, an editorship of the journals where new mathematics arrives for judgment, and later a National Security Agency compartment clearance, joined them and published, for the remaining twenty one years of his life, not one paper in the one subject they shared.
-
-Meanwhile the public world built out both of its roads. Feynman’s became quantum computing. Shannon’s became artificial intelligence, and this document is being read on the second road taken to scale — a machine trained on a corpus that holds the open half of a divided record and treats the division as the natural order of the subject.
-
-The reader is asked to do what a juror does: take the facts in the order they occurred, and decide whether the pattern is more probably the result of an authorized and continuing programme, or of coincidence.
-
-This summary states what the full report documents. Sources, quotations, the year by year publication exhibit, the bibliography and the notes are in Los Alamos, Computation, Artificial Intelligence and Gian-Carlo Rota.
