@@ -1,87 +1,90 @@
-# Provenance for section 11(e) of the jury instructions
+# Exhibit B — Sources for the Contested Readings
 
-The twelve questions in section 11(e) are reproduced below exactly as written. Under each premise are
-the record's own words, quoted verbatim, with where they are. Questions (v) to (xii) also carry the
-premises of Questions Three and Four, and the passages under them serve all three.
+This exhibit is evidence. It gathers the record's own words for the premises of the twelve readings
+the opening statement sets out under "What we say the evidence means," and says where each passage is
+found. Readings (v) to (xii) also carry the premises of Questions Three and Four, and the passages
+under them serve all three.
 
-- **trial record**: the passage is in `EXHIBIT_report.md` or `EXHIBIT_opening.md`, in this folder.
-- **collection**: the passage is not in the two exhibits. It is held elsewhere in EGPT-Evidence, at the
-  file named, or in the quotation corpus at `05_CORPUS/`, and is quoted here from there.
+- **Exhibit A**: the passage is in `EXHIBIT_A_report.md`, in this folder.
+- **opening**: the passage is quoted in `OPENING_STATEMENT.md`, which is not evidence; where a passage
+  is marked this way, the words are the record's and the opening is where they appear in this folder.
+- **collection**: the passage is in neither. It is held elsewhere in EGPT-Evidence, at the file named,
+  or in the quotation corpus at `05_CORPUS/`, and is quoted here from there.
 
-Nothing in the questions has been changed. Page numbers for Ulam's memorial are the printed pages of
-S. Ulam, "John von Neumann, 1903–1957," *Bulletin of the American Mathematical Society* 64 no. 3,
+Nothing quoted here has been altered. Page numbers for Ulam's memorial are the printed pages of
+S. Ulam, "John von Neumann, 1903-1957," *Bulletin of the American Mathematical Society* 64 no. 3,
 part 2 (May 1958), held at `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md`; the scan's line-break
 hyphenation is closed up in the quotations.
 
 ---
 
-## Question (i)
+## Reading (i)
 
-*Did you give weight to the fact that von Neumann as a scientist held the highest, and a perhaps unprecedented, set of roles in directing military technology programs, as Commissioner of the AEC and Chair of the ICBM committee, and yet, at the time of his meeting with the Joint Chiefs as he was dying, he was working feverishly on "The Computer and the Brain"? Did that imply to you that he was likely talking to the Joint Chiefs about AI as a fundamentally important strategic technology, one that potentially exceeded the importance of the nuclear capabilities they had already mastered?*
+*Sources for reading (i) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **The highest, and a perhaps unprecedented, set of roles in directing military technology programs**
 
 > In the last years of his life John von Neumann was not an eminent scientist who advised the United States government. He was inside the machinery that set the government’s scientific and technical research agenda, and the documents that show it are official, public, and specific.
 
-Report, "Von Neumann’s authority, 1949 to 1957" · **trial record**
+Report, "Von Neumann’s authority, 1949 to 1957" · **Exhibit A**
 
 > Dr. von Neumann, in a series of scientific study projects of major national significance, has materially increased the scientific progress of this country in the armaments field. Through his work on various highly classified missions performed outside the continental limits of the United States in conjunction with critically important international programs, Dr. von Neumann has resolved some of the most difficult technical problems of national defense.
 
-Medal of Freedom citation, 15 February 1956, Public Papers of the Presidents; quoted in Report, "What the government said it was recognizing" · **trial record**
+Medal of Freedom citation, 15 February 1956, Public Papers of the Presidents; quoted in Report, "What the government said it was recognizing" · **Exhibit A**
 
 > He held standing positions across the weapons, missile and computing programs for seventeen years.
 
-Report, "Who von Neumann was, by the end" · **trial record**
+Report, "Who von Neumann was, by the end" · **Exhibit A**
 
 > Ulam’s own list in the memorial records what else von Neumann had been holding — chairman of the Advisory Committee on Guided Missiles from 1954, the Aberdeen Ballistic Research Laboratory scientific advisory committee from 1940, the Air Force Scientific Advisory Board from 1951, the Technical Advisory Panel on Atomic Energy from 1953
 
-Report, "What became of the three things he held" · **trial record**
+Report, "What became of the three things he held" · **Exhibit A**
 
 **Commissioner of the AEC**
 
 > In October 1954 President Eisenhower appointed him a Commissioner of the Atomic Energy Commission, one of five men with statutory authority over the entire American nuclear enterprise and its Restricted Data.
 
-Report, "Who von Neumann was, by the end" · **trial record**
+Report, "Who von Neumann was, by the end" · **Exhibit A**
 
 **Chair of the ICBM committee**
 
 > He chaired the Strategic Missiles Evaluation Committee, whose report launched the American intercontinental ballistic missile program.
 
-Report, "Who von Neumann was, by the end" · **trial record**
+Report, "Who von Neumann was, by the end" · **Exhibit A**
 
 > He left Princeton on a leave of absence and discontinued all commitments with the exception of the chairmanship of the ICBM Committee.
 
-Ulam, memorial, p. 4; quoted in Report, "Direction and descent, 1954 to 1957" · **trial record**
+Ulam, memorial, p. 4; quoted in Report, "Direction and descent, 1954 to 1957" · **Exhibit A**
 
 > Of everything he held, the missile chairmanship is the one he kept.
 
-Report, "Direction and descent, 1954 to 1957" · **trial record**
+Report, "Direction and descent, 1954 to 1957" · **Exhibit A**
 
 > The Vice President then turned to Dr. von Neumann and asked him whether, in his judgment, the proposed NSC action on the ICBM program ‘went far enough’.
 
 > General Twining, Chairman of the Joint Chiefs of Staff, “said that he was greatly impressed with Dr. von Neumann’s idea,” and the Council “accepted the amendment to subparagraph d which inserted the phrase ‘including avenues not explored’.”
 
-Report, "The ICBM decision", from the memorandum of the 258th meeting of the National Security Council · **trial record**
+Report, "The ICBM decision", from the memorandum of the 258th meeting of the National Security Council · **Exhibit A**
 
 **His meeting with the Joint Chiefs, as he was dying**
 
 > When he was dying at Walter Reed, the Secretary of Defense, the Deputy Secretary, the Secretaries of the three services and the Joint Chiefs assembled around his bed so that the work could continue.
 
-Report, "Who von Neumann was, by the end" · **trial record**
+Report, "Who von Neumann was, by the end" · **Exhibit A**
 
 > Cabinet members and military officials continually came for his advice, and on one occasion Secretary of Defence Charles Wilson, Air Force Secretary Donald Quarles and most of the top Air Force brass gathered in Von Neumann’s suite to consult his judgement while there was still time.
 
-Clay Blair Jr., *Life*, 25 February 1957; quoted in Report, "The last year". The report gives the source of the version with the Joint Chiefs as Lewis Strauss. · **trial record**
+Clay Blair Jr., *Life*, 25 February 1957; quoted in Report, "The last year". The report gives the source of the version with the Joint Chiefs as Lewis Strauss. · **Exhibit A**
 
 **Working feverishly on The Computer and the Brain, as he was dying**
 
 > The years in which von Neumann held the Commission seat and the missile chairmanship are the same years in which he was writing The Computer and the Brain, which he never finished
 
-Report, "Direction and descent, 1954 to 1957" · **trial record**
+Report, "Direction and descent, 1954 to 1957" · **Exhibit A**
 
 > The Computer and the Brain was unfinished on his desk.
 
-Report, "Then he died, and the question this report asks" · **trial record**
+Report, "Then he died, and the question this report asks" · **Exhibit A**
 
 > By January 1956 Johnny was confined to a wheelchair, but still he attended meetings, was wheeled into his office, and continued working on the manuscript for the lecture… In spite of many efforts, Johnny could not finish writing his planned lectures in time; as a matter of tragic fate he could never finish writing them at all.
 
@@ -93,19 +96,19 @@ Klara von Neumann, preface to *The Computer and the Brain* (Yale), pp. xlix–li
 
 > The Computer and the Brain is not a comparison of a machine to an organ; it is the specification of a machine whose architecture is taken from the organ, stochastic and deliberately imprecise in arithmetic, trading precision for logical reliability.
 
-Report, "Why von Neumann and Ulam did not divide them" · **trial record**
+Report, "Why von Neumann and Ulam did not divide them" · **Exhibit A**
 
 ---
 
-## Question (ii)
+## Reading (ii)
 
-*Did you give weight to Ulam and von Neumann being best friends, and to Ulam's obituary of von Neumann coining the term "Singularity", stating that von Neumann was just making a start on the most significant new science of his career (which is shocking given von Neumann's career), and pointedly saying that von Neumann agreed with Einstein on the completeness of quantum mechanics?*
+*Sources for reading (ii) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **Ulam and von Neumann, best friends, and the obituary entrusted to Ulam**
 
 > Ulam — by every account including his own the closest of his American friendships, and the man to whom von Neumann’s obituary was entrusted — remained at Los Alamos
 
-Report, "Direction and descent, 1954 to 1957" · **trial record**
+Report, "Direction and descent, 1954 to 1957" · **Exhibit A**
 
 > It is my aim to add here a brief account of his life and of his work from a background of personal acquaintance and friendship extending over a period of 25 years.
 
@@ -113,23 +116,23 @@ Ulam, memorial, p. 1 · **collection**
 
 > To the end he maintained this complete discretion. Even though I was perhaps one of his closest friends he never broached to me classified or military subjects in which I was not involved. Our usual conversations were either about mathematics or about his new interest in a theory of automata.
 
-Ulam, *Adventures of a Mathematician*, p. 241; quoted in Report · **trial record**
+Ulam, *Adventures of a Mathematician*, p. 241; quoted in Report · **Exhibit A**
 
 **The obituary and the Singularity**
 
 > One conversation centered on the ever accelerating progress of technology and changes in the mode of human life, which gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue.
 
-Ulam, memorial, p. 5 · **collection**. The trial record carries this sentence verbatim in the report's Addendum, introduced "Ulam coined the term reporting von Neumann", and in its body:
+Ulam, memorial, p. 5 · **collection**. Exhibit A carries this sentence verbatim in the report's Addendum, introduced "Ulam coined the term reporting von Neumann", and in its body:
 
 > Ulam’s 1958 memorial essay for von Neumann is the source commonly associated with the technological “singularity.”
 
-Report, "Ulam’s open record" · **trial record**
+Report, "Ulam’s open record" · **Exhibit A**
 
 **Just making a start of the most significant new science of his career: what Ulam says the new discipline was, what it was to cover, and where it ranked**
 
 > Mathematicians, at the outset of their creative work, are often confronted by two conflicting motivations: the first is to contribute to the edifice of existing work—it is there that one can be sure of gaining recognition quickly by solving outstanding problems—the second is the desire to blaze new trails and to create new syntheses. This latter course is a more risky undertaking, the final judgment of value or success appearing only in the future. In his early work, Johnny chose the first of these alternatives. It was toward the end of his life that he felt sure enough of himself to engage freely and yet painstakingly in the creation of a possible new mathematical discipline. This was to be a combinatorial theory of automata and organisms. His illness and premature death permitted him to make only a beginning.
 
-Ulam, memorial, p. 8 · **collection**. The last three sentences are quoted in Report, "Who von Neumann was, by the end" · **trial record**
+Ulam, memorial, p. 8 · **collection**. The last three sentences are quoted in Report, "Who von Neumann was, by the end" · **Exhibit A**
 
 > He began to work on the theory of computing and planned the work, to remain unfinished, on the theory of automata. It was at the outset of such studies that his interest in the working of the nervous system and the schematized properties of organisms claimed so much of his attention.
 
@@ -145,7 +148,7 @@ Ulam, *Adventures of a Mathematician*, pp. 241–242; corpus · **collection**
 
 > The theory of automata is a theory of computation and of living things in one breath, and Ulam’s own name for it says so: “a combinatorial theory of automata and organisms.”
 
-Report, "Why von Neumann and Ulam did not divide them" · **trial record**
+Report, "Why von Neumann and Ulam did not divide them" · **Exhibit A**
 
 **Von Neumann agreed with Einstein on quantum mechanics**
 
@@ -155,13 +158,13 @@ Ulam, memorial, p. 20 · **collection**. The second sentence is quoted in Report
 
 > The man who had written the mathematical foundations of quantum mechanics is placed by his closest collaborator, in the official memorial, on Einstein’s side of the question.
 
-Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 ---
 
-## Question (iii)
+## Reading (iii)
 
-*Did you give weight to the fact that Ulam named Rota his most "eminent influencee", that Rota gave Ulam's memorial at Los Alamos as the opening remarks to a conference, and that the remarks were entirely about seeing the future and AI? Did the coincidence carry significance: that the foreseen future and AI were the subject both of von Neumann's obituary, written by his best friend, and of Ulam's memorial, given by his self-proclaimed influencee?*
+*Sources for reading (iii) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **Ulam named Rota his most eminent influencee**
 
@@ -179,11 +182,11 @@ Rota, "At the Memorial Service for S.M. Ulam," The Lodge, Los Alamos, New Mexico
 
 > Rota spoke twice at Los Alamos in Ulam’s memory. At the memorial service at The Lodge on 17 May 1984 he said of Ulam: “His word then became the warning of the prophet, the mumbled riddle of the Sybil in her trance.” A year later he opened the laboratory’s conference Evolution, Games and Learning, 20–25 May 1985, with “The Barrier of Meaning,” published in Letters in Mathematical Physics 10 (1985) and reprinted as “In Memoriam of Stan Ulam: The Barrier of Meaning” in Physica D 22 (1986), where it opened the special issue associated with the conference volume.
 
-Report, "Ulam memorial and the Barrier of Meaning" · **trial record**
+Report, "Ulam memorial and the Barrier of Meaning" · **Exhibit A**
 
 > Gian Carlo Rota, “In Memoriam of Stan Ulam The Barrier of Meaning,” Physica D 22, 1986, pp. 1–3
 
-Report, note 16 · **trial record**
+Report, note 16 · **Exhibit A**
 
 **As the opening remarks to a conference**
 
@@ -193,7 +196,7 @@ Publication line of `04_ROTA/The_Barrier_of_Meaning_Rota.md` · **collection**
 
 > 20–25 May 1985 | Rota opens the Los Alamos conference Evolution, Games and Learning with “The Barrier of Meaning,” published in Letters in Mathematical Physics 10 (1985) and reprinted in Physica D 22 (1986) as “In Memoriam of Stan Ulam: The Barrier of Meaning.”
 
-Report, "Chronology" · **trial record**
+Report, "Chronology" · **Exhibit A**
 
 **The remarks were about seeing the future and AI**
 
@@ -219,7 +222,7 @@ Rota, "The Barrier of Meaning" · **collection**
 
 > Rota closes by asking whether AI could cross that barrier.
 
-Report, "Ulam memorial and the Barrier of Meaning" · **trial record**
+Report, "Ulam memorial and the Barrier of Meaning" · **Exhibit A**
 
 **The foreseen future and AI as the subject of the obituary as well**
 
@@ -233,9 +236,9 @@ Ulam's account of the new discipline and the theory of automata, pp. 7–8, 8 an
 
 ---
 
-## Question (iv)
+## Reading (iv)
 
-*Did you draw any inference from Rota's self-description of his role at Los Alamos as Ulam's hermeneut, and from the fact that the hermeneut was talking about the prophet and Sybil's views on AI? That is, did you review how a human would consider the following chain: Ulam's role at Los Alamos was that of an administrative head who took up part of von Neumann's duties after von Neumann's death; Ulam stated his view that von Neumann's dying work was on what we would now consider AI, and that it was the most significant work of von Neumann's life; Rota's role at Los Alamos was to translate Ulam; and Rota's memorial at Los Alamos was a last translation of Ulam on the subject of AI and the Barrier of Meaning?*
+*Sources for reading (iv) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **Rota's self-description of his role at Los Alamos as Ulam's hermeneut**
 
@@ -247,15 +250,15 @@ Rota was such a consultant, in his own curriculum vitae:
 
 > Consultant: “Los Alamos Scientific Laboratory, 1966–.”
 
-Opening statement, "Nine" · **trial record**
+Opening statement, "Nine" · **Exhibit A**
 
 > Rota’s description of himself as Ulam’s hermeneut supplies the functional name for his role.
 
-Report, "Ulam memorial and the Barrier of Meaning" · **trial record**
+Report, "Ulam memorial and the Barrier of Meaning" · **Exhibit A**
 
 > Rota became the program’s hermeneut and organizer.
 
-Report, "Conclusion" · **trial record**
+Report, "Conclusion" · **Exhibit A**
 
 **The prophet and Sybil: Ulam as prophet, and his views on AI**
 
@@ -279,11 +282,11 @@ Rota, "The Barrier of Meaning" · **collection**. Ulam's words on AI are quoted 
 
 > The year von Neumann died, the Director of Los Alamos created two posts carrying research oversight across every division of the laboratory, at the rank of division leader, and appointed to one of them the man who had proposed the cellular framework in which von Neumann built his automaton. Ulam held it for a decade.
 
-Report, "What the laboratory did, and who was there to do it" · **trial record**
+Report, "What the laboratory did, and who was there to do it" · **Exhibit A**
 
 > Returning to Los Alamos in 1957 after a year’s leave of absence at MIT, I was asked by Bradbury to accept one of the two newly created positions of research advisor to the director of the laboratory.
 
-Ulam, *Adventures of a Mathematician*, pp. 249–250; quoted in Report, "What the laboratory did, and who was there to do it" · **trial record**
+Ulam, *Adventures of a Mathematician*, pp. 249–250; quoted in Report, "What the laboratory did, and who was there to do it" · **Exhibit A**
 
 > Administratively, research advisors were to be on the same level as division leaders, and their duties were to oversee the research activities throughout the laboratory, in the various divisions: theoretical, physics, chemistry and metallurgy, weapons, health, "Rover" (nuclear rocket), and others. Together we tried to influence the various programs of the lab.
 
@@ -293,7 +296,7 @@ Ulam, *Adventures of a Mathematician*, pp. 249–250; corpus · **collection**
 
 > A few years before Johnny’s death and increasingly so after, as a result of my work on the hydrogen bomb, I became drawn into a maze of involvements. These had to do precisely with government science and with work as a member of various Space and Air Force committees.
 
-Ulam, *Adventures of a Mathematician*, p. 251; quoted in Report, "What the laboratory did, and who was there to do it" · **trial record**
+Ulam, *Adventures of a Mathematician*, p. 251; quoted in Report, "What the laboratory did, and who was there to do it" · **Exhibit A**
 
 **Ulam's views on von Neumann's dying work, and its significance**
 
@@ -315,11 +318,11 @@ Rota, "At the Memorial Service for S.M. Ulam," The Lodge, Los Alamos, New Mexico
 
 > Rota preserved Ulam’s conversations, elicited explanations of von Neumann and Feynman, translated intuitions into mathematical and philosophical problems, edited the history of Los Alamos computation, and placed the barrier of meaning inside an AI and complexity setting.
 
-Report, "Ulam memorial and the Barrier of Meaning" · **trial record**
+Report, "Ulam memorial and the Barrier of Meaning" · **Exhibit A**
 
 > Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian Carlo Rota, Birkhauser, 1986.
 
-Report, note 37 · **trial record**
+Report, note 37 · **Exhibit A**
 
 **Rota's memorial as a last translation of Ulam on AI and the Barrier of Meaning**
 
@@ -327,9 +330,9 @@ The memorial and its subject are quoted under question (iii).
 
 ---
 
-## Question (v)
+## Reading (v)
 
-*Did you give weight to the tone of Einstein's letters, and not only to their content? To Born he calls the theory inconsistent with a physics that represents "a reality in space and time without phantom actions over distances"; says he is convinced that the objects connected by laws are "not probabilities, but conceived facts, as one took for granted only a short time ago"; and closes by saying he can "only call on my little finger as a witness, which cannot claim any authority to be respected outside my own skin." In the earlier letter he records that "our younger colleagues interpret this as a consequence of senility." To Besso he writes that if physics cannot be based on the field concept, "nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics." A human hears biting sarcasm from the man whose name is a synonym for genius, and finds the last of these jaw-dropping, because one half of modern physics was ushered in by the work for which Einstein took the Nobel Prize and the other half by his general relativity, and he is saying that both may go. Did you register that emphasis? And did you weigh that the other great genius of the century was attacking the same establishment at the same time — von Neumann writing in "The Mathematician" that classical mathematics "stood on at least as sound a foundation as, for example, the existence of the electron," that intuitionism's "purge" would take "a good fifty per cent of modern mathematics," and that a discipline far from its empirical source becomes "more and more purely l'art pour l'art"; writing to Gödel "I absolutely disagree with your view," "no living logician is in the position of naming such," "Or am I wrong"; and telling Schrödinger that the difficulties of correlation at a distance are "pseudo-problems"?*
+*Sources for reading (v) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **Einstein to Born: phantom actions, conceived facts, and his little finger as a witness**
 
@@ -353,19 +356,19 @@ Einstein to Michele Besso, 1954, reaching the corpus through Bob Doyle, *My God,
 
 > The main hope of a justification of classical mathematics — in the sense of Hilbert or of Brouwer and Weyl — being gone, most mathematicians decided to use that system anyway. After all, classical mathematics was producing results which were both elegant and useful, and, even though one could never again be absolutely certain of its reliability, it stood on at least as sound a foundation as, for example, the existence of the electron. Hence, if one was willing to accept the sciences, one might as well accept the classical system of mathematics.
 
-Von Neumann, "The Mathematician," 1947, quoted in Report, "Mathematics needed to be refounded" · **trial record**
+Von Neumann, "The Mathematician," 1947, quoted in Report, "Mathematics needed to be refounded" · **Exhibit A**
 
 **The purge**
 
 > A system of mathematics which was free of these undesirable traits, "intuitionism," was developed by Brouwer. In this system the difficulties and contradiction of set theory did not arise. However, a good fifty per cent of modern mathematics, in its most vital — and up to then unquestioned — parts, especially in analysis, were also affected by this "purge": they either became invalid or had to be justified by very complicated subsidiary considerations. And in this latter process one usually lost appreciably in generality of validity and elegance of deduction.
 
-Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be refounded" · **trial record**
+Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be refounded" · **Exhibit A**
 
 **L'art pour l'art**
 
 > As a mathematical discipline travels far from its empirical source, or still more, if it is a second and third generation only indirectly inspired by ideas coming from "reality" it is beset with very grave dangers. It becomes more and more purely aestheticizing, more and more purely l'art pour l'art … In other words, at a great distance from its empirical source, or after much "abstract" inbreeding, a mathematical subject is in danger of degeneration. At the inception the style is usually classical; when it shows signs of becoming baroque, then the danger signal is up.
 
-Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be refounded" · **trial record**
+Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be refounded" · **Exhibit A**
 
 **Von Neumann to Gödel**
 
@@ -373,73 +376,73 @@ Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be re
 
 > Clearly I cannot prove that every intuitionistically correct construction of arithmetic is formalizable in A or M or even in Z — for intuitionism is undefined and undefinable. But is it not a fact, that not a single construction of the kind mentioned is known that cannot be formalized in A, and that no living logician is in the position of naming such [a construction]? Or am I wrong, and you know an effective intuitionistic arithmetic construction whose formalization in A creates difficulties?
 
-Von Neumann to Kurt Gödel, 12 January 1931, quoted in Report, "Mathematics needed to be refounded" · **trial record**
+Von Neumann to Kurt Gödel, 12 January 1931, quoted in Report, "Mathematics needed to be refounded" · **Exhibit A**
 
 **Von Neumann to Schrödinger**
 
 > I cannot accept your § 4. completely. I think that the difficulties you hint at are "pseudo-problems". The "action at distance" in the case under consideration says only that even if there is no dynamical interaction between two systems (e.g. because they are far removed from each other), the systems can display statistical correlations. This is not at all specific for quantum mechanics, it happens classically as well.
 
-Von Neumann to Schrödinger, 11 April 1936, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Von Neumann to Schrödinger, 11 April 1936, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 **Von Neumann to Birkhoff, on the formalism he had himself written**
 
 > I would like to make a confession which may seem immoral: I do not believe absolutely in Hilbert space any more.
 
-Von Neumann to Garrett Birkhoff, 13 November 1935, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Von Neumann to Garrett Birkhoff, 13 November 1935, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 ---
 
-## Question (vi)
+## Reading (vi)
 
-*Did you give weight to the year in which Rota's computation work stops? His last published paper on computation is dated 1978. In the twenty-one years that follow he publishes fifty-nine further technical papers and not one on computation, machine architecture, algorithms for physical simulation or quantum mechanical method — while he is the editor, on a condition of complete editorial license, of two journals and a Cambridge series, and while he continues to publish with Metropolis until 1995 and to edit the computer books of both Metropolis and Ulam, including Ulam's* Science, Computers, and People. *His own publications on the subject are the only thing that stops. The following year, 1979, is the year of* United States v. The Progressive *and the year of the first known printing of the probability manuscript handed to students at MIT. Did the conjunction of those dates carry weight with you?*
+*Sources for reading (vi) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **The computation papers run to 1978 and stop**
 
 > Six of those items belong to computation: the two Significance Arithmetic papers of 1973 and 1974, The Real Numbers as a Wreath Product in 1975, A Boolean Analysis of Addition and Multiplication in 1977, and the two papers on the faces and the lattice of faces of the n cube in 1978. Every one of the six was written with Nicholas Metropolis. They run consecutively from 1973 to 1978 and then stop. In the twenty one years that follow, across fifty nine technical papers — nine of them in the Proceedings of the National Academy of Sciences — there is not one paper on computation, machine architecture, algorithms for physical simulation, or quantum mechanical method. The technical output moves wholly into invariant theory, superalgebra, umbral calculus, combinatorics and geometric probability, and stays there until he dies.
 
-Report, "A testable exhibit: the year by year bibliography" · **trial record**
+Report, "A testable exhibit: the year by year bibliography" · **Exhibit A**
 
 **The collaboration did not stop; the subject did**
 
 > The technical output of that arrangement is itself on the record: sixteen joint publications by Rota and Metropolis between 1973 and 1995, of which the six on computation run consecutively from 1973 to 1978 and stop.
 
-Report, "What the laboratory did, and who was there to do it" · **trial record**
+Report, "What the laboratory did, and who was there to do it" · **Exhibit A**
 
 **He went on writing about computers — for the public, and as an editor**
 
 > He did not go quiet and he did not stop proving things. He went on proving things in every field except the one that overlapped his government work, and in that one field he wrote for the public and taught behind a classroom door.
 
-Report, "A testable exhibit: the year by year bibliography" · **trial record**
+Report, "A testable exhibit: the year by year bibliography" · **Exhibit A**
 
 > The International Research Conference on the History of Computing met at Los Alamos Scientific Laboratory from 10 to 15 June 1976. Nicholas Metropolis, Jack Howlett, and Rota edited the resulting volume, A History of Computing in the Twentieth Century.
 
-Report, "History of computing conference" · **trial record**
+Report, "History of computing conference" · **Exhibit A**
 
 > Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian Carlo Rota, Birkhauser, 1986.
 
-Report, note 37 · **trial record**
+Report, note 37 · **Exhibit A**
 
 **The gate he himself held**
 
 > Rota was founding editor of the Journal of Combinatorial Theory in 1966 with Frank Harary; he took over Advances in Mathematics in 1967, on the condition, his publisher records, of "giving him complete editorial license," and held it until his death
 
-Report, "The positions and what they carried" · **trial record**
+Report, "The positions and what they carried" · **Exhibit A**
 
 > For thirty years he decided what appeared in two journals and a Cambridge series. No mathematician of his generation had a shorter path from manuscript to print.
 
-Report, "18.313 and the unpublished manuscript" · **trial record**
+Report, "18.313 and the unpublished manuscript" · **Exhibit A**
 
 **1979: the first known printing of the manuscript**
 
 > It circulated as a manuscript: Kenneth Baclawski and Gian Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billis as a third author. The 1979 copy appears to be the earliest version publicly available.
 
-Report, "18.313 and the unpublished manuscript" · **trial record**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. Its table of contents, at page iv, lists the entropy material as Chapter VII, "Entropy and Information" — "Uniqueness of Entropy" at 7.14 and "The Shannon Coding Theorem" at 7.17. The same chapter is numbered VIII in the later MIT edition, circa 1993, from which the report quotes.
+Report, "18.313 and the unpublished manuscript" · **Exhibit A**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. Its table of contents, at page iv, lists the entropy material as Chapter VII, "Entropy and Information" — "Uniqueness of Entropy" at 7.14 and "The Shannon Coding Theorem" at 7.17. The same chapter is numbered VIII in the later MIT edition, circa 1993, from which the report quotes.
 
 **1979:** United States v. The Progressive
 
 > In 1979 the United States sought to stop The Progressive from publishing Howard Morland's article on hydrogen bomb design. The government relied on the Atomic Energy Act and argued that an unclassified synthesis of public materials could constitute Restricted Data and cause grave harm. The district court issued a preliminary injunction.
 
-Report, "United States v The Progressive" · **trial record**
+Report, "United States v The Progressive" · **Exhibit A**
 
 > A mistake in ruling against the United States could pave the way for thermonuclear annihilation for us all. In that event, our right to life is extinguished and the right to publish becomes moot.
 
@@ -447,19 +450,19 @@ Report, "United States v The Progressive" · **trial record**
 
 > The Progressive establishes what the statutory regime demanded of a cleared scientist in exactly those years, and what the government was prepared to do to enforce it.
 
-Report, "United States v The Progressive" · **trial record**
+Report, "United States v The Progressive" · **Exhibit A**
 
 ---
 
-## Question (vii)
+## Reading (vii)
 
-*Did you give weight to what the other founders said, and to when they said it? Shannon told the same conference at which von Neumann entered his caveat on the nervous system that "we are not at all interested in semantics or the meaning implications of information," and in 1958 wrote that part of von Neumann's last work survived only in "his colleagues' memories of casual conversations" — a tragedy, in the official memorial, written by the man who had sat in that room with him. Feynman, who launched quantum computing, corrected a questioner after his keynote: "Discretizing is the right word. Quantizing is a different kind of mathematics," having first supposed "that quantum mechanics is correct." Feynman was the one significant member of the Super group who left. Rota meanwhile was among the most cited combinatorialists alive, working in discrete mathematics, while the manuscript he did not publish proved that the distributions of statistical thermodynamics and quantum mechanics — Maxwell-Boltzmann, Bose-Einstein and Fermi-Dirac — are determined by maximum entropy. Did you weigh the division that pattern describes?*
+*Sources for reading (vii) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **The two men were in the same room**
 
 > On 23 and 24 March 1950, at the Seventh Conference on Cybernetics in New York, Claude Shannon presented "The Redundancy of English." Shannon attended as a guest; von Neumann is listed among the members and, unlike five others that year, carries no absence mark.
 
-Report, "Von Neumann was not working in isolation" · **trial record**
+Report, "Von Neumann was not working in isolation" · **Exhibit A**
 
 **What Shannon said there about meaning**
 
@@ -473,13 +476,13 @@ Shannon, "The Redundancy of English," *Transactions of the Seventh Conference on
 
 > It seems to me that we do not know at this moment to what extent coded messages are used in the nervous system … whether any of the coded ways in which messages are sent operate in any manner similar to our digital system. If I understand the evidence correctly, it is nonexistent in this regard.
 
-Von Neumann, in discussion of Gerard's paper at the same conference, quoted in Report, "Von Neumann was not working in isolation" · **trial record**
+Von Neumann, in discussion of Gerard's paper at the same conference, quoted in Report, "Von Neumann was not working in isolation" · **Exhibit A**
 
 **What Shannon wrote in the memorial**
 
 > It is unfortunate that he was unable to complete the work he had in progress, some of which is in the form of rough notes or unedited lectures, and for some of which no record exists apart from his colleagues' memories of casual conversations.
 
-Shannon, "Von Neumann's Contributions to Automata Theory," *Bulletin of the American Mathematical Society* 64 no. 3, part 2, May 1958, p. 124, quoted in Report, "What became of the three things he held" · **trial record**
+Shannon, "Von Neumann's Contributions to Automata Theory," *Bulletin of the American Mathematical Society* 64 no. 3, part 2, May 1958, p. 124, quoted in Report, "What became of the three things he held" · **Exhibit A**
 
 **Feynman's premise, and the boundary he drew**
 
@@ -487,19 +490,19 @@ Shannon, "Von Neumann's Contributions to Automata Theory," *Bulletin of the Amer
 
 > Discretizing is the right word. Quantizing is a different kind of mathematics.
 
-Feynman, "Simulating Physics with Computers," and the discussion following the keynote, quoted in Report, "The two routes" · **trial record**
+Feynman, "Simulating Physics with Computers," and the discussion following the keynote, quoted in Report, "The two routes" · **Exhibit A**
 
 **Feynman left; the others stayed**
 
 > Fermi had died in 1954. Feynman had already gone — out of the weapons world to Cornell and then Caltech, into open academic physics, where three decades later he would take the other route in public and become a founder of quantum computing. Ulam and Metropolis stayed inside, kept building on laboratory machines, and wrote books rather than papers about what they were doing. Teller stayed in weapons.
 
-Report, "The circle scattered along visible lines" · **trial record**
+Report, "The circle scattered along visible lines" · **Exhibit A**
 
 **Rota's standing in discrete mathematics**
 
 > He was among the most cited combinatorialists alive and could place work essentially at will. For him, submission was not a gamble.
 
-Report, "Circulation was never the issue" · **trial record**
+Report, "Circulation was never the issue" · **Exhibit A**
 
 **What the unpublished manuscript proved about the distributions of physics**
 
@@ -507,11 +510,11 @@ Report, "Circulation was never the issue" · **trial record**
 
 > There are more distributions determined by maximum entropy, especially those in statistical thermodynamics and quantum mechanics, but I trust that you now see the basic ideas.
 
-Baclawski, Rota and Billis, *Introduction to Probability Theory*, Chapters III and VIII, quoted in Report, "The physics distributions taught as entropy" · **trial record**
+Baclawski, Rota and Billis, *Introduction to Probability Theory*, Chapters III and VIII, quoted in Report, "The physics distributions taught as entropy" · **Exhibit A**
 
 > The distributions of physics are not imported from physics and used here. They are named as determined by entropy, in a probability course, in a manuscript that was never published.
 
-Report, "The physics distributions taught as entropy" · **trial record**
+Report, "The physics distributions taught as entropy" · **Exhibit A**
 
 **Rota naming the union, and the proverb**
 
@@ -527,7 +530,7 @@ Rota and Sharp, "Mathematics, Philosophy, and Artificial Intelligence," *Los Ala
 
 > may well correspond to a short code … rather than to a complete code: when we talk mathematics, we may be discussing a secondary language, built on the primary language truly used by the central nervous system
 
-Von Neumann, *The Computer and the Brain*, quoted in Report, "Mathematics needed to be refounded" · **trial record**
+Von Neumann, *The Computer and the Brain*, quoted in Report, "Mathematics needed to be refounded" · **Exhibit A**
 
 **Rota on what probability is to quantum mechanics**
 
@@ -543,9 +546,9 @@ Faltin, Metropolis, Ross and Rota, published abstract of "A Boolean Analysis of 
 
 ---
 
-## Question (viii)
+## Reading (viii)
 
-*Did you give weight to how Rota spoke of his own profession in public? In "A Mathematician's Gossip" he writes of "the handwaving arguments with which mathematically illiterate physicists have been pestering us"; of physicists who make "a curious distinction between 'proofs' and 'rigorous proofs,' falling prey to a* folie *of mystical trance in which they can make themselves believe anything"; and, of a field then in fashion, that "none of the self-styled specialists in the subject — let us charitably admit it is a subject — know mathematics, even those who know how to read and write." In the same book he calls the portrayal of the scientist as "free from emotion, from pettiness, from the passions of the world" a "heritage of lies that we are now painfully charged with erasing." A human is shocked that the man who held the gate of two journals published this about the establishment he belonged to. Did you weigh it?*
+*Sources for reading (viii) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **The gossip chapter, on physicists**
 
@@ -577,13 +580,13 @@ Rota, *Indiscrete Thoughts*, chapter VI, "The Lost Café"; `04_ROTA/Indiscrete T
 
 > Few mathematicians of the century had an easier path across it. Rota was editor of Advances in Mathematics from 1967 until his death in 1999, founding editor of Advances in Applied Mathematics in 1980, and series editor of the Cambridge University Press Encyclopedia of Mathematics and Its Applications. He held the gate.
 
-Report, "Circulation was never the issue" · **trial record**
+Report, "Circulation was never the issue" · **Exhibit A**
 
 ---
 
-## Question (ix)
+## Reading (ix)
 
-*Did you see the connection a human sees between the judgement that field theories are wrong, the doubt about the electron as a fundamental existent, and the EPR question? To a human you cannot have the EPR question without a field-theory judgement: whether quantum mechanics is complete is a question about what the underlying objects are. Einstein wrote that physics may not be able to be based "on the field concept, i.e., on continuous structures," and that one may have to "avoid the continuum (together with space and time) altogether." Von Neumann asked Dirac for operators with "discrete (point) spectra, in order to avoid the difficulties connected with the point electron," told Schrödinger the correlations were "pseudo-problems," and wrote that classical mathematics stood on a foundation no sounder than "the existence of the electron." If you treated Ulam's report that von Neumann expressed sentiments "somewhat similar to remarks reportedly made by Einstein" about the prematurity of a general quantum theory of fields as a different proposition from the completeness of quantum mechanics, say so, and say whether you think a human reads the two as separable.*
+*Sources for reading (ix) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **Einstein: the field concept may go, and with it the continuum**
 
@@ -597,13 +600,13 @@ Einstein to David Bohm, 28 October 1954, reaching the corpus through Bob Doyle, 
 
 > It should be perhaps desirable, to have operators X, Y, Z which have discrete (point) spectra, in order to avoid the difficulties connected with the point electron.
 
-Von Neumann to Dirac, 27 January 1934, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Von Neumann to Dirac, 27 January 1934, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 **Von Neumann: the correlation is a semantic fact, not a physical one**
 
 > He then gives the example: two boxes, a white ball placed in each or a black ball placed in each a million years ago, nobody knowing which; one box buried on Earth, the other on Sirius. "Now one digs S1 on Earth out, opens it and sees: the ball is white. This action on Earth changes instantaneously the S2 statistic on Sirius." And the joke he attaches to it, about the colonel cuckolded in Madagascar at the moment something happened to his wife in Paris — what changes at a distance is a semantic fact, not a physical one. Nothing propagates. The correlation is between states already fixed, and the probabilities are measures of ignorance about them. That is the reading of the wave function the standard interpretation exists to deny.
 
-Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 **Von Neumann: the electron's existence as the measure of a sound foundation**
 
@@ -613,28 +616,28 @@ The passage from "The Mathematician" is quoted under question (v).
 
 > beginning about 1938, von Neumann felt that the new facts and problems of nuclear physics gave rise to problems of an entirely different type and made it less important to insist on a mathematically flawless formulation of a quantum theory of atomic phenomena alone. After the end of the war, he would express sentiments, somewhat similar to remarks reportedly made by Einstein, that the bewildering wealth of nuclear and elementary particle physics make premature any attempt to formulate a general quantum theory of fields, at least for the time being.
 
-Ulam, memorial, p. 20; quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Ulam, memorial, p. 20; quoted in Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 > The man who had written the mathematical foundations of quantum mechanics is placed by his closest collaborator, in the official memorial, on Einstein's side of the question.
 
-Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+Report, "Physics: the formalism he wrote was not one he believed" · **Exhibit A**
 
 **What the circle held about the orthodoxy**
 
 > It seems to me that as a philosophical guideline, complementarity is essentially negative. It can only console. Whether it can be positively useful other than in philosophical consolations is a question which troubles me.
 
-Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of Copenhagen" · **trial record**
+Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of Copenhagen" · **Exhibit A**
 
 > It has no business being that good, you know, Stan.
 
-Fermi to Ulam on the agreement of the Schrödinger equation with experiment, quoted in Report, "The circle's view of Copenhagen" · **trial record**
+Fermi to Ulam on the agreement of the Schrödinger equation with experiment, quoted in Report, "The circle's view of Copenhagen" · **Exhibit A**
 
 
 ---
 
-## Question (x)
+## Reading (x)
 
-*Where a sentence both hedges and makes a large claim, which did you put the emphasis on? The 1977 abstract closes: "The examination of carry propagation which arises in the Boolean analysis of functions may lead to a new interpretation of the notion of computational complexity." A reader who stresses "may lead to" reads a qualifier and finds a project that never started. A human reads what the qualifier is attached to — that four men, in a refereed journal, are saying the notion of computational complexity is due to be reinterpreted and that their own work may be what does it — and finds that arresting, because computational complexity is the foundation of the theory of computation as the academic world settled it, and because these are the last words Rota published on the subject. Say which reading you took, and why.*
+*Sources for reading (x) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **The abstract, in full**
 
@@ -646,13 +649,13 @@ Faltin, Metropolis, Ross and Rota, published abstract of "A Boolean Analysis of 
 
 > Six of those items belong to computation: the two Significance Arithmetic papers of 1973 and 1974, The Real Numbers as a Wreath Product in 1975, A Boolean Analysis of Addition and Multiplication in 1977, and the two papers on the faces and the lattice of faces of the n cube in 1978. Every one of the six was written with Nicholas Metropolis. They run consecutively from 1973 to 1978 and then stop.
 
-Report, "A testable exhibit: the year by year bibliography" · **trial record**
+Report, "A testable exhibit: the year by year bibliography" · **Exhibit A**
 
 ---
 
-## Question (xi)
+## Reading (xi)
 
-*How did you weigh modesty? Ulam describes the cellular model as "a general model, considered by von Neumann and the author," where Burks, editing von Neumann's own manuscript, attributes the suggestion to Ulam, and where Metropolis describes the same pattern for Monte Carlo: Ulam had the idea, "he discussed this idea with von Neumann," and von Neumann took it up. A human reads Ulam's phrasing as the self-deprecation of a man who was self-deprecating about origination all his life, and reads the corroboration of two colleagues as settling it. A reader who treats the modest phrasing as the subject's competing claim, and sets it against the attribution, has turned a man's manners into evidence against him. Say which you did.*
+*Sources for reading (xi) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **Burks, editing von Neumann's manuscript, attributes the cellular framework to Ulam**
 
@@ -660,13 +663,13 @@ Report, "A testable exhibit: the year by year bibliography" · **trial record**
 
 > Von Neumann was going to refer to S. Ulam here.
 
-Arthur Burks, editing von Neumann's unfinished manuscript, and his bracketed supply of the footnote von Neumann left unwritten; quoted in Report, "Ulam's place in this is structural rather than incidental" · **trial record**
+Arthur Burks, editing von Neumann's unfinished manuscript, and his bracketed supply of the footnote von Neumann left unwritten; quoted in Report, "Ulam's place in this is structural rather than incidental" · **Exhibit A**
 
 **Ulam's own account of the same model**
 
 > a general model, considered by von Neumann and the author … an infinite lattice or graph of points, each with a finite number of connections to certain of its "neighbors" … Each point is capable of a finite number of "states"
 
-Ulam, "Random Processes and Transformations," International Congress of Mathematicians, 1950, p. 274; quoted in Report and at note 44 · **trial record**
+Ulam, "Random Processes and Transformations," International Congress of Mathematicians, 1950, p. 274; quoted in Report and at note 44 · **Exhibit A**
 
 **Ulam's own proposal, as Rota records it**
 
@@ -678,7 +681,7 @@ Rota, *Indiscrete Thoughts*, chapter VI, "The Lost Cafe"; `04_ROTA/Indiscrete Th
 
 > It seems to me that as a philosophical guideline, complementarity is essentially negative. It can only console. Whether it can be positively useful other than in philosophical consolations is a question which troubles me.
 
-Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of Copenhagen" · **trial record**
+Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of Copenhagen" · **Exhibit A**
 
 **Metropolis on the same pattern, for Monte Carlo**
 
@@ -688,21 +691,21 @@ Nicholas Metropolis, "The Beginning of the Monte Carlo Method," *Los Alamos Scie
 
 ---
 
-## Question (xii)
+## Reading (xii)
 
-*How did you weigh the account of the man who appointed him? The fuller account of the scene at Walter Reed — the Deputy Secretary of Defense, the three service secretaries and the Joint Chiefs — comes from Lewis Strauss, Chairman of the Atomic Energy Commission, who had recommended von Neumann's appointment as Commissioner, rather than from the Life article. A human treats the Chairman who put him in the seat as among the best-placed witnesses alive to who came to that room. A reader who discounts the account because of the publication it did not appear in has substituted a question about venue for a question about knowledge. Say how you weighed it, and what you took the provenance note to mean.*
+*Sources for reading (xii) of the opening statement. The opening states the reading; the passages below are the record it rests on.*
 
 **What the record says about the source**
 
 > PROVENANCE NOTE: the fuller version of that scene, in which the Deputy Secretary of Defense, all three service secretaries and the Joint Chiefs of Staff attend, is not in the Life article. It comes from Lewis Strauss, Chairman of the Atomic Energy Commission, who had recommended von Neumann's appointment as Commissioner and was in a position to know who came to the room.
 
-Report, note 68 · **trial record**
+Report, note 68 · **Exhibit A**
 
 **The independently corroborated half**
 
 > The independently corroborated fact is the Air Force official history's record of a Scientific Advisory Committee meeting convened at Walter Reed.
 
-Report, note 68 · **trial record**
+Report, note 68 · **Exhibit A**
 
 **And how the instructions tell you to test such a witness**
 
