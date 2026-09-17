@@ -513,6 +513,18 @@ Baclawski, Rota and Billis, *Introduction to Probability Theory*, Chapters III a
 
 Report, "The physics distributions taught as entropy" · **trial record**
 
+**Rota on what probability is to quantum mechanics**
+
+> Behind the Feynman integral there lurks an even more enticing (and even less rigorous) concept: that of an amplitude which is meant to be the quantum-mechanical analog of probability (one gets probabilities by taking the absolute values of amplitudes and squaring them: hence the slogan "quantum mechanics is the imaginary square root of probability theory"). A concept similar to that of a sample space should be brought into existence for amplitudes and quantum mechanics should be developed starting from this concept.
+
+Rota, *Indiscrete Thoughts*, chapter XX, "A Mathematician's Gossip," p. 229; `04_ROTA/Indiscrete Thoughts.md` · **collection**. The slogan runs in the direction printed here: probability theory is the ground and quantum mechanics its imaginary square root, not the reverse.
+
+**Rota's last published words in the direction of computability**
+
+> The notions of binary string and binary symmetric function are introduced, and basic results presented. Boolean algorithms are given for binary addition and multiplication. An analysis of the redundancies involved is straightforward. The examination of carry propagation which arises in the Boolean analysis of functions may lead to a new interpretation of the notion of computational complexity.
+
+Faltin, Metropolis, Ross and Rota, published abstract of "A Boolean Analysis of Addition and Multiplication," *Studies in Applied Mathematics* 56 no. 2, April 1977; corpus · **collection**. The paper is cited at Report, note 23. The two 1978 papers that follow it are on the combinatorial structure of the faces of the n cube; Report, note 25.
+
 ---
 
 ## Question (viii)

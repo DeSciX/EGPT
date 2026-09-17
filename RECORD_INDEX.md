@@ -114,11 +114,14 @@ text is not reproduced here and the corpus record says where it was read.
 | EXHIBIT_opening.md | I absolutely disagree with your view on the formalizability of intuiti… | `q-john-von-neumann-letter-to-kurt-godel-74e2e82d` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
 | EXHIBIT_opening.md | is it not a fact, that not a single construction of the kind mentioned… | `q-john-von-neumann-letter-to-kurt-godel-c728d551` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
 | EXHIBIT_opening.md | may be best, although somewhat loosely, described as an analogical mec… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_opening.md | he would express sentiments, somewhat similar to remarks reportedly ma… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | After the end of the war, he would express sentiments, somewhat simila… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | When von Neumann tragically died, the snobs took their revenge and got… | `q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee` | SECONDARY-SOURCE |  |
 | EXHIBIT_opening.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | I arrived in Chicago when Sputnik was —— October 4, 1957 is the date o… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | Los Alamos Scientific Laboratory, 1966–. | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` | SECONDARY-SOURCE | the report itself; its endnotes cite the original |
+| EXHIBIT_opening.md | The examination of carry propagation which arises in the Boolean analy… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | PRIMARY-TEXT-READ | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
+| EXHIBIT_opening.md | quantum mechanics is the imaginary square root of probability theory. | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
+| EXHIBIT_opening.md | A concept similar to that of a sample space should be brought into exi… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
 | EXHIBIT_opening.md | essentially all the interesting distributions we have seen in probabil… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | a dramatic application of the law of large numbers. | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
