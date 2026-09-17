@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 295,
+ "count": 296,
  "note": "Verbatim quotations with provenance. 'restored' holds text removed by an ellipsis. 'sourcing' holds mechanical and sourcing facts only — no interpretation.",
  "records": [
   {
@@ -617,6 +617,35 @@
    ],
    "quote_sha256": "3f9177ffd642442a16b00d947e178d60a857963b05f517b112485cdf3aea75cf",
    "embed_text": "Albert Einstein | Bob Doyle, \"My God, He Plays Dice!\" — Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\") | Chapter 38, p.317; Doyle's footnote 3 cites \"Stachel, 1986, p.380\"; Doyle's own inline citation reads \"(Einstein to David Bohm, 28 October 1954)\" | 28 October 1954 | I must confess that I was not able to find a way to explain the atomistic character of nature. My opinion is that if the objective description through the field as an elementary concept is not possible, then one has to find a possibility to avoid the continuum (together with space and time) altogether. But I have not the slightest idea what kind of elemen-tary concepts could be used in such a theory."
+  },
+  {
+   "id": "q-albert-einstein-letter-to-max-born-7-2712552f",
+   "quote": "We have become Antipodean in our scientific expectations. You believe in the God who plays dice, and I in complete law and order in a world which objectively exists, and which I, in a wildly speculative way, am trying to capture. I firmly believe, but I hope that someone will discover a more realistic way, or rather a more tangible basis than it has been my lot to find. Even the great initial success of the quantum theory does not make me believe in the fundamental dice-game, although I am well aware that our younger colleagues interpret this as a consequence of senility. No doubt the day will come when we will see whose instinctive attitude was the correct one.",
+   "speaker": {
+    "name": "Albert Einstein",
+    "role": "reported",
+    "sort": "einstein, albert",
+    "as_given": "Albert Einstein"
+   },
+   "source": {
+    "work": "Letter to Max Born, 7 September 1944, in The Born-Einstein Letters, trans. Irene Born (London: Macmillan, 1971), p. 146; quoted in Jeremy Bernstein, \"Einstein's Entanglements,\" Inference: International Review of Science",
+    "locus": "Bernstein, \"Einstein's Entanglements,\" block quotation introduced \"In 1944, Einstein wrote to Born:\"; Bernstein's endnote 12 reads \"Albert Einstein to Max Born, September 7, 1944, in The Born-Einstein Letters, trans. Irene Born (London: Macmillan, 1971), 146.\"",
+    "date": "7 September 1944",
+    "file": "",
+    "url": "https://inference-review.com/article/einsteins-entanglements"
+   },
+   "restored": "",
+   "sourcing": "Reaches this corpus through an identified secondary source, Bernstein's article, rather than through the Born-Einstein Letters directly; the wording quoted is Irene Born's published translation as Bernstein prints it. Bernstein italicises \"believe\" in the second sentence; the emphasis is not reproduced here. Retrieved 17 September 2026; the article's own citation of the primary volume and page is recorded in the locus above. Sits beside the 3 December 1947 Born letter already in this file, which is Born's own translation read on the page that prints the German original.",
+   "verification": "SECONDARY-SOURCE",
+   "years": [
+    1944
+   ],
+   "themes": [],
+   "collections": [
+    "expanded_passages"
+   ],
+   "quote_sha256": "2712552fc964f48e9ea8a5601d340b08baa9b772785bac35f87f423e2212dfdc",
+   "embed_text": "Albert Einstein | Letter to Max Born, 7 September 1944, in The Born-Einstein Letters, trans. Irene Born (London: Macmillan, 1971), p. 146; quoted in Jeremy Bernstein, \"Einstein's Entanglements,\" Inference: International Review of Science | Bernstein, \"Einstein's Entanglements,\" block quotation introduced \"In 1944, Einstein wrote to Born:\"; Bernstein's endnote 12 reads \"Albert Einstein to Max Born, September 7, 1944, in The Born-Einstein Letters, trans. Irene Born (London: Macmillan, 1971), 146.\" | 7 September 1944 | We have become Antipodean in our scientific expectations. You believe in the God who plays dice, and I in complete law and order in a world which objectively exists, and which I, in a wildly speculative way, am trying to capture. I firmly believe, but I hope that someone will discover a more realistic way, or rather a more tangible basis than it has been my lot to find. Even the great initial success of the quantum theory does not make me believe in the fundamental dice-game, although I am well aware that our younger colleagues interpret this as a consequence of senility. No doubt the day will come when we will see whose instinctive attitude was the correct one."
   },
   {
    "id": "q-albert-einstein-letter-to-max-born-r-1c1eb5e4",

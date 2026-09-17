@@ -1,7 +1,8 @@
 # Provenance for section 11(e) of the jury instructions
 
-The four questions in section 11(e) are reproduced below exactly as written. Under each premise are
-the record's own words, quoted verbatim, with where they are.
+The nine questions in section 11(e) are reproduced below exactly as written. Under each premise are
+the record's own words, quoted verbatim, with where they are. Questions (v) to (ix) also carry the
+premises of Question Three, and the passages under them serve both.
 
 - **trial record**: the passage is in `EXHIBIT_report.md` or `EXHIBIT_opening.md`, in this folder.
 - **collection**: the passage is not in the two exhibits. It is held elsewhere in EGPT-Evidence, at the
@@ -323,3 +324,279 @@ Report, note 37 · **trial record**
 **Rota's memorial as a last translation of Ulam on AI and the Barrier of Meaning**
 
 The memorial and its subject are quoted under question (iii).
+
+---
+
+## Question (v)
+
+*Did you give weight to the tone of Einstein's letters, and not only to their content? To Born he calls the theory inconsistent with a physics that represents "a reality in space and time without phantom actions over distances"; says he is convinced that the objects connected by laws are "not probabilities, but conceived facts, as one took for granted only a short time ago"; and closes by saying he can "only call on my little finger as a witness, which cannot claim any authority to be respected outside my own skin." In the earlier letter he records that "our younger colleagues interpret this as a consequence of senility." To Besso he writes that if physics cannot be based on the field concept, "nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics." A human hears biting sarcasm from the man whose name is a synonym for genius, and finds the last of these jaw-dropping, because one half of modern physics was ushered in by the work for which Einstein took the Nobel Prize and the other half by his general relativity, and he is saying that both may go. Did you register that emphasis? And did you weigh that the other great genius of the century was attacking the same establishment at the same time — von Neumann writing in "The Mathematician" that classical mathematics "stood on at least as sound a foundation as, for example, the existence of the electron," that intuitionism's "purge" would take "a good fifty per cent of modern mathematics," and that a discipline far from its empirical source becomes "more and more purely l'art pour l'art"; writing to Gödel "I absolutely disagree with your view," "no living logician is in the position of naming such," "Or am I wrong"; and telling Schrödinger that the difficulties of correlation at a distance are "pseudo-problems"?*
+
+**Einstein to Born: phantom actions, conceived facts, and his little finger as a witness**
+
+> I cannot substantiate my attitude to physics in such a manner that you would find it in any way rational. I see of course that the statistical interpretation (the necessity of which in the frame of the existing formalism has been first clearly recognized by yourself) has a considerable content of truth. Yet I cannot seriously believe it because the theory is inconsistent with the principle that physics has to represent a reality in space and time without phantom actions over distances.... I am absolutely convinced that one will eventually arrive at a theory in which the objects connected by laws are not probabilities, but conceived facts, as one took for granted only a short time ago. However, I cannot provide logical arguments for my conviction, but can only call on my little finger as a witness, which cannot claim any authority to be respected outside my own skin.
+
+Einstein to Max Born, 3 December 1947, in Born's own translation, printed by Born immediately after the German original; corpus · **collection**. The four-dot ellipsis is Born's, not an omission made here.
+
+**Einstein on what his younger colleagues make of him**
+
+> We have become Antipodean in our scientific expectations. You believe in the God who plays dice, and I in complete law and order in a world which objectively exists, and which I, in a wildly speculative way, am trying to capture. I firmly believe, but I hope that someone will discover a more realistic way, or rather a more tangible basis than it has been my lot to find. Even the great initial success of the quantum theory does not make me believe in the fundamental dice-game, although I am well aware that our younger colleagues interpret this as a consequence of senility. No doubt the day will come when we will see whose instinctive attitude was the correct one.
+
+Einstein to Max Born, 7 September 1944, *The Born-Einstein Letters*, trans. Irene Born, Macmillan, 1971, p. 146, as quoted in Jeremy Bernstein, "Einstein's Entanglements"; corpus · **collection**. Bernstein italicises "believe"; the emphasis is not reproduced here.
+
+**Einstein to Besso: if the field concept goes, the rest of modern physics goes with it**
+
+> I consider it quite possible that physics cannot be based on the field concept, i.e., on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics.
+
+Einstein to Michele Besso, 1954, reaching the corpus through Bob Doyle, *My God, He Plays Dice!*, whose own citation is to Pais, *Subtle is the Lord*, p. 467; the bracketed interpolation is that source's · **collection**
+
+**Von Neumann on the foundation of classical mathematics, and the existence of the electron**
+
+> The main hope of a justification of classical mathematics — in the sense of Hilbert or of Brouwer and Weyl — being gone, most mathematicians decided to use that system anyway. After all, classical mathematics was producing results which were both elegant and useful, and, even though one could never again be absolutely certain of its reliability, it stood on at least as sound a foundation as, for example, the existence of the electron. Hence, if one was willing to accept the sciences, one might as well accept the classical system of mathematics.
+
+Von Neumann, "The Mathematician," 1947, quoted in Report, "Mathematics needed to be refounded" · **trial record**
+
+**The purge**
+
+> A system of mathematics which was free of these undesirable traits, "intuitionism," was developed by Brouwer. In this system the difficulties and contradiction of set theory did not arise. However, a good fifty per cent of modern mathematics, in its most vital — and up to then unquestioned — parts, especially in analysis, were also affected by this "purge": they either became invalid or had to be justified by very complicated subsidiary considerations. And in this latter process one usually lost appreciably in generality of validity and elegance of deduction.
+
+Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be refounded" · **trial record**
+
+**L'art pour l'art**
+
+> As a mathematical discipline travels far from its empirical source, or still more, if it is a second and third generation only indirectly inspired by ideas coming from "reality" it is beset with very grave dangers. It becomes more and more purely aestheticizing, more and more purely l'art pour l'art … In other words, at a great distance from its empirical source, or after much "abstract" inbreeding, a mathematical subject is in danger of degeneration. At the inception the style is usually classical; when it shows signs of becoming baroque, then the danger signal is up.
+
+Von Neumann, "The Mathematician," quoted in Report, "Mathematics needed to be refounded" · **trial record**
+
+**Von Neumann to Gödel**
+
+> I absolutely disagree with your view on the formalizability of intuitionism. Certainly, for every formal system there is, as you proved, another formal one that is (already in arithmetic and the lower functional calculus) stronger. But intuitionism is not affected by that at all.
+
+> Clearly I cannot prove that every intuitionistically correct construction of arithmetic is formalizable in A or M or even in Z — for intuitionism is undefined and undefinable. But is it not a fact, that not a single construction of the kind mentioned is known that cannot be formalized in A, and that no living logician is in the position of naming such [a construction]? Or am I wrong, and you know an effective intuitionistic arithmetic construction whose formalization in A creates difficulties?
+
+Von Neumann to Kurt Gödel, 12 January 1931, quoted in Report, "Mathematics needed to be refounded" · **trial record**
+
+**Von Neumann to Schrödinger**
+
+> I cannot accept your § 4. completely. I think that the difficulties you hint at are "pseudo-problems". The "action at distance" in the case under consideration says only that even if there is no dynamical interaction between two systems (e.g. because they are far removed from each other), the systems can display statistical correlations. This is not at all specific for quantum mechanics, it happens classically as well.
+
+Von Neumann to Schrödinger, 11 April 1936, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+
+**Von Neumann to Birkhoff, on the formalism he had himself written**
+
+> I would like to make a confession which may seem immoral: I do not believe absolutely in Hilbert space any more.
+
+Von Neumann to Garrett Birkhoff, 13 November 1935, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+
+---
+
+## Question (vi)
+
+*Did you give weight to the year in which Rota's computation work stops? His last published paper on computation is dated 1978. In the twenty-one years that follow he publishes fifty-nine further technical papers and not one on computation, machine architecture, algorithms for physical simulation or quantum mechanical method — while he is the editor, on a condition of complete editorial license, of two journals and a Cambridge series, and while he continues to publish with Metropolis until 1995 and to edit the computer books of both Metropolis and Ulam, including Ulam's* Science, Computers, and People. *His own publications on the subject are the only thing that stops. The following year, 1979, is the year of* United States v. The Progressive *and the year of the first known printing of the probability manuscript handed to students at MIT. Did the conjunction of those dates carry weight with you?*
+
+**The computation papers run to 1978 and stop**
+
+> Six of those items belong to computation: the two Significance Arithmetic papers of 1973 and 1974, The Real Numbers as a Wreath Product in 1975, A Boolean Analysis of Addition and Multiplication in 1977, and the two papers on the faces and the lattice of faces of the n cube in 1978. Every one of the six was written with Nicholas Metropolis. They run consecutively from 1973 to 1978 and then stop. In the twenty one years that follow, across fifty nine technical papers — nine of them in the Proceedings of the National Academy of Sciences — there is not one paper on computation, machine architecture, algorithms for physical simulation, or quantum mechanical method. The technical output moves wholly into invariant theory, superalgebra, umbral calculus, combinatorics and geometric probability, and stays there until he dies.
+
+Report, "A testable exhibit: the year by year bibliography" · **trial record**
+
+**The collaboration did not stop; the subject did**
+
+> The technical output of that arrangement is itself on the record: sixteen joint publications by Rota and Metropolis between 1973 and 1995, of which the six on computation run consecutively from 1973 to 1978 and stop.
+
+Report, "What the laboratory did, and who was there to do it" · **trial record**
+
+**He went on writing about computers — for the public, and as an editor**
+
+> He did not go quiet and he did not stop proving things. He went on proving things in every field except the one that overlapped his government work, and in that one field he wrote for the public and taught behind a classroom door.
+
+Report, "A testable exhibit: the year by year bibliography" · **trial record**
+
+> The International Research Conference on the History of Computing met at Los Alamos Scientific Laboratory from 10 to 15 June 1976. Nicholas Metropolis, Jack Howlett, and Rota edited the resulting volume, A History of Computing in the Twentieth Century.
+
+Report, "History of computing conference" · **trial record**
+
+> Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian Carlo Rota, Birkhauser, 1986.
+
+Report, note 37 · **trial record**
+
+**The gate he himself held**
+
+> Rota was founding editor of the Journal of Combinatorial Theory in 1966 with Frank Harary; he took over Advances in Mathematics in 1967, on the condition, his publisher records, of "giving him complete editorial license," and held it until his death
+
+Report, "The positions and what they carried" · **trial record**
+
+> For thirty years he decided what appeared in two journals and a Cambridge series. No mathematician of his generation had a shorter path from manuscript to print.
+
+Report, "18.313 and the unpublished manuscript" · **trial record**
+
+**1979: the first known printing of the manuscript**
+
+> It circulated as a manuscript: Kenneth Baclawski and Gian Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billis as a third author. The 1979 copy appears to be the earliest version publicly available.
+
+Report, "18.313 and the unpublished manuscript" · **trial record**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. The entropy chapter quoted throughout the report is Chapter VIII of the later MIT edition, circa 1993; the chapter numbering of the 1979 printing is not stated anywhere in the record.
+
+**1979:** United States v. The Progressive
+
+> In 1979 the United States sought to stop The Progressive from publishing Howard Morland's article on hydrogen bomb design. The government relied on the Atomic Energy Act and argued that an unclassified synthesis of public materials could constitute Restricted Data and cause grave harm. The district court issued a preliminary injunction.
+
+Report, "United States v The Progressive" · **trial record**
+
+> A mistake in ruling against the United States could pave the way for thermonuclear annihilation for us all. In that event, our right to life is extinguished and the right to publish becomes moot.
+
+*United States v. The Progressive, Inc.*, 467 F. Supp. 990 (W.D. Wis. 1979); corpus · **collection**
+
+> The Progressive establishes what the statutory regime demanded of a cleared scientist in exactly those years, and what the government was prepared to do to enforce it.
+
+Report, "United States v The Progressive" · **trial record**
+
+---
+
+## Question (vii)
+
+*Did you give weight to what the other founders said, and to when they said it? Shannon told the same conference at which von Neumann entered his caveat on the nervous system that "we are not at all interested in semantics or the meaning implications of information," and in 1958 wrote that part of von Neumann's last work survived only in "his colleagues' memories of casual conversations" — a tragedy, in the official memorial, written by the man who had sat in that room with him. Feynman, who launched quantum computing, corrected a questioner after his keynote: "Discretizing is the right word. Quantizing is a different kind of mathematics," having first supposed "that quantum mechanics is correct." Feynman was the one significant member of the Super group who left. Rota meanwhile was among the most cited combinatorialists alive, working in discrete mathematics, while the manuscript he did not publish proved that the distributions of statistical thermodynamics and quantum mechanics — Maxwell-Boltzmann, Bose-Einstein and Fermi-Dirac — are determined by maximum entropy. Did you weigh the division that pattern describes?*
+
+**The two men were in the same room**
+
+> On 23 and 24 March 1950, at the Seventh Conference on Cybernetics in New York, Claude Shannon presented "The Redundancy of English." Shannon attended as a guest; von Neumann is listed among the members and, unlike five others that year, carries no absence mark.
+
+Report, "Von Neumann was not working in isolation" · **trial record**
+
+**What Shannon said there about meaning**
+
+> The chief subject I should like to discuss is a recently developed method of estimating the amount of redundancy in printed English. Before doing so, I wish to review briefly what we mean by redundancy. In communication engineering we regard information perhaps a little differently than some of the rest of you do. In particular, we are not at all interested in semantics or the meaning implications of information. Information for the communication engineer is something he transmits from one point to another as it is given to him, and it may not have any meaning at all.
+
+Shannon, "The Redundancy of English," *Transactions of the Seventh Conference on Cybernetics*, Josiah Macy Jr. Foundation, 1951, p. 123; corpus · **collection**
+
+**What von Neumann said there about the nervous system**
+
+> It is very plausible, indeed, that the underlying mechanism of the nervous system may be best, although somewhat loosely, described as an analogical mechanism.
+
+> It seems to me that we do not know at this moment to what extent coded messages are used in the nervous system … whether any of the coded ways in which messages are sent operate in any manner similar to our digital system. If I understand the evidence correctly, it is nonexistent in this regard.
+
+Von Neumann, in discussion of Gerard's paper at the same conference, quoted in Report, "Von Neumann was not working in isolation" · **trial record**
+
+**What Shannon wrote in the memorial**
+
+> It is unfortunate that he was unable to complete the work he had in progress, some of which is in the form of rough notes or unedited lectures, and for some of which no record exists apart from his colleagues' memories of casual conversations.
+
+Shannon, "Von Neumann's Contributions to Automata Theory," *Bulletin of the American Mathematical Society* 64 no. 3, part 2, May 1958, p. 124, quoted in Report, "What became of the three things he held" · **trial record**
+
+**Feynman's premise, and the boundary he drew**
+
+> I'm going to suppose that quantum mechanics is correct
+
+> Discretizing is the right word. Quantizing is a different kind of mathematics.
+
+Feynman, "Simulating Physics with Computers," and the discussion following the keynote, quoted in Report, "The two routes" · **trial record**
+
+**Feynman left; the others stayed**
+
+> Fermi had died in 1954. Feynman had already gone — out of the weapons world to Cornell and then Caltech, into open academic physics, where three decades later he would take the other route in public and become a founder of quantum computing. Ulam and Metropolis stayed inside, kept building on laboratory machines, and wrote books rather than papers about what they were doing. Teller stayed in weapons.
+
+Report, "The circle scattered along visible lines" · **trial record**
+
+**Rota's standing in discrete mathematics**
+
+> He was among the most cited combinatorialists alive and could place work essentially at will. For him, submission was not a gamble.
+
+Report, "Circulation was never the issue" · **trial record**
+
+**What the unpublished manuscript proved about the distributions of physics**
+
+> In physics the balls are called particles, and the boxes are called states, while a placement is called a configuration or system … In physics, such a restriction is called an exclusion principle: a given state may have at most one particle in it. The physics model we have described here goes by the name of Maxwell-Boltzmann statistics (with or without the exclusion principle).
+
+> There are more distributions determined by maximum entropy, especially those in statistical thermodynamics and quantum mechanics, but I trust that you now see the basic ideas.
+
+Baclawski, Rota and Billis, *Introduction to Probability Theory*, Chapters III and VIII, quoted in Report, "The physics distributions taught as entropy" · **trial record**
+
+> The distributions of physics are not imported from physics and used here. They are named as determined by entropy, in a probability course, in a manuscript that was never published.
+
+Report, "The physics distributions taught as entropy" · **trial record**
+
+---
+
+## Question (viii)
+
+*Did you give weight to how Rota spoke of his own profession in public? In "A Mathematician's Gossip" he writes of "the handwaving arguments with which mathematically illiterate physicists have been pestering us"; of physicists who make "a curious distinction between 'proofs' and 'rigorous proofs,' falling prey to a* folie *of mystical trance in which they can make themselves believe anything"; and, of a field then in fashion, that "none of the self-styled specialists in the subject — let us charitably admit it is a subject — know mathematics, even those who know how to read and write." In the same book he calls the portrayal of the scientist as "free from emotion, from pettiness, from the passions of the world" a "heritage of lies that we are now painfully charged with erasing." A human is shocked that the man who held the gate of two journals published this about the establishment he belonged to. Did you weigh it?*
+
+**The gossip chapter, on physicists**
+
+> The distance between probability and statistical mechanics is diminishing, and soon we won't be able to tell which is which. We will be rid of the handwaving arguments with which mathematically illiterate physicists have been pestering us.
+
+> Statistical mechanics is the first bastion of sound physics in this century. Physicists have discovered the usefulness of good mathematics and rigorous theorems. In other branches of physics, physicists make a curious distinction between "proofs" and "rigorous proofs," falling prey to a *folie* of mystical trance in which they can make themselves believe anything.
+
+Rota, *Indiscrete Thoughts*, chapter XX, "A Mathematician's Gossip," p. 228; `04_ROTA/Indiscrete Thoughts.md` · **collection**
+
+**The gossip chapter, on a field then in fashion**
+
+> Pattern recognition is big business today. Too bad that none of the self-styled specialists in the subject — let us charitably admit it is a subject — know mathematics, even those who know how to read and write.
+
+Rota, *Indiscrete Thoughts*, chapter XX, p. 229; `04_ROTA/Indiscrete Thoughts.md` · **collection**
+
+**The gossip chapter, on his own profession's selling technique**
+
+> Some old notions from dynamical systems theory, going back to Poincaré and G. D. Birkhoff, have been brushed off the shelves and resold to an unsuspecting public as the *dernier cri*. Such a selling technique is not rare in mathematics (the author himself admits to having rewritten some of his own twenty-year-old papers in a new notation in a vain attempt to get someone to read them).
+
+Rota, *Indiscrete Thoughts*, chapter XX, p. 230; `04_ROTA/Indiscrete Thoughts.md` · **collection**
+
+**On how scientists are portrayed**
+
+> No other period of civilization has been so dependent for survival on hypocrisy as the *belle époque*, the late post-Victorian age. It has bequeathed us a heritage of lies that we are now painfully charged with erasing, like a huge national debt. The prejudice that the scientist's search for the truth shall be free from emotion, from pettiness, from the passions of the world has been nurtured for over a century by biographers whose faith in science was too weak. One shudders to guess how many talented young minds have been deflected from science by the reading of such unrealistic portrayals of great scientists.
+
+Rota, *Indiscrete Thoughts*, chapter VI, "The Lost Café"; `04_ROTA/Indiscrete Thoughts.md` · **collection**. Rota's own Introduction to the volume, pages xix to xxv, is not transcribed in the collection and is therefore not quoted here.
+
+**The man saying it held the gate**
+
+> Few mathematicians of the century had an easier path across it. Rota was editor of Advances in Mathematics from 1967 until his death in 1999, founding editor of Advances in Applied Mathematics in 1980, and series editor of the Cambridge University Press Encyclopedia of Mathematics and Its Applications. He held the gate.
+
+Report, "Circulation was never the issue" · **trial record**
+
+---
+
+## Question (ix)
+
+*Did you see the connection a human sees between the judgement that field theories are wrong, the doubt about the electron as a fundamental existent, and the EPR question? To a human you cannot have the EPR question without a field-theory judgement: whether quantum mechanics is complete is a question about what the underlying objects are. Einstein wrote that physics may not be able to be based "on the field concept, i.e., on continuous structures," and that one may have to "avoid the continuum (together with space and time) altogether." Von Neumann asked Dirac for operators with "discrete (point) spectra, in order to avoid the difficulties connected with the point electron," told Schrödinger the correlations were "pseudo-problems," and wrote that classical mathematics stood on a foundation no sounder than "the existence of the electron." If you treated Ulam's report that von Neumann expressed sentiments "somewhat similar to remarks reportedly made by Einstein" about the prematurity of a general quantum theory of fields as a different proposition from the completeness of quantum mechanics, say so, and say whether you think a human reads the two as separable.*
+
+**Einstein: the field concept may go, and with it the continuum**
+
+The Besso passage is quoted under question (v). Beside it in the collection:
+
+> I must confess that I was not able to find a way to explain the atomistic character of nature. My opinion is that if the objective description through the field as an elementary concept is not possible, then one has to find a possibility to avoid the continuum (together with space and time) altogether. But I have not the slightest idea what kind of elementary concepts could be used in such a theory.
+
+Einstein to David Bohm, 28 October 1954, reaching the corpus through Bob Doyle, *My God, He Plays Dice!*, whose citation is to Stachel 1986, p. 380 · **collection**
+
+**Von Neumann: quantize space to be rid of the point electron**
+
+> It should be perhaps desirable, to have operators X, Y, Z which have discrete (point) spectra, in order to avoid the difficulties connected with the point electron.
+
+Von Neumann to Dirac, 27 January 1934, quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+
+**Von Neumann: the correlation is a semantic fact, not a physical one**
+
+> He then gives the example: two boxes, a white ball placed in each or a black ball placed in each a million years ago, nobody knowing which; one box buried on Earth, the other on Sirius. "Now one digs S1 on Earth out, opens it and sees: the ball is white. This action on Earth changes instantaneously the S2 statistic on Sirius." And the joke he attaches to it, about the colonel cuckolded in Madagascar at the moment something happened to his wife in Paris — what changes at a distance is a semantic fact, not a physical one. Nothing propagates. The correlation is between states already fixed, and the probabilities are measures of ignorance about them. That is the reading of the wave function the standard interpretation exists to deny.
+
+Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+
+**Von Neumann: the electron's existence as the measure of a sound foundation**
+
+The passage from "The Mathematician" is quoted under question (v).
+
+**What the memorial says, and what the report draws from it**
+
+> beginning about 1938, von Neumann felt that the new facts and problems of nuclear physics gave rise to problems of an entirely different type and made it less important to insist on a mathematically flawless formulation of a quantum theory of atomic phenomena alone. After the end of the war, he would express sentiments, somewhat similar to remarks reportedly made by Einstein, that the bewildering wealth of nuclear and elementary particle physics make premature any attempt to formulate a general quantum theory of fields, at least for the time being.
+
+Ulam, memorial, p. 20; quoted in Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+
+> The man who had written the mathematical foundations of quantum mechanics is placed by his closest collaborator, in the official memorial, on Einstein's side of the question.
+
+Report, "Physics: the formalism he wrote was not one he believed" · **trial record**
+
+**What the circle held about the orthodoxy**
+
+> It seems to me that as a philosophical guideline, complementarity is essentially negative. It can only console. Whether it can be positively useful other than in philosophical consolations is a question which troubles me.
+
+Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of Copenhagen" · **trial record**
+
+> It has no business being that good, you know, Stan.
+
+Fermi to Ulam on the agreement of the Schrödinger equation with experiment, quoted in Report, "The circle's view of Copenhagen" · **trial record**
