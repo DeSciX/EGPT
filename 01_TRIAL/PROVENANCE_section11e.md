@@ -652,6 +652,18 @@ Arthur Burks, editing von Neumann's unfinished manuscript, and his bracketed sup
 
 Ulam, "Random Processes and Transformations," International Congress of Mathematicians, 1950, p. 274; quoted in Report and at note 44 · **trial record**
 
+**Ulam's own proposal, as Rota records it**
+
+> In his fascination with physics, he was led to formulate mathematical thoughts that had a background of physics, but that bore the unmistakable ring of mathematics (he once started to draft a long paper which was to be titled 'Physics for Mathematicians'). One of the most striking is his proposal for the reconstruction of the CGS system on the basis of random walk. Another is the existence of a limit distribution in the redistribution of energy by collision of particles, which R. D. Mauldin proved true.
+
+Rota, *Indiscrete Thoughts*, chapter VI, "The Lost Cafe"; `04_ROTA/Indiscrete Thoughts.md` · **collection**. CGS is centimetre, gram, second — the base units of length, mass and time.
+
+**And Ulam on the interpretation he was replacing**
+
+> It seems to me that as a philosophical guideline, complementarity is essentially negative. It can only console. Whether it can be positively useful other than in philosophical consolations is a question which troubles me.
+
+Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of Copenhagen" · **trial record**
+
 **Metropolis on the same pattern, for Monte Carlo**
 
 > Stan's extensive mathematical background made him aware that statistical sampling techniques had fallen into desuetude because of the length and tediousness of the calculations. But with this miraculous development of the ENIAC — along with the applications Stan must have been pondering — it occurred to him that statistical techniques should be resuscitated, and he discussed this idea with von Neumann. Thus was triggered the spark that led to the Monte Carlo method.

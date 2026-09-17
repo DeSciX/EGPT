@@ -115,6 +115,8 @@ text is not reproduced here and the corpus record says where it was read.
 | EXHIBIT_opening.md | is it not a fact, that not a single construction of the kind mentioned… | `q-john-von-neumann-letter-to-kurt-godel-c728d551` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
 | EXHIBIT_opening.md | may be best, although somewhat loosely, described as an analogical mec… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | After the end of the war, he would express sentiments, somewhat simila… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | as a philosophical guideline, complementarity is essentially negative.… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-080145a7` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | One of the most striking is his proposal for the reconstruction of the… | `q-gian-carlo-rota-indiscrete-thoughts--3c795ac9` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | When von Neumann tragically died, the snobs took their revenge and got… | `q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee` | SECONDARY-SOURCE |  |
 | EXHIBIT_opening.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | I arrived in Chicago when Sputnik was —— October 4, 1957 is the date o… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` | PRIMARY-TEXT-READ |  |
