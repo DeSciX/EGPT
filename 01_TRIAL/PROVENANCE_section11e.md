@@ -513,6 +513,22 @@ Baclawski, Rota and Billis, *Introduction to Probability Theory*, Chapters III a
 
 Report, "The physics distributions taught as entropy" · **trial record**
 
+**Rota naming the union, and the proverb**
+
+> ROTA: As you were saying, a new unit in science is being formed that remains to be named. It will include the best of theoretical computer science, neurophysiology, molecular biology, psychology, and the mathematical theory of information. It will be important to name it properly. As the Latin proverb says, "Nomen est omen." SHARP: The name is a presage. ROTA: We need to name it glamorously, to make it into a respectable profession, and to bring people together to work on it. This is beginning to happen. It is the central drama of today's science.
+
+Rota and Sharp, "Mathematics, Philosophy, and Artificial Intelligence," *Los Alamos Science* no. 12, 1985; `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` · **collection**. The report quotes the passage at "The new science that remains to be named" and paraphrases the proverb; it is quoted here in full, with Sharp's translation of it.
+
+**Von Neumann on mathematics as a secondary language built on the brain's**
+
+> Just as languages like Greek or Sanskrit are historical facts and not absolute logical necessities, it is only reasonable to assume that logics and mathematics are similarly historical, accidental forms of expression.
+
+> whatever language the central nervous system is using, it is characterized by less logical and arithmetical depth than what we are normally used to
+
+> may well correspond to a short code … rather than to a complete code: when we talk mathematics, we may be discussing a secondary language, built on the primary language truly used by the central nervous system
+
+Von Neumann, *The Computer and the Brain*, quoted in Report, "Mathematics needed to be refounded" · **trial record**
+
 **Rota on what probability is to quantum mechanics**
 
 > Behind the Feynman integral there lurks an even more enticing (and even less rigorous) concept: that of an amplitude which is meant to be the quantum-mechanical analog of probability (one gets probabilities by taking the absolute values of amplitudes and squaring them: hence the slogan "quantum mechanics is the imaginary square root of probability theory"). A concept similar to that of a sample space should be brought into existence for amplitudes and quantum mechanics should be developed starting from this concept.

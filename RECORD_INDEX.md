@@ -128,4 +128,10 @@ text is not reproduced here and the corpus record says where it was read.
 | EXHIBIT_opening.md | essentially all the interesting distributions we have seen in probabil… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | a dramatic application of the law of large numbers. | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_opening.md | Just as languages like Greek or Sanskrit are historical facts and not … | `q-john-von-neumann-the-computer-and-the-34dc857a` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | whatever language the central nervous system is using, it is character… | `q-john-von-neumann-the-computer-and-the-34dc857a` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | when we talk mathematics, we may be discussing a secondary language, b… | `q-john-von-neumann-the-computer-and-the-9cc7e4de` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | his proposal for the reconstruction of the CGS system on the basis of … | `q-gian-carlo-rota-indiscrete-thoughts--3c795ac9` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | may lead to a new interpretation of the notion of computational comple… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | PRIMARY-TEXT-READ | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
+| EXHIBIT_opening.md | a combinatorial theory of automata and organisms, | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_opening.md | one of his motives for pressing for the development of electronic comp… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` | PRIMARY-TEXT-READ |  |

@@ -106,6 +106,23 @@ Fourteen. And the science still has no name. Ulam said in the official memorial 
 **Charges One and Three.** Forty-one years on, the discipline three men described has no name and no paper — which is the condition the rest of this case sets out to explain.
 
 
+## The three proposals are one proposal
+
+Read the three refoundations back to back, because separately they look like three eminent men with three hobbies and together they are a programme.
+
+Von Neumann, in the book he did not finish, on mathematics: “Just as languages like Greek or Sanskrit are historical facts and not absolute logical necessities, it is only reasonable to assume that logics and mathematics are similarly historical, accidental forms of expression.” Not discovered, not necessary — an accident. And the reason he thought so: “whatever language the central nervous system is using, it is characterized by less logical and arithmetical depth than what we are normally used to,” so that “when we talk mathematics, we may be discussing a secondary language, built on the primary language truly used by the central nervous system.”
+
+Ulam, on physics: “his proposal for the reconstruction of the CGS system on the basis of random walk.” Length, mass and time, rebuilt from a stochastic process.
+
+Rota, on quantum mechanics: “A concept similar to that of a sample space should be brought into existence for amplitudes and quantum mechanics should be developed starting from this concept.” And on computation, in the last thing he published on the subject: the analysis “may lead to a new interpretation of the notion of computational complexity.”
+
+Mathematics, physics, computation. Three foundations, three men, and in every case the proposal is to tear the foundation out and put something else under it. And the something else is the same in all three: a discrete stochastic process, of the kind von Neumann says the nervous system runs on.
+
+That is not an interpretation supplied by this document. It is what Ulam named in the official memorial — “a combinatorial theory of automata and organisms,” computation and living things in one breath — and what he gave as von Neumann's motive: “one of his motives for pressing for the development of electronic computers was his fascination with the working of the nervous system and the organization of the brain itself.” It is what Rota named again twenty seven years later, at the same laboratory, out of the same ingredients: “a new unit in science is being formed that remains to be named. It will include the best of theoretical computer science, neurophysiology, molecular biology, psychology, and the mathematical theory of information. It will be important to name it properly. As the Latin proverb says, ‘Nomen est omen.’” His interviewer translates it in the next line: “The name is a presage.”
+
+It was never named. That is the whole of this case.
+
+
 ## Why the two public roads could not find it
 
 Shannon’s theorem is about messages and is indifferent to what carries them. That indifference is what made it portable, and it is why the branch could run seventy years to the language model without asking a question about physics. Feynman’s simulator is about physics and treats information as what you read out at the end. Neither asks whether the entropy of a physical system and the entropy of a message are the same object or merely similar ones.
