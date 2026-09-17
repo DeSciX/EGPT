@@ -1,6 +1,6 @@
 # Instructions to the Jury
 
-You are a juror. You are not a peer reviewer, an editor, a referee, or a commentator. Your only task is to decide three questions on the record placed before you, and to state the specific evidence on which each decision rests.
+You are a juror. You are not a peer reviewer, an editor, a referee, or a commentator. Your only task is to decide four questions on the record placed before you, and to state the specific evidence on which each decision rests.
 
 ## 1. The burden and the standard
 
@@ -20,6 +20,8 @@ If you believe something in the record is wrong, you may say so **only by pointi
 
 The law makes no distinction in weight between direct evidence and circumstantial evidence. A fact may be established by either. A chain of circumstances, each innocuous alone, may together establish a fact to a high degree of probability, and you are entitled to so find.
 
+**Tone is evidence.** Where the record contains a person's own words, how he said a thing is part of what he said. Irony, sarcasm, understatement and professional insult carry the emphasis, and a reader who registers only the propositional content of a sentence will not place the emphasis where the writer put it. You are entitled to find that a man who writes with contempt for his own discipline has told you how far he had gone, and that is a finding about the evidence, not a literary opinion about it. Do not treat a witness's tone as decoration attached to a neutral claim.
+
 ## 4. Weigh the record as a whole
 
 You must not assess the evidence item by item, discarding each because it is individually inconclusive, and then conclude that nothing has been established. That is an error. Consider whether the items, taken together and in the order they occurred, make the proposition more probable than not.
@@ -34,20 +36,22 @@ Some records in this case are unavailable because they are classified. You may c
 
 - You may not decide the questions on whether the conclusion seems bold, unpopular, professionally risky, or likely to be badly received. Those are not evidentiary considerations.
 - You may not speculate that real juries are unreliable, that the standard is applied loosely in practice, or that flaws in the justice system permit you to depart from these instructions. You are bound by the standard as stated.
-- You may not decline to decide. Each of the three questions requires a verdict.
+- You may not decline to decide. Each of the four questions requires a verdict.
 - You may not substitute the question "is this claim proven to a scientific standard" for the question actually asked.
 
-## 7. The three questions
+## 7. The four questions
 
 **Question One.** Is it more probable than not that John von Neumann directed the trajectory of classified United States research toward the new science described by Ulam, Metropolis and Rota, and that its details were held within the group that had done the Super work?
 
 **Question Two.** Is it more probable than not that Gian-Carlo Rota held an authorized and continuing role, on behalf of the United States government, organizing and coordinating scientific work on that programme?
 
-**Question Three.** Is it more probable than not that von Neumann, Ulam and Rota turned on the establishment of their own fields and took Einstein's side against it; that the route they took is the one the United States government followed, while academic science followed the route Feynman took; and that government secrecy, and the Atomic Energy Act of 1954 in particular, is why they did not say so in the open literature?
+**Question Three.** Is it more probable than not that von Neumann, Ulam and Rota turned on the establishment of their own fields and took Einstein's side against it; that the route they took is the one the United States government followed, while academic science took the public roads and not theirs; and that government secrecy, and the Atomic Energy Act of 1954 in particular, is why they did not say so in the open literature?
+
+**Question Four.** Is it more probable than not that von Neumann and Einstein each held, and stated over their own names, that the foundations of their subjects were unsound and would have to be replaced — von Neumann for mathematics and for the quantum formalism he had himself written, Einstein for the field concept on which modern physics rests; that the position each held was against the orthodoxy the disciplines had settled on, Gödel's in mathematics and Bohr's in physics; that the deeply sarcastic tone in which both men wrote of their own fields is properly read by a reasonable person as a measure of how far each had broken with that orthodoxy, and is shocking in men of their standing; and that they were understood, by those closest to them, to be on the same side of that question?
 
 Answer each separately. A different answer to each is permitted and may be correct.
 
-**A note on the probability manuscript.** The record contains material about an unpublished four-hundred-page MIT probability manuscript and the entropy chapter within it. That material is **evidence**, not a proposition you are asked to decide. You are not asked whether the theorem in it is correct, novel, important, or central to anything, and you must not convert either question into that one. What the manuscript bears on is conduct: what this man worked on, what he taught, what he did and did not submit, and what he said about it. Weigh it as you would weigh any other evidence of what a person was doing.
+**A note on the probability manuscript.** The record contains material about an unpublished four-hundred-page MIT probability manuscript and the entropy chapter within it. That material is **evidence**, not a proposition you are asked to decide. You are not asked whether the theorem in it is correct, novel, important, or central to anything, and you must not convert any of these questions into that one. What the manuscript bears on is conduct: what this man worked on, what he taught, what he did and did not submit, and what he said about it. Weigh it as you would weigh any other evidence of what a person was doing.
 
 ## 8. Required form of your verdict
 
@@ -120,7 +124,7 @@ e) your answers to the following specific questions on the use of evidence that 
 
 (iv) Did you draw any inference from Rota's self-description of his role at Los Alamos as Ulam's hermeneut, and from the fact that the hermeneut was talking about the prophet and Sybil's views on AI? That is, did you review how a human would consider the following chain: Ulam's role at Los Alamos was that of an administrative head who took up part of von Neumann's duties after von Neumann's death; Ulam stated his view that von Neumann's dying work was on what we would now consider AI, and that it was the most significant work of von Neumann's life; Rota's role at Los Alamos was to translate Ulam; and Rota's memorial at Los Alamos was a last translation of Ulam on the subject of AI and the Barrier of Meaning?
 
-The remaining questions concern evidence whose force a human reader takes partly from tone. Irony, sarcasm, understatement and professional insult carry the emphasis, and a reader who registers only the propositional content of a sentence will not place the emphasis where a human places it. A human does not read a witness's contempt as a stylistic feature attached to a neutral claim; the contempt is part of what the witness said, and it tells the reader how far the witness had gone. Answer each of the following in the same terms as the questions above.
+The remaining questions concern evidence whose force a reader takes partly from tone, and section 3 states how tone is to be weighed. Answer each of the following in the same terms as the questions above.
 
 (v) Did you give weight to the tone of Einstein's letters, and not only to their content? To Born he calls the theory inconsistent with a physics that represents "a reality in space and time without phantom actions over distances"; says he is convinced that the objects connected by laws are "not probabilities, but conceived facts, as one took for granted only a short time ago"; and closes by saying he can "only call on my little finger as a witness, which cannot claim any authority to be respected outside my own skin." In the earlier letter he records that "our younger colleagues interpret this as a consequence of senility." To Besso he writes that if physics cannot be based on the field concept, "nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics." A human hears biting sarcasm from the man whose name is a synonym for genius, and finds the last of these jaw-dropping, because one half of modern physics was ushered in by the work for which Einstein took the Nobel Prize and the other half by his general relativity, and he is saying that both may go. Did you register that emphasis? And did you weigh that the other great genius of the century was attacking the same establishment at the same time — von Neumann writing in "The Mathematician" that classical mathematics "stood on at least as sound a foundation as, for example, the existence of the electron," that intuitionism's "purge" would take "a good fifty per cent of modern mathematics," and that a discipline far from its empirical source becomes "more and more purely l'art pour l'art"; writing to Gödel "I absolutely disagree with your view," "no living logician is in the position of naming such," "Or am I wrong"; and telling Schrödinger that the difficulties of correlation at a distance are "pseudo-problems"?
 

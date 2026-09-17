@@ -2,7 +2,7 @@
 
 The nine questions in section 11(e) are reproduced below exactly as written. Under each premise are
 the record's own words, quoted verbatim, with where they are. Questions (v) to (ix) also carry the
-premises of Question Three, and the passages under them serve both.
+premises of Questions Three and Four, and the passages under them serve all three.
 
 - **trial record**: the passage is in `EXHIBIT_report.md` or `EXHIBIT_opening.md`, in this folder.
 - **collection**: the passage is not in the two exhibits. It is held elsewhere in EGPT-Evidence, at the

@@ -15,11 +15,15 @@ The standard here is the ordinary civil one, more probable than not, and the que
 
 ## What is actually in dispute
 
-Almost nothing above is contested. Two claims are, and they are the only two this report argues.
+Almost nothing above is contested. Four claims are, and they are the only four this report argues.
 
 First, that von Neumann considered this new science which we would now call AI to be of utmost strategic importance to the US military, directed the trajectory of classified United States research toward that science, and that the details of it stayed inside the group that had done the Super work.
 
-Second, that Ulam continued the work on the new AI science at Los Alamos, as did Rota after him, and that the the entropy material Rota taught for twenty years and never submitted — the uniqueness of the entropy function, and the distributions of physics as determined by it — is central to that science.
+Second, that Ulam continued the work on the new AI science at Los Alamos, as did Rota after him, and that the entropy material Rota taught for twenty years and never submitted — the uniqueness of the entropy function, and the distributions of physics as determined by it — is central to that science.
+
+Third, that these three men turned on the establishment of their own fields and took Einstein's side against it; that the route they took is the one the government followed while academic science took the public roads and not theirs; and that the Atomic Energy Act of 1954 is why they never said so in print.
+
+Fourth, that von Neumann and Einstein were not two eminent men with private reservations but two men proposing to replace the foundations of their subjects — von Neumann for mathematics and for the quantum formalism he had himself written, Einstein for the field concept modern physics rests on — against the settled positions of Gödel and Bohr; that the contempt each wrote with is the measure of how far he had gone; and that each was understood to be on the other's side of that question.
 
 Everything else — the offices, the clearances, the appointments, the conference programmes, the editorial control, the publication counts, the award citations, and the statements the participants made over their own names — is evidence, placed before the reader to weigh.
 
