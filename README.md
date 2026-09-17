@@ -76,6 +76,8 @@ category error in either direction.
 
 Start with `00_OUTPUTS/`. Everything else is what those documents rest on.
 
+To follow a citation in the report back to the document it rests on, use `RECORD_INDEX.md`.
+
 If you want to test the argument rather than read it, go to `01_TRIAL/`: the instructions
 given to the panels and the two exhibits — the report and the opening statement — that
 constituted the closed record. The record is closed on purpose. The question put to a juror is
@@ -211,3 +213,6 @@ every gap named in `URLS.md` rather than papered over.
 `CHECKSUMS.txt` — the SHA-256 of every file here, by its path here. Verify the whole
 collection against itself with `shasum -a 256 -c CHECKSUMS.txt`.
 `URLS.md` — what is cited but not held here, and the questions still open.
+`RECORD_INDEX.md` — where the sources behind the trial record live in this collection: each held
+file with the report endnotes that cite it, and each quotation backed by a corpus record. Generated
+by `tools/build_record_index.py`; `--check` fails if it is stale.
