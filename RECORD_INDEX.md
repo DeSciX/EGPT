@@ -108,6 +108,7 @@ text is not reproduced here and the corpus record says where it was read.
 | EXHIBIT_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` | PRIMARY-TEXT-READ |  |
 | EXHIBIT_report.md | Aber es steht doch fest, dass keine einzige solche Konstruktion der ge… | `q-john-von-neumann-letter-to-kurt-godel-920a6921` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
 | EXHIBIT_report.md | the ever accelerating progress of technology and changes in the mode o… | `q-stanislaw-ulam-john-von-neumann-190-a3511ae4` | PRIMARY-TEXT-READ |  |
+| EXHIBIT_opening.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-3cfbdf16` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | EXHIBIT_opening.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-b7e03f05` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | EXHIBIT_opening.md | Gödel has shown that Hilbert’s program is essentially hopeless. | `q-john-von-neumann-the-mathematician-9aedde2b` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | EXHIBIT_opening.md | I absolutely disagree with your view on the formalizability of intuiti… | `q-john-von-neumann-letter-to-kurt-godel-74e2e82d` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
