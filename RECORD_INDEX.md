@@ -122,6 +122,7 @@ text is not reproduced here and the corpus record says where it was read.
 | EXHIBIT_opening.md | The examination of carry propagation which arises in the Boolean analy… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | PRIMARY-TEXT-READ | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
 | EXHIBIT_opening.md | quantum mechanics is the imaginary square root of probability theory. | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
 | EXHIBIT_opening.md | A concept similar to that of a sample space should be brought into exi… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
+| EXHIBIT_opening.md | The Shannon Coding Theorem | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | essentially all the interesting distributions we have seen in probabil… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_opening.md | a dramatic application of the law of large numbers. | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |

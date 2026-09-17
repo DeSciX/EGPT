@@ -1,7 +1,7 @@
 # Provenance for section 11(e) of the jury instructions
 
-The nine questions in section 11(e) are reproduced below exactly as written. Under each premise are
-the record's own words, quoted verbatim, with where they are. Questions (v) to (ix) also carry the
+The twelve questions in section 11(e) are reproduced below exactly as written. Under each premise are
+the record's own words, quoted verbatim, with where they are. Questions (v) to (xii) also carry the
 premises of Questions Three and Four, and the passages under them serve all three.
 
 - **trial record**: the passage is in `EXHIBIT_report.md` or `EXHIBIT_opening.md`, in this folder.
@@ -433,7 +433,7 @@ Report, "18.313 and the unpublished manuscript" · **trial record**
 
 > It circulated as a manuscript: Kenneth Baclawski and Gian Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billis as a third author. The 1979 copy appears to be the earliest version publicly available.
 
-Report, "18.313 and the unpublished manuscript" · **trial record**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. The entropy chapter quoted throughout the report is Chapter VIII of the later MIT edition, circa 1993; the chapter numbering of the 1979 printing is not stated anywhere in the record.
+Report, "18.313 and the unpublished manuscript" · **trial record**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. Its table of contents, at page iv, lists the entropy material as Chapter VII, "Entropy and Information" — "Uniqueness of Entropy" at 7.14 and "The Shannon Coding Theorem" at 7.17. The same chapter is numbered VIII in the later MIT edition, circa 1993, from which the report quotes.
 
 **1979:** United States v. The Progressive
 
@@ -612,3 +612,72 @@ Ulam, *Adventures of a Mathematician*, quoted in Report, "The circle's view of C
 > It has no business being that good, you know, Stan.
 
 Fermi to Ulam on the agreement of the Schrödinger equation with experiment, quoted in Report, "The circle's view of Copenhagen" · **trial record**
+
+
+---
+
+## Question (x)
+
+*Where a sentence both hedges and makes a large claim, which did you put the emphasis on? The 1977 abstract closes: "The examination of carry propagation which arises in the Boolean analysis of functions may lead to a new interpretation of the notion of computational complexity." A reader who stresses "may lead to" reads a qualifier and finds a project that never started. A human reads what the qualifier is attached to — that four men, in a refereed journal, are saying the notion of computational complexity is due to be reinterpreted and that their own work may be what does it — and finds that arresting, because computational complexity is the foundation of the theory of computation as the academic world settled it, and because these are the last words Rota published on the subject. Say which reading you took, and why.*
+
+**The abstract, in full**
+
+> The notions of binary string and binary symmetric function are introduced, and basic results presented. Boolean algorithms are given for binary addition and multiplication. An analysis of the redundancies involved is straightforward. The examination of carry propagation which arises in the Boolean analysis of functions may lead to a new interpretation of the notion of computational complexity.
+
+Faltin, Metropolis, Ross and Rota, published abstract of "A Boolean Analysis of Addition and Multiplication," *Studies in Applied Mathematics* 56 no. 2, April 1977; corpus · **collection**. Cited at Report, note 23.
+
+**That it is the end of the line**
+
+> Six of those items belong to computation: the two Significance Arithmetic papers of 1973 and 1974, The Real Numbers as a Wreath Product in 1975, A Boolean Analysis of Addition and Multiplication in 1977, and the two papers on the faces and the lattice of faces of the n cube in 1978. Every one of the six was written with Nicholas Metropolis. They run consecutively from 1973 to 1978 and then stop.
+
+Report, "A testable exhibit: the year by year bibliography" · **trial record**
+
+---
+
+## Question (xi)
+
+*How did you weigh modesty? Ulam describes the cellular model as "a general model, considered by von Neumann and the author," where Burks, editing von Neumann's own manuscript, attributes the suggestion to Ulam, and where Metropolis describes the same pattern for Monte Carlo: Ulam had the idea, "he discussed this idea with von Neumann," and von Neumann took it up. A human reads Ulam's phrasing as the self-deprecation of a man who was self-deprecating about origination all his life, and reads the corroboration of two colleagues as settling it. A reader who treats the modest phrasing as the subject's competing claim, and sets it against the attribution, has turned a man's manners into evidence against him. Say which you did.*
+
+**Burks, editing von Neumann's manuscript, attributes the cellular framework to Ulam**
+
+> Von Neumann's second model of self-reproduction is his cellular model. It was stimulated by S. M. Ulam, who suggested during a discussion of the kinematic model that a cellular framework would be more amenable to logical and mathematical treatment than the framework of the kinematic model.
+
+> Von Neumann was going to refer to S. Ulam here.
+
+Arthur Burks, editing von Neumann's unfinished manuscript, and his bracketed supply of the footnote von Neumann left unwritten; quoted in Report, "Ulam's place in this is structural rather than incidental" · **trial record**
+
+**Ulam's own account of the same model**
+
+> a general model, considered by von Neumann and the author … an infinite lattice or graph of points, each with a finite number of connections to certain of its "neighbors" … Each point is capable of a finite number of "states"
+
+Ulam, "Random Processes and Transformations," International Congress of Mathematicians, 1950, p. 274; quoted in Report and at note 44 · **trial record**
+
+**Metropolis on the same pattern, for Monte Carlo**
+
+> Stan's extensive mathematical background made him aware that statistical sampling techniques had fallen into desuetude because of the length and tediousness of the calculations. But with this miraculous development of the ENIAC — along with the applications Stan must have been pondering — it occurred to him that statistical techniques should be resuscitated, and he discussed this idea with von Neumann. Thus was triggered the spark that led to the Monte Carlo method.
+
+Nicholas Metropolis, "The Beginning of the Monte Carlo Method," *Los Alamos Science*, Special Issue no. 15; corpus · **collection**
+
+---
+
+## Question (xii)
+
+*How did you weigh the account of the man who appointed him? The fuller account of the scene at Walter Reed — the Deputy Secretary of Defense, the three service secretaries and the Joint Chiefs — comes from Lewis Strauss, Chairman of the Atomic Energy Commission, who had recommended von Neumann's appointment as Commissioner, rather than from the Life article. A human treats the Chairman who put him in the seat as among the best-placed witnesses alive to who came to that room. A reader who discounts the account because of the publication it did not appear in has substituted a question about venue for a question about knowledge. Say how you weighed it, and what you took the provenance note to mean.*
+
+**What the record says about the source**
+
+> PROVENANCE NOTE: the fuller version of that scene, in which the Deputy Secretary of Defense, all three service secretaries and the Joint Chiefs of Staff attend, is not in the Life article. It comes from Lewis Strauss, Chairman of the Atomic Energy Commission, who had recommended von Neumann's appointment as Commissioner and was in a position to know who came to the room.
+
+Report, note 68 · **trial record**
+
+**The independently corroborated half**
+
+> The independently corroborated fact is the Air Force official history's record of a Scientific Advisory Committee meeting convened at Walter Reed.
+
+Report, note 68 · **trial record**
+
+**And how the instructions tell you to test such a witness**
+
+> Ask, of any such witness: what did this person have access to, and how would they know?
+
+`JURY_INSTRUCTIONS.md`, section 10 — the charge itself, not an exhibit
