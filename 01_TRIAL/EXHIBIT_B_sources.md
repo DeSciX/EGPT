@@ -122,7 +122,7 @@ Ulam, *Adventures of a Mathematician*, p. 241; quoted in Report · **Exhibit A**
 
 > One conversation centered on the ever accelerating progress of technology and changes in the mode of human life, which gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue.
 
-Ulam, memorial, p. 5 · **collection**. Exhibit A carries this sentence verbatim in the report's Addendum, introduced "Ulam coined the term reporting von Neumann", and in its body:
+Ulam, memorial, p. 5 · **collection**. Exhibit C carries this sentence verbatim in the addendum, introduced "Ulam coined the term reporting von Neumann"; Exhibit A carries it in the report's body:
 
 > Ulam’s 1958 memorial essay for von Neumann is the source commonly associated with the technological “singularity.”
 
