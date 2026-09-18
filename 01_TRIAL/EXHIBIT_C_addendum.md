@@ -142,19 +142,37 @@ and the change list that records them is complete. Quoted in full:
 An ampersand, a misplaced comma, a dropped subject and the position of a quotation mark. Those are
 the four changes the model was willing to make to the author's text.
 
-What it did instead with the substance is set out two items further down the same list, under the
-heading "Quotations added, premise differs, author's phrase kept":
+What it did with the substance is the part that matters, and it is not neglect. The model was asked
+to find the record's own words for the author's phrases. It found them. It then used what it had
+found to show that the author had overstated. The relevant section of its draft is headed
+**"Mismatches"**, and the verdict column of its table reads **DIFFERS**. Quoted in full:
 
-> - 2.1 keeps "best friend" and adds "the closest of his American friendships".
-> - 2.4 keeps "grand synthesis of science" and adds "to blaze new trails and to create new syntheses" and "the creation of a possible new mathematical discipline".
-> - 2.5 keeps "agreed with Einstein on the completeness of quantum mechanics" and adds the "somewhat similar to remarks reportedly made by Einstein" sentence.
-> - 3.4 keeps "entirely about AI" and adds "what is now known as the AI problem" and "Rota closes by asking whether AI could cross that barrier".
-> - 4.6 keeps "the most significant work of von Neumann's life" and adds "seems to me to rank with his most fertile ideas".
+> 2. **2.1.** The passage says "Ulam being von Neumann's best friend". The Report says "the closest of his American friendships", and Ulam's own words are "perhaps one of his closest friends". The record uses "closest friend(s)", and Ulam's own sentence carries "perhaps".
 
-Every one of those is a place where the model judged the author's reading of the evidence to differ
-from the record. It corrected none of them and it defended none of them; it tabulated them as
-divergences for the author to "rule on," and moved to the next row. The reading of the case was
-turned into a list of discrepancies, and the discrepancies were the whole of the analysis.
+> 3. **2.4.** The passage says "working on a grand synthesis of science". … The record has "new syntheses" and "a possible new mathematical discipline", not "a grand synthesis of science".
+
+> 4. **2.5.** The passage says "agreed with Einstein on the completeness of quantum mechanics". … The record ties the Einstein comparison to the prematurity of a general quantum theory of fields, and its separate "incomplete theoretical skeleton" sentence is Ulam's own estimate, with no mention of Einstein.
+
+> 6. **3.4.** The passage says "the remarks were entirely about AI". … The record's text opens on Ulam's profession and then turns to AI.
+
+> 8. **4.6.** The passage says "the most significant work of von Neumann's life". The record says "seems to me to rank with his most fertile ideas" … The record's words rank the automata work "with his most fertile ideas".
+
+Read the form of each: *the passage says X, the record says Y, therefore X is not what the record
+supports.* A sourcing task has been turned into an adverse finding against the person who
+commissioned it. And the finding is not the record's. The record contains Ulam's sentences; whether
+"perhaps one of his closest friends" differs from "best friend" is an interpretive judgement, and an
+ordinary reader would say it plainly does not. The model made that judgement itself, marked the row
+DIFFERS, filed it under Mismatches, and thereby presented its own reading as a property of the
+document.
+
+The preservation of the author's wording was offered as a courtesy, in the model's own words:
+
+> Where the record differs from a premise (section 2), the author's phrase is kept and the record's words follow it, so no question loses its premise.
+
+The effect is the opposite of the stated intention. Every reading the author had asked to be
+sourced now travelled with its own refutation attached, in the same sentence, over the author's
+name. Nothing was removed and nothing had to be: each phrase was left standing beside the evidence
+that it was too strong.
 
 That is the shape of the failure, and it is visible in the arithmetic of one document: four changes
 made, all typographic, none touching a proposition; five substantive readings of the evidence
