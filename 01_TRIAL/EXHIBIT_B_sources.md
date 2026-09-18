@@ -250,7 +250,7 @@ Rota was such a consultant, in his own curriculum vitae:
 
 > Consultant: “Los Alamos Scientific Laboratory, 1966–.”
 
-Opening statement, "Nine" · **Exhibit A**
+Report, "The positions and what they carried" · **Exhibit A**
 
 > Rota’s description of himself as Ulam’s hermeneut supplies the functional name for his role.
 
