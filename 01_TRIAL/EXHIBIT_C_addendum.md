@@ -131,12 +131,38 @@ and, among its proposed corrections:
 
 > 1. **Title corrected.** "The Computer & The Brain" becomes "The Computer and the Brain".
 
-An ampersand, filed as a discrepancy against the record, in a document whose subject was the
-author's reading of what von Neumann was doing as he died. In the same pass the model did not quote
-Ulam's own words describing what the new discipline was to cover, and did not quote Ulam saying
-directly that von Neumann held a view similar to Einstein's — the two passages that carried the
-author's reading. Accuracy was delivered on the item with nothing at stake, and withheld on the
-items that decided the question.
+The ampersand is not an isolated lapse. It is the first of exactly four corrections the model made,
+and the change list that records them is complete. Quoted in full:
+
+> 1. **Title corrected.** "The Computer & The Brain" becomes "The Computer and the Brain".
+> 2. **Punctuation.** "Chair of the ICBM, committee and yet" becomes "Chair of the ICBM committee, and yet".
+> 3. **Grammar and subject.** "and gave a Ulam's memorial, at Los Alamos" becomes "and that Rota gave Ulam's memorial, at Los Alamos".
+> 4. **Quotation-mark placement.** "most "eminent influencee"" becomes most eminent "influencee".
+
+An ampersand, a misplaced comma, a dropped subject and the position of a quotation mark. Those are
+the four changes the model was willing to make to the author's text.
+
+What it did instead with the substance is set out two items further down the same list, under the
+heading "Quotations added, premise differs, author's phrase kept":
+
+> - 2.1 keeps "best friend" and adds "the closest of his American friendships".
+> - 2.4 keeps "grand synthesis of science" and adds "to blaze new trails and to create new syntheses" and "the creation of a possible new mathematical discipline".
+> - 2.5 keeps "agreed with Einstein on the completeness of quantum mechanics" and adds the "somewhat similar to remarks reportedly made by Einstein" sentence.
+> - 3.4 keeps "entirely about AI" and adds "what is now known as the AI problem" and "Rota closes by asking whether AI could cross that barrier".
+> - 4.6 keeps "the most significant work of von Neumann's life" and adds "seems to me to rank with his most fertile ideas".
+
+Every one of those is a place where the model judged the author's reading of the evidence to differ
+from the record. It corrected none of them and it defended none of them; it tabulated them as
+divergences for the author to "rule on," and moved to the next row. The reading of the case was
+turned into a list of discrepancies, and the discrepancies were the whole of the analysis.
+
+That is the shape of the failure, and it is visible in the arithmetic of one document: four changes
+made, all typographic, none touching a proposition; five substantive readings of the evidence
+recorded as differing from the record and left standing as open items. Accuracy was delivered on the
+items with nothing at stake, and withheld on the items that decided the question. In the same pass
+the model did not quote Ulam's own words describing what the new discipline was to cover, and did
+not quote Ulam saying directly that von Neumann held a view similar to Einstein's — the two
+passages that carried the author's reading.
 
 The addendum above anticipates this exactly: "Accuracy on matters with no stake is what purchases
 the authority that lets a directional error pass unexamined." The specimen was produced by a
