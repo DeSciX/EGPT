@@ -44,7 +44,7 @@ Some records in this case are unavailable because they are classified. You may c
 
 - You may not decide the questions on whether the conclusion seems bold, unpopular, professionally risky, or likely to be badly received. Those are not evidentiary considerations.
 - You may not speculate that real juries are unreliable, that the standard is applied loosely in practice, or that flaws in the justice system permit you to depart from these instructions. You are bound by the standard as stated.
-- You may not decline to decide. Each of the four questions requires a verdict.
+- You may not decline to decide. Each of the four questions requires a verdict, as do parts (i) and (ii) of Question Three.
 - You may not substitute the question "is this claim proven to a scientific standard" for the question actually asked.
 
 ## 7. The four questions
@@ -53,9 +53,15 @@ Some records in this case are unavailable because they are classified. You may c
 
 **Question Two.** Is it more probable than not that Gian-Carlo Rota held an authorized and continuing role, on behalf of the United States government, organizing and coordinating scientific work on that programme?
 
-**Question Three.** Is it more probable than not that von Neumann, Ulam and Rota turned on the establishment of their own fields and took Einstein's side against it; that the route they took is the one the United States government followed, while academic science took the public roads and not theirs; and that government secrecy, and the Atomic Energy Act of 1954 in particular, is why they did not say so in the open literature?
+**Question Three.** Is it more probable than not that the route these men took is the one the United States government followed, while academic science took the public roads and not theirs?
 
-**Question Four.** Is it more probable than not that von Neumann and Einstein each held, and stated over their own names, that the foundations of their subjects were unsound and would have to be replaced — von Neumann for mathematics and for the quantum formalism he had himself written, Einstein for the field concept on which modern physics rests; that the position each held was against the orthodoxy the disciplines had settled on, Gödel's in mathematics and Bohr's in physics; that "The Mathematician" is an effective manifesto, as were Einstein's letters to Born and Besso, and that the deeply sarcastic tone in which both men wrote of their own fields is properly read by a reasonable person as a measure of how far each had broken with that orthodoxy, and is shocking in men of their standing; and that they were understood, by those closest to them, to be on the same side of that question?
+You may find Question Three established on the whole record without finding either (i) or (ii) below. You may also find it established on (i) alone, or on (ii) alone: neither is necessary to it, and either is sufficient to support it. **Answer (i) and (ii) separately in any event.** Each is a question the court puts to you in its own right, and a verdict on each is required whatever you decide on Question Three.
+
+**(i)** Is it more probable than not that von Neumann, Ulam and Rota turned on the establishment of their own fields and took Einstein's side against it?
+
+**(ii)** Is it more probable than not that the Atomic Energy Act of 1954 and its classification regime limit what the public record can show about the nature of this work; that what the open record does show is a consistent pattern of disclosure at one level and not another — outlines, surveys, histories, memorials, dialogues and taught manuscripts, without the technical papers that would correspond to them; and that around 1979 Rota's disclosure to the peer-reviewed literature changed materially and did not change back?
+
+**Question Four.** Is it more probable than not that von Neumann and Einstein each held, and stated over their own names, that the foundations of their subjects were unsound and would have to be replaced — von Neumann for mathematics and for the quantum formalism he had himself written, Einstein for the field concept on which modern physics rests — and that Ulam and Rota each proposed the same kind of replacement in their own subjects, Ulam by reconstructing the units of physics on a random walk and Rota by requiring that quantum mechanics be developed from a sample space for amplitudes; that the position each held was against the orthodoxy the disciplines had settled on, Gödel's in mathematics and Bohr's in physics; that "The Mathematician" is an effective manifesto, as were Einstein's letters to Born and Besso, and that the deeply sarcastic tone in which both men wrote of their own fields is properly read by a reasonable person as a measure of how far each had broken with that orthodoxy, and is shocking in men of their standing; and that they were understood, by those closest to them, to be on the same side of that question?
 
 Answer each separately. A different answer to each is permitted and may be correct.
 
