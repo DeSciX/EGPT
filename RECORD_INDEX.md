@@ -74,6 +74,7 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | Just as languages like Greek or Sanskrit are historical facts and not … | `q-john-von-neumann-the-computer-and-the-34dc857a` |  |
 | EXHIBIT_A_report.md | whatever language the central nervous system is using, it is character… | `q-john-von-neumann-the-computer-and-the-34dc857a` |  |
 | EXHIBIT_A_report.md | must be quite different from languages in the usual sense. It may, for… | `q-stanislaw-ulam-science-computers-an-d4826ff8` | `03_ULAM/Science Computers And People.md` |
+| EXHIBIT_A_report.md | I would like to make a confession which may seem immoral: I do not bel… | `q-john-von-neumann-letter-to-garrett-bi-e517103f` |  |
 | EXHIBIT_A_report.md | It should be perhaps desirable, to have operators X, Y, Z which have d… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
 | EXHIBIT_A_report.md | beginning about 1938, von Neumann felt that the new facts and problems… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` |  |
 | EXHIBIT_A_report.md | Somehow he seemed the embodiment of wisdom. (Wisdom, perhaps not geniu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-61ddbbfa` |  |

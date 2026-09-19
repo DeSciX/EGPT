@@ -119,6 +119,14 @@
    "file": "",
    "source_url": "",
    "quote": "This concept was suggested to von Neumann by S. M. Ulam."
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "I would like to make a confession which may seem immoral: I do not believe absolutely in Hilbert space any more. After all, Hilbert space (as far as quantum mechanical things are concerned) was obtained by generalizing Euclidean space, based on the principle of ‘conserving the validity of all formal rules’ … Now we begin to believe that it is not the vectors that matter, but the lattice of all linear (closed) subspaces. Because: 1) The vectors ought to represent the physical states, but they do so redundantly, up to a complex factor, only 2) and besides, the states are merely a derived notion, the primitive (phenomenologically given) notion being the qualities which correspond to the linear closed subspaces.",
+   "work": "Letter to Garrett Birkhoff, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005); quoted in Miklós Rédei, “Why John von Neumann did not like the Hilbert space formalism of quantum mechanics (and what he liked instead),” Studies in History and Philosophy of Modern Physics 27 no. 4 (1996), pp. 493–510",
+   "locus": "p. 59; quoted at Rédei 1996, p. 493",
+   "date": "13 November 1935",
+   "theme": "physics-and-continuum"
   }
  ]
 }

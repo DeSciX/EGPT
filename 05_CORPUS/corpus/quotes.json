@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 308,
+ "count": 309,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -7607,6 +7607,35 @@
    ],
    "quote_sha256": "8e37c70449c0dcfaa5f27f5d98cd0a60025fe5fea022306fdbcb6b60973f2268",
    "embed_text": "John von Neumann | Letter to Erwin Schrödinger, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005) | pp. 211-213; quoted in Rédei’s introductory commentary §5.4 | 11 April 1936 | And of course quantum electrodynamics proves that quantum mechanics and the special theory of relativity are compatible “philosophically” -- quantum electrodynamic fails only because of the concrete form of Maxwell’s equations in the vicinity of a charge."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-garrett-bi-e517103f",
+   "quote": "I would like to make a confession which may seem immoral: I do not believe absolutely in Hilbert space any more. After all, Hilbert space (as far as quantum mechanical things are concerned) was obtained by generalizing Euclidean space, based on the principle of ‘conserving the validity of all formal rules’ … Now we begin to believe that it is not the vectors that matter, but the lattice of all linear (closed) subspaces. Because: 1) The vectors ought to represent the physical states, but they do so redundantly, up to a complex factor, only 2) and besides, the states are merely a derived notion, the primitive (phenomenologically given) notion being the qualities which correspond to the linear closed subspaces.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "reported",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Garrett Birkhoff, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005); quoted in Miklós Rédei, “Why John von Neumann did not like the Hilbert space formalism of quantum mechanics (and what he liked instead),” Studies in History and Philosophy of Modern Physics 27 no. 4 (1996), pp. 493–510",
+    "locus": "p. 59; quoted at Rédei 1996, p. 493",
+    "date": "13 November 1935",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1935
+   ],
+   "themes": [
+    "physics-and-continuum"
+   ],
+   "collections": [
+    "prophet_automata_schrodinger"
+   ],
+   "quote_sha256": "e517103fdd0ebec0f2efc759d86eb33fed5497dd9e3fc2d0fd3732c0a99d8680",
+   "embed_text": "John von Neumann | Letter to Garrett Birkhoff, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005); quoted in Miklós Rédei, “Why John von Neumann did not like the Hilbert space formalism of quantum mechanics (and what he liked instead),” Studies in History and Philosophy of Modern Physics 27 no. 4 (1996), pp. 493–510 | p. 59; quoted at Rédei 1996, p. 493 | 13 November 1935 | I would like to make a confession which may seem immoral: I do not believe absolutely in Hilbert space any more. After all, Hilbert space (as far as quantum mechanical things are concerned) was obtained by generalizing Euclidean space, based on the principle of ‘conserving the validity of all formal rules’ … Now we begin to believe that it is not the vectors that matter, but the lattice of all linear (closed) subspaces. Because: 1) The vectors ought to represent the physical states, but they do so redundantly, up to a complex factor, only 2) and besides, the states are merely a derived notion, the primitive (phenomenologically given) notion being the qualities which correspond to the linear closed subspaces."
   },
   {
    "id": "q-john-von-neumann-letter-to-kurt-godel-9e3b97a1",
