@@ -31,7 +31,7 @@ the record draws from these books is in the corpus, verbatim and with its printe
 
 | Work | Cited in endnotes |
 |---|---|
-| Ulam, Adventures of a Mathematician, Scribner 1976 | 74, 94 |
+| Ulam, Adventures of a Mathematician, Scribner 1976 | 74, 94, 96 |
 | von Neumann, The Computer and the Brain, Yale 1958 | 36 |
 
 ## Endnotes that are public references only
@@ -76,6 +76,7 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | must be quite different from languages in the usual sense. It may, for… | `q-stanislaw-ulam-science-computers-an-d4826ff8` | `03_ULAM/Science Computers And People.md` |
 | EXHIBIT_A_report.md | I would like to make a confession which may seem immoral: I do not bel… | `q-john-von-neumann-letter-to-garrett-bi-e517103f` |  |
 | EXHIBIT_A_report.md | It should be perhaps desirable, to have operators X, Y, Z which have d… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
+| EXHIBIT_A_report.md | As for myself, I was never greatly impressed by his work on Hilbert sp… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-9a15b73b` |  |
 | EXHIBIT_A_report.md | beginning about 1938, von Neumann felt that the new facts and problems… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` |  |
 | EXHIBIT_A_report.md | Somehow he seemed the embodiment of wisdom. (Wisdom, perhaps not geniu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-61ddbbfa` |  |
 | EXHIBIT_A_report.md | Departing from his usual caution about expressing opinions about other… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` |  |
@@ -109,6 +110,7 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` |  |
 | EXHIBIT_A_report.md | automata consisting of cells in a crystal-like arrangement | `q-stanislaw-ulam-stanislaw-m-ulam-adv-677adc68` |  |
 | EXHIBIT_A_report.md | Aber es steht doch fest, dass keine einzige solche Konstruktion der ge… | `q-john-von-neumann-letter-to-kurt-godel-920a6921` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
+| EXHIBIT_A_report.md | Now Banach, Fermi, von Neumann were dead—the three great men whose int… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-5dcfcb93` |  |
 | OPENING_STATEMENT.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | OPENING_STATEMENT.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-in-b7e03f05` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | OPENING_STATEMENT.md | Gödel has shown that Hilbert’s program is essentially hopeless. | `q-john-von-neumann-the-mathematician-in-9aedde2b` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
