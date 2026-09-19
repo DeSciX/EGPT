@@ -51,7 +51,7 @@ aside, then built his proposal on the assumption that the existing theory stands
 
 Source for all: Richard P. Feynman, "Simulating Physics with Computers," *International Journal of
 Theoretical Physics* 21, nos. 6/7 (1982), pp. 467–488; keynote, MIT Physics of Computation
-conference, May 1981; received 7 May 1981. PRIMARY-TEXT-READ.
+conference, May 1981; received 7 May 1981.
 
 NOTE: Feynman never names Bell or "Bell's inequality" anywhere in the paper. He derives the 2/3
 bound himself (pp. 481–485). Do not write that he invoked Bell.
@@ -61,7 +61,7 @@ bound himself (pp. 481–485). Do not write that he invoked Bell.
 ## B. Ulam, in the obituary, calls the late work a departure
 
 All from Stanislaw Ulam, "John von Neumann, 1903–1957," *Bulletin of the American Mathematical
-Society* 64:3, Part 2 (May 1958). PRIMARY-TEXT-READ (repo copy).
+Society* 64:3, Part 2 (May 1958).
 
 **Started over from the beginning** (p. 8):
 > "The phenomena described by these non-linear equations are baffling analytically and defy even
@@ -124,7 +124,7 @@ no-hidden-variables result does not close:
 
 ## C. Von Neumann in his own hand: he did not believe the formalism
 
-**To Garrett Birkhoff, 13 November 1935** — SECONDARY-SOURCE (Rédei, *Stud. Hist. Phil. Mod. Phys.*
+**To Garrett Birkhoff, 13 November 1935** — (quoted in Rédei, *Stud. Hist. Phil. Mod. Phys.*
 27 (1996), p. 493; letter printed in Rédei ed., *John von Neumann: Selected Letters*, AMS/LMS
 History of Mathematics 27 (2005), p. 59):
 > "I would like to make a confession which may seem immoral: I do not believe absolutely in Hilbert

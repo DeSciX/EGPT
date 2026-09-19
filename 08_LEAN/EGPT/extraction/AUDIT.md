@@ -2,7 +2,7 @@
 
 **Date opened:** 2026-04-24
 **Status:** Steps 1–4 of handoff Investigation Order complete. Phase 0 (runtime-first prototype) starting.
-**Author:** Claude Code (session-opened under `/Users/essam/Code/Unkamon/FRAQTL`)
+**Author:** Claude Code (session-opened under `FRAQTL`)
 
 This document is the authoritative cold-start brief. A future agent picking up this work should read this file, then [PLAN.md](PLAN.md), then the handoff at [`EGPT-research/PRIVATE/Zulip_Clean_Forward_Boundary.md`](../../../PRIVATE/Zulip_Clean_Forward_Boundary.md) §"Agent Handoff" for original framing.
 

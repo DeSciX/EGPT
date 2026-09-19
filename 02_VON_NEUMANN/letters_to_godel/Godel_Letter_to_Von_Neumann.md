@@ -10,7 +10,6 @@ translation: "English translation by Peter Clote and Jan Krajíček"
 translation_published: "Peter Clote & Jan Krajíček (eds.), Arithmetic, Proof Theory and Computational Complexity (Oxford University Press, 1993); revised text dated 11 September 2006"
 translation_url: "https://www.karlin.mff.cuni.cz/~krajicek/goedel-letter.pdf"
 copyright: "The Institute for Advanced Study, as copyright holder, authorised the translators to quote the letter in full"
-verification: "PRIMARY-TEXT-READ — read from the translators' own posting, which prints the German original facing the translation"
 note: "Widely credited as the first statement of what became the P vs NP question."
 ---
 

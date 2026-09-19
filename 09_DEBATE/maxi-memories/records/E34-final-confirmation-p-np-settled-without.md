@@ -2738,7 +2738,7 @@ Found it. The session data is stored as JSONL files. This conversation is sessio
 **The complete session transcript exists.** It's at:
 
 ```
-~/.claude/projects/-Users-essam-Lean/d0c14ee3-637d-410b-aa97-ac4490fa0d2e.jsonl
+~/.claude/projects/-Lean/d0c14ee3-637d-410b-aa97-ac4490fa0d2e.jsonl
 ```
 
 - **5.0 MB**, 1,344 lines — the full conversation
