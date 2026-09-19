@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 301,
+ "count": 308,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -6307,6 +6307,120 @@
    "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 236 | 1976 | Then half seriously I raised the question whether in a thousand years so much progress will be made that it may be possible to reconstruct people who had lived earlier by tracing the genes of the descendants, collecting all the characteristics that make up a person and reconstructing them physically. Fermi agreed, but he added: “How about the memory? How will they put back in the brain all the memories which are the makeup of any given individual?”"
   },
   {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-8b857184",
+   "quote": "I could not help but suspect that something was very wrong, and later found out that Johnny had given specific orders that I should not be told that he had developed cancer.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 239",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "8b85718497145ac058a505a93e23d84f115ddb49d3f6f01e846592f21071a4bf",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 239 | 1976 | I could not help but suspect that something was very wrong, and later found out that Johnny had given specific orders that I should not be told that he had developed cancer."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-7cd2e9b9",
+   "quote": "A few weeks later on one of my visits to Washington Johnny took me to lunch. During the meal he told me that doctors had discovered he had cancer and he described what kind. This was a tremendous shock for me. I told him my suspicions that something was wrong and that for some reason I had wondered if it could be diabetes or his heart. I turned away so as not to show how upset I was, but he noticed it anyway … During this dramatic lunch he still showed great strength of will and no signs of knuckling under. I was shattered and wondered whether he would ever recover.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 240",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "and started telling a joke about a woman in Budapest whose maid had fallen ill. She sent for a doctor who told her that her maid had syphilis. “Thank God,” the woman said, “I was afraid it was measles and she would infect the children.”",
+   "years": [
+    1976
+   ],
+   "themes": [],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "7cd2e9b94c384d7ef8fad25c9e836cf8b4273237e345563553119d084a5a3a9d",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 240 | 1976 | A few weeks later on one of my visits to Washington Johnny took me to lunch. During the meal he told me that doctors had discovered he had cancer and he described what kind. This was a tremendous shock for me. I told him my suspicions that something was wrong and that for some reason I had wondered if it could be diabetes or his heart. I turned away so as not to show how upset I was, but he noticed it anyway … During this dramatic lunch he still showed great strength of will and no signs of knuckling under. I was shattered and wondered whether he would ever recover. | and started telling a joke about a woman in Budapest whose maid had fallen ill. She sent for a doctor who told her that her maid had syphilis. “Thank God,” the woman said, “I was afraid it was measles and she would infect the children.”"
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-677adc68",
+   "quote": "I proposed to him some of my own ideas about automata consisting of cells in a crystal-like arrangement. This model is described in the book edited by Arthur Burks, Cellular Automata, and in Burks’s own book on the theory of automata.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 241",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "monte-carlo-and-automata"
+   ],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "677adc68d60f30fe8445e887237cb10abdc6118c4b3d64a934eb324600e09544",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 241 | 1976 | I proposed to him some of my own ideas about automata consisting of cells in a crystal-like arrangement. This model is described in the book edited by Arthur Burks, Cellular Automata, and in Burks’s own book on the theory of automata."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-411f413b",
+   "quote": "We used to marvel at the complication of the organization of the brain. Now I understand that it has been found that there are thousands of connections from each neuron to others and in some areas fifty thousand and even more. And each neuron, which at that time was believed to be just a rather simple “flipflop” “yes or no” machine, is now believed to be a complicated organ with many more functions. In the space of fifteen years, since von Neumann’s death, the facts have become amplified; the whole structure is even more amazing, more incredible than it seemed at the time.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 241",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "brain-and-machine"
+   ],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "411f413bf49f7f27fe4cd8179c20395b2c421491ad21713005a2e04b550c1ce3",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 241 | 1976 | We used to marvel at the complication of the organization of the brain. Now I understand that it has been found that there are thousands of connections from each neuron to others and in some areas fifty thousand and even more. And each neuron, which at that time was believed to be just a rather simple “flipflop” “yes or no” machine, is now believed to be a complicated organ with many more functions. In the space of fifteen years, since von Neumann’s death, the facts have become amplified; the whole structure is even more amazing, more incredible than it seemed at the time."
+  },
+  {
    "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-58cc1125",
    "quote": "On the same visit I went by mistake to the opposite corner of the hospital but on the same floor, and walked into an antechamber where two military men were sitting. They looked at me in surprise and questioningly. I said I was there to visit a friend and their look turned incredulous. When I added, “Dr. von Neumann,” they smiled and directed me to the proper rooms. I had entered the Presidential Suite where President Eisenhower at that moment was hospitalized after his heart attack. I told this to Johnny when I regained his room. He enjoyed this. It amused him to be in a location symmetrically opposite to that of the President of the United States.",
    "speaker": {
@@ -6334,6 +6448,62 @@
    ],
    "quote_sha256": "58cc112520e268ac9150d2c93e649be80d7afc41c838cb25a180cdfc19633166",
    "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 243 | 1976 | On the same visit I went by mistake to the opposite corner of the hospital but on the same floor, and walked into an antechamber where two military men were sitting. They looked at me in surprise and questioningly. I said I was there to visit a friend and their look turned incredulous. When I added, “Dr. von Neumann,” they smiled and directed me to the proper rooms. I had entered the Presidential Suite where President Eisenhower at that moment was hospitalized after his heart attack. I told this to Johnny when I regained his room. He enjoyed this. It amused him to be in a location symmetrically opposite to that of the President of the United States."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-d141e15f",
+   "quote": "By then he was very, very ill. I would sit with him and try to distract him. There was still some scientific curiosity in him; his memory still seemed to work sporadically, and on occasion almost uncannily well. I will never forget the scene a few days before he died. I was reading to him in Greek from his worn copy of Thucydides a story he liked especially about the Athenians’ attack on Melos, and also the speech of Pericles. He remembered enough to correct an occasional mistake or mispronunciation on my part.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 244",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "d141e15f2671090ae7b456cb0059b70ef758b630dda19572a8254deeeb32b34e",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 244 | 1976 | By then he was very, very ill. I would sit with him and try to distract him. There was still some scientific curiosity in him; his memory still seemed to work sporadically, and on occasion almost uncannily well. I will never forget the scene a few days before he died. I was reading to him in Greek from his worn copy of Thucydides a story he liked especially about the Athenians’ attack on Melos, and also the speech of Pericles. He remembered enough to correct an occasional mistake or mispronunciation on my part."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-294c09c4",
+   "quote": "Once in my presence when Klari chided him for his great self-confidence and pride in his intellectual achievements, he replied that on the contrary he was full of admiration for the wonders of nature and the evolution of the brain, compared to which all we do is puny and insignificant.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 244",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "brain-and-machine"
+   ],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "294c09c40cc76774f21d382de6e33b3353418bc1f2fdda7dd9517bb7e3e538b3",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 244 | 1976 | Once in my presence when Klari chided him for his great self-confidence and pride in his intellectual achievements, he replied that on the contrary he was full of admiration for the wonders of nature and the evolution of the brain, compared to which all we do is puny and insignificant."
   },
   {
    "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-9a15b73b",
@@ -6392,6 +6562,33 @@
    ],
    "quote_sha256": "5dcfcb93271851cc45bcbe3692085ae0b8bfec847d1f33ac34afa7b8b53b7d0d",
    "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 245 | 1976 | Now Banach, Fermi, von Neumann were dead—the three great men whose intellects had impressed me the most. These were sad times indeed."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-e2dbb758",
+   "quote": "Before he left, Françoise showed him a recent snapshot of Claire on her bicycle. He asked if he could take the photo with him. He walked back to the Lodge through the garden, and watching him through the window I definitely had the feeling that somber and melancholy thoughts were in his head.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "pp. 239–240",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [],
+   "collections": [
+    "adventures_von_neumann_illness"
+   ],
+   "quote_sha256": "e2dbb758ada50aaceb1bb2d483f8be01bb5850cee3f47c7cdcb67be194e15b56",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | pp. 239–240 | 1976 | Before he left, Françoise showed him a recent snapshot of Claire on her bicycle. He asked if he could take the photo with him. He walked back to the Lodge through the garden, and watching him through the window I definitely had the feeling that somber and melancholy thoughts were in his head."
   },
   {
    "id": "q-stanislaw-ulam-ulam-and-rota-discus-f8653863",

@@ -106,6 +106,7 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | In the next section we give a dramatic application of the law of large… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | In order to speak of the entropy of the phenomenon represented by a ra… | `q-gian-carlo-rota-introduction-to-prob-11b215bb` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` |  |
+| EXHIBIT_A_report.md | automata consisting of cells in a crystal-like arrangement | `q-stanislaw-ulam-stanislaw-m-ulam-adv-677adc68` |  |
 | EXHIBIT_A_report.md | Aber es steht doch fest, dass keine einzige solche Konstruktion der ge… | `q-john-von-neumann-letter-to-kurt-godel-920a6921` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
 | OPENING_STATEMENT.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | OPENING_STATEMENT.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-in-b7e03f05` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
