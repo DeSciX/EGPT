@@ -2394,6 +2394,35 @@
    "embed_text": "Nicholas Metropolis | “The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15 | p. 126 | 1987 | Stan’s extensive mathematical background made him aware that statistical sampling techniques had fallen into desuetude because of the length and tediousness of the calculations. But with this miraculous development of the ENIAC—along with the applications Stan must have been pondering—it occurred to him that statistical techniques should be resuscitated, and he discussed this idea with von Neumann. Thus was triggered the spark that led to the Monte Carlo method."
   },
   {
+   "id": "q-nicholas-metropoli-the-beginning-of-the-276a837d",
+   "quote": "In March, 1945, Johnny, Frankel, and I visited the Moore School of Electrical Engineering at the University of Pennsylvania for an advance glimpse of the ENIAC. We were impressed.",
+   "speaker": {
+    "name": "Nicholas Metropolis",
+    "role": "author",
+    "sort": "metropolis, nicholas",
+    "as_given": "Nicholas Metropolis"
+   },
+   "source": {
+    "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130",
+    "locus": "p. 126",
+    "date": "1987",
+    "file": "",
+    "url": "https://fermatslibrary.com/s/the-beginning-of-the-monte-carlo-method"
+   },
+   "restored": "",
+   "years": [
+    1987
+   ],
+   "themes": [
+    "machines"
+   ],
+   "collections": [
+    "metropolis_bridge"
+   ],
+   "quote_sha256": "276a837dd6f27ccb0b5fb9b1fd1f02f9bff76153a418e51b39310e1db0a22c74",
+   "embed_text": "Nicholas Metropolis | “The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130 | p. 126 | 1987 | In March, 1945, Johnny, Frankel, and I visited the Moore School of Electrical Engineering at the University of Pennsylvania for an advance glimpse of the ENIAC. We were impressed."
+  },
+  {
    "id": "q-nicholas-metropoli-the-beginning-of-the-364bc69a",
    "quote": "Johnny let it be known that construction of the ENIAC was nearing completion, and he wondered whether Stan Frankel and I would be interested in preparing a preliminary computational model of a thermonuclear reaction for the ENIAC.",
    "speaker": {
@@ -2421,35 +2450,6 @@
    ],
    "quote_sha256": "364bc69a1c368a0e2f6dc7e149dd0d879d5be2330c28eb5ba9c37497fbe03c8e",
    "embed_text": "Nicholas Metropolis | “The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130 | pp. 125–130 | 1987 | Johnny let it be known that construction of the ENIAC was nearing completion, and he wondered whether Stan Frankel and I would be interested in preparing a preliminary computational model of a thermonuclear reaction for the ENIAC."
-  },
-  {
-   "id": "q-nicholas-metropoli-the-beginning-of-the-276a837d",
-   "quote": "In March, 1945, Johnny, Frankel, and I visited the Moore School of Electrical Engineering at the University of Pennsylvania for an advance glimpse of the ENIAC. We were impressed.",
-   "speaker": {
-    "name": "Nicholas Metropolis",
-    "role": "author",
-    "sort": "metropolis, nicholas",
-    "as_given": "Nicholas Metropolis"
-   },
-   "source": {
-    "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130",
-    "locus": "pp. 125–130",
-    "date": "1987",
-    "file": "",
-    "url": "https://fermatslibrary.com/s/the-beginning-of-the-monte-carlo-method"
-   },
-   "restored": "",
-   "years": [
-    1987
-   ],
-   "themes": [
-    "machines"
-   ],
-   "collections": [
-    "metropolis_bridge"
-   ],
-   "quote_sha256": "276a837dd6f27ccb0b5fb9b1fd1f02f9bff76153a418e51b39310e1db0a22c74",
-   "embed_text": "Nicholas Metropolis | “The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130 | pp. 125–130 | 1987 | In March, 1945, Johnny, Frankel, and I visited the Moore School of Electrical Engineering at the University of Pennsylvania for an advance glimpse of the ENIAC. We were impressed."
   },
   {
    "id": "q-howard-morland-howard-morland-on-th-d25f1fdd",
