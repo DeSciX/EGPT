@@ -38,7 +38,7 @@ the record draws from these books is in the corpus, verbatim and with its printe
 
 These cite works that are not held here and need not be: each note carries its own citation or URL.
 
-1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 24, 25, 26, 27, 28, 29, 30, 31, 32, 43, 44, 45, 46, 47, 49, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 72, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 90, 91, 92, 93, 97, 98, 99, 100, 101, 102
+1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 24, 25, 26, 27, 28, 29, 30, 31, 32, 43, 44, 45, 46, 47, 49, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 72, 76, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 90, 91, 92, 93, 97, 98, 99, 100, 101, 102, 103
 
 ## Quotations in the record backed by a corpus record
 
@@ -77,6 +77,8 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | I would like to make a confession which may seem immoral: I do not bel… | `q-john-von-neumann-letter-to-garrett-bi-e517103f` |  |
 | EXHIBIT_A_report.md | It should be perhaps desirable, to have operators X, Y, Z which have d… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
 | EXHIBIT_A_report.md | As for myself, I was never greatly impressed by his work on Hilbert sp… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-9a15b73b` |  |
+| EXHIBIT_A_report.md | However, you have also understood
+correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-dal-53ad5d8e` |  |
 | EXHIBIT_A_report.md | beginning about 1938, von Neumann felt that the new facts and problems… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` |  |
 | EXHIBIT_A_report.md | Somehow he seemed the embodiment of wisdom. (Wisdom, perhaps not geniu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-61ddbbfa` |  |
 | EXHIBIT_A_report.md | Departing from his usual caution about expressing opinions about other… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` |  |

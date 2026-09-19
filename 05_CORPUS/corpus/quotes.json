@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 309,
+ "count": 310,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -631,6 +631,35 @@
    ],
    "quote_sha256": "1c1eb5e41560d06a8e54a530b54a9b14ff3bbc5423c79e07d8891fb00908831e",
    "embed_text": "Albert Einstein | Letter to Max Born, reproduced within Max Born's own text (Waynflete Lectures, published as \"Natural Philosophy of Cause and Chance\"), Part X \"Metaphysical Conclusions\", as hosted on informationphilosopher.com's Max Born page | informationphilosopher.com/solutions/scientists/born/, quoted by Born directly following the sentence: \"The second letter, which arrived just when I was writing these pages (dated 3 December 1947), contains this passage:\" | 3 December 1947 | I cannot substantiate my attitude to physics in such a manner that you would find it in any way rational. I see of course that the statistical interpretation (the necessity of which in the frame of the existing formalism has been first clearly recognized by yourself) has a considerable content of truth. Yet I cannot seriously believe it because the theory is inconsistent with the principle that physics has to represent a reality in space and time without phantom actions over distances.... I am absolutely convinced that one will eventually arrive at a theory in which the objects connected by laws are not probabilities, but conceived facts, as one took for granted only a short time ago. However, I cannot provide logical arguments for my conviction, but can only call on my little finger as a witness, which cannot claim any authority to be respected outside my own skin."
+  },
+  {
+   "id": "q-albert-einstein-letter-to-walter-dal-53ad5d8e",
+   "quote": "However, you have also understood correctly the disadvantage attached to a continuum. The question seems to me to be how one can formulate statements about a discontinuum without resorting to a continuum (space-time); the latter would have to be banished from the theory as an extra construction that is not justified by the essence of the problem and that corresponds to nothing “real.” But for this we unfortunately are still lacking the mathematical form. How much I have toiled in this direction already!!",
+   "speaker": {
+    "name": "Albert Einstein",
+    "role": "author",
+    "sort": "einstein, albert",
+    "as_given": "Albert Einstein"
+   },
+   "source": {
+    "work": "Letter to Walter Dällenbach, in The Collected Papers of Albert Einstein, vol. 8, The Berlin Years: Correspondence, 1914-1918, English Translation Supplement, trans. Ann M. Hentschel (Princeton: Princeton University Press), Doc. 299",
+    "locus": "pp. 285-287, at p. 286",
+    "date": "after 15 February 1917",
+    "file": "",
+    "url": "https://einsteinpapers.press.princeton.edu/vol8-trans/314"
+   },
+   "restored": "",
+   "years": [
+    1917
+   ],
+   "themes": [
+    "physics-and-continuum"
+   ],
+   "collections": [
+    "einstein_dallenbach"
+   ],
+   "quote_sha256": "53ad5d8e23fc76448747c3098699ee78aa6c22ae18cfb6de30b75b9f1a928849",
+   "embed_text": "Albert Einstein | Letter to Walter Dällenbach, in The Collected Papers of Albert Einstein, vol. 8, The Berlin Years: Correspondence, 1914-1918, English Translation Supplement, trans. Ann M. Hentschel (Princeton: Princeton University Press), Doc. 299 | pp. 285-287, at p. 286 | after 15 February 1917 | However, you have also understood correctly the disadvantage attached to a continuum. The question seems to me to be how one can formulate statements about a discontinuum without resorting to a continuum (space-time); the latter would have to be banished from the theory as an extra construction that is not justified by the essence of the problem and that corresponds to nothing “real.” But for this we unfortunately are still lacking the mathematical form. How much I have toiled in this direction already!!"
   },
   {
    "id": "q-albert-einstein-letter-to-david-bohm-c25052e6",
