@@ -340,6 +340,39 @@ The method is older than the name, and the hardware progression is the point. En
 The method’s genealogy is both technical and institutional. Neutron transport and weapons related calculations supplied difficult problems; electronic machines made repeated sampling practical; mathematicians and physicists supplied probabilistic models; and Los Alamos supplied a setting where the method could circulate across disciplines. Later applications spread far beyond weapons work. The method was devised at Los Alamos, on weapons calculations, by the people named above.
 
 
+### Monte Carlo becomes the discrete lattice, at Brookhaven
+
+The method did not stay at Los Alamos. On 26 to 28 April 1948, at an Atomic Energy Commission
+information meeting at Brookhaven National Laboratory, Ulam presented “Statistical Methods for
+Problems Involving Equations of the Diffusion Type (Monte Carlo)” — the method carried to a second
+national laboratory in the year after that laboratory opened.
+
+Thirty-one years later the same laboratory used it to make quantum field theory computable. In 1979
+Michael Creutz, Laurence Jacobs and Claudio Rebbi, all of the Physics Department at Brookhaven,
+published “Experiments with a Gauge-Invariant Ising System” and then “Monte Carlo Study of Abelian
+Lattice Gauge Theories,” which carries the laboratory report number BNL-26307; in April 1980 Creutz
+published “Monte Carlo Study of Quantized SU(2) Gauge Theory.” The construction is the one this
+report has been following: take a continuous quantum field theory, replace spacetime with a discrete
+lattice, and generate the field configurations by random sampling. Brookhaven treats that work as
+foundational in its own account. Dedicating a supercomputer in December 2005, the laboratory
+simultaneously marked the “25th anniversary of a scientific paper describing the first use of Monte
+Carlo methods and lattice gauge calculations in the study of quantum chromodynamics (QCD).”
+
+The machines that followed were built for that calculation and for nothing else. QCDSP, built with
+Columbia University and installed at Brookhaven in 1998, was a massively parallel computer intended
+primarily for lattice gauge simulations, and took the Gordon Bell Prize for price and performance
+that year. Its successor QCDOC — QCD On a Chip — was designed around the same calculation, its
+architecture described by its builders as “optimized for lattice QCD calculations,” and began
+operation at Brookhaven in 2005.
+
+Rota was a consultant to Brookhaven National Laboratory from 1969 to 1973, by his own curriculum
+vitae, in the same years he consulted for the RAND Corporation and for Los Alamos. What he did there
+is not in the public record. The sequence stated here is institutional and methodological: the
+sampling method Ulam proposed and von Neumann took up was presented by Ulam at Brookhaven in 1948,
+and Brookhaven is where that method was turned on the continuum of quantum field theory and where
+the machines for doing so were then built.
+
+
 ### The people and their links
 
 Person | Documented connection | Relevance
@@ -1150,6 +1183,18 @@ URLs were checked during research in September 2026. Page references identify th
 95. John von Neumann to Kurt Gödel, 12 January 1931, Berlin, in Kurt Gödel, Collected Works, Vol. V: Correspondence H–Z, Oxford University Press, 2003, pp. 340–345; original in the Gödel Archive, Princeton University Library, English translation by W. Sieg. “I absolutely disagree” and the decision method at p. 340; the formalizability argument at p. 342. The German reads: “Aber es steht doch fest, dass keine einzige solche Konstruktion der genannten Art bekannt ist, die nicht in A formalisierbar ist, und das[s] kein lebender Logiker in der Lage ist, eine solche anzugeben?” The printed text is a diplomatic transcription of the handwritten letter and reproduces von Neumann’s own deletions. A and M and Z are the formal systems under discussion in the correspondence. Ulam on von Neumann and Einstein, “John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64 no. 3 pt. 2, May 1958, pp. 20–21; the remark on re-establishing mathematics at a conceptual level is from the same article’s section on theoretical physics.
 
 96. Stanislaw M. Ulam, Adventures of a Mathematician, Charles Scribner’s Sons, 1976, ch. 12, “The Death of Two Pioneers,” p. 245: Ulam on von Neumann’s work on Hilbert space and continuous geometry, and, on the same page, “Now Banach, Fermi, von Neumann were dead—the three great men whose intellects had impressed me the most.”
+
+97. Stanislaw M. Ulam, “Statistical Methods for Problems Involving Equations of the Diffusion Type (Monte Carlo),” A.E.C. Information Meeting, Brookhaven National Laboratory, April 26-28, 1948, Brookhaven National Laboratory report BNL-17, p. 27 ff. No public scan of BNL-17 has been located; the bibliographic record, with meeting, dates, title, opening page and report number, is reproduced in the University of Utah and Sandia bibliography of Ulam's publications. https://netlib.sandia.gov/bibnet/authors/u/ulam-stanislaw-m.html
+
+98. Michael Creutz, Laurence Jacobs and Claudio Rebbi, “Experiments with a Gauge-Invariant Ising System,” Physical Review Letters 42, 1390, 21 May 1979, DOI 10.1103/PhysRevLett.42.1390; Michael Creutz, “Confinement and the Critical Dimensionality of Space-Time,” Physical Review Letters 43, 553, 20 August 1979, DOI 10.1103/PhysRevLett.43.553; Michael Creutz, Laurence Jacobs and Claudio Rebbi, “Monte Carlo Study of Abelian Lattice Gauge Theories,” Physical Review D 20, 1915-1922, 15 October 1979, DOI 10.1103/PhysRevD.20.1915, issued as Brookhaven report BNL-26307. The affiliation printed on the Physical Review D paper is the Physics Department, Brookhaven National Laboratory, Upton, New York.
+
+99. Michael Creutz, “Monte Carlo Study of Quantized SU(2) Gauge Theory,” Physical Review D 21, 2308-2315, 15 April 1980, received 24 October 1979, DOI 10.1103/PhysRevD.21.2308. The mature program is set out in Michael Creutz, Laurence Jacobs and Claudio Rebbi, “Monte Carlo Computations in Lattice Gauge Theories,” Physics Reports 95 no. 4, April 1983, pp. 201-282, DOI 10.1016/0370-1573(83)90016-9.
+
+100. Brookhaven National Laboratory, “Lab Celebrates New Supercomputer,” 1 December 2005, marking the dedication of QCDOC and the twenty-fifth anniversary of the first use of Monte Carlo methods and lattice gauge calculations in the study of quantum chromodynamics, and naming Creutz, Jacobs and Rebbi. https://www.bnl.gov/newsroom/news.php?a=110400
+
+101. On QCDSP: Robert D. Mawhinney, “The 1 Teraflops QCDSP Computer,” Parallel Computing 25, 1999, DOI 10.1016/S0167-8191(99)00051-4; RIKEN-BNL Research Center institutional history, recording the 1997 construction agreement with Columbia University, installation at Brookhaven in 1998 and the 1998 Gordon Bell Prize for price and performance. https://www.bnl.gov/riken/history.php On QCDOC: N. H. Christ et al., “QCDOC: A 10-Teraflops Scale Computer for Lattice QCD,” Nuclear Physics B — Proceedings Supplements, 2001, describing an architecture “optimized for lattice QCD calculations”; Brookhaven National Laboratory, “Lattice QCD,” RIKEN-BNL Research Center, and Brookhaven's retrospective on QCDOC's retirement, which describes it as a special purpose machine dedicated to fundamental physics and names Creutz as one of the founders of the approach. https://www.bnl.gov/riken/research/lattice.php https://www.bnl.gov/newsroom/news.php?a=22647
+
+102. Gian-Carlo Rota, curriculum vitae, Massachusetts Institute of Technology, under Consultant: “Los Alamos Scientific Laboratory, 1966-. The Rand Corporation, 1966-1971. Brookhaven National Laboratory, 1969-1973.” The Brookhaven consultancy is independently recorded in J. J. O'Connor and E. F. Robertson, “Gian-Carlo Rota (1932-1999),” MacTutor History of Mathematics, University of St Andrews.
 
 
 ### Research limits
