@@ -77,7 +77,7 @@ it has zero axioms."* The 2026 submissions carried capstones whose axiom closure
 (`Lean/EGPT/MATHLIB_PR_RESUBMIT.md`, and `#print axioms` output reproduced there).
 
 On the AI question specifically, the policy is now pinned per-date in
-[`mathlib-ai-policy/`](mathlib-ai-policy/README.md), because it changed four times in the six
+[`ai_policy_snapshots/`](ai_policy_snapshots/README.md), because it changed four times in the six
 weeks spanning these events and today's text does not say what April's said.
 
 **On 2026-04-01** the AI section stated that the community "do[es] not enforce a strict ban",
