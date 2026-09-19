@@ -184,7 +184,7 @@ Rota, "At the Memorial Service for S.M. Ulam," The Lodge, Los Alamos, New Mexico
 
 Report, "Ulam memorial and the Barrier of Meaning" · **Exhibit A**
 
-> Gian Carlo Rota, “In Memoriam of Stan Ulam The Barrier of Meaning,” Physica D 22, 1986, pp. 1–3
+> Gian-Carlo Rota, “In Memoriam of Stan Ulam The Barrier of Meaning,” Physica D 22, 1986, pp. 1–3
 
 Report, note 16 · **Exhibit A**
 
@@ -320,7 +320,7 @@ Rota, "At the Memorial Service for S.M. Ulam," The Lodge, Los Alamos, New Mexico
 
 Report, "Ulam memorial and the Barrier of Meaning" · **Exhibit A**
 
-> Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian Carlo Rota, Birkhauser, 1986.
+> Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian-Carlo Rota, Birkhauser, 1986.
 
 Report, note 37 · **Exhibit A**
 
@@ -418,7 +418,7 @@ Report, "A testable exhibit: the year by year bibliography" · **Exhibit A**
 
 Report, "History of computing conference" · **Exhibit A**
 
-> Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian Carlo Rota, Birkhauser, 1986.
+> Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics, ed. Mark C. Reynolds and Gian-Carlo Rota, Birkhauser, 1986.
 
 Report, note 37 · **Exhibit A**
 
@@ -434,7 +434,7 @@ Report, "18.313 and the unpublished manuscript" · **Exhibit A**
 
 **1979: the first known printing of the manuscript**
 
-> It circulated as a manuscript: Kenneth Baclawski and Gian Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billis as a third author. The 1979 copy appears to be the earliest version publicly available.
+> It circulated as a manuscript: Kenneth Baclawski and Gian-Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billis as a third author. The 1979 copy appears to be the earliest version publicly available.
 
 Report, "18.313 and the unpublished manuscript" · **Exhibit A**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. Its table of contents, at page iv, lists the entropy material as Chapter VII, "Entropy and Information" — "Uniqueness of Entropy" at 7.14 and "The Shannon Coding Theorem" at 7.17. The same chapter is numbered VIII in the later MIT edition, circa 1993, from which the report quotes.
 
