@@ -7,11 +7,8 @@
    "locus": "closing address to the laureate",
    "date": "10 December 1988",
    "theme": "understanding-and-meaning",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://www.nobelprize.org/prizes/literature/1988/ceremony-speech/",
-   "context": "The speech quotes Mahfouz on time — “Time cuts like a sword. If you don’t kill it, it kills you.” — and speaks of love as a source of strength in an inexplicable world.",
-   "caution": "Read at nobelprize.org via web fetch, which passes page content through an intermediate summarising model; not collated against the printed Nobel Lectures volume."
+   "source_url": "https://www.nobelprize.org/prizes/literature/1988/ceremony-speech/"
   },
   {
    "speaker": "The Swedish Academy",
@@ -20,11 +17,8 @@
    "locus": "",
    "date": "1988",
    "theme": "understanding-and-meaning",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://www.nobelprize.org/prizes/literature/1988/ceremony-speech/",
-   "context": "",
-   "caution": "Read at nobelprize.org via web fetch, which passes page content through an intermediate summarising model."
+   "source_url": "https://www.nobelprize.org/prizes/literature/1988/ceremony-speech/"
   },
   {
    "speaker": "The Nobel Foundation",
@@ -33,11 +27,8 @@
    "locus": "works in English translation",
    "date": "1988",
    "theme": "understanding-and-meaning",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://www.nobelprize.org/prizes/literature/1988/mahfouz/bibliography/",
-   "context": "",
-   "caution": "A bibliographic entry, not a spoken or authored sentence; transcribed exactly as the Nobel bibliography prints it, abbreviations included. Read at nobelprize.org via web fetch, which passes page content through an intermediate summarising model."
+   "source_url": "https://www.nobelprize.org/prizes/literature/1988/mahfouz/bibliography/"
   }
  ]
 }

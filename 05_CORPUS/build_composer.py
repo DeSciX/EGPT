@@ -9,7 +9,7 @@ the published copy from the published (path-rewritten) corpus.
 import json, pathlib
 
 # Key order is the app's contract; keep it.
-SLIM_KEYS = ('id', 'quote', 'speaker', 'source', 'restored', 'sourcing', 'verification', 'themes',
+SLIM_KEYS = ('id', 'quote', 'speaker', 'source', 'restored', 'themes',
              'years', 'embed_text')
 
 

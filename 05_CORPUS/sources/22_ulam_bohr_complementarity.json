@@ -7,10 +7,7 @@
    "locus": "p. 165",
    "date": "1976 (book); the exchange is dated by Ulam to after the war",
    "theme": "quantum-formalism",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "On a downhill walk in Frijoles Canyon after the war. Ulam had told Fermi that in his last year of high school he read popular accounts of Heisenberg, Schrodinger and De Broglie, learned that solving the Schrodinger equation gives hydrogen levels to six decimals, and wondered \"how such an artificially abstracted equation could work to better than one part in a million. A partial differential equation pulled out of thin air, it seemed to me, despite the appearances of derivation by analogies.\" The bracketed gloss \"[the Schrodinger equation]\" is Ulam's, as printed.",
-   "caution": "Transcribed from the scanned Scribner 1976 printing held in the private repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi (PDF page 170) and read back against the page image. Printed page number taken from the running footer (165). The printing spells 'Schrodinger' without the umlaut throughout this passage. EXHIBIT_report.md note 74 cites pp. 165-166 for this and the following remark from the 1991 University of California Press reprint; the Scribner 1976 printing carries the same pagination, verified against the running footers. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Enrico Fermi",
@@ -19,10 +16,7 @@
    "locus": "p. 166",
    "date": "1976 (book); reported of the summer following the Frijoles Canyon walk",
    "theme": "quantum-formalism",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Immediately follows the Frijoles Canyon exchange. Fermi \"went on to say that in the fall he intended to give a really logical introduction and derivation of quantum theory in his course at the University of Chicago. He apparently worked at it, but told me the next summer, when he returned to Los Alamos\" — then this sentence. Ulam's own comment follows: \"It is not just a question of axioms as some naive purist might think. The question is why such and no other axiom? Any working algorithm can be axiomatized.\"",
-   "caution": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 171) and read back against the page image. Printed page number from the running footer (166). OCR rendered the opening double quotation mark as a doubled mark and broke 'satisfaction' across the line as 'satisfac-tion'; both repaired against the page image. Note that Fermi says 'logical' when stating the intention and 'rational' when reporting the failure; both readings are as printed. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -31,10 +25,7 @@
    "locus": "p. 167",
    "date": "1976",
    "theme": "quantum-formalism",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Ulam on Niels Bohr, who \"was in Los Alamos for several months\": \"He was not very old. To me at thirty-five, he seemed ancient, even though Bohr in his late fifties was very active and energetic, physically as well as mentally. He walked, skied, and hiked in the Los Alamos mountains.\" This is the paragraph of praise that precedes the criticism of complementarity.",
-   "caution": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 172) and read back against the page image. Printed page number from the running footer (167). The parentheses around the second sentence are as printed. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -43,10 +34,7 @@
    "locus": "p. 167",
    "date": "1976",
    "theme": "quantum-formalism",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Stands as its own paragraph between Ulam's praise of Bohr's wisdom (p. 167) and his criticism of complementarity (pp. 167-168). Fermi's remark is reported by Ulam in indirect speech, not quoted.",
-   "caution": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 172) and read back against the page image. Printed page number from the running footer (167). The printing reads 'It was an iconoclastic statement'; EXHIBIT_report.md renders the same clause as Ulam calling this 'an iconoclastic statement, since so many physicists are still under the spell of Bohr,' which adapts the leading pronoun to the reporting sentence. Fermi's remark itself is Ulam's indirect report and carries no quotation marks in the printing. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -55,10 +43,7 @@
    "locus": "pp. 167-168",
    "date": "1976",
    "theme": "quantum-formalism",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Ulam's own position on complementarity, following the paragraph of praise for Bohr personally and the reported Fermi remark. The passage spans a page break: it begins at the foot of p. 167 ('He had his own kind of genius...') and continues on p. 168. The last three sentences ('It seems to me...troubles me.') are a separate paragraph in the printing.",
-   "caution": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF pages 172-173) and read back against the page images. Printed page numbers from the running footers (167), (168). The suspension points inside the first inner quotation are set as '. . .' in the printing and are Bohr's manner of speaking as Ulam renders it, not an editorial elision. EXHIBIT_report.md quotes this passage with a marked ellipsis in place of 'But he still has many admirers. Victor F. Weisskopf is one.'; the full text is carried here so that elision can be checked. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -67,10 +52,7 @@
    "locus": "p. 168",
    "date": "1976",
    "theme": "quantum-formalism",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Opens the run of Bohr anecdotes that follows the complementarity passage: the Ruby Scherr 'Guess how much?' story, Bohr's wartime pseudonym Nicholas Baker, and Weisskopf's slip at the colloquium.",
-   "caution": "Transcribed from the scanned Scribner 1976 printing by OCR at 200 dpi (PDF page 173) and read back against the page image. Printed page number from the running footer (168). EXHIBIT_report.md note 74 quotes this with a marked ellipsis as 'Bohr's speech was very difficult to understand ... Most of the time it was impossible to get his exact words.'; the elided words are 'and anecdotes about him abound.' The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   }
  ]
 }

@@ -6,9 +6,7 @@
    "work": "Letter to Max Born, reproduced within Max Born's own text (Waynflete Lectures, published as \"Natural Philosophy of Cause and Chance\"), Part X \"Metaphysical Conclusions\", as hosted on informationphilosopher.com's Max Born page",
    "locus": "informationphilosopher.com/solutions/scientists/born/, quoted by Born directly following the sentence: \"The second letter, which arrived just when I was writing these pages (dated 3 December 1947), contains this passage:\"",
    "date": "3 December 1947",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://www.informationphilosopher.com/solutions/scientists/born/",
-   "note": "This is BORN'S OWN TRANSLATION (not Doyle's paraphrase) — Born quotes the German original in full immediately before the English rendering on the same page: \"Meine physikalische Haltung kann ich Dir nicht so begründen... ohne spukhafte Fernwirkungen.... Davon bin ich fest überzeugt... keine Autorität, die ausserhalb meiner Haut irgendwelchen Respekt einflössen kann.\" The English above is the parenthetical translation printed immediately after the German on that page, ending with an ellipsis (\"....\") exactly as printed — this ellipsis is Born's own, not an editorial omission by me. Page is hosted by Bob Doyle's Information Philosopher site but the block-quoted passage itself is Born's, reproducing his 'Natural Philosophy of Cause and Chance' lectures (the source volume that also contains this letter appears in the published Born-Einstein Letters collection). Retrieved via r.jina.ai text-reader mirror of the page after a direct WebFetch summarization pass truncated/refused the passage; content cross-confirmed against a separate WebFetch pass that returned an identical exact-match fragment for the requested sentence."
+   "source_url": "https://www.informationphilosopher.com/solutions/scientists/born/"
   },
   {
    "speaker": "Albert Einstein",
@@ -16,9 +14,7 @@
    "work": "Bob Doyle, \"My God, He Plays Dice!\" — Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\")",
    "locus": "Chapter 38, p.316-317 (section \"Castle In The Air\"); Doyle's footnote 2 on this quotation cites \"Pais, 1982, p.467\" (Abraham Pais, \"Subtle is the Lord\")",
    "date": "1954",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf",
-   "note": "This is DOYLE'S RENDERING as printed in his book text, introduced with: \"In 1954 Einstein wrote his friend Michele Besso to express his lost hopes for a continuous field theory like that of electromagnetism or gravitation, ‘...quote...’\" Doyle's own citation attributes the translation to Pais 1982 p.467, not to a primary Einstein-archive translation of his own — i.e. Doyle is reproducing Pais's rendering of the Besso letter, not independently translating it. Retrieved by fetching the full PDF text via r.jina.ai (direct WebFetch summarization of this same PDF returned only a truncated preface excerpt, chapters 1-4, and separately claimed the later chapters were not in its context window)."
+   "source_url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf"
   },
   {
    "speaker": "Albert Einstein",
@@ -26,9 +22,7 @@
    "work": "Bob Doyle, \"My God, He Plays Dice!\" — Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\")",
    "locus": "Chapter 38, p.317; Doyle's footnote 3 cites \"Stachel, 1986, p.380\"; Doyle's own inline citation reads \"(Einstein to David Bohm, 28 October 1954)\"",
    "date": "28 October 1954",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf",
-   "note": "DOYLE'S RENDERING, introduced with: \"In the same year, he wrote to David Bohm, ...\" Citation attributes translation to John Stachel 1986 p.380, not an independent Doyle/Born translation. The word break \"elemen-tary\" is a hyphenation artifact of the source PDF's line-wrap, reproduced here verbatim as extracted. For cross-check only (NOT the retrieved primary text used above, wording differs slightly): a WebFetch of Wikiquote's \"De Broglie–Bohm theory\" page returned the same passage with \"if an objective description\" (vs. Doyle's \"if the objective description\") and \"than one has to find\" (vs. Doyle's \"then one has to find\") — flagging this as a known variant wording across secondary sources; the Doyle/informationphilosopher.com text above is what was actually requested and retrieved."
+   "source_url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf"
   },
   {
    "speaker": "Richard Feynman",
@@ -36,9 +30,7 @@
    "work": "The Feynman Lectures on Physics, Volume I",
    "locus": "Chapter 2, §2-1 \"Physics before 1920\" (paragraph 5 of the section, per the site's own paragraph numbering)",
    "date": "1963",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://www.feynmanlectures.caltech.edu/I_02.html",
-   "note": "Underscored words (_watch_, _The rules of the game_, _fundamental physics_) mark italics in the source's own HTML/markdown rendering, preserved here as printed by the reader tool. feynmanlectures.caltech.edu returned a Cloudflare block page to direct curl requests and gave inconsistent, partial/paraphrased output over several WebFetch attempts (the tool repeatedly cited an unexplained '125-character quote limit' not present in my request and refused full reproduction); this full paragraph was instead retrieved via the r.jina.ai text-extraction mirror of the same URL, and the opening and closing sentences were independently cross-verified as exact character-for-character matches against two separate successful WebFetch passes (one direct, one via goodreads.com's quotation of the same opening sentences). Date is the volume’s publication year (Vol. I 1963, Vol. III 1965); the lectures were delivered 1961–63. The source page carries no date of its own."
+   "source_url": "https://www.feynmanlectures.caltech.edu/I_02.html"
   },
   {
    "speaker": "Richard Feynman",
@@ -46,9 +38,7 @@
    "work": "The Feynman Lectures on Physics, Volume III",
    "locus": "Chapter 1, §1-1 \"Atomic mechanics\" (opening paragraph of the chapter)",
    "date": "1965",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://www.feynmanlectures.caltech.edu/III_01.html",
-   "note": "Underscored words (_absolutely_, _only_, _tell_) mark italics as rendered by the r.jina.ai text extraction of the page. Text independently cross-verified as an exact match against a separate direct WebFetch pass on the same URL, which returned the identical wording. Date is the volume’s publication year (Vol. I 1963, Vol. III 1965); the lectures were delivered 1961–63. The source page carries no date of its own."
+   "source_url": "https://www.feynmanlectures.caltech.edu/III_01.html"
   },
   {
    "speaker": "Richard Feynman",
@@ -56,9 +46,7 @@
    "work": "The Feynman Lectures on Physics, Volume III",
    "locus": "Chapter 1, §1-5 \"The interference of electron waves\"",
    "date": "1965",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://www.feynmanlectures.caltech.edu/III_01.html",
-   "note": "\"P 12\", \"P 1\", \"P 2\" are how the site's subscripted symbols (P₁₂, P₁, P₂, rendered as MathJax/LaTeX $P_{12}$ etc. in the original) came through the plain-text extraction — the subscript digits are printed with a preceding space rather than as true subscripts; this is an extraction artifact, not a content difference. Cross-verified as an exact match against a separate direct WebFetch pass on the same URL. Date is the volume’s publication year (Vol. I 1963, Vol. III 1965); the lectures were delivered 1961–63. The source page carries no date of its own."
+   "source_url": "https://www.feynmanlectures.caltech.edu/III_01.html"
   },
   {
    "speaker": "Richard Feynman (as recounted by Feynman, quoting his father)",
@@ -66,19 +54,15 @@
    "work": "What Do You Care What Other People Think? — Part 1, \"A Curious Character\": \"The Making of a Scientist\" (1988)",
    "locus": "Part 1, \"The Making of a Scientist\", page marker {3}-{4} in this online transcription",
    "date": "1988",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://scilib-physics.narod.ru/Feynman/WDYC/en/What_Do_You_Care.html",
-   "note": "This is the BOOK version, distinct in wording from the 1966 NSTA speech version below — note the invented mock place-names here are \"Spencer's warbler / Chutto Lapittida / Bom da Peida / Chung-long-tah / Katano Tekeda\", where the NSTA version instead used real-sounding \"brown-throated thrush / halsenflugel (German) / chung ling (Chinese)\" with no Spencer's-warbler misdirection and no Italian/Portuguese/Japanese entries. Italics in the original (e.g. book/place names) are not distinguishable in this plain-text scrape; none appeared present in this passage regardless. Retrieved by direct curl download of the full page (475KB HTML), parsed to plain text locally; page carries no visible page numbers, only the bracketed print-edition page markers {2},{3},{4} etc. embedded in the flowing text, reproduced above only as the locus marker, not inline in the quote."
+   "source_url": "https://scilib-physics.narod.ru/Feynman/WDYC/en/What_Do_You_Care.html"
   },
   {
    "speaker": "Richard Feynman (as recounted by Feynman, quoting his father)",
    "quote": "So we went alone for our walk in the woods. But mothers were very powerful in those day's as they are now, and they convinced the other fathers that they had to take their own sons out for walks in the woods. So all fathers took all sons out for walks in the woods one Sunday afternoon. The next day, Monday, we were playing in the fields and this boy said to me, \"See that bird standing on the stump there? What's the name of it?\"\nI said, \"I haven't got the slightest idea.\"\nHe said, 'It's a brown-throated thrush. Your father doesn't teach you much about science.\"\nI smiled to myself, because my father had already taught me that [the name] doesn't tell me anything about the bird. He taught me \"See that bird? It's a brown-throated thrush, but in Germany it's called a halsenflugel, and in Chinese they call it a chung ling and even if you know all those names for it, you still know nothing about the bird--you only know something about people; what they call that bird. Now that thrush sings, and teaches its young to fly, and flies so many miles away during the summer across the country, and nobody knows how it finds its way,\" and so forth. There is a difference between the name of the thing and what goes on.",
    "work": "\"What Is Science?\" — address to the National Science Teachers Association, New York City, 1966 (published in The Physics Teacher, Vol. 7, No. 6, 1969, pp.313-320)",
-   "locus": "p.4 of this PDF transcription (page-break marker \"4\" appears mid-passage in the source scan, between \"the Catskill\" and \"Mountains for vacations\" a few lines above this excerpt)",
+   "locus": "p. 4 of the PDF transcription",
    "date": "1966 (address); 1969 (Physics Teacher publication)",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://profizgl.lu.lv/pluginfile.php/32795/mod_resource/content/0/WHAT_IS_SCIENCE_by_R.Feynman_1966.pdf",
-   "note": "This is the 1966 NSTA SPEECH version, distinct in wording from the 1988 book version above. Note the mixed straight/curly quotation marks and the stray apostrophe in \"He said, 'It's a brown-throated thrush...\" and \"those day's\" — reproduced exactly as they appear in the PDF's extracted text (likely OCR/typesetting artifacts of this particular scanned transcription rather than of Feynman's original delivery). Retrieved by direct curl download of the 12-page PDF and local text extraction with pdfplumber; I could not independently confirm this PDF is a letter-perfect transcription of the original Physics Teacher 7(6) 1969 pp.313-320 print pages (no page-number stamps matching that pagination appear in the scan), so treat the exact typography/punctuation with caution even though the wording is verified against multiple other online transcriptions of this same speech."
+   "source_url": "https://profizgl.lu.lv/pluginfile.php/32795/mod_resource/content/0/WHAT_IS_SCIENCE_by_R.Feynman_1966.pdf"
   },
   {
    "speaker": "Richard Feynman",
@@ -86,9 +70,7 @@
    "work": "fs.blog, \"Richard Feynman: The Difference Between Knowing the Name of Something and Knowing Something\" (transcript of a short video clip, sourced by fs.blog to a recorded talk of Feynman's, not independently dated on the page)",
    "locus": "single block quote, mid-article, following the sentence \"In this short clip (below), Feynman articulates the difference between knowing the name of something and understanding it.\"",
    "date": "",
-   "verification": "PRIMARY-TEXT-READ",
-   "source_url": "https://fs.blog/richard-feynman-knowing-something/",
-   "note": "fs.blog's own transcription, evidently of the same NSTA-lineage spoken telling (matches the 1966 \"What Is Science?\" wording much more closely than the 1988 book's invented-language version — e.g. \"halzenfugel\"/\"chung ling\" vs. the book's \"Chutto Lapittida\"/\"Katano Tekeda\") but not word-for-word identical to the 1966 PDF transcription retrieved above (e.g. \"halzenfugel\" here vs. \"halsenflugel\" in the NSTA PDF; \"nothing about the bird\" here vs. \"nothing about the bird--you only know something about people\" there, run together differently). fs.blog gives no citation/date for this specific clip's source recording beyond linking to a video, so it is kept here as its own separate entry per the task's instruction to give each version separately rather than merging it into either the 1966 or 1988 entries. Page retrieved by direct curl download via r.jina.ai reader mirror."
+   "source_url": "https://fs.blog/richard-feynman-knowing-something/"
   },
   {
    "speaker": "Albert Einstein",
@@ -96,9 +78,7 @@
    "work": "Letter to Max Born, 7 September 1944, in The Born-Einstein Letters, trans. Irene Born (London: Macmillan, 1971), p. 146; quoted in Jeremy Bernstein, \"Einstein's Entanglements,\" Inference: International Review of Science",
    "locus": "Bernstein, \"Einstein's Entanglements,\" block quotation introduced \"In 1944, Einstein wrote to Born:\"; Bernstein's endnote 12 reads \"Albert Einstein to Max Born, September 7, 1944, in The Born-Einstein Letters, trans. Irene Born (London: Macmillan, 1971), 146.\"",
    "date": "7 September 1944",
-   "verification": "SECONDARY-SOURCE",
-   "source_url": "https://inference-review.com/article/einsteins-entanglements",
-   "note": "Reaches this corpus through an identified secondary source, Bernstein's article, rather than through the Born-Einstein Letters directly; the wording quoted is Irene Born's published translation as Bernstein prints it. Bernstein italicises \"believe\" in the second sentence; the emphasis is not reproduced here. Retrieved 17 September 2026; the article's own citation of the primary volume and page is recorded in the locus above. Sits beside the 3 December 1947 Born letter already in this file, which is Born's own translation read on the page that prints the German original."
+   "source_url": "https://inference-review.com/article/einsteins-entanglements"
   }
  ]
 }

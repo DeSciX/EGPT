@@ -7,11 +7,8 @@
    "locus": "p. 1 (opening paragraph)",
    "date": "1958",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
-   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full",
-   "context": "The article's first sentences. The paragraph continues: “Many eminent voices have already described and praised his contributions. It is my aim to add here a brief account of his life and of his work from a background of personal acquaintance and friendship extending over a period of 25 years.”",
-   "caution": "Read from the author's on-disk OCR transcription of the BAMS memorial at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md, not from the printed issue or the Project Euclid scan. That transcription splits words across the original line breaks (e.g. ‘organ izational’, ‘con tains’); this passage contains no such split. Page number derived from the running-head markers in the same file."
+   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -20,11 +17,8 @@
    "locus": "p. 5",
    "date": "1958",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
-   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full",
-   "context": "Stands as its own paragraph, between Ulam's account of von Neumann's conversational evaluations of other scientists and his account of von Neumann's lack of a certain self-confidence.",
-   "caution": "Read from the author's on-disk OCR transcription at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md. The OCR renders this paragraph without word-splitting. Page number derived from the running-head markers in the same file."
+   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -33,11 +27,8 @@
    "locus": "p. 4",
    "date": "1958",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
-   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full",
-   "context": "Immediately followed in the printing by an indented quotation from Lewis Strauss beginning “During the period between the date of his confirmation and the late autumn, 1955, Johnny functioned magnificently…”",
-   "caution": "Read from the author's on-disk OCR transcription at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md. In that transcription the word ‘occurred’ is broken by a page turn as ‘oc curred’; it is restored here to its printed form without brackets because the split is an OCR artefact of the line break, not a feature of the printing. Page number derived from the running-head markers in the same file."
+   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -46,11 +37,8 @@
    "locus": "p. 42",
    "date": "1958",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
-   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full",
-   "context": "The list Ulam promises earlier in the memorial when he writes that “A list of his positions, organizational memberships, etc., will be found at the end of this article.” It appears in the closing biographical apparatus before the bibliography of von Neumann's publications.",
-   "caution": "Read from the author's on-disk OCR transcription at 02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md. That transcription splits five words across original line breaks — ‘con tains’, ‘Scien tific’, ‘presi dential’ — and renders one date range as ‘1949- 1954’ with an inserted space; all four are rejoined here as printed, without brackets, because the splits are OCR artefacts of line breaks. The comma-for-period after ‘Washington, D. C’ is as the OCR gives it and has not been corrected. Page number derived from the running-head markers in the same file."
+   "source_url": "https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society/volume-64/issue-3.P2/John-von-Neumann-19031957/bams/1183522369.full"
   },
   {
    "speaker": "Claude Shannon",
@@ -59,11 +47,8 @@
    "locus": "p. 124",
    "date": "1958",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://www.ams.org/bull/1958-64-03/S0002-9904-1958-10214-1/S0002-9904-1958-10214-1.pdf",
-   "context": "Shannon's article is the companion piece to Ulam's memorial in the same BAMS memorial issue. Shannon's bibliography item [12] is described there as “Unfinished manuscript for the University of Illinois Press relating to the theory of automata and, particularly, self-reproducing machines.”",
-   "caution": "Retrieved by web fetch of the AMS-hosted scan of the printed article, which passes page content through an intermediate summarising model; not read from a printed copy or a raw PDF by this agent. Page number as reported by that fetch."
+   "source_url": "https://www.ams.org/bull/1958-64-03/S0002-9904-1958-10214-1/S0002-9904-1958-10214-1.pdf"
   },
   {
    "speaker": "Nicholas Metropolis",
@@ -72,11 +57,8 @@
    "locus": "transcript, unpaginated",
    "date": "12 September 1993",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
-   "context": "Metropolis is distinguishing his two periods at the University of Chicago. The second, beginning 4 October 1957, is the period in which he was professor of physics and founding director of the university's Institute for Computer Research.",
-   "caution": "A transcriber's rendering of spoken words, not a text written by Metropolis. Published by the Atomic Heritage Foundation with their transcription conventions; the double em-dash marking a self-interruption is as the transcript gives it. Retrieved by web fetch, which passes page content through an intermediate summarising model; the transcript page is unpaginated."
+   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/"
   },
   {
    "speaker": "Nicholas Metropolis",
@@ -85,11 +67,8 @@
    "locus": "transcript, unpaginated",
    "date": "12 September 1993",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/",
-   "context": "Metropolis is describing his own role at Los Alamos. In the surrounding transcript he goes on to mention a year spent at the Institute for Advanced Study in Princeton before returning to organise the Los Alamos work.",
-   "caution": "A transcriber's rendering of spoken words. Retrieved by web fetch through an intermediate summarising model; transcript unpaginated. Metropolis does not in this passage name a division, group number or job title."
+   "source_url": "https://ahf.nuclearmuseum.org/voices/oral-histories/nicholas-metropolis-interview/"
   },
   {
    "speaker": "Herbert L. Anderson",
@@ -98,11 +77,8 @@
    "locus": "p. 100",
    "date": "1986",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://mcnp.lanl.gov/pdf_files/Article_1986_LAS_Anderson_96--108.pdf",
-   "context": "Anderson is recounting Metropolis's 1948 return to Los Alamos. ‘Here’ is Los Alamos; ‘Nick’ is Metropolis throughout the article.",
-   "caution": "Anderson is a colleague writing about Metropolis; these are Anderson's words, not Metropolis's. Retrieved by web fetch of the LANL-hosted scan, which passes page content through an intermediate summarising model; not read from a printed copy by this agent. Page number as reported by that fetch."
+   "source_url": "https://mcnp.lanl.gov/pdf_files/Article_1986_LAS_Anderson_96--108.pdf"
   },
   {
    "speaker": "Herbert L. Anderson",
@@ -111,11 +87,8 @@
    "locus": "p. 106",
    "date": "1986",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://mcnp.lanl.gov/pdf_files/Article_1986_LAS_Anderson_96--108.pdf",
-   "context": "Anderson's summary of the MANIAC line. He gives no year for the Chicago move and no year for MANIAC III.",
-   "caution": "Anderson's words, not Metropolis's. Anderson dates MANIAC II to 1956; the English Wikipedia article on Metropolis dates it to 1957 and the Atomic Heritage Foundation profile says Metropolis ‘oversaw the construction of MANIAC II’ in 1957 with MANIAC I shut down in 1958 — the printings disagree and this record reproduces Anderson's. Retrieved by web fetch of the LANL-hosted scan through an intermediate summarising model. Page number as reported by that fetch."
+   "source_url": "https://mcnp.lanl.gov/pdf_files/Article_1986_LAS_Anderson_96--108.pdf"
   },
   {
    "speaker": "Gian-Carlo Rota",
@@ -124,11 +97,8 @@
    "locus": "ch. VI, “The Lost Café,” p. 78",
    "date": "1997",
    "theme": "rota-thought",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "04_ROTA/Indiscrete Thoughts.md",
-   "source_url": "",
-   "context": "Rota is describing Ulam's life at Los Alamos in the decade after the hydrogen bomb. The preceding sentences describe Ulam's new standing as “an international celebrity and as the resident genius of the Los Alamos Laboratory” and record that “His attention span, already short, now decreased to a dangerous low.”",
-   "caution": "Rota's characterisation of Ulam, not Ulam's own words. Read from the author's on-disk transcription of Indiscrete Thoughts at 04_ROTA/Indiscrete Thoughts.md; the bracketed page markers in that file ([78]) are the transcription's own and locate this passage on p. 78. Rota does not name the second research adviser."
+   "source_url": ""
   },
   {
    "speaker": "Gian-Carlo Rota",
@@ -137,11 +107,8 @@
    "locus": "ch. VI, “The Lost Café,” pp. 79–80",
    "date": "1997",
    "theme": "rota-thought",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "04_ROTA/Indiscrete Thoughts.md",
-   "source_url": "",
-   "context": "Followed in the printing by: “Those who knew Stan and did not know what to make of him covered up the mixture of envy and resentment they felt toward him by pronouncing him lazy. He was proverbially lazy.”",
-   "caution": "Rota's characterisation of Ulam, not Ulam's own words. Read from the author's on-disk transcription at 04_ROTA/Indiscrete Thoughts.md; the transcription's bracketed page marker [80] falls immediately after the sentences that follow this one."
+   "source_url": ""
   },
   {
    "speaker": "Gian-Carlo Rota",
@@ -150,11 +117,8 @@
    "locus": "ch. VI, “The Lost Café,” p. 81",
    "date": "1997",
    "theme": "rota-thought",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "04_ROTA/Indiscrete Thoughts.md",
-   "source_url": "",
-   "context": "Immediately following Rota's account of Ulam asking him “Isn't it true that I am a charlatan?” and preceding “He fancied himself a grand seigneur of bottomless means…”",
-   "caution": "Rota's characterisation of Ulam, not Ulam's own words. Read from the author's on-disk transcription at 04_ROTA/Indiscrete Thoughts.md; the transcription's bracketed page marker [81] falls in the sentence immediately preceding."
+   "source_url": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -163,11 +127,8 @@
    "locus": "transcript, unpaginated",
    "date": "1974",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://mathshistory.st-andrews.ac.uk/Extras/Ulam_Rota/",
-   "context": "Ulam is answering Rota's question “But actual work?” about von Neumann at Los Alamos.",
-   "caution": "A transcribed conversation; the MacTutor editors state “We have made a few small editorial changes to the text.” Read from the author's on-disk conversion of the MacTutor page (captured 2026-03-01), which is not reproduced in this collection. Ulam's dating is internally inconsistent with the printed record: von Neumann died 8 February 1957 and Sputnik launched 4 October 1957, so the ICBM committee he chaired cannot have been established after Sputnik; Ulam's own 1958 BAMS memorial dates the chairmanship of the Advisory Committee on Guided Missiles to 1954–1957. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "source_url": "https://mathshistory.st-andrews.ac.uk/Extras/Ulam_Rota/"
   },
   {
    "speaker": "Freeman Dyson",
@@ -176,11 +137,8 @@
    "locus": "unpaginated online text",
    "date": "date of utterance not established; quoted 2012",
    "theme": "machines",
-   "verification": "SECONDARY-SOURCE",
    "file": "",
-   "source_url": "https://www.nybooks.com/articles/2012/06/07/how-computers-exploded/",
-   "context": "Holt's sentence reads in full: “‘When von Neumann tragically died, the snobs took their revenge and got rid of the computing project root and branch,’ the author's father, Freeman Dyson, later commented, adding that ‘the demise of our computer group was a disaster not only for Princeton but for science as a whole.’”",
-   "caution": "Reached through an identified intermediary: Jim Holt's NYRB review, which quotes Freeman Dyson without giving a date or a locus for the remark. This agent did not find the remark's original printing; the date of utterance is therefore unestablished and the NYRB rendering is the text quoted. Retrieved by web fetch, which passes page content through an intermediate summarising model."
+   "source_url": "https://www.nybooks.com/articles/2012/06/07/how-computers-exploded/"
   }
  ]
 }

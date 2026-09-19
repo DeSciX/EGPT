@@ -88,19 +88,9 @@ def years(date_str):
     """
     return sorted({int(y) for y in YEAR.findall(date_str or '')})
 REPORTED = re.compile(r'quoted in|as reported by|reported speech', re.I)
-PEND  = re.compile(r'PENDING-VERIFY', re.I)
-RECON = re.compile(r'RECONSTRUCTED — NOT A VERBATIM|reconstructed from the well-known', re.I)
-SEC   = re.compile(r'reaches the report through a secondary source|Reconstructed from a secondary '
-                   r'transcription|Read in the open-access|read in the 1990 UC Press|Read in Born|'
-                   r'Read via text extraction|relayed through trade press|Secondary reporting', re.I)
-
-def verification(entry, sourcing, has_quote):
-    v = norm(entry.get('verification'))
-    if v: return v
-    if RECON.search(sourcing):   return 'RECONSTRUCTED'
-    if PEND.search(sourcing):    return 'PENDING-VERIFY'
-    if SEC.search(sourcing):     return 'SECONDARY-SOURCE'
-    return 'PRIMARY-TEXT-READ'
+# A record is citation and existence only. These fields once carried agent prose — retrieval
+# accounts, grades, commentary — and are refused rather than ignored, so it cannot creep back.
+REFUSED = ('caution', 'note', 'verification', 'sourcing')
 
 def main():
     files = sorted(SRC.glob('*.json'))
@@ -110,6 +100,12 @@ def main():
     for path in files:
         coll = re.sub(r'^\d+_', '', path.stem)
         for n, e in enumerate(json.load(open(path, encoding='utf-8'))['entries']):
+            bad = [k for k in REFUSED if k in e]
+            if bad:
+                sys.exit(f'{path.name} entry {n}: carries {", ".join(bad)}.\n'
+                         f'  A record holds speaker, work, locus, date, file, url and the verbatim '
+                         f'words an ellipsis cut (context). Nothing else. See '
+                         f'PROVENANCE_DB_ORDERS.md.')
             q = norm(e.get('quote'))
             if not q:
                 # A search that found nothing is not a record: it cannot be quoted and a reader
@@ -117,8 +113,7 @@ def main():
                 sys.exit(f'{path.name} entry {n}: empty quote.\n'
                          f'  work: {norm(e.get("work"))[:90]}\n'
                          f'  Every record must carry a passage someone wrote or said. If this '
-                         f'records a search that found nothing, delete it and put the finding in '
-                         f'the sourcing note of the record that DOES carry the text.')
+                         f'records a search that found nothing, delete it.')
             h = hashlib.sha256(q.encode()).hexdigest()
             if h and h in seen:
                 prev = seen[h]
@@ -128,7 +123,6 @@ def main():
                 continue
             sp = canon_speaker(norm(e.get('speaker'))) or '—'
             work = norm(e.get('work'))
-            sourcing = norm(e.get('caution')) or norm(e.get('note'))
             role = ('institution' if any(i in sp for i in INSTIT)
                     else 'reported' if REPORTED.search(work) else 'author')
             rec = {
@@ -139,8 +133,6 @@ def main():
                 'source': {'work': work, 'locus': norm(e.get('locus')), 'date': norm(e.get('date')),
                            'file': norm(e.get('file')), 'url': norm(e.get('source_url'))},
                 'restored': norm(e.get('context')),
-                'sourcing': sourcing,
-                'verification': verification(e, sourcing, bool(q)),
                 'years': years(norm(e.get('date'))),
                 'themes': [t for t in [norm(e.get('theme'))] if t],
                 'collections': [coll],
@@ -154,14 +146,13 @@ def main():
     recs.sort(key=lambda r: (r['speaker']['sort'], r['source']['work'], r['source']['locus']))
     OUT.mkdir(exist_ok=True)
     corpus = {'schema': 'egpt.quotes/1', 'count': len(recs),
-              'note': ("Verbatim quotations with provenance. 'restored' holds text removed by an "
-                       "ellipsis. 'sourcing' holds mechanical and sourcing facts only — no interpretation."),
+              'note': ("Verbatim quotations with their citations. 'restored' holds the words an "
+                       "ellipsis removed, verbatim, and nothing else."),
               'records': recs}
     (OUT/'quotes.json').write_text(json.dumps(corpus, indent=1, ensure_ascii=False), encoding='utf-8')
     with open(OUT/'quotes.jsonl', 'w', encoding='utf-8') as f:
         for r in recs: f.write(json.dumps(r, ensure_ascii=False) + '\n')
 
-    from collections import Counter
     print(f'{len(recs)} records from {len(files)} source files')
     merged = {}
     for r in recs:
@@ -172,8 +163,6 @@ def main():
         print(f"  merged -> {canon}: {', '.join(sorted(variants))}")
     dated = sum(1 for r in recs if r['years'])
     print(f'  {dated}/{len(recs)} carry at least one year')
-    for k, v in sorted(Counter(r['verification'] for r in recs).items()):
-        print(f'  {v:4}  {k}')
 
 if __name__ == '__main__':
     main()

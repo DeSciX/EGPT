@@ -6,8 +6,6 @@
    "work": "“John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64:3, Part 2",
    "locus": "p. 5",
    "date": "May 1958",
-   "context": "",
-   "caution": "Ulam’s own sentence, not von Neumann’s: Ulam writes it in his own voice, recalling what a conversation was about. Only the preceding sentence (“The interests of humanity may change…”) is a direct quotation of von Neumann. The 2012 Kurzweil foreword to the Science, Computers, and People reprint carries the misattribution. Printed-text traps: no hyphen in “ever accelerating”; it reads “in the history of the race,” not “of the human race”; “as we know them” is often dropped. It appears once in the article, in the personal-recollection section; Ulam supplies no date for the conversation. Cite the Bulletin, not the SCP reprint.",
    "theme": "singularity"
   },
   {
@@ -16,8 +14,6 @@
    "work": "quoted in Ulam, “John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64:3, Part 2",
    "locus": "p. 5",
    "date": "May 1958",
-   "context": "",
-   "caution": "Reported speech: Ulam quotes it in a memorial article, with no date for the occasion.",
    "theme": "singularity"
   },
   {
@@ -26,8 +22,6 @@
    "work": "“John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64:3, Part 2",
    "locus": "pp. 7–8",
    "date": "May 1958",
-   "context": "",
-   "caution": "OCR spacing artifacts in the AMS scan (“t h a t” for “that”) were closed by the compiler; nothing else altered. Cite the Bulletin, not the SCP ch. 16 reprint.",
    "theme": "brain-and-machine"
   },
   {
@@ -36,8 +30,6 @@
    "work": "“John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64:3, Part 2",
    "locus": "p. 8",
    "date": "May 1958",
-   "context": "",
-   "caution": "Cite the Bulletin, not the SCP reprint. The report quotes this immediately after the preceding passage; in the original the two are separated by a paragraph.",
    "theme": "brain-and-machine"
   },
   {
@@ -46,8 +38,6 @@
    "work": "“John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64:3, Part 2",
    "locus": "pp. 33–34",
    "date": "May 1958",
-   "context": "",
-   "caution": "OCR rendered “n-dimensional” as “w-dimensional” later in the same passage and was corrected by the compiler; this sentence extracted clean.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -56,8 +46,6 @@
    "work": "“John von Neumann, 1903–1957,” Bulletin of the American Mathematical Society 64:3, Part 2",
    "locus": "pp. 20–21",
    "date": "May 1958",
-   "context": "",
-   "caution": "Doubly indirect: Ulam reports von Neumann’s sentiments, and reports them as “somewhat similar” to remarks “reportedly made by” Einstein.",
    "theme": "physics-and-continuum"
   },
   {
@@ -66,8 +54,6 @@
    "work": "“Conversations with Rota,” Los Alamos Science, Special Issue No. 15",
    "locus": "p. 304",
    "date": "recorded Gainesville, 1974; printed 1987",
-   "context": "",
-   "caution": "A tape transcribed and edited by Françoise Ulam and further edited by Los Alamos Science. The LANL text extraction carries hyphenation and ligature artifacts, closed by the compiler. MacTutor reproduces the same conversation with minor editorial changes.",
    "theme": "brain-and-machine"
   },
   {
@@ -76,8 +62,6 @@
    "work": "“Physics for Mathematicians,” Science, Computers, and People: From the Tree of Mathematics, ch. 2",
    "locus": "pp. 13–14",
    "date": "1986",
-   "context": "Elided text not recovered.",
-   "caution": "The report marks its own elision with an ellipsis. Emphasis in the printed text is Ulam’s own underlining, preserved by the SCP editors; any bold in the report is the report’s. The on-disk SCP is a 26-page excerpt (front matter plus chs. 1–2), so SCP page numbers hold here but not for journal-sourced Ulam material.",
    "theme": "physics-and-continuum"
   },
   {
@@ -86,8 +70,6 @@
    "work": "“Physics for Mathematicians,” Science, Computers, and People: From the Tree of Mathematics, ch. 2",
    "locus": "pp. 13–14",
    "date": "1986",
-   "context": "",
-   "caution": "Emphasis in the printed text is Ulam’s own underlining, preserved by the editors; bold in the report is the report’s own.",
    "theme": "physics-and-continuum"
   },
   {
@@ -96,10 +78,8 @@
    "work": "Adventures of a Mathematician",
    "locus": "pp. 197–198",
    "date": "1976",
-   "context": "The ellipsis spans three paragraphs, now recovered from the printing: “It occurred to me then that this could be equally true of all processes involving branching of events, as in the production and further multiplication of neutrons in some kind of material containing uranium or other fissile elements. At each stage of the process, there are many possibilities determining the fate of the neutron. It can scatter at one angle, change its velocity, be absorbed, or produce more neutrons by a fission of the target nucleus, and so on. The elementary probabilities for each of these possibilities are individually known, to some extent, from the knowledge of the cross sections. But the problem is to know what a succession and branching of perhaps hundreds of thousands or millions will do. One can write differential equations or integral differential equations for the ‘expected values,’ but to solve them or even to get an approximative idea of the properties of the solution, is an entirely different matter. The idea was to try out thousands of such possibilities and, at each stage, to select by chance, by means of a ‘random number’ with suitable probability, the fate or kind of event, to follow it in a line, so to speak, instead of considering all branches. After examining the possible histories of only a few thousand, one will have a good sample and an approximate answer to the problem. All one needed was to have the means of producing such sample histories.” The sentence before the quoted passage introduces the solitaire analogy: laying down the cards and noticing what proportion comes out successfully “rather than to try to compute all the combinatorial possibilities which are an exponentially increasing number.”",
-   "caution": "Reconciled against the author's scan of the Scribner 1976 printing, 14 September 2026. The PDF carries no text layer; pages were rendered at 200 dpi and read by Tesseract, then read back against the page images. TWO CORRECTIONS from the earlier record, which had been keyed from a secondary transcription (Gil Press, Substack): (1) the singular/plural variant is settled — the printing reads “all the chains of possibilities”, plural, as carried here, so transcriptions reading “all the chain of possibilities” are wrong; (2) the locus was recorded as pp. 196–197 and is in fact pp. 197–198 — the first sentence closes a paragraph on p. 197 (running footer 197, PDF page 202) and “It so happened that computing machines were coming into exis-” is the last line of that same page, completing on p. 198. The quoted wording itself was verbatim and is unchanged; line-break hyphenation in “exis-tence” is the printing's, not the text's.",
    "theme": "monte-carlo-and-automata",
-   "verification": "PRIMARY-TEXT-READ"
+   "context": "It occurred to me then that this could be equally true of all processes involving branching of events, as in the production and further multiplication of neutrons in some kind of material containing uranium or other fissile elements. At each stage of the process, there are many possibilities determining the fate of the neutron. It can scatter at one angle, change its velocity, be absorbed, or produce more neutrons by a fission of the target nucleus, and so on. The elementary probabilities for each of these possibilities are individually known, to some extent, from the knowledge of the cross sections. But the problem is to know what a succession and branching of perhaps hundreds of thousands or millions will do. One can write differential equations or integral differential equations for the ‘expected values,’ but to solve them or even to get an approximative idea of the properties of the solution, is an entirely different matter. The idea was to try out thousands of such possibilities and, at each stage, to select by chance, by means of a ‘random number’ with suitable probability, the fate or kind of event, to follow it in a line, so to speak, instead of considering all branches. After examining the possible histories of only a few thousand, one will have a good sample and an approximate answer to the problem. All one needed was to have the means of producing such sample histories."
   },
   {
    "speaker": "Nicholas Metropolis and Stanislaw Ulam",
@@ -107,8 +87,6 @@
    "work": "“The Monte Carlo Method,” Journal of the American Statistical Association 44:247",
    "locus": "p. 336",
    "date": "September 1949",
-   "context": "",
-   "caution": "The JASA source is an image scan OCR’d at 300 dpi by the compiler; garbles elsewhere in the article are marked [sic — OCR]; this passage extracted clean.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -117,9 +95,8 @@
    "work": "“The Monte Carlo Method,” Journal of the American Statistical Association 44:247",
    "locus": "p. 336",
    "date": "September 1949",
-   "context": "The ellipsis replaces the printed parenthesis: “(we understand here only such games where skill plays no role).”",
-   "caution": "OCR clean in this passage.",
-   "theme": "monte-carlo-and-automata"
+   "theme": "monte-carlo-and-automata",
+   "context": "(we understand here only such games where skill plays no role)."
   },
   {
    "speaker": "Nicholas Metropolis and Stanislaw Ulam",
@@ -127,8 +104,6 @@
    "work": "“The Monte Carlo Method,” Journal of the American Statistical Association 44:247",
    "locus": "p. 338",
    "date": "September 1949",
-   "context": "",
-   "caution": "",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -137,9 +112,8 @@
    "work": "“The Monte Carlo Method,” Journal of the American Statistical Association 44:247",
    "locus": "p. 339",
    "date": "September 1949",
-   "context": "The ellipsis removes “or multiplications of the probability matrices”. The full printed sentence begins “The essential feature of the process is that…”",
-   "caution": "",
-   "theme": "monte-carlo-and-automata"
+   "theme": "monte-carlo-and-automata",
+   "context": "or multiplications of the probability matrices"
   },
   {
    "speaker": "Nicholas Metropolis",
@@ -147,8 +121,6 @@
    "work": "“The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15",
    "locus": "p. 126",
    "date": "1987",
-   "context": "",
-   "caution": "Written by Metropolis about Ulam in 1987, not Ulam’s own testimony. LANL PDF extraction with hyphenation artifacts closed.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -157,8 +129,6 @@
    "work": "letter to R. D. Richtmyer, reprinted in Analogies Between Analogies: The Mathematical Reports of S. M. Ulam and His Los Alamos Collaborators",
    "locus": "p. 18",
    "date": "11 March 1947",
-   "context": "",
-   "caution": "Read in the open-access UC Press e-book reprint, not from the original letter.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -167,8 +137,6 @@
    "work": "“On Recursively Defined Geometrical Objects and Patterns of Growth,” Los Alamos report LA-3762",
    "locus": "concluding section; in Analogies Between Analogies, pp. 385–386",
    "date": "15 August 1967",
-   "context": "",
-   "caution": "The report cites the Los Alamos report; the text was read in the 1990 UC Press reprint. The predecessor paper (Ulam, Proc. Symp. Appl. Math. 14, 1962) could not be obtained.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -177,8 +145,6 @@
    "work": "“On Recursively Defined Geometrical Objects and Patterns of Growth,” Los Alamos report LA-3762",
    "locus": "in Analogies Between Analogies, pp. 380–381",
    "date": "15 August 1967",
-   "context": "",
-   "caution": "Read in the 1990 UC Press reprint, not the original laboratory report.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -187,8 +153,6 @@
    "work": "“Studies of Nonlinear Problems,” Los Alamos report LA-1940",
    "locus": "abstract; in Analogies Between Analogies, p. 139",
    "date": "May 1955",
-   "context": "",
-   "caution": "Bold in the abstract is the source’s own. The original carries a footnote thanking Mary Tsingou for coding and running the computations.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -197,8 +161,6 @@
    "work": "“The Notion of Complexity,” Los Alamos report LA-4822; in Analogies Between Analogies",
    "locus": "p. 446",
    "date": "December 1971",
-   "context": "",
-   "caution": "Italics on “information” and “entropy” are the source’s. Read in the 1990 UC Press reprint, not the original laboratory report.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -207,9 +169,8 @@
    "work": "The Computer and the Brain",
    "locus": "Introduction, p. 2",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "The ellipsis removes the printed parenthetical “—‘mathematical’ in the sense outlined above—”.",
-   "caution": "The working text is a pdftotext extraction of the Yale third edition (2012) whose ligature repair corrupts mathematics; prose extracted reliably, but any numeric passage must be re-checked against the page image.",
-   "theme": "brain-and-machine"
+   "theme": "brain-and-machine",
+   "context": "—‘mathematical’ in the sense outlined above—"
   },
   {
    "speaker": "John von Neumann",
@@ -217,8 +178,6 @@
    "work": "The Computer and the Brain",
    "locus": "p. 77",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "",
-   "caution": "Italicised in the original; any bold in the report is the report’s own. Exponents in the surrounding precision figures did not survive text extraction.",
    "theme": "brain-and-machine"
   },
   {
@@ -227,8 +186,6 @@
    "work": "The Computer and the Brain",
    "locus": "p. 80",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "",
-   "caution": "Bold in the report is the report’s own; the printing carries no emphasis here. Section heading: “Arithmetical Precision or Logical Reliability, Alternatives.”",
    "theme": "brain-and-machine"
   },
   {
@@ -237,8 +194,6 @@
    "work": "The Computer and the Brain, closing section “The Language of the Brain Not the Language of Mathematics”",
    "locus": "pp. 81–83",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "Elided text not recovered. The dossier records only that the cut included a sentence on the statistical character of the message system; the wording was not transcribed.",
-   "caution": "An earlier draft of the report carried an unmarked elision here; the passage is now quoted with ellipses marked. The printed heading is “The Language of the Brain Not the Language of Mathematics” — “not the language of arithmetic” is not the printed wording. The manuscript breaks off at p. 83.",
    "theme": "brain-and-machine"
   },
   {
@@ -247,9 +202,8 @@
    "work": "The Computer and the Brain, closing section “The Language of the Brain Not the Language of Mathematics”",
    "locus": "pp. 81–83 (the book ends here)",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "The ellipsis removes “Thus the outward forms of our mathematics are not absolutely relevant from the point of view of evaluating what the mathematical or logical language truly used by the central nervous system is.”",
-   "caution": "",
-   "theme": "brain-and-machine"
+   "theme": "brain-and-machine",
+   "context": "Thus the outward forms of our mathematics are not absolutely relevant from the point of view of evaluating what the mathematical or logical language truly used by the central nervous system is."
   },
   {
    "speaker": "John von Neumann",
@@ -257,8 +211,6 @@
    "work": "The Computer and the Brain, “The Underlying Componentry of the Memory Need Not Be the Same as That of the Basic Active Organs”",
    "locus": "p. 67",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "",
-   "caution": "Numerals in the ENIAC figures that follow did not survive text extraction.",
    "theme": "brain-and-machine"
   },
   {
@@ -267,8 +219,6 @@
    "work": "The Computer and the Brain",
    "locus": "p. 68",
    "date": "written 1955–56; published posthumously 1958",
-   "context": "",
-   "caution": "",
    "theme": "brain-and-machine"
   },
   {
@@ -277,8 +227,6 @@
    "work": "“The Mathematician,” in R. B. Heywood (ed.), The Works of the Mind",
    "locus": "pp. 180–196 (no page apparatus in the source transcription)",
    "date": "1947",
-   "context": "",
-   "caution": "VERIFIED-AS-TRANSCRIPTION; the source transcription carries no page apparatus. A different statement from Ulam’s 1958 report of “one-third”.",
    "theme": "brain-and-machine"
   },
   {
@@ -287,9 +235,8 @@
    "work": "preface to The Computer and the Brain (Yale)",
    "locus": "pp. xlix–li",
    "date": "dated September 1957",
-   "context": "The ellipsis compresses two paragraphs. The printed text between them reads “Clearly his strength was waning from day to day; all trips and speaking engagements had to be canceled one by one, with this single exception—the Silliman Lectures.”",
-   "caution": "Pagination is from the Yale third edition (2012); the 1958 first edition has different front matter.",
-   "theme": "brain-and-machine"
+   "theme": "brain-and-machine",
+   "context": "Clearly his strength was waning from day to day; all trips and speaking engagements had to be canceled one by one, with this single exception—the Silliman Lectures."
   },
   {
    "speaker": "Klara von Neumann",
@@ -297,31 +244,23 @@
    "work": "preface to The Computer and the Brain (Yale)",
    "locus": "pp. xlix–li",
    "date": "dated September 1957",
-   "context": "",
-   "caution": "Edition caveat as above. Von Neumann died 8 February 1957; the book was published posthumously in 1958.",
    "theme": "brain-and-machine"
   },
   {
    "speaker": "Albert Einstein",
    "quote": "I consider it quite possible that physics cannot be based on the field concept, i.e., on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics.",
-   "work": "letter to Michele Besso",
+   "work": "letter to Michele Besso, quoted in Bob Doyle, My God, He Plays Dice! (Information Philosopher)",
    "locus": "",
    "date": "1954",
-   "context": "",
-   "caution": "Reaches this corpus through a secondary source: Bob Doyle, My God, He Plays Dice! (Information Philosopher), rather than the collected papers. The intermediary is identified and its rendering is the text quoted. The bracketed “[and of]” is that source’s interpolation.",
-   "theme": "physics-and-continuum",
-   "verification": "SECONDARY-SOURCE"
+   "theme": "physics-and-continuum"
   },
   {
    "speaker": "Albert Einstein",
    "quote": "I must confess that I was not able to find a way to explain the atomistic character of nature. My opinion is that if the objective description through the field as an elementary concept is not possible, then one has to find a possibility to avoid the continuum (together with space and time) altogether. But I have not the slightest idea what kind of elementary concepts could be used in such a theory.",
-   "work": "letter to David Bohm",
+   "work": "letter to David Bohm, quoted in Bob Doyle, My God, He Plays Dice! (Information Philosopher)",
    "locus": "",
    "date": "28 October 1954",
-   "context": "",
-   "caution": "Reaches this corpus through the same identified secondary source as the Besso letter: Bob Doyle, My God, He Plays Dice! (Information Philosopher), rather than the collected papers.",
-   "theme": "physics-and-continuum",
-   "verification": "SECONDARY-SOURCE"
+   "theme": "physics-and-continuum"
   },
   {
    "speaker": "Albert Einstein",
@@ -329,8 +268,6 @@
    "work": "letter to Max Born, as translated by Born in his Waynflete Lectures",
    "locus": "",
    "date": "3 December 1947",
-   "context": "",
-   "caution": "Read in Born’s Waynflete Lectures, in Born’s translation, so the English is Born’s rather than Einstein’s. Quoted as a sentence fragment inside the report’s prose.",
    "theme": "physics-and-continuum"
   },
   {
@@ -339,8 +276,6 @@
    "work": "The Feynman Lectures on Physics, Vol. I",
    "locus": "§2-1",
    "date": "1963",
-   "context": "",
-   "caution": "",
    "theme": "physics-and-continuum"
   },
   {
@@ -349,8 +284,6 @@
    "work": "The Feynman Lectures on Physics, Vol. III",
    "locus": "§1-1",
    "date": "1965",
-   "context": "",
-   "caution": "Quoted as a fragment inside the report’s own sentence; “only” is italicised in the original. The report does not give volume or section; the dossier does.",
    "theme": "physics-and-continuum"
   },
   {
@@ -359,8 +292,6 @@
    "work": "The Feynman Lectures on Physics, Vol. III",
    "locus": "§1-5",
    "date": "1965",
-   "context": "",
-   "caution": "Two wordings exist: the dossier records the §1-1 form as “None of them has succeeded”; this is the §1-5 wording.",
    "theme": "physics-and-continuum"
   },
   {
@@ -369,8 +300,6 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "The twelfth-century dating of Duns Scotus (c. 1265–1308) is Rota’s own and appears in the 1997 Indiscrete Thoughts reprint. Ulam’s speech as reported by Rota, not a transcript. The source read is a re-keyed transcription of the 1985 journal printing with no page apparatus, so the citation is at article level. The essay has two 1985/1986 printings under different titles (Letters in Mathematical Physics 10:2, 97–99; Physica D 22, 1–3) plus the 1997 book reprint.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -379,8 +308,6 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "Ulam’s words as reported by Rota. Rota gives the same example in a Los Alamos Science dialogue months earlier, credited (“Let me give a simple example of context-dependence, due to Ulam”); Ulam raises “key, lock, labyrinth” on a 1974 tape. The wording here is Rota’s rendering. Transcription-level source, no page apparatus.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -389,8 +316,6 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "Reported speech via Rota; re-keyed transcription of the 1985 journal text, cited at article level only.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -399,8 +324,6 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "Reported speech via Rota. A circulating secondary transcription of the Physica D printing garbles this line as “a role that is tied inextricably tied to some context”; the reading here is “inextricably tied.” Transcription-level source, no page apparatus.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -409,8 +332,6 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "Reported speech via Rota. Note “practising” (British spelling) in this printing; a circulating secondary transcription reads “since it start out.” The 1997 book reprint uses “A.I.” house style, so wording differs by printing.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -419,9 +340,8 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "The ellipses cut “The time has come to enrich formal logic by adding to it some other fundamental notions” and “that have already been accepted into a formal logic. Until you do that, you will not get very far with your AI problem.”",
-   "caution": "Reported speech via Rota. A 2026 secondary source renders the connectives with a serial comma and doubled quotation marks; the 1985 text does not.",
-   "theme": "understanding-and-meaning"
+   "theme": "understanding-and-meaning",
+   "context": "The time has come to enrich formal logic by adding to it some other fundamental notions … that have already been accepted into a formal logic. Until you do that, you will not get very far with your AI problem."
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -429,8 +349,6 @@
    "work": "quoted in Gian-Carlo Rota, “The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "Reported speech via Rota. Absent from the secondary record until the full essay text was obtained. Transcription-level source, article-level citation only.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -439,8 +357,6 @@
    "work": "“The Barrier of Meaning,” Letters in Mathematical Physics 10:2",
    "locus": "pp. 97–99 (final sentence)",
    "date": "address May 1985; printed 1985",
-   "context": "",
-   "caution": "The 1985 journal text reads “AI,” not “artificial intelligence”; the expanded form circulating in the literature is Melanie Mitchell’s expansion. Quoted here as a tail of a longer sentence. The preceding sentence in the essay prints “Charles Saunders Peirce” for Charles Sanders Peirce.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -449,9 +365,8 @@
    "work": "Indiscrete Thoughts (Birkhäuser)",
    "locus": "ch. VI, “The Lost Café”",
    "date": "1997",
-   "context": "",
-   "caution": "The report cites the book without a page number; the passage sits in ch. VI, “The Lost Café,” pp. 64–85, read from a partial on-disk extraction whose text of that chapter truncates mid-sentence at p. 85.",
-   "theme": "physics-and-continuum"
+   "theme": "physics-and-continuum",
+   "file": "04_ROTA/Indiscrete Thoughts.md"
   },
   {
    "speaker": "Gian-Carlo Rota",
@@ -459,8 +374,6 @@
    "work": "“Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12",
    "locus": "p. 101",
    "date": "Spring/Summer 1985",
-   "context": "The report cuts the example that follows, without an ellipsis: “In the early fifties engineers attempted to build a machine that translated from one language to another…”",
-   "caution": "Read via text extraction of the LANL PDF (LA-UR-85-2000); speaker labels are the source’s own.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -469,8 +382,6 @@
    "work": "“Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12",
    "locus": "p. 102",
    "date": "Spring/Summer 1985",
-   "context": "",
-   "caution": "Appears in a second, directly readable printing.",
    "theme": "understanding-and-meaning"
   },
   {
@@ -479,8 +390,6 @@
    "work": "Introduction to Probability Theory, ch. VIII, “Entropy and Information”",
    "locus": "ch. VIII opening",
    "date": "unpublished lecture notes, preliminary edition, c. 1992–93",
-   "context": "Elided text not recovered.",
-   "caution": "Unpublished lecture notes in a preliminary edition, dated only approximately (c. 1992–93); not a published or peer-reviewed printing.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -489,8 +398,6 @@
    "work": "Introduction to Probability Theory, ch. VIII, “Entropy and Information”",
    "locus": "§3, summary",
    "date": "unpublished lecture notes, preliminary edition, c. 1992–93",
-   "context": "",
-   "caution": "Unpublished lecture notes, preliminary edition, approximate date.",
    "theme": "monte-carlo-and-automata"
   },
   {
@@ -499,8 +406,6 @@
    "work": "interview, Berkeley News",
    "locus": "",
    "date": "27 August 2025",
-   "context": "",
-   "caution": "An interview accompanying his Science Robotics editorial, not the editorial itself.",
    "theme": "robotics-data"
   },
   {
@@ -509,8 +414,6 @@
    "work": "“Why Today’s Humanoids Won’t Learn Dexterity” (rodneybrooks.com)",
    "locus": "",
    "date": "26 September 2025",
-   "context": "",
-   "caution": "“right data” is emphasised in Brooks’s original; the report renders it in italic. Self-published blog post, not peer-reviewed.",
    "theme": "robotics-data"
   },
   {
@@ -519,8 +422,6 @@
    "work": "“Why Today’s Humanoids Won’t Learn Dexterity” (rodneybrooks.com)",
    "locus": "",
    "date": "26 September 2025",
-   "context": "",
-   "caution": "Self-published blog post, not peer-reviewed.",
    "theme": "robotics-data"
   },
   {
@@ -529,8 +430,6 @@
    "work": "“Sporks of AGI” (sergeylevine.substack.com)",
    "locus": "",
    "date": "21 July 2025",
-   "context": "Quoted as a fragment. The full sentence begins “when we train our robotic foundation model on, for example, human data, and then present it with a new problem, it…”",
-   "caution": "Self-published essay, not peer-reviewed.",
    "theme": "robotics-data"
   },
   {
@@ -539,8 +438,6 @@
    "work": "“Sporks of AGI” (sergeylevine.substack.com)",
    "locus": "",
    "date": "21 July 2025",
-   "context": "",
-   "caution": "Self-published essay, not peer-reviewed.",
    "theme": "robotics-data"
   },
   {
@@ -549,8 +446,6 @@
    "work": "“From Words to Worlds: Spatial Intelligence” (drfeifei.substack.com)",
    "locus": "",
    "date": "2025",
-   "context": "",
-   "caution": "A company-founder position piece, not a peer-reviewed result.",
    "theme": "world-models-industry"
   },
   {
@@ -559,8 +454,6 @@
    "work": "“From Words to Worlds: Spatial Intelligence” (drfeifei.substack.com)",
    "locus": "",
    "date": "2025",
-   "context": "",
-   "caution": "A company-founder position piece, not a peer-reviewed result.",
    "theme": "world-models-industry"
   },
   {
@@ -569,8 +462,6 @@
    "work": "quoted in TechCrunch, on Genie 3",
    "locus": "",
    "date": "5 August 2025",
-   "context": "",
-   "caution": "Secondary reporting: reached through TechCrunch, not a DeepMind publication.",
    "theme": "world-models-industry"
   },
   {
@@ -579,8 +470,6 @@
    "work": "TechCrunch report on Genie 3",
    "locus": "",
    "date": "5 August 2025",
-   "context": "",
-   "caution": "A journalist’s sentence, not Google’s own words. An earlier draft of the report presented it as a company statement and cut the interpolated “DeepMind says” without marking it; it is now attributed to TechCrunch.",
    "theme": "world-models-industry"
   },
   {
@@ -589,8 +478,6 @@
    "work": "quoted in TechCrunch, on AMI Labs’ $1.03bn raise",
    "locus": "",
    "date": "March 2026",
-   "context": "",
-   "caution": "Secondary reporting. Attributed in the piece to Alexandre LeBrun, not to Yann LeCun. LeCun’s A Path Towards Autonomous Machine Intelligence could not be retrieved (OpenReview returned HTTP 403); nothing is quoted from him directly.",
    "theme": "world-models-industry"
   },
   {
@@ -599,8 +486,6 @@
    "work": "quoted in The Robot Report, on the $1.4bn raise and Skild Brain",
    "locus": "",
    "date": "15 January 2026",
-   "context": "",
-   "caution": "Vendor statement relayed through trade press.",
    "theme": "robotics-data"
   },
   {
@@ -609,8 +494,6 @@
    "work": "arXiv:2510.03827",
    "locus": "",
    "date": "October 2025",
-   "context": "",
-   "caution": "Peer-reviewed. The accompanying figures — OpenVLA and π0 dropping to zero beyond 0.2-unit object-position shifts, π0.5 at 0.38 — are in the report’s citation line, not in the quotation.",
    "theme": "benchmarks"
   },
   {
@@ -619,8 +502,6 @@
    "work": "LIBERO-Plus, CVPR 2026",
    "locus": "",
    "date": "2026",
-   "context": "",
-   "caution": "Peer-reviewed; CVPR 2026 poster.",
    "theme": "benchmarks"
   },
   {
@@ -629,8 +510,6 @@
    "work": "Physics-IQ, arXiv:2501.09038",
    "locus": "headline conclusion",
    "date": "January 2025",
-   "context": "",
-   "caution": "An earlier draft of the report misattributed Physics-IQ to Meta; it is not Meta’s, and its best scorer is OpenAI’s Sora at 29.5%. Per-model scores below Sora’s were read off a figure and are UNVERIFIED to the decimal (the leaderboard did not render on fetch). An earlier draft described the conclusion as “four words long”; it is seven.",
    "theme": "benchmarks"
   },
   {
@@ -639,8 +518,6 @@
    "work": "CausalVQA, arXiv:2506.09943",
    "locus": "paper body",
    "date": "June 2025",
-   "context": "",
-   "caution": "Peer-reviewed. The benchmark is Meta’s own. The report quotes only the first clause.",
    "theme": "benchmarks"
   },
   {
@@ -649,8 +526,6 @@
    "work": "V-JEPA 2, arXiv:2506.09985",
    "locus": "",
    "date": "June 2025",
-   "context": "The printed sentence opens “In contrast to approaches based on video generation,…”, dropped without an ellipsis.",
-   "caution": "Preprint, not peer-reviewed.",
    "theme": "world-models-industry"
   },
   {
@@ -659,8 +534,6 @@
    "work": "V-JEPA 2 launch blog post, ai.meta.com",
    "locus": "",
    "date": "June 2025",
-   "context": "",
-   "caution": "Blog copy. A full-text search of the V-JEPA 2 paper for “imagine,” “imagination,” “mental,” “simulator” and “dream” returns no matching sentences.",
    "theme": "world-models-industry"
   },
   {
@@ -669,8 +542,6 @@
    "work": "V-JEPA 2 launch blog post, ai.meta.com",
    "locus": "",
    "date": "June 2025",
-   "context": "",
-   "caution": "Blog copy; the vocabulary is absent from the matching technical paper.",
    "theme": "world-models-industry"
   },
   {
@@ -679,8 +550,6 @@
    "work": "Genie 3 launch post, deepmind.google",
    "locus": "",
    "date": "August 2025",
-   "context": "",
-   "caution": "Blog copy, not a paper.",
    "theme": "world-models-industry"
   },
   {
@@ -689,8 +558,6 @@
    "work": "Cosmos World Foundation Model Platform, arXiv:2501.03575",
    "locus": "",
    "date": "January 2025",
-   "context": "",
-   "caution": "Preprint, not peer-reviewed. “imagine,” “imagination” and “dreaming” do not appear anywhere in the Cosmos material examined; the term used is “digital twin.”",
    "theme": "world-models-industry"
   },
   {
@@ -699,8 +566,6 @@
    "work": "Newton project documentation, github.com/newton-physics/newton",
    "locus": "",
    "date": "2025",
-   "context": "",
-   "caution": "An earlier draft of the report absorbed the connective “emphasising” — the dossier chapter author’s word, outside the quotation marks — into the quotation. Newton was started by Disney Research, Google DeepMind and NVIDIA.",
    "theme": "world-models-industry"
   },
   {
@@ -709,8 +574,6 @@
    "work": "GWM-1 research post, runway.com",
    "locus": "",
    "date": "11 December 2025",
-   "context": "",
-   "caution": "Research-blog copy.",
    "theme": "world-models-industry"
   },
   {
@@ -719,8 +582,6 @@
    "work": "1X World Model page, 1x.tech",
    "locus": "",
    "date": "2025",
-   "context": "",
-   "caution": "Blog copy. The stated use of the 1X world model is evaluation.",
    "theme": "world-models-industry"
   },
   {
@@ -729,8 +590,6 @@
    "work": "π0.5 blog post, pi.website",
    "locus": "",
    "date": "22 April 2025",
-   "context": "Elided text not recovered; the ellipsis is the dossier’s cut, rendered as “…” in the report.",
-   "caution": "Blog copy. The phrase “world model” does not appear in the π0.5 abstract.",
    "theme": "robotics-data"
   },
   {
@@ -739,8 +598,6 @@
    "work": "π0.7, arXiv:2604.15483",
    "locus": "",
    "date": "16 April 2026",
-   "context": "",
-   "caution": "Preprint. Parameter counts and training-data volumes for π0.7 are not disclosed. A search of the π0.7 text for “imagine”/“imagination” returned no matches.",
    "theme": "robotics-data"
   },
   {
@@ -749,8 +606,6 @@
    "work": "“Robots Need More than VLA and World Models,” arXiv:2606.06556",
    "locus": "",
    "date": "4 June 2026",
-   "context": "A shortened span quoted inside the report’s prose, opening at “contain rich information…”",
-   "caution": "Peer-reviewed position paper.",
    "theme": "robotics-data"
   },
   {
@@ -759,8 +614,6 @@
    "work": "DreamerV3, arXiv:2301.04104",
    "locus": "",
    "date": "2023 (Nature version 2025)",
-   "context": "",
-   "caution": "",
    "theme": "world-models-industry"
   }
  ]

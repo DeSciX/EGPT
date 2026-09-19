@@ -23,7 +23,7 @@ listed here.
 
 | Item | Note |
 |---|---|
-| Faltin, Metropolis, Ross and Rota, "A Boolean Analysis of Addition and Multiplication," *Studies in Applied Mathematics* 56 no. 2 (April 1977), 147–158 | Publisher full text still paywalled. The **abstract** is now of record, read verbatim from the Department of Energy OSTI listing (OSTI ID 6234187, DOI 10.1002/sapm1977562147); the capture is held at `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` and the quote is in the corpus at PRIMARY-TEXT-READ. The body of the paper has not been read. |
+| Faltin, Metropolis, Ross and Rota, "A Boolean Analysis of Addition and Multiplication," *Studies in Applied Mathematics* 56 no. 2 (April 1977), 147–158 | Publisher full text still paywalled. The **abstract** is now of record, read verbatim from the Department of Energy OSTI listing (OSTI ID 6234187, DOI 10.1002/sapm1977562147); the capture is held at `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` and the quote is in the corpus. The body of the paper has not been read. |
 | Metropolis and Rota, Significance Arithmetic papers (1973, 1974) | Cited in the bibliography exhibit; full text not mirrored |
 | Metropolis and Rota, "The Real Numbers as a Wreath Product" (1975) | As above |
 | Metropolis and Rota, the two n-cube papers (1978) | As above |
@@ -32,7 +32,7 @@ listed here.
 
 These are in copyright and are cited to the published editions rather than mirrored. Every
 passage the report or the letter draws from them is held verbatim in the corpus at
-`05_CORPUS/`, with speaker, work, printed page, date and verification state, so a reader
+`05_CORPUS/`, with speaker, work, printed page and date, so a reader
 follows the citation to the published book rather than to a scan.
 
 | Item | Where to find it | What is in the corpus |

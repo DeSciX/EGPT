@@ -139,17 +139,17 @@ def render(notes, by_file, by_note, not_held, quotes):
           'These cite works that are not held here and need not be: each note carries its own citation or URL.', '',
           ', '.join(map(str, public)), '',
           '## Quotations in the record backed by a corpus record', '',
-          '`05_CORPUS/` holds each of these with its speaker, locus, verification state and SHA-256. The',
-          'file column is where the text it was read from lives in this collection; where it is blank, the',
-          'text is not reproduced here and the corpus record says where it was read.', '',
-          '| Exhibit | Quotation | Corpus record | Verification | File |', '|---|---|---|---|---|']
+          '`05_CORPUS/` holds each of these with its speaker, work, locus, date and SHA-256. The file',
+          'column is where a copy of the work is held in this collection; where it is blank, the work is',
+          'not held here and the corpus record cites it.', '',
+          '| Exhibit | Quotation | Corpus record | File |', '|---|---|---|---|']
     for ex, q, r in quotes:
         short = (q[:70] + '…') if len(q) > 70 else q
         short = short.replace('|', '\\|')
         f = r['source'].get('file') or ''
         cell = ('the report itself; its endnotes cite the original' if f.startswith(SELF_CITED)
                 else ('`' + f + '`') if f else '')
-        L.append(f'| {ex.split("/")[-1]} | {short} | `{r["id"]}` | {r["verification"]} | {cell} |')
+        L.append(f'| {ex.split("/")[-1]} | {short} | `{r["id"]}` | {cell} |')
     return '\n'.join(L) + '\n'
 
 

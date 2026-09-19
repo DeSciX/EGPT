@@ -7,10 +7,7 @@
    "locus": "pp. 249-250",
    "date": "1976",
    "theme": "secrecy",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Opening of the chapter covering 1957 onward, immediately following ch. 12, \"The Death of Two Pioneers,\" which covers the deaths of Fermi and von Neumann. The chapter's running head is dated 1957-1967.",
-   "caution": "Transcribed by this session from the scanned Scribner 1976 printing held in the repository; the PDF carries no text layer and the text was obtained by Tesseract OCR at 200 dpi and read back against the page images. Printed page numbers taken from the running footers (249), (250). OCR rendered the chapter's running-head date as '1957-1907'; the contents page gives ch. 13 at p. 249 and ch. 14 at p. 266. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -19,10 +16,7 @@
    "locus": "p. 251",
    "date": "1976",
    "theme": "secrecy",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Preceded by Ulam's account of the postwar growth of government science: \"Beginning with Bush and Conant, Oppenheimer, von Neumann, and many others became government 'sages.' Government science peaked and committees proliferated under the Eisenhower, Kennedy, and Johnson administrations, and even I found myself called upon.\"",
-   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'Johnny' is von Neumann. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -31,10 +25,7 @@
    "locus": "p. 251",
    "date": "1976",
    "theme": "secrecy",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Ulam's own statement about administrative work, immediately before his account of being drawn into government committees after von Neumann's death.",
-   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -43,10 +34,7 @@
    "locus": "p. 241",
    "date": "1976",
    "theme": "secrecy",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Preceding sentences: \"During his illness Johnny did not talk to me about his important work on the ICBM Committee; only later I learned that he was Chairman and that it was called the von Neumann Committee. As he grew increasingly ill, some of the meetings were held in his house and later at the Woodner Hotel to which the von Neumanns had moved so as to be closer to Walter Reed Hospital, where he was undergoing treatment.\"",
-   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. OCR rendered 'ICBM' as '[CBM' at the first occurrence; corrected against the page image. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -55,10 +43,7 @@
    "locus": "pp. 241-242",
    "date": "1976",
    "theme": "brain-and-machine",
-   "verification": "PRIMARY-TEXT-READ",
-   "file": "",
-   "context": "Follows Ulam's account of proposing the cellular framework: \"I proposed to him some of my own ideas about automata consisting of cells in a crystal-like arrangement. This model is described in the book edited by Arthur Burks, Cellular Automata, and in Burks's own book on the theory of automata.\"",
-   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. 'his book on the brain' is The Computer and the Brain (Yale, 1958). The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "file": ""
   },
   {
    "speaker": "Stanislaw Ulam",
@@ -67,10 +52,8 @@
    "locus": "p. 250",
    "date": "1976",
    "theme": "secrecy",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "context": "The elision replaces: \"Mark is a Canadian mathematician who came to Los Alamos towards the end of the war with the British Mission. He became an American citizen some years later. He bore the brunt of the difficulties with Teller with remarkable calm and objectivity; he is one of the few mathematicians I know who have an understanding for the problems of physics and associated technology in a broad sense.\"",
-   "caution": "Transcribed by this session from the scanned Scribner 1976 printing by OCR and read back against the page image. Carson Mark is the division leader who invited Metropolis to set up the Los Alamos computing facility. The text this was read from is not reproduced in this collection; the work is cited to its published edition in URLS.md."
+   "context": "Mark is a Canadian mathematician who came to Los Alamos towards the end of the war with the British Mission. He became an American citizen some years later. He bore the brunt of the difficulties with Teller with remarkable calm and objectivity; he is one of the few mathematicians I know who have an understanding for the problems of physics and associated technology in a broad sense."
   }
  ]
 }

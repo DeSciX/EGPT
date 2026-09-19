@@ -7,11 +7,8 @@
    "locus": "chapter XV, epigraph, attributed in the text to “Pudd’nhead Wilson’s New Calendar”",
    "date": "1897",
    "theme": "understanding-and-meaning",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://www.online-literature.com/twain/following-the-equator/15/",
-   "context": "The first of two epigraphs standing together at the head of the chapter; the second follows immediately.",
-   "caution": "Read from an online transcription of the 1897 text via web fetch, which passes page content through an intermediate summarising model; not collated against a printed edition. The transcription renders the dash as a double hyphen; an em dash is used here."
+   "source_url": "https://www.online-literature.com/twain/following-the-equator/15/"
   },
   {
    "speaker": "Mark Twain",
@@ -20,11 +17,8 @@
    "locus": "chapter XV, epigraph, attributed in the text to “Pudd’nhead Wilson’s New Calendar”",
    "date": "1897",
    "theme": "understanding-and-meaning",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "",
-   "source_url": "https://www.online-literature.com/twain/following-the-equator/15/",
-   "context": "The second of two epigraphs standing together at the head of the chapter.",
-   "caution": "Read from an online transcription of the 1897 text via web fetch, which passes page content through an intermediate summarising model; not collated against a printed edition. The transcription renders the dash as a double hyphen."
+   "source_url": "https://www.online-literature.com/twain/following-the-equator/15/"
   }
  ]
 }

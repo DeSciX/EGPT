@@ -7,28 +7,18 @@ the extraction passes that produced it, and a composer for writing new papers ou
       quotes.json        one object, records[], schema egpt.quotes/1
       quotes.jsonl       same records one per line, for RAG ingest
       schema.json        JSON Schema with the field contracts
-      README.md          schema notes, verification states, DeSciX import
-    sources/           the extraction passes, unmerged, for audit
+      README.md          schema notes
+    sources/           the source files the corpus is built from
     composer/          the composer app — open composer.html in a browser
     build_corpus.py    sources/ -> corpus/    (deterministic)
     build_composer.py  corpus/  -> composer/composer.html
 
-## 295 quotations, 66 speakers
+## 296 quotations, 65 speakers
 
-| verification | n | |
-|---|---:|---|
-| `PRIMARY-TEXT-READ` | 256 | the printing itself was read, or the author holds the physical book |
-| `SECONDARY-SOURCE` | 35 | reached through an identified intermediary whose rendering is the text quoted |
-| `PARTIAL` | 4 | read, but part was unreadable or unavailable |
-| `RECONSTRUCTED` | 0 | defined, currently unused: a source file that declares itself a reconstruction — **do not print as a quotation** |
-| `PENDING-VERIFY` | 0 | defined, currently unused: wording circulates and no intermediary is identified |
-
-Every record is a passage someone wrote or said. A search that found nothing is not a record: it
-cannot be quoted and a reader cannot check it against anything. Where a search bears on a passage
-that IS held, it belongs in that record's sourcing note — so the number-theory search lives in the
-*Ten Lessons* record, which also states that the passage is not in the Los Alamos dialogue. One
-record per passage; no pointer rows, no superseded rows, no banners. The corpus is the current state
-of the evidence, not its history.
+Every record is a passage someone wrote or said, and its citation: speaker, work, locus, date, and
+where a copy of the work is held. A search that found nothing is not a record: it cannot be quoted
+and a reader cannot check it against anything. One record per passage; no pointer rows, no
+superseded rows, no banners. The corpus is the current state of the evidence, not its history.
 
 ## One person, one name
 
@@ -48,25 +38,24 @@ of them falls inside it.
 
 ## The discipline
 
-`quote` is verbatim. `restored` holds the words an ellipsis removed, verbatim, or says the elided
-text was not recovered. `sourcing` holds mechanical and sourcing facts only — which printing, what
-OCR damage, whose emphasis, who is actually speaking. None of the three fields carries
-interpretation. What a work argues, proves or extends is for the paper you write, not the corpus.
+`quote` is verbatim. `restored` holds the words an ellipsis removed, verbatim, and nothing else.
+`source.work` is cited the traditional way, and where the words were taken from another work it says
+"quoted in …". A record carries no grade, no account of how its text was obtained and no note: the
+paper that quotes it answers for having read it. What a work argues, proves or extends is for the
+paper you write, not the corpus. The full rules are in `PROVENANCE_DB_ORDERS.md`.
 
 ## The composer
 
 Open `composer/composer.html` in a browser. Nothing to install and nothing to serve — the corpus is
 inlined, so it works from `file://` and offline.
 
-Three panes. **Library** filters 295 quotations by speaker (listed by last name), theme, verification, year
+Three panes. **Library** filters 296 quotations by speaker (listed by last name), theme, year
 range and full text; click one to add it. The year range hides undated quotations while it is set,
 and says so. **Paper** is the document: quotes plus your own headings, prose and holding blocks,
 reordered by drag or by the arrows. **Preview** renders it live and exports a self-contained HTML
 page in the same format as the published artifacts.
 
-Two export switches: restored text on by default, sourcing notes off. Every quote carries its
-verification state into the exported page, so a `RECONSTRUCTED` passage cannot quietly become a
-plain quotation in a finished paper.
+One export switch: restored text, on by default.
 
 ### Editing a quotation
 
@@ -129,8 +118,10 @@ To edit the app, change `composer/head.html`, `body.html`, `app.js` or `paper.cs
 
 ## Adding a source pass
 
-Drop a JSON file in `sources/` shaped `{"entries":[{speaker, quote, work, locus, date, context,
-caution, theme, verification?, file?, source_url?}]}` and run both build scripts. Records are
+Drop a JSON file in `sources/` shaped `{"entries":[{speaker, quote, work, locus, date, context?,
+theme, file?, source_url?}]}` and run both build scripts. `context` is the verbatim words an ellipsis
+cut, and nothing else; an entry carrying `caution`, `note`, `verification` or `sourcing` stops the
+build. Records are
 deduplicated by the sha256 of the normalised quote, so re-extracting the same passage merges rather
 than duplicates.
 
@@ -142,11 +133,10 @@ This is a **published build** of the corpus, not a hand copy. It is generated fr
 JSON in the author's private repository by `publish_corpus.py`, and one field is rewritten in
 the crossing.
 
-`source.file` records the path of the on-disk text a passage was read from. In the private tree
+`source.file` records the path of a copy of the work held in the collection. In the private tree
 that is a path under the working repository, which would mean nothing to a reader here. In this
-copy it is rewritten to the file's path **in this collection**, so it resolves. Where the text is
-not reproduced here — a book in copyright, cited to its published edition instead — the field is
-empty and the record's `sourcing` says so in a sentence.
+copy it is rewritten to the file's path **in this collection**, so it resolves. Where the work is
+not held here — a book in copyright, cited to its published edition instead — the field is empty.
 
-Nothing else is altered. The quotes, speakers, loci, dates, verification states and hashes are
-the authority's own, and `quote_sha256` can be checked against the quote text in either tree.
+Nothing else is altered. The quotes, speakers, works, loci, dates and hashes are the authority's
+own, and `quote_sha256` can be checked against the quote text in either tree.

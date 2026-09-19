@@ -122,9 +122,9 @@ Ulam's memorial. `manuscript_1992/` is the probability manuscript, chapter by ch
 scan and transcription — circulated for decades, never peer-reviewed, which is the point rather
 than an aside. `entropy_theorem/` holds the theorem as excerpted and as written up.
 
-**`05_CORPUS/`** — the quotation corpus, schema `egpt.quotes/1`. Each record carries the
-verbatim quote, its speaker, its locus, a SHA-256, and a verification state:
-`PRIMARY-TEXT-READ`, `SECONDARY-SOURCE`, `PARTIAL`, `PENDING-VERIFY` or `RECONSTRUCTED`. Every
+**`05_CORPUS/`** — the quotation corpus, schema `egpt.quotes/1`. Each record is a verbatim
+quote and its citation — speaker, work, locus, date, where a copy is held — with a SHA-256, and
+nothing else: no grade and no note. `PROVENANCE_DB_ORDERS.md` sets out the rules. Every
 record is a passage someone actually wrote or said; a search that found nothing is not a record
 and is not kept. `composer/composer.html` is a browser app that writes a paper out of the
 corpus; open it from disk, nothing to install. This subtree is a published build of the

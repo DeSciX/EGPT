@@ -3,36 +3,101 @@
   "$id": "egpt.quotes/1",
   "title": "EGPT quotation record",
   "type": "object",
-  "required": ["id","quote","speaker","source","verification","embed_text"],
+  "required": [
+    "id",
+    "quote",
+    "speaker",
+    "source",
+    "embed_text"
+  ],
   "properties": {
-    "id": {"type":"string","description":"Stable slug: q-<speaker>-<work>-<first 8 of quote_sha256>. Regenerating the corpus from unchanged inputs reproduces the same id."},
-    "quote": {"type":"string","description":"VERBATIM. Never paraphrased, never cleaned up. Internal punctuation, spelling and marked ellipses preserved as printed."},
+    "id": {
+      "type": "string",
+      "description": "Stable slug: q-<speaker>-<work>-<first 8 of quote_sha256>. Regenerating the corpus from unchanged inputs reproduces the same id."
+    },
+    "quote": {
+      "type": "string",
+      "description": "VERBATIM. Never paraphrased, never cleaned up. Internal punctuation, spelling and marked ellipses preserved as printed."
+    },
     "speaker": {
-      "type":"object","required":["name","role"],
-      "properties":{
-        "name":{"type":"string"},
-        "role":{"enum":["author","reported","institution"],
-          "description":"author = their own words in their own text; reported = their speech as rendered by someone else; institution = a company, lab or paper speaking corporately."}
+      "type": "object",
+      "required": [
+        "name",
+        "role"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "author",
+            "reported",
+            "institution"
+          ],
+          "description": "author = their own words in their own text; reported = their speech as rendered by someone else; institution = a company, lab or paper speaking corporately."
+        }
       }
     },
     "source": {
-      "type":"object",
-      "properties":{
-        "work":{"type":"string"},
-        "locus":{"type":"string","description":"page, section or paragraph, as the printing gives it"},
-        "date":{"type":"string"},
-        "file":{"type":"string","description":"repo-relative path of the on-disk text this was read from, when read locally"},
-        "url":{"type":"string","description":"public URL of the copy read, when read online"}
+      "type": "object",
+      "properties": {
+        "work": {
+          "type": "string",
+          "description": "The work cited, as a traditional citation gives it. Where the words were taken from another work, that work is named in the traditional form: “quoted in …”."
+        },
+        "locus": {
+          "type": "string",
+          "description": "page, section or paragraph, as the printing gives it"
+        },
+        "date": {
+          "type": "string"
+        },
+        "file": {
+          "type": "string",
+          "description": "Repo-relative path of a copy of the work held in the collection."
+        },
+        "url": {
+          "type": "string",
+          "description": "Public URL of a copy of the work."
+        }
       }
     },
-    "restored": {"type":"string","description":"The words an ellipsis or an unmarked cut removed, verbatim. Empty when nothing was cut. Says so explicitly when the elided text was not recovered. NEVER interpretation."},
-    "sourcing": {"type":"string","description":"Mechanical and sourcing facts ONLY: printing read, secondary-source chains, OCR and ligature repair, spelling variants, whose emphasis, who is actually speaking, divergent printings. NEVER a characterisation of what the work argues, proves or extends; never a ranking of a source's standing; never a claim of influence between authors."},
-    "verification": {"enum":["PRIMARY-TEXT-READ","SECONDARY-SOURCE","PARTIAL","PENDING-VERIFY","RECONSTRUCTED"],
-      "description":"PRIMARY-TEXT-READ = the printing itself was read. SECONDARY-SOURCE = reached through an identified intermediary whose rendering is the text quoted. PARTIAL = read, but a portion was unreadable or unavailable. PENDING-VERIFY = wording is circulating and no intermediary is identified. RECONSTRUCTED = the on-disk text declares itself a reconstruction, not a transcription; DO NOT PRINT AS A QUOTATION. A record with no quote is not a record and is rejected by the build."},
-    "years": {"type":"array","items":{"type":"integer"},"description":"Every four-digit year in the `date` field, and ONLY that field. The `work` field is deliberately excluded because it carries publication, translation and revision years for the printing a passage was read in, which are not the year the thing was said: a 1956 letter read in a 2006 revision of a 1993 translation is a 1956 quotation. A record may carry more than one year when the date itself names more than one — an address and its later printing, say — and matches a range filter if any of them falls inside it."},
-    "themes": {"type":"array","items":{"type":"string"}},
-    "collections": {"type":"array","items":{"type":"string"},"description":"which extraction pass produced it; a record found by more than one pass carries both"},
-    "quote_sha256": {"type":["string","null"],"description":"sha256 of the whitespace-normalised quote. Dedupe and integrity key."},
-    "embed_text": {"type":"string","description":"Concatenation built for vectorisation: speaker | work | locus | date | quote | restored. Regenerate if any component changes."}
-  }
+    "restored": {
+      "type": "string",
+      "description": "The words an ellipsis or an unmarked cut removed, verbatim. Empty when nothing was cut or the cut words are not held. Never commentary."
+    },
+    "years": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "Every four-digit year in the `date` field, and ONLY that field. The `work` field is deliberately excluded because it carries publication, translation and revision years for the printing a passage was read in, which are not the year the thing was said: a 1956 letter read in a 2006 revision of a 1993 translation is a 1956 quotation. A record may carry more than one year when the date itself names more than one — an address and its later printing, say — and matches a range filter if any of them falls inside it."
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "which extraction pass produced it; a record found by more than one pass carries both"
+    },
+    "quote_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "sha256 of the whitespace-normalised quote. Dedupe and integrity key."
+    },
+    "embed_text": {
+      "type": "string",
+      "description": "Concatenation built for vectorisation: speaker | work | locus | date | quote | restored. Regenerate if any component changes."
+    }
+  },
+  "additionalProperties": false
 }

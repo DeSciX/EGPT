@@ -11,7 +11,6 @@ var current = AUTO;                     // name of the draft in the editor
 function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c];});}
 function el(h){var d=document.createElement('div');d.innerHTML=h.trim();return d.firstChild;}
 function byId(id){for(var i=0;i<R.length;i++) if(R[i].id===id) return R[i]; return null;}
-function badV(v){return /RECONSTRUCTED|NOT-FOUND|PENDING-VERIFY/.test(v||'');}
 function nsp(t){return String(t||'').replace(/\s+/g,' ').trim();}
 /* Inline emphasis is allowed in quotations, prose and comments — the traditional
    "emphasis added" convention. Everything is escaped first; only these bare tags,
@@ -60,7 +59,7 @@ function stamp(){ var d=new Date(); return d.toISOString().slice(0,16).replace('
 
 /* ---------- library ---------- */
 var $q=document.getElementById('q'), $sp=document.getElementById('fSpeaker'),
-    $th=document.getElementById('fTheme'), $vf=document.getElementById('fVerif'),
+    $th=document.getElementById('fTheme'),
     $yf=document.getElementById('yFrom'), $yt=document.getElementById('yTo'),
     $list=document.getElementById('list');
 
@@ -73,7 +72,6 @@ spList.sort(function(a,b){ return a.k<b.k?-1:a.k>b.k?1:0; });
 spList.forEach(function(s){ var o=el('<option></option>'); o.value=s.n;
   o.textContent=s.n+'  ('+s.k.split(',')[0]+')'; $sp.appendChild(o); });
 uniq([].concat.apply([],R.map(function(r){return r.themes||[];}))).forEach(function(v){$th.appendChild(el('<option>'+esc(v)+'</option>'));});
-uniq(R.map(function(r){return r.verification;})).forEach(function(v){$vf.appendChild(el('<option>'+esc(v)+'</option>'));});
 
 /* A record matches a year range if ANY year it carries falls inside it.
    Records with no year are shown only when no range is set. */
@@ -92,7 +90,6 @@ function match(r){
   var t=$q.value.trim().toLowerCase();
   if($sp.value && r.speaker.name!==$sp.value) return false;
   if($th.value && (r.themes||[]).indexOf($th.value)<0) return false;
-  if($vf.value && r.verification!==$vf.value) return false;
   if(!inYears(r)) return false;
   if(!t) return true;
   return (r.embed_text||'').toLowerCase().indexOf(t)>=0;
@@ -111,8 +108,7 @@ function renderLib(){
   if(!hits.length){$list.appendChild(el('<p class="empty">Nothing matches. Clear a filter.</p>'));return;}
   hits.slice(0,400).forEach(function(r){
     var n=el('<article class="q'+(inDoc(r.id)?' inDoc':'')+'" tabindex="0"></article>');
-    n.innerHTML='<div class="who">'+esc(r.speaker.name)+
-      '<span class="vf'+(badV(r.verification)?' bad':'')+'">'+esc(r.verification)+'</span></div>'+
+    n.innerHTML='<div class="who">'+esc(r.speaker.name)+'</div>'+
       '<blockquote>“'+esc((r.quote||'(no such passage found)').slice(0,260))+
       (r.quote&&r.quote.length>260?'…':'')+'”</blockquote>'+
       '<div class="meta">'+esc(cite(r))+
@@ -124,7 +120,7 @@ function renderLib(){
   });
   if(hits.length>400) $list.appendChild(el('<p class="empty">Showing the first 400. Narrow the search to see the rest.</p>'));
 }
-[$q,$sp,$th,$vf,$yf,$yt].forEach(function(n){n.addEventListener('input',renderLib);});
+[$q,$sp,$th,$yf,$yt].forEach(function(n){n.addEventListener('input',renderLib);});
 document.getElementById('yClear').addEventListener('click',function(){$yf.value='';$yt.value='';renderLib();});
 
 /* ---------- document ---------- */
@@ -151,7 +147,7 @@ function renderDoc(){
       '<button class="btn sm ins" data-ja="'+i+'" title="Insert new blocks below this one">⊕↓</button>'+
       '<button class="btn sm" data-rm="'+i+'">✕</button></div>';
     if(b.k==='quote'){
-      var r=byId(b.id)||{speaker:{name:'?'},source:{},quote:'(missing record)',verification:''};
+      var r=byId(b.id)||{speaker:{name:'?'},source:{},quote:'(missing record)'};
       var cur=blockText(b), ed=isEdited(b);
       n.innerHTML=head.replace('</div>','')+
         (ed?'<span class="editedTag">EDITED</span>':'')+
@@ -161,8 +157,7 @@ function renderDoc(){
         '<button class="btn sm" data-nt="'+i+'">'+(b.note?'Inline it':'Endnote it')+'</button>'+
         '<button class="btn sm" data-cm="'+i+'">'+(b.cmtOpen?'Close note':'Comment')+'</button></div>'+
         '<div class="qt">“'+rich(cur.slice(0,300))+(cur.length>300?'…':'')+'”</div>'+
-        '<div class="cite">'+esc(r.speaker.name)+' · '+esc(cite(r))+
-        '<span class="vf'+(badV(r.verification)?' bad':'')+'">'+esc(r.verification)+'</span></div>'+
+        '<div class="cite">'+esc(r.speaker.name)+' · '+esc(cite(r))+'</div>'+
         (b.open?
           '<div class="qedit">'+
           '<div class="qtools">'+
@@ -282,8 +277,7 @@ document.querySelectorAll('[data-add]').forEach(function(b){
 
 /* ---------- render ---------- */
 function buildBody(forExport){
-  var wantS=document.getElementById('optSourcing').checked,
-      wantR=document.getElementById('optRestored').checked;
+  var wantR=document.getElementById('optRestored').checked;
   var t=document.getElementById('docTitle').value||'Untitled',
       s=document.getElementById('docSub').value,
       by=document.getElementById('docBy').value;
@@ -317,22 +311,18 @@ function buildBody(forExport){
         o.push('<aside class="aside"><span class="lbl2">'+esc(lab)+'</span>'+paras+'</aside>');
       }
       o.push('</div>');
-      o.push('<p class="src">'+esc(r.speaker.name)+' · '+esc(cite(r))+
-             ' · ['+esc(r.verification)+']</p>');
+      o.push('<p class="src">'+esc(r.speaker.name)+' · '+esc(cite(r))+'</p>');
       if(wantR&&r.restored) o.push('<p class="caut"><b>Restored</b> '+esc(r.restored)+'</p>');
-      if(wantS&&r.sourcing) o.push('<p class="caut"><b>Sourcing</b> '+esc(r.sourcing)+'</p>');
     }
   });
   if(ends.length){
     o.push('<section class="endnotes"><h2>Notes</h2><ol>');
     ends.forEach(function(e){
       var li='<li id="en'+e.n+'"><span class="enq">\u201c'+rich(e.text)+'\u201d</span> '+
-        '<span class="ensrc">'+esc(e.r.speaker.name)+' \u00b7 '+esc(cite(e.r))+
-        ' \u00b7 ['+esc(e.r.verification)+']</span>';
+        '<span class="ensrc">'+esc(e.r.speaker.name)+' \u00b7 '+esc(cite(e.r))+'</span>';
       if(e.cmt){ var lab=e.lab||'Author\u2019s Comment';
         li+='<span class="encmt"><b>'+esc(lab)+'</b> '+rich(e.cmt)+'</span>'; }
       if(wantR&&e.r.restored) li+='<span class="encmt"><b>Restored</b> '+esc(e.r.restored)+'</span>';
-      if(wantS&&e.r.sourcing) li+='<span class="encmt"><b>Sourcing</b> '+esc(e.r.sourcing)+'</span>';
       li+=' <a class="enback" href="#enr'+e.n+'">\u21a9</a></li>';
       o.push(li);
     });
@@ -471,7 +461,6 @@ document.getElementById('restoreFile').addEventListener('change',function(e){
 
 ['docTitle','docSub','docBy'].forEach(function(id){
   document.getElementById(id).addEventListener('input',function(){renderPreview();autosave();});});
-document.getElementById('optSourcing').addEventListener('change',renderPreview);
 document.getElementById('optRestored').addEventListener('change',renderPreview);
 
 var $app=document.getElementById('app'), $full=document.getElementById('btnFull');

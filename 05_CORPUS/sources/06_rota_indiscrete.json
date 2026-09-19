@@ -3,101 +3,85 @@
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "To the theorizer, the supreme achievement of mathematics is a theory that sheds sudden light on some incomprehensible phenomenon. Success in mathematics does not lie in solving problems but in their trivialization. The moment of glory comes with the discovery of a new theory that does not solve any of the old problems but renders them irrelevant.\nThe theorizer is a revolutionary at heart. Mathematical concepts received from the past are regarded as imperfect instances of more general ones yet to be discovered. Mathematical exposition is considered a more difficult undertaking than mathematical research.\nTo the theorizer, the only mathematics that will survive are the definitions. Great definitions are what mathematics contributes to the world. Theorems are tolerated as a necessary evil since they play a supporting role or rather, as the theorizer will reluctantly admit, an essential role in the understanding of definitions.",
-   "work": "Indiscrete Thoughts",
+   "work": "Indiscrete Thoughts, quoted by Alessio Guglielmi (alessio.guglielmi.name)",
    "locus": "Part I, Ch. III (\"Combinatorics, Representation Theory and Invariant Theory: The Story of a Menage a Trois\"), section \"Problem Solvers and Theorizers,\" p. 45 (Birkhauser, 1997 ed.)",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "http://alessio.guglielmi.name/res/pst.html",
-   "note": "Read via a secondary source, not the book itself: Alessio Guglielmi's page reproduces this whole section attributed only to 'Indiscrete Thoughts by Gian-Carlo Rota' with no page number. I independently confirmed the section title 'Problem Solvers and Theorizers' and its page (45) from the book's own table of contents, scanned by the Deutsche Nationalbibliothek (https://d-nb.info/949573302/04, 1997 Birkhauser Boston/Basel/Berlin imprint) — so the text-to-page match is my inference from matching section headings, not a page number printed alongside the quoted text itself. A second, independent secondary source (an OU MathDay slide deck, https://math.ou.edu/~dmccullough/teaching/slides/rota.pdf) reproduces a shorter, differently-worded version of the same passage but explicitly states 'I have simplified his original writing in places,' so I used the fuller Guglielmi version instead and did not rely on the simplified slide wording. This passage answers item 1's theme (new theory/definitions rendering old problems irrelevant) but is NOT from 'The Phenomenology of Mathematical Proof,' 'The Phenomenology of Mathematical Truth,' or 'Ten Lessons' as the prompt guessed — I checked all three of those chapters/essays directly (see other entries) and this quote is not in them; it is from an earlier, non-'Philosophy'-part chapter.",
    "theme": "rota-thought"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "\"What can you prove with exterior algebra that you cannot prove without it?\" Whenever you hear this question raised about some new piece of mathematics, be assured that you are likely to be in the presence of something important. In my time, I have heard it repeated for random variables, Laurent Schwartz' theory of distributions, ideles and Grothendieck's schemes, to mention only a few. A proper retort might be: \"You are right. There is nothing in yesterday's mathematics that could not also be proved without it. Exterior algebra is not meant to prove old facts, it is meant to disclose a new world. Disclosing new worlds is as worthwhile a mathematical enterprise as proving old conjectures.\"",
-   "work": "Indiscrete Thoughts",
+   "work": "Indiscrete Thoughts, quoted in a comment on The n-Category Café",
    "locus": "Part I, Ch. III, section \"Definition and Description in Mathematics,\" p. 48 (Birkhauser, 1997 ed.)",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "https://golem.ph.utexas.edu/category/2007/04/rota_on_combinatorics.html",
-   "note": "Read via a secondary source (a comment on the n-Category Cafe blog), not the book itself. The commenter cites it explicitly as '(Indiscrete Thoughts, 48)', which matches the page I independently found for the section 'Definition and Description in Mathematics' in the book's table of contents (d-nb.info/949573302/04, 1997 Birkhauser ed.) — two independent confirmations of page 48. This is the closest verbatim passage I could locate to the prompt's item 1 (new mathematical objects/definitions superseding the point of old proofs); it is from Part I, not from the Part II 'Phenomenology' essays the prompt suggested as likely locations — I checked those directly and did not find an equally on-point passage there (see the two triviality entries below, which are the closest match within 'The Phenomenology of Mathematical Truth').",
    "theme": "rota-thought"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "Every mathematical theorem is eventually proved trivial. The mathematician's ideal of truth is triviality, and the community of mathematicians will not cease its beaver-like work on a newly discovered result until it has shown to everyone's satisfaction that all difficulties in the early proofs were spurious, and only an analytic triviality is to be found at the end of the road.",
-   "work": "Indiscrete Thoughts",
+   "work": "Indiscrete Thoughts, quoted in Evan Patterson, review of Indiscrete Thoughts (epatters.org)",
    "locus": "Part II, Ch. IX, \"The Phenomenology of Mathematical Truth,\" p. 118 (Birkhauser, 1997 ed.)",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "https://www.epatters.org/post/review-rota-indiscrete-thoughts/",
-   "note": "Read via secondary sources, not the book itself, but cross-confirmed word-for-word by two independent sources that both cite p. 118 of 'The Phenomenology of Mathematical Truth': (1) Evan Patterson's book-review blog, which cites it in academic style as '(Rota 1997a, 118)'; (2) a WordPress post ('On \"trivial\" in mathematics,' https://shreevatsa.wordpress.com/2010/04/03/on-trivial-in-mathematics/), which cites '(p. 118, in The Phenomenology of Mathematical Truth)'. I fetched both pages' raw HTML directly and the quoted text is identical between them. This is the closest verbatim passage I found to the prompt's item 1 theme (old proofs' difficulties being retrospectively dissolved once the result is properly understood), though it speaks of triviality/understanding generally rather than naming 'definitions' specifically.",
    "theme": "rota-thought"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "eventually every mathematical problem is proved trivial. The quest for ultimate triviality is characteristic of the mathematical enterprise.",
    "work": "Indiscrete Thoughts",
-   "locus": "p. 93, essay unspecified by the citing source but falling within Part II, Ch. VII, \"The Pernicious Influence of Mathematics Upon Philosophy\" (pp. 89-103 per the book's table of contents) (Birkhauser, 1997 ed.)",
+   "locus": "p. 93",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
-   "source_url": "https://shreevatsa.wordpress.com/2010/04/03/on-trivial-in-mathematics/",
-   "note": "Read via a secondary source (WordPress blog post), not the book itself; the blog gives only '(p.93)' with no essay title. I matched p. 93 to the chapter range for 'The Pernicious Influence of Mathematics Upon Philosophy' using the book's table of contents (d-nb.info/949573302/04) — the essay attribution is my inference from the page range, not stated by the source.",
-   "theme": "rota-thought"
+   "source_url": "",
+   "theme": "rota-thought",
+   "file": "04_ROTA/Indiscrete Thoughts.md"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "It is an article of faith among mathematicians that after a new theorem is discovered, other simpler proofs of it will be given until a definitive one is found. A cursory inspection of the history of mathematics seems to confirm the mathematician's faith. The first proof of a great many theorems is needlessly complicated. \"Nobody blames a mathematician if the first proof of a new theorem is clumsy\", said Paul Erdos. It takes a long time, from a few decades to centuries, before the facts that are hidden in the first proof are understood, as mathematicians informally say. This gradual bringing out of the significance of a new discovery takes the appearance of a succession of proofs, each one simpler than the preceding. New and simpler versions of a theorem will stop appearing when the facts are finally understood.",
-   "work": "Indiscrete Thoughts",
+   "work": "Indiscrete Thoughts, quoted in “On ‘trivial’ in mathematics” (shreevatsa.wordpress.com)",
    "locus": "Part II, Ch. XI, \"The Phenomenology of Mathematical Proof,\" p. 146, section \"Are there definitive proofs?\" (Birkhauser, 1997 ed.)",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "https://shreevatsa.wordpress.com/2010/04/03/on-trivial-in-mathematics/",
-   "note": "Read via a secondary source (WordPress blog post 'On \"trivial\" in mathematics'), not the book itself, which cites it as '(p.146, in The Phenomenology of Mathematical Proof)'. Diacritic in 'Erdos' rendered without the double-acute accent in the source HTML (encoding artifact); reproduced as found. This is the strongest match I located for item 3 (distinguishing the formal fact of a proof's existence from the historically slower process of the result actually being 'understood') and it is exactly the essay the prompt named as the likely location.",
    "theme": "rota-thought"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "We often hear that mathematics consists mainly of \"proving theorems.\" Is a writer's job mainly that of \"writing sentences?\"",
-   "work": "Indiscrete Thoughts",
-   "locus": "Part III, Ch. XX, \"A Mathematician's Gossip\" (pp. 209-233 per the book's 1997 table of contents); exact page not given by either citing source",
+   "work": "Indiscrete Thoughts, quoted at MacTutor, Gian-Carlo Rota quotations",
+   "locus": "",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "https://mathshistory.st-andrews.ac.uk/Biographies/Rota/quotations/",
-   "note": "Read via secondary sources (quotation pages), not the book itself. Wording confirmed identical across two independent sources fetched directly: the University of St Andrews MacTutor 'Quotations' page (which attributes it simply to 'Indiscrete Thoughts' with no page number) and a Goodreads quote page (same wording, also no page number). Relevant to item 3 (distinguishing the activity of 'proving theorems' from what mathematics actually consists of/means).",
    "theme": "rota-thought"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "If we have no idea why a statement is true, we can still prove it by induction.",
-   "work": "Indiscrete Thoughts",
-   "locus": "Aphorism, likely Part III, Ch. XX, \"A Mathematician's Gossip\" (pp. 209-233 in the 1997 ed.); a secondary source citing the 2009 Modern Birkhauser Classics reprint places nearby aphorisms at pp. 213-214 of that later, differently-paginated edition",
+   "work": "Indiscrete Thoughts, quoted at giancarlorota.org",
+   "locus": "",
    "date": "1997",
-   "verification": "PARTIAL",
    "source_url": "http://www.giancarlorota.org/quotesimages.html",
-   "note": "Read via a secondary source (a Rota quote-collection page hosted by giancarlorota.org), which gives the aphorism with no page number and no essay title. AZQuotes independently attributes nearby 'Mathematician's Gossip' aphorisms to 'Indiscrete Thoughts (2009), p.213' -- the 2009 Modern Birkhauser Classics reprint, whose pagination differs from the 1997 first edition used for the other entries in this file, so I have not asserted a specific page number here. Directly on point for item 3 (a proof, e.g. by induction, can establish that a statement is true without conveying why -- proof without understanding).",
    "theme": "rota-thought"
   },
   {
    "speaker": "Gian-Carlo Rota",
    "quote": "A common error of judgment among mathematicians is the confusion between telling the truth and giving a logically correct presentation. The two objectives are antithetical and hard to reconcile... The truth of any piece of mathematical writing consists of realizing what the author is \"up to\"; it is the tradition of mathematics to do whatever it takes to avoid giving away this secret.",
-   "work": "Indiscrete Thoughts",
+   "work": "Indiscrete Thoughts, quoted in Evan Patterson, review of Indiscrete Thoughts (epatters.org)",
    "locus": "Part III, Ch. XX, \"A Mathematician's Gossip,\" p. 215 (Birkhauser, 1997 ed.)",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "https://www.epatters.org/post/review-rota-indiscrete-thoughts/",
-   "note": "Read via a secondary source (Evan Patterson's book-review blog), which cites it as '(Rota 1997a, 215)'; the ellipsis is in the blog's own rendering of the aphorism, so I cannot confirm whether text was elided from the original at that point. Relevant to item 3 as an aphorism distinguishing 'truth'/understanding from formally correct presentation (a cousin of proof-vs-evidence, though not exactly proof-vs-evidence).",
    "theme": "rota-thought"
   },
   {
-   "speaker": "Robert Sokolowski (in his Foreword to Indiscrete Thoughts) -- NOT a direct quotation of Rota",
+   "speaker": "Robert Sokolowski",
    "quote": "Rota shows that such proof is only secondary and derivative. It is not the primary instance of truth. More basic than proof is evidence, which is the self-presentation of a given mathematical object or fact. We can know that some things are true, and we can even know that they must be true, before we have found axiomatic proofs to manifest that truth. We know more than we can prove.",
-   "work": "Indiscrete Thoughts (Foreword by Robert Sokolowski)",
-   "locus": "Foreword, unpaginated in the source consulted",
+   "work": "Indiscrete Thoughts, Foreword by Robert Sokolowski",
+   "locus": "p. xiv",
    "date": "1997",
-   "verification": "SECONDARY-SOURCE",
    "source_url": "https://www.cut-the-knot.org/books/indiscrete/foreword2.shtml",
-   "note": "This is Sokolowski's own prose in his Foreword, summarizing/characterizing Rota's argument in the book -- it is NOT presented in quotation marks in the source and is not attributed as a direct quotation of Rota anywhere on the page. I am flagging it because it is almost certainly the origin of the 'we know more than we can prove' phrasing associated with this book, but it should not be reported as Rota's own sentence. I could not locate this sentence, or an equivalent one, spoken by Rota himself in the body text (Part II, 'The Phenomenology of Mathematical Truth' or 'The Primacy of Identity') via any source available to me. See the following NOT-FOUND entry for the item this was meant to source.",
-   "theme": "rota-thought"
+   "theme": "rota-thought",
+   "file": "04_ROTA/Indiscrete Thoughts.md"
   }
  ]
 }

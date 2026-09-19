@@ -42,108 +42,108 @@ These cite works that are not held here and need not be: each note carries its o
 
 ## Quotations in the record backed by a corpus record
 
-`05_CORPUS/` holds each of these with its speaker, locus, verification state and SHA-256. The
-file column is where the text it was read from lives in this collection; where it is blank, the
-text is not reproduced here and the corpus record says where it was read.
+`05_CORPUS/` holds each of these with its speaker, work, locus, date and SHA-256. The file
+column is where a copy of the work is held in this collection; where it is blank, the work is
+not held here and the corpus record cites it.
 
-| Exhibit | Quotation | Corpus record | Verification | File |
-|---|---|---|---|---|
-| EXHIBIT_A_report.md | it was toward the end of his life that he felt sure enough of himself … | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | It is very plausible, indeed, that the underlying mechanism of the ner… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | the rejuvenating return to the source: the re-injection of more or les… | `q-john-von-neumann-the-mathematician-70e7f946` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-b7e03f05` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | discontinued all commitments with the exception of the chairmanship of… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
-| EXHIBIT_A_report.md | When von Neumann tragically died, the snobs took their revenge and got… | `q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee` | SECONDARY-SOURCE |  |
-| EXHIBIT_A_report.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | A few years before Johnny’s death and increasingly so after, as a resu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-f386aecf` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | Until then I had always resisted being drawn into any kind of organiza… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-b628ad17` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | I was in charge of the research on computers and designed a computer. | `q-nicholas-metropoli-nicholas-metropolis--42a210d2` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | in some circles I became regarded as Teller’s opponent, and I suspect … | `q-stanislaw-ulam-stanislaw-m-ulam-adv-f386aecf` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | I went twice to Chicago, once in ’46 and then another time in late ’57… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | During his illness Johnny did not talk to me about his important work … | `q-stanislaw-ulam-stanislaw-m-ulam-adv-2b6f5d39` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | It is evident that Johnny’s ideas on a future theory of automata and o… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | was an example of intelligent management of a scientific group without… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-96fd445a` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–, | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` | SECONDARY-SOURCE | the report itself; its endnotes cite the original |
-| EXHIBIT_A_report.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-3cfbdf16` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | My personal opinion, which is shared by many others, is, that Gödel ha… | `q-john-von-neumann-the-mathematician-9aedde2b` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | A system of mathematics which was free of these undesirable traits, ‘i… | `q-john-von-neumann-the-mathematician-b7e03f05` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | I think that it constitutes the best caution against taking the immova… | `q-john-von-neumann-the-mathematician-f7bc9b22` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | I absolutely disagree with your view on the formalizability of intuiti… | `q-john-von-neumann-letter-to-kurt-godel-74e2e82d` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
-| EXHIBIT_A_report.md | Clearly I cannot prove that every intuitionistically correct construct… | `q-john-von-neumann-letter-to-kurt-godel-c728d551` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
-| EXHIBIT_A_report.md | As a mathematical discipline travels far from its empirical source, or… | `q-john-von-neumann-the-mathematician-adac7864` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| EXHIBIT_A_report.md | Just as languages like Greek or Sanskrit are historical facts and not … | `q-john-von-neumann-the-computer-and-the-34dc857a` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | whatever language the central nervous system is using, it is character… | `q-john-von-neumann-the-computer-and-the-34dc857a` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | must be quite different from languages in the usual sense. It may, for… | `q-stanislaw-ulam-science-computers-an-d4826ff8` | PRIMARY-TEXT-READ | `03_ULAM/Science Computers And People.md` |
-| EXHIBIT_A_report.md | It should be perhaps desirable, to have operators X, Y, Z which have d… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
-| EXHIBIT_A_report.md | beginning about 1938, von Neumann felt that the new facts and problems… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | Somehow he seemed the embodiment of wisdom. (Wisdom, perhaps not geniu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-61ddbbfa` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | Departing from his usual caution about expressing opinions about other… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | an iconoclastic statement, since so many physicists are still under th… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | No, I didn’t succeed to my satisfaction in giving a really rational in… | `q-enrico-fermi-quoted-in-stanislaw--d8ddc35d` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | no business being that good. | `q-enrico-fermi-quoted-in-stanislaw--bb1927b6` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | This concept was suggested to von Neumann by S. M. Ulam. | `q-arthur-w-burks-von-neumanns-self-re-d898c4c0` | SECONDARY-SOURCE |  |
-| EXHIBIT_A_report.md | start with axioms whose validity they don’t question, | `q-stanislaw-ulam-physics-for-mathemat-8801f671` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | in physics the situation is inverse. Given a lot of facts, let’s call … | `q-stanislaw-ulam-physics-for-mathemat-8801f671` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | We have seen how this leads to a lower level of arithmetical precision… | `q-john-von-neumann-the-computer-and-the-a4765fe0` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | the underlying mechanism of the nervous system may be best, although s… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | we do not know at this moment to what extent coded messages are used i… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | a combinatorial theory of automata and organisms. | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | prove that essentially all the interesting distributions we have seen … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | What do we mean by understanding something? | `q-richard-feynman-the-feynman-lectures-374a5b75` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | That probability is closely connected with information should come as … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | The four principal processes of probability theory are all determined … | `q-kenneth-baclawski--introduction-to-prob-413ba930` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | There are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | a dramatic application of the law of large numbers to information theo… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | should be brought into existence for amplitudes and quantum mechanics … | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
-| EXHIBIT_A_report.md | there lurks an even more enticing (and even less rigorous) concept: th… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
-| EXHIBIT_A_report.md | He left Princeton on a leave of absence and discontinued all commitmen… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
-| EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` | SECONDARY-SOURCE | the report itself; its endnotes cite the original |
-| EXHIBIT_A_report.md | determined by maximum entropy. | `q-kenneth-baclawski--introduction-to-prob-413ba930` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | Cellular automata theory, which he proposed to von Neumann; the Monte … | `q-martin-gardner-preface-to-stanislaw-5bb40637` | SECONDARY-SOURCE |  |
-| EXHIBIT_A_report.md | We still do not know — it remains a government secret — what jumped in… | `q-martin-gardner-preface-to-stanislaw-9d931b66` | SECONDARY-SOURCE |  |
-| EXHIBIT_A_report.md | One conversation centered on the ever accelerating progress of technol… | `q-stanislaw-ulam-john-von-neumann-190-a3511ae4` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | In the next section we give a dramatic application of the law of large… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | In order to speak of the entropy of the phenomenon represented by a ra… | `q-gian-carlo-rota-introduction-to-prob-11b215bb` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| EXHIBIT_A_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` | PRIMARY-TEXT-READ |  |
-| EXHIBIT_A_report.md | Aber es steht doch fest, dass keine einzige solche Konstruktion der ge… | `q-john-von-neumann-letter-to-kurt-godel-920a6921` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
-| OPENING_STATEMENT.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-3cfbdf16` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| OPENING_STATEMENT.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-b7e03f05` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| OPENING_STATEMENT.md | Gödel has shown that Hilbert’s program is essentially hopeless. | `q-john-von-neumann-the-mathematician-9aedde2b` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| OPENING_STATEMENT.md | I absolutely disagree with your view on the formalizability of intuiti… | `q-john-von-neumann-letter-to-kurt-godel-74e2e82d` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
-| OPENING_STATEMENT.md | is it not a fact, that not a single construction of the kind mentioned… | `q-john-von-neumann-letter-to-kurt-godel-c728d551` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
-| OPENING_STATEMENT.md | may be best, although somewhat loosely, described as an analogical mec… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | After the end of the war, he would express sentiments, somewhat simila… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | as a philosophical guideline, complementarity is essentially negative.… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-080145a7` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | One of the most striking is his proposal for the reconstruction of the… | `q-gian-carlo-rota-indiscrete-thoughts--3c795ac9` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | When von Neumann tragically died, the snobs took their revenge and got… | `q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee` | SECONDARY-SOURCE |  |
-| OPENING_STATEMENT.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | I arrived in Chicago when Sputnik was —— October 4, 1957 is the date o… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | Los Alamos Scientific Laboratory, 1966–. | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` | SECONDARY-SOURCE | the report itself; its endnotes cite the original |
-| OPENING_STATEMENT.md | The examination of carry propagation which arises in the Boolean analy… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | PRIMARY-TEXT-READ | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
-| OPENING_STATEMENT.md | quantum mechanics is the imaginary square root of probability theory. | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
-| OPENING_STATEMENT.md | A concept similar to that of a sample space should be brought into exi… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | PRIMARY-TEXT-READ | `04_ROTA/Indiscrete Thoughts.md` |
-| OPENING_STATEMENT.md | The Shannon Coding Theorem | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| OPENING_STATEMENT.md | essentially all the interesting distributions we have seen in probabil… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| OPENING_STATEMENT.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| OPENING_STATEMENT.md | a dramatic application of the law of large numbers. | `q-gian-carlo-rota-introduction-to-prob-864507c1` | PRIMARY-TEXT-READ | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
-| OPENING_STATEMENT.md | a reality in space and time without phantom actions over distances | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | not probabilities, but conceived facts, as one took for granted only a… | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | my little finger as a witness, which cannot claim any authority to be … | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | our younger colleagues interpret this as a consequence of senility. | `q-albert-einstein-letter-to-max-born-7-2712552f` | SECONDARY-SOURCE |  |
-| OPENING_STATEMENT.md | nothing remains of my entire castle in the air, gravitation theory inc… | `q-albert-einstein-bob-doyle-my-god-he--19a0d646` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | we are not at all interested in semantics or the meaning implications … | `q-claude-e-shannon-the-redundancy-of-en-b993b1ec` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | his colleagues' memories of casual conversations. | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | on the field concept, i.e., on continuous structures, | `q-albert-einstein-bob-doyle-my-god-he--19a0d646` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | avoid the continuum (together with space and time) altogether. | `q-albert-einstein-bob-doyle-my-god-he--3f9177ff` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | discrete (point) spectra, in order to avoid the difficulties connected… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
-| OPENING_STATEMENT.md | the existence of the electron. | `q-john-von-neumann-the-mathematician-3cfbdf16` | PRIMARY-TEXT-READ | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
-| OPENING_STATEMENT.md | somewhat similar to remarks reportedly made by Einstein | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | he discussed this idea with von Neumann, | `q-nicholas-metropoli-the-beginning-of-the-f151c7e0` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | Just as languages like Greek or Sanskrit are historical facts and not … | `q-john-von-neumann-the-computer-and-the-34dc857a` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | whatever language the central nervous system is using, it is character… | `q-john-von-neumann-the-computer-and-the-34dc857a` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | when we talk mathematics, we may be discussing a secondary language, b… | `q-john-von-neumann-the-computer-and-the-9cc7e4de` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | his proposal for the reconstruction of the CGS system on the basis of … | `q-gian-carlo-rota-indiscrete-thoughts--3c795ac9` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | may lead to a new interpretation of the notion of computational comple… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | PRIMARY-TEXT-READ | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
-| OPENING_STATEMENT.md | a combinatorial theory of automata and organisms, | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` | PRIMARY-TEXT-READ |  |
-| OPENING_STATEMENT.md | one of his motives for pressing for the development of electronic comp… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` | PRIMARY-TEXT-READ |  |
+| Exhibit | Quotation | Corpus record | File |
+|---|---|---|---|
+| EXHIBIT_A_report.md | it was toward the end of his life that he felt sure enough of himself … | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` |  |
+| EXHIBIT_A_report.md | It is very plausible, indeed, that the underlying mechanism of the ner… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` |  |
+| EXHIBIT_A_report.md | the rejuvenating return to the source: the re-injection of more or les… | `q-john-von-neumann-the-mathematician-in-70e7f946` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-in-b7e03f05` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | discontinued all commitments with the exception of the chairmanship of… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
+| EXHIBIT_A_report.md | When von Neumann tragically died, the snobs took their revenge and got… | `q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee` |  |
+| EXHIBIT_A_report.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` |  |
+| EXHIBIT_A_report.md | A few years before Johnny’s death and increasingly so after, as a resu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-f386aecf` |  |
+| EXHIBIT_A_report.md | Until then I had always resisted being drawn into any kind of organiza… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-b628ad17` |  |
+| EXHIBIT_A_report.md | I was in charge of the research on computers and designed a computer. | `q-nicholas-metropoli-nicholas-metropolis--42a210d2` |  |
+| EXHIBIT_A_report.md | in some circles I became regarded as Teller’s opponent, and I suspect … | `q-stanislaw-ulam-stanislaw-m-ulam-adv-f386aecf` |  |
+| EXHIBIT_A_report.md | I went twice to Chicago, once in ’46 and then another time in late ’57… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` |  |
+| EXHIBIT_A_report.md | During his illness Johnny did not talk to me about his important work … | `q-stanislaw-ulam-stanislaw-m-ulam-adv-2b6f5d39` |  |
+| EXHIBIT_A_report.md | It is evident that Johnny’s ideas on a future theory of automata and o… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` |  |
+| EXHIBIT_A_report.md | was an example of intelligent management of a scientific group without… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-96fd445a` |  |
+| EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–, | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| EXHIBIT_A_report.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | My personal opinion, which is shared by many others, is, that Gödel ha… | `q-john-von-neumann-the-mathematician-in-9aedde2b` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | A system of mathematics which was free of these undesirable traits, ‘i… | `q-john-von-neumann-the-mathematician-in-b7e03f05` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | I think that it constitutes the best caution against taking the immova… | `q-john-von-neumann-the-mathematician-in-f7bc9b22` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | I absolutely disagree with your view on the formalizability of intuiti… | `q-john-von-neumann-letter-to-kurt-godel-74e2e82d` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
+| EXHIBIT_A_report.md | Clearly I cannot prove that every intuitionistically correct construct… | `q-john-von-neumann-letter-to-kurt-godel-c728d551` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
+| EXHIBIT_A_report.md | As a mathematical discipline travels far from its empirical source, or… | `q-john-von-neumann-the-mathematician-in-adac7864` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| EXHIBIT_A_report.md | Just as languages like Greek or Sanskrit are historical facts and not … | `q-john-von-neumann-the-computer-and-the-34dc857a` |  |
+| EXHIBIT_A_report.md | whatever language the central nervous system is using, it is character… | `q-john-von-neumann-the-computer-and-the-34dc857a` |  |
+| EXHIBIT_A_report.md | must be quite different from languages in the usual sense. It may, for… | `q-stanislaw-ulam-science-computers-an-d4826ff8` | `03_ULAM/Science Computers And People.md` |
+| EXHIBIT_A_report.md | It should be perhaps desirable, to have operators X, Y, Z which have d… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
+| EXHIBIT_A_report.md | beginning about 1938, von Neumann felt that the new facts and problems… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` |  |
+| EXHIBIT_A_report.md | Somehow he seemed the embodiment of wisdom. (Wisdom, perhaps not geniu… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-61ddbbfa` |  |
+| EXHIBIT_A_report.md | Departing from his usual caution about expressing opinions about other… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` |  |
+| EXHIBIT_A_report.md | an iconoclastic statement, since so many physicists are still under th… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` |  |
+| EXHIBIT_A_report.md | No, I didn’t succeed to my satisfaction in giving a really rational in… | `q-enrico-fermi-quoted-in-stanislaw--d8ddc35d` |  |
+| EXHIBIT_A_report.md | no business being that good. | `q-enrico-fermi-quoted-in-stanislaw--bb1927b6` |  |
+| EXHIBIT_A_report.md | This concept was suggested to von Neumann by S. M. Ulam. | `q-arthur-w-burks-von-neumanns-self-re-d898c4c0` |  |
+| EXHIBIT_A_report.md | start with axioms whose validity they don’t question, | `q-stanislaw-ulam-physics-for-mathemat-8801f671` |  |
+| EXHIBIT_A_report.md | in physics the situation is inverse. Given a lot of facts, let’s call … | `q-stanislaw-ulam-physics-for-mathemat-8801f671` |  |
+| EXHIBIT_A_report.md | We have seen how this leads to a lower level of arithmetical precision… | `q-john-von-neumann-the-computer-and-the-a4765fe0` |  |
+| EXHIBIT_A_report.md | the underlying mechanism of the nervous system may be best, although s… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` |  |
+| EXHIBIT_A_report.md | we do not know at this moment to what extent coded messages are used i… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` |  |
+| EXHIBIT_A_report.md | a combinatorial theory of automata and organisms. | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` |  |
+| EXHIBIT_A_report.md | prove that essentially all the interesting distributions we have seen … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | What do we mean by understanding something? | `q-richard-feynman-the-feynman-lectures-374a5b75` |  |
+| EXHIBIT_A_report.md | That probability is closely connected with information should come as … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | The four principal processes of probability theory are all determined … | `q-kenneth-baclawski--introduction-to-prob-413ba930` |  |
+| EXHIBIT_A_report.md | There are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | a dramatic application of the law of large numbers to information theo… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | should be brought into existence for amplitudes and quantum mechanics … | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
+| EXHIBIT_A_report.md | there lurks an even more enticing (and even less rigorous) concept: th… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
+| EXHIBIT_A_report.md | He left Princeton on a leave of absence and discontinued all commitmen… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
+| EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| EXHIBIT_A_report.md | determined by maximum entropy. | `q-kenneth-baclawski--introduction-to-prob-413ba930` |  |
+| EXHIBIT_A_report.md | Cellular automata theory, which he proposed to von Neumann; the Monte … | `q-martin-gardner-preface-to-stanislaw-5bb40637` |  |
+| EXHIBIT_A_report.md | We still do not know — it remains a government secret — what jumped in… | `q-martin-gardner-preface-to-stanislaw-9d931b66` |  |
+| EXHIBIT_A_report.md | One conversation centered on the ever accelerating progress of technol… | `q-stanislaw-ulam-john-von-neumann-190-a3511ae4` |  |
+| EXHIBIT_A_report.md | In the next section we give a dramatic application of the law of large… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | In order to speak of the entropy of the phenomenon represented by a ra… | `q-gian-carlo-rota-introduction-to-prob-11b215bb` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| EXHIBIT_A_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` |  |
+| EXHIBIT_A_report.md | Aber es steht doch fest, dass keine einzige solche Konstruktion der ge… | `q-john-von-neumann-letter-to-kurt-godel-920a6921` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
+| OPENING_STATEMENT.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| OPENING_STATEMENT.md | a good fifty per cent of modern mathematics, in its most vital — and u… | `q-john-von-neumann-the-mathematician-in-b7e03f05` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| OPENING_STATEMENT.md | Gödel has shown that Hilbert’s program is essentially hopeless. | `q-john-von-neumann-the-mathematician-in-9aedde2b` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| OPENING_STATEMENT.md | I absolutely disagree with your view on the formalizability of intuiti… | `q-john-von-neumann-letter-to-kurt-godel-74e2e82d` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
+| OPENING_STATEMENT.md | is it not a fact, that not a single construction of the kind mentioned… | `q-john-von-neumann-letter-to-kurt-godel-c728d551` | `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md` |
+| OPENING_STATEMENT.md | may be best, although somewhat loosely, described as an analogical mec… | `q-john-von-neumann-cybernetics-the-macy-4a1e132b` |  |
+| OPENING_STATEMENT.md | After the end of the war, he would express sentiments, somewhat simila… | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` |  |
+| OPENING_STATEMENT.md | as a philosophical guideline, complementarity is essentially negative.… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-080145a7` |  |
+| OPENING_STATEMENT.md | One of the most striking is his proposal for the reconstruction of the… | `q-gian-carlo-rota-indiscrete-thoughts--3c795ac9` | `04_ROTA/Indiscrete Thoughts.md` |
+| OPENING_STATEMENT.md | When von Neumann tragically died, the snobs took their revenge and got… | `q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee` |  |
+| OPENING_STATEMENT.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` |  |
+| OPENING_STATEMENT.md | I arrived in Chicago when Sputnik was —— October 4, 1957 is the date o… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` |  |
+| OPENING_STATEMENT.md | Los Alamos Scientific Laboratory, 1966–. | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| OPENING_STATEMENT.md | The examination of carry propagation which arises in the Boolean analy… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
+| OPENING_STATEMENT.md | quantum mechanics is the imaginary square root of probability theory. | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
+| OPENING_STATEMENT.md | A concept similar to that of a sample space should be brought into exi… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
+| OPENING_STATEMENT.md | The Shannon Coding Theorem | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| OPENING_STATEMENT.md | essentially all the interesting distributions we have seen in probabil… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| OPENING_STATEMENT.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| OPENING_STATEMENT.md | a dramatic application of the law of large numbers. | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| OPENING_STATEMENT.md | a reality in space and time without phantom actions over distances | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
+| OPENING_STATEMENT.md | not probabilities, but conceived facts, as one took for granted only a… | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
+| OPENING_STATEMENT.md | my little finger as a witness, which cannot claim any authority to be … | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
+| OPENING_STATEMENT.md | our younger colleagues interpret this as a consequence of senility. | `q-albert-einstein-letter-to-max-born-7-2712552f` |  |
+| OPENING_STATEMENT.md | nothing remains of my entire castle in the air, gravitation theory inc… | `q-albert-einstein-bob-doyle-my-god-he--19a0d646` |  |
+| OPENING_STATEMENT.md | we are not at all interested in semantics or the meaning implications … | `q-claude-e-shannon-the-redundancy-of-en-b993b1ec` |  |
+| OPENING_STATEMENT.md | his colleagues' memories of casual conversations. | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` |  |
+| OPENING_STATEMENT.md | on the field concept, i.e., on continuous structures, | `q-albert-einstein-bob-doyle-my-god-he--19a0d646` |  |
+| OPENING_STATEMENT.md | avoid the continuum (together with space and time) altogether. | `q-albert-einstein-bob-doyle-my-god-he--3f9177ff` |  |
+| OPENING_STATEMENT.md | discrete (point) spectra, in order to avoid the difficulties connected… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
+| OPENING_STATEMENT.md | the existence of the electron. | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
+| OPENING_STATEMENT.md | somewhat similar to remarks reportedly made by Einstein | `q-stanislaw-ulam-john-von-neumann-190-8c84d278` |  |
+| OPENING_STATEMENT.md | he discussed this idea with von Neumann, | `q-nicholas-metropoli-the-beginning-of-the-f151c7e0` |  |
+| OPENING_STATEMENT.md | Just as languages like Greek or Sanskrit are historical facts and not … | `q-john-von-neumann-the-computer-and-the-34dc857a` |  |
+| OPENING_STATEMENT.md | whatever language the central nervous system is using, it is character… | `q-john-von-neumann-the-computer-and-the-34dc857a` |  |
+| OPENING_STATEMENT.md | when we talk mathematics, we may be discussing a secondary language, b… | `q-john-von-neumann-the-computer-and-the-9cc7e4de` |  |
+| OPENING_STATEMENT.md | his proposal for the reconstruction of the CGS system on the basis of … | `q-gian-carlo-rota-indiscrete-thoughts--3c795ac9` | `04_ROTA/Indiscrete Thoughts.md` |
+| OPENING_STATEMENT.md | may lead to a new interpretation of the notion of computational comple… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
+| OPENING_STATEMENT.md | a combinatorial theory of automata and organisms, | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` |  |
+| OPENING_STATEMENT.md | one of his motives for pressing for the development of electronic comp… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` |  |

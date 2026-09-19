@@ -7,11 +7,8 @@
    "locus": "Abstract. DOI 10.1002/sapm1977562147; OSTI ID 6234187",
    "date": "1977",
    "theme": "machines",
-   "verification": "PRIMARY-TEXT-READ",
    "file": "04_ROTA/Boolean_Analysis_1977_OSTI_record.png",
-   "source_url": "https://www.osti.gov/biblio/6234187",
-   "context": "This is the last paper Rota published on binary representation and computational complexity but one pair — the two n-cube papers of 1978 — and the abstract states the programme in its own terms. All four authors are named on the OSTI record; Metropolis is the Los Alamos connection. OSTI lists it as a Journal Article, 01 January 1977, Stud. Appl. Math. (United States).",
-   "caution": "Abstract read from the U.S. Department of Energy Office of Scientific and Technical Information record (OSTI.GOV), captured as a screenshot 2026-09-14. The Wiley full text is paywalled (HTTP 403) and no mirror was located, so the body of the paper has not been read — only the abstract is at PRIMARY-TEXT-READ. Earlier work on this corpus recorded the abstract as NOT-FOUND; this entry supersedes that."
+   "source_url": "https://www.osti.gov/biblio/6234187"
   }
  ]
 }
