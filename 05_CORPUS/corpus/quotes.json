@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 297,
+ "count": 301,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -6276,6 +6276,122 @@
    ],
    "quote_sha256": "b628ad1771032815c8f7b0f2d4e68c3b064abc6c53c4a433369177ee9e0a769f",
    "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner's Sons, 1976), ch. 13, \"Government Science\" | p. 251 | 1976 | Until then I had always resisted being drawn into any kind of organizational position; for years I could claim that my only administrative job had been on the Wine Tasting Committee of the Society of Fellows back in my early Harvard days."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-10c28d84",
+   "quote": "Then half seriously I raised the question whether in a thousand years so much progress will be made that it may be possible to reconstruct people who had lived earlier by tracing the genes of the descendants, collecting all the characteristics that make up a person and reconstructing them physically. Fermi agreed, but he added: “How about the memory? How will they put back in the brain all the memories which are the makeup of any given individual?”",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 236",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "brain-and-machine"
+   ],
+   "collections": [
+    "adventures_two_pioneers"
+   ],
+   "quote_sha256": "10c28d84977e53567af826fa1593cd1f3b629ae79f0bae0a3c57d6a80ff15d75",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 236 | 1976 | Then half seriously I raised the question whether in a thousand years so much progress will be made that it may be possible to reconstruct people who had lived earlier by tracing the genes of the descendants, collecting all the characteristics that make up a person and reconstructing them physically. Fermi agreed, but he added: “How about the memory? How will they put back in the brain all the memories which are the makeup of any given individual?”"
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-58cc1125",
+   "quote": "On the same visit I went by mistake to the opposite corner of the hospital but on the same floor, and walked into an antechamber where two military men were sitting. They looked at me in surprise and questioningly. I said I was there to visit a friend and their look turned incredulous. When I added, “Dr. von Neumann,” they smiled and directed me to the proper rooms. I had entered the Presidential Suite where President Eisenhower at that moment was hospitalized after his heart attack. I told this to Johnny when I regained his room. He enjoyed this. It amused him to be in a location symmetrically opposite to that of the President of the United States.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 243",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "adventures_two_pioneers"
+   ],
+   "quote_sha256": "58cc112520e268ac9150d2c93e649be80d7afc41c838cb25a180cdfc19633166",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 243 | 1976 | On the same visit I went by mistake to the opposite corner of the hospital but on the same floor, and walked into an antechamber where two military men were sitting. They looked at me in surprise and questioningly. I said I was there to visit a friend and their look turned incredulous. When I added, “Dr. von Neumann,” they smiled and directed me to the proper rooms. I had entered the Presidential Suite where President Eisenhower at that moment was hospitalized after his heart attack. I told this to Johnny when I regained his room. He enjoyed this. It amused him to be in a location symmetrically opposite to that of the President of the United States."
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-9a15b73b",
+   "quote": "As for myself, I was never greatly impressed by his work on Hilbert space or on continuous geometry. This is a question of taste, and when I was more of a purist myself I made good-natured fun of certain of his involvements in applications. I told him once, “When it comes to the applications of mathematics to dentistry, maybe you’ll stop.”",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 245",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "physics-and-continuum"
+   ],
+   "collections": [
+    "adventures_two_pioneers"
+   ],
+   "quote_sha256": "9a15b73bd70f5cdb34d0841086a007080a2294baa58a1de8403bbc0c2b74a933",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 245 | 1976 | As for myself, I was never greatly impressed by his work on Hilbert space or on continuous geometry. This is a question of taste, and when I was more of a purist myself I made good-natured fun of certain of his involvements in applications. I told him once, “When it comes to the applications of mathematics to dentistry, maybe you’ll stop.”"
+  },
+  {
+   "id": "q-stanislaw-ulam-stanislaw-m-ulam-adv-5dcfcb93",
+   "quote": "Now Banach, Fermi, von Neumann were dead—the three great men whose intellects had impressed me the most. These were sad times indeed.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers”",
+    "locus": "p. 245",
+    "date": "1976",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1976
+   ],
+   "themes": [
+    "physics-and-continuum"
+   ],
+   "collections": [
+    "adventures_two_pioneers"
+   ],
+   "quote_sha256": "5dcfcb93271851cc45bcbe3692085ae0b8bfec847d1f33ac34afa7b8b53b7d0d",
+   "embed_text": "Stanislaw Ulam | Stanislaw M. Ulam, Adventures of a Mathematician (New York: Charles Scribner’s Sons, 1976), ch. 12, “The Death of Two Pioneers” | p. 245 | 1976 | Now Banach, Fermi, von Neumann were dead—the three great men whose intellects had impressed me the most. These were sad times indeed."
   },
   {
    "id": "q-stanislaw-ulam-ulam-and-rota-discus-f8653863",
