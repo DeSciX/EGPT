@@ -33,10 +33,13 @@ Also in that thread, on the public record:
   NPSPACE by renaming some of your axioms (This is false btw, which is my point; you can write
   false statements like this)"* — subsequently corrected by Henrik Böving, and Srinivas
   acknowledged the error (*"some combination of brain misfire and sleep deprivation"*).
-- An unattributed message discussing the author in the third person as "OP": *"I can believe
-  that OP is honest but I don't see … within the reach, but OP is unwilling to do it, mentioning
-  Principia"*; and, separately, the observation that community caution is *"euphemistic for
-  'people will think you are a crank'"*.
+- A participant posting under the handle "suhr", 6:00 AM, discussing the author in the third
+  person as "OP": *"I care about two things: Whether a person is honest[,] Whether a person is
+  willing to work and learn. In the case of this thread, I can believe that OP is honest but I
+  don't see willingness to work: formalizing the statement of the P vs NP problem is within the
+  reach, but OP is unwilling to do it, mentioning Principia Mathematica as an excuse."*; and,
+  separately, the observation that community caution is *"euphemistic for 'people will think you
+  are a crank'"*.
 
 **2025-08-12/13 · the second thread and the DM.** A mathlib4 thread, "Rota's Entropy Theorem And
 Feeback Before A PR", opened 5:33 PM: *"I am writing to share the Lean formalized work of the

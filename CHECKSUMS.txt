@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 620 files, 128041788 bytes.
+# 620 files, 128042051 bytes.
 bfa7a14296c5fb9d314b217546cae74e639d04e7a53b6facf2cea33094154b20  00_OUTPUTS/AI_Agents_Meaning_and_Obedient_Risk_Summary.docx
 4a4672eddb5d38f9b50e66ce86b35781fd4ac98ef201ad6522cf694cc8e949c2  00_OUTPUTS/Departure_Not_Complement_Quote_Pack.md
 e01996399ad1d12648ba1cff4159beeb98d841e44197b841cd1c3e8070c383ff  00_OUTPUTS/EGPT_Backstory.md
@@ -143,7 +143,7 @@ c6e403f203feade614330f90e3fd3f49e5dc9c0c6c24b5b2bf4d2471609699c8  06_LEAN_MATHLI
 e664e3d9eca1e8ffd341498bceb4382c03baa4365533ad6402c6734082dcb383  06_LEAN_MATHLIB/mathlib-pr-submissions.md
 5e5de3a0211e761ebaada4a65967cef04446078595b3af2845ae7f1cc452ba0d  06_LEAN_MATHLIB/zulip-2025-08-thread-and-dm-reactions.png
 c2646137aa80243b2074088435c192f3c85aeb320940663c3b407a2de06398b9  06_LEAN_MATHLIB/zulip-account-suspension-2026-04-01.png
-c1f6f22441179eeb6497254c601beebeff3a408d593e11f8561d8ac41ef2a89e  06_LEAN_MATHLIB/zulip-moderation-and-conduct.md
+37f30b3de9a3922e0ee741b2f018d7f829c62e8d2c988215d3420e381b96673a  06_LEAN_MATHLIB/zulip-moderation-and-conduct.md
 a42c5ccd64bf6accc711bd30fa088d251f3e208bd77ea470e4f579738a494fee  07_LETTERS/all-in-letter.md
 8abab747703837adc2a8c7deadf9998c62bde2716c7025350b8064cf9ba474f6  07_LETTERS/all-in-update-letter-decision-to-publish.md
 15062f21e3b54ce4f40f04ecdb21d69768ffc58ec903b42d24e4ffba50d390df  07_LETTERS/realists-vs-morons-quotes.md
