@@ -959,7 +959,7 @@ Early 1980s | Rota helps organize and edit Science Computers and the Information
 
 URLs were checked during research in September 2026. Page references identify the cited document where stable pagination is available. This section favors primary and authoritative sources; later scholarship is included where it supplies archival context or a careful synthesis.
 
-1. Joseph P. S. Kung, “Gian Carlo Rota,” Biographical Memoirs of the National Academy of Sciences, 2016, especially pp. 6–7 on Los Alamos senior fellowship and the classified basis of the NSA medal. https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf
+1. Joseph P. S. Kung, “Gian-Carlo Rota,” Biographical Memoirs of the National Academy of Sciences, 2016, especially pp. 6–7 on Los Alamos senior fellowship and the classified basis of the NSA medal. https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf
 
 2. E. F. Beschler et al., “Gian Carlo Rota 1932–1999,” Notices of the American Mathematical Society 47 no. 2, February 2000. Michael Waterman’s contribution discusses Los Alamos advisory service and classified reports. https://www.ams.org/journals/notices/200002/200002FullIssue.pdf
 
