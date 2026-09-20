@@ -24,11 +24,16 @@ Everything except `maxi-memories/` is mirrored byte-for-byte from the public rep
 | `09_DEBATE/agentic-debate/` | `www/data/agentic-debate/` |
 | `09_DEBATE/maxi-memories/` | the Gods World memory corpus (`memories/` in the godsworld repository) |
 
-Files in that repository's `18.313x/` that are agent prompts and work boards rather than record
-— `CLAUDE.md`, `BACKFILL_INSTRUCTIONS.md`, `BUILD_CROSS_REFERENCE.md`,
+Files in that repository's `18.313x/` that are work boards and build instructions rather than
+record — `CLAUDE.md`, `BACKFILL_INSTRUCTIONS.md`, `BUILD_CROSS_REFERENCE.md`,
 `PRODUCT_FEATURES_PROPOSAL.md`, `tasks/`, `course_materials/BUILD_PROFESSOR_AGENT.md`,
-`course_materials/Class 1/AI_Prompt.md` — are not mirrored. A prompt is an instruction to a
-machine, not a thing that happened.
+`course_materials/Class 1/AI_Prompt.md` — are not mirrored.
+
+**Prompts inside the debate itself are record.** The debate is conducted entirely through prompts:
+the chair asks, the roles answer, and what a role was told is what makes its answer legible. The
+dispatch prompts in `session_transcript/` — including each role's standing instruction — are
+primary evidence of what happened, on the same footing as the replies. That the words occurred is
+a matter of record; what they mean is argued elsewhere and is not annotated here.
 
 ## How to read it
 
