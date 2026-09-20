@@ -103,6 +103,10 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | there lurks an even more enticing (and even less rigorous) concept: th… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
 | EXHIBIT_A_report.md | He left Princeton on a leave of absence and discontinued all commitmen… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| EXHIBIT_A_report.md | theoretical physics is the only profession to have lost free speech be… | `q-eric-weinstein-eric-weinstein-in-er-1a2a896b` |  |
+| EXHIBIT_A_report.md | you have to go back to something called the United States versus Progr… | `q-eric-weinstein-eric-weinstein-in-er-05eb5e24` |  |
+| EXHIBIT_A_report.md | A mistake in ruling against the United States could pave the way for t… | `q-robert-w-warren-united-states-v-the--c31416e0` |  |
+| EXHIBIT_A_report.md | the only reason the government didn’t go after, Howard, what is it, Ho… | `q-eric-weinstein-eric-weinstein-in-er-278ca2f9` |  |
 | EXHIBIT_A_report.md | determined by maximum entropy. | `q-kenneth-baclawski--introduction-to-prob-413ba930` |  |
 | EXHIBIT_A_report.md | Cellular automata theory, which he proposed to von Neumann; the Monte … | `q-martin-gardner-preface-to-stanislaw-5bb40637` |  |
 | EXHIBIT_A_report.md | We still do not know — it remains a government secret — what jumped in… | `q-martin-gardner-preface-to-stanislaw-9d931b66` |  |
