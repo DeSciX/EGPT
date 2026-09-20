@@ -700,20 +700,14 @@ This legal and administrative setting makes continued classified work on weapons
 
 ### The documented concealment mechanism
 
-The concealment mechanism itself is documented in the official history and does not require a modern interpreter. Henry DeWolf Smyth’s Atomic Energy for Military Purposes records that the National Research Council’s Reference Committee, chaired by Gregory Breit, controlled publication policy in fields of possible military interest, and that journal editors referred doubtful papers to it for review. That is the historical signature the present analysis relies on: a government may remove a technical field from ordinary publication while leaving its personnel publicly visible as professors. The expected evidentiary trace is then indirect — anomalous concentrations of specialists, redirected or absent publication, institutional access, and patterns that visible academic careers do not explain. Smyth establishes the mechanism. What the mechanism still does to a working physicist is set out in the following section, in the words of one.
+The concealment mechanism itself is documented in the official history and does not require a modern interpreter. Henry DeWolf Smyth’s Atomic Energy for Military Purposes records that the National Research Council’s Reference Committee, chaired by Gregory Breit, controlled publication policy in fields of possible military interest, and that journal editors referred doubtful papers to it for review. That is the historical signature the present analysis relies on: a government may remove a technical field from ordinary publication while leaving its personnel publicly visible as professors. The expected evidentiary trace is then indirect — anomalous concentrations of specialists, redirected or absent publication, institutional access, and patterns that visible academic careers do not explain. Smyth establishes the mechanism. The sections that follow record what a physicist subject to the successor regime says about it.
 
 Applied to Rota, the expected signature is present. His open technical collaborations reach binary representation, carry propagation, Boolean algorithms and computational complexity, and they stop. His later visible work moves toward conferences, histories, dialogues and philosophical exposition, while direct evidence simultaneously places his national security work behind classification. The unpublished probability manuscript belongs here too: a four hundred page technical text, taught for two decades, containing a uniqueness theorem for entropy, that never entered the literature at all.
 
 
-### What the regime does to a physicist, stated by one
+### Restricted Data today, in the words of a physicist subject to it
 
-The Reference Committee closed in 1945. The statutory regime that replaced it did not. Eric
-Weinstein, a mathematical physicist, described its present-day operation in an All In interview
-on 26 August 2026. His characterisations are his own and are reproduced as such; they are set out
-here because they state, from inside the profession, what the documentary record of this report
-implies from outside it.
-
-On the constitutional position of his field:
+Eric Weinstein, mathematical physicist, in an All-In interview of 26 August 2026:
 
 > “theoretical physics is the only profession to have lost free speech because of something
 > called restricted data where I am not allowed to put pen to paper to write down a physics
@@ -721,12 +715,7 @@ On the constitutional position of his field:
 > that doesn’t affect, you know, hadrons and nucleons. It’s impossible. So you have this threat,
 > right, that somehow the law, I’m not even protected by the First Amendment.”
 
-That is the operative point for this report. Restricted Data attaches at the moment of creation,
-to anyone, without a classifying act; and the subject matter it covers is not a corner of physics
-but the part on which fundamental physics is done. A physicist working near it has no
-constitutional right to publish what he derives.
-
-On the case that established it, and on whose work was at issue:
+On United States v. The Progressive:
 
 > “you have to go back to something called the United States versus Progressive magazine in which
 > the Teller Ulam design for the thermonuclear weapon was put forward by a publication. And the
@@ -739,70 +728,47 @@ The injunction issued. Judge Robert Warren, 26 March 1979:
 > for us all. In that event, our right to life is extinguished and the right to publish becomes
 > moot.”
 
-And on how the material reached the magazine in the first place — not from a leak but from an
-assembly of declassified pieces:
+On how the material reached the magazine:
 
 > “the only reason the government didn’t go after, Howard, what is it, Howard Morl[and], is that
 > we stupidly declassified all sorts of pieces and shards of this. And he went to the Los Alamos
 > Library, and he pieced it together.”
 
-Three consequences bear on the propositions in this report. First, the secrecy at issue is not
-historical: the statute is live and was enforced by prior restraint within the working lifetimes of
-the men discussed here. Second, it attaches to the work of one of those men by name — the geometry
-the government moved to suppress is identified in these remarks as Ulam’s. Third, the restraint
-operates on *derivation*, not on documents: a physicist who reasons his way to a covered result is
-inside the regime whether or not he has ever seen a classified paper.
+### The same interview, on where such a structure would sit today
 
-### The same physicist, asked where such a structure would sit today
-
-Having described the wartime Reference Committee, Weinstein put the question forward in time:
+After describing the wartime Reference Committee:
 
 > “The question is, did it happen once or more than once? If it happened more than once, the
 > question is, what is the analog of the boys’ school in New Mexico? What is the analog of the
 > white badges? What is the analog of the reference committee?”
 
-His answer names a firm, not a laboratory:
+His answer:
 
 > “If it’s happening, I’ve said that the leading candidate would be Renaissance technologies on
 > Long Island.”
 
-What he then sets out, in his own description, is **the cover story** such an arrangement would
-present — he is voicing it, not asserting it as fact:
+And, in the same passage:
 
 > “The cover story would be, you know, we are so good at trading that we don’t even allow people
 > who know markets into our firm. We only hire people in directly relevant subjects of physics,
 > like particle theorists, like differential geometers, like machine learning experts. And we have
-> a very strange thing that we have a very close relationship with **the Brookhaven National
+> **a very strange thing** that we have **a very close relationship with the Brookhaven National
 > Laboratory**. And by the way, there’s a middling university right next door who happens to be
 > absolutely world class historically in the exact subjects that would be relevant to doing next
 > level physics.”
 
-Pressed by David Friedberg on why nothing has leaked, he withdrew any claim to knowledge, and the
-disclaimer is reproduced here because it governs the weight of everything above it:
+Pressed by David Friedberg on why nothing has leaked:
 
 > “I’m not saying that I know that that’s true. My point was, I tried to be careful.”
 
-**What this report takes from the passage, and what it does not.** It does not take a finding that
-any such programme exists now, or that Brookhaven hosts one; Weinstein disclaims that himself and
-the report adopts no more than he claims. What it takes is narrower and is about the shape of the
-question rather than its answer: a working mathematical physicist, asked where the modern analogue
-of Los Alamos and the Reference Committee would be found, reaches for an institutional ecosystem
-on Long Island in which **Brookhaven National Laboratory is a named node**, and does so
-independently of this report and without reference to Rota.
-
-That is worth setting beside the documentary record below only because the record was assembled
-first and for other reasons.
-
-### The two laboratories, and a consultancy with no visible product
-
-Against that regime, the institutional record of this report has a specific shape.
+### The two laboratories
 
 Brookhaven National Laboratory is a Department of Energy laboratory. Its founding purpose was
 Atomic Energy Commission research; its modern computational programme is built on Monte Carlo and
-lattice gauge theory, as its own 2005 retrospective states. Los Alamos is the other. Both sit
-inside the Restricted Data regime by subject matter and by ownership.
+lattice gauge theory, as its own 2005 retrospective states. Los Alamos is the other Atomic Energy Commission laboratory
+of the Super period.
 
-The documented overlaps are these. Ulam presents Monte Carlo at the Atomic Energy Commission
+Ulam presents Monte Carlo at the Atomic Energy Commission
 Information Meeting at Brookhaven, 26–28 April 1948, and returns to give talks in 1956, 1965 and
 1978. John Pasta holds a Brookhaven physics research fellowship around 1948–51 working on quantum
 electrodynamics, then moves to Los Alamos to work with Metropolis on MANIAC and with Ulam on
@@ -813,16 +779,8 @@ clearance from 1981, both to the end of his life, and a standing Director’s Of
 Los Alamos from 1971.
 
 The Brookhaven consultancy is recorded by MIT’s own news office, by the MacTutor biography and by
-Rota’s curriculum vitae. What it produced is not recorded anywhere in the four years it ran, nor
-afterwards. His Los Alamos work has a visible technical output — sixteen joint papers with
-Metropolis, six of them on computation between 1973 and 1978. The Brookhaven years have none.
-
-A reader is entitled to weigh that as he sees fit. What the report states is the conjunction: a
-Department of Energy laboratory whose computational programme descends from the Super work; a man
-with a Q clearance consulting there for four years during the same period he consulted at Los
-Alamos and RAND; a documented output at one laboratory and none at the other; and a statutory
-regime which, on the account of a physicist subject to it, removes First Amendment protection
-from precisely the class of results such a consultancy would generate.
+Rota’s curriculum vitae. The Los Alamos relationship produced sixteen joint publications with
+Metropolis, six of them on computation, running from 1973 to 1978.
 
 ## Publication patterns and the 1979 secrecy context
 
