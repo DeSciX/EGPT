@@ -14,6 +14,16 @@ The debate logs and their history are all recorded in git and are offered here f
 not as a certificate. **The proofs are public.** Anyone able to find the flaw in them is
 encouraged to do so, with or without the aid of these logs.
 
+## On the exchanges that were reconstructed
+
+Some exchange files were not captured directly from a session transcript. Where a transcript
+failed — context compaction, a crashed session — the exchange was reconstructed **in the moment,
+from the agent memories as they stood at the time**, not afterwards from recollection or inference.
+The reconstruction was part of running the debate, not a later repair of the record.
+
+What is published is what was actually recorded at the time, as I had it during the process. The
+system was not perfect, and I do not present it as one.
+
 ---
 
 ## On evidentiary grades
