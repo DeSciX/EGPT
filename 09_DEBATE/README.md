@@ -35,6 +35,14 @@ dispatch prompts in `session_transcript/` — including each role's standing ins
 primary evidence of what happened, on the same footing as the replies. That the words occurred is
 a matter of record; what they mean is argued elsewhere and is not annotated here.
 
+## What this record is
+
+`AUTHORS_STATEMENT.md` is the author's statement on what the debate was: an exploratory system of
+agentic peer-review, built on the fly to put the proofs through the strictest adversarial scrutiny
+he could arrange. It is offered for transparency, not as a certificate, and no evidentiary grading
+of the exchanges is adopted. The proofs are public; anyone able to find the flaw in them is
+encouraged to do so, with or without these logs.
+
 ## How to read it
 
 - **`DEBATE_STATE.md`** — the accumulated state after Exchange 34: 45 consensus points, 16
