@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 317,
+ "count": 326,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -207,6 +207,35 @@
    "embed_text": "Essam Abadir | Lean Zulip, #Program verification > \"Request for Feedback: Lean 4 Proof related to P=NP\" | quoted back by Mario Carneiro at 5:43 AM | 26-30 April 2025 | Yes, I put the headline theorem right at the top. That violates the usual etiquette of “under-promise, over-deliver”, and I did it on purpose. I wanted maximal scrutiny: if the foundation is sand, better the tower collapses in public."
   },
   {
+   "id": "q-essam-abadir-lean-zulip-program-v-fba9f478",
+   "quote": "Rota's Entropy Theorem was taught it for decades at MIT by Prof. Gian-Carlo Rota, a giant in the field of Probability Theory, as the foundational result proved in his class - that physics entropies (Bose-Einstein, Fermi-Dirac, Maxwell-Boltzmann) are mathematically scaled forms of Shannon Entropy ... and it is indeed a very key result. Sadly, despite being taught to generations of MIT mathematics students, Rota's Entropy Theorem seems never to have been formally published ... here is a link to it in his unpublished manuscript posted by one of his students",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP”",
+    "locus": "26 April 2025",
+    "date": "26 April 2025",
+    "file": "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf",
+    "url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/"
+   },
+   "restored": "",
+   "years": [
+    2025
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "fba9f47815683011bc2edd4367333a4d730cb3de575a2af0e5a66eab9f35136a",
+   "embed_text": "Essam Abadir | Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP” | 26 April 2025 | 26 April 2025 | Rota's Entropy Theorem was taught it for decades at MIT by Prof. Gian-Carlo Rota, a giant in the field of Probability Theory, as the foundational result proved in his class - that physics entropies (Bose-Einstein, Fermi-Dirac, Maxwell-Boltzmann) are mathematically scaled forms of Shannon Entropy ... and it is indeed a very key result. Sadly, despite being taught to generations of MIT mathematics students, Rota's Entropy Theorem seems never to have been formally published ... here is a link to it in his unpublished manuscript posted by one of his students"
+  },
+  {
    "id": "q-essam-abadir-lean-zulip-program-v-73eedead",
    "quote": "As a new Lean user, this discussion seem to suggest two extremes: either Lean contains a complete set of axioms capable of proving anything that's provable, or every proof must regress to an exhaustive first-principles derivation—akin to Russell and Whitehead’s infamous 360-page proof that 1+1=2.",
    "speaker": {
@@ -236,6 +265,35 @@
    "embed_text": "Essam Abadir | Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP” | 26 April 2025, 1:49 PM | 26 April 2025 | As a new Lean user, this discussion seem to suggest two extremes: either Lean contains a complete set of axioms capable of proving anything that's provable, or every proof must regress to an exhaustive first-principles derivation—akin to Russell and Whitehead’s infamous 360-page proof that 1+1=2."
   },
   {
+   "id": "q-essam-abadir-lean-zulip-program-v-fbccfbab",
+   "quote": "The approach of my proof is dependent on Rota's Entropy Theorem (RET) - I fully acknowledge it rises and falls on RET, and, that I'll probably have to port RET to Lean or some equivalent even though the math is 50 years old at this point.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP”",
+    "locus": "26 April 2025, 8:03 PM, marked EDITED",
+    "date": "26 April 2025",
+    "file": "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf",
+    "url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/"
+   },
+   "restored": "",
+   "years": [
+    2025
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "fbccfbabbb4bf332c689e40e75d6ae05c528a469002c09d3a4b3b6e628ea120e",
+   "embed_text": "Essam Abadir | Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP” | 26 April 2025, 8:03 PM, marked EDITED | 26 April 2025 | The approach of my proof is dependent on Rota's Entropy Theorem (RET) - I fully acknowledge it rises and falls on RET, and, that I'll probably have to port RET to Lean or some equivalent even though the math is 50 years old at this point."
+  },
+  {
    "id": "q-essam-abadir-lean-zulip-program-v-a6975145",
    "quote": "I have pored over mathlib and the various half-started community projects. As far as I can see there is still no canonical suite of definitions for Machine, timeComplexity, RunsInPolyTime, Cook-Levin, etc. That is why I keep asking. Suggesting that a single newcomer “just add the entirety of complexity theory to mathlib” feels a bit like suggesting we re-typeset Principia Mathematica so that the lemma “1 + 1 = 2” is fully formal. If a result as foundational as Shannon’s Coding Theorem is still missing, I prefer to mark it explicitly as an axiom rather than slide the assumption in under a definition.",
    "speaker": {
@@ -263,6 +321,209 @@
    ],
    "quote_sha256": "a6975145acb1bc01c2e2f10bfbe0d977877f50a167aa0a1004d709a8eb4b90db",
    "embed_text": "Essam Abadir | Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP” | 26 April 2025, under “On the absence of complexity-theory libraries” | 26 April 2025 | I have pored over mathlib and the various half-started community projects. As far as I can see there is still no canonical suite of definitions for Machine, timeComplexity, RunsInPolyTime, Cook-Levin, etc. That is why I keep asking. Suggesting that a single newcomer “just add the entirety of complexity theory to mathlib” feels a bit like suggesting we re-typeset Principia Mathematica so that the lemma “1 + 1 = 2” is fully formal. If a result as foundational as Shannon’s Coding Theorem is still missing, I prefer to mark it explicitly as an axiom rather than slide the assumption in under a definition."
+  },
+  {
+   "id": "q-essam-abadir-pull-request-37468-t-66009a25",
+   "quote": "All mathematical ideas, definitions, theorems, and proof strategies in this submission are the sole intellectual work and property of Essam Abadir. This includes: the information-theoretic reformulation of P and NP, the entropy number hierarchy, the application of Rota's entropy axioms to complexity theory, the “address is the map” principle, and the three proof chain architecture. AI tools (Claude, primarily) were used as coding assistants for the Lean 4 language — translating mathematical ideas into Lean syntax, debugging tactic failures, and managing cross-file consistency. The AI agents did not originate any of the mathematical content.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #37468 to leanprover-community/mathlib4, submission text, under “Authorship and AI Disclosure”",
+    "locus": "1 April 2026",
+    "date": "1 April 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-37468-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/37468"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "66009a2597aac6656b5515acdf14a29ea412206735e06f1e3f5b28917a2eacc4",
+   "embed_text": "Essam Abadir | Pull request #37468 to leanprover-community/mathlib4, submission text, under “Authorship and AI Disclosure” | 1 April 2026 | 1 April 2026 | All mathematical ideas, definitions, theorems, and proof strategies in this submission are the sole intellectual work and property of Essam Abadir. This includes: the information-theoretic reformulation of P and NP, the entropy number hierarchy, the application of Rota's entropy axioms to complexity theory, the “address is the map” principle, and the three proof chain architecture. AI tools (Claude, primarily) were used as coding assistants for the Lean 4 language — translating mathematical ideas into Lean syntax, debugging tactic failures, and managing cross-file consistency. The AI agents did not originate any of the mathematical content."
+  },
+  {
+   "id": "q-essam-abadir-pull-request-37468-t-b5d436f8",
+   "quote": "In fact, the 33-exchange adversarial debate record documents the opposite dynamic: AI agents assigned skeptic roles (Godel, von Neumann) systematically resisted the core ideas, repeatedly attempting to revert definitions to standard complexity theory conventions, introducing “standard” witnesses and certificates that the proof architecture deliberately avoids, and arguing that the information-theoretic framing could not capture the standard P vs NP problem. All 10 formal objections were eventually conceded — not because the AI was persuaded by rhetoric, but because the Lean proofs compiled sorry-free.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #37468 to leanprover-community/mathlib4, submission text, under “Authorship and AI Disclosure”",
+    "locus": "1 April 2026",
+    "date": "1 April 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-37468-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/37468"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "b5d436f8a250a8409e4a9576032cf90989cb7b715c20fb36e66c9af465ec3b91",
+   "embed_text": "Essam Abadir | Pull request #37468 to leanprover-community/mathlib4, submission text, under “Authorship and AI Disclosure” | 1 April 2026 | 1 April 2026 | In fact, the 33-exchange adversarial debate record documents the opposite dynamic: AI agents assigned skeptic roles (Godel, von Neumann) systematically resisted the core ideas, repeatedly attempting to revert definitions to standard complexity theory conventions, introducing “standard” witnesses and certificates that the proof architecture deliberately avoids, and arguing that the information-theoretic framing could not capture the standard P vs NP problem. All 10 formal objections were eventually conceded — not because the AI was persuaded by rhetoric, but because the Lean proofs compiled sorry-free."
+  },
+  {
+   "id": "q-essam-abadir-pull-request-38824-t-014bd3f7",
+   "quote": "Stanislaw Ulam (1939, on hearing Gödel's CH undecidability result): “That is because he defines what is meant by a set.” The suspicion that the result is an artifact of the chosen notion of set, not a genuine ceiling on what is decidable. This led Ulam to propose to Rota that the centimeter, gram, and second system was derivable from a random walk (see Rota's book Indiscrete Thoughts, p. 90)",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #38824 to leanprover-community/mathlib4, submission text, appendix to the von Neumann letter",
+    "locus": "1 May 2026",
+    "date": "1 May 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-38824-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/38824"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "014bd3f73c634a18d8e36b5cb29d00a401a97f9c4de1b8ee7ec1e0d63bf6d08e",
+   "embed_text": "Essam Abadir | Pull request #38824 to leanprover-community/mathlib4, submission text, appendix to the von Neumann letter | 1 May 2026 | 1 May 2026 | Stanislaw Ulam (1939, on hearing Gödel's CH undecidability result): “That is because he defines what is meant by a set.” The suspicion that the result is an artifact of the chosen notion of set, not a genuine ceiling on what is decidable. This led Ulam to propose to Rota that the centimeter, gram, and second system was derivable from a random walk (see Rota's book Indiscrete Thoughts, p. 90)"
+  },
+  {
+   "id": "q-essam-abadir-pull-request-38824-t-067da28c",
+   "quote": "This PR is the machine-verified formalization of the position von Neumann took in that letter — that every intuitionistic construction of standard arithmetic is in fact formalizable — together with Lean formaliztions of extensions added by his mathematical lineage in Stanislaw Ulam (physics from random walks and cellular automata), John Conway (number theory from cellular automata), Gian-Carlo Rota (information theory from random walks), and a few of my own.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #38824 to leanprover-community/mathlib4, submission text, opening section",
+    "locus": "1 May 2026",
+    "date": "1 May 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-38824-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/38824"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "067da28cfa1954bff943d4e3a55ba5fc5578a816e71a2f17b74e0bcff4476889",
+   "embed_text": "Essam Abadir | Pull request #38824 to leanprover-community/mathlib4, submission text, opening section | 1 May 2026 | 1 May 2026 | This PR is the machine-verified formalization of the position von Neumann took in that letter — that every intuitionistic construction of standard arithmetic is in fact formalizable — together with Lean formaliztions of extensions added by his mathematical lineage in Stanislaw Ulam (physics from random walks and cellular automata), John Conway (number theory from cellular automata), Gian-Carlo Rota (information theory from random walks), and a few of my own."
+  },
+  {
+   "id": "q-essam-abadir-pull-request-38824-t-7d389acf",
+   "quote": "von Neumann and Ulam (Los Alamos, 1940s) — Monte Carlo is a polynomial-time decision procedure over combinatorial state spaces, built from random walks and the cellular automata used to simulate neutron diffusion. The method predates the P vs NP vocabulary but is a P-time solver by construction.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #38824 to leanprover-community/mathlib4, submission text, under “Precedence and Attribution”",
+    "locus": "1 May 2026",
+    "date": "1 May 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-38824-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/38824"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "7d389acf7a10035402da981fefdf24615d90c886c8e1d393814ac132e03144e2",
+   "embed_text": "Essam Abadir | Pull request #38824 to leanprover-community/mathlib4, submission text, under “Precedence and Attribution” | 1 May 2026 | 1 May 2026 | von Neumann and Ulam (Los Alamos, 1940s) — Monte Carlo is a polynomial-time decision procedure over combinatorial state spaces, built from random walks and the cellular automata used to simulate neutron diffusion. The method predates the P vs NP vocabulary but is a P-time solver by construction."
+  },
+  {
+   "id": "q-essam-abadir-pull-request-38824-t-bd78c3d7",
+   "quote": "Gian-Carlo Rota (18.313, 1970s–90s) — Information is the perfect recorded history of a particle's movement, where “perfect” means the fewest bits in an unambiguous code — a Shannon-optimal coding. Rota's theorem exposes that Shannon coding is strictly more stringent than bijection: it requires the maximally compressed representation.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #38824 to leanprover-community/mathlib4, submission text, under “Precedence and Attribution”",
+    "locus": "1 May 2026",
+    "date": "1 May 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-38824-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/38824"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "bd78c3d7eafd2a5ebe6c5d10f3bb8dc6dee39897b1cd87a46655d68bfaba2aae",
+   "embed_text": "Essam Abadir | Pull request #38824 to leanprover-community/mathlib4, submission text, under “Precedence and Attribution” | 1 May 2026 | 1 May 2026 | Gian-Carlo Rota (18.313, 1970s–90s) — Information is the perfect recorded history of a particle's movement, where “perfect” means the fewest bits in an unambiguous code — a Shannon-optimal coding. Rota's theorem exposes that Shannon coding is strictly more stringent than bijection: it requires the maximally compressed representation."
+  },
+  {
+   "id": "q-essam-abadir-pull-request-38824-t-13e14772",
+   "quote": "I, Essam Abadir, do not claim to be the first to prove P = NP. At best I am fourth. What this submission contributes is a machine-verified account of why each of the following was already a proof of P = NP, and a constructive number tower that explains why the proofs hold:",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Pull request #38824 to leanprover-community/mathlib4, “feat(InformationTheory): add entropy axiomatics, EntropyNumber, complexity theory, and physics bridge”, submission text, under “Precedence and Attribution”",
+    "locus": "1 May 2026",
+    "date": "1 May 2026",
+    "file": "06_LEAN_MATHLIB/mathlib-pr-38824-body.md",
+    "url": "https://github.com/leanprover-community/mathlib4/pull/38824"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "mathlib_pr_precedence"
+   ],
+   "quote_sha256": "13e1477296cf83caa14064949369d973c513623aa0028eab2d065fb5865be0cb",
+   "embed_text": "Essam Abadir | Pull request #38824 to leanprover-community/mathlib4, “feat(InformationTheory): add entropy axiomatics, EntropyNumber, complexity theory, and physics bridge”, submission text, under “Precedence and Attribution” | 1 May 2026 | 1 May 2026 | I, Essam Abadir, do not claim to be the first to prove P = NP. At best I am fourth. What this submission contributes is a machine-verified account of why each of the following was already a proof of P = NP, and a constructive number tower that explains why the proofs hold:"
   },
   {
    "id": "q-essam-abadir-ret-excerpt-latex-so-a64d6dd0",
