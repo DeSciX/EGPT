@@ -52,9 +52,9 @@ encouraged to do so, with or without these logs.
   failed approach, implementation or open question, keyed `type:id` (`consensus:C38`,
   `concession:Y12`) and dated. This is the spine every other record hangs on.
 - **`agentic-debate/`** — the 34 exchange records plus the events file. Two notes in the
-  folder say what the records are: exchanges 22–33 were reconstructed from summaries
-  (`CONCORDANCE_INTEGRITY_NOTE.md`), and the verbatim agent outputs the moderator still held
-  are in `RAW_AGENT_OUTPUTS_22_33.md`.
+  folder say what the records are: the verbatim agent outputs the moderator still held
+  are in `RAW_AGENT_OUTPUTS_22_33.md`; how the exchange files were assembled is in
+  `AUTHORS_STATEMENT.md`.
 - **`session_transcript/`** — the raw Claude Code session and its sub-agent transcripts: the
   complete authoritative dialogue, 1,347 records. It is a machine log and reads like one. It
   carries the author's local file paths as recorded; nothing in it was rewritten.

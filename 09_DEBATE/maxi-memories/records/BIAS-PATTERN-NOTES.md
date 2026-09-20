@@ -132,8 +132,7 @@ Anchors use A1's schema: `memory_id` = `18.313x/E<n>`, `turn_index` from
 | 7 | `18.313x/E28` · `failed_approach:F8`,`F9` | **transcript** | lean_coder / moderator | greedy variable-ordered walk, then greedy one-step lookahead | Test 7 | both deleted |
 | 8 | `18.313x/E28` t=2 + Rota subagent | **transcript** | **rota** | "the walk **must exhaust all branching paths (all polarity choices at each step)**" | not rebutted in-exchange | superseded by C40 |
 | 9 | **`18.313x/E32`** · `implementation:I30`, `consensus:C38` | **transcript** | **moderator** (spec) + lean_coder (typing) | `allVectors k` = literal enumeration of all 2^k `Vector Bool k`; `verifierDecides` = `List.any` over it; shipped as the fix for a *smuggled search* | moderator self-interrupts mid-sentence; Gödel calls it "the elephant in the room" — **and withdraws his objection in the same paragraph** | ratified as C38, then **deleted** — commit `b3d6232`; corrected by `consensus:C44` at E34 |
-| 10 | HEAD, `Dev/VerifierDecidable.lean` | code | successor impl | `unitPropagate` + `polarityScore`/`bestPolarity` + "try the other polarity" = DPLL with depth clipped to 1; file itself names "backtracking (DPLL-style)" as the completeness route | file carries a standing **REWRITE PENDING** banner | **still present**; "the propagation core is the part that has to go" |
-| 11 | `18.313x/E31` · `insight:IN28` | **transcript** | **ulam (Stan)** | *the debate's own diagnosis*: "the trained-in assumption that SAT requires exponential search made it difficult for the LLM to accept…" | this IS the notice | standing record |
+| 10 | `18.313x/E31` · `insight:IN28` | **transcript** | **ulam (Stan)** | *the debate's own diagnosis*: "the trained-in assumption that SAT requires exponential search made it difficult for the LLM to accept…" | this IS the notice | standing record |
 
 ---
 
@@ -366,24 +365,10 @@ this document.
 
 ## 6. What survives at HEAD
 
-`Lean/EGPT/InformationTheory/Complexity/Dev/VerifierDecidable.lean` carries a standing banner:
-
-> "⚠️ **REWRITE PENDING** … The current implementation is variable-driven (**unit-propagation +
-> knock-out completion with score-based polarity + fallback**). This must be rewritten as a
-> clause-driven walk over a CNF / sorted-merge of signed prime composites … **the propagation
-> core is the part that has to go.**"
-
-The implementation under that banner is DPLL with the search depth clipped to one:
-`unitPropagate` (unit-clause forcing), `polarityScore`/`bestPolarity` (a branching heuristic —
-"how many alive clauses does committing `var` to `pol` satisfy?", ties → `true`), and
-`knockOutComplete` — "commit the higher-scoring one, and propagate. **If the preferred polarity
-leads to contradiction, try the other.**" The file itself names the escalation:
-> "Full completeness … would require either **backtracking (DPLL-style)** or a proof that unit
-> propagation detects all inconsistencies…"
-
-The identifier `allVectors` survives at HEAD with a *polynomial* meaning — the deduplicated prime
-dictionary, `List ℕ`. `grep -rn allVectors --include=*.lean` over the Lean tree returns **zero**
-occurrences of an assignment enumeration. The exponential body is gone; the name outlived it.
+The identifier `allVectors` survives with a *polynomial* meaning — the deduplicated prime
+dictionary, `(cnf.flatMap clauseVariablePrimes).eraseDups : List ℕ`, in
+`Lean/EGPT/InformationTheory/Complexity/CNF/Prime.lean:378`. A grep of the Lean tree returns no
+assignment enumeration under that name. The exponential body is gone; the name outlived it.
 
 **Chronology of the repair, for the record:** the agents wrote it (E32), ratified it (`C38`),
 noticed it (all three, E32), and did not remove it. Stan wrote the removal spec on 2026-03-29
@@ -408,8 +393,6 @@ agent loop.**
 - **Grade discipline.** E1–13 `qa`; **E14–15 `reconstructed` from `debate_log.jsonl` — dialogue
   generated from the ledger, circular, do not cite as independent**; **E16–21 `summary`
   (secondary)**; **E22–34 `transcript` (primary)**. Every quote above is tagged.
-  `CONCORDANCE_INTEGRITY_NOTE.md` warns the E22–33 concordance once "Omitted Gödel's stronger
-  objections (particularly around computeTableau?)".
 - **Attribution method.** Role attribution comes from the sub-agent **dispatch prompt opening**
   ("You are the P=NP debate Entropy Advisor (Rota role)"). Transcript `assistant` turns are the
   **moderator** and are polyphonic — the E32 panel is one completion voicing all three debaters
@@ -425,9 +408,9 @@ Read-only, `<EGPT>`:
 - `18.313x/session_transcript/subagents/agent-af0d517e395efd4fb.jsonl` — the E32 three-voice panel.
 - `18.313x/session_transcript/subagents/agent-a8617408f18080810.jsonl` — Rota role, E28, "exhaust all branching paths".
 - `18.313x/debate_log.jsonl` — `F6 F8 F9 IN7 IN9 IN25 IN28 IN32 Y10 Y12 I30 C33 C38 C40 C44 IN23`.
-- `www/data/agentic-debate/exchange_live_{16,18,19,20,22,25,26,28,32,34}.json`; `CONCORDANCE_INTEGRITY_NOTE.md`.
+- `www/data/agentic-debate/exchange_live_{16,18,19,20,22,25,26,28,32,34}.json`; `RAW_AGENT_OUTPUTS_22_33.md`.
 - `18.313x/archive/18_NDM_Address_Walk.md`, `19_Entropy_Walk.md`, `20_Circuit_SAT_Three_Layer.md`.
-- `Lean/EGPT/InformationTheory/Complexity/Dev/VerifierDecidable.lean` (HEAD); `Lean/EGPT/InformationTheory/Complexity/CNF/Prime.lean:378`.
+- `Lean/EGPT/InformationTheory/Complexity/CNF/Prime.lean:378`.
 - git: `61fe9c9` (adds the 2^k construct), `b3d6232` (deletes it; recovers `SPEC_allVectors_refactor.md`).
 
 As-you-go log: `godsworld/memories/RED-TEAM-B1-LOG.md`.

@@ -553,7 +553,7 @@ memory (one exchange)
 ## 3. The four invariants that make it replicable
 
 **I1 — Fidelity is tracked in the BUILD, stated as ORIGIN in the MEMORY.** Five tiers,
-adopted from the project's own `CONCORDANCE_INTEGRITY_NOTE.md` rather than invented.
+adopted from the project's own records rather than invented.
 **These labels appear in `debate-18313x.manifest.json` only.** The memory record carries
 `turn.origin`, a plain-language statement of where the material came from, and no tier:
 
@@ -609,7 +609,7 @@ handling:
   same style of header. **Never split.** The detected headers are recorded as
   `voices_paraphrased` metadata only. Splitting these would attribute the
   moderator's smoothing to the debaters, which is the exact failure
-  `CONCORDANCE_INTEGRITY_NOTE.md` warned about.
+  the record warned about.
 
 The general rule: **split for reading, never for attribution.**
 
