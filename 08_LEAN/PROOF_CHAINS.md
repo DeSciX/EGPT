@@ -180,7 +180,7 @@ Both are computable, sorry-free, and free of `Classical.choice`.
 - `allVectors` (CNF/Prime.lean:378) is the deduplicated prime dictionary,
   `(cnf.flatMap clauseVariablePrimes).eraseDups : List ℕ` — one prime per variable appearing in
   the CNF. It is polynomial in the size of the CNF, and it does not enumerate assignments.
-- Everything under `Complexity/Dev/` is experimental. Nothing outside `Dev/` imports it.
+- No file outside the ones listed above is imported by any capstone.
 
 ### Why there is no "search" to optimize away
 
@@ -202,16 +202,14 @@ The proof chain dissolves this separation:
    if the formula is satisfiable the assignment exists; if not, both P and NP agree it is not in
    the language.
 
-### What the proof does and does not supply
+### What is claimed
 
-The proof establishes the equality of the two classes under these definitions. It does not ship a
-standalone solver that takes a CNF alone and returns SAT or UNSAT: implementations of that are in
-`Complexity/Dev/`, are not imported by any chain file, and `Dev/VerifierDecidable.lean` carries a
-standing rewrite-pending notice. The `native_decide` examples in `Dev/Test*.lean` exercise those
-implementations, not the proof chain.
-
+The chains establish the equality of the two classes under these definitions, and nothing beyond
+them. **No SAT solver is claimed or offered here**, and no claim in this document depends on one.
 This is the position the debate record reached at Exchange 34 (`consensus:C41`): the claim is
-`P_eq_NP_info`, which is sorry-free without any solver file, and the solver is engineering.
+`P_eq_NP_info`, which is sorry-free on its own terms.
+
+---
 
 ## Tests
 

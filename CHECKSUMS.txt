@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 620 files, 128042004 bytes.
+# 620 files, 128041692 bytes.
 bfa7a14296c5fb9d314b217546cae74e639d04e7a53b6facf2cea33094154b20  00_OUTPUTS/AI_Agents_Meaning_and_Obedient_Risk_Summary.docx
 4a4672eddb5d38f9b50e66ce86b35781fd4ac98ef201ad6522cf694cc8e949c2  00_OUTPUTS/Departure_Not_Complement_Quote_Pack.md
 e01996399ad1d12648ba1cff4159beeb98d841e44197b841cd1c3e8070c383ff  00_OUTPUTS/EGPT_Backstory.md
@@ -325,7 +325,7 @@ d5ab86f6531ef7ffee1c11d3d36c00263d0402d7cbdc602d0f4ad68e1414b23a  08_LEAN/PPNP/D
 1cba1a2a62698639b77156baf7a8b501611b11b00d51c93ad684a42dd24dd5ad  08_LEAN/PPNP/Proofs/RET_Sketch.lean
 fdc11ce44e21eb292ee209d6ae374ec3f88817984f984b5944c949cf566cf704  08_LEAN/PPNP/Proofs/Rota_All_Entropy_Is_Shannon_Entropy.lean
 33135dc45541ad57964967a0c3e3936ab103af614fae7d8a742d1a7e82a8d1a6  08_LEAN/PPNP/Proofs/WaveParticleDualityDisproved.lean
-d98d82802a581bc526b1de1638e6fe50457244e46009296d0a9df326cd4e6858  08_LEAN/PROOF_CHAINS.md
+c3ef5752f39372b71a1b65e718bbc3b01cfb9a1a993e25f1b695783762b980ab  08_LEAN/PROOF_CHAINS.md
 66bb28eb0017526e6f0352f960087d7ea8f22c0c47ef28b4302c9cb15de0979f  08_LEAN/README.md
 9e736e6a62446420157e678ad9ab97f35653ceed405e9d13638e1e810c629688  08_LEAN/build_report.lean
 8008be40ebe571764fcd92541567842c1fa8cf8127c9ef79bc6ee625c89cf125  08_LEAN/lake-manifest.json
