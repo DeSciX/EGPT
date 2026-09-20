@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 326,
+ "count": 327,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -8510,6 +8510,36 @@
    ],
    "quote_sha256": "96464e556de9b6440de0a6d4bb11eae49dc57c81b3685eff0af457a4c7596dd2",
    "embed_text": "John von Neumann | The Computer and the Brain | section 'The Function of a Short Code,' p. 73 | 1958 | The reason for calling such a secondary code a short code is, by the way, historical: these short codes were developed as an aid to coding, i.e. they resulted from the desire to be able to code more briefly for a machine than its own natural order system would allow, treating it as if it were a different machine with a more convenient, fuller order system which would allow simpler, less circumstantial and more straightforward coding."
+  },
+  {
+   "id": "q-john-von-neumann-the-computer-and-the-41199d9f",
+   "quote": "the message-system used in the nervous system … is of an essentially statistical character. In other words, what matters are not the precise positions of definite markers, digits, but the statistical characteristics of their occurrence, i.e. frequencies of periodic or nearly periodic pulse-trains, etc. Thus the nervous system appears to be using a radically different system of notation from the ones we are familiar with in ordinary arithmetics and mathematics: instead of the precise systems of markers where the position—and presence or absence—of every marker counts decisively in determining the meaning of the message, we have here a system of notations in which the meaning is conveyed by the statistical properties of the message.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "The Computer and the Brain",
+    "locus": "section “Arithmetical Precision or Logical Reliability, Alternatives,” pp. 79–80; the preceding section is headed “Nature of the System of Notations Employed: Not Digital but Statistical,” p. 77",
+    "date": "written 1955–56; published posthumously 1958",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1955,
+    1958
+   ],
+   "themes": [
+    "brain-and-machine"
+   ],
+   "collections": [
+    "register"
+   ],
+   "quote_sha256": "41199d9fba88597d47ff870ba79d6dea18f2907eaf5deed50646d325635f0641",
+   "embed_text": "John von Neumann | The Computer and the Brain | section “Arithmetical Precision or Logical Reliability, Alternatives,” pp. 79–80; the preceding section is headed “Nature of the System of Notations Employed: Not Digital but Statistical,” p. 77 | written 1955–56; published posthumously 1958 | the message-system used in the nervous system … is of an essentially statistical character. In other words, what matters are not the precise positions of definite markers, digits, but the statistical characteristics of their occurrence, i.e. frequencies of periodic or nearly periodic pulse-trains, etc. Thus the nervous system appears to be using a radically different system of notation from the ones we are familiar with in ordinary arithmetics and mathematics: instead of the precise systems of markers where the position—and presence or absence—of every marker counts decisively in determining the meaning of the message, we have here a system of notations in which the meaning is conveyed by the statistical properties of the message."
   },
   {
    "id": "q-john-von-neumann-the-computer-and-the-1c4e401e",

@@ -615,6 +615,22 @@
    "locus": "",
    "date": "2023 (Nature version 2025)",
    "theme": "world-models-industry"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "the message-system used in the nervous system … is of an essentially statistical character. In other words, what matters are not the precise positions of definite markers, digits, but the statistical characteristics of their occurrence, i.e. frequencies of periodic or nearly periodic pulse-trains, etc. Thus the nervous system appears to be using a radically different system of notation from the ones we are familiar with in ordinary arithmetics and mathematics: instead of the precise systems of markers where the position—and presence or absence—of every marker counts decisively in determining the meaning of the message, we have here a system of notations in which the meaning is conveyed by the statistical properties of the message.",
+   "work": "The Computer and the Brain",
+   "locus": "section “Arithmetical Precision or Logical Reliability, Alternatives,” pp. 79–80; the preceding section is headed “Nature of the System of Notations Employed: Not Digital but Statistical,” p. 77",
+   "date": "written 1955–56; published posthumously 1958",
+   "theme": "brain-and-machine"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "We have seen how this leads to a lower level of arithmetical precision but to a higher level of logical reliability: a deterioration in arithmetics has been traded for an improvement in logics.",
+   "work": "The Computer and the Brain",
+   "locus": "section “Arithmetical Precision or Logical Reliability, Alternatives,” p. 80",
+   "date": "written 1955–56; published posthumously 1958",
+   "theme": "brain-and-machine"
   }
  ]
 }
