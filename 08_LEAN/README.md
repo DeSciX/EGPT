@@ -16,7 +16,6 @@ here.
 | `Archive/` | The debate-era proof tree, `ParticlePath` era: the code the 18.313x debate was about. `Archive/NumberTheory/Core.lean` is where `equivParticlePathToNat : ParticlePath ≃ ℕ` lives. When a debate record or a memory names a file that is not where it says, this migration is usually why; check both trees. |
 | `PPNP/` | The earliest proof sketches, kept as history. |
 | `PROOF_CHAINS.md` | The three chains, capstone theorems, axiom table and file map. |
-| `EGPT/InformationTheory/Complexity/Dev/` | Experimental scaffolding. It is in the mirror because it is in the branch; it is not part of the load-bearing proof chain and the repository's own guidance says not to cite it. |
 
 The private-tree build reports of 15 May 2026 — the axiom closure listed per theorem — are in
 `06_LEAN_MATHLIB/lean_source/`; they were generated from the same source and are the record the

@@ -1,0 +1,74 @@
+{
+ "entries": [
+  {
+   "speaker": "Essam Abadir",
+   "quote": "An i.i.d. source producing values of type α indexed by ℕ.",
+   "work": "EGPT Lean formalization, InformationTheory/Basic.lean, the IIDParticleSource typeclass",
+   "locus": "class IIDParticleSource, line 89",
+   "date": "2026",
+   "theme": "egpt-lean",
+   "file": "08_LEAN/EGPT/InformationTheory/Basic.lean",
+   "source_url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/Basic.lean"
+  },
+  {
+   "speaker": "Essam Abadir",
+   "quote": "An EntropyNat is a List Bool all of whose entries are true. The length of the list encodes a natural number.",
+   "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Basic.lean",
+   "locus": "abbrev EntropyNat, line 68",
+   "date": "2026",
+   "theme": "egpt-lean",
+   "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Basic.lean",
+   "source_url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Basic.lean"
+  },
+  {
+   "speaker": "Essam Abadir",
+   "quote": "The “Clean Forward Trip”: an explicit, constructive surjection from information space (ℕ → Bool) to the classical continuum (ℝ). We split the infinite sequence of bits into even and odd indices: … This proves constructively that the discrete information space can generate every point in the continuous real line, without invoking Classical.choice.",
+   "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Real.lean, docstring to evaluate_binary_sequence",
+   "locus": "lines 105-113",
+   "date": "2026",
+   "theme": "egpt-lean",
+   "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Real.lean",
+   "source_url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Real.lean"
+  },
+  {
+   "speaker": "Essam Abadir",
+   "quote": "While the forward map (evaluate_binary_sequence) is a constructive surjection, the return map (ℝ → EntropyReal) requires Classical.choice to select a canonical binary representation for duals (e.g., 0.0111... vs 0.1000...). We isolate this classical dependency to the Equiv itself, keeping the generative forward direction clean.",
+   "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Real.lean, docstring to entropyRealEquivReal",
+   "locus": "lines 125-130",
+   "date": "2026",
+   "theme": "egpt-lean",
+   "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Real.lean",
+   "source_url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Real.lean"
+  },
+  {
+   "speaker": "Essam Abadir",
+   "quote": "This file formalizes the “restarting hierarchy” of information-theoretic number analogues. … A Generalized Proof: A single theorem, proven by induction, that proves the cardinalities of these generated types match the Beth sequence (ℶₙ, ℶₙ, ℶₙ₊₁) for any level n.",
+   "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Hierarchy.lean",
+   "locus": "module docstring, lines 15-27",
+   "date": "2026",
+   "theme": "egpt-lean",
+   "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Hierarchy.lean",
+   "source_url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Hierarchy.lean"
+  },
+  {
+   "speaker": "Essam Abadir",
+   "quote": "As a new Lean user, this discussion seem to suggest two extremes: either Lean contains a complete set of axioms capable of proving anything that's provable, or every proof must regress to an exhaustive first-principles derivation—akin to Russell and Whitehead’s infamous 360-page proof that 1+1=2.",
+   "work": "Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP”",
+   "locus": "26 April 2025, 1:49 PM",
+   "date": "26 April 2025",
+   "theme": "reception",
+   "file": "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf",
+   "source_url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/"
+  },
+  {
+   "speaker": "Essam Abadir",
+   "quote": "I have pored over mathlib and the various half-started community projects. As far as I can see there is still no canonical suite of definitions for Machine, timeComplexity, RunsInPolyTime, Cook-Levin, etc. That is why I keep asking. Suggesting that a single newcomer “just add the entirety of complexity theory to mathlib” feels a bit like suggesting we re-typeset Principia Mathematica so that the lemma “1 + 1 = 2” is fully formal. If a result as foundational as Shannon’s Coding Theorem is still missing, I prefer to mark it explicitly as an axiom rather than slide the assumption in under a definition.",
+   "work": "Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP”",
+   "locus": "26 April 2025, under “On the absence of complexity-theory libraries”",
+   "date": "26 April 2025",
+   "theme": "reception",
+   "file": "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf",
+   "source_url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/"
+  }
+ ]
+}

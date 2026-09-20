@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 310,
+ "count": 317,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -33,6 +33,151 @@
    "embed_text": "1X | 1X World Model page, 1x.tech | 2025 | a computer program that can imagine how the world evolves in response to an agent’s behavior"
   },
   {
+   "id": "q-essam-abadir-egpt-lean-formalizat-55965204",
+   "quote": "An i.i.d. source producing values of type α indexed by ℕ.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "EGPT Lean formalization, InformationTheory/Basic.lean, the IIDParticleSource typeclass",
+    "locus": "class IIDParticleSource, line 89",
+    "date": "2026",
+    "file": "08_LEAN/EGPT/InformationTheory/Basic.lean",
+    "url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/Basic.lean"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "egpt-lean"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "55965204117ac5cbdd8bdc05e52c6d788550d307f2067c75030c5ce5d9324887",
+   "embed_text": "Essam Abadir | EGPT Lean formalization, InformationTheory/Basic.lean, the IIDParticleSource typeclass | class IIDParticleSource, line 89 | 2026 | An i.i.d. source producing values of type α indexed by ℕ."
+  },
+  {
+   "id": "q-essam-abadir-egpt-lean-formalizat-665d6050",
+   "quote": "An EntropyNat is a List Bool all of whose entries are true. The length of the list encodes a natural number.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Basic.lean",
+    "locus": "abbrev EntropyNat, line 68",
+    "date": "2026",
+    "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Basic.lean",
+    "url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Basic.lean"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "egpt-lean"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "665d6050288fba4a81800a26fb70deeab1cdac2673c1c722c9f583980e51aaf4",
+   "embed_text": "Essam Abadir | EGPT Lean formalization, InformationTheory/EntropyNumber/Basic.lean | abbrev EntropyNat, line 68 | 2026 | An EntropyNat is a List Bool all of whose entries are true. The length of the list encodes a natural number."
+  },
+  {
+   "id": "q-essam-abadir-egpt-lean-formalizat-8fcba9dc",
+   "quote": "This file formalizes the “restarting hierarchy” of information-theoretic number analogues. … A Generalized Proof: A single theorem, proven by induction, that proves the cardinalities of these generated types match the Beth sequence (ℶₙ, ℶₙ, ℶₙ₊₁) for any level n.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Hierarchy.lean",
+    "locus": "module docstring, lines 15-27",
+    "date": "2026",
+    "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Hierarchy.lean",
+    "url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Hierarchy.lean"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "egpt-lean"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "8fcba9dcd8372dcf6b3971c150cc09c0db6d5e7703ff81d1dd6fac7a5836d40d",
+   "embed_text": "Essam Abadir | EGPT Lean formalization, InformationTheory/EntropyNumber/Hierarchy.lean | module docstring, lines 15-27 | 2026 | This file formalizes the “restarting hierarchy” of information-theoretic number analogues. … A Generalized Proof: A single theorem, proven by induction, that proves the cardinalities of these generated types match the Beth sequence (ℶₙ, ℶₙ, ℶₙ₊₁) for any level n."
+  },
+  {
+   "id": "q-essam-abadir-egpt-lean-formalizat-e24460af",
+   "quote": "While the forward map (evaluate_binary_sequence) is a constructive surjection, the return map (ℝ → EntropyReal) requires Classical.choice to select a canonical binary representation for duals (e.g., 0.0111... vs 0.1000...). We isolate this classical dependency to the Equiv itself, keeping the generative forward direction clean.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Real.lean, docstring to entropyRealEquivReal",
+    "locus": "lines 125-130",
+    "date": "2026",
+    "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Real.lean",
+    "url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Real.lean"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "egpt-lean"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "e24460af74aaabeb66cc8b100f28fa8fe2121fc7a359b28768507d3bfd19b5d6",
+   "embed_text": "Essam Abadir | EGPT Lean formalization, InformationTheory/EntropyNumber/Real.lean, docstring to entropyRealEquivReal | lines 125-130 | 2026 | While the forward map (evaluate_binary_sequence) is a constructive surjection, the return map (ℝ → EntropyReal) requires Classical.choice to select a canonical binary representation for duals (e.g., 0.0111... vs 0.1000...). We isolate this classical dependency to the Equiv itself, keeping the generative forward direction clean."
+  },
+  {
+   "id": "q-essam-abadir-egpt-lean-formalizat-c90e1fe1",
+   "quote": "The “Clean Forward Trip”: an explicit, constructive surjection from information space (ℕ → Bool) to the classical continuum (ℝ). We split the infinite sequence of bits into even and odd indices: … This proves constructively that the discrete information space can generate every point in the continuous real line, without invoking Classical.choice.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "EGPT Lean formalization, InformationTheory/EntropyNumber/Real.lean, docstring to evaluate_binary_sequence",
+    "locus": "lines 105-113",
+    "date": "2026",
+    "file": "08_LEAN/EGPT/InformationTheory/EntropyNumber/Real.lean",
+    "url": "https://github.com/eabadir/EGPT-Lean/blob/lean-archive-proofs/Lean/EGPT/InformationTheory/EntropyNumber/Real.lean"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "egpt-lean"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "c90e1fe16eba857d76b42de58ab9c2c6e4f0d501afdacc6abb691aeb30607200",
+   "embed_text": "Essam Abadir | EGPT Lean formalization, InformationTheory/EntropyNumber/Real.lean, docstring to evaluate_binary_sequence | lines 105-113 | 2026 | The “Clean Forward Trip”: an explicit, constructive surjection from information space (ℕ → Bool) to the classical continuum (ℝ). We split the infinite sequence of bits into even and odd indices: … This proves constructively that the discrete information space can generate every point in the continuous real line, without invoking Classical.choice."
+  },
+  {
    "id": "q-essam-abadir-lean-zulip-program-v-9d415bc6",
    "quote": "Yes, I put the headline theorem right at the top. That violates the usual etiquette of “under-promise, over-deliver”, and I did it on purpose. I wanted maximal scrutiny: if the foundation is sand, better the tower collapses in public.",
    "speaker": {
@@ -60,6 +205,64 @@
    ],
    "quote_sha256": "9d415bc6d130c77f99146eb571f22ad1cf749450810e1eecc3955b2c541de86a",
    "embed_text": "Essam Abadir | Lean Zulip, #Program verification > \"Request for Feedback: Lean 4 Proof related to P=NP\" | quoted back by Mario Carneiro at 5:43 AM | 26-30 April 2025 | Yes, I put the headline theorem right at the top. That violates the usual etiquette of “under-promise, over-deliver”, and I did it on purpose. I wanted maximal scrutiny: if the foundation is sand, better the tower collapses in public."
+  },
+  {
+   "id": "q-essam-abadir-lean-zulip-program-v-73eedead",
+   "quote": "As a new Lean user, this discussion seem to suggest two extremes: either Lean contains a complete set of axioms capable of proving anything that's provable, or every proof must regress to an exhaustive first-principles derivation—akin to Russell and Whitehead’s infamous 360-page proof that 1+1=2.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP”",
+    "locus": "26 April 2025, 1:49 PM",
+    "date": "26 April 2025",
+    "file": "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf",
+    "url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/"
+   },
+   "restored": "",
+   "years": [
+    2025
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "73eedead218352e9c8288c96ab79721e18d3c04e7e06cc83c1a558fd8838e656",
+   "embed_text": "Essam Abadir | Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP” | 26 April 2025, 1:49 PM | 26 April 2025 | As a new Lean user, this discussion seem to suggest two extremes: either Lean contains a complete set of axioms capable of proving anything that's provable, or every proof must regress to an exhaustive first-principles derivation—akin to Russell and Whitehead’s infamous 360-page proof that 1+1=2."
+  },
+  {
+   "id": "q-essam-abadir-lean-zulip-program-v-a6975145",
+   "quote": "I have pored over mathlib and the various half-started community projects. As far as I can see there is still no canonical suite of definitions for Machine, timeComplexity, RunsInPolyTime, Cook-Levin, etc. That is why I keep asking. Suggesting that a single newcomer “just add the entirety of complexity theory to mathlib” feels a bit like suggesting we re-typeset Principia Mathematica so that the lemma “1 + 1 = 2” is fully formal. If a result as foundational as Shannon’s Coding Theorem is still missing, I prefer to mark it explicitly as an axiom rather than slide the assumption in under a definition.",
+   "speaker": {
+    "name": "Essam Abadir",
+    "role": "author",
+    "sort": "abadir, essam",
+    "as_given": "Essam Abadir"
+   },
+   "source": {
+    "work": "Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP”",
+    "locus": "26 April 2025, under “On the absence of complexity-theory libraries”",
+    "date": "26 April 2025",
+    "file": "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.pdf",
+    "url": "https://leanprover.zulipchat.com/#narrow/channel/236449-Program-verification/topic/Request.20for.20Feedback.3A.20Lean.204.20Proof.20related.20to.20P.3DNP/"
+   },
+   "restored": "",
+   "years": [
+    2025
+   ],
+   "themes": [
+    "reception"
+   ],
+   "collections": [
+    "lean_constructive_number"
+   ],
+   "quote_sha256": "a6975145acb1bc01c2e2f10bfbe0d977877f50a167aa0a1004d709a8eb4b90db",
+   "embed_text": "Essam Abadir | Lean Zulip, #Program verification > “Request for Feedback: Lean 4 Proof related to P=NP” | 26 April 2025, under “On the absence of complexity-theory libraries” | 26 April 2025 | I have pored over mathlib and the various half-started community projects. As far as I can see there is still no canonical suite of definitions for Machine, timeComplexity, RunsInPolyTime, Cook-Levin, etc. That is why I keep asking. Suggesting that a single newcomer “just add the entirety of complexity theory to mathlib” feels a bit like suggesting we re-typeset Principia Mathematica so that the lemma “1 + 1 = 2” is fully formal. If a result as foundational as Shannon’s Coding Theorem is still missing, I prefer to mark it explicitly as an axiom rather than slide the assumption in under a definition."
   },
   {
    "id": "q-essam-abadir-ret-excerpt-latex-so-a64d6dd0",
