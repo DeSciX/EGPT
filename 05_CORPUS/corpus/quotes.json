@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 327,
+ "count": 331,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -9471,6 +9471,122 @@
    ],
    "quote_sha256": "663ffc21bdcfc3fb9180f8dd02fea5b600f991a6fd9786ddbc9f53fadea7e5c5",
    "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | 26 August 2026 | So my claim is, if you don’t know the story of John Aristotle Phillips, the substandard physicist who in his Princeton PhD thesis is the Princeton mascot, said, look, I’m not very good, Freeman Dyson, I want to use the fact that I’m not very good to do something amazing. Tell me whether or not you will let me come up with the plan for an atomic bomb. And Freeman Dyson said, I will give you no help, but I’ll tell you whether it will work. So the substandard physicists put together this and he submitted his junior thesis. And I forget whether it’s page 24, but that thesis is not in the library and the government removed the page that has the plan."
+  },
+  {
+   "id": "q-eric-weinstein-eric-weinstein-in-er-e9acbc68",
+   "quote": "The question is, did it happen once or more than once? If it happened more than once, the question is, what is the analog of the boys' school in New Mexico? What is the analog of the white badges? What is the analog of the reference committee?",
+   "speaker": {
+    "name": "Eric Weinstein",
+    "role": "author",
+    "sort": "weinstein, eric",
+    "as_given": "Eric Weinstein"
+   },
+   "source": {
+    "work": "Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast",
+    "locus": "c. 47:32",
+    "date": "26 August 2026",
+    "file": "",
+    "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/eric-weinstein-the-state-of-american-science-breakthrough-coverups-and-the-danger-of-physics"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "weinstein_allin"
+   ],
+   "quote_sha256": "e9acbc68e352d28d08c412930c9b6eb2c70cd7355087395307cc7b380429b9b5",
+   "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | c. 47:32 | 26 August 2026 | The question is, did it happen once or more than once? If it happened more than once, the question is, what is the analog of the boys' school in New Mexico? What is the analog of the white badges? What is the analog of the reference committee?"
+  },
+  {
+   "id": "q-eric-weinstein-eric-weinstein-in-er-229025bc",
+   "quote": "If it's happening, I've said that the leading candidate would be Renaissance technologies on Long Island.",
+   "speaker": {
+    "name": "Eric Weinstein",
+    "role": "author",
+    "sort": "weinstein, eric",
+    "as_given": "Eric Weinstein"
+   },
+   "source": {
+    "work": "Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast",
+    "locus": "c. 47:54",
+    "date": "26 August 2026",
+    "file": "",
+    "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/eric-weinstein-the-state-of-american-science-breakthrough-coverups-and-the-danger-of-physics"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "weinstein_allin"
+   ],
+   "quote_sha256": "229025bcc972d7dd746b9ed75fe052ad43e5a774e14a969e100770636177e596",
+   "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | c. 47:54 | 26 August 2026 | If it's happening, I've said that the leading candidate would be Renaissance technologies on Long Island."
+  },
+  {
+   "id": "q-eric-weinstein-eric-weinstein-in-er-ef44cc2f",
+   "quote": "Let's look at the cover story. Okay. The cover story would be, you know, we are so good at trading that we don't even allow people who know markets into our firm. We only hire people in directly relevant subjects of physics, like particle theorists, like differential geometers, like machine learning experts. And we have a very strange thing that we have a very close relationship with the Brookhaven National Laboratory. And by the way, there's a middling university right next door who happens to be absolutely world class historically in the exact subjects that would be relevant to doing next level physics.",
+   "speaker": {
+    "name": "Eric Weinstein",
+    "role": "author",
+    "sort": "weinstein, eric",
+    "as_given": "Eric Weinstein"
+   },
+   "source": {
+    "work": "Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast",
+    "locus": "c. 48:14; Weinstein is voicing what he calls “the cover story”",
+    "date": "26 August 2026",
+    "file": "",
+    "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/eric-weinstein-the-state-of-american-science-breakthrough-coverups-and-the-danger-of-physics"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "weinstein_allin"
+   ],
+   "quote_sha256": "ef44cc2fad7c4b8fb89c4cbdc722e2ad265a701389e52a253097c5cffcd67285",
+   "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | c. 48:14; Weinstein is voicing what he calls “the cover story” | 26 August 2026 | Let's look at the cover story. Okay. The cover story would be, you know, we are so good at trading that we don't even allow people who know markets into our firm. We only hire people in directly relevant subjects of physics, like particle theorists, like differential geometers, like machine learning experts. And we have a very strange thing that we have a very close relationship with the Brookhaven National Laboratory. And by the way, there's a middling university right next door who happens to be absolutely world class historically in the exact subjects that would be relevant to doing next level physics."
+  },
+  {
+   "id": "q-eric-weinstein-eric-weinstein-in-er-c1b14dae",
+   "quote": "I'm not saying that I know that that's true. My point was, I tried to be careful.",
+   "speaker": {
+    "name": "Eric Weinstein",
+    "role": "author",
+    "sort": "weinstein, eric",
+    "as_given": "Eric Weinstein"
+   },
+   "source": {
+    "work": "Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast",
+    "locus": "c. 49:06, answering David Friedberg",
+    "date": "26 August 2026",
+    "file": "",
+    "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/eric-weinstein-the-state-of-american-science-breakthrough-coverups-and-the-danger-of-physics"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "weinstein_allin"
+   ],
+   "quote_sha256": "c1b14dae4d92bff2b4c0e5adf860290bddd55e87ebcaa409ba68f11cb4b81e62",
+   "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | c. 49:06, answering David Friedberg | 26 August 2026 | I'm not saying that I know that that's true. My point was, I tried to be careful."
   }
  ]
 }

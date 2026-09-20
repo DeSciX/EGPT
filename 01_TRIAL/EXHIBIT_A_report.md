@@ -753,6 +753,46 @@ the government moved to suppress is identified in these remarks as Ulam’s. Thi
 operates on *derivation*, not on documents: a physicist who reasons his way to a covered result is
 inside the regime whether or not he has ever seen a classified paper.
 
+### The same physicist, asked where such a structure would sit today
+
+Having described the wartime Reference Committee, Weinstein put the question forward in time:
+
+> “The question is, did it happen once or more than once? If it happened more than once, the
+> question is, what is the analog of the boys’ school in New Mexico? What is the analog of the
+> white badges? What is the analog of the reference committee?”
+
+His answer names a firm, not a laboratory:
+
+> “If it’s happening, I’ve said that the leading candidate would be Renaissance technologies on
+> Long Island.”
+
+What he then sets out, in his own description, is **the cover story** such an arrangement would
+present — he is voicing it, not asserting it as fact:
+
+> “The cover story would be, you know, we are so good at trading that we don’t even allow people
+> who know markets into our firm. We only hire people in directly relevant subjects of physics,
+> like particle theorists, like differential geometers, like machine learning experts. And we have
+> a very strange thing that we have a very close relationship with **the Brookhaven National
+> Laboratory**. And by the way, there’s a middling university right next door who happens to be
+> absolutely world class historically in the exact subjects that would be relevant to doing next
+> level physics.”
+
+Pressed by David Friedberg on why nothing has leaked, he withdrew any claim to knowledge, and the
+disclaimer is reproduced here because it governs the weight of everything above it:
+
+> “I’m not saying that I know that that’s true. My point was, I tried to be careful.”
+
+**What this report takes from the passage, and what it does not.** It does not take a finding that
+any such programme exists now, or that Brookhaven hosts one; Weinstein disclaims that himself and
+the report adopts no more than he claims. What it takes is narrower and is about the shape of the
+question rather than its answer: a working mathematical physicist, asked where the modern analogue
+of Los Alamos and the Reference Committee would be found, reaches for an institutional ecosystem
+on Long Island in which **Brookhaven National Laboratory is a named node**, and does so
+independently of this report and without reference to Rota.
+
+That is worth setting beside the documentary record below only because the record was assembled
+first and for other reasons.
+
 ### The two laboratories, and a consultancy with no visible product
 
 Against that regime, the institutional record of this report has a specific shape.
@@ -1136,7 +1176,7 @@ URLs were checked during research in September 2026. Page references identify th
 
 29. Thomas R. Lewis et al., “The Computing Effort That Made Trinity Possible,” Nuclear Technology 207 supplement 1, 2021, Los Alamos report LA UR 20, identifying the Super feasibility study as ENIAC’s first large scale program. https://www.osti.gov/servlets/purl/1836993
 
-30. Eric Weinstein interview, “The State of American Science Breakthrough Coverups and the Danger of Physics,” All In Podcast, 2026, transcript. https://singjupost.com/transcript-of-eric-weinstein-interview-on-all-in-podcast/
+30. Eric Weinstein interview, “The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast, 26 August 2026, transcript. The Restricted Data and United States v. The Progressive remarks are at c. 45–47 min.; the modern-analogue passage naming Renaissance Technologies, Brookhaven National Laboratory and the neighbouring university, together with his disclaimer of knowledge, runs c. 47:32–49:06. https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/eric-weinstein-the-state-of-american-science-breakthrough-coverups-and-the-danger-of-physics Also transcribed at https://singjupost.com/transcript-of-eric-weinstein-interview-on-all-in-podcast/
 
 31. Henry DeWolf Smyth, Atomic Energy for Military Purposes, official report, 1945, section on the National Research Council Reference Committee and control of scientific publication. https://www.osti.gov/opennet/manhattan-project-history/publications/smyth_report.pdf
 

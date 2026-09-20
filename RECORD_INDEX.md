@@ -107,6 +107,10 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | you have to go back to something called the United States versus Progr… | `q-eric-weinstein-eric-weinstein-in-er-05eb5e24` |  |
 | EXHIBIT_A_report.md | A mistake in ruling against the United States could pave the way for t… | `q-robert-w-warren-united-states-v-the--c31416e0` |  |
 | EXHIBIT_A_report.md | the only reason the government didn’t go after, Howard, what is it, Ho… | `q-eric-weinstein-eric-weinstein-in-er-278ca2f9` |  |
+| EXHIBIT_A_report.md | The question is, did it happen once or more than once? If it happened … | `q-eric-weinstein-eric-weinstein-in-er-e9acbc68` |  |
+| EXHIBIT_A_report.md | If it’s happening, I’ve said that the leading candidate would be Renai… | `q-eric-weinstein-eric-weinstein-in-er-229025bc` |  |
+| EXHIBIT_A_report.md | The cover story would be, you know, we are so good at trading that we … | `q-eric-weinstein-eric-weinstein-in-er-ef44cc2f` |  |
+| EXHIBIT_A_report.md | I’m not saying that I know that that’s true. My point was, I tried to … | `q-eric-weinstein-eric-weinstein-in-er-c1b14dae` |  |
 | EXHIBIT_A_report.md | determined by maximum entropy. | `q-kenneth-baclawski--introduction-to-prob-413ba930` |  |
 | EXHIBIT_A_report.md | Cellular automata theory, which he proposed to von Neumann; the Monte … | `q-martin-gardner-preface-to-stanislaw-5bb40637` |  |
 | EXHIBIT_A_report.md | We still do not know — it remains a government secret — what jumped in… | `q-martin-gardner-preface-to-stanislaw-9d931b66` |  |
