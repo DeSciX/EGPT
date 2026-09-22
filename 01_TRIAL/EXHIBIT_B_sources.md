@@ -434,7 +434,7 @@ Report, "18.313 and the unpublished manuscript" · **Exhibit A**
 
 **1979: the first known printing of the manuscript**
 
-> It circulated as a manuscript: Kenneth Baclawski and Gian-Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billis as a third author. The 1979 copy appears to be the earliest version publicly available.
+> It circulated as a manuscript: Kenneth Baclawski and Gian-Carlo Rota, Introduction to Probability and Random Processes, copyright 1979, a scanned copy of which is available on the Internet Archive; a later expanded version adds Sara Billey as a third author. The 1979 copy appears to be the earliest version publicly available.
 
 Report, "18.313 and the unpublished manuscript" · **Exhibit A**. The scan is held at `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf`. Its table of contents, at page iv, lists the entropy material as Chapter VII, "Entropy and Information" — "Uniqueness of Entropy" at 7.14 and "The Shannon Coding Theorem" at 7.17. The same chapter is numbered VIII in the later MIT edition, circa 1993, from which the report quotes.
 
@@ -510,7 +510,7 @@ Report, "Circulation was never the issue" · **Exhibit A**
 
 > There are more distributions determined by maximum entropy, especially those in statistical thermodynamics and quantum mechanics, but I trust that you now see the basic ideas.
 
-Baclawski, Rota and Billis, *Introduction to Probability Theory*, Chapters III and VIII, quoted in Report, "The physics distributions taught as entropy" · **Exhibit A**
+Baclawski, Rota and Billey, *Introduction to Probability Theory*, Chapters III and VIII, quoted in Report, "The physics distributions taught as entropy" · **Exhibit A**
 
 > The distributions of physics are not imported from physics and used here. They are named as determined by entropy, in a probability course, in a manuscript that was never published.
 

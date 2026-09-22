@@ -2250,10 +2250,10 @@
    "id": "q-kenneth-baclawski--introduction-to-prob-d4d3fc57",
    "quote": "That probability is closely connected with information should come as no surprise… What entropy does is to make this connection precise.",
    "speaker": {
-    "name": "Kenneth Baclawski, Gian-Carlo Rota and Stanley Billis",
+    "name": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey",
     "role": "author",
-    "sort": "kenneth baclawski, gian-carlo rota and stanley billis",
-    "as_given": "Kenneth Baclawski, Gian-Carlo Rota and Stanley Billis"
+    "sort": "kenneth baclawski, gian-carlo rota and sara billey",
+    "as_given": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey"
    },
    "source": {
     "work": "Introduction to Probability Theory, ch. VIII, “Entropy and Information”",
@@ -2273,16 +2273,16 @@
     "register"
    ],
    "quote_sha256": "d4d3fc5795d88ae142b1e0fa4552fb4f8f925ddc95223152077317695240a185",
-   "embed_text": "Kenneth Baclawski, Gian-Carlo Rota and Stanley Billis | Introduction to Probability Theory, ch. VIII, “Entropy and Information” | ch. VIII opening | unpublished lecture notes, preliminary edition, c. 1992–93 | That probability is closely connected with information should come as no surprise… What entropy does is to make this connection precise."
+   "embed_text": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey | Introduction to Probability Theory, ch. VIII, “Entropy and Information” | ch. VIII opening | unpublished lecture notes, preliminary edition, c. 1992–93 | That probability is closely connected with information should come as no surprise… What entropy does is to make this connection precise."
   },
   {
    "id": "q-kenneth-baclawski--introduction-to-prob-413ba930",
    "quote": "The four principal processes of probability theory are all determined by maximum entropy properties.",
    "speaker": {
-    "name": "Kenneth Baclawski, Gian-Carlo Rota and Stanley Billis",
+    "name": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey",
     "role": "author",
-    "sort": "kenneth baclawski, gian-carlo rota and stanley billis",
-    "as_given": "Kenneth Baclawski, Gian-Carlo Rota and Stanley Billis"
+    "sort": "kenneth baclawski, gian-carlo rota and sara billey",
+    "as_given": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey"
    },
    "source": {
     "work": "Introduction to Probability Theory, ch. VIII, “Entropy and Information”",
@@ -2302,7 +2302,7 @@
     "register"
    ],
    "quote_sha256": "413ba930feefc57ad966137873b8a2bb03f1e1f89a407745ffb9510620d24164",
-   "embed_text": "Kenneth Baclawski, Gian-Carlo Rota and Stanley Billis | Introduction to Probability Theory, ch. VIII, “Entropy and Information” | §3, summary | unpublished lecture notes, preliminary edition, c. 1992–93 | The four principal processes of probability theory are all determined by maximum entropy properties."
+   "embed_text": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey | Introduction to Probability Theory, ch. VIII, “Entropy and Information” | §3, summary | unpublished lecture notes, preliminary edition, c. 1992–93 | The four principal processes of probability theory are all determined by maximum entropy properties."
   },
   {
    "id": "q-ray-kurzweil-the-computer-and-the-13be85da",
@@ -4112,7 +4112,7 @@
     "as_given": "Gian-Carlo Rota"
    },
    "source": {
-    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter I",
+    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter I",
     "locus": "following the opening paragraph",
     "date": "c. 1992–93",
     "file": "04_ROTA/manuscript_1992/ch1_Intro_and_Chapter_I.md",
@@ -4129,7 +4129,7 @@
     "rota_manuscript"
    ],
    "quote_sha256": "60011f988bfdc602f25245124003a0a51ffae236711b9a0f817f5a0ed123f559",
-   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter I | following the opening paragraph | c. 1992–93 | We begin by giving a bird's-eye view of probability by examining some of the great unsolved problems of probability theory. It's only by seeing what the unsolved problems are that one gets a feeling for a field."
+   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter I | following the opening paragraph | c. 1992–93 | We begin by giving a bird's-eye view of probability by examining some of the great unsolved problems of probability theory. It's only by seeing what the unsolved problems are that one gets a feeling for a field."
   },
   {
    "id": "q-gian-carlo-rota-introduction-to-prob-a35b154c",
@@ -4141,7 +4141,7 @@
     "as_given": "Gian-Carlo Rota"
    },
    "source": {
-    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter I: Introduction",
+    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter I: Introduction",
     "locus": "opening paragraph",
     "date": "c. 1992–93",
     "file": "04_ROTA/manuscript_1992/ch1_Intro_and_Chapter_I.md",
@@ -4158,7 +4158,7 @@
     "rota_manuscript"
    ],
    "quote_sha256": "a35b154cfc3f33d3f42c7762d95d2e6f4cdb3acf02e2b3dd6e3ba24ae19b68fc",
-   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter I: Introduction | opening paragraph | c. 1992–93 | Probability is one of the greatest achievements of this century. Like geometry, it is a way of looking at nature. There are many ways of approaching natural problems, many points of view. The geometrical point of view has been with us for thousands of years. The probabilistic point of view is another way of focusing on problems that has been successful in many instances. The purpose of this course is to learn to think probabilistically. Unfortunately the only way to learn to think probabilistically is to learn the theorems of probability. Only later, as one has mastered the theorems, does the probabilistic point of view begin to emerge while the specific theorems fade in one's memory, much as the grin on the Cheshire cat."
+   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter I: Introduction | opening paragraph | c. 1992–93 | Probability is one of the greatest achievements of this century. Like geometry, it is a way of looking at nature. There are many ways of approaching natural problems, many points of view. The geometrical point of view has been with us for thousands of years. The probabilistic point of view is another way of focusing on problems that has been successful in many instances. The purpose of this course is to learn to think probabilistically. Unfortunately the only way to learn to think probabilistically is to learn the theorems of probability. Only later, as one has mastered the theorems, does the probabilistic point of view begin to emerge while the specific theorems fade in one's memory, much as the grin on the Cheshire cat."
   },
   {
    "id": "q-gian-carlo-rota-introduction-to-prob-ff09182b",
@@ -4170,7 +4170,7 @@
     "as_given": "Gian-Carlo Rota"
    },
    "source": {
-    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII, §2 “The Shannon Coding Theorem”",
+    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII, §2 “The Shannon Coding Theorem”",
     "locus": "§2, statement of the theorem",
     "date": "c. 1992–93",
     "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
@@ -4187,7 +4187,7 @@
     "rota_manuscript"
    ],
    "quote_sha256": "ff09182b16fe3e57a60754661d95b4acf6b33f7ca0adffb5450c6719b1e6bbe6",
-   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII, §2 “The Shannon Coding Theorem” | §2, statement of the theorem | c. 1992–93 | Shannon's Theorem states that for any finite-valued random variable X, it is possible to encode efficiently a sequence of independent copies of X provided that: (1) one encodes a block X₁, X₂, …, Xₙ all at one time, (2) one is willing to accept a small probability of error, ε > 0, that a block is incorrectly coded, such that ε can be made arbitrarily small."
+   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII, §2 “The Shannon Coding Theorem” | §2, statement of the theorem | c. 1992–93 | Shannon's Theorem states that for any finite-valued random variable X, it is possible to encode efficiently a sequence of independent copies of X provided that: (1) one encodes a block X₁, X₂, …, Xₙ all at one time, (2) one is willing to accept a small probability of error, ε > 0, that a block is incorrectly coded, such that ε can be made arbitrarily small."
   },
   {
    "id": "q-gian-carlo-rota-introduction-to-prob-f3c003a5",
@@ -4199,7 +4199,7 @@
     "as_given": "Gian-Carlo Rota"
    },
    "source": {
-    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy”",
+    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII, §3 “Continuous Entropy”",
     "locus": "§3, closing remark",
     "date": "c. 1992–93",
     "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
@@ -4216,7 +4216,7 @@
     "rota_manuscript"
    ],
    "quote_sha256": "f3c003a516bd918493cbabadc3d2fb50009ad6f3588a2c6656015a80246586cc",
-   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy” | §3, closing remark | c. 1992–93 | There are more distributions determined by maximum entropy, especially those in statistical thermodynamics and quantum mechanics, but I trust that you now see the basic ideas."
+   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII, §3 “Continuous Entropy” | §3, closing remark | c. 1992–93 | There are more distributions determined by maximum entropy, especially those in statistical thermodynamics and quantum mechanics, but I trust that you now see the basic ideas."
   },
   {
    "id": "q-gian-carlo-rota-introduction-to-prob-11b215bb",
@@ -4228,7 +4228,7 @@
     "as_given": "Gian-Carlo Rota"
    },
    "source": {
-    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy”",
+    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII, §3 “Continuous Entropy”",
     "locus": "§3, on standard entropy",
     "date": "c. 1992–93",
     "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
@@ -4245,7 +4245,7 @@
     "rota_manuscript"
    ],
    "quote_sha256": "11b215bb366de53b2be37854fecab1d62c5c592f9d2437cc0752e3b4aaa0fb44",
-   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII, §3 “Continuous Entropy” | §3, on standard entropy | c. 1992–93 | In order to speak of the entropy of the phenomenon represented by a random variable, independent of scale changes, we introduce yet one more notion of entropy. The standard entropy of a random variable is the Boltzmann entropy of its standardization."
+   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII, §3 “Continuous Entropy” | §3, on standard entropy | c. 1992–93 | In order to speak of the entropy of the phenomenon represented by a random variable, independent of scale changes, we introduce yet one more notion of entropy. The standard entropy of a random variable is the Boltzmann entropy of its standardization."
   },
   {
    "id": "q-gian-carlo-rota-introduction-to-prob-864507c1",
@@ -4257,7 +4257,7 @@
     "as_given": "Gian-Carlo Rota"
    },
    "source": {
-    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII: Entropy and Information",
+    "work": "Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII: Entropy and Information",
     "locus": "chapter opening",
     "date": "c. 1992–93",
     "file": "04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md",
@@ -4274,7 +4274,7 @@
     "rota_manuscript"
    ],
    "quote_sha256": "864507c14ce50834ad987ddd350b0977ebc51a9885758eef08368556b02065c6",
-   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billis), Chapter VIII: Entropy and Information | chapter opening | c. 1992–93 | That probability is closely connected with information should come as no surprise after problems such as exercise V.5 (the jailer paradox). What entropy does is to make this connection precise. In section 1, we discuss entropy for finite-valued random variables. In the next section we give a dramatic application of the law of large numbers to information theory: the Shannon Coding Theorem. Finally in section 3, we turn to the case of continuous random variables and prove that essentially all the interesting distributions we have seen in probability theory may be defined by entropy considerations."
+   "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII: Entropy and Information | chapter opening | c. 1992–93 | That probability is closely connected with information should come as no surprise after problems such as exercise V.5 (the jailer paradox). What entropy does is to make this connection precise. In section 1, we discuss entropy for finite-valued random variables. In the next section we give a dramatic application of the law of large numbers to information theory: the Shannon Coding Theorem. Finally in section 3, we turn to the case of continuous random variables and prove that essentially all the interesting distributions we have seen in probability theory may be defined by entropy considerations."
   },
   {
    "id": "q-gian-carlo-rota-ulam-and-rota-discus-ce27cb40",
