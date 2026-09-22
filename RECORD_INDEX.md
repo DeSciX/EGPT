@@ -101,6 +101,7 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | a dramatic application of the law of large numbers to information theo… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | should be brought into existence for amplitudes and quantum mechanics … | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
 | EXHIBIT_A_report.md | there lurks an even more enticing (and even less rigorous) concept: th… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
+| EXHIBIT_A_report.md | One example is quantum mechanics, which was discovered 30 years ago. T… | `q-gian-carlo-rota-rota-reflects-on-mat-2708a196` |  |
 | EXHIBIT_A_report.md | He left Princeton on a leave of absence and discontinued all commitmen… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
 | EXHIBIT_A_report.md | theoretical physics is the only profession to have lost free speech be… | `q-eric-weinstein-eric-weinstein-in-er-1a2a896b` |  |

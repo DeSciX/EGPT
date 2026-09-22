@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 331,
+ "count": 332,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -4362,6 +4362,35 @@
    ],
    "quote_sha256": "9c431cf3a5453c71839a24c86c2cffaea09e1b42942d4f2b7dfad750581b1120",
    "embed_text": "Gian-Carlo Rota | “Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12 | p. 102 | Spring/Summer 1985 | Let me give a simple example of context-dependence, due to Ulam."
+  },
+  {
+   "id": "q-gian-carlo-rota-rota-reflects-on-mat-2708a196",
+   "quote": "One example is quantum mechanics, which was discovered 30 years ago. The mathematics behind quantum mechanics had been worked out 20 years before by a mathematician who didn't know what it was good for.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "“Rota reflects on math and mathematicians,” interview by Denise Brehm, MIT News Office",
+    "locus": "answer to the question “What sorts of problems have combinatorics solved in the past?”",
+    "date": "28 October 1998",
+    "file": "",
+    "url": "http://giancarlorota.org/essays/reflects.html"
+   },
+   "restored": "",
+   "years": [
+    1998
+   ],
+   "themes": [
+    "quantum-formalism"
+   ],
+   "collections": [
+    "rota_reflects_1998"
+   ],
+   "quote_sha256": "2708a196fba8bd6bb50c7cec5594eeb6a282f09d55875a77936033a81c8b612d",
+   "embed_text": "Gian-Carlo Rota | “Rota reflects on math and mathematicians,” interview by Denise Brehm, MIT News Office | answer to the question “What sorts of problems have combinatorics solved in the past?” | 28 October 1998 | One example is quantum mechanics, which was discovered 30 years ago. The mathematics behind quantum mechanics had been worked out 20 years before by a mathematician who didn't know what it was good for."
   },
   {
    "id": "q-gian-carlo-rota-ten-lessons-of-an-mi-737d62b4",
