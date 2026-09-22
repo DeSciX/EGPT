@@ -1,0 +1,1184 @@
+Kenneth Baclawski
+College of Computer and Information Science
+Northeastern University
+360 Huntington Avenue
+Boston, MA 02115, USA
+email: Ken@Baclawski.com
+ken.baclawski.org
+
+Education
+Ph.D. 1976 Harvard University (Mathematics)
+B.S. 1971 University of Wisconsin, Milwaukee (Applied Mathematics and Engineering
+Physics)
+
+Experience
+7/2017 to present: Associate Professor Emeritus. College of Computer and Information Science, Northeastern University, Boston, MA
+1/1983 to 6/2017: Associate Professor. College of Computer and Information Science,
+Northeastern University, Boston, MA
+9/2003 to 8/2005: Visiting Professor. Harvard Medical School, Boston, MA
+7/1998 to 12/2005: Chief Scientist. Jarg Corporation, Waltham, MA
+7/1997 to 6/1998: Chief Technical Officer. Jarg Corporation, Waltham, MA
+9/1982 to 12/1982: Visiting Scholar in Applied Mathematics. Massachusetts Institute
+of Technology, Cambridge, MA
+7/1981 to 12/1981: Acting Chairman. Mathematics Department, Haverford College,
+Haverford, PA
+1/1980 to 6/1980: Visiting Professor. University of California, San Diego
+7/1979 to 6/1986: Consultant to the Director. Los Alamos National Laboratory, Los
+Alamos, NM
+7/1978 to 12/1983: Assistant Professor. Haverford College, Haverford, PA
+
+1
+
+7/1976 to 6/1978: C.L.E.Moore Instructor. Massachusetts Institute of Technology,
+Cambridge, MA
+7/1972 to 6/1976: Teaching Fellow. Harvard University, Cambridge, MA
+5/1970 to 8/1970: Assistant Professor. Physics Department, University of Wisconsin,
+Milwaukee
+
+Areas of Interest
+Semantics of Data
+Web Service Specification and Deployment
+Big Data and NoSQL Systems
+High-Performance Ontology-Based Computing
+Knowledge Bases for Biology and Medicine
+Ontologies for: Life Sciences, Situation Awareness and Financial Services
+
+Research Impact
+h-index
+39
+g-index
+72
+number of publications 409
+number of citations
+5561
+as of 2020-04-22
+
+Honors and Awards
+“Improving Quality and Flexibility of Machine Learning Methods,” Oracle. 2018-0612 to 2019-06-11.
+“Statistical Methods using Thread Intensity for Performance Monitoring,” Oracle.
+2017-05-01 to 2018-04-30.
+Google awarded a settlement to Northeastern University to conclude a patent infringement lawsuit for US Patent No. 5,694,593 (Kenneth Baclawski, inventor).
+This patent was allegedly for what Google calls MapReduce. MapReduce is the
+main search engine used by Google. MapReduce is the basis for NoSQL search
+engines such as Hadoop, and is one of the fundamental tools used for Big Data
+systems. US Patent No. 5,694,593 was invented in 1993; the patent application
+was in 1994; the patent was granted in 1997; the lawsuit was settled in 2011.
+The terms of the settlement are confidential.
+“Enhancing Organism Based Disease Knowledge Via Name Based Taxonomic Intelligence,” National Library of Medicine. 2008-10-01 to 2012-09-30.
+Keynote Address, 4th Semantic Interoperability for E-Government Conference, 2006.
+2
+
+Special Recognition Award from the Open Group and the Federal Semantic Interoperability Community of Practice, 2006.
+Keynote Address, Workshop on Advancing Toward Credible Agreements Around Information Sharing Environments, Governance, and Data Architecture, 2005.
+Outstanding Paper Award, SDR Forum, 2005.
+“Computational Models of Health Behavior Change Dialog,” National Library of
+Medicine. 2007-10-01 to 2009-09-30.
+“Automated Ontologically-Based Link Analysis of International Web Logs for the
+Timely Discovery of Relevant and Credible Information,” Air Force. 2006-03-01
+to 2009-02-28.
+“Semantic Information eXchange Architecture,” Navy. 2006-01-19 to 2008-01-18.
+“Situational Behavior Modeling,” US Air Force Office of Scientific Research. 200606-01 to 2007-05-30.
+“A Knowledge Development and Utilization Environment to Support KnowledgeBased Information Fusion in the Context of Asymmetric Warfare Information,”
+Army. 2005-11-01 to 2007-10-31.
+Keynote Address, Third International Workshop on Software Methodologies, Tools
+and Techniques, 2004.
+“A Formal Framework for Situation Awareness,” Air Force. 2003-05-01 to 2005-0430.
+Keynote Address, Second International Workshop on Software Methodologies, Tools
+and Techniques, 2003.
+“Information Fusion Reference Model,” Army. 2005-01-01 to 2005-06-30.
+“Achieving Interoperability of Emergency Response Teams Using Model Driven Architecture and Software Defined Radios,” NSF. 2002-10-01 to 2004-09-30.
+“A Formal Framework for Situation Awareness,” Air Force. 2002-05-01 to 2003-0131.
+“UML-Based Ontology Toolset,” DARPA. 2000-09-01 to 2005-08-31.
+“Architectures for ANT Based Adaptive Resource Management for Electronic Warfare,” DARPA. 1999-10-01 to 2002-09-30.
+“Re-Engineering of Multi-Sensor Fusion Software Through the Use of Formal Methods,” Sanders, a Lockheed Martin Company. 1999-01-01 to 1999-12-31.
+“Biomedical Science Information Retrieval and Management,” NIH. 1998-10-01 to
+1999-09-30.
+“Data/Knowledge Bases For Biological Papers And Techniques,” NSF. 1992 to 1995.
+“Research on file access patterns,” Amdahl Corporation. 1988 to 1988.
+“High-Performance Transaction Systems,” NSF. 1987 to 1989.
+Keynote Address, Trends in Combinatorics, 1982.
+3
+
+Case Western Reserve University Centennial Medal, 1982.
+“Algebra and Combinatorics,” NSF. 1979 to 1983.
+“Combinatorial Theory,” NSF. 1977 to 1978.
+“The Bracket Ring of a Combinatorial Geometry,” NSF. 1976 to 1977.
+“James K. Whittemore Fellow,” Harvard University. 1975 to 1976.
+“Graduate Fellowship,” NSF. 1971 to 1975.
+“Woodrow Wilson Fellow,” Woodrow Wilson Foundation. 1971 to 1972.
+“Undergraduate Research Grant,” NSF. 1968 to 1968.
+
+Courses Taught
+Web Service Development
+Software Component Development
+Introduction to Software Engineering
+Transaction Processing Systems
+Distributed Database Systems
+Object-Oriented Design
+Introduction to Database Management
+Operating Systems Design
+Data Modeling
+Algorithms
+C++ Programming
+Data Structures
+Assembly Language
+Introduction to Computer Programming
+
+Service Activities
+Treasurer, IEEE Conference on Cognitive and Computational Aspects of Situation
+Management. 2019–present.
+General Chair, IEEE Conference on Cognitive and Computational Aspects of Situation Management. 2018.
+Member, IEEE Systems, Man and Cybernetics Society. 2018–present.
+Infrastructure Committee, International Association for Ontologies and Applications.
+IAOA. 2018–present.
+Chair, Ontolog Board of Trustees. 2018–present.
+Overall Chair, Ontology Summit. 2017–present.
+Executive Committee Member and Treasurer, International Association for Ontologies and Applications. IAOA. 2016–present.
+4
+
+Co-Chair, Semantic Interoperability in the GeoSciences and Geographically Distributed
+Sensor Networks. Ontology Summit. 2016.
+Member of Organizing Committee, Ontology Summit. 2016–present.
+Member, Program Committee. International Workshop on Modular Ontologies. 2015.
+Member of Organizing Committee, Workshop on Modular Ontologies (WoMO). 2014–
+2018.
+Chair, Masters Committee. College of Computer and Information Science. 2014–
+2016.
+Member, Academic Appeals Committee. Northeastern University. 2014–2015.
+Co-Founder and Chair, CMIS for Document Access Management (CMIS4DAM) Technical Committee. OASIS. 2014–2016.
+Co-Chair, Tackling the Variety Problem in Big Data. Ontology Summit. 2014.
+Chair, Semantic Annotation of the Ontolog Community Environment. Ontology Summit. 2014.
+Advisor, Hackathon. Ontology Summit. 2014.
+Co-Chair, Semantic Web and Ontologies (SWAO) Special Interest Group. IAOA.
+2014–present.
+Member, Ontolog Board of Trustees. 2014–present.
+Member of Organizing Committee, Ontology Summit. 2014.
+Chair, Repositories Special Interest Group. IAOA. 2013–2014.
+Member, Standards and Ontologies Special Interest Group. IAOA. 2013–2014.
+Member of Organizing Committee, Ontology Summit. 2013.
+Chair, Ontology Tools Survey. Ontology Summit. 2013.
+Co-Chair Organizing Committee, Hackathon. Ontology Summit. 2013.
+Co-Chair, OOR-Ontohub-Gatekeeper API Workshop. 2013.
+Chair, Ontologies and Standards for Social Networking Workshop. 2013.
+Co-Chair, Guide to Reasoning Applications Development and Cases. Ontology, Rules,
+and Logic Programming for Reasoning and Applications. 2013.
+Co-Chair, Open Ontology Repository Development Workshop. OOR Initiative. 2013.
+Co-Chair, Software Environments for Evaluating Ontologies Track. Ontology Summit. 2013.
+Co-Chair, Leveraging Semantics on OntologPSMW. Ontology Summit. 2013.
+Co-Chair, Ontohub-OOR-OOPS! Integration. Ontology Summit. 2013.
+Co-Chair, Ontologies and Standards Mini-Series. 2012–2013.
+
+5
+
+Secretary of Steering Committee, Workshop on Modular Ontologies (WoMO). 2013–
+2017.
+Member, Content Management Interoperability Services (CMIS) Technical Committee. OASIS. 2013–2017.
+Member, Masters Committee. College of Computer and Information Science. 2013.
+Chair, OASIS Integrated Collaboration Object Model for Interoperable Collaboration
+Services (ICOM) Technical Committee. OASIS. 2012–2016.
+Member, OASIS Open Data Protocol (OData) Technical Committee. OASIS. 2012–
+2016.
+Panelist, Bioengineering Sciences and Technologies: Shared Instrument Review. National Institutes of Health. 3/2012.
+Member, Program Committee. International Workshop on Modular Ontologies. 7/2012.
+Panelist, Review Panel on Collaboration with NCBCs. National Institutes of Health.
+3/2011.
+Presenter, OOR-BioPortal Joint Workshop. Ontolog Forum and NCBO. 2011.
+Chair, University Standing Appeals Committee on Tenure. Northeastern University.
+2011–2012.
+Co-Chair, Open Ontology Repository Architecture Workshop Series. Ontolog Forum.
+2011–2012 (twelve sessions).
+Member, Organizing Committee and Program Committee. OCAS: Ontologies Come
+of Age in the Semantic Web at ISWC 2011. 2011.
+Member, Program Committee. ACM Workshop on Medical Multimedia Analysis and
+Retrieval (MMAR 2011). 2011.
+Member, University Standing Appeals Committee on Tenure. Northeastern University. 2010–2011, 2014–2015.
+Member, Marius Solomon Evaluation Committee. Northeastern University. 2010–
+2011.
+Member, Program Committee. IEEE Conference on Cognitive Methods in Situation
+Awareness and Decision Support (CogSIMA). 2010–present.
+Member, Program Committee. ESWC 2010 Workshop on Ontology Repositories and
+Editors for the Semantic Web. 2010.
+Member, Organizing Committee and Program Committee. ISWC 2010 Workshop on
+Semantic Repositories for the Web. 2010.
+Panelist, Computational Modeling and Sciences for Biomedical and Clinical Applications. National Institutes of Health. 7/2009 (twice), 11/2009, 3/2010, 6/2010,
+10/2010, 2/2011, 6/2011, 10/2011, 2/2012, 10/2012.
+Panelist, Special Emphasis Panel. National Institutes of Health. 3/2009.
+6
+
+Panelist, Computer Shared Instrumentation. National Institutes of Health. 7/2009.
+Member, International Association for Ontologies and Applications (IAOA). IAOA.
+2009–present.
+Chair, Open Ontology Repository Gathering. International Semantic Web Conference. 2009.
+Chair, Ontology Repository Research Issues. Ontolog Forum and NCBO. 2009.
+Member, Program Committee. Collaboration and Ontology Repository Workshop
+(CCMaLiSK) at the International Semantic Web Conference. 2009.
+Member, Program Committee. Transforming and Weaving Ontologies and Model
+Driven Engineering at the MoDELS Conference. 2008, 2009, 2010.
+Co-Founder, Convener, Speaker and Session Chair, Open Ontology Repository Initiative. Ontolog Forum and NCBO. 2008–2014 (weekly virtual meetings).
+Member, Frader Evaluation Committee. Northeastern University. 2008.
+Series Chair, Emerging Ontology Content Showcase. Ontolog Forum. 2008.
+Member, Provost Grant Review Board. Northeastern University. 2007.
+Presenter, Panel on social networking. Northeastern University. 2007.
+Convener, Speaker and Session Chair, Ontology Summit. National Institute of Standards and Technology. 2007, 2008.
+Convener, Speaker and Session Chair, Ontolog Forum. NIST, IAOA and NCBO.
+2007–present (weekly virtual meetings).
+Presenter, Inaugural Encyclopedia of Life Meeting. Marine Biological Laboratory.
+2007.
+Panelist, Ad Hoc Study Group. National Institutes of Health. 7/2006, 9/2006,
+1/2007.
+Keynote Address, Introduction to the Semantic Web. 4th Semantic Interoperability
+for E-Government Conference. 2/2006.
+Panelist, NIH - NIDDK Review Branch. National Institutes of Health. 2/2006.
+Member, Program Committee. Semantic Modeling and Model-Driven Architecture
+(SMMDA). 2006.
+Chair, Scientific Advisory Board of the Virtual Plant Information Network (VPIN).
+National Center for Genome Resources. 2005–2007.
+Panelist, Biodata Study Group. National Institutes of Health. 7/2005, 10/2005.
+Member, Program Committee. International Symposium on Network Computing and
+Applications. 2005.
+Tutorial Presenter, Introduction to the Semantic Web for Bioinformatics. Computational Systems Bioinformatics Conference. 11/2005.
+Program Committee Member, Workshop on Semantic Web Enabled Software Engineering. International Semantic Web Conference. 2005, 2006, 2007, 2008, 2009,
+2010, 2011, 2012, 2013.
+7
+
+Session Chair, Conference. SPIE Conference on Multisensor, Multisource Information
+Fusion. 2005.
+Member, Advisory Board. School of Technological Entrepreneurship, Northeastern
+University. 2004–2011.
+Member, Program Committee. International Semantic Web Conference. 2004–2005.
+Member, Program Committee. International Symposium on Network Computing and
+Applications. 2004–2005.
+Session Chair, Symposium. International Symposium on Network Computing and
+Applications. 2004–2005.
+Member, Search Committee for the Dean of the School of Technological Entrepreneurship. Northeastern University. 2004–2005.
+Chair, Evaluation Committee for the Dean of the College of Engineering. Northeastern University. 2004.
+Member, Program Committee. International Workshop on Software Methodologies,
+Tools and Techniques. 2003, 2004, 2005, 2006, 2007.
+Member, Ontology Working Group. Object Management Group. 2002–2004.
+Senator, Faculty Senate. Northeastern University. 2001–2003.
+Member, UML2.0 Standardization Committee. Object Management Group. 2001–
+2003.
+Member, Responsibility-Centered Management Committee. Northeastern University.
+2001–2002.
+Member, Financial Affairs Committee. Northeastern University. 2001–2002.
+Member, School of Entrepreneurship Committee. Northeastern University. 2000–
+2001.
+Co-Author, Web Ontology Language. World Wide Web Consortium. 2000–2001.
+Co-Chair, Workshop on Behavioral Semantics. Object-Oriented Programming Languages, Systems and Architectures. 1999–2002.
+Secretary, Evaluation Committee for the Dean of the School of Engineering Technology. Northeastern University. 1993–1994.
+Secretary, Long-Range Planning Committee. Northeastern University. 1991–1992.
+Member, Undergraduate Committee. College of Computer and Information Science.
+1988–2013.
+Member, Computing Resources Committee. College of Computer and Information
+Science. 1988–1989.
+Advisor, Programmers Guild. College of Computer and Information Science. 1988–
+1989.
+Advisor, Association for Computing Machinery Student Chapter. College of Computer and Information Science. 1988–1991.
+8
+
+Member, Committee on the Use of Computers in Advising. Northeastern University.
+1989–1991.
+Chair, Program Review Committee for Mechanical Engineering. Northeastern University. 1987–1988.
+Chair, Program Review Committee of the Graduate Council. Northeastern University. 1984–1986.
+Member, Graduate Council Executive Committee. Northeastern University. 1984–
+1986.
+Member, Graduate Council. Northeastern University. 1984–1986.
+Co-Chair, Joint Committee on Business-Computer Science Cooperation. College of
+Computer and Information Science. 1988–1993.
+Member, Computer Resource Advisory Committee. College of Computer and Information Science. 1988–1990.
+Chair, Hiring Committee. College of Computer and Information Science. 1988–1991.
+Chair, Colloquium Committee. College of Computer and Information Science. 1985–
+1990.
+Secretary, Tenure Committee. College of Computer and Information Science. 1988–
+1994, 2002–2003.
+Member, Tenure Committee. College of Computer and Information Science. 1985–
+2017.
+Chair, Merit Review Committee. College of Computer and Information Science.
+1987–1988, 2013–2015.
+Member, Merit Review Committee. College of Computer and Information Science.
+1985–1988, 1992–1993.
+Member, Hiring Committee. College of Computer and Information Science. 1983–
+1991.
+Chair, Sabbatical Leave Committee. College of Computer and Information Science.
+1983–1989, 1991–1995, 1996–1997, 2004–2010.
+Member, Graduate Committee. College of Computer and Information Science. 1983–
+1986.
+President, GBSIGMOD. Association for Computing Machinery. 1986–1990, 1991–
+1993.
+President, Greater Boston Chapter. Association for Computing Machinery. 1990–
+1992.
+Vice-President, Greater Boston Chapter. Association for Computing Machinery.
+1986–1988.
+Member, Greater Boston Chapter Executive Board. Association for Computing Machinery. 1984–1999.
+9
+
+Treasurer, GBSIGMOD. Association for Computing Machinery. 1990–1991.
+Chair, Greater Boston Chapter Volunteers Committee. Association for Computing
+Machinery. 1992–1993.
+Chair, Greater Boston Chapter Strategic Planning Committee. Association for Computing Machinery. 1992–1993.
+Member, SIGMOD. Association for Computing Machinery. 1984–2000.
+Member, Greater Boston Chapter. Association for Computing Machinery. 1984–
+2008.
+Member, Computer Society. IEEE. 1984–present.
+Member, Technical Committee on Data Engineering. IEEE. 1984–2000.
+Member, Program Committee. IEEE-Boston. 1990–1994.
+Chair, Greater Boston Chapter Program Committee. Association for Computing
+Machinery. 1984–1993.
+
+Websites and Software
+Knowledge Intensive Data System Ontology
+Kenneth Baclawski.
+Provides: software.
+Purpose: research.
+ken.baclawski.org/kids.owl
+2016.
+The SoapRest Web Services Package
+Kenneth Baclawski.
+Provides: software.
+Purpose: research.
+ken.baclawski.org/soaprest
+2014.
+Java EAPG - An Extended ABNF Parser Generator
+Kenneth Baclawski.
+Provides: software.
+Purpose: research.
+ken.baclawski.org/eapg.jar
+2014.
+Open Ontology Repository API
+Kenneth Baclawski.
+Provides: software.
+10
+
+Purpose: research.
+ken.baclawski.org/oor
+2014.
+Northeastern University Pseudo Cone Facility (NUPCF)
+Kenneth Baclawski.
+Provides: software, website.
+Purpose: research.
+ken.baclawski.org/nupcf
+2011.
+Purple Semantic Media Wiki
+Kenneth Baclawski, Peter Yim, Tejas Parikh, Sumit Purohit.
+Provides: software, website.
+Purpose: research, service.
+2011–2014.
+Use Case Description Ontology
+Kenneth Baclawski.
+Provides: ontology.
+Purpose: research, service.
+ken.baclawski.org/ontologies/ucdo.owl
+2010.
+KEEPER Project
+Kenneth Baclawski, Maximo Gurmendez.
+Provides: software, website.
+Purpose: research.
+2010–2014.
+Open Ontology Repository Use Case Descriptions
+Kenneth Baclawski, Maximo Gurmendez.
+Provides: software, website, ontology.
+Purpose: research.
+ken.baclawski.org/ontologies/oor-usecase.xml
+2010.
+Introduction to Probability with R
+Kenneth Baclawski.
+Provides: software, website, textbook.
+Purpose: teaching.
+stochas.baclawski.org
+11
+
+2008–present.
+Purple Media Wiki Extension
+Kenneth Baclawski, Peter Yim, Tejas Parikh, Viral Gupta, Sumit Purohit.
+Provides: software, website.
+Purpose: research, service.
+2008–2014.
+Open Ontology Repository
+Kenneth Baclawski (PI), Peter Yim, Todd Schneider, Michael Gruninger, National
+Center for Biomedical Ontologies, Open Ontology Repository Initiative.
+Provides: software, website.
+Purpose: research.
+oor.net
+2008–2014.
+Ontologies for Bioinformatics Website
+Kenneth Baclawski, Tianhua Niu.
+Provides: website.
+Purpose: teaching, textbook.
+ontobio.baclawski.org
+2005.
+Eleventh OOPSLA Workshop on Behavior Semantics
+Kenneth Baclawski, Haim Kilov.
+Provides: website.
+Purpose: service.
+ken.baclawski.org/oopsla2002
+2002.
+Tenth OOPSLA Workshop on Behavior Semantics
+Kenneth Baclawski, Haim Kilov, Angelo Thalassinidis, Kevin Tyson.
+Provides: website.
+Purpose: service.
+ken.baclawski.org/oopsla2001
+2001.
+Ninth OOPSLA Workshop on Behavior Semantics
+Kenneth Baclawski, Haim Kilov, Angelo Thalassinidis, Kevin Tyson.
+Provides: website.
+Purpose: service.
+ken.baclawski.org/oopsla2000
+12
+
+2000.
+Java RMI and Synchronization Tutorials
+Kenneth Baclawski.
+Provides: software, website.
+Purpose: teaching.
+ken.baclawski.org/tutorial
+1998–2013.
+
+Partial List of Students
+Student
+Kamran Rastegar
+Yazun Al Eifan
+Elliott Smith
+Thomas Fleming
+Richard Weeks
+David Laplante
+Lee Mandell
+Whit Stockwell
+George Jreige
+Vivian Carpenter
+Ying Ng
+Manus Fealy
+Chetan Mepani
+Barry Sullivan
+Tin-yan Sun
+Michael Llewellyn Jr
+Nicolas Lossky
+John Buczkowski
+
+Title or Topic Area
+Database Systems
+Knowledge Representation
+Knowledge Representations
+Distributed Databases
+Natural Language Front Ends to
+Databases
+Capturing More Meaning in
+Databases
+Capturing More Meaning in
+Databases
+Capturing More Meaning in
+Databases
+Enhancing Knowledge
+Representations
+Using the Decision-Tree Model
+in Database Design
+Using the Decision-Tree Model
+in Database Design
+Integrating User Views in
+Database Design
+Integrating User Views in
+Database Design
+Logic Programming
+Comparison of Pascal and Ada
+Rule-based Systems
+Rule-based Systems
+Object-Based Computing and the
+Ada Language
+13
+
+Year
+1983
+1985
+1985
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+
+Student
+Susanne Chan
+Jeffrey Bloomberg
+Tom Friends
+Ashvin Patel
+Richard Fucarile
+Scott Ribiero
+Ian Campbell
+Frederick Dacey III
+Jeff Mattson
+Frederick Boudreau III
+Scott Bradley
+Johathan Fava
+Martin Fitzgerald
+Edward Francoeur
+Heather Hall
+Richard Larowe Jr
+Brendan McBreen
+David Painter
+Nidal Rajeh
+Philip Roux
+Douglas Silver
+
+Title or Topic Area
+Object-Based Computing and the
+Ada Language
+Animating Programs Using
+Smalltalk
+A Taxonomy of Current Issues in
+Requirements Engineering
+Structured Analysis Concepts
+Data Flow Design
+Functional Decomposition
+Data Structure Design
+Learning from AI: New Trends in
+Database Technology
+AI Techniques for Database
+Management
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+Graphic User Interfaces for
+Software Engineering
+
+14
+
+Year
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1986
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+
+Student
+Title or Topic Area
+Mary Ann Werbinski Graphic User Interfaces for
+Software Engineering
+Anthony Zeoli Jr
+Graphic User Interfaces for
+Software Engineering
+Joseph Zinkann
+Graphic User Interfaces for
+Software Engineering
+Eric Aftandilian
+Transaction Processing Systems
+George Azzi
+Transaction Processing Systems
+Charles Connors
+Transaction Processing Systems
+Anna Dimascio
+Transaction Processing Systems
+Mark Geschelin
+Transaction Processing Systems
+Ban Fan Hazineh
+Transaction Processing Systems
+Lucy Karis
+Transaction Processing Systems
+William Kilduff
+Transaction Processing Systems
+Margaret Mekosky
+Transaction Processing Systems
+Khaled Mohieddin
+Transaction Processing Systems
+Azita Refah
+Transaction Processing Systems
+Gregory Smith
+Transaction Processing Systems
+Raymond Suarez
+Transaction Processing Systems
+Christine Sullivan
+Transaction Processing Systems
+Lori Lashway
+Transaction Processing Systems
+Fariba Aliloo
+Transaction Processing Systems
+Samuel Bechar
+Transaction Processing Systems
+Samir Bhatia
+Transaction Processing Systems
+Avonelle Christian
+Transaction Processing Systems
+Lawrence Fowler
+Transaction Processing Systems
+Dek Lee
+Transaction Processing Systems
+Stephen Muli
+Transaction Processing Systems
+Neal Rudnick
+Transaction Processing Systems
+Ronald Sandstrom
+Transaction Processing Systems
+Jerry Thomas
+Transaction Processing Systems
+Patricia Castillo
+Software Engineering
+Roy Rubinstein
+Software Engineering
+Jun Chen
+High-Performance Transaction
+Processing Systems
+Jyh-Hwa Chen
+High-Performance Transaction
+Processing Systems
+Siu Pong Choa
+High-Performance Transaction
+Processing Systems
+
+15
+
+Year
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1987
+1988
+1988
+1988
+
+Student
+Hsing-Tao Chou
+
+Title or Topic Area
+High-Performance Transaction
+Processing Systems
+Jean Collins
+High-Performance Transaction
+Processing Systems
+Sunil Contractor
+High-Performance Transaction
+Processing Systems
+Yiannis Doganis
+High-Performance Transaction
+Processing Systems
+Whaeeb Ghafoor
+High-Performance Transaction
+Processing Systems
+Christine Hammond
+High-Performance Transaction
+Processing Systems
+Wing Lam
+High-Performance Transaction
+Processing Systems
+Henry Rausen
+High-Performance Transaction
+Processing Systems
+Tze-Ming Tsang
+High-Performance Transaction
+Processing Systems
+Jackson Wynn
+High-Performance Transaction
+Processing Systems
+Er Hong Ye
+High-Performance Transaction
+Processing Systems
+You Yi Zhang
+High-Performance Transaction
+Processing Systems
+Ian Holland
+Hype: A Mini-Hypertext System
+Timothy Mark
+Semantic Data Modeling
+Ramesh Ramachandran Semantic Data Modeling
+Robert Newby
+Semantic Data Modeling
+Ignacio Silva-Lepe
+Consistency Checking of
+Semantic Data Models
+Christine Stamelos
+Name Service for Semantic Data
+Models
+Jacek Kruszelnicki
+Graphic views for alpha model
+Jing Wang
+View mechanisms for alpha model
+Xiaoji Cai
+Object-oriented data models
+Olaf Kruger
+Knowledge and Logic Databases
+Tong Liu
+Graphic annotation and display
+Raj Baberwal
+Graphic display for the alpha
+model
+
+16
+
+Year
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1988
+1990
+1990
+1990
+1990
+1990
+1990
+1990
+1990
+
+Student
+Christopher Cheng
+
+Title or Topic Area
+Graphic menu interface for
+alpha model
+Leonidas Deligiannidis
+Embedded Rdb/VMS SQL
+Programming Using Fortran as
+the Host Language for a Travel
+Agent Project
+Yalan Ji
+Schema Translation
+Gang Yan
+Network Emulation
+Sreenivasulu Guduguntla Graphic User Interface for
+Network Emulation
+Brinda K Keralavarma
+Graphic User Interface for Data
+Modeling
+Hong Shao
+Lock Manager for the
+Transaction Processing
+Emulation Tool
+Krishna Boppana
+Automated Student Advising
+Jagadeesh Venugopal
+Client-Server Architecture
+Kiran Kasibhatla
+Client-Server Architecture
+Atchiraju Jaldu
+Client-Server Architecture
+Wayne Vetrone
+Transaction Processing Systems
+Shobana Sampath
+Information Retrieval for
+Student Advising
+Xiang Li
+Graphic User Interface for
+Student Advising
+Prasad Ayyalasomayajula Graphic User Interface
+Mahendra Velchuru
+Simulated ATM
+Doug Waters
+Transaction Processing
+Simulation
+Yelena Prusakov
+Airport Management System
+Manoj Thadani
+Distributed File System
+Katarzyna Leskow
+Apache Web Server
+Todd Fernandez
+Apache Web Server
+Massimo Loi
+Apache Web Server
+Amy Miles
+Apache Web Server
+Yu Hua Zheng
+Apache Web Server
+Yu Liu
+Apache Web Server
+Yahya Abd Rahman
+Intelligent Agent System
+John Bardash
+Intelligent Agent System
+
+17
+
+Year
+1990
+
+1991
+1992
+1992
+1992
+1992
+
+1993
+1993
+1994
+1994
+1994
+1994
+1994
+1994
+1995
+1995
+1996
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+
+Student
+Steves Stuart
+Jun Tian
+Joseph Cigna
+Kelvin Li
+Filipp Rakevich
+Presha Nair
+Yuhong Yin
+Yuchun Guo
+Arvind Meda
+Artan Simeqi
+Chi Zhang
+Furong Yang
+Rama Devulapalli
+Tao Yu
+Jaimin Patel
+Jarrod Whelan
+Ricky Girglani
+Ping Wang
+Lyuba Yelovich
+Fang Lan
+Lyubov Yelovich
+Nilesh Nagraj Rathod
+Jinying Zhong
+Nilgun Unver
+Weizhen Ji
+
+Title or Topic Area
+Intelligent Agent System
+Multimedia Intelligent Agent
+System
+Multimedia Intelligent Agent
+System
+Multimedia Intelligent Agent
+System
+Distributed Objects
+Distributed Objects
+Knowledge Extraction and
+Optimization
+Knowledge Extraction and
+Optimization
+Information and Content
+Exchange (ICE) Protocol
+Information and Content
+Exchange (ICE) Protocol
+Information and Content
+Exchange (ICE) Protocol
+Information and Content
+Exchange (ICE) Protocol
+Information and Content
+Exchange (ICE) Protocol
+Knowledge Extraction and
+Optimization
+WebAdvisor
+WebAdvisor
+WebAdvisor
+WebAdvisor
+WebAdvisor
+WebAdvisor
+Multi-Agent Systems
+Distance Learning Software
+Component-Based Distributed
+Systems
+Component-Based Distributed
+Systems
+Component-Based Distributed
+Systems
+
+18
+
+Year
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+1999
+2000
+2000
+2000
+2000
+2000
+2000
+2000
+2000
+2000
+2001
+2002
+2002
+2002
+
+Student
+Xi Xian
+Zhaoming Lu
+Shyama Gavrulla
+Lakshman Easwaran
+Kevin Amorin
+Prashanth Ram
+Subir Kumar
+Vishesh Duggar
+David Ortiz
+Viral Gupta
+
+Tejas Parikh
+Nirmal Shah
+Dawei Dai
+Munmun Mahapatra
+
+Sumit Purohit
+Shruti Dabhade
+Sapna Gathani
+Srividya Mandaleeka
+Laila Nurani
+Bipinkumar Shetty
+Hyuk Park
+John O’Connor
+
+Title or Topic Area
+Component-Based Distributed
+Systems
+Component-Based Distributed
+Systems
+Linux Device Drivers
+Benchmarks for Major Database
+Systems
+Beowulf Cluster
+Parallel Processing
+Distributed Processing
+Integration of Decision
+Analysis
+Powerline Network Communication
+System
+Fine-Grained Addressability to
+Support Large-Scale
+Collaborative Document
+Development
+Fine-Grained Addressability of
+MediaWiki Websites
+Collaborative Work Environments
+The Tiki Collaborative Work
+Environment
+Transclusion for Fine-Grained
+Collaboratively Developed
+Artifacts
+Purple MediaWiki
+Object-Oriented and Classical
+Software Engineering Methods
+Active Wiki Tagging
+Semantic Search for Disease
+Reports
+Metadata Registry ISO/IEC 11179
+Registration System using ORM
+Administration of ISO/IEC 11179
+Metadata registries (MDR)
+Query Interface for MIMIC-II
+Python based ORM (Object RDF
+Mapper)
+
+19
+
+Year
+2002
+2002
+2002
+2002
+2003
+2003
+2003
+2007
+2007
+
+2008
+2009
+2009
+2009
+
+2009
+2009
+2009
+2010
+2010
+2010
+2010
+2011
+2011
+
+Student
+Gaurav Durgule
+
+Title or Topic Area
+Computer Aided Standards
+Development (CASD) Semantic
+consistency among standards
+Sankalpa Kulkarni
+Computer Aided Standards
+Development Process
+Srinivas Varadharajan
+A Software Tool to Automate
+Standards Development Process
+Vivek Singh Chouhan
+Computer Aided Standard Design
+Akshay Tekkatte Raghavend Computer Aided Standards
+Hathwar
+Development (CASD)
+Vishakha Motwani
+CASD Tool Interface for
+Document Generation
+Ankit S. Agrawal
+Decision Making Process for
+Financial Services
+Shruthi Keerthi Balki
+Student Information Management
+Ranjita Bhattacharyya
+Decision Making Process for
+Cloud Service
+Prasanna D. Deolankar
+Decision Making Process for
+Financial Services
+Swapnil Sharadkumar Gupta Student Information Management
+Pramod R. Khare
+Student Information Management
+Saurabh Kumar Kulkarni
+Decision Making Process for
+Customer Service
+Sahil Mehta
+Decision Making Process for
+Financial Services
+Sumit Suresh Nair
+Decision Making Process for
+Customer Service
+Mamata D. Prabhu
+Decision Making Process for
+Financial Services
+Sahil Chhabra
+Decision Making Process for
+Cloud Services
+Amanda Priscilla Araujo da Decision Making Process for
+Silva
+Financial Services
+Xing Zhang
+Decision Making Process for
+Customer Service
+Dipanjan Haldar
+Thread Intensity Analytics
+Sanhita Bangalore
+Effects of Stress and
+SreenivasaMurthy
+Distraction on Operator
+Performance
+
+20
+
+Year
+
+2014
+2014
+2014
+2014
+2014
+2014
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2015
+2017
+
+2017
+
+

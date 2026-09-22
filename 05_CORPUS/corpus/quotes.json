@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 332,
+ "count": 337,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -667,6 +667,64 @@
    ],
    "quote_sha256": "a3c4e8a6e15e688b27ffb14d800c75c730bb28e02154a1c14361cf59e7bf0b46",
    "embed_text": "Herbert L. Anderson | Herbert L. Anderson, “Metropolis, Monte Carlo, and the MANIAC,” Los Alamos Science No. 14 (1986), pp. 96–108 | p. 106 | 1986 | MANIAC II succeeded MANIAC I in Los Alamos in 1956. The second MANIAC was more powerful than the first and, because it included floating-point arithmetic, was easier to use. MANIAC III, with the latest in solid-state circuitry, was developed at the University of Chicago when Nick returned there to head the newly formed Institute for Computer Research."
+  },
+  {
+   "id": "q-kenneth-baclawski-kenneth-baclawski-cu-38bbe5e8",
+   "quote": "7/1979 to 6/1986: Consultant to the Director. Los Alamos National Laboratory, Los Alamos, NM",
+   "speaker": {
+    "name": "Kenneth Baclawski",
+    "role": "author",
+    "sort": "baclawski, kenneth",
+    "as_given": "Kenneth Baclawski"
+   },
+   "source": {
+    "work": "Kenneth Baclawski, curriculum vitae, under “Professional Experience”",
+    "locus": "p. 1",
+    "date": "current at 2026-09-22",
+    "file": "",
+    "url": "https://ken.baclawski.org/vitae.pdf"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "guidi_notes_and_baclawski_cv"
+   ],
+   "quote_sha256": "38bbe5e8e4b05f1e10089fa3e06449239ba018c24d52eebfc42d825020fcdd2a",
+   "embed_text": "Kenneth Baclawski | Kenneth Baclawski, curriculum vitae, under “Professional Experience” | p. 1 | current at 2026-09-22 | 7/1979 to 6/1986: Consultant to the Director. Los Alamos National Laboratory, Los Alamos, NM"
+  },
+  {
+   "id": "q-kenneth-baclawski-kenneth-baclawski-cu-fbe80d7c",
+   "quote": "7/1976 to 6/1978: C.L.E.Moore Instructor. Massachusetts Institute of Technology, Cambridge, MA",
+   "speaker": {
+    "name": "Kenneth Baclawski",
+    "role": "author",
+    "sort": "baclawski, kenneth",
+    "as_given": "Kenneth Baclawski"
+   },
+   "source": {
+    "work": "Kenneth Baclawski, curriculum vitae, under “Professional Experience”",
+    "locus": "p. 1",
+    "date": "current at 2026-09-22",
+    "file": "",
+    "url": "https://ken.baclawski.org/vitae.pdf"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "guidi_notes_and_baclawski_cv"
+   ],
+   "quote_sha256": "fbe80d7c310b005e0f856568f8b8c9d4bf7cf2509e5b2bc817b8f8ed445ce321",
+   "embed_text": "Kenneth Baclawski | Kenneth Baclawski, curriculum vitae, under “Professional Experience” | p. 1 | current at 2026-09-22 | 7/1976 to 6/1978: C.L.E.Moore Instructor. Massachusetts Institute of Technology, Cambridge, MA"
   },
   {
    "id": "q-gregory-bateson-gregory-bateson-from-19b2f0db",
@@ -1955,6 +2013,64 @@
    "embed_text": "Google DeepMind (DreamerV3) | DreamerV3, arXiv:2301.04104 | 2023 (Nature version 2025) | Dreamer learns a model of the environment and improves its behavior by imagining future scenarios"
   },
   {
+   "id": "q-john-n-guidi-probability-lecture--7e24908f",
+   "quote": "These Lecture Notes originated from the lectures presented by Gian-Carlo Rota, Professor of Applied Mathematics, for course 18.313 - Probability, which he taught at MIT, during the Spring 1998 semester. The Lecture Notes were produced from notes I made during class, audio recordings I made of lectures, as well as clarifications and expansions I made of the material presented, after the fact.",
+   "speaker": {
+    "name": "John N. Guidi",
+    "role": "author",
+    "sort": "guidi, john n.",
+    "as_given": "John N. Guidi"
+   },
+   "source": {
+    "work": "Probability: Lecture Notes, MIT Course 18.313, Professor Gian-Carlo Rota, Volume 1 of 2 (Lectures 1–21), preface",
+    "locus": "p. iii, dated October 15, 1998",
+    "date": "15 October 1998",
+    "file": "",
+    "url": "https://www.ellerman.org/wp-content/uploads/2016/06/Guidi-Notes-Rota-Probability-Vol-1-2.pdf"
+   },
+   "restored": "",
+   "years": [
+    1998
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "guidi_notes_and_baclawski_cv"
+   ],
+   "quote_sha256": "7e24908f41b711205909c7e424661bcd9abdb7e4bee5e4c3e0463a473b0991ae",
+   "embed_text": "John N. Guidi | Probability: Lecture Notes, MIT Course 18.313, Professor Gian-Carlo Rota, Volume 1 of 2 (Lectures 1–21), preface | p. iii, dated October 15, 1998 | 15 October 1998 | These Lecture Notes originated from the lectures presented by Gian-Carlo Rota, Professor of Applied Mathematics, for course 18.313 - Probability, which he taught at MIT, during the Spring 1998 semester. The Lecture Notes were produced from notes I made during class, audio recordings I made of lectures, as well as clarifications and expansions I made of the material presented, after the fact."
+  },
+  {
+   "id": "q-john-n-guidi-probability-lecture--5fae32bc",
+   "quote": "Sara Billey, Assistant Professor of Applied Mathematics, who was the course director and whose recitations I attended, presented lectures 20, 21, and 27.",
+   "speaker": {
+    "name": "John N. Guidi",
+    "role": "author",
+    "sort": "guidi, john n.",
+    "as_given": "John N. Guidi"
+   },
+   "source": {
+    "work": "Probability: Lecture Notes, MIT Course 18.313, Professor Gian-Carlo Rota, Volume 1 of 2, preface",
+    "locus": "p. iii",
+    "date": "15 October 1998",
+    "file": "",
+    "url": "https://www.ellerman.org/wp-content/uploads/2016/06/Guidi-Notes-Rota-Probability-Vol-1-2.pdf"
+   },
+   "restored": "",
+   "years": [
+    1998
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "guidi_notes_and_baclawski_cv"
+   ],
+   "quote_sha256": "5fae32bc82e23159e4a27b52a7af8f5e59598fb5bd86570e3e34eceb0b6044f1",
+   "embed_text": "John N. Guidi | Probability: Lecture Notes, MIT Course 18.313, Professor Gian-Carlo Rota, Volume 1 of 2, preface | p. iii | 15 October 1998 | Sara Billey, Assistant Professor of Applied Mathematics, who was the course director and whose recitations I attended, presented lectures 20, 21, and 27."
+  },
+  {
    "id": "q-kurt-godel-letter-to-john-von-n-5ccbe70d",
    "quote": "I would be very happy to hear something from you personally. Please let me know if there is something that I can do for you.",
    "speaker": {
@@ -2245,6 +2361,35 @@
    ],
    "quote_sha256": "6a0d80f842e6c5331337785d989e694d1617e4882c8121caeddbd0129e79223f",
    "embed_text": "Karcini, Mehrban, Nguyen, Schwager, Ajoundani, Cadena, Peters, Hutter and Bou-Ammar | “Robots Need More than VLA and World Models,” arXiv:2606.06556 | 4 June 2026 | Human motion, internet video, simulation rollouts, and interactive demonstrations contain rich information about tasks, goals, contacts, failures, and physical constraints, yet most of this information is not directly usable by robot policies because it lacks embodiment-specific action labels, task semantics, and reward structure."
+  },
+  {
+   "id": "q-kenneth-baclawski--an-introduction-to-p-2afb4ffc",
+   "quote": "Copyright © 1979 by Kenneth Baclawski and Gian-Carlo Rota. All rights reserved.",
+   "speaker": {
+    "name": "Kenneth Baclawski and Gian-Carlo Rota",
+    "role": "author",
+    "sort": "kenneth baclawski and gian-carlo rota",
+    "as_given": "Kenneth Baclawski and Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "An Introduction to Probability and Random Processes, typescript, copyright page",
+    "locus": "verso of title page; table of contents p. iv lists Chapter VII “Entropy and Information” with “Uniqueness of Entropy” at 7.14",
+    "date": "1979",
+    "file": "",
+    "url": "https://archive.org/details/GianCarlo_Rota_and_Kenneth_Baclawski__An_Introduction_to_Probability_and_Random_Processes"
+   },
+   "restored": "",
+   "years": [
+    1979
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "guidi_notes_and_baclawski_cv"
+   ],
+   "quote_sha256": "2afb4ffcea7beb1acceba2791651c19f66b95c6b7beeb398905a13604c4bb30d",
+   "embed_text": "Kenneth Baclawski and Gian-Carlo Rota | An Introduction to Probability and Random Processes, typescript, copyright page | verso of title page; table of contents p. iv lists Chapter VII “Entropy and Information” with “Uniqueness of Entropy” at 7.14 | 1979 | Copyright © 1979 by Kenneth Baclawski and Gian-Carlo Rota. All rights reserved."
   },
   {
    "id": "q-kenneth-baclawski--introduction-to-prob-d4d3fc57",

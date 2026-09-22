@@ -1,0 +1,49 @@
+{
+ "entries": [
+  {
+   "speaker": "John N. Guidi",
+   "quote": "These Lecture Notes originated from the lectures presented by Gian-Carlo Rota, Professor of Applied Mathematics, for course 18.313 - Probability, which he taught at MIT, during the Spring 1998 semester. The Lecture Notes were produced from notes I made during class, audio recordings I made of lectures, as well as clarifications and expansions I made of the material presented, after the fact.",
+   "work": "Probability: Lecture Notes, MIT Course 18.313, Professor Gian-Carlo Rota, Volume 1 of 2 (Lectures 1–21), preface",
+   "locus": "p. iii, dated October 15, 1998",
+   "date": "15 October 1998",
+   "theme": "rota-thought",
+   "source_url": "https://www.ellerman.org/wp-content/uploads/2016/06/Guidi-Notes-Rota-Probability-Vol-1-2.pdf"
+  },
+  {
+   "speaker": "John N. Guidi",
+   "quote": "Sara Billey, Assistant Professor of Applied Mathematics, who was the course director and whose recitations I attended, presented lectures 20, 21, and 27.",
+   "work": "Probability: Lecture Notes, MIT Course 18.313, Professor Gian-Carlo Rota, Volume 1 of 2, preface",
+   "locus": "p. iii",
+   "date": "15 October 1998",
+   "theme": "rota-thought",
+   "source_url": "https://www.ellerman.org/wp-content/uploads/2016/06/Guidi-Notes-Rota-Probability-Vol-1-2.pdf"
+  },
+  {
+   "speaker": "Kenneth Baclawski",
+   "quote": "7/1979 to 6/1986: Consultant to the Director. Los Alamos National Laboratory, Los Alamos, NM",
+   "work": "Kenneth Baclawski, curriculum vitae, under “Professional Experience”",
+   "locus": "p. 1",
+   "date": "current at 2026-09-22",
+   "theme": "secrecy",
+   "source_url": "https://ken.baclawski.org/vitae.pdf"
+  },
+  {
+   "speaker": "Kenneth Baclawski",
+   "quote": "7/1976 to 6/1978: C.L.E.Moore Instructor. Massachusetts Institute of Technology, Cambridge, MA",
+   "work": "Kenneth Baclawski, curriculum vitae, under “Professional Experience”",
+   "locus": "p. 1",
+   "date": "current at 2026-09-22",
+   "theme": "rota-thought",
+   "source_url": "https://ken.baclawski.org/vitae.pdf"
+  },
+  {
+   "speaker": "Kenneth Baclawski and Gian-Carlo Rota",
+   "quote": "Copyright © 1979 by Kenneth Baclawski and Gian-Carlo Rota. All rights reserved.",
+   "work": "An Introduction to Probability and Random Processes, typescript, copyright page",
+   "locus": "verso of title page; table of contents p. iv lists Chapter VII “Entropy and Information” with “Uniqueness of Entropy” at 7.14",
+   "date": "1979",
+   "theme": "rota-thought",
+   "source_url": "https://archive.org/details/GianCarlo_Rota_and_Kenneth_Baclawski__An_Introduction_to_Probability_and_Random_Processes"
+  }
+ ]
+}
