@@ -103,6 +103,7 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | there lurks an even more enticing (and even less rigorous) concept: th… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
 | EXHIBIT_A_report.md | One example is quantum mechanics, which was discovered 30 years ago. T… | `q-gian-carlo-rota-rota-reflects-on-mat-2708a196` |  |
 | EXHIBIT_A_report.md | He left Princeton on a leave of absence and discontinued all commitmen… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
+| EXHIBIT_A_report.md | His word then became the warning of the prophet, the mumbled riddle of… | `q-gian-carlo-rota-gian-carlo-rota-at-t-30dd8bb6` |  |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
 | EXHIBIT_A_report.md | theoretical physics is the only profession to have lost free speech be… | `q-eric-weinstein-eric-weinstein-in-er-1a2a896b` |  |
 | EXHIBIT_A_report.md | you have to go back to something called the United States versus Progr… | `q-eric-weinstein-eric-weinstein-in-er-05eb5e24` |  |
@@ -116,6 +117,7 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | Cellular automata theory, which he proposed to von Neumann; the Monte … | `q-martin-gardner-preface-to-stanislaw-5bb40637` |  |
 | EXHIBIT_A_report.md | We still do not know — it remains a government secret — what jumped in… | `q-martin-gardner-preface-to-stanislaw-9d931b66` |  |
 | EXHIBIT_A_report.md | One conversation centered on the ever accelerating progress of technol… | `q-stanislaw-ulam-john-von-neumann-190-a3511ae4` |  |
+| EXHIBIT_A_report.md | the warning of the prophet, the mumbled riddle of the Sybil in her tra… | `q-gian-carlo-rota-gian-carlo-rota-at-t-30dd8bb6` |  |
 | EXHIBIT_A_report.md | In the next section we give a dramatic application of the law of large… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | In order to speak of the entropy of the phenomenon represented by a ra… | `q-gian-carlo-rota-introduction-to-prob-11b215bb` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | JOHN VON NEUMANN Department of Mathematics, Institute for Advanced Stu… | `q-n-a-participants-r-participants-seventh-31ac2639` |  |

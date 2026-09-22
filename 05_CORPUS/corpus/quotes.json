@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 337,
+ "count": 341,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -3813,6 +3813,64 @@
    "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, curriculum vitae, Massachusetts Institute of Technology, under the heading “Consultant” | heading “Consultant” | 1996 | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–1971. Brookhaven National Laboratory, 1969–1973."
   },
   {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-at-t-952da446",
+   "quote": "Worried that we might not be ready to bear the burden of those visions, he solicitously improvised daily entertainments, games into which he prodded us all to be players, flimsy amusements and puzzles he built out of his concern that we be spared, as he could not be, the sight of the naked truth.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “At the Memorial Service for S. M. Ulam,” The Lodge, Los Alamos, 17 May 1984; printed as the foreword to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Boston: Birkhäuser, 1986)",
+    "locus": "p. xii",
+    "date": "17 May 1984",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1984
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "ulam_alone_prophet"
+   ],
+   "quote_sha256": "952da446a9550ee8bef015c07f342db9a85146e96edd8f738a2a701125144a19",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “At the Memorial Service for S. M. Ulam,” The Lodge, Los Alamos, 17 May 1984; printed as the foreword to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Boston: Birkhäuser, 1986) | p. xii | 17 May 1984 | Worried that we might not be ready to bear the burden of those visions, he solicitously improvised daily entertainments, games into which he prodded us all to be players, flimsy amusements and puzzles he built out of his concern that we be spared, as he could not be, the sight of the naked truth."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-at-t-30dd8bb6",
+   "quote": "For Stan Ulam, this process took place instantaneously, in a flash, unremittingly, day and night, as a condition of his being in the world. He was condemned to seeing the truth of whatever he saw. His word then became the warning of the prophet, the mumbled riddle of the Sybil in her trance. The comforts of illusion were denied to him.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “At the Memorial Service for S. M. Ulam,” The Lodge, Los Alamos, 17 May 1984; printed as the foreword to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Boston: Birkhäuser, 1986)",
+    "locus": "p. xi–xii",
+    "date": "17 May 1984",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1984
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "ulam_alone_prophet"
+   ],
+   "quote_sha256": "30dd8bb6c596ae671c27b4a38e75ac188162826be7789e71c977793f01e4386d",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “At the Memorial Service for S. M. Ulam,” The Lodge, Los Alamos, 17 May 1984; printed as the foreword to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Boston: Birkhäuser, 1986) | p. xi–xii | 17 May 1984 | For Stan Ulam, this process took place instantaneously, in a flash, unremittingly, day and night, as a condition of his being in the world. He was condemned to seeing the truth of whatever he saw. His word then became the warning of the prophet, the mumbled riddle of the Sybil in her trance. The comforts of illusion were denied to him."
+  },
+  {
    "id": "q-gian-carlo-rota-indiscrete-thoughts-407300ca",
    "quote": "eventually every mathematical problem is proved trivial. The quest for ultimate triviality is characteristic of the mathematical enterprise.",
    "speaker": {
@@ -4768,6 +4826,64 @@
    ],
    "quote_sha256": "54e962645d834d3f0c12bed593f5f9ec9bdb936854101da83c0b8cf35f9806cc",
    "embed_text": "Gian-Carlo Rota | “Ten Lessons of an MIT Education” | Lesson Two: “You learn what you don’t know you are learning” | 1997 | But I know that by making the effort to understand the solution of a truly difficult problem discovered by one of their peers, students learn more than they would by working out some less demanding exercise."
+  },
+  {
+   "id": "q-gian-carlo-rota-the-barrier-of-meani-60f1dc33",
+   "quote": "It took me several years to realize what Stan Ulam's real profession was. Many of us at the Laboratory who were associated with him knew how much he disliked being alone, how he would summon us at odd times to be rescued from the loneliness of some hotel room, or from the four walls of his office, after he had exhausted his daily round of long-distance calls.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "“The Barrier of Meaning,” Letters in Mathematical Physics 10 (1985), pp. 97–99; opening address at the conference “Evolution, Games and Learning,” Los Alamos National Laboratory, 20–25 May 1985; reprinted in Indiscrete Thoughts",
+    "locus": "p. 97, opening paragraph",
+    "date": "20-25 May 1985",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1985
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "ulam_alone_prophet"
+   ],
+   "quote_sha256": "60f1dc33893ac2bf4f96b8f29fdba293c2aa43b6afc895c992abb397a6273560",
+   "embed_text": "Gian-Carlo Rota | “The Barrier of Meaning,” Letters in Mathematical Physics 10 (1985), pp. 97–99; opening address at the conference “Evolution, Games and Learning,” Los Alamos National Laboratory, 20–25 May 1985; reprinted in Indiscrete Thoughts | p. 97, opening paragraph | 20-25 May 1985 | It took me several years to realize what Stan Ulam's real profession was. Many of us at the Laboratory who were associated with him knew how much he disliked being alone, how he would summon us at odd times to be rescued from the loneliness of some hotel room, or from the four walls of his office, after he had exhausted his daily round of long-distance calls."
+  },
+  {
+   "id": "q-gian-carlo-rota-the-barrier-of-meani-a66fd9d5",
+   "quote": "One day I mustered the courage to ask him why he constantly wanted company, and his answer gave him away.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "“The Barrier of Meaning,” Letters in Mathematical Physics 10 (1985), pp. 97–99; opening address at the conference “Evolution, Games and Learning,” Los Alamos National Laboratory, 20–25 May 1985; reprinted in Indiscrete Thoughts",
+    "locus": "p. 97, second paragraph, the sentence before Ulam's answer",
+    "date": "20-25 May 1985",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1985
+   ],
+   "themes": [
+    "rota-thought"
+   ],
+   "collections": [
+    "ulam_alone_prophet"
+   ],
+   "quote_sha256": "a66fd9d51e8ec00e7793be0b8f2e3fbaa2e8cbfc6c4443ea5c28124ff580010f",
+   "embed_text": "Gian-Carlo Rota | “The Barrier of Meaning,” Letters in Mathematical Physics 10 (1985), pp. 97–99; opening address at the conference “Evolution, Games and Learning,” Los Alamos National Laboratory, 20–25 May 1985; reprinted in Indiscrete Thoughts | p. 97, second paragraph, the sentence before Ulam's answer | 20-25 May 1985 | One day I mustered the courage to ask him why he constantly wanted company, and his answer gave him away."
   },
   {
    "id": "q-gian-carlo-rota-the-barrier-of-meani-b33a4470",
