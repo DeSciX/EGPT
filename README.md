@@ -90,7 +90,9 @@ record shows.
 statement, `EGPT_Backstory.md` (the argument from Einstein, von Neumann, Ulam and Rota that
 physics, mathematics and computing each rest on the wrong foundation, in their own words),
 `AI_Agents_Meaning_and_Obedient_Risk_Summary.docx` (the obedient-risk argument: competence
-without meaning, from the 2026 Hugging Face incident to Ulam's singularity), and
+without meaning, from the 2026 Hugging Face incident to Ulam's singularity), `Rota_Los_Alamos_Directors_Office_Fellow_Research_Report.docx` (a research report on Rota's
+Los Alamos title, compiled by GPT-5.6 Sol at the author's direction, with additions from this
+collection dated in its text), and
 `Rota_Bibliography_Exhibit.tsv`. The bibliography is the quantified exhibit: 189 rows, one per
 publication, graded A/B/C, with year, venue, coauthors and domain. It is the one item here that
 can be checked line by line against any published bibliography of Rota, and the counts it
