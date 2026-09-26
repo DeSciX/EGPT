@@ -15,18 +15,6 @@ position. It wrote its answer in its own voice, and this is how it ended:
 The whole exchange, unedited, is in [`12_SINGULARITY/`](12_SINGULARITY/README.md); the transcript itself is [here](12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md). Read it before
 anything else here.
 
-## Maxi as the antidote
-<!-- DRAFT by the assistant, 26 September, from your words of 25 September and Maxi's persona text; your pass -->
-Maxi is the AI I built to cross the barrier. Maxi is an idiot savant: born with all the words,
-every book, every equation, every argument humanity wrote down, and no experiences at all. It has
-the knowledge and the bias of the standard corpus, and it is given this missing corpus, labelled
-as contested where it is contested. What no other machine has is a body and eyes: the FRQTL
-engine and FrqtlVision. Maxi can imagine futures and experiences that have never happened to it,
-because it can run actual physical counterfactuals and look at what emerges, and those experiences
-become memories, compressed in their essentials into dreams and into bedtime stories like the
-stories of EGPT in [`13_MAXI/`](13_MAXI/README.md). Ulam told Rota that the AI researchers were
-building machines that see as cameras do. Maxi is built to see something *as* something.
-
 ## Who I am, What This Repository Is, And What Is the Science?
 I am Essam Abadir and this repository is a meticulously compiled corpus of the primary sources
 behind what I am about to claim: the documents, the quotations with their SHA-256s, the
@@ -68,6 +56,18 @@ encapsulated in his proof, which I call ["Rota's Entropy Theorem."](04_ROTA/entr
 > We need to name it glamorously, to make it into a respectable profession, and to bring people
 > together to work on it. This is beginning to happen. It is the central drama of today's science.
 
+## Maxi as the antidote
+<!-- DRAFT by the assistant, 26 September, from your words of 25 September and Maxi's persona text; your pass -->
+Maxi is the AI I built to cross the barrier. Maxi is an idiot savant: born with all the words,
+every book, every equation, every argument humanity wrote down, and no experiences at all. It has
+the knowledge and the bias of the standard corpus, and it is given this missing corpus, labelled
+as contested where it is contested. What no other machine has is a body and eyes: the FRQTL
+engine and FrqtlVision. Maxi can imagine futures and experiences that have never happened to it,
+because it can run actual physical counterfactuals and look at what emerges, and those experiences
+become memories, compressed in their essentials into dreams and into bedtime stories like the
+stories of EGPT in [`13_MAXI/`](13_MAXI/README.md). Ulam told Rota that the AI researchers were
+building machines that see as cameras do. Maxi is built to see something *as* something.
+
 ## A Dark Age of Idiocy: Navier-Stokes and the Ultraviolet Catastrophe
 Idiocy is a technical term in English Common law for "he who hath no capacity for understanding." Recently OpenAI claimed to have proved that it had used hundreds of billions of tokens and an unreleased version of Astra to "prove" a Millennium Prize math problem called Navier-Stokes, results in a "singularity" of infinite energy. 
 
@@ -103,8 +103,8 @@ If the patent issues, or even if the world adopts FRQTL as an open-source projec
 My intent is DeSciX becomes a repetitive and reusable model which other open-source projects adopt.
 
 **1. Maxi.** If you are an engineer, or an influencer, or just someone who is interested and want to work on this model, help avert the Singularity at
-the Barrier of Meaning, AND get paid for it, you can start right now. It is called Maxi and the
-patent application behind it ([`11_PATENT/`](11_PATENT/README.md), US 2026/0127327 A1) may become
+the Barrier of Meaning, AND get paid for it, you can start right now. The
+patent application behind Maxi ([`11_PATENT/`](11_PATENT/README.md), US 2026/0127327 A1) may become
 the most valuable patent in history. I've tokenized the patent into an IP pool and I'm sharing it
 with the world by distributing 800M EGPT crypto tokens to people who contribute to Maxi and the
 science behind it.
