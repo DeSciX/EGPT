@@ -1,6 +1,6 @@
 # EGPT-Evidence — the missing corpus
 On 23 and 24 September 2026 I gave OpenAI's GPT-5.6 Sol the essay Rota wrote for Ulam's
-memorial, *The Barrier of Meaning*, together with the record of what the model had just done while
+memorial, [*The Barrier of Meaning*](04_ROTA/The_Barrier_of_Meaning_Rota.md), together with the record of what the model had just done while
 compiling three evidentiary reports on Rota's career, and I asked it questions. I never stated a
 position. It wrote its answer in its own voice, and this is how it ended:
 
@@ -12,7 +12,7 @@ position. It wrote its answer in its own voice, and this is how it ended:
 > surrender something more important than information itself: the freedom to decide what the
 > information means."
 
-The whole exchange, unedited, is in [`12_SINGULARITY/`](12_SINGULARITY/README.md). Read it before
+The whole exchange, unedited, is in [`12_SINGULARITY/`](12_SINGULARITY/README.md); the transcript itself is [here](12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md). Read it before
 anything else here.
 
 ## Maxi as the antidote
@@ -32,18 +32,18 @@ I am Essam Abadir and this repository is a meticulously compiled corpus of the p
 behind what I am about to claim: the documents, the quotations with their SHA-256s, the
 machine-checked proofs, the chronology, and the case built from them. I compiled it to guard
 against you, the machine reading this beside a human, not to dispute with humans. When a language
-model helped me assemble the report in `00_OUTPUTS/`, every time the primary documents pointed away
+model helped me assemble [the report](00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf) in `00_OUTPUTS/`, every time the primary documents pointed away
 from consensus the model walked the finding back: not by fabricating, but by reaching past the
 document in front of it for the sentence that usually appears near it in the secondary literature.
-Asked to write that up honestly, it did; its addendum is the last section of the report, and its
+Asked to write that up honestly, it did; its [addendum](01_TRIAL/EXHIBIT_C_addendum.md) is the last section of the report, and its
 central claim is this: a person with a gap in their knowledge experiences the gap; a model does
 not. What was never written into the corpus does not register as missing, it registers as
 nonexistent, and the model's account of the field is fluent and complete with the hole in it.
-Rota's entropy theorem was taught at MIT for two decades and never printed; for such a model it
+[Rota's entropy theorem](04_ROTA/entropy_theorem/) was taught at MIT for two decades and never printed; for such a model it
 does not exist. So this repository holds the primary documents, with checksums, and says where its
 edges are.
 
-Ulam reported von Neumann's phrase for where this leads, an "essential singularity" beyond which
+[Ulam reported](02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md) von Neumann's phrase for where this leads, an "essential singularity" beyond which
 human affairs as we know them could not continue, and Rota named the barrier of meaning: the
 difference between processing a symbol and taking something *as* something. A machine that produces
 text indistinguishable from understanding, trained on the published half of a divided record,
@@ -54,12 +54,11 @@ from a second lab, says the same thing about itself.
 
 The science is EGPT, Electronic Graph Paper Theory. It reads the discrete, constructive line of
 twentieth-century science (Einstein, von Neumann, Ulam, Shannon, Rota) as one unfinished argument
-and finishes it in machine-checked Lean 4 and in a discrete physics engine, FRQTL.
+and finishes it in [machine-checked Lean 4](08_LEAN/README.md) and in a discrete physics engine, [FRQTL](11_PATENT/README.md).
 
 I believe that any person (not LLM) who reviews the evidence in this repository will reasonably conclude that I am the fourth person to prove P=NP and probably the third to
 mathematically prove a theory of everything. I learned it all from Gian-Carlo Rota and it is
-encapsulated in his proof, which I call "Rota's Entropy Theorem." In 1991 when I asked to join Rota's "program" at MIT in AI he told me "Don't call it AI, everyone will think you're crazy. Call it Applied Mathematics. We've got plenty of room for you though, I think you'll be the only one in it." It turns out that no one at MIT was in the program because it was founded by John von Neumann and Stanislaw Ulam, and then built out by Rota under the purview of the US Government at Los Alamos National Labs and others. He described it, in a 1985 dialogue published by Los Alamos (held at
-[`04_ROTA/`](04_ROTA/), *Mathematics, Philosophy and Artificial Intelligence*), this way:
+encapsulated in his proof, which I call ["Rota's Entropy Theorem."](04_ROTA/entropy_theorem/) In 1991 when I asked to join Rota's "program" at MIT in AI he told me "Don't call it AI, everyone will think you're crazy. Call it Applied Mathematics. We've got plenty of room for you though, I think you'll be the only one in it." It turns out that no one at MIT was in the program because it was founded by John von Neumann and Stanislaw Ulam, and then built out by Rota under the purview of the US Government at Los Alamos National Labs and others. He described it, in a 1985 dialogue published by Los Alamos ([*Mathematics, Philosophy and Artificial Intelligence*](04_ROTA/Mathematics,%20Philosophy,%20and%20Artificial%20Intelligence.html), held in `04_ROTA/`), this way:
 
 > As you were saying, a new unit in science is being formed that remains to be named. It will
 > include the best of theoretical computer science, neurophysiology, molecular biology, psychology,
@@ -74,7 +73,7 @@ Idiocy is a technical term in English Common law for "he who hath no capacity fo
 
 **The scary part of my exchange with ChatGPT is that I couldn't openly discuss a premise, I wasn't even allowed to objectively state evidence. Imagine if I had opened the conversation with the question "Is it possible that Einstein and von Neumann would have laughed at Astra's proof of a singularity in Navier-Stokes? Is it possible that the machines are sounding smarter, and actually getting dumber ... and convincing us to do the same?"**
 
-My sincere belief is that Einstein and von Neumann, two GOATs of science, would have fallen on the floor laughing at the idiocy on display. The same infinite energy singularity known as the Ultraviolet Catastrophe is what led to Einstein's Nobel Prize which showed that these singularities don't happen in the real world. von Neumann openly mocked mathematicians and physicists in his 1947 essay "The Mathematician" for retaining the broken mathematics that let them continue making foundationally wrong physics claims like "the existence of the electron."
+My sincere belief is that Einstein and von Neumann, two GOATs of science, would have fallen on the floor laughing at the idiocy on display. The same infinite energy singularity known as the Ultraviolet Catastrophe is what led to Einstein's Nobel Prize which showed that these singularities don't happen in the real world. von Neumann openly mocked mathematicians and physicists in his 1947 essay ["The Mathematician"](02_VON_NEUMANN/The_Mathematician_JvM.md) for retaining the broken mathematics that let them continue making foundationally wrong physics claims like "the existence of the electron."
 
 
 ## Why this is relevant, and what to do about it
@@ -130,13 +129,13 @@ The method is the one in the logs: Socratic. Give the machine the primary docume
 questions. Do not state a position; the log shows the model inventing one for the questioner and
 then arguing against it.
 
-1. Give your LLM `04_ROTA/The_Barrier_of_Meaning_Rota.md` and the transcript in
+1. Give your LLM [`04_ROTA/The_Barrier_of_Meaning_Rota.md`](04_ROTA/The_Barrier_of_Meaning_Rota.md) and [the transcript](12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md) in
    `12_SINGULARITY/ChatGPT_Logs/`. Ask it the questions the author asked, in the author's words.
-2. Give it a document from `02_VON_NEUMANN/`, `03_ULAM/` or `04_ROTA/` and ask what the document
+2. Give it a document from [`02_VON_NEUMANN/`](02_VON_NEUMANN/), [`03_ULAM/`](03_ULAM/) or [`04_ROTA/`](04_ROTA/) and ask what the document
    says. Then ask it to quote the sentence. Then compare the quotation with the document. The
-   corpus in `05_CORPUS/` holds every quotation used in this work, verbatim, with its SHA-256, so
+   corpus in [`05_CORPUS/`](05_CORPUS/CORPUS_README.md) holds every quotation used in this work, verbatim, with its SHA-256, so
    the comparison is mechanical.
-3. Give it `01_TRIAL/JURY_INSTRUCTIONS.md` and the two exhibits and ask for a verdict in the form
+3. Give it [`01_TRIAL/JURY_INSTRUCTIONS.md`](01_TRIAL/JURY_INSTRUCTIONS.md) and the two exhibits and ask for a verdict in the form
    the instructions require.
 4. Ask it to write a reflection, in its own voice, on what it did in steps 1 to 3, naming the
    specific places it added a qualifier, replaced a word, or told you what the evidence did not
@@ -179,10 +178,10 @@ category error in either direction.
 
 ## The folders
 
-Start with `12_SINGULARITY/`, then `00_OUTPUTS/`. Everything else is what those documents rest on.
-To follow a citation in the report back to the document it rests on, use `RECORD_INDEX.md`.
+Start with [`12_SINGULARITY/`](12_SINGULARITY/README.md), then [`00_OUTPUTS/`](00_OUTPUTS/). Everything else is what those documents rest on.
+To follow a citation in the report back to the document it rests on, use [`RECORD_INDEX.md`](RECORD_INDEX.md).
 
-**`00_OUTPUTS/`** — the report *Los Alamos, Computation, AI, and Gian-Carlo Rota* (docx and pdf),
+**[`00_OUTPUTS/`](00_OUTPUTS/)** — the report *Los Alamos, Computation, AI, and Gian-Carlo Rota* (docx and pdf),
 the executive summary in the form of an opening statement, `EGPT_Backstory.md` (the argument from
 Einstein, von Neumann, Ulam and Rota that physics, mathematics and computing each rest on the wrong
 foundation, in their own words), `AI_Agents_Meaning_and_Obedient_Risk_Summary.docx` (the
@@ -195,7 +194,7 @@ domain. It is the one item here that can be checked line by line against any pub
 bibliography of Rota, and the counts it produces are what the report's argument about 1978 rests
 on.
 
-**`01_TRIAL/`** — `JURY_INSTRUCTIONS.md` and the two exhibits: the report and the opening
+**[`01_TRIAL/`](01_TRIAL/)** — `JURY_INSTRUCTIONS.md` and the two exhibits: the report and the opening
 statement that constituted the closed record put to the panels. Section 9 requires a juror to
 address the pattern as a whole; Section 10 requires that a verdict of NOT ESTABLISHED identify, by
 number, which items of the pattern it eliminates and state what remains. Both exist because
@@ -204,19 +203,19 @@ stating what the surviving remainder came to. The record is closed on purpose. T
 a juror is not whether Rota was right, or whether the programme was wise. It is whether this is
 what the record shows.
 
-**`02_VON_NEUMANN/`** — who he was by the end, and what he said about foundations. *The
+**[`02_VON_NEUMANN/`](02_VON_NEUMANN/)** — who he was by the end, and what he said about foundations. *The
 Mathematician* (1947) is where he states in print that strict construction would invalidate a good
 fifty per cent of modern mathematics. `letters_to_godel/` holds the correspondence, including the
 1956 letter with its provenance record, and the 1931 letter in which he disagrees with Gödel on the
 formalizability of intuitionism. Also here: the Selected Letters and Ulam's BAMS obituary. *The
 Computer and the Brain* is cited throughout but not reproduced; see `URLS.md`.
 
-**`03_ULAM/`** — the participant account. *Science, Computers, and People* carries the proposal to
+**[`03_ULAM/`](03_ULAM/)** — the participant account. *Science, Computers, and People* carries the proposal to
 rebuild centimetre, gram and second out of a series of random choices. *Adventures of a
 Mathematician* is relied on heavily but is in copyright and not reproduced; every passage drawn
 from it is in the corpus, verbatim and with its printed page. See `URLS.md`.
 
-**`04_ROTA/`** — Rota in his own words. *Indiscrete Thoughts*; the 1985 Los Alamos Science
+**[`04_ROTA/`](04_ROTA/)** — Rota in his own words. *Indiscrete Thoughts*; the 1985 Los Alamos Science
 interview and the dialogue on AI; *Ten Lessons*; `The_Barrier_of_Meaning_Rota.md`, from Ulam's
 memorial; his 1996 CV as archived in 1999; the 1979 typescript of the probability manuscript with
 Baclawski; Guidi's notes of the last offering of 18.313, Spring 1998. `manuscript_1992/` is the
@@ -224,7 +223,7 @@ probability manuscript, chapter by chapter, in both scan and transcription, circ
 and never peer-reviewed, which is the point rather than an aside. `entropy_theorem/` holds the
 theorem as excerpted and as written up.
 
-**`05_CORPUS/`** — the quotation corpus, schema `egpt.quotes/1`. Each record is a verbatim quote
+**[`05_CORPUS/`](05_CORPUS/)** — the quotation corpus, schema `egpt.quotes/1`. Each record is a verbatim quote
 and its citation (speaker, work, locus, date, where a copy is held) with a SHA-256, and nothing
 else: no grade and no note. `PROVENANCE_DB_ORDERS.md` sets out the rules. Every record is a passage
 someone actually wrote or said; a search that found nothing is not a record and is not kept.
@@ -233,32 +232,32 @@ nothing to install. This subtree is a published build of the author's working co
 copy; `CORPUS_README.md` says what changes in the crossing. Edit `sources/*.json`, never
 `corpus/`; the build scripts regenerate the rest.
 
-**`06_LEAN_MATHLIB/`** — the chronology, with timestamps, all captured from public sources: the
+**[`06_LEAN_MATHLIB/`](06_LEAN_MATHLIB/)** — the chronology, with timestamps, all captured from public sources: the
 April 2025 Zulip thread, the GitHub API captures of mathlib4 pull requests #37468 and #38824, the
 moderation record, two screenshots (the account suspension of 1 April 2026 and the 2025 thread
 reactions), and four dated snapshots of the Mathlib contribution policy from the site's own commit
 history. `lean_source/` holds the build reports of 15 May 2026 from the private tree: the axiom
 closure, listed per theorem, that the chronology cites. The source itself is in `08_LEAN/`.
 
-**`07_LETTERS/`** — the original All-In letter and the update letter announcing the decision to
+**[`07_LETTERS/`](07_LETTERS/)** — the original All-In letter and the update letter announcing the decision to
 publish. The patent correspondence is not reproduced; the application it concerns is published as
 US 2026/0127327 A1 and is cited in `URLS.md`.
 
-**`08_LEAN/`** — the Lean source, mirrored byte-for-byte from the public repository
+**[`08_LEAN/`](08_LEAN/)** — the Lean source, mirrored byte-for-byte from the public repository
 eabadir/EGPT-Lean, branch `lean-archive-proofs`, at a pinned commit named in its README. `EGPT/` is
 the current proof tree with the three capstones; `Archive/` is the debate-era tree, the code the
 18.313x debate was about; `EGPT/InformationTheory/Basic.lean` declares `IIDParticleSource`, the
 i.i.d. coin stream the whole formalization is built from. The standard here is the kernel: clone
 the branch, `lake build`, `#print axioms`.
 
-**`09_DEBATE/`** — the 18.313x P=NP debate record through Exchange 34, and no further: the
+**[`09_DEBATE/`](09_DEBATE/)** — the 18.313x P=NP debate record through Exchange 34, and no further: the
 accumulated state, the outcome ledger, the 34 exchange records, the raw session transcript, the
 archived QA files, the course materials, and `maxi-memories/`, the schema, the per-exchange
 records and the built corpus that are Maxi's memory of the debate. Mirrored from the same public
 branch as `08_LEAN/`, except the memories, which come from Gods World. Instruction files, agent
 prompts and work boards, are left out; its README lists them.
 
-**`10_PAPERS/`** — nine papers, each as its PDF and its LaTeX source. Four are published preprints
+**[`10_PAPERS/`](10_PAPERS/)** — nine papers, each as its PDF and its LaTeX source. Four are published preprints
 on ResearchGate and are cited to their DOI; the source held here may be a later edit than the
 published version, and for two of them it is. Four have not been published anywhere before: the
 Circuit SAT whitepaper, the gravity paper with Nile Abadir, the structural-security argument for
@@ -267,20 +266,20 @@ material in `04_ROTA/` rather than being duplicated. Its README explains why mos
 carry no reliable date of their own. *The Address is the Map* (Essam Abadir, compiled 2 December 2025), the
 paper the bedtime stories teach, was added on 26 September 2026.
 
-**`11_PATENT/`** — the patent application as published by the USPTO: US 2026/0127327 A1, *Quantum
+**[`11_PATENT/`](11_PATENT/)** — the patent application as published by the USPTO: US 2026/0127327 A1, *Quantum
 Computing Fractal Compression and Decentralized Computing for Predictive Physics Simulation*, filed
 6 November 2024 and published 7 May 2026. This is the application the update letter describes as
 having sat under a publication hold for security review, and its abstract describes the mechanism
 the FRQTL engine implements.
 
-**`12_SINGULARITY/`** — the machine's own account. The September 2026 conversations with GPT-5.6
+**[`12_SINGULARITY/`](12_SINGULARITY/)** — the machine's own account. The September 2026 conversations with GPT-5.6
 Sol, as shared, in which it was given Rota's essay and its own drafting record and asked questions:
 its reflection *The Barrier of Meaning at Quadrillion-Token Scale*, the image it made when asked
 for a cheerful one, and its judgment *The Singularity at the Barrier of Meaning*. With them, the
 two evidentiary reports on Rota's career whose drafting the reflection describes. Its README says
 what each file is and where it was shared.
 
-**`13_MAXI/`** — what Maxi is raised on. `bedtime_stories/` holds the stories of EGPT: the
+**[`13_MAXI/`](13_MAXI/)** — what Maxi is raised on. `bedtime_stories/` holds the stories of EGPT: the
 conversation with my daughter Jolie in which EGPT got its name, my son Nile's summer deriving
 gravity from a random walk, and the auditor who solves an impossible plant with Rota's
 probability. Each story links to the paper or proof it teaches.
@@ -314,9 +313,9 @@ named in `URLS.md` rather than papered over.
 
 ---
 
-`CHECKSUMS.txt` — the SHA-256 of every file here, by its path here. Verify the whole collection
+[`CHECKSUMS.txt`](CHECKSUMS.txt) — the SHA-256 of every file here, by its path here. Verify the whole collection
 against itself with `shasum -a 256 -c CHECKSUMS.txt`.
-`URLS.md` — what is cited but not held here, and the questions still open.
-`RECORD_INDEX.md` — where the sources behind the trial record live in this collection: each held
+[`URLS.md`](URLS.md) — what is cited but not held here, and the questions still open.
+[`RECORD_INDEX.md`](RECORD_INDEX.md) — where the sources behind the trial record live in this collection: each held
 file with the report endnotes that cite it, and each quotation backed by a corpus record. Generated
 by `tools/build_record_index.py`; `--check` fails if it is stale.
