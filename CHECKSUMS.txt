@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 622 files, 139283419 bytes.
+# 622 files, 139284832 bytes.
 bfa7a14296c5fb9d314b217546cae74e639d04e7a53b6facf2cea33094154b20  00_OUTPUTS/AI_Agents_Meaning_and_Obedient_Risk_Summary.docx
 4a4672eddb5d38f9b50e66ce86b35781fd4ac98ef201ad6522cf694cc8e949c2  00_OUTPUTS/Departure_Not_Complement_Quote_Pack.md
 e01996399ad1d12648ba1cff4159beeb98d841e44197b841cd1c3e8070c383ff  00_OUTPUTS/EGPT_Backstory.md
@@ -620,6 +620,6 @@ c0129a71a123755c1bdc8807a59c7540e60b6538f0a99c7c22a96a1a6076dcea  12_SINGULARITY
 f3f113e7796a3b8d66954629c90f353306b1105dcfca632ea2a25eb577cde471  13_MAXI/bedtime_stories/Nile_Deriving_Gravity.md
 9909fe6668dc31893127eeb638957125c3227fb3e854a2f43ab64b69efcc28a8  13_MAXI/bedtime_stories/README.md
 3d8b4c85fb478720d5273ca4c797eedb5de1d2e2a550f9e9a4d9a50bac58da3b  13_MAXI/bedtime_stories/The_Impossible_Audit.md
-2dcbf392bc0b9de8a1da84f844ac06551e0915a1a6643db94b4f3c1ac934ecf5  13_MAXI/bedtime_stories/The_Story_of_EGPT.md
+08b73a78bc81a26e704340c62b1281a5a1973e8b3c665e944707acbbca79d3f9  13_MAXI/bedtime_stories/The_Story_of_EGPT.md
 86c766970c91c0d88fae465ad7d83fb3cf8ac2b2511b7e2b7e93c938de2f72d0  RECORD_INDEX.md
 699018ae4e9b7386efce5d66bd590de2cab02cead05b1adfa56d05ef3b8fd2e7  tools/build_record_index.py

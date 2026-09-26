@@ -46,10 +46,10 @@ Here is how we translated the world into EGPT:
 
 "Heads it moves up, tails it moves down," she recalled.
 
-"Right. In the computer proof, we call that a `ParticlePath`. It’s just a list of those coin flips: `[Heads, Heads, Tails]`. That’s it. Now, look at how the other sciences treat this, and look at where they throw away the map."
+"Right. In the computer proof, we call that a [`ParticlePath`](../../08_LEAN/Archive/Core.lean#L26) (in the current proof tree, a [`RandomWalkPath`](../../08_LEAN/EGPT/InformationTheory/Basic.lean#L105)). It’s just a list of those coin flips: `[Heads, Heads, Tails]`. That’s it. Now, look at how the other sciences treat this, and look at where they throw away the map."
 
 *   **To a Physicist:** This is a particle moving through time. But modern physicists have decided that particles don't always have a position—they call it 'superposition.' They say a particle can be in two places at once. But that violates our Iron Rule: $1+1=2$. If you can't say where the particle is, you've thrown away the path information. You've confused the probability of where it *might* be with the reality of where it *is*.
-*   **To a Mathematician:** That path is a Number. If you have 2 Heads and 2 Tails, that *is* the number 2 because it represents the maximum amount of information you can have with just two bits - because 2H and 2T are symmetric you don't need to write down the extra 2T. We proved that every number you know—1, 2, 100, a million—is just a recording of a specific walk. Remember the 'Fundamental Theorem of Arithmetic,' that every number is a product of primes? In our 'Address is the Map' theory, the Primes are the street names (5th Ave, 3rd St). The Mathematician multiplies them into '15' and throws away the map.
+*   **To a Mathematician:** That path is a Number. If you have 2 Heads and 2 Tails, that *is* the number 2 because it represents the maximum amount of information you can have with just two bits - because 2H and 2T are symmetric you don't need to write down the extra 2T. We proved that every number you know—1, 2, 100, a million—is just a recording of a specific walk (the proof is [`entropyNatEquivNat`](../../08_LEAN/EGPT/EGPTNumberSystem.lean#L65); in the debate-era tree, [`equivParticlePathToNat`](../../08_LEAN/Archive/NumberTheory/Core.lean#L65)). Remember the 'Fundamental Theorem of Arithmetic,' that every number is a product of primes? In our ['Address is the Map'](../../10_PAPERS/Address_Is_The_Map/Address_Is_The_Map.pdf) theory, the Primes are the street names (5th Ave, 3rd St). The Mathematician multiplies them into '15' and throws away the map.
 *   **To a Computer Scientist:** That's a Bit Tape. It's the code that runs a program. But Computer Scientists use a counting system called 'Big O' that pretends moving the read/write head of the machine is free. They pretend moving from Address 0 to Address 1 takes the same energy as moving from Address 0 to Address 1,000,000. It doesn't. That violates the laws of physics. You have to walk the distance. You have to count the steps.
 
 "This was our first big discovery. A number isn't an abstract idea. A number is a physical record of movement."
@@ -60,12 +60,12 @@ I drew a box on the paper, blocking off a section of the grid. "Then we played t
 
 "Those were the constraints," she said.
 
-"Yes. In the code, we call that a `SyntacticCNF`. It just means 'List of Forbidden Squares.'
+"Yes. In the code, we call that a [`SyntacticCNF`](../../08_LEAN/EGPT/InformationTheory/Complexity/CNF.lean#L121). It just means 'List of Forbidden Squares.'
 
 *   **Physics:** These are the Laws of Nature - single occupancy and every piece only moves once per turn. Conservation of energy, gravity... they are just rules saying 'a particle cannot go here because another particle is already there.' We imagined electrons flowing through a circuit like water through a maze. A resistor wasn't a magic component; it was just a narrow hallway in the maze where fewer electrons could fit. We called this "Circuit Satisfiability" because it was a problem where we were trying to find a path for the electrons to flow through the circuit that didn't violate the laws of physics.
 *   **Computer Science:** We saw that if our electrons were salesmen navigating the Manhattan Grid, then this was exactly the same problem as Circuit Satisfiability. It's the Traveling Salesman problem. It is just a **Navigation Problem**. If you have the map (the constraints), you can find the path.
 
-"We proved that you can write down *any* law of physics, or *any* logic puzzle, just by marking 'X' on our graph paper."
+"We proved that you can write down *any* law of physics, or *any* logic puzzle, just by marking 'X' on our graph paper." (The proof is [`equivSyntacticCNF_to_ParticlePath`](../../08_LEAN/Archive/Constraints.lean#L207).)
 
 ### 3. The Map is the Work (The Tableau)
 
@@ -73,9 +73,9 @@ I drew a box on the paper, blocking off a section of the grid. "Then we played t
 
 "And entropy increases," she noted.
 
-"Exactly! **Rota's Entropy.** But remember what we figured out? Entropy isn't 'chaos' or 'messiness.' Entropy is the **Receipt**. It is the literal list of steps you actually took. It is the truth of what you did.
+"Exactly! [**Rota's Entropy.**](../../04_ROTA/entropy_theorem/) But remember what we figured out? Entropy isn't 'chaos' or 'messiness.' Entropy is the **Receipt**. It is the literal list of steps you actually took. It is the truth of what you did.
 
-"In the computer proof, we call this the **`EntropyWalkCNF`**. Imagine I ask you to find a path through a maze. If you just teleport to the exit and say 'I'm here!', that's magic. Physics doesn't allow magic. You have to *walk* there. The Tableau is the recording of every step you took, every wall you bumped into.
+"In the computer proof, we call this the [**`SatisfyingTableau`**](../../08_LEAN/EGPT/InformationTheory/Complexity/Tableau.lean#L109), and the walk that writes it is [`walkCNFPaths`](../../08_LEAN/EGPT/InformationTheory/Complexity/Tableau.lean#L145). Imagine I ask you to find a path through a maze. If you just teleport to the exit and say 'I'm here!', that's magic. Physics doesn't allow magic. You have to *walk* there. The Tableau is the recording of every step you took, every wall you bumped into.
 
 "Here is the secret, the thing that solves P=NP: **The 'Address' (where you are going) and the 'Search' (how you get there) are the same thing.**
 
@@ -83,7 +83,7 @@ I drew a box on the paper, blocking off a section of the grid. "Then we played t
 
 *   **P (Polynomial Time)** means you give me the map of where you went.
 *   **NP** means you give me the address of the obstacles you hit and the address of where you ended up.
-*   But EGPT proves that if you didn't throw away the information about addresses, then the address (NP) is the map (P) - it means that P and NP are the same thing, or, P=NP as the saying goes."
+*   But EGPT proves that if you didn't throw away the information about addresses, then the address (NP) is the map (P) - it means that P and NP are the same thing, or, P=NP as the saying goes." (The three proofs: [`P_eq_NP`](../../08_LEAN/EGPT/InformationTheory/Complexity/SetRFL.lean#L501), [`P_eq_NP_info`](../../08_LEAN/EGPT/InformationTheory/Complexity/PPNP.lean#L815), [`P_eq_NP_info_standard`](../../08_LEAN/EGPT/InformationTheory/Complexity/StandardComplexity.lean#L185).)
 
 ### 4. The Grand Unification (Truth and Reality)
 
