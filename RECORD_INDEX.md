@@ -64,6 +64,7 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | It is evident that Johnny’s ideas on a future theory of automata and o… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` |  |
 | EXHIBIT_A_report.md | was an example of intelligent management of a scientific group without… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-96fd445a` |  |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–, | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| EXHIBIT_A_report.md | a new unit in science is being formed that remains to be named. It wil… | `q-gian-carlo-rota-mathematics-philosop-a4f1ef8d` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
 | EXHIBIT_A_report.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | EXHIBIT_A_report.md | My personal opinion, which is shared by many others, is, that Gödel ha… | `q-john-von-neumann-the-mathematician-in-9aedde2b` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | EXHIBIT_A_report.md | A system of mathematics which was free of these undesirable traits, ‘i… | `q-john-von-neumann-the-mathematician-in-b7e03f05` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
@@ -103,6 +104,9 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | there lurks an even more enticing (and even less rigorous) concept: th… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
 | EXHIBIT_A_report.md | One example is quantum mechanics, which was discovered 30 years ago. T… | `q-gian-carlo-rota-rota-reflects-on-mat-2708a196` |  |
 | EXHIBIT_A_report.md | He left Princeton on a leave of absence and discontinued all commitmen… | `q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841` | `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md` |
+| EXHIBIT_A_report.md | As you were saying, a new unit in science is being formed that remains… | `q-gian-carlo-rota-mathematics-philosop-63496d51` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
+| EXHIBIT_A_report.md | We need to name it glamorously, to make it into a respectable professi… | `q-gian-carlo-rota-mathematics-philosop-a4f1ef8d` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
+| EXHIBIT_A_report.md | the central drama of today’s science. | `q-gian-carlo-rota-mathematics-philosop-a4f1ef8d` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
 | EXHIBIT_A_report.md | His word then became the warning of the prophet, the mumbled riddle of… | `q-gian-carlo-rota-gian-carlo-rota-at-t-30dd8bb6` |  |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
 | EXHIBIT_A_report.md | theoretical physics is the only profession to have lost free speech be… | `q-eric-weinstein-eric-weinstein-in-er-1a2a896b` |  |
@@ -144,6 +148,8 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | OPENING_STATEMENT.md | essentially all the interesting distributions we have seen in probabil… | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | OPENING_STATEMENT.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | OPENING_STATEMENT.md | a dramatic application of the law of large numbers. | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
+| OPENING_STATEMENT.md | a new unit in science is being formed that remains to be named, | `q-gian-carlo-rota-mathematics-philosop-63496d51` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
+| OPENING_STATEMENT.md | we need to name it glamorously. | `q-gian-carlo-rota-mathematics-philosop-a4f1ef8d` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
 | OPENING_STATEMENT.md | a reality in space and time without phantom actions over distances | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
 | OPENING_STATEMENT.md | not probabilities, but conceived facts, as one took for granted only a… | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
 | OPENING_STATEMENT.md | my little finger as a witness, which cannot claim any authority to be … | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
@@ -164,3 +170,4 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | OPENING_STATEMENT.md | may lead to a new interpretation of the notion of computational comple… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
 | OPENING_STATEMENT.md | a combinatorial theory of automata and organisms, | `q-stanislaw-ulam-john-von-neumann-190-d7f49cc4` |  |
 | OPENING_STATEMENT.md | one of his motives for pressing for the development of electronic comp… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` |  |
+| OPENING_STATEMENT.md | a new unit in science is being formed that remains to be named. It wil… | `q-gian-carlo-rota-mathematics-philosop-63496d51` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |

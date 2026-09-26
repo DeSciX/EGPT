@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 341,
+ "count": 343,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -4507,6 +4507,64 @@
    ],
    "quote_sha256": "ce27cb402fa79015ea2bf8e8ce83d87437fa833face986ba284cf65871da3234",
    "embed_text": "Gian-Carlo Rota | Ulam and Rota discuss von Neumann, MacTutor | Gainesville | January 1974 | You have a higher opinion of Godel than I have."
+  },
+  {
+   "id": "q-gian-carlo-rota-mathematics-philosop-63496d51",
+   "quote": "As you were saying, a new unit in science is being formed that remains to be named. It will include the best of theoretical computer science, neurophysiology, molecular biology, psychology, and the mathematical theory of information. It will be important to name it properly. As the Latin proverb says, \"Nomen est omen.\"",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "“Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12",
+    "locus": "Rota's reply following Sharp on the McCulloch–Pitts subject; Sharp answers “The name is a presage.”",
+    "date": "Spring/Summer 1985",
+    "file": "04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1985
+   ],
+   "themes": [
+    "new-science-naming"
+   ],
+   "collections": [
+    "rota_nomen_est_omen"
+   ],
+   "quote_sha256": "63496d51cecb1db9341c030e02fda99c5cd318e6882e7218dfeaaa41fb7b28ed",
+   "embed_text": "Gian-Carlo Rota | “Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12 | Rota's reply following Sharp on the McCulloch–Pitts subject; Sharp answers “The name is a presage.” | Spring/Summer 1985 | As you were saying, a new unit in science is being formed that remains to be named. It will include the best of theoretical computer science, neurophysiology, molecular biology, psychology, and the mathematical theory of information. It will be important to name it properly. As the Latin proverb says, \"Nomen est omen.\""
+  },
+  {
+   "id": "q-gian-carlo-rota-mathematics-philosop-a4f1ef8d",
+   "quote": "We need to name it glamorously, to make it into a respectable profession, and to bring people together to work on it. This is beginning to happen. It is the central drama of today's science.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "“Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12",
+    "locus": "Rota, immediately after Sharp's “The name is a presage.”",
+    "date": "Spring/Summer 1985",
+    "file": "04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1985
+   ],
+   "themes": [
+    "new-science-naming"
+   ],
+   "collections": [
+    "rota_nomen_est_omen"
+   ],
+   "quote_sha256": "a4f1ef8ddeee176fd26eb7a73e2ceb13dffb72509bcca698e1bebcbb75d55956",
+   "embed_text": "Gian-Carlo Rota | “Mathematics, Philosophy and Artificial Intelligence: A Dialogue with Gian-Carlo Rota and David Sharp,” Los Alamos Science No. 12 | Rota, immediately after Sharp's “The name is a presage.” | Spring/Summer 1985 | We need to name it glamorously, to make it into a respectable profession, and to bring people together to work on it. This is beginning to happen. It is the central drama of today's science."
   },
   {
    "id": "q-gian-carlo-rota-mathematics-philosop-91c4edf4",

@@ -1,6 +1,6 @@
 # 10_PAPERS — the papers
 
-Eight papers. Four are published preprints on ResearchGate and are cited here to their
+Nine papers. Four are published preprints on ResearchGate and are cited here to their
 published record; four have not been published anywhere before and appear here for the first
 time. Every one is held as its PDF and its LaTeX source, so a reader can check the rendered
 document against what produced it.
@@ -35,13 +35,15 @@ for that reason. The DOI is the durable citation.
 | Emergent Inverse-Square Laws from Cellular Automata | Nile Abadir and Essam Abadir | `GravityPaper/` |
 | The Address is the Map v3.0: The Structural Security Paradox, Why P=NP Doesn't Break RSA | based on the EGPT framework | `AddressMap_And_Crypto/` |
 
+| The Address is the Map: Constructive Number Theory, Rota's Entropy, and the Resolution of Computational Complexity | Essam Abadir | `Address_Is_The_Map/`, PDF compiled 2 December 2025; added to the collection 26 September 2026. Dedicated to Rota. Its thesis, in its own words: "Address = Map." |
+
 Rota's Entropy Theorem, transcribed from the class text, is the fourth of this set. It is not
 duplicated here because it is already in the collection with the rest of the Rota material, at
 `04_ROTA/entropy_theorem/Rota_Entropy_Theorem_Original_Proof.pdf`, with its source beside it.
 
 ## Dates, and why most of these papers do not carry one
 
-Five of the eight sources set the date with the LaTeX command that means *today*. The date on
+Six of the nine sources set the date with the LaTeX command that means *today*. The date on
 the title page is therefore whenever the PDF was last compiled, not when the paper was written.
 There is no date in the source to recover. The table above gives the compile date of the PDF
 held here, taken from the PDF itself, and that is the closest thing to a date each paper has.
