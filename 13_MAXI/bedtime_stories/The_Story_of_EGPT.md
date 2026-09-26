@@ -56,7 +56,7 @@ Here is how we translated the world into EGPT:
 
 ### 2. The Rules (The Laws of Physics)
 
-I drew a box on the paper, blocking off a section of the grid. "Then we played the game: 'Exploding Squares.' You couldn't step on certain squares."
+I drew a box on the paper, blocking off a section of the grid. "Then we played the game: 'Exploding Squares.' You couldn't step on certain squares." (In the code, the game is [`walkCNFPaths`](../../08_LEAN/EGPT/InformationTheory/Complexity/Tableau.lean#L145): walk the grid one rule at a time, around the forbidden squares, and keep the path.)
 
 "Those were the constraints," she said.
 
@@ -75,7 +75,7 @@ I drew a box on the paper, blocking off a section of the grid. "Then we played t
 
 "Exactly! [**Rota's Entropy.**](../../04_ROTA/entropy_theorem/) But remember what we figured out? Entropy isn't 'chaos' or 'messiness.' Entropy is the **Receipt**. It is the literal list of steps you actually took. It is the truth of what you did.
 
-"In the computer proof, we call this the [**`SatisfyingTableau`**](../../08_LEAN/EGPT/InformationTheory/Complexity/Tableau.lean#L109), and the walk that writes it is [`walkCNFPaths`](../../08_LEAN/EGPT/InformationTheory/Complexity/Tableau.lean#L145). Imagine I ask you to find a path through a maze. If you just teleport to the exit and say 'I'm here!', that's magic. Physics doesn't allow magic. You have to *walk* there. The Tableau is the recording of every step you took, every wall you bumped into.
+"In the computer proof, we call this the [**`SatisfyingTableau`**](../../08_LEAN/EGPT/InformationTheory/Complexity/Tableau.lean#L109). It is what the Exploding Squares walk writes down. Imagine I ask you to find a path through a maze. If you just teleport to the exit and say 'I'm here!', that's magic. Physics doesn't allow magic. You have to *walk* there. The Tableau is the recording of every step you took, every wall you bumped into.
 
 "Here is the secret, the thing that solves P=NP: **The 'Address' (where you are going) and the 'Search' (how you get there) are the same thing.**
 
