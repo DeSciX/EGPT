@@ -101,9 +101,11 @@ a community-record write the author has been told of); `kb corpus status -a egpt
 pulled `main`, `kb corpus sync -a egpt -k <kb> --dry-run` (exit 1 is drift, normal) then without
 `--dry-run`; **`kb doctor -a egpt -k <kb> --live`** is the gate (file identity, orphans and
 missing each fail); `kb list -a egpt`. `app init` also writes `.github/copilot-instructions.md`,
-`.cursorrules` and `.clinerules`; it leaves this `CLAUDE.md` alone because it carries no
-`<!-- BOOTSTRAP` marker; delete the scaffold `assets/` and `microservice/` it writes, and never
-this file. Compare `--show-walk`'s count with `git ls-files <source> | wc -l`: the walker drops
+`.cursorrules`, `.clinerules` and **overwrites this `CLAUDE.md`** (measured 2026-09-27 on CLI
+1.0.18: 387 insertions, 165 deletions, despite the absence of a `<!-- BOOTSTRAP` marker); after
+every `app init`, `git checkout HEAD -- CLAUDE.md`, and delete the scaffold `assets/`,
+`microservice/` and the three generated agent files. `sync --rebuild` prompts and needs `--yes`
+non-interactively; a fresh KB needs no rebuild. `chat` takes its question with `-q`. Compare `--show-walk`'s count with `git ls-files <source> | wc -l`: the walker drops
 every extension outside its list silently (`CorpusWalker.js:28-32`, `:329-334`).
 
 **Site upload** is a full replace of the app's slot, and since CLI 1.0.13 it refuses, dry-run
@@ -161,6 +163,16 @@ below stays his.
 chain-writing command; any account creation; pushing his own branches; committing his
 in-progress files. The assistant stages its own paths and commits by pathspec, so no commit of
 its carries his uncommitted work. The flip to public is his act.
+
+## State on DEV, measured 2026-09-27 17:30Z
+
+`Corpus` synced from `main @ f7c5450`: 4 files, 42 vectors, `kb doctor --live` HEALTHY, and the
+marker question's top source `RECORD_INDEX.md [ID: corpus:e26727c1…]` equals
+`git rev-parse main:RECORD_INDEX.md`. The sync's canary reported the KB not yet searchable within
+its window; the doctor and the chat that followed found it. `Sources` is registered with 0 vectors
+and refuses to sync until `guide/` and the untracked story are committed on `main`. The site is
+served at `https://egpt.dev.descix.net/` (8 files, served hash equals built, stamp `2d3f271`
+count 1, control app 0). PROD has no credential yet: `--env prod whoami` waits on a device login.
 
 ## Held-out works
 
