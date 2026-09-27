@@ -26,7 +26,7 @@ Both manifests are `publish_tier: "P"`, so before any walk the CLI runs its deny
 Its rule #19 (`CorpusDenyLint.js:229`) fails every `primary-source` entry whose `license_basis`
 is empty or missing. Every primary-source entry here carries the same basis: fair use under
 17 U.S.C. § 107 for scholarship and research, as set out in
-[`../Copyright_Fairuse_Memo.md`](../Copyright_Fairuse_Memo.md) (27 September 2026), the author's
+[`../Copyright_Fair-use_Memo.md`](../Copyright_Fair-use_Memo.md) (27 September 2026), the author's
 determination that everything in this repository is deemed fair use under that memorandum. The
 memo reserves the amount of any particular source displayed, per source; the works not reproduced
 at all are listed in `../URLS.md`. The `12_SINGULARITY/` entry adds that its transcripts are the

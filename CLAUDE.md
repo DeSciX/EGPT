@@ -178,7 +178,7 @@ count 1, control app 0). PROD has no credential yet: `--env prod whoami` waits o
 ## Copyright basis and held-out works
 
 Everything in this repository is deemed fair use under 17 U.S.C. § 107 for scholarship and
-research, per the author's `Copyright_Fairuse_Memo.md` (27 September 2026); every primary-source
+research, per the author's `Copyright_Fair-use_Memo.md` (27 September 2026); every primary-source
 entry in a KB manifest states that basis, and the memo is referenced wherever a basis is asked
 for. The memo reserves the amount of any particular source displayed, per source. `.gitignore`
 lists works cited to their published editions and not reproduced (see `URLS.md`).

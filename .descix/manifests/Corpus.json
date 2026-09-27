@@ -1,14 +1,14 @@
 {
   "kb_name": "Corpus",
   "publish_tier": "P",
-  "_purpose": "The quotation corpus and the two indexes that resolve a citation: every record verbatim with its SHA-256, the corpus README, and RECORD_INDEX.md. Sourced from the evidence folders at `ref`; nothing is copied into kb/. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). 05_CORPUS/corpus carries the license basis stated in Copyright_Fairuse_Memo.md.",
+  "_purpose": "The quotation corpus and the two indexes that resolve a citation: every record verbatim with its SHA-256, the corpus README, and RECORD_INDEX.md. Sourced from the evidence folders at `ref`; nothing is copied into kb/. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). 05_CORPUS/corpus carries the license basis stated in Copyright_Fair-use_Memo.md.",
   "sources": [
     {
       "path": "05_CORPUS/corpus",
       "ref": "main",
       "tier": 1,
       "doc_class": "primary-source",
-      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fairuse_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
       "doc_type": "documentation",
       "syncignore": []
     },
