@@ -1,18 +1,14 @@
 {
   "name": "egpt-evidence",
   "version": "1.0.0",
-  "description": "<!-- DRAFT by the assistant, 27 September 2026, to the author's brief: tight declaratives, one link-out per reason; his pass -->",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:site": "node scripts/build-site.mjs",
+    "render": "node scripts/render.mjs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eabadir/EGPT-Evidence.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/eabadir/EGPT-Evidence/issues"
@@ -21,5 +17,6 @@
   "devDependencies": {
     "@descix/cli": "^1.0.18",
     "marked": "^15.0.12"
-  }
+  },
+  "private": true
 }

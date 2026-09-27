@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>09DEBATE — the 18.313x debate record, through Exchange 34</title>
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body data-egpt-site-build="2d3f271"><main><h1>09_DEBATE — the 18.313x debate record, through Exchange 34</h1>
+<p>18.313x is a course built on MIT 18.313, Rota&#39;s probability course. Its P=NP debate is a
+Socratic role-play: Essam Abadir plays <strong>Stan (Ulam)</strong>, the chair, who asks questions and does
+not make assertions; the AI plays <strong>Gödel</strong> (the skeptic), <strong>von Neumann</strong> (the advocate),
+<strong>Rota</strong> (the entropy advisor) and a <strong>Moderator</strong>. Objections in the room became theorems in
+the tree; two of the three proof chains in <code>08_LEAN/</code> exist because the skeptic demanded them.
+The debate ran from Exchange 1 to Exchange 34: Gödel&#39;s final concession is Exchange 33, and
+Exchange 34 is the final confirmation that closed the record.</p>
+<p><strong>This folder ends at Exchange 34.</strong> That is a ruling, not an accident: material after E34 —
+the 4 April 2026 debugging session, the game-system audit of the same date, and the &quot;retread&quot;
+game exchange — is not here. It is the boundary of what Maxi remembers.</p>
+<h2>Where things come from</h2>
+<p>Everything except <code>maxi-memories/</code> is mirrored byte-for-byte from the public repository
+<strong>github.com/eabadir/EGPT-Lean</strong>, branch <strong><code>lean-archive-proofs</code></strong>, commit
+<strong><code>6a2769f8bb94c851070c6cf03b0e90da7c0917f2</code></strong>. The path map is:</p>
+<table>
+<thead>
+<tr>
+<th>here</th>
+<th>there</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>09_DEBATE/&lt;file&gt;</code></td>
+<td><code>18.313x/&lt;file&gt;</code></td>
+</tr>
+<tr>
+<td><code>09_DEBATE/agentic-debate/</code></td>
+<td><code>www/data/agentic-debate/</code></td>
+</tr>
+<tr>
+<td><code>09_DEBATE/maxi-memories/</code></td>
+<td>the Gods World memory corpus (<code>memories/</code> in the godsworld repository)</td>
+</tr>
+</tbody></table>
+<p>Files in that repository&#39;s <code>18.313x/</code> that are work boards and build instructions rather than
+record — <code>CLAUDE.md</code>, <code>BACKFILL_INSTRUCTIONS.md</code>, <code>BUILD_CROSS_REFERENCE.md</code>,
+<code>PRODUCT_FEATURES_PROPOSAL.md</code>, <code>tasks/</code>, <code>course_materials/BUILD_PROFESSOR_AGENT.md</code>,
+<code>course_materials/Class 1/AI_Prompt.md</code> — are not mirrored.</p>
+<p><strong>Prompts inside the debate itself are record.</strong> The debate is conducted entirely through prompts:
+the chair asks, the roles answer, and what a role was told is what makes its answer legible. The
+dispatch prompts in <code>session_transcript/</code> — including each role&#39;s standing instruction — are
+primary evidence of what happened, on the same footing as the replies. That the words occurred is
+a matter of record; what they mean is argued elsewhere and is not annotated here.</p>
+<h2>What this record is</h2>
+<p><code>AUTHORS_STATEMENT.md</code> is the author&#39;s statement on what the debate was: an exploratory system of
+agentic peer-review, built on the fly to put the proofs through the strictest adversarial scrutiny
+he could arrange. It is offered for transparency, not as a certificate, and no evidentiary grading
+of the exchanges is adopted. The proofs are public; anyone able to find the flaw in them is
+encouraged to do so, with or without these logs.</p>
+<h2>How to read it</h2>
+<ul>
+<li><strong><code>DEBATE_STATE.md</code></strong> — the accumulated state after Exchange 34: 45 consensus points, 16
+concessions, the open frontier. It is generated from <code>agentic-debate/exchange_live_*.json</code>,
+which is the source of truth; when they disagree, the exchange file wins.</li>
+<li><strong><code>debate_log.jsonl</code></strong> — the outcome ledger, one row per consensus, concession, insight,
+failed approach, implementation or open question, keyed <code>type:id</code> (<code>consensus:C38</code>,
+<code>concession:Y12</code>) and dated. This is the spine every other record hangs on.</li>
+<li><strong><code>agentic-debate/</code></strong> — the 34 exchange records plus the events file. Two notes in the
+folder say what the records are: the verbatim agent outputs the moderator still held
+are in <code>RAW_AGENT_OUTPUTS_22_33.md</code>; how the exchange files were assembled is in
+<code>AUTHORS_STATEMENT.md</code>.</li>
+<li><strong><code>session_transcript/</code></strong> — the raw Claude Code session and its sub-agent transcripts: the
+complete authoritative dialogue, 1,347 records. It is a machine log and reads like one. It
+carries the author&#39;s local file paths as recorded; nothing in it was rewritten.</li>
+<li><strong><code>archive/</code></strong> — the per-exchange QA files (1–13) and topic records (16–21) as archived during
+the debate, with the deleted-code audit and the rename note.</li>
+<li><strong><code>course_materials/</code></strong> — the syllabus, class description and session plans of the course
+the debate was a class of.</li>
+<li><strong><code>RECAP_Entropy_Rigidity_and_Address_Compression.md</code></strong> and
+<strong><code>PROPOSAL_Verifier_Only_Definitions.md</code></strong> — written 28 March 2026, after Exchange 27, to
+ground the participants before the completeness proof.</li>
+</ul>
+<h2>Maxi&#39;s memories</h2>
+<p><code>maxi-memories/</code> is how Maxi holds this debate. <code>MEMORIES_SCHEMA.md</code> is the structure and the
+rulings it was built under; <code>records/E00-events.md</code> through <code>records/E34-*.md</code> are one memory
+per exchange, with <code>records/HOLES-*.md</code> naming the outcome ids for which no text survives;
+<code>records/THE_FATHERS_FRAME.md</code> is how the corpus is meant to be read, in the author&#39;s words.
+<code>build/debate-18313x.memories.jsonl</code> is the built corpus (36 records), <code>.training.jsonl</code> its
+fine-tune projection, and <code>.manifest.json</code> the engineering record — sources, hashes, counts,
+and the fidelity grading that the memories themselves deliberately do not carry.</p>
+<p>Maxi&#39;s voice in the debate is Gödel&#39;s. That is a teaching, not a label: an LLM is a skeptic by
+its training set, and the record shows the advocate and the advisor reaching for exponential
+search too, because that is what the training set said would work. <code>records/BIAS-PATTERN-NOTES.md</code>
+is the incident table.</p>
+</main>
+<footer>EGPT-Evidence · built from commit 2d3f271 · <a href="../index.html">home</a></footer></body></html>

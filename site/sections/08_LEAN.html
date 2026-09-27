@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>08LEAN — the Lean source</title>
+<link rel="stylesheet" href="../assets/site.css"></head>
+<body data-egpt-site-build="2d3f271"><main><h1>08_LEAN — the Lean source</h1>
+<p>This folder mirrors the <code>Lean/</code> directory of the public repository
+<strong>github.com/eabadir/EGPT-Lean</strong>, branch <strong><code>lean-archive-proofs</code></strong>, at commit
+<strong><code>6a2769f8bb94c851070c6cf03b0e90da7c0917f2</code></strong> (3 September 2026). Every file is byte-identical
+to that commit; <code>CHECKSUMS.txt</code> at the root of this collection carries the hash of each.</p>
+<p>A path <code>Lean/X</code> in that repository, in the debate record, or in Maxi&#39;s memories is <code>08_LEAN/X</code>
+here.</p>
+<h2>What is in it</h2>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>EGPT/</code></td>
+<td>The current proof tree, <code>EntropyNat</code> era. The three capstones: <code>P_eq_NP</code> in <code>EGPT/InformationTheory/Complexity/SetRFL.lean</code>, <code>P_eq_NP_info</code> in <code>Complexity/PPNP.lean</code>, <code>P_eq_NP_info_standard</code> in <code>Complexity/StandardComplexity.lean</code>. <code>EGPT/InformationTheory/Basic.lean</code> declares <code>IIDParticleSource</code>, the i.i.d. coin stream everything is built from. <code>EGPT/InformationTheory/Isomorphisms/</code> is the bijection chain, spelled out link by link.</td>
+</tr>
+<tr>
+<td><code>Archive/</code></td>
+<td>The debate-era proof tree, <code>ParticlePath</code> era: the code the 18.313x debate was about. <code>Archive/NumberTheory/Core.lean</code> is where <code>equivParticlePathToNat : ParticlePath ≃ ℕ</code> lives. When a debate record or a memory names a file that is not where it says, this migration is usually why; check both trees.</td>
+</tr>
+<tr>
+<td><code>PPNP/</code></td>
+<td>The earliest proof sketches, kept as history.</td>
+</tr>
+<tr>
+<td><code>PROOF_CHAINS.md</code></td>
+<td>The three chains, capstone theorems, axiom table and file map.</td>
+</tr>
+</tbody></table>
+<p>The private-tree build reports of 15 May 2026 — the axiom closure listed per theorem — are in
+<code>06_LEAN_MATHLIB/lean_source/</code>; they were generated from the same source and are the record the
+chronology cites.</p>
+<h2>Building it</h2>
+<p>The standard is the kernel, not this folder. To check any claim about a theorem, build it:</p>
+<pre><code>git clone -b lean-archive-proofs https://github.com/eabadir/EGPT-Lean.git
+cd EGPT-Lean/Lean &amp;&amp; lake build
+</code></pre>
+<p>Then, in a scratch file importing the capstone, <code>#print axioms P_eq_NP</code> and read what the kernel
+says. The expected closure for the three capstones is <code>{propext, Quot.sound}</code>.</p>
+</main>
+<footer>EGPT-Evidence · built from commit 2d3f271 · <a href="../index.html">home</a></footer></body></html>

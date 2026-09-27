@@ -1,0 +1,14 @@
+{
+  "kb_name": "Sources",
+  "sync_mode": "local",
+  "_purpose": "The held primary documents in text, straight from the evidence folders: nothing is copied into kb/. A corpus sync takes each file's blob at `ref`, so the KB is exactly what the collection holds at that commit. HTML and PDF are skipped by the sync and reach readers through the site and the repository instead.",
+  "sources": [
+    { "path": "02_VON_NEUMANN", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": ["*.pdf", "*.png", "*.json"] },
+    { "path": "03_ULAM",        "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": ["*.pdf"] },
+    { "path": "04_ROTA",        "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": ["*.pdf", "*.png", "*.html", "*.tex"] },
+    { "path": "01_TRIAL",       "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] },
+    { "path": "12_SINGULARITY", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": ["*.docx", "*.png", "*.html"] },
+    { "path": "13_MAXI",        "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] },
+    { "path": "guide",          "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] }
+  ]
+}

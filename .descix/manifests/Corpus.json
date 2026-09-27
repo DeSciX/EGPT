@@ -1,0 +1,12 @@
+{
+  "kb_name": "Corpus",
+  "sync_mode": "local",
+  "_purpose": "The quotation corpus and the two indexes that resolve a citation: every record verbatim with its SHA-256, the corpus README, and RECORD_INDEX.md. Sourced from the evidence folders at `ref`; nothing is copied into kb/.",
+  "sources": [
+    { "path": "05_CORPUS/corpus", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] },
+    { "path": "05_CORPUS/CORPUS_README.md", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] },
+    { "path": "05_CORPUS/PROVENANCE_DB_ORDERS.md", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] },
+    { "path": "RECORD_INDEX.md", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] },
+    { "path": "URLS.md", "ref": "main", "tier": 1, "doc_type": "documentation", "syncignore": [] }
+  ]
+}
