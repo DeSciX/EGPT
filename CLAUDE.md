@@ -70,8 +70,8 @@ Every emitted link is page-relative, because the App Shell serves the bundle und
 (measured on PROD for egpt-frqtl: the runbook `prod-standardized-form-runbook.md` §4.1; not yet
 measured for `egpt`, so UNVERIFIED here until its first upload).
 
-**The PROD sequence, once the author has logged in** (each line `env -u DESCIX_API_URL npx descix …`,
-first line of output `env: prod … https://descix.net`; `whoami` must show his email):
+**The PROD sequence, once the author has logged in** (each line `env -u DESCIX_API_URL npx descix --env prod …`,
+first line of output `env: prod …`; `whoami` must show his email; it runs after the re-init above):
 `app init -a egpt --kb Corpus`, then `--kb Sources` (no `-p`; the create leg is skipped for an
 existing app; **never `--overwrite`**, which rewrites the live app's name and description;
 on a community's default app each `app init` also mirrors community identity from the registry,
@@ -107,8 +107,22 @@ INTEGRATION-RESULT, ALARM, or the author's words quoted verbatim). Silence is re
 
 ## Platform
 
-Every platform command is `env -u DESCIX_API_URL npx descix …` from this root, and its first
-line must read `env: prod … https://descix.net`. Platform mechanics are asked of the platform
+The working default is DEV, and PROD is set explicitly, per the author (2026-09-27, record
+Unkamon 73b7aab): "For now the working mode can be to use DEV as the default enviornment and
+explicitly set prod when needed since I guess that is the easiest way to deploy for now." So every
+PROD command is `env -u DESCIX_API_URL npx descix --env prod …` from this root, and before any
+command that changes anything, `--env prod config show` must read `Environment: prod` and
+`Chosen by: --env flag` (measured, CLI 1.0.18). A network command's first line then reads
+`env: prod …`. No seat or agent uses the SDK in a true external-user mode for now; that default
+flips later, on his word.
+
+This repository replaces EGPT-research as the source of the `egpt` app, in his words (same
+record): "EGPT-Evidence to replace EGPT-Research as the source. Confirmed that is the intent since
+EGPT-Evidence is a scrubbed version." and "For the replace, we can do a complete re-init (delete
+old site files or vectors in cloud completely)." The deletion of the app's existing knowledge
+bases, vectors and site files on DEV and PROD, and the remapping of `egpt` from EGPT-research to
+this repository in the workspace, are platform acts done only on the platform party's answer, and
+never with `--overwrite`. Platform mechanics are asked of the platform
 party, never derived from platform code; what is cited below was spot-checked in the pinned CLI
 after the platform party named the lines. **Never copy `.descix/wallet.json` between
 workspaces**: it is a single-holder OAuth chain. The app is `egpt`, the community is `egpt`, the
