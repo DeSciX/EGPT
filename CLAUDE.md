@@ -182,6 +182,14 @@ interactive device login (measured 2026-09-27). A fresh wallet needs one interac
 environment, once; that PROD login is the author's act. Environments are switched per command
 with `--env prod`, never by re-pinning, and never by copying a wallet file.
 
+## State on PROD, measured 2026-09-27 ~18:40Z
+
+After the author's PROD device login (whoami sam@descix.net, user pMMQNik5xfgC-gj-xmoQpQ1_AYY):
+`Corpus` and `Sources` registered (before: no knowledge bases on PROD); `Corpus` synced from
+`main`, 8 files, 750 vectors, `kb doctor --live` HEALTHY on index `descix-prod`; `Sources` 0
+vectors, blocked as on DEV. The site was dry-run only (8 files, base `/prod/egpt/site/`, `main @
+2ce83d4`); the upload itself, which replaces the June placeholder, waits on the author's word.
+
 ## Copyright basis and held-out works
 
 Everything in this repository is deemed fair use under 17 U.S.C. § 107 for scholarship and
