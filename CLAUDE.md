@@ -102,8 +102,9 @@ pulled `main`, `kb corpus sync -a egpt -k <kb> --dry-run` (exit 1 is drift, norm
 `--dry-run`; **`kb doctor -a egpt -k <kb> --live`** is the gate (file identity, orphans and
 missing each fail); `kb list -a egpt`. `app init` also writes `.github/copilot-instructions.md`,
 `.cursorrules`, `.clinerules` and **overwrites this `CLAUDE.md`** (measured 2026-09-27 on CLI
-1.0.18: 387 insertions, 165 deletions, despite the absence of a `<!-- BOOTSTRAP` marker); after
-every `app init`, `git checkout HEAD -- CLAUDE.md`, and delete the scaffold `assets/`,
+1.0.18: 387 insertions, 165 deletions, because its guard is a bare substring probe for the BOOTSTRAP HTML-comment marker and this
+file's own sentence about that marker satisfied it; never write that marker's byte sequence into
+this file); after every `app init`, `git checkout HEAD -- CLAUDE.md`, and delete the scaffold `assets/`,
 `microservice/` and the three generated agent files. `sync --rebuild` prompts and needs `--yes`
 non-interactively; a fresh KB needs no rebuild. `chat` takes its question with `-q`. Compare `--show-walk`'s count with `git ls-files <source> | wc -l`: the walker drops
 every extension outside its list silently (`CorpusWalker.js:28-32`, `:329-334`).
