@@ -167,7 +167,10 @@ its carries his uncommitted work. The flip to public is his act.
 
 ## State on DEV, measured 2026-09-27 17:30Z
 
-`Corpus` synced from `main @ f7c5450`: 4 files, 42 vectors, `kb doctor --live` HEALTHY, and the
+`Corpus` re-synced 2026-09-27 ~18:10Z with the quotation records under the fair-use basis: 8 files
+walked, 8 live, orphans 0, missing 0, `kb doctor --live` HEALTHY, `kb list` 750 vectors (the
+sync's reconciled live count read 757; the canary again reported the KB not yet searchable).
+Earlier that day, from `main @ f7c5450`: 4 files, 42 vectors, `kb doctor --live` HEALTHY, and the
 marker question's top source `RECORD_INDEX.md [ID: corpus:e26727c1…]` equals
 `git rev-parse main:RECORD_INDEX.md`. The sync's canary reported the KB not yet searchable within
 its window; the doctor and the chat that followed found it. `Sources` is registered with 0 vectors
