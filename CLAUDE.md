@@ -176,7 +176,11 @@ marker question's top source `RECORD_INDEX.md [ID: corpus:e26727c1…]` equals
 its window; the doctor and the chat that followed found it. `Sources` is registered with 0 vectors
 and refuses to sync until `guide/` and the untracked story are committed on `main`. The site is
 served at `https://egpt.dev.descix.net/` (8 files, served hash equals built, stamp `2d3f271`
-count 1, control app 0). PROD has no credential yet: `--env prod whoami` waits on a device login.
+count 1, control app 0). PROD has no credential yet: this workspace's `wallet.json` was born at the DEV device login, its
+address is bound on DEV only, and `reconnect_by_wallet` on PROD answers 400 and falls to an
+interactive device login (measured 2026-09-27). A fresh wallet needs one interactive login per
+environment, once; that PROD login is the author's act. Environments are switched per command
+with `--env prod`, never by re-pinning, and never by copying a wallet file.
 
 ## Copyright basis and held-out works
 
