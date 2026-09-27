@@ -19,23 +19,15 @@ source by name (`CorpusWalker.js:104-117`), so the `Sources` KB cannot sync unti
 committed on `main`. The reference is kept deliberately; committing it is the author's act.
 
 
-## The deny lint, and the license basis it requires
+## The deny lint, and the license basis
 
 Both manifests are `publish_tier: "P"`, so before any walk the CLI runs its deny lint
 (`lib/commands/corpus.js:498`, `lib/core/CorpusDenyLint.js:184`) and fails the sync on a hit.
 Its rule #19 (`CorpusDenyLint.js:229`) fails every `primary-source` entry whose `license_basis`
-is empty or missing. A basis is written only from what this collection itself states; none is
-invented. The collection states one for `12_SINGULARITY/` (its README: the author's own
-conversations "as shared" at the links it names; its `syncignore` excludes `.docx`, `.png` and
-`.html`, so the two reports never enter the KB and only the `.md` transcripts and the reflection sync), and states none for the following, so they are not
-in any manifest until the author states it, one line each, in his own words:
-
-| Source | Held as | What the collection says today |
-|---|---|---|
-| `02_VON_NEUMANN/` | *The Mathematician* (1947), Ulam's 1958 memoir, the letters to Gödel, the *Selected Letters* PDF | `URLS.md` names the works in copyright that are held out; it says nothing of these |
-| `03_ULAM/` | *Science, Computers, and People*, text and PDF | same |
-| `04_ROTA/` | *Indiscrete Thoughts*, the 1985 dialogue and address, the manuscript, the CVs, Guidi's notes | same |
-| `05_CORPUS/corpus/` | every quotation record with its citation | `CORPUS_README.md` line 139 describes a record's `file` field, not a basis |
-
-Until then the `Sources` KB holds `01_TRIAL/`, `12_SINGULARITY/`, `13_MAXI/` and `guide/`, and
-the `Corpus` KB holds the corpus README and orders, `RECORD_INDEX.md` and `URLS.md`.
+is empty or missing. Every primary-source entry here carries the same basis: fair use under
+17 U.S.C. § 107 for scholarship and research, as set out in
+[`../Copyright_Fairuse_Memo.md`](../Copyright_Fairuse_Memo.md) (27 September 2026), the author's
+determination that everything in this repository is deemed fair use under that memorandum. The
+memo reserves the amount of any particular source displayed, per source; the works not reproduced
+at all are listed in `../URLS.md`. The `12_SINGULARITY/` entry adds that its transcripts are the
+author's own conversations, as shared at the links its README names.

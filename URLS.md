@@ -30,6 +30,10 @@ listed here.
 
 ## Works relied on but not reproduced here
 
+The copyright basis for everything that is reproduced is fair use under 17 U.S.C. § 107, as set
+out in [`Copyright_Fairuse_Memo.md`](Copyright_Fairuse_Memo.md); the amount of any particular
+source displayed is reserved there, per source.
+
 These are in copyright and are cited to the published editions rather than mirrored. Every
 passage the report or the letter draws from them is held verbatim in the corpus at
 `05_CORPUS/`, with speaker, work, printed page and date, so a reader
