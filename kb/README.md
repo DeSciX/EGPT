@@ -26,7 +26,8 @@ Both manifests are `publish_tier: "P"`, so before any walk the CLI runs its deny
 Its rule #19 (`CorpusDenyLint.js:229`) fails every `primary-source` entry whose `license_basis`
 is empty or missing. A basis is written only from what this collection itself states; none is
 invented. The collection states one for `12_SINGULARITY/` (its README: the author's own
-conversations "as shared" at public links), and states none for the following, so they are not
+conversations "as shared" at the links it names; its `syncignore` excludes `.docx`, `.png` and
+`.html`, so the two reports never enter the KB and only the `.md` transcripts and the reflection sync), and states none for the following, so they are not
 in any manifest until the author states it, one line each, in his own words:
 
 | Source | Held as | What the collection says today |

@@ -22,7 +22,7 @@
         "*.png",
         "*.html"
       ],
-      "license_basis": "The author's own conversations with GPT-5.6 Sol, as shared by him at the public share links named in 12_SINGULARITY/README.md (lines 15 and 19), and the reports compiled at his direction (README.md, 00_OUTPUTS entry)."
+      "license_basis": "The author's own conversations with GPT-5.6 Sol, as shared at the share links named in 12_SINGULARITY/README.md (lines 15 and 19), and the reports compiled at his direction (README.md, 00_OUTPUTS entry)."
     },
     {
       "path": "13_MAXI",
