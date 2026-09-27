@@ -15,8 +15,9 @@ it. This skill is how you avoid doing that.
 ## Step 1 — reach the platform
 
 If the DeSciX tools are not available in this session, the `descix` connector is not connected.
-Tell the user to open Customize → Plugins → egpt → Connectors and connect **descix**, then retry.
-There is no tool call that connects a connector.
+Tell the user to connect **descix** under the plugin's Connectors (the path the `godsworld`
+plugin in this marketplace gives is Customize → Plugins → <plugin> → Connectors; not yet
+measured for `egpt`), then retry. There is no tool call that connects a connector.
 
 If they are available: `tell_me_how({ scope: "bootstrap", question: "<the user's words>" })`.
 

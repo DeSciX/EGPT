@@ -12,3 +12,9 @@ taken at a git ref, so what the app serves is what the collection holds at that 
 
 A sync reads each tracked file's blob at the manifest `ref`; an edited but uncommitted file is
 skipped. Sync from a clean, pulled `main`.
+
+`Sources.json` names `guide` at ref `main`. At the time of writing `guide/` has no tracked file at
+`main` (the author's eight pages are staged, uncommitted), and the CLI refuses an untracked-at-ref
+source by name (`CorpusWalker.js:104-117`), so the `Sources` KB cannot sync until `guide/` is
+committed on `main`. The reference is kept deliberately; committing it is the author's act.
+

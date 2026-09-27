@@ -62,18 +62,35 @@ that cannot fail is not a gate.
 
 **Site.** `scripts/build-site.mjs` reads `git show HEAD:<path>`, never the working tree, so an
 uncommitted edit cannot reach `site/`. Rebuild after every commit that touches a rendered page.
-Every emitted link is page-relative; the App Shell serves the bundle under a prefix.
+Every emitted link is page-relative, because the App Shell serves the bundle under a prefix
+(measured on PROD for egpt-frqtl: the runbook `prod-standardized-form-runbook.md` §4.1; not yet
+measured for `egpt`, so UNVERIFIED here until its first upload).
+
+**Manifest semantics, in the pinned CLI (`@descix/cli` 1.0.18).** `site.json`: an empty
+`include` matches everything, and a bare directory name in `exclude` matches at any depth
+(`lib/core/SiteWalker.js:14`, `isDirExcluded`). KB manifests: a source is legitimate only if git
+tracks it at the manifest `ref`; the working tree is never consulted, and an untracked-at-ref
+file is refused by name (`lib/core/CorpusWalker.js:11`, `:104-117`, `:163`); the set of
+processable extensions is `CorpusWalker.js:28`.
+
+## Operating mode
+
+This assistant holds no Beast seat and claims none: no fabric verb, no doorbell, no `/orchestrate`.
+Sessions coordinate by message, each carrying its class on line 1 (CCR, COMPLETION, BLOCKER,
+INTEGRATION-RESULT, ALARM, or the author's words quoted verbatim). Silence is receipt.
 
 ## Platform
 
 Every platform command is `env -u DESCIX_API_URL npx descix …` from this root, and its first
 line must read `env: prod … https://descix.net`. Platform mechanics are asked of the platform
-party, never derived from platform code. The app is `egpt`, the community is `egpt`, the
+party, never derived from platform code; what is cited below was spot-checked in the pinned CLI
+after the platform party named the lines. **Never copy `.descix/wallet.json` between
+workspaces**: it is a single-holder OAuth chain. The app is `egpt`, the community is `egpt`, the
 marketplace manifest `name` is `egpt`: one token, and a disagreement between them is a defect.
 
 ## Hands that are the author's, never the assistant's
 
-`descix login` (a passkey ceremony); any GitHub rename, transfer or visibility flip; any
+`descix login` (a passkey ceremony: the runbook §1, "signs in with whichever passkey the browser offers first"); any GitHub rename, transfer or visibility flip; any
 chain-writing command; any account creation; pushing his own branches; committing his
 in-progress files. The assistant stages its own paths and commits by pathspec, so no commit of
 its carries his uncommitted work. The flip to public is his act.
