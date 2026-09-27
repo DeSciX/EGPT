@@ -1,43 +1,8 @@
 {
   "kb_name": "Sources",
   "publish_tier": "P",
-  "_purpose": "The held primary documents in text, straight from the evidence folders: nothing is copied into kb/. A corpus sync takes each file's blob at `ref`, so the KB is exactly what the collection holds at that commit. HTML and PDF are skipped by the sync and reach readers through the site and the repository instead. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides).",
+  "_purpose": "The held primary documents in text, straight from the evidence folders: nothing is copied into kb/. A corpus sync takes each file's blob at `ref`, so the KB is exactly what the collection holds at that commit. HTML and PDF are skipped by the sync and reach readers through the site and the repository instead. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). Sources 02_VON_NEUMANN, 03_ULAM and 04_ROTA are not listed until the author states a license basis for each; the CLI's deny lint (#19) fails a primary-source without one. See kb/README.md.",
   "sources": [
-    {
-      "path": "02_VON_NEUMANN",
-      "ref": "main",
-      "tier": 1,
-      "doc_class": "primary-source",
-      "doc_type": "documentation",
-      "syncignore": [
-        "*.pdf",
-        "*.png",
-        "*.json"
-      ]
-    },
-    {
-      "path": "03_ULAM",
-      "ref": "main",
-      "tier": 1,
-      "doc_class": "primary-source",
-      "doc_type": "documentation",
-      "syncignore": [
-        "*.pdf"
-      ]
-    },
-    {
-      "path": "04_ROTA",
-      "ref": "main",
-      "tier": 1,
-      "doc_class": "primary-source",
-      "doc_type": "documentation",
-      "syncignore": [
-        "*.pdf",
-        "*.png",
-        "*.html",
-        "*.tex"
-      ]
-    },
     {
       "path": "01_TRIAL",
       "ref": "main",
@@ -56,7 +21,8 @@
         "*.docx",
         "*.png",
         "*.html"
-      ]
+      ],
+      "license_basis": "The author's own conversations with GPT-5.6 Sol, as shared by him at the public share links named in 12_SINGULARITY/README.md (lines 15 and 19), and the reports compiled at his direction (README.md, 00_OUTPUTS entry)."
     },
     {
       "path": "13_MAXI",

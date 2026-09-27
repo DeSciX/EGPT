@@ -1,16 +1,8 @@
 {
   "kb_name": "Corpus",
   "publish_tier": "P",
-  "_purpose": "The quotation corpus and the two indexes that resolve a citation: every record verbatim with its SHA-256, the corpus README, and RECORD_INDEX.md. Sourced from the evidence folders at `ref`; nothing is copied into kb/. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides).",
+  "_purpose": "The quotation corpus and the two indexes that resolve a citation: every record verbatim with its SHA-256, the corpus README, and RECORD_INDEX.md. Sourced from the evidence folders at `ref`; nothing is copied into kb/. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). 05_CORPUS/corpus is not listed until the author states its license basis; see kb/README.md.",
   "sources": [
-    {
-      "path": "05_CORPUS/corpus",
-      "ref": "main",
-      "tier": 1,
-      "doc_class": "primary-source",
-      "doc_type": "documentation",
-      "syncignore": []
-    },
     {
       "path": "05_CORPUS/CORPUS_README.md",
       "ref": "main",
