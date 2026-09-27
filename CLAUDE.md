@@ -152,6 +152,11 @@ marketplace manifest `name` is `egpt`: one token, and a disagreement between the
 
 ## Hands that are the author's, never the assistant's
 
+Merge and push of this repository, and the `egpt` app itself, are the assistant's own acts on the
+author's word (2026-09-27): "You merge and push with respect to EGPT-Evidence - you are master of
+that domain and the egpt app itself now. DEVPLANE is master of the DeSciX domain." Everything
+below stays his.
+
 `descix login` (a passkey ceremony: the runbook §1, "signs in with whichever passkey the browser offers first"); any GitHub rename, transfer or visibility flip; any
 chain-writing command; any account creation; pushing his own branches; committing his
 in-progress files. The assistant stages its own paths and commits by pathspec, so no commit of
