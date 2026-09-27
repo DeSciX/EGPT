@@ -15,3 +15,9 @@ Aspire Ventures Mail - A Gift in Quantum Computing Patent*.pdf
 
 # Staging area; nothing here is part of the collection.
 _to_delete/
+
+# Per-developer DeSciX config and dependencies; manifests and provenance stay tracked.
+node_modules/
+.descix/workspace.json
+.descix/wallet.json
+.descix/sync-state/

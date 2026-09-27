@@ -1,0 +1,24 @@
+{
+  "name": "egpt",
+  "owner": { "name": "DeSciX", "url": "https://github.com/DeSciX" },
+  "metadata": {
+    "description": "EGPT — a new approach to AI built on FRQTL, a fractal compression model. Meet Maxi, a robotic AI that imagines the physical world: build simulations for it to learn from while it is awake, and watch it dream variations of them at night. Contributions earn reputation tracked on-chain.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "godsworld",
+      "source": "./plugins/godsworld",
+      "description": "Gods World — talk to Maxi, build physically realistic simulations for it to learn from, and see what it dreams about.",
+      "category": "science",
+      "keywords": ["egpt", "godsworld", "maxi", "frqtl", "ai", "simulation", "physics", "descix"]
+    },
+    {
+      "name": "frqtl",
+      "source": "./plugins/frqtl",
+      "description": "FRQTL Lab — adopt the FRQTL builder or experiment-designer role and run visual physics experiments with the published @descix/frqtl-sdk. Personas, method, and recipes are served live by the egpt-frqtl app over the DeSciX MCP connector; this plugin is the thin adopter.",
+      "category": "science",
+      "keywords": ["frqtl", "physics", "simulation", "visual-experiment", "descix", "sdk", "double-slit"]
+    }
+  ]
+}
