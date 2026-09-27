@@ -70,6 +70,23 @@ Every emitted link is page-relative, because the App Shell serves the bundle und
 (measured on PROD for egpt-frqtl: the runbook `prod-standardized-form-runbook.md` §4.1; not yet
 measured for `egpt`, so UNVERIFIED here until its first upload).
 
+**Workspace.** This repository has its own `.descix/workspace.json` (ignored), created with the
+top-level `descix init -c egpt -a egpt -y` from this root and pinned with `config init --env dev`
+right after, in that order: the resolver is nearest-wins and an ancestor's file is used when none
+exists here (`lib/workspace-config.js:354-378`), and `config init` alone rewrites that ancestor
+(`lib/commands/config.js:96-99`). Never `config init` from a directory without its own file. The
+parent Unkamon workspace still maps `egpt` to EGPT-research; re-pointing it is the author's act, and
+that mapping is stale the moment this repository's KBs land. `app init -a egpt --kb <name>` from
+this root, after login, is what maps the app into this file.
+
+**Re-init, by plane** (the author's ruling, record 73b7aab): the app's vectors are purged and
+refilled by the owner with `kb corpus sync --rebuild` on each KB this repository defines; the site
+is a full replace, so uploading this site is the deletion of the old one, after the rollback
+artifact is saved; the eight knowledge-base records fed from EGPT-research (`Code-EGPT`,
+`Course-18313x`, `Debate-Record`, `General`, `Historical-Sources`, `Lean-Proofs`, `Papers`,
+`Patents`) are deleted on DEV and PROD by the author or an account he grants community management
+on `egpt`; an owner credential is refused, and the refusal is the gate working.
+
 **The PROD sequence, once the author has logged in** (each line `env -u DESCIX_API_URL npx descix --env prod …`,
 first line of output `env: prod …`; `whoami` must show his email; it runs after the re-init above):
 `app init -a egpt --kb Corpus`, then `--kb Sources` (no `-p`; the create leg is skipped for an
