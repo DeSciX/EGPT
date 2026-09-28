@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 715 files, 140463798 bytes.
+# 715 files, 140472023 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -639,7 +639,7 @@ d0ce3225fc6b6c281125b2ea6102239854b1f0198bd6ef7b62b0499fe6857068  14_COURANT_GRO
 cd27f55c5cafba7a715b2456a1d7d5746401e601047e14cb559340c6299fd697  14_COURANT_GROUP/DeSciX_Whitepaper.md
 f587c3dd0f5fc25132bf565b0bb3465adc28e7c2e4430d4b0345e01ed998bece  14_COURANT_GROUP/Press_Release_2026-04-01.md
 5b3f32721d7cfd4eae888a7e686e6504fa4b398d59d74e84894d0e0d9c2195a0  14_COURANT_GROUP/README.md
-44a5b7f164161fa5dd4f9e8043b441b493b9f8ca883ffc6f5967d9a41e867b19  14_COURANT_GROUP/Site_Provenance.md
+23798c2589d69f24a65c6da4e3b6a40169b547fd5f056ccb92a052c9ef71dbc1  14_COURANT_GROUP/Site_Provenance.md
 ffbcba7fe92fc512e3daaf24ebd3856ab4a80618b0269991e13ce326240eb5d6  15_GAME_THEORY/DAITA_Whitepaper_2023-09-25.md
 c3c6c4297e351a09edc6b79d2d30955828ec3b49192cc3d385c0c4d208dd303b  15_GAME_THEORY/README.md
 79a30a431a3c398ee6384b77205c109a9fd79b675fc31c000a64ee5b49dcc4c9  CLAUDE.md
