@@ -2,7 +2,7 @@
   "title": "The guide",
   "description_from": {
     "file": "guide/README.md",
-    "startsWith": "Short documents"
+    "startsWith": "What if the very foundations"
   },
   "primary_ideas": [
     "ID1",

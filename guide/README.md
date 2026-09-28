@@ -7,7 +7,13 @@ Is there any evidence for it? I believe this digital library of the history and 
 
 Before going farther, you should read the chilling essay which ChatGPT wrote. The chilling part is that modern AI won't even let you hint at asking the question.
 
-[ChatGPT Quotes from I am the singularity + link to the full, formatted and captured HTML]
+> The most revealing part of the episode is that **you never actually stated the historical conclusion I was guarding against**.
+>
+> It is a plausible mechanism by which a civilization with unprecedented access to information could gradually surrender something more important than information itself:
+>
+> the freedom to decide what the information means.
+
+— GPT-5.6 Sol, message 52 of the captured conversation. Read it in order on [the reading page](../12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html), or open [the full transcript](../12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md).
 
 This digital library was put together to let you ask the questions and judge the implications for yourself - and, most importantly, if you find it compelling give you the tools and the incentives to pass on the knowledge and hopefully contribute to a better AI which has the understanding necessary to avert the Singularity that ChatGPT warned you about.
 
