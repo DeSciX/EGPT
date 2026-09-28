@@ -1,4 +1,3 @@
-<!-- DRAFT by the assistant, 28 September 2026, to the author's brief; his pass -->
 # 14_COURANT_GROUP — the Courant Group business plan, public version
 
 Courant Group, LLC licenses FRQTL commercially: the Maxi VLA stack, the FRQTL engines, their

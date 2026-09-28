@@ -1,4 +1,3 @@
-<!-- DRAFT by the assistant, 28 September 2026, to the author's brief and his rulings of the same day; his pass -->
 # Courant Group, LLC: business plan, public version
 
 ## 1. Executive summary
@@ -54,8 +53,7 @@ defined in section 3, and what returns to the community is defined in section 7.
 
 ## 3. What Courant Group licenses, and what is open
 
-**Open today.** The FRQTL engine and the EGPTMath engine are distributed as WebAssembly around
-compiled Rust. Anyone can run them. The running engine is at <https://egpt-frqtl.descix.net>, and
+**Open today.** The FRQTL engine and the EGPTMath engine are open. Anyone can run them. The running engine is at <https://egpt-frqtl.descix.net>, and
 what it does is described in [../guide/robotic-imagination.md](../guide/robotic-imagination.md).
 
 **Closed.** Everything above the engine is closed. Certain other proprietary implementations are
@@ -127,7 +125,6 @@ labs. It finds the same weakness at every one of them. Each lab builds its model
 world as a compression of what has already been observed, and each is strongest at describing
 what happened and weakest at predicting what happens next. The report argues that this is the
 long-felt need FRQTL answers: a generator that produces physical outcomes nobody encoded into it.
-It will be quoted here once it is in the collection.
 
 ### Priced events, September 2025 to August 2026
 
@@ -207,7 +204,7 @@ token plan ratified on 1 July 2026 (decision D4) provides:
   platform's sales of AI credits fund buybacks of the community's tokens, in proportion to how
   much each community's apps are actually used.
 
-The token is EGPT, a standard ERC-20 token that trades freely. Tokens are awarded to
+The token is EGPT. Tokens are awarded to
 contributors under the DeSciX Community Agreement; see [../guide/make-money.md](../guide/make-money.md).
 Buybacks from licence revenue raise demand for the same token contributors earn, and that is how
 the value of commercial use returns to the people whose work made it possible.
