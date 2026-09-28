@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 343,
+ "count": 371,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -757,6 +757,35 @@
    "embed_text": "Gregory Bateson | Gregory Bateson, \"From Versailles to Cybernetics,\" in Steps to an Ecology of Mind, pp.469-477 - quoted in Steve J. Heims, The Cybernetics Group (MIT Press, 1991) | Heims p.298-299 (endnote 18 to chapter on the Eighth Conference) | Bateson essay undated (post-1953); quoted in Heims 1991 | We may call the aggregate of these ideas cybernetics, or communication theory, or information theory or systems theory. The ideas were generated in many places: in Vienna by Bertalanffy, in Harvard [sic] by Wiener, in Princeton by von Neumann, in Bell Telephone Labs by Shannon, in Cambridge by Craik, and so on...."
   },
   {
+   "id": "q-nelson-h-f-beebe-nelson-h-f-beebe-bib-606e3e37",
+   "quote": "@InProceedings{Ulam:1948:SMP, author = \"Stanis{\\l}aw M. Ulam\", editor = \"????\", booktitle = \"{A.E.C. Information Meeting, Brookhaven National Laboratory, April 26-28, 1948}\", title = \"Statistical methods for problems involving equations of the diffusion type, ({Monte Carlo})\", publisher = \"????\", address = \"????\", pages = \"27--??\", year = \"1948\", LCCN = \"????\", bibdate = \"Sat Mar 31 16:03:22 2007\", bibsource = \"https://www.math.utah.edu/pub/bibnet/authors/u/ulam-stanislaw-m.bib\", note = \"BNL-17\", acknowledgement = ack-nhfb, }",
+   "speaker": {
+    "name": "Nelson H. F. Beebe",
+    "role": "author",
+    "sort": "beebe, nelson h. f.",
+    "as_given": "Nelson H. F. Beebe"
+   },
+   "source": {
+    "work": "Nelson H. F. Beebe, BibTeX bibliography ulam-stanislaw-m.bib, bibnet, netlib (Sandia mirror), version 2.71 of 29 August 2026",
+    "locus": "entry Ulam:1948:SMP",
+    "date": "31 March 2007",
+    "file": "",
+    "url": "https://netlib.sandia.gov/bibnet/authors/u/ulam-stanislaw-m.html"
+   },
+   "restored": "",
+   "years": [
+    2007
+   ],
+   "themes": [
+    "monte-carlo-and-automata"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "606e3e37412ddd3c5bdd0aced906751e28f1d1e94ab5ffb181c5e8e9e7cb24b3",
+   "embed_text": "Nelson H. F. Beebe | Nelson H. F. Beebe, BibTeX bibliography ulam-stanislaw-m.bib, bibnet, netlib (Sandia mirror), version 2.71 of 29 August 2026 | entry Ulam:1948:SMP | 31 March 2007 | @InProceedings{Ulam:1948:SMP, author = \"Stanis{\\l}aw M. Ulam\", editor = \"????\", booktitle = \"{A.E.C. Information Meeting, Brookhaven National Laboratory, April 26-28, 1948}\", title = \"Statistical methods for problems involving equations of the diffusion type, ({Monte Carlo})\", publisher = \"????\", address = \"????\", pages = \"27--??\", year = \"1948\", LCCN = \"????\", bibdate = \"Sat Mar 31 16:03:22 2007\", bibsource = \"https://www.math.utah.edu/pub/bibnet/authors/u/ulam-stanislaw-m.bib\", note = \"BNL-17\", acknowledgement = ack-nhfb, }"
+  },
+  {
    "id": "q-rodney-brooks-why-todays-humanoids-549e59a6",
    "quote": "collecting just visual data is not collecting the right data. There is so much more going into human dexterity that visual data completely leaves out.",
    "speaker": {
@@ -1016,6 +1045,35 @@
    ],
    "quote_sha256": "3767130f7d452ba86ece85074f00a0defc040651e6a1f0b6ef9f35c03c220314",
    "embed_text": "United States Congress | Invention Secrecy Act, 35 U.S.C. § 181 — “Secrecy of certain inventions and withholding of patent” | § 181, first paragraph | 1951 | Whenever publication or disclosure by the publication of an application or by the grant of a patent on an invention in which the Government has a property interest might, in the opinion of the head of the interested Government agency, be detrimental to the national security, the Commissioner of Patents upon being so notified shall order that the invention be kept secret and shall withhold the publication of the application or the grant of a patent therefor under the conditions set forth hereinafter."
+  },
+  {
+   "id": "q-michael-creutz-michael-creutz-monte-643a3613",
+   "quote": "Using Monte Carlo techniques, we evaluate path integrals for pure SU(2) gauge fields. Wilson's regularization procedure on a lattice of up to 10⁴ sites controls ultraviolet divergences. Our renormalization prescription, based on confinement, is to hold fixed the string tension, the coefficient of the asymptotic linear potential between sources in the fundamental representation of the gauge group. Upon reducing the cutoff, we observe a logarithmic decrease of the bare coupling constant in a manner consistent with the perturbative renormalization-group prediction. This supports the coexistence of confinement and asymptotic freedom for quantized non-Abelian gauge fields.",
+   "speaker": {
+    "name": "Michael Creutz",
+    "role": "author",
+    "sort": "creutz, michael",
+    "as_given": "Michael Creutz"
+   },
+   "source": {
+    "work": "Michael Creutz, “Monte Carlo study of quantized SU(2) gauge theory,” Physical Review D 21, no. 8, 2308",
+    "locus": "abstract",
+    "date": "15 April 1980",
+    "file": "",
+    "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.21.2308"
+   },
+   "restored": "",
+   "years": [
+    1980
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "643a3613798e807c5f66055dacd4251ed3ee06b81f4005bc60bf76ef59c5835d",
+   "embed_text": "Michael Creutz | Michael Creutz, “Monte Carlo study of quantized SU(2) gauge theory,” Physical Review D 21, no. 8, 2308 | abstract | 15 April 1980 | Using Monte Carlo techniques, we evaluate path integrals for pure SU(2) gauge fields. Wilson's regularization procedure on a lattice of up to 10⁴ sites controls ultraviolet divergences. Our renormalization prescription, based on confinement, is to hold fixed the string tension, the coefficient of the asymptotic linear potential between sources in the fundamental representation of the gauge group. Upon reducing the cutoff, we observe a logarithmic decrease of the bare coupling constant in a manner consistent with the perturbative renormalization-group prediction. This supports the coexistence of confinement and asymptotic freedom for quantized non-Abelian gauge fields."
   },
   {
    "id": "q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee",
@@ -2450,6 +2508,151 @@
    "embed_text": "Kenneth Baclawski, Gian-Carlo Rota and Sara Billey | Introduction to Probability Theory, ch. VIII, “Entropy and Information” | §3, summary | unpublished lecture notes, preliminary edition, c. 1992–93 | The four principal processes of probability theory are all determined by maximum entropy properties."
   },
   {
+   "id": "q-joseph-p-s-kung-joseph-p-s-kung-gian-9c8ec7f5",
+   "quote": "There Rota joined the group of graduate students in functional analysis laboring on what would become the field’s canonical work, often referred to as “Dunford-Schwartz.”",
+   "speaker": {
+    "name": "Joseph P. S. Kung",
+    "role": "author",
+    "sort": "kung, joseph p. s.",
+    "as_given": "Joseph P. S. Kung"
+   },
+   "source": {
+    "work": "Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016",
+    "locus": "p. 3",
+    "date": "2016",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf"
+   },
+   "restored": "",
+   "years": [
+    2016
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "9c8ec7f5e40aa2852663474e9d52daa6665f3ba5fb1e4aff0b222e020c3d1271",
+   "embed_text": "Joseph P. S. Kung | Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016 | p. 3 | 2016 | There Rota joined the group of graduate students in functional analysis laboring on what would become the field’s canonical work, often referred to as “Dunford-Schwartz.”"
+  },
+  {
+   "id": "q-joseph-p-s-kung-joseph-p-s-kung-gian-0dc9b617",
+   "quote": "Rota did his doctoral research under the direction of Jacob T. Schwartz and defended his thesis, “Extension Theory of Differential Operators,” in 1956.",
+   "speaker": {
+    "name": "Joseph P. S. Kung",
+    "role": "author",
+    "sort": "kung, joseph p. s.",
+    "as_given": "Joseph P. S. Kung"
+   },
+   "source": {
+    "work": "Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016",
+    "locus": "p. 3",
+    "date": "2016",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf"
+   },
+   "restored": "",
+   "years": [
+    2016
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "0dc9b617c637d72eaeb3d7beb9478fe8a51a8e449b537a54a82634c55ef4165d",
+   "embed_text": "Joseph P. S. Kung | Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016 | p. 3 | 2016 | Rota did his doctoral research under the direction of Jacob T. Schwartz and defended his thesis, “Extension Theory of Differential Operators,” in 1956."
+  },
+  {
+   "id": "q-joseph-p-s-kung-joseph-p-s-kung-gian-c61a46d2",
+   "quote": "After Yale, Rota was a temporary member of the Courant Institute of Mathematical Sciences (1956–1957) and a Benjamin Pierce Instructor at Harvard University (1957–59).",
+   "speaker": {
+    "name": "Joseph P. S. Kung",
+    "role": "author",
+    "sort": "kung, joseph p. s.",
+    "as_given": "Joseph P. S. Kung"
+   },
+   "source": {
+    "work": "Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016",
+    "locus": "p. 4",
+    "date": "2016",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf"
+   },
+   "restored": "",
+   "years": [
+    2016
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "c61a46d20e764719ded3d9a9a75de8eb56b54317d75551a10f73604c779fdaaf",
+   "embed_text": "Joseph P. S. Kung | Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016 | p. 4 | 2016 | After Yale, Rota was a temporary member of the Courant Institute of Mathematical Sciences (1956–1957) and a Benjamin Pierce Instructor at Harvard University (1957–59)."
+  },
+  {
+   "id": "q-joseph-p-s-kung-joseph-p-s-kung-gian-0d633eba",
+   "quote": "Among his numerous honors, Rota was a senior fellow at the Los Alamos National Laboratory from 1971 on, spending several weeks there every year.",
+   "speaker": {
+    "name": "Joseph P. S. Kung",
+    "role": "author",
+    "sort": "kung, joseph p. s.",
+    "as_given": "Joseph P. S. Kung"
+   },
+   "source": {
+    "work": "Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016",
+    "locus": "p. 5",
+    "date": "2016",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf"
+   },
+   "restored": "",
+   "years": [
+    2016
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "0d633ebafd260b7ff6b6444149c365745bf5bba2a08d9969dd016b1cd507e9e1",
+   "embed_text": "Joseph P. S. Kung | Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016 | p. 5 | 2016 | Among his numerous honors, Rota was a senior fellow at the Los Alamos National Laboratory from 1971 on, spending several weeks there every year."
+  },
+  {
+   "id": "q-joseph-p-s-kung-joseph-p-s-kung-gian-47b872b5",
+   "quote": "The National Security Agency awarded him the Medal for Distinguished Service in 1992, though what he did to deserve the honor was classified.",
+   "speaker": {
+    "name": "Joseph P. S. Kung",
+    "role": "author",
+    "sort": "kung, joseph p. s.",
+    "as_given": "Joseph P. S. Kung"
+   },
+   "source": {
+    "work": "Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016",
+    "locus": "p. 6",
+    "date": "2016",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/rota-gian-carlo.pdf"
+   },
+   "restored": "",
+   "years": [
+    2016
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "47b872b5a52d6e06eba362417da51a0dd420db827605f68f8af345191b8a49a4",
+   "embed_text": "Joseph P. S. Kung | Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016 | p. 6 | 2016 | The National Security Agency awarded him the Medal for Distinguished Service in 1992, though what he did to deserve the honor was classified."
+  },
+  {
    "id": "q-ray-kurzweil-the-computer-and-the-13be85da",
    "quote": "The original rationale for that organization is here briskly and lucidly outlined in von Neumann's own words, although he speaks of \"code\" where we now speak of \"programs,\" and he speaks of \"complete codes\" versus \"short codes\" where we now speak of \"machine-language programs\" versus \"high-level programming languages.\"",
    "speaker": {
@@ -2478,6 +2681,93 @@
    ],
    "quote_sha256": "13be85da93ab5fec8f3ac6813e61bbe4606d5ce970d1af3608a229bb18e60fad",
    "embed_text": "Ray Kurzweil | The Computer and the Brain (2000 Yale Nota Bene edition, Foreword by Ray Kurzweil) | Foreword, unnumbered page (early front matter) | 2000 (foreword; book originally 1958) | The original rationale for that organization is here briskly and lucidly outlined in von Neumann's own words, although he speaks of \"code\" where we now speak of \"programs,\" and he speaks of \"complete codes\" versus \"short codes\" where we now speak of \"machine-language programs\" versus \"high-level programming languages.\""
+  },
+  {
+   "id": "q-brookhaven-nationa-beginnings-brookhave-bb715d22",
+   "quote": "The U.S. War Department transferred Camp Upton to the Atomic Energy Commission, DOE's predecessor, for the founding of Brookhaven Lab in 1947 and our history of discovery began.",
+   "speaker": {
+    "name": "Brookhaven National Laboratory",
+    "role": "author",
+    "sort": "laboratory, brookhaven national",
+    "as_given": "Brookhaven National Laboratory"
+   },
+   "source": {
+    "work": "“Beginnings,” Brookhaven National Laboratory 75th Anniversary website",
+    "locus": "paragraph beginning “In 1946, representatives from nine major universities”",
+    "date": "current at 2026-09-28",
+    "file": "",
+    "url": "https://www.bnl.gov/75/beginnings.php"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "bb715d22cba86cac34863ec922b2906aa2d732fcbb2f28978fafe541f1975713",
+   "embed_text": "Brookhaven National Laboratory | “Beginnings,” Brookhaven National Laboratory 75th Anniversary website | paragraph beginning “In 1946, representatives from nine major universities” | current at 2026-09-28 | The U.S. War Department transferred Camp Upton to the Atomic Energy Commission, DOE's predecessor, for the founding of Brookhaven Lab in 1947 and our history of discovery began."
+  },
+  {
+   "id": "q-brookhaven-nationa-lab-celebrates-new-s-e950654a",
+   "quote": "UPTON, NY - In honor of the 25th anniversary of a scientific paper describing the first use of Monte Carlo methods and lattice gauge calculations in the study of quantum chromodynamics (QCD) - the theory that describes the interactions of subatomic particles - scientists gathered at the U.S. Department of Energy's Brookhaven National Laboratory for a morning of talks to dedicate the newest supercomputer devoted to these studies.",
+   "speaker": {
+    "name": "Brookhaven National Laboratory",
+    "role": "author",
+    "sort": "laboratory, brookhaven national",
+    "as_given": "Brookhaven National Laboratory"
+   },
+   "source": {
+    "work": "“Lab Celebrates New Supercomputer,” Brookhaven National Laboratory newsroom",
+    "locus": "first paragraph",
+    "date": "1 December 2005",
+    "file": "",
+    "url": "https://www.bnl.gov/newsroom/news.php?a=110400"
+   },
+   "restored": "",
+   "years": [
+    2005
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "e950654aacced53f16fc5ee353556043618449517ccf5d79972b6b5976ae133c",
+   "embed_text": "Brookhaven National Laboratory | “Lab Celebrates New Supercomputer,” Brookhaven National Laboratory newsroom | first paragraph | 1 December 2005 | UPTON, NY - In honor of the 25th anniversary of a scientific paper describing the first use of Monte Carlo methods and lattice gauge calculations in the study of quantum chromodynamics (QCD) - the theory that describes the interactions of subatomic particles - scientists gathered at the U.S. Department of Energy's Brookhaven National Laboratory for a morning of talks to dedicate the newest supercomputer devoted to these studies."
+  },
+  {
+   "id": "q-brookhaven-nationa-timeline-of-discover-9dea8bac",
+   "quote": "The U.S. War Department transfers Camp Upton to the Atomic Energy Commission, the U.S. Department of Energy's predecessor, on March 21 for the founding of Brookhaven National Laboratory.",
+   "speaker": {
+    "name": "Brookhaven National Laboratory",
+    "role": "author",
+    "sort": "laboratory, brookhaven national",
+    "as_given": "Brookhaven National Laboratory"
+   },
+   "source": {
+    "work": "“Timeline of Discovery,” Brookhaven National Laboratory 75th Anniversary website",
+    "locus": "1947 entry, “Transfer to the Atomic Energy Commission”",
+    "date": "current at 2026-09-28",
+    "file": "",
+    "url": "https://www.bnl.gov/75/timeline.php"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "9dea8bac9420b048772f344b795f45774f51592a4481c4c9d285bc10a0b725e6",
+   "embed_text": "Brookhaven National Laboratory | “Timeline of Discovery,” Brookhaven National Laboratory 75th Anniversary website | 1947 entry, “Transfer to the Atomic Energy Commission” | current at 2026-09-28 | The U.S. War Department transfers Camp Upton to the Atomic Energy Commission, the U.S. Department of Energy's predecessor, on March 21 for the founding of Brookhaven National Laboratory."
   },
   {
    "id": "q-alexandre-lebrun-quoted-in-techcrunch-15c4b0cd",
@@ -2681,6 +2971,64 @@
    ],
    "quote_sha256": "db3705439afc34948edfc58bf890bca67c94277c4a5c8c61a982079a0908f248",
    "embed_text": "LIBERO-PRO | arXiv:2510.03827 | October 2025 | although existing models achieve over 90% accuracy under the standard LIBERO evaluation, their performance collapses to 0.0% under our generalized setting."
+  },
+  {
+   "id": "q-martin-davis-and-e-martin-davis-and-edm-37751427",
+   "quote": "He remained at Yale for several years after receiving the doctorate and moved to New York University in 1957, where he continued at the Courant Institute of Mathematical Sciences until his retirement in 2005.",
+   "speaker": {
+    "name": "Martin Davis and Edmond Schonberg",
+    "role": "author",
+    "sort": "martin davis and edmond schonberg",
+    "as_given": "Martin Davis and Edmond Schonberg"
+   },
+   "source": {
+    "work": "Martin Davis and Edmond Schonberg, “Jacob Theodore Schwartz, 1930–2009,” Biographical Memoir, National Academy of Sciences, 2011",
+    "locus": "p. 4",
+    "date": "2011",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/schwartz-jacob-t.pdf"
+   },
+   "restored": "",
+   "years": [
+    2011
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "37751427eaab63844b1d4a748a277988a4819d2c4744023306c2582b4f6c5f4e",
+   "embed_text": "Martin Davis and Edmond Schonberg | Martin Davis and Edmond Schonberg, “Jacob Theodore Schwartz, 1930–2009,” Biographical Memoir, National Academy of Sciences, 2011 | p. 4 | 2011 | He remained at Yale for several years after receiving the doctorate and moved to New York University in 1957, where he continued at the Courant Institute of Mathematical Sciences until his retirement in 2005."
+  },
+  {
+   "id": "q-martin-davis-and-e-martin-davis-and-edm-24110453",
+   "quote": "In 1969 he founded the Computer Science Department at New York University under the umbrella of the Courant Institute of Mathematical Sciences. He served as chair of the department until 1977. Jack’s directorship of the Information Science and Technology Office at the Defense Advanced Research Projects Agency during his two-year leave (1987-1989) from NYU enabled him to seriously influence the direction of research in computer science in the United States.",
+   "speaker": {
+    "name": "Martin Davis and Edmond Schonberg",
+    "role": "author",
+    "sort": "martin davis and edmond schonberg",
+    "as_given": "Martin Davis and Edmond Schonberg"
+   },
+   "source": {
+    "work": "Martin Davis and Edmond Schonberg, “Jacob Theodore Schwartz, 1930–2009,” Biographical Memoir, National Academy of Sciences, 2011",
+    "locus": "pp. 8–9",
+    "date": "2011",
+    "file": "",
+    "url": "https://www.nasonline.org/wp-content/uploads/2024/06/schwartz-jacob-t.pdf"
+   },
+   "restored": "",
+   "years": [
+    2011
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "2411045368dd28eea45702a59b92dfb92c82c775e729b001e40b5b84a1cb0dde",
+   "embed_text": "Martin Davis and Edmond Schonberg | Martin Davis and Edmond Schonberg, “Jacob Theodore Schwartz, 1930–2009,” Biographical Memoir, National Academy of Sciences, 2011 | pp. 8–9 | 2011 | In 1969 he founded the Computer Science Department at New York University under the umbrella of the Courant Institute of Mathematical Sciences. He served as chair of the department until 1977. Jack’s directorship of the Information Science and Technology Office at the Defense Advanced Research Projects Agency during his two-year leave (1987-1989) from NYU enabled him to seriously influence the direction of research in computer science in the United States."
   },
   {
    "id": "q-warren-mcculloch-cybernetics-circular-e0ab041b",
@@ -3119,6 +3467,64 @@
    "embed_text": "Nicholas Metropolis | “The Beginning of the Monte Carlo Method,” Los Alamos Science, Special Issue No. 15, pp. 125–130 | pp. 125–130 | 1987 | Johnny let it be known that construction of the ENIAC was nearing completion, and he wondered whether Stan Frankel and I would be interested in preparing a preliminary computational model of a thermonuclear reaction for the ENIAC."
   },
   {
+   "id": "q-michael-creutz-lau-michael-creutz-laure-7066fa9b",
+   "quote": "Using Monte Carlo techniques, we evaluate the path integral for the four-dimensional lattice gauge theory with a Z2 gauge group. The system exhibits a first-order transition. This is contrary to the implications of the approximate Migdal recursion relations but consistant with mean-field-theory arguments. Our \"data\" agree well with a low-temperature expansion and the exact duality between the high- and low-temperature phases.",
+   "speaker": {
+    "name": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi",
+    "role": "author",
+    "sort": "michael creutz, laurence jacobs, and claudio rebbi",
+    "as_given": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi"
+   },
+   "source": {
+    "work": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi, “Experiments with a Gauge-Invariant Ising System,” Physical Review Letters 42, no. 21, 1390",
+    "locus": "abstract",
+    "date": "21 May 1979",
+    "file": "",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.42.1390"
+   },
+   "restored": "",
+   "years": [
+    1979
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "7066fa9b1a80f4c778579a760d4e8d99f4b232cc18234e4a7a2becb6dd5074bb",
+   "embed_text": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi | Michael Creutz, Laurence Jacobs, and Claudio Rebbi, “Experiments with a Gauge-Invariant Ising System,” Physical Review Letters 42, no. 21, 1390 | abstract | 21 May 1979 | Using Monte Carlo techniques, we evaluate the path integral for the four-dimensional lattice gauge theory with a Z2 gauge group. The system exhibits a first-order transition. This is contrary to the implications of the approximate Migdal recursion relations but consistant with mean-field-theory arguments. Our \"data\" agree well with a low-temperature expansion and the exact duality between the high- and low-temperature phases."
+  },
+  {
+   "id": "q-michael-creutz-lau-michael-creutz-laure-a27a4484",
+   "quote": "Using Monte Carlo techniques, we study the thermodynamics of four-dimensional Euclidean lattice gauge theories, with gauge groups ZN and U(1). For N≤4 the models exhibit a single first-order phase transition, while for N≥5 we observe two transitions of higher order. As N increases, one of these transitions moves toward zero temperature, whereas the other remains at finite temperature and survives in the U(1) limit. The behavior of the Wilson loop factor is also analyzed for the Z2 and Z6 models.",
+   "speaker": {
+    "name": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi",
+    "role": "author",
+    "sort": "michael creutz, laurence jacobs, and claudio rebbi",
+    "as_given": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi"
+   },
+   "source": {
+    "work": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi, “Monte Carlo study of Abelian lattice gauge theories,” Physical Review D 20, no. 8, 1915",
+    "locus": "abstract",
+    "date": "15 October 1979",
+    "file": "",
+    "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.20.1915"
+   },
+   "restored": "",
+   "years": [
+    1979
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "a27a4484a2e53ac6d167e4b6dc7f25d17529e60cfa371fb0d027752d3867876b",
+   "embed_text": "Michael Creutz, Laurence Jacobs, and Claudio Rebbi | Michael Creutz, Laurence Jacobs, and Claudio Rebbi, “Monte Carlo study of Abelian lattice gauge theories,” Physical Review D 20, no. 8, 1915 | abstract | 15 October 1979 | Using Monte Carlo techniques, we study the thermodynamics of four-dimensional Euclidean lattice gauge theories, with gauge groups ZN and U(1). For N≤4 the models exhibit a single first-order phase transition, while for N≥5 we observe two transitions of higher order. As N increases, one of these transitions moves toward zero temperature, whereas the other remains at finite temperature and survives in the U(1) limit. The behavior of the Wilson loop factor is also analyzed for the Z2 and Z6 models."
+  },
+  {
    "id": "q-howard-morland-howard-morland-on-th-d25f1fdd",
    "quote": "I had many printed resources and, finally, in the spring of 1978, an unexpected assignment from The Progressive magazine to visit the H-bomb factories and take the unclassified guided tours.",
    "speaker": {
@@ -3405,6 +3811,35 @@
    ],
    "quote_sha256": "ba2670d521fc3115d121de3d98799e3177e1c25ac28dced8b50e3aa6f561e0c2",
    "embed_text": "MIT News Office | “MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office | news item, unpaginated | 22 April 1999 | He had been a consultant to the Los Alamos Scientific Laboratory since 1966, and for the Rand Corporation from 1966-71 and Brookhaven National Laboratory from 1969-1973. A book entitled Essays of the Future, edited by Dr. Rota, is dedicated to Nick Metropolis, the sole survivor of the original Los Alamos group. The book, scheduled for publication in October, was conceived entirely by Dr. Rota."
+  },
+  {
+   "id": "q-mit-news-office-mit-professor-gian-c-da8bed66",
+   "quote": "He joined the MIT faculty in 1959 in the mathematics department. The word philosophy was added to his title in 1972.",
+   "speaker": {
+    "name": "MIT News Office",
+    "role": "author",
+    "sort": "office, mit news",
+    "as_given": "MIT News Office"
+   },
+   "source": {
+    "work": "“MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office",
+    "locus": "news item, unpaginated",
+    "date": "22 April 1999",
+    "file": "",
+    "url": "https://news.mit.edu/1999/rota"
+   },
+   "restored": "",
+   "years": [
+    1999
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "da8bed66f100feb451aba424185087422f839292d7d39c57f6f009585f47acde",
+   "embed_text": "MIT News Office | “MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office | news item, unpaginated | 22 April 1999 | He joined the MIT faculty in 1959 in the mathematics department. The word philosophy was added to his title in 1972."
   },
   {
    "id": "q-jack-parker-holder-quoted-in-techcrunch-921af4ff",
@@ -3869,6 +4304,238 @@
    ],
    "quote_sha256": "30dd8bb6c596ae671c27b4a38e75ac188162826be7789e71c977793f01e4386d",
    "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “At the Memorial Service for S. M. Ulam,” The Lodge, Los Alamos, 17 May 1984; printed as the foreword to Stanislaw Ulam, Science, Computers, and People: From the Tree of Mathematics (Boston: Birkhäuser, 1986) | p. xi–xii | 17 May 1984 | For Stan Ulam, this process took place instantaneously, in a flash, unremittingly, day and night, as a condition of his being in the world. He was condemned to seeing the truth of whatever he saw. His word then became the warning of the prophet, the mumbled riddle of the Sybil in her trance. The comforts of illusion were denied to him."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-9f2206c2",
+   "quote": "Member, Committee on mathematics advisory to the Office of Naval Research, 1963-67.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Administrative positions (selected):”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "9f2206c2644b47880d25ed4a82c910afa65a62b9de3291a062ad8693e958abaa",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Administrative positions (selected):” | 1996 | Member, Committee on mathematics advisory to the Office of Naval Research, 1963-67."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-51160e00",
+   "quote": "Member, Directorate of Air Force Office of Scientific Research Evaluation Panel, 1971-74.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Administrative positions (selected):”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "51160e00b37a0d905d4278ad4efd34cdf8ff6e4756a084927488466192f8e2e6",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Administrative positions (selected):” | 1996 | Member, Directorate of Air Force Office of Scientific Research Evaluation Panel, 1971-74."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-297be359",
+   "quote": "Member, \"Focus\" Committee, Institute for Defense Analysis, 1985-1988.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Administrative positions (selected):”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "297be359876febdebb76b40b58218c1f541c2d3704e53f5660f640ea6b915a5b",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Administrative positions (selected):” | 1996 | Member, \"Focus\" Committee, Institute for Defense Analysis, 1985-1988."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-55a1aba7",
+   "quote": "B.A., Princeton University, 1953 (summa cum laude).",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Higher Education:”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "55a1aba7c7a325acdf4e1d49a2947d0f0871f9fb3162ec12c8e1bb435332b0ea",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Higher Education:” | 1996 | B.A., Princeton University, 1953 (summa cum laude)."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-d3aa8153",
+   "quote": "Director's Office Fellow, Los Alamos National Laboratory, 1971-.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Honors:”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "d3aa81539c04535cdc1046599bd5c1ba421f6c44658d1cf02b64ef875ab11f2b",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Honors:” | 1996 | Director's Office Fellow, Los Alamos National Laboratory, 1971-."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-9e1a9e6c",
+   "quote": "Postdoctoral Research Fellow, Courant lnstitute of Mathematical Sciences (New York University), 1956-1957. Benjamin Peirce Instructor in Mathematics , Harvard University, 1957-1959. Assistant Professor of Mathematics, Massachusetts Institute of Technology, 1959-1962. Associate Professor of Mathematics, Massachusetts Institute of Technology, 1962-1965. Professor, The Rockefeller University, 1965-1967. Professor of Mathematics, Massachusetts Institute of Technology, 1967-1972. Professor of Applied Mathematics and Natural Philosophy, Massachusetts Institute of Technology, 1972-1975. Professor of Applied Mathematics and Philosophy, Massachusetts Institute of Technology, 1975 - present.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Positions Held:”, the whole block",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "9e1a9e6ceb44652a32285d1bdfd7fd28f9e333158b24bc305f9a4c265d64e1b3",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Positions Held:”, the whole block | 1996 | Postdoctoral Research Fellow, Courant lnstitute of Mathematical Sciences (New York University), 1956-1957. Benjamin Peirce Instructor in Mathematics , Harvard University, 1957-1959. Assistant Professor of Mathematics, Massachusetts Institute of Technology, 1959-1962. Associate Professor of Mathematics, Massachusetts Institute of Technology, 1962-1965. Professor, The Rockefeller University, 1965-1967. Professor of Mathematics, Massachusetts Institute of Technology, 1967-1972. Professor of Applied Mathematics and Natural Philosophy, Massachusetts Institute of Technology, 1972-1975. Professor of Applied Mathematics and Philosophy, Massachusetts Institute of Technology, 1975 - present."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-d1b86f69",
+   "quote": "Medal for Distinguished Service, National Security Agency, 1992.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Prizes:”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "d1b86f6937a47245661a350435abed8be521cfaa4f8ae7e48d74916716ff803e",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Prizes:” | 1996 | Medal for Distinguished Service, National Security Agency, 1992."
+  },
+  {
+   "id": "q-gian-carlo-rota-gian-carlo-rota-curr-d7939a32",
+   "quote": "Top Secret Clearance (Air Force) 1969-1971. Q - Clearance (DOE), 1966-. SI - Clearance (NSA), 1981-.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999",
+    "locus": "heading “Security Clearances:”",
+    "date": "1996",
+    "file": "",
+    "url": "https://web.archive.org/web/19990219095318/http://www-math.mit.edu/~rota/cv.txt"
+   },
+   "restored": "",
+   "years": [
+    1996
+   ],
+   "themes": [
+    "secrecy"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "d7939a3277ad055ba9f98e75cdc0f9cebdbfd06636547983192ff930067836bb",
+   "embed_text": "Gian-Carlo Rota | Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999 | heading “Security Clearances:” | 1996 | Top Secret Clearance (Air Force) 1969-1971. Q - Clearance (DOE), 1966-. SI - Clearance (NSA), 1981-."
   },
   {
    "id": "q-gian-carlo-rota-indiscrete-thoughts-407300ca",
@@ -5029,6 +5696,35 @@
    ],
    "quote_sha256": "1a44ea50ced0d5eeabbee9f012e4b84089ef5a8f3e39c48a95457b1150160bd5",
    "embed_text": "Miklós Rédei | Introductory commentary to John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (AMS/LMS, 2005) | §5.3 | 2005 | There is, however, no record of any exchange between von Neumann and Einstein on this subject, nor did von Neumann ever express any views on the EPR paper’s argument -- the only exception I am aware of being von Neumann’s letter to Schrodinger published in the present volume (April 11, 1936)."
+  },
+  {
+   "id": "q-jacob-t-schwartz-quoted-in-mit-profes-1b60bb3b",
+   "quote": "\"He was my first graduate student at Yale,\" … \"He began as a functional analyst and after a few years moved on to combinatorics where he became a leading national and international figure.",
+   "speaker": {
+    "name": "Jacob T. Schwartz",
+    "role": "reported",
+    "sort": "schwartz, jacob t.",
+    "as_given": "Jacob T. Schwartz"
+   },
+   "source": {
+    "work": "quoted in “MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office",
+    "locus": "news item, unpaginated",
+    "date": "22 April 1999",
+    "file": "",
+    "url": "https://news.mit.edu/1999/rota"
+   },
+   "restored": "said Jacob T. Schwartz, who was Dr. Rota's dissertation advisor and is now a professor at New York University.",
+   "years": [
+    1999
+   ],
+   "themes": [
+    "rota"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "1b60bb3b5305d8f3b26bbc041b7b21449f772502ae9a18e7608fef6f07e4334e",
+   "embed_text": "Jacob T. Schwartz | quoted in “MIT professor Gian-Carlo Rota, mathematician and philosopher, is dead at 66,” MIT News Office | news item, unpaginated | 22 April 1999 | \"He was my first graduate student at Yale,\" … \"He began as a functional analyst and after a few years moved on to combinatorics where he became a leading national and international figure. | said Jacob T. Schwartz, who was Dr. Rota's dissertation advisor and is now a professor at New York University."
   },
   {
    "id": "q-claude-e-shannon-the-redundancy-of-en-b993b1ec",
@@ -6218,6 +6914,122 @@
    ],
    "quote_sha256": "b27413438a2025d67f11b63b768648c9eb31c9c71b31fcd358efd34b56cc78e7",
    "embed_text": "U.S. Department of Energy, Office of Classification | “Born Classified: The Phrase that Won’t Die,” CommuniQué, Office of Classification, U.S. Department of Energy | pp. 3-4 | February 2006 | “Born classified” generated a great deal of controversy. Many detractors questioned the constitutionality of declaring categories of information pre-emptively classified… Recognizing the fact that “born classified” had become less applicable, the classification of new RD information was addressed in 10 Code of Federal Regulations (CFR) Part 1045 subsection 1045.14. … “Born classified” has been replaced by “may be classified upon review.”"
+  },
+  {
+   "id": "q-u-s-department-of--timeline-of-events-1-e55cf83b",
+   "quote": "President Carter signs the Department of Energy Organization Act, effectively abolishing the Federal Energy Administration and Energy Research and Development Administration.",
+   "speaker": {
+    "name": "U.S. Department of Energy, Office of Legacy Management",
+    "role": "author",
+    "sort": "u.s. department of energy, office of legacy management",
+    "as_given": "U.S. Department of Energy, Office of Legacy Management"
+   },
+   "source": {
+    "work": "“Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline",
+    "locus": "entry “August 4, 1977”",
+    "date": "current at 2026-09-28",
+    "file": "",
+    "url": "https://www.energy.gov/lm/timeline-events-1971-1980"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "e55cf83bdbf2e46bfe8d49a6a3fa8d91a090e104da95b29fe37d36b1a5aca3fb",
+   "embed_text": "U.S. Department of Energy, Office of Legacy Management | “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline | entry “August 4, 1977” | current at 2026-09-28 | President Carter signs the Department of Energy Organization Act, effectively abolishing the Federal Energy Administration and Energy Research and Development Administration."
+  },
+  {
+   "id": "q-u-s-department-of--timeline-of-events-1-d9b5f5b5",
+   "quote": "The Energy Research and Development Administration is activated. The new agency is given responsibility for the AEC nuclear weapons program. President Ford appoints Robert C. Seamans, Jr., as Administrator.",
+   "speaker": {
+    "name": "U.S. Department of Energy, Office of Legacy Management",
+    "role": "author",
+    "sort": "u.s. department of energy, office of legacy management",
+    "as_given": "U.S. Department of Energy, Office of Legacy Management"
+   },
+   "source": {
+    "work": "“Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline",
+    "locus": "entry “January 19, 1975”",
+    "date": "current at 2026-09-28",
+    "file": "",
+    "url": "https://www.energy.gov/lm/timeline-events-1971-1980"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "d9b5f5b5603ce308af87c6a91ff7f18c37d1e5b61902ad16967e714e4958855c",
+   "embed_text": "U.S. Department of Energy, Office of Legacy Management | “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline | entry “January 19, 1975” | current at 2026-09-28 | The Energy Research and Development Administration is activated. The new agency is given responsibility for the AEC nuclear weapons program. President Ford appoints Robert C. Seamans, Jr., as Administrator."
+  },
+  {
+   "id": "q-u-s-department-of--timeline-of-events-1-af62fbbb",
+   "quote": "The U.S. Department of Energy (DOE) is activated. Bringing together a score of organizational entities from a dozen departments and agencies, the new department is also given responsibility for the nuclear weapons program.",
+   "speaker": {
+    "name": "U.S. Department of Energy, Office of Legacy Management",
+    "role": "author",
+    "sort": "u.s. department of energy, office of legacy management",
+    "as_given": "U.S. Department of Energy, Office of Legacy Management"
+   },
+   "source": {
+    "work": "“Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline",
+    "locus": "entry “October 1, 1977”",
+    "date": "current at 2026-09-28",
+    "file": "",
+    "url": "https://www.energy.gov/lm/timeline-events-1971-1980"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "af62fbbb2ed7f0cd3a000bbbc2e07f73496261a999799d0dcfced670b048dba0",
+   "embed_text": "U.S. Department of Energy, Office of Legacy Management | “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline | entry “October 1, 1977” | current at 2026-09-28 | The U.S. Department of Energy (DOE) is activated. Bringing together a score of organizational entities from a dozen departments and agencies, the new department is also given responsibility for the nuclear weapons program."
+  },
+  {
+   "id": "q-u-s-department-of--timeline-of-events-1-b69cf2bc",
+   "quote": "President Ford signs the Energy Reorganization Act of 1974, abolishing AEC and establishing the Energy Research and Development Administration and the U.S. Nuclear Regulatory Commission.",
+   "speaker": {
+    "name": "U.S. Department of Energy, Office of Legacy Management",
+    "role": "author",
+    "sort": "u.s. department of energy, office of legacy management",
+    "as_given": "U.S. Department of Energy, Office of Legacy Management"
+   },
+   "source": {
+    "work": "“Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline",
+    "locus": "entry “October 11, 1974”",
+    "date": "current at 2026-09-28",
+    "file": "",
+    "url": "https://www.energy.gov/lm/timeline-events-1971-1980"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "brookhaven-lattice-qcd"
+   ],
+   "collections": [
+    "rota_brookhaven_and_career"
+   ],
+   "quote_sha256": "b69cf2bc53557e5bcefcfdfd7a05bf1598e7d55f5e14a01d79ed1da6ef770472",
+   "embed_text": "U.S. Department of Energy, Office of Legacy Management | “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline | entry “October 11, 1974” | current at 2026-09-28 | President Ford signs the Energy Reorganization Act of 1974, abolishing AEC and establishing the Energy Research and Development Administration and the U.S. Nuclear Regulatory Commission."
   },
   {
    "id": "q-stanislaw-ulam-adventures-of-a-math-d148ff94",

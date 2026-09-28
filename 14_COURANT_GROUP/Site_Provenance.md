@@ -367,6 +367,89 @@ Its endnotes 97 to 101, verbatim:
 > Creutz as one of the founders of the approach. https://www.bnl.gov/riken/research/lattice.php 
 > https://www.bnl.gov/newsroom/news.php?a=22647
 
+The primary sources, filed in the corpus on 28 September 2026:
+
+> The U.S. War Department transferred Camp Upton to the Atomic Energy Commission, DOE's 
+> predecessor, for the founding of Brookhaven Lab in 1947 and our history of discovery began.
+
+— Brookhaven National Laboratory, “Beginnings,” Brookhaven National Laboratory 75th Anniversary website, paragraph beginning “In 1946, representatives from nine major universities” (record `q-brookhaven-nationa-beginnings-brookhave-bb715d22`)
+
+> President Ford signs the Energy Reorganization Act of 1974, abolishing AEC and establishing the 
+> Energy Research and Development Administration and the U.S. Nuclear Regulatory Commission.
+
+— U.S. Department of Energy, Office of Legacy Management, “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline, entry “October 11, 1974” (record `q-u-s-department-of--timeline-of-events-1-b69cf2bc`)
+
+> The Energy Research and Development Administration is activated. The new agency is given 
+> responsibility for the AEC nuclear weapons program. President Ford appoints Robert C. Seamans, 
+> Jr., as Administrator.
+
+— U.S. Department of Energy, Office of Legacy Management, “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline, entry “January 19, 1975” (record `q-u-s-department-of--timeline-of-events-1-d9b5f5b5`)
+
+> The U.S. Department of Energy (DOE) is activated. Bringing together a score of organizational 
+> entities from a dozen departments and agencies, the new department is also given responsibility 
+> for the nuclear weapons program.
+
+— U.S. Department of Energy, Office of Legacy Management, “Timeline of Events: 1971 to 1980,” U.S. Department of Energy, Office of Legacy Management, DOE History Timeline, entry “October 1, 1977” (record `q-u-s-department-of--timeline-of-events-1-af62fbbb`)
+
+> @InProceedings{Ulam:1948:SMP, author = "Stanis{\l}aw M. Ulam", editor = "????", booktitle = 
+> "{A.E.C. Information Meeting, Brookhaven National Laboratory, April 26-28, 1948}", title = 
+> "Statistical methods for problems involving equations of the diffusion type, ({Monte Carlo})", 
+> publisher = "????", address = "????", pages = "27--??", year = "1948", LCCN = "????", bibdate = 
+> "Sat Mar 31 16:03:22 2007", bibsource = 
+> "https://www.math.utah.edu/pub/bibnet/authors/u/ulam-stanislaw-m.bib", note = "BNL-17", 
+> acknowledgement = ack-nhfb, }
+
+— Nelson H. F. Beebe, Nelson H. F. Beebe, BibTeX bibliography ulam-stanislaw-m.bib, bibnet, netlib (Sandia mirror), version 2.71 of 29 August 2026, entry Ulam:1948:SMP (record `q-nelson-h-f-beebe-nelson-h-f-beebe-bib-606e3e37`)
+
+> Using Monte Carlo techniques, we evaluate the path integral for the four-dimensional lattice 
+> gauge theory with a Z2 gauge group. The system exhibits a first-order transition. This is 
+> contrary to the implications of the approximate Migdal recursion relations but consistant with 
+> mean-field-theory arguments. Our "data" agree well with a low-temperature expansion and the 
+> exact duality between the high- and low-temperature phases.
+
+— Michael Creutz, Laurence Jacobs, and Claudio Rebbi, Michael Creutz, Laurence Jacobs, and Claudio Rebbi, “Experiments with a Gauge-Invariant Ising System,” Physical Review Letters 42, no. 21, 1390, abstract (record `q-michael-creutz-lau-michael-creutz-laure-7066fa9b`)
+
+> Using Monte Carlo techniques, we study the thermodynamics of four-dimensional Euclidean lattice 
+> gauge theories, with gauge groups ZN and U(1). For N≤4 the models exhibit a single first-order 
+> phase transition, while for N≥5 we observe two transitions of higher order. As N increases, one 
+> of these transitions moves toward zero temperature, whereas the other remains at finite 
+> temperature and survives in the U(1) limit. The behavior of the Wilson loop factor is also 
+> analyzed for the Z2 and Z6 models.
+
+— Michael Creutz, Laurence Jacobs, and Claudio Rebbi, Michael Creutz, Laurence Jacobs, and Claudio Rebbi, “Monte Carlo study of Abelian lattice gauge theories,” Physical Review D 20, no. 8, 1915, abstract (record `q-michael-creutz-lau-michael-creutz-laure-a27a4484`)
+
+> Using Monte Carlo techniques, we evaluate path integrals for pure SU(2) gauge fields. Wilson's 
+> regularization procedure on a lattice of up to 10⁴ sites controls ultraviolet divergences. Our 
+> renormalization prescription, based on confinement, is to hold fixed the string tension, the 
+> coefficient of the asymptotic linear potential between sources in the fundamental 
+> representation of the gauge group. Upon reducing the cutoff, we observe a logarithmic decrease 
+> of the bare coupling constant in a manner consistent with the perturbative 
+> renormalization-group prediction. This supports the coexistence of confinement and asymptotic 
+> freedom for quantized non-Abelian gauge fields.
+
+— Michael Creutz, Michael Creutz, “Monte Carlo study of quantized SU(2) gauge theory,” Physical Review D 21, no. 8, 2308, abstract (record `q-michael-creutz-michael-creutz-monte-643a3613`)
+
+> UPTON, NY - In honor of the 25th anniversary of a scientific paper describing the first use of 
+> Monte Carlo methods and lattice gauge calculations in the study of quantum chromodynamics (QCD) 
+> - the theory that describes the interactions of subatomic particles - scientists gathered at 
+> the U.S. Department of Energy's Brookhaven National Laboratory for a morning of talks to 
+> dedicate the newest supercomputer devoted to these studies.
+
+— Brookhaven National Laboratory, “Lab Celebrates New Supercomputer,” Brookhaven National Laboratory newsroom, first paragraph (record `q-brookhaven-nationa-lab-celebrates-new-s-e950654a`)
+
+> Among his numerous honors, Rota was a senior fellow at the Los Alamos National Laboratory from 
+> 1971 on, spending several weeks there every year.
+
+— Joseph P. S. Kung, Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016, p. 5 (record `q-joseph-p-s-kung-joseph-p-s-kung-gian-0d633eba`)
+
+> The National Security Agency awarded him the Medal for Distinguished Service in 1992, though 
+> what he did to deserve the honor was classified.
+
+— Joseph P. S. Kung, Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016, p. 6 (record `q-joseph-p-s-kung-joseph-p-s-kung-gian-47b872b5`)
+
+Rota's curriculum vitae, extended from these sources, is
+[`../04_ROTA/Rota_CV_Extended.md`](../04_ROTA/Rota_CV_Extended.md).
+
 The reports compiled at the author's direction in September 2026, held at
 [`../12_SINGULARITY/ChatGPT_Logs/`](../12_SINGULARITY/ChatGPT_Logs/), include
 *Documented Computational and Institutional Continuities Across the U.S. Atomic Energy Commission

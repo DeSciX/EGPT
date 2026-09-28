@@ -64,6 +64,7 @@ not held here and the corpus record cites it.
 | EXHIBIT_A_report.md | It is evident that Johnny’s ideas on a future theory of automata and o… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-37711b59` |  |
 | EXHIBIT_A_report.md | was an example of intelligent management of a scientific group without… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-96fd445a` |  |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–, | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| EXHIBIT_A_report.md | Director’s Office Fellow, Los Alamos National Laboratory, 1971–. | `q-gian-carlo-rota-gian-carlo-rota-curr-d3aa8153` |  |
 | EXHIBIT_A_report.md | a new unit in science is being formed that remains to be named. It wil… | `q-gian-carlo-rota-mathematics-philosop-a4f1ef8d` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
 | EXHIBIT_A_report.md | The main hope of a justification of classical mathematics — in the sen… | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
 | EXHIBIT_A_report.md | My personal opinion, which is shared by many others, is, that Gödel ha… | `q-john-von-neumann-the-mathematician-in-9aedde2b` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |
@@ -86,6 +87,9 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | an iconoclastic statement, since so many physicists are still under th… | `q-stanislaw-ulam-stanislaw-m-ulam-adv-d7988043` |  |
 | EXHIBIT_A_report.md | No, I didn’t succeed to my satisfaction in giving a really rational in… | `q-enrico-fermi-quoted-in-stanislaw--d8ddc35d` |  |
 | EXHIBIT_A_report.md | no business being that good. | `q-enrico-fermi-quoted-in-stanislaw--bb1927b6` |  |
+| EXHIBIT_A_report.md | Statistical Methods for
+Problems Involving Equations of the Diffusion … | `q-nelson-h-f-beebe-nelson-h-f-beebe-bib-606e3e37` |  |
+| EXHIBIT_A_report.md | 25th anniversary of a scientific paper describing the first use of Mon… | `q-brookhaven-nationa-lab-celebrates-new-s-e950654a` |  |
 | EXHIBIT_A_report.md | This concept was suggested to von Neumann by S. M. Ulam. | `q-arthur-w-burks-von-neumanns-self-re-d898c4c0` |  |
 | EXHIBIT_A_report.md | start with axioms whose validity they don’t question, | `q-stanislaw-ulam-physics-for-mathemat-8801f671` |  |
 | EXHIBIT_A_report.md | in physics the situation is inverse. Given a lot of facts, let’s call … | `q-stanislaw-ulam-physics-for-mathemat-8801f671` |  |
@@ -96,6 +100,7 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | prove that essentially all the interesting distributions we have seen … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | What do we mean by understanding something? | `q-richard-feynman-the-feynman-lectures-374a5b75` |  |
+| EXHIBIT_A_report.md | enabled him to seriously influence the direction of research in comput… | `q-martin-davis-and-e-martin-davis-and-edm-24110453` |  |
 | EXHIBIT_A_report.md | That probability is closely connected with information should come as … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | The four principal processes of probability theory are all determined … | `q-kenneth-baclawski--introduction-to-prob-413ba930` |  |
 | EXHIBIT_A_report.md | There are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
@@ -109,6 +114,7 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | EXHIBIT_A_report.md | the central drama of today’s science. | `q-gian-carlo-rota-mathematics-philosop-a4f1ef8d` | `04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html` |
 | EXHIBIT_A_report.md | His word then became the warning of the prophet, the mumbled riddle of… | `q-gian-carlo-rota-gian-carlo-rota-at-t-30dd8bb6` |  |
 | EXHIBIT_A_report.md | Los Alamos Scientific Laboratory, 1966–. The Rand Corporation, 1966–19… | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| EXHIBIT_A_report.md | Top Secret Clearance (Air Force) 1969–1971. Q – Clearance (DOE), 1966–… | `q-gian-carlo-rota-gian-carlo-rota-curr-d7939a32` |  |
 | EXHIBIT_A_report.md | theoretical physics is the only profession to have lost free speech be… | `q-eric-weinstein-eric-weinstein-in-er-1a2a896b` |  |
 | EXHIBIT_A_report.md | you have to go back to something called the United States versus Progr… | `q-eric-weinstein-eric-weinstein-in-er-05eb5e24` |  |
 | EXHIBIT_A_report.md | A mistake in ruling against the United States could pave the way for t… | `q-robert-w-warren-united-states-v-the--c31416e0` |  |
@@ -141,6 +147,8 @@ correctly the disadvantage attached … | `q-albert-einstein-letter-to-walter-da
 | OPENING_STATEMENT.md | It is unfortunate that he was unable to complete the work he had in pr… | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` |  |
 | OPENING_STATEMENT.md | I arrived in Chicago when Sputnik was —— October 4, 1957 is the date o… | `q-nicholas-metropoli-nicholas-metropolis--75b38c03` |  |
 | OPENING_STATEMENT.md | Los Alamos Scientific Laboratory, 1966–. | `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f` |  |
+| OPENING_STATEMENT.md | Director’s Office Fellow, Los Alamos National Laboratory, 1971–. | `q-gian-carlo-rota-gian-carlo-rota-curr-d3aa8153` |  |
+| OPENING_STATEMENT.md | Top Secret Clearance (Air Force) 1969–1971. Q – Clearance (DOE), 1966–… | `q-gian-carlo-rota-gian-carlo-rota-curr-d7939a32` |  |
 | OPENING_STATEMENT.md | The examination of carry propagation which arises in the Boolean analy… | `q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e` | `04_ROTA/Boolean_Analysis_1977_OSTI_record.png` |
 | OPENING_STATEMENT.md | quantum mechanics is the imaginary square root of probability theory. | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
 | OPENING_STATEMENT.md | A concept similar to that of a sample space should be brought into exi… | `q-gian-carlo-rota-indiscrete-thoughts--41177394` | `04_ROTA/Indiscrete Thoughts.md` |
