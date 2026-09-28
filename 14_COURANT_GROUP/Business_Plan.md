@@ -8,7 +8,7 @@ that imagines physical outcomes by running a world forward instead of recalling 
 Group is a US company, and every licence it grants is subject to US export controls.
 
 **The model.** DeSciX gives open source an economic model. In the author's words, it is "open
-inside, value return outside" (Essam Abadir, decisions record 093b2d6, 28 September 2026). Inside
+inside, value return outside" (Essam Abadir, 28 September 2026; the DeSciX Community License, v1, states it in its preamble, [../08_LEAN/Archive/LICENSE.md](../08_LEAN/Archive/LICENSE.md) line 14). Inside
 the egpt community on DeSciX, the FRQTL and EGPTMath engines are open. Outside it, a company that
 wants FRQTL in a product buys a commercial licence from Courant Group, and part of what it pays
 comes back to the people who built the work.
@@ -179,10 +179,10 @@ dollars, so the price scales with the tokens in circulation.
 | Tenth, the last | 100 million |
 
 **Licence types.** The types of licence follow the roles the DeSciX Community License and the
-DeSciX Whitepaper lay out for the ecosystem, among them network operators, DApp developers,
+DAITA whitepaper lay out for the ecosystem, among them network operators, DApp developers,
 witness validators and referrers ([Site_Provenance.md](Site_Provenance.md) §4 quotes the clause;
-[DeSciX_Whitepaper.md](DeSciX_Whitepaper.md) is copied here). This is the main engine of the
-flywheel: a licence is bought with the token that contribution earns.
+the DAITA whitepaper is [../15_GAME_THEORY/DAITA_Whitepaper_2023-09-25.md](../15_GAME_THEORY/DAITA_Whitepaper_2023-09-25.md)).
+This is the main engine of the flywheel: a licence is bought with the token that contribution earns.
 
 **Term.** Licences are not perpetual. The initial term is five years.
 

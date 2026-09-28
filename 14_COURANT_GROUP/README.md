@@ -13,7 +13,8 @@ its business plan, which is the plan of record.
 | [Press_Release_2026-04-01.md](Press_Release_2026-04-01.md) | The EGPT community's press release of 1 April 2026, "EGPT Opens 18.313x", as prepared in the author's studio repository (`projects/launch-april1/press-release-final.md`) |
 
 Related parts of the collection: the FRQTL patent, [../11_PATENT/README.md](../11_PATENT/README.md);
-the token economy, [../guide/make-money.md](../guide/make-money.md); how to contribute,
+the token economy, [../guide/make-money.md](../guide/make-money.md); the history of the economic model,
+[../15_GAME_THEORY/README.md](../15_GAME_THEORY/README.md); how to contribute,
 [../guide/get-involved.md](../guide/get-involved.md); what FRQTL and Maxi do,
 [../guide/robotic-imagination.md](../guide/robotic-imagination.md).
 
