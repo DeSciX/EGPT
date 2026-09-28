@@ -28,17 +28,23 @@ August 2026 (the file's front matter records the key words).
 > unter Voraussetzung der ω-Widerspruch[s]freiheit.) … Perhaps, if it interests you, or you have not
 > yet thought of it, then I can write it up."
 
-The German sentence stands in the original and is left untranslated in the file, which says why;
-the ellipsis is the file's own bracketed editorial note, and ω is written `$\omega$` there.
+The ellipsis stands for the file's own bracketed transcription note; the German sentence is in the
+original and is left untranslated there. ω is written `$\omega$` in the file.
 
-The editor's note, from the file's front matter: "Sieg, introductory note p. 332, on the first
-paragraph: the observation seemingly anticipates and announces a solution to a problem Harvey
-Friedman posed in 1975 as the 35th of his 102 problems; Boolos 1976 gave the first published
-solution."
+The same letter, on intuitionism, and its closing questions, in the same file:
 
-The same letter's disagreement on intuitionism, in the same file:
+> "I absolutely disagree with your view on the formalizability of intuitionism. Certainly, for
+> every formal system there is, as you proved, another formal one that is (already in arithmetic
+> and the lower functional calculus) stronger. But intuitionism is not affected by that at all."
 
-> "I absolutely disagree with your view on the formalizability of intuitionism."
+> "But is it not a fact, that not a single construction of the kind mentioned is known that cannot
+> be formalized in $A$, and that no living logician is in the position of naming such [a
+> construction]? Or am I wrong, and you know an effective intuitionistic arithmetic construction
+> whose formalization in $A$ creates difficulties? If that, to my utmost surprise, should be the
+> case, then the formalization should certainly work in $M$ or $Z$!"
+
+> "I would be very grateful if you would tell me whether you are really conjecturing the
+> existence of such examples, or whether you even know some?"
 
 ### Gödel to von Neumann, 20 March 1956, the question
 
