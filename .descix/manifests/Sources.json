@@ -77,6 +77,14 @@
       "doc_class": "guide",
       "doc_type": "documentation",
       "syncignore": []
+    },
+    {
+      "path": "14_COURANT_GROUP",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
     }
   ]
 }

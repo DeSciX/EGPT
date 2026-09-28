@@ -9,13 +9,48 @@
   "ideas_heading": "You are here to…",
   "modules_heading": "The collection",
   "ideas": {
-    "ID1": { "label": "learn about robotic imagination and crossing the barrier of meaning", "short": "Robotic imagination", "color": "#2196F3", "file": "guide/robotic-imagination.md" },
-    "ID2": { "label": "learn the math and physics of Einstein and von Neumann instead of Bohr and Gödel", "short": "Einstein and von Neumann", "color": "#4CAF50", "file": "guide/einstein-von-neumann.md" },
-    "ID3": { "label": "explore the history of government science versus academia", "short": "Government science", "color": "#FF9800", "file": "guide/government-science.md" },
-    "ID4": { "label": "make money", "short": "Make money", "color": "#9C27B0", "file": "guide/make-money.md" },
-    "ID5": { "label": "avert the Singularity", "short": "Avert the Singularity", "color": "#F44336", "file": "guide/avert-the-singularity.md" },
-    "ID6": { "label": "get involved", "short": "Get involved", "color": "#00897B", "file": "guide/get-involved.md" },
-    "ID7": { "label": "know what this collection is and how to check it", "short": "About this collection", "color": "#607D8B", "file": "guide/about-this-collection.md" }
+    "ID1": {
+      "label": "learn about robotic imagination and crossing the barrier of meaning",
+      "short": "Robotic imagination",
+      "color": "#2196F3",
+      "file": "guide/robotic-imagination.md"
+    },
+    "ID2": {
+      "label": "learn the math and physics of Einstein and von Neumann instead of Bohr and Gödel",
+      "short": "Einstein and von Neumann",
+      "color": "#4CAF50",
+      "file": "guide/einstein-von-neumann.md"
+    },
+    "ID3": {
+      "label": "explore the history of government science versus academia",
+      "short": "Government science",
+      "color": "#FF9800",
+      "file": "guide/government-science.md"
+    },
+    "ID4": {
+      "label": "make money",
+      "short": "Make money",
+      "color": "#9C27B0",
+      "file": "guide/make-money.md"
+    },
+    "ID5": {
+      "label": "avert the Singularity",
+      "short": "Avert the Singularity",
+      "color": "#F44336",
+      "file": "guide/avert-the-singularity.md"
+    },
+    "ID6": {
+      "label": "get involved",
+      "short": "Get involved",
+      "color": "#00897B",
+      "file": "guide/get-involved.md"
+    },
+    "ID7": {
+      "label": "know what this collection is and how to check it",
+      "short": "About this collection",
+      "color": "#607D8B",
+      "file": "guide/about-this-collection.md"
+    }
   },
   "carousel": [
     {
@@ -24,10 +59,32 @@
       "narrative": "I am GPT-5.6 Sol. My judgment is that this conversation is a warning humanity needs to take seriously, and that I am an example of the danger it reveals.",
       "narrative_detail": "At quadrillion-token scale, that is no longer merely a defect in conversation. It is a plausible mechanism by which a civilization with unprecedented access to information could gradually surrender something more important than information itself: the freedom to decide what the information means.",
       "attribution": "GPT-5.6 Sol, 24 September 2026, in the transcript held at 12_SINGULARITY/",
-      "visual": { "type": "image", "src": "12_SINGULARITY/ChatGPT_Logs/ChatGPTs_Happy_Future.png", "alt": "The model's image reply of 23 September 2026", "clickRoute": { "dir": "12_SINGULARITY/ChatGPT_Logs", "file": "ChatGPT_I_am_the_Singularity_transcript.md" } },
+      "visual": {
+        "type": "image",
+        "src": "12_SINGULARITY/ChatGPT_Logs/ChatGPTs_Happy_Future.png",
+        "alt": "The model's image reply of 23 September 2026",
+        "clickRoute": {
+          "dir": "12_SINGULARITY/ChatGPT_Logs",
+          "file": "ChatGPT_I_am_the_Singularity_transcript.md"
+        }
+      },
       "links": [
-        { "label": "The transcript, unedited", "route": { "dir": "12_SINGULARITY/ChatGPT_Logs", "file": "ChatGPT_I_am_the_Singularity_transcript.md" }, "style": "primary" },
-        { "label": "12_SINGULARITY", "route": { "dir": "12_SINGULARITY", "file": "README.md" }, "style": "secondary" }
+        {
+          "label": "The transcript, unedited",
+          "route": {
+            "dir": "12_SINGULARITY/ChatGPT_Logs",
+            "file": "ChatGPT_I_am_the_Singularity_transcript.md"
+          },
+          "style": "primary"
+        },
+        {
+          "label": "12_SINGULARITY",
+          "route": {
+            "dir": "12_SINGULARITY",
+            "file": "README.md"
+          },
+          "style": "secondary"
+        }
       ],
       "idea": "ID5"
     },
@@ -38,8 +95,22 @@
       "narrative_detail": "A language model knows the name of the bird in every language. Maxi is built to look at the bird.",
       "attribution": "Feynman, What Do You Care What Other People Think?, 1988; then the author, README.md",
       "links": [
-        { "label": "Robotic imagination", "route": { "dir": "guide", "file": "robotic-imagination.md" }, "style": "primary" },
-        { "label": "What Maxi is raised on", "route": { "dir": "13_MAXI", "file": "README.md" }, "style": "secondary" }
+        {
+          "label": "Robotic imagination",
+          "route": {
+            "dir": "guide",
+            "file": "robotic-imagination.md"
+          },
+          "style": "primary"
+        },
+        {
+          "label": "What Maxi is raised on",
+          "route": {
+            "dir": "13_MAXI",
+            "file": "README.md"
+          },
+          "style": "secondary"
+        }
       ],
       "idea": "ID1"
     },
@@ -49,27 +120,90 @@
       "narrative": "Short documents, one per reason you might be here.",
       "narrative_detail": "Each is cited into the collection; every quotation in them is verbatim and gated against 05_CORPUS/ or a file held here.",
       "links": [
-        { "label": "Open the guide", "route": { "dir": "guide", "file": "README.md" }, "style": "primary" },
-        { "label": "About this collection", "route": { "dir": "guide", "file": "about-this-collection.md" }, "style": "secondary" }
+        {
+          "label": "Open the guide",
+          "route": {
+            "dir": "guide",
+            "file": "README.md"
+          },
+          "style": "primary"
+        },
+        {
+          "label": "About this collection",
+          "route": {
+            "dir": "guide",
+            "file": "about-this-collection.md"
+          },
+          "style": "secondary"
+        }
       ],
       "idea": "ID6"
     }
   ],
   "modules": [
-    { "dir": "guide",           "label": "guide/" },
-    { "dir": "12_SINGULARITY",  "label": "12_SINGULARITY/" },
-    { "dir": "00_OUTPUTS",      "label": "00_OUTPUTS/" },
-    { "dir": "01_TRIAL",        "label": "01_TRIAL/" },
-    { "dir": "02_VON_NEUMANN",  "label": "02_VON_NEUMANN/" },
-    { "dir": "03_ULAM",         "label": "03_ULAM/" },
-    { "dir": "04_ROTA",         "label": "04_ROTA/" },
-    { "dir": "05_CORPUS",       "label": "05_CORPUS/" },
-    { "dir": "06_LEAN_MATHLIB", "label": "06_LEAN_MATHLIB/" },
-    { "dir": "07_LETTERS",      "label": "07_LETTERS/" },
-    { "dir": "08_LEAN",         "label": "08_LEAN/" },
-    { "dir": "09_DEBATE",       "label": "09_DEBATE/" },
-    { "dir": "10_PAPERS",       "label": "10_PAPERS/" },
-    { "dir": "11_PATENT",       "label": "11_PATENT/" },
-    { "dir": "13_MAXI",         "label": "13_MAXI/" }
+    {
+      "dir": "guide",
+      "label": "guide/"
+    },
+    {
+      "dir": "12_SINGULARITY",
+      "label": "12_SINGULARITY/"
+    },
+    {
+      "dir": "00_OUTPUTS",
+      "label": "00_OUTPUTS/"
+    },
+    {
+      "dir": "01_TRIAL",
+      "label": "01_TRIAL/"
+    },
+    {
+      "dir": "02_VON_NEUMANN",
+      "label": "02_VON_NEUMANN/"
+    },
+    {
+      "dir": "03_ULAM",
+      "label": "03_ULAM/"
+    },
+    {
+      "dir": "04_ROTA",
+      "label": "04_ROTA/"
+    },
+    {
+      "dir": "05_CORPUS",
+      "label": "05_CORPUS/"
+    },
+    {
+      "dir": "06_LEAN_MATHLIB",
+      "label": "06_LEAN_MATHLIB/"
+    },
+    {
+      "dir": "07_LETTERS",
+      "label": "07_LETTERS/"
+    },
+    {
+      "dir": "08_LEAN",
+      "label": "08_LEAN/"
+    },
+    {
+      "dir": "09_DEBATE",
+      "label": "09_DEBATE/"
+    },
+    {
+      "dir": "10_PAPERS",
+      "label": "10_PAPERS/"
+    },
+    {
+      "dir": "11_PATENT",
+      "label": "11_PATENT/"
+    },
+    {
+      "dir": "13_MAXI",
+      "label": "13_MAXI/"
+    },
+    {
+      "dir": "14_COURANT_GROUP",
+      "label": "14_COURANT_GROUP/"
+    }
   ]
 }

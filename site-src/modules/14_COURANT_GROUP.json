@@ -1,0 +1,22 @@
+{
+  "title": "the Courant Group business plan, public version",
+  "description_from": {
+    "file": "14_COURANT_GROUP/README.md",
+    "startsWith": "Courant Group, LLC licenses"
+  },
+  "primary_ideas": [
+    "ID4"
+  ],
+  "highlights": [
+    {
+      "file": "Business_Plan.md",
+      "label": "The plan: executive summary first"
+    },
+    {
+      "file": "README.md",
+      "label": "What was cut from the NDA source, and what is withheld"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "Business_Plan.md"
+}
