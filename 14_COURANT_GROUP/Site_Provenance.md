@@ -231,6 +231,127 @@ record `q-essam-abadir-pull-request-38824-t-7d389acf`):
 > simulate neutron diffusion. The method predates the P vs NP vocabulary but is a P-time solver by
 > construction."
 
+### Ulam and Rota at Brookhaven, and lattice QCD by the Monte Carlo method
+
+Rota's curriculum vitae of 1996, as archived in 1999
+([`../04_ROTA/Rota_CV_1996_archived_1999-02-19.txt`](../04_ROTA/Rota_CV_1996_archived_1999-02-19.txt), lines 53–57;
+record `q-gian-carlo-rota-gian-carlo-rota-curr-17af8a7f`):
+
+> Consultant:
+>
+> Los Alamos Scientific Laboratory, 1966-.
+> The Rand Corporation, 1966-1971.
+> Brookhaven National Laboratory, 1969-1973.
+
+MIT News Office, April 1999 (record `q-mit-news-office-mit-professor-gian-c-ba2670d5`):
+
+> "He had been a consultant to the Los Alamos Scientific Laboratory since 1966, and for the Rand
+> Corporation from 1966-71 and Brookhaven National Laboratory from 1969-1973."
+
+J. J. O'Connor and E. F. Robertson, MacTutor History of Mathematics (record
+`q-j-j-o-connor-and-e-gian-carlo-rota-1932-c83f517c`):
+
+> "Rota was also a consultant with the Rand Corporation from 1966 to 1971 and with the Brookhaven
+> National Laboratory from 1969 to 1973."
+
+The report in the trial record, [`../01_TRIAL/EXHIBIT_A_report.md`](../01_TRIAL/EXHIBIT_A_report.md),
+section "Monte Carlo becomes the discrete lattice, at Brookhaven" (lines 355–384), with its
+endnotes 97 to 102 (lines 1271–1282), which carry the published sources:
+
+> The method did not stay at Los Alamos. On 26 to 28 April 1948, at an Atomic Energy Commission 
+> information meeting at Brookhaven National Laboratory, Ulam presented “Statistical Methods for 
+> Problems Involving Equations of the Diffusion Type (Monte Carlo)” — the method carried to a 
+> second national laboratory in the year after that laboratory opened.
+
+> Thirty-one years later the same laboratory used it to make quantum field theory computable. In 
+> 1979 Michael Creutz, Laurence Jacobs and Claudio Rebbi, all of the Physics Department at 
+> Brookhaven, published “Experiments with a Gauge-Invariant Ising System” and then “Monte Carlo 
+> Study of Abelian Lattice Gauge Theories,” which carries the laboratory report number BNL-26307; 
+> in April 1980 Creutz published “Monte Carlo Study of Quantized SU(2) Gauge Theory.” The 
+> construction is the one this report has been following: take a continuous quantum field theory, 
+> replace spacetime with a discrete lattice, and generate the field configurations by random 
+> sampling. Brookhaven treats that work as foundational in its own account. Dedicating a 
+> supercomputer in December 2005, the laboratory simultaneously marked the “25th anniversary of a 
+> scientific paper describing the first use of Monte Carlo methods and lattice gauge calculations 
+> in the study of quantum chromodynamics (QCD).”
+
+> The machines that followed were built for that calculation and for nothing else. QCDSP, built 
+> with Columbia University and installed at Brookhaven in 1998, was a massively parallel computer 
+> intended primarily for lattice gauge simulations, and took the Gordon Bell Prize for price and 
+> performance that year. Its successor QCDOC — QCD On a Chip — was designed around the same 
+> calculation, its architecture described by its builders as “optimized for lattice QCD 
+> calculations,” and began operation at Brookhaven in 2005.
+
+> Rota was a consultant to Brookhaven National Laboratory from 1969 to 1973, by his own 
+> curriculum vitae, in the same years he consulted for the RAND Corporation and for Los Alamos. 
+> The sampling method Ulam proposed and von Neumann took up was presented by Ulam at Brookhaven 
+> in 1948, and Brookhaven is where that method was turned on the continuum of quantum field 
+> theory and where the machines for doing so were then built.
+
+The same report, section "The two laboratories" (lines 766–782):
+
+> Ulam presents Monte Carlo at the Atomic Energy Commission Information Meeting at Brookhaven, 
+> 26–28 April 1948, and returns to give talks in 1956, 1965 and 1978. John Pasta holds a 
+> Brookhaven physics research fellowship around 1948–51 working on quantum electrodynamics, then 
+> moves to Los Alamos to work with Metropolis on MANIAC and with Ulam on nonlinear computational 
+> physics. Rota is a consultant at Los Alamos from 1966, at RAND from 1966 to 1971, and at 
+> Brookhaven from 1969 to 1973 — a period in which all three run at once. He holds a Department 
+> of Energy Q clearance from 1966 and a National Security Agency special intelligence clearance 
+> from 1981, both to the end of his life, and a standing Director’s Office fellowship at Los 
+> Alamos from 1971.
+
+> The Brookhaven consultancy is recorded by MIT’s own news office, by the MacTutor biography and 
+> by Rota’s curriculum vitae. The Los Alamos relationship produced sixteen joint publications 
+> with
+
+Its endnotes 97 to 101, verbatim:
+
+> 97. Stanislaw M. Ulam, “Statistical Methods for Problems Involving Equations of the Diffusion 
+> Type (Monte Carlo),” A.E.C. Information Meeting, Brookhaven National Laboratory, April 26-28, 
+> 1948, Brookhaven National Laboratory report BNL-17, p. 27 ff. The bibliographic record, with 
+> meeting, dates, title, opening page and report number, is reproduced in the University of Utah 
+> and Sandia bibliography of Ulam's publications. 
+> https://netlib.sandia.gov/bibnet/authors/u/ulam-stanislaw-m.html
+
+> 98. Michael Creutz, Laurence Jacobs and Claudio Rebbi, “Experiments with a Gauge-Invariant 
+> Ising System,” Physical Review Letters 42, 1390, 21 May 1979, DOI 10.1103/PhysRevLett.42.1390; 
+> Michael Creutz, “Confinement and the Critical Dimensionality of Space-Time,” Physical Review 
+> Letters 43, 553, 20 August 1979, DOI 10.1103/PhysRevLett.43.553; Michael Creutz, Laurence 
+> Jacobs and Claudio Rebbi, “Monte Carlo Study of Abelian Lattice Gauge Theories,” Physical 
+> Review D 20, 1915-1922, 15 October 1979, DOI 10.1103/PhysRevD.20.1915, issued as Brookhaven 
+> report BNL-26307. The affiliation printed on the Physical Review D paper is the Physics 
+> Department, Brookhaven National Laboratory, Upton, New York.
+
+> 99. Michael Creutz, “Monte Carlo Study of Quantized SU(2) Gauge Theory,” Physical Review D 21, 
+> 2308-2315, 15 April 1980, received 24 October 1979, DOI 10.1103/PhysRevD.21.2308. The mature 
+> program is set out in Michael Creutz, Laurence Jacobs and Claudio Rebbi, “Monte Carlo 
+> Computations in Lattice Gauge Theories,” Physics Reports 95 no. 4, April 1983, pp. 201-282, DOI 
+> 10.1016/0370-1573(83)90016-9.
+
+> 100. Brookhaven National Laboratory, “Lab Celebrates New Supercomputer,” 1 December 2005, 
+> marking the dedication of QCDOC and the twenty-fifth anniversary of the first use of Monte 
+> Carlo methods and lattice gauge calculations in the study of quantum chromodynamics, and naming 
+> Creutz, Jacobs and Rebbi. https://www.bnl.gov/newsroom/news.php?a=110400
+
+> 101. On QCDSP: Robert D. Mawhinney, “The 1 Teraflops QCDSP Computer,” Parallel Computing 25, 
+> 1999, DOI 10.1016/S0167-8191(99)00051-4; RIKEN-BNL Research Center institutional history, 
+> recording the 1997 construction agreement with Columbia University, installation at Brookhaven 
+> in 1998 and the 1998 Gordon Bell Prize for price and performance. 
+> https://www.bnl.gov/riken/history.php On QCDOC: N. H. Christ et al., “QCDOC: A 10-Teraflops 
+> Scale Computer for Lattice QCD,” Nuclear Physics B — Proceedings Supplements, 2001, describing 
+> an architecture “optimized for lattice QCD calculations”; Brookhaven National Laboratory, 
+> “Lattice QCD,” RIKEN-BNL Research Center, and Brookhaven's retrospective on QCDOC's retirement, 
+> which describes it as a special purpose machine dedicated to fundamental physics and names 
+> Creutz as one of the founders of the approach. https://www.bnl.gov/riken/research/lattice.php 
+> https://www.bnl.gov/newsroom/news.php?a=22647
+
+The reports compiled at the author's direction in September 2026, held at
+[`../12_SINGULARITY/ChatGPT_Logs/`](../12_SINGULARITY/ChatGPT_Logs/), include
+*Documented Computational and Institutional Continuities Across the U.S. Atomic Energy Commission
+Laboratory System: Fermi, Ulam, von Neumann, Metropolis, Pasta, Rota, and the Brookhaven
+lattice-QCD program*, whose section 4, "Brookhaven: Documented Computational Sequence", cites the
+same publications.
+
 ## 2. "A P=NP hyper-computer"
 
 DeSciX Whitepaper, Abstract ([`DeSciX_Whitepaper.md`](DeSciX_Whitepaper.md), copied here from the
