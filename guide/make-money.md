@@ -4,7 +4,7 @@
 ## Show me the incentives, and I'll show you the outcome - Charlie Munger
 Rota's unnamed branch of mathematics is foundationally intertwined with what you know as "game theory", or, what I would call non-linear dynamics amongst individuals. 
 
-I'm a pragmatic idealist. I'd like the ideal outcome but I don't believe that doing good is a sufficient incentive. The expected combined valuation of Anthropic ($2T) and OpenAI ($1T) is $3.5 Trillion USD. 
+I'm a pragmatic idealist. I'd like the ideal outcome but I don't believe that doing good is a sufficient incentive. The expected combined valuation of Anthropic ($2T) and OpenAI ($1.5T) is $3.5 Trillion USD. 
 
 To capture this value I've created the DeSciX Community Agreement and license which distributes the value into a crypto token economy - in short, anyone who gets involved can earn the crypto representing the value of their contribution. If big companies license the patent the proceeds go to token purchases and support of ecosystem behind the technology.
 
