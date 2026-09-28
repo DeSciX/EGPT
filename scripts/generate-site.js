@@ -81,7 +81,7 @@ function paragraphFrom(spec, where) {
   const paras = text.split(/\n\s*\n/);
   const hit = paras.find(p => p.trim().startsWith(spec.startsWith));
   if (!hit) die(`${where}: no paragraph in ${spec.file} starts with ${JSON.stringify(spec.startsWith)}`);
-  return hit.replace(/\s*\n\s*/g, ' ').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/`/g, '').replace(/\*\*/g, '').trim();
+  return hit.replace(/\s*\n\s*/g, ' ').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/`/g, '').replace(/\*\*/g, '').replace(/\*/g, '').trim();
 }
 
 const modules = [];
