@@ -1,7 +1,7 @@
 {
   "built_from": "HEAD",
-  "commit": "2d3f271",
-  "pages": 7,
+  "commit": "d928c01",
+  "pages": 15,
   "generator": "scripts/build-site.mjs",
   "stamp_attr": "data-egpt-site-build"
 }
