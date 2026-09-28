@@ -40,7 +40,7 @@ const numbers = [...md.matchAll(/^## (\d+a?)\. (You|ChatGPT)/gm)].map((m) => ({ 
 if (sections.length !== numbers.length) die(`${sections.length} sections but ${numbers.length} numbered messages in the markdown`);
 
 const ICON = '<svg class="gpt" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 2.3 6.7 3.7L12 11.7 5.3 8 12 4.3zM5 9.7l6 3.3v6.5l-6-3.3V9.7zm8 9.8v-6.5l6-3.3v6.5l-6 3.3z"/></svg>';
-const slug = (s) => s.toLowerCase().replace(/<[^>]+>/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
+const slug = (s) => s.toLowerCase().replace(/<[^>]+>/g, '').replace(/[^a-z0-9]+/g, '-').slice(0, 40).replace(/^-|-$/g, '');
 
 const numbered = sections.map((sec, i) => {
   const { n, who } = numbers[i];
@@ -72,7 +72,8 @@ function cut(start, end) {
   return { html, n, href: last ? `#${last[1]}` : `#m${n}`, where: last ? `message ${n} › ${last[2]}` : `message ${n}` };
 }
 function excerpt(e) {
-  return `<section class="msg assistant excerpt"><div class="who">${ICON}ChatGPT · <a href="${e.href}">${e.where}</a></div><div class="bubble">${e.html}</div></section>`;
+  const body = e.html.replace(/ id="[^"]*"/g, '');   // ids stay unique: the transcript's copy owns them
+  return `<section class="msg assistant excerpt"><div class="who">${ICON}ChatGPT · <a href="${e.href}">${e.where}</a></div><div class="bubble">${body}</div></section>`;
 }
 function emphasise(e, sentence) {
   const k = e.html.split(sentence).length - 1;
@@ -88,6 +89,27 @@ const e2 = emphasise(
 const e3 = cut('<p>It happened in the transcript.</p>', 'that I had repeatedly selected one particular kind.</p>');
 const e4 = cut('<p>At quadrillion-token scale, that is no longer merely a defect in conversation.</p>', 'the freedom to decide what the information means.</p>');
 const e5 = cut('<p>By the way, ChatGPT Images 2.5 can turn a rough idea into a finished image', 'quadrillion-token AI?</p>');
+
+// ---- 2b. Word report cards, as the ChatGPT page shows them; a download when the file is held ----
+const held = new Set(fs.readdirSync(path.join(DIR, 'docx_reports')).filter((f) => f.endsWith('.docx')));
+const WORD = '<span class="doc-icon" aria-hidden="true">W</span>';
+function card(name) {
+  const inner = `${WORD}<span class="doc-text"><span class="doc-name">${name}</span><span class="doc-kind">Word${held.has(name) ? ' · download' : ' · this state was overwritten in the conversation; not preserved'}</span></span>`;
+  return held.has(name)
+    ? `<a class="doc-card" href="docx_reports/${name}" download>${inner}</a>`
+    : `<span class="doc-card unheld">${inner}</span>`;
+}
+const withCards = numbered.map((sec) => sec.replace(/<p><em>Source: ([A-Za-z0-9_.-]+\.docx) — Word<\/em><\/p>/g, (m, name) => card(name)));
+const cardsMade = withCards.join('').split('class="doc-card').length - 1;
+if (cardsMade < 1) die('no Word report cards were made');
+
+// ---- 2c. layout: the first question, the summary, the lead-up collapsed, the ending in full ----
+const at53 = numbers.findIndex((x) => x.n === '53');
+if (at53 < 2) die('message 53 not found');
+const firstQuestion = withCards[0];
+const leadup = withCards.slice(1, at53).join('');
+const ending = withCards.slice(at53).join('');
+const leadupBlock = `<details class="leadup"><summary>The lead-up: messages 2–${numbers[at53 - 1].n}, the research thread and the reflection</summary>${leadup}</details>`;
 
 // ---- 3. the top block: the author's note in place of the capture's notes ----
 const facts = /<p><strong>Original account link:<\/strong>[\s\S]*?<\/p>/.exec(top);
@@ -122,12 +144,33 @@ const css = `
 .who .num:hover{text-decoration:underline}
 .who .gpt{vertical-align:-3px;margin-right:6px}
 .added{color:var(--muted);font-size:.85em;font-weight:400;font-style:normal}
+details.leadup{border:1px solid var(--rule);border-radius:12px;padding:0 20px;margin:8px 0 28px}
+details.leadup>summary{cursor:pointer;font-weight:600;padding:12px 0;color:var(--muted)}
+details.leadup[open]>summary{border-bottom:1px solid var(--rule)}
+.doc-card{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--rule);border-radius:14px;padding:10px 16px 10px 12px;margin:10px 0;text-decoration:none;color:var(--fg);max-width:100%;background:var(--bg)}
+.doc-card.unheld{opacity:.75}
+.doc-icon{flex:0 0 32px;height:32px;border-radius:8px;background:#2b579a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.doc-text{display:flex;flex-direction:column;min-width:0}
+.doc-name{font-weight:600;font-size:.95em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doc-kind{font-size:.78em;color:var(--muted)}
 section.msg{scroll-margin-top:16px}
 h2[id]{scroll-margin-top:16px}
 `;
 const newHead = head.replace('</style>', css + '</style>');
 const newFooter = footer.replace('</footer>', `<p>This page is built from the held capture beside it, <code>ChatGPT_I_am_the_Singularity_transcript.html</code>, by <code>scripts/build-singularity-page.js</code>; every excerpt in the summary is cut from that capture's markup at build time, and the build fails if one is not found.</p></footer>`);
 
-const html = newHead + newTop + summary + transcript + newFooter;
+const script = `<script>
+(function(){
+  document.documentElement.setAttribute('data-js','1');
+  var d=document.querySelector('details.leadup');
+  function reveal(id){var t=id&&document.getElementById(id);if(t&&d&&d.contains(t)&&!d.open){d.open=true;}return t;}
+  function fromHash(){var t=reveal(location.hash.slice(1));if(t)t.scrollIntoView();}
+  window.addEventListener('hashchange',fromHash);
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(a)reveal(a.getAttribute('href').slice(1));});
+  fromHash();
+})();
+</script>`;
+const html = newHead + newTop + firstQuestion + summary + leadupBlock + ending + newFooter.replace('</main>', script + '</main>');
+if (!html.includes(script)) die('script not placed: </main> not found in the footer');
 fs.writeFileSync(OUT, html);
-console.log(`wrote ${path.relative(ROOT, OUT)} — ${numbered.length} messages, 5 excerpts, ${html.length} bytes`);
+console.log(`wrote ${path.relative(ROOT, OUT)} — ${numbered.length} messages (1 + ${at53 - 1} in the lead-up + ${numbers.length - at53}), 5 excerpts, ${cardsMade} report cards, ${html.length} bytes`);
