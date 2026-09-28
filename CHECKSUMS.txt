@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 717 files, 140635059 bytes.
+# 717 files, 140635095 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -59,7 +59,7 @@ b8e5acb626444567355066010023f4f54228694af3545e55557712eac0f7334f  04_ROTA/Indisc
 8aa6e824d9b5479dc9ed3f352571ac3f5a088f3a142f9a2dd36fb9071d655d82  04_ROTA/Mathematics, Philosophy, and Artificial Intelligence.html
 e0a8663261f182336d8a985ea83bc5e30aa07eea40884097c97587cde3d0cf8f  04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf
 2290a2e6a967f2c611a91cedea1d7bcc34e14e634b757eac79d2462c224383f7  04_ROTA/Rota_CV_1996_archived_1999-02-19.txt
-960d26000630bca337c9392f4e88bc429fe3b55966ed18342f1283e2294918e6  04_ROTA/Rota_CV_Extended.md
+07d35777c854853728c815a097827a5301f47b303c622a7a3a8b7ea73cdc7595  04_ROTA/Rota_CV_Extended.md
 59b8b19f17e5d7db2f80fca7a4838d53cff92c3789560de5c092252f92c8fd63  04_ROTA/Rota_Interview_1985_Los_Alamos_Science.pdf
 e20b3a2d0f2a0070a56783a56543de20e5256320828fda0220eee74d481c5b91  04_ROTA/Ten lessons of an MIT Education.html
 a9d0b8c56ea86548b265286f5755075de46b89cef49be5d57c19bd866678bf21  04_ROTA/The_Barrier_of_Meaning_Rota.md
