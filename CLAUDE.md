@@ -90,13 +90,11 @@ this root, after login, is what maps the app into this file.
 **Re-init, by plane** (the author's ruling, record 73b7aab): the app's vectors are purged and
 refilled by the owner with `kb corpus sync --rebuild` on each KB this repository defines; the site
 is a full replace, so uploading this site is the deletion of the old one, after the rollback
-artifact is saved; the eight knowledge-base records fed from EGPT-research (`Code-EGPT`,
-`Course-18313x`, `Debate-Record`, `General`, `Historical-Sources`, `Lean-Proofs`, `Papers`,
-`Patents`) are deleted on DEV and PROD by the author or an account he grants community management
-on `egpt`; an owner credential is refused, and the refusal is the gate working.
+artifact is saved. PROD never held the eight knowledge-base records fed from EGPT-research; they
+exist on DEV only, which is not worked.
 
-**The PROD sequence, once the author has logged in** (each line `env -u DESCIX_API_URL npx descix --env prod …`,
-first line of output `env: prod …`; `whoami` must show his email; it runs after the re-init above):
+**The PROD sequence** (each line `env -u DESCIX_API_URL npx descix …`, first line of output
+`env: prod …`; `whoami` must show his email):
 `app init -a egpt --kb Corpus`, then `--kb Sources` (no `-p`; the create leg is skipped for an
 existing app; **never `--overwrite`**, which rewrites the live app's name and description;
 on a community's default app each `app init` also mirrors community identity from the registry,
@@ -135,14 +133,18 @@ INTEGRATION-RESULT, ALARM, or the author's words quoted verbatim). Silence is re
 
 ## Platform
 
-The working default is DEV, and PROD is set explicitly, per the author (2026-09-27, record
-Unkamon 73b7aab): "For now the working mode can be to use DEV as the default enviornment and
-explicitly set prod when needed since I guess that is the easiest way to deploy for now." So every
-PROD command is `env -u DESCIX_API_URL npx descix --env prod …` from this root, and before any
-command that changes anything, `--env prod config show` must read `Environment: prod` and
-`Chosen by: --env flag` (measured, CLI 1.0.18). A network command's first line then reads
-`env: prod …`. No seat or agent uses the SDK in a true external-user mode for now; that default
-flips later, on his word.
+This app is worked on PROD only, in the author's words (2026-09-28, to this assistant directly):
+"Let's not worry about the dev version of the app. We are focused on PROD only for now." So this
+repository's own `.descix/workspace.json` is pinned to PROD (`config init --env prod` run from
+this root, which has its own file; the parent Unkamon workspace file's hash was unchanged by it,
+measured), `config show` reads `Environment: prod` and `Chosen by: .descix/workspace.json
+env.apiUrl`, and every command here is `env -u DESCIX_API_URL npx descix …` with no `--env` flag.
+A network command's first line reads `env: prod …`. Cap every command that could fall to the
+interactive device prompt (`perl -e 'alarm N; exec @ARGV' -- …`): measured 2026-09-28, one
+`whoami` on the pinned workspace fell to the prompt and the next two answered `Session: Valid`;
+a capped command that hung is re-run once, and a second hang is reported, never a `descix login`.
+No seat or agent uses the SDK in a true external-user mode for now; that default flips later, on
+his word.
 
 This repository replaces EGPT-research as the source of the `egpt` app, in his words (same
 record): "EGPT-Evidence to replace EGPT-Research as the source. Confirmed that is the intent since
@@ -168,20 +170,6 @@ chain-writing command; any account creation; pushing his own branches; committin
 in-progress files. The assistant stages its own paths and commits by pathspec, so no commit of
 its carries his uncommitted work. The flip to public is his act.
 
-## State on DEV, measured 2026-09-27 17:30Z, updated 2026-09-28 00:30Z
-
-`Corpus` re-synced 2026-09-27 ~18:10Z with the quotation records under the fair-use basis: 8 files
-walked, 8 live, orphans 0, missing 0, `kb doctor --live` HEALTHY, `kb list` 750 vectors (the
-sync's reconciled live count read 757; the canary again reported the KB not yet searchable).
-Earlier that day, from `main @ f7c5450`: 4 files, 42 vectors, `kb doctor --live` HEALTHY, and the
-marker question's top source `RECORD_INDEX.md [ID: corpus:e26727c1…]` equals
-`git rev-parse main:RECORD_INDEX.md`. The sync's canary reported the KB not yet searchable within
-its window; the doctor and the chat that followed found it. `Sources` is registered with 0 vectors
-and refuses to sync until the untracked story is committed on `main` (the guide is committed since
-`d928c01`). The DEV bundle still serves `main @ 2d3f271` (8 files, stamp count 1, control app 0)
-and is refreshed after the next DEV login. Environments are switched per command with `--env
-prod`, never by re-pinning, and never by copying a wallet file.
-
 ## State on PROD, measured 2026-09-28 00:30Z
 
 After the author's PROD device login (whoami sam@descix.net, user pMMQNik5xfgC-gj-xmoQpQ1_AYY):
@@ -200,13 +188,10 @@ the App Shell, a 2.7 KB DeSciX page that wraps the bundle; the bundle itself is 
 `https://descix.net/prod/egpt/site/<path>` (DEV: `https://dev.descix.net/dev/egpt/site/<path>`).
 Served-equals-built is measured at the bundle path; the shell carries no stamp.
 
-**Credential, measured 2026-09-28.** `.descix/wallet.json` holds one wallet address, one signature
-and one OAuth block. After the PROD device login, `--env prod` authenticates silently
-(`reconnect_by_wallet` 200) and `--env dev` no longer does: `reconnect_by_wallet` answers 400 and
-the command falls to an interactive device login. So this workspace is bound on one environment at
-a time, and the DEV items (the eight old KB deletions, the `Sources` sync, the site refresh) wait on
-a DEV device login, which is the author's act; every DEV command until then must be capped
-(`perl -e 'alarm N; exec @ARGV' -- …`) or it hangs on the device prompt.
+**Credential.** `.descix/wallet.json` is this workspace's single-holder chain, written by the
+author's device logins (DEV on 2026-09-27, PROD the same evening) and rewritten by the CLI on use;
+never copied, never inspected beyond its key names. On the PROD pin it authenticates
+(`whoami` sam@descix.net, `kb list -a egpt` answers). DEV is not worked.
 
 ## Copyright basis and held-out works
 
