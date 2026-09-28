@@ -69,7 +69,7 @@ The CV, "Positions Held:", the whole block (lines 24–38):
 
 — Joseph P. S. Kung, Joseph P. S. Kung, “Gian-Carlo Rota, 1932–1999,” Biographical Memoirs, National Academy of Sciences, 2016, p. 4 (record `q-joseph-p-s-kung-joseph-p-s-kung-gian-c61a46d2`)
 
-Schwartz, his Yale advisor, in the same years and after:
+His Yale doctoral advisor, Schwartz, joined him at the Courant Institute in 1957, and after:
 
 > He remained at Yale for several years after receiving the doctorate and moved to New York 
 > University in 1957, where he continued at the Courant Institute of Mathematical Sciences until 
