@@ -46,6 +46,42 @@ The same letter, on intuitionism, and its closing questions, in the same file:
 > "I would be very grateful if you would tell me whether you are really conjecturing the
 > existence of such examples, or whether you even know some?"
 
+#### The author's reading, to the more-probable-than-not standard
+
+From his *Infinity War* backstory, the section "von Neumann's Lost Theorem", held at
+[`../13_MAXI/bedtime_stories/Infinity_War_Backstory.md`](../13_MAXI/bedtime_stories/Infinity_War_Backstory.md):
+
+> "**My lay translation.** Paragraph one's "'not', 'or' (thus also 'and', 'follows', etc.)" is what
+> mathematicians call conjunctive normal form (CNF), and it is how they express NP-hard problems
+> like circuit satisfiability and the travelling salesman problem. He's opening the letter by
+> saying he has a jaw dropping proof, then casually challenging Gödel to see whether he can figure
+> it out, or whether Gödel is going to have to ask to see the proof - a major flex. Paragraphs two
+> and three are incredibly intense language for the universally loved von Neumann talking to his
+> greatest professional rival. He's saying Gödel's incompleteness theorems don't touch von
+> Neumann's newly adopted system, called Intuitionism. "Or am I wrong?""
+
+> "In 1931 computers didn't exist yet and the Church-Turing Thesis about computability hadn't
+> been invented. From a mathematical perspective, in lay terms, this is a rehash of the previously
+> mentioned Infinity War - there is no mathematical "infinity" object in Intuitionism and there is
+> no distinction between decidable and what we now call computable in polynomial time."
+
+> "One could argue that by finite and decidable von Neumann just meant enumerating every possible
+> solution via application of exponential brute-force. But brute-force is the last resort of the
+> incompetent and you'd then have to read paragraph one of the letter as "Hi Gödel, I thought of
+> the dumbest way possible to solve any problem you can define - do you want to see it? Now that
+> you know how smart I am, let's talk about your so-called Incompleteness theorems.""
+
+And his statement of 28 September 2026, to the assistant compiling this sheet, verbatim:
+
+> "The evidence shows that in 1931, prior to Church-Turing, an Intuitionist (no completed
+> infinities allowed) outline a proof for a finite decision procedure (in 1931 there is no
+> distinction between decision and computable), for AND/OR/NOT and Proveable (CNF), and von
+> Neumann never ever published any computing papers that would distinguish the cost of walking
+> storage and computing. That is the evidence - I would argue that reasonable people would call
+> that a claim of P=NP … Most reasonable humans would surmise you open such a letter with a
+> bomb-shell to throw down the gauntlet - "Or am I wrong?" … I have outlined the position and
+> provided the evidence for the human reader to interpret."
+
 ### Gödel to von Neumann, 20 March 1956, the question
 
 [`../02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann_1956_AUTHORITATIVE.txt`](../02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann_1956_AUTHORITATIVE.txt),

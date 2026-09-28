@@ -21,3 +21,4 @@ result that is proved elsewhere in this collection, and each links to where the 
 | `Nile_Deriving_Gravity.md` | the author's `EGPT_Stories/Story of Nile Deriving Gravity.md` | renamed on import; text unchanged |
 | `The_Impossible_Audit.md` | the author's `EGPT_Stories/An EGPT Story: The Impossible Audit.md` | renamed on import; text unchanged |
 | `Maxi_Origin.md` | written for this collection, 26 September 2026 | a draft for the author's pass, built from the persona text of Gods World and the two family stories above |
+| `Infinity_War_Backstory.md` | the appendix part of the author's backstory letter (`Essam_InfinityWar_Backstory.md`), from its heading "APPENDIX I" to the end | held at his direction, 28 September 2026; renamed on import; text unchanged; the letter's opening sections are not reproduced |
