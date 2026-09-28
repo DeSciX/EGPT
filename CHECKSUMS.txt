@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 735 files, 144411326 bytes.
+# 735 files, 144411867 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -657,7 +657,7 @@ e255a863ac2fcf159f52a96f130cb13932760fa1ecce2ae0cfa1d90786f1ba88  Copyright_Fair
 a7fb6cbe1a3051094d583ddf297a31149475ef22599efcb527829898080c2c8b  README.md
 57a368831c42e6c082923dd12794b8d75d01a713df811de8a038bdfa3aa10360  RECORD_INDEX.md
 b25e934a31b905c9195fb1524affde312f0f91a5fbc8654b8a3074c7679720fd  URLS.md
-140aaa820a0fd7435ed24fd061e5bf65db05e5edbf1e84c871ac0e8852cfe120  guide/README.md
+608064d34928541ec8ad3a90e3e700efd714c065fa24a507efcabf189e75948d  guide/README.md
 8ea9f60c5a45363bb04eb7764654b80a4defec51e8d67267e1f3a94e21b1e524  guide/about-this-collection.md
 363b5ce1d91beb100d81511129a1a5632d607b12112bbd92a191a93ff8aba546  guide/avert-the-singularity.md
 c3be9a8c1e89f120c1fd00e02aed06197fdffcdf447f7766e70496123f550866  guide/einstein-von-neumann.md
@@ -711,7 +711,7 @@ ff66af69c244d21c221309bdb50430ef293f8b2643f2feb2f9bd7fe06a77f463  site-src/modul
 cf26b394ae8924dfe4dc3a13c142795201148b5e0d750d6477c8535e29916a96  site-src/modules/13_MAXI.json
 bb0c34300e32c18e4aa6e80bda8cbe9c916c63b05636400240e0ff5f21a4745d  site-src/modules/14_COURANT_GROUP.json
 1f7f2eaad8ed9e13587dce978a3d6b990efb277c227ba8a6917213c3b115583a  site-src/modules/15_GAME_THEORY.json
-cfc76f03630c94bc250fc31e65b0c2111a59134eeaae817ae5a2662c70bcff9e  site-src/modules/guide.json
+9264d4ae3bde6254c610e2c68b6deba7dcf90dfb561ac2a959f3cc187d2928bc  site-src/modules/guide.json
 2f86edb91c7ac485a5d344af2a3011cdc7bde90ca481757ee5488f2840bf131b  site-src/site-assets/hljs-theme.css
 f4227c5290f18d8a87815636efd1520f4c6517f024bd9efa4810d1098dddbea7  site-src/site-assets/hljs.min.js
 8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c  site-src/site-assets/marked.LICENSE.md
