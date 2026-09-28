@@ -13,8 +13,24 @@
       "label": "The plan: executive summary first"
     },
     {
+      "file": "Site_Provenance.md",
+      "label": "Provenance for the courantgroup.com site: the passages, verbatim, and where they are held"
+    },
+    {
       "file": "README.md",
       "label": "What was cut from the NDA source, and what is withheld"
+    },
+    {
+      "file": "DeSciX_Whitepaper.md",
+      "label": "The DeSciX whitepaper"
+    },
+    {
+      "file": "DeSciX_Community_License_v1.pdf",
+      "label": "The DeSciX Community License, v1"
+    },
+    {
+      "file": "Press_Release_2026-04-01.md",
+      "label": "Press release, 1 April 2026"
     }
   ],
   "subsections": "auto",

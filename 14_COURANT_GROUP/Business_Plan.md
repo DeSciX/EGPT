@@ -22,9 +22,10 @@ that buyback. Section 7 sets out the mechanism.
 them, and the tools used to build with them (STUDIO and Rosetta). These are licensed for custom
 builds, for integration into products, and for resale. Section 3 lists them.
 
-**Enterprise licences.** A restricted number of enterprise licences, ten, are offered at
-escalating prices: $10 million for the first licence, rising to $100 million for the last, about
-$50 million on average. They carry no equity. Each is negotiated individually, subject to where
+**Enterprise licences.** A restricted number of enterprise licences, ten, are priced in EGPT
+tokens, not dollars: 10 million tokens for the first licence, rising to 100 million for the last,
+so that the price scales with the tokens in circulation. A licence is not perpetual; its initial
+term is five years. Licences carry no equity. Each is negotiated individually, subject to where
 the licensee is domiciled under export controls and to how its exclusivity is defined, by
 geography, by industry, or both. Section 6 has the schedule.
 
@@ -34,7 +35,8 @@ rounds at valuations from $3.5 billion to $39 billion. Section 5 lists them even
 sources.
 
 **How to ask.** Licence requests go through the request form on courantgroup.com, the business
-licensing site. Section 8 lists what it asks.
+licensing site, which checks the requester's wallet for the tokens the licence requires. Section 8
+lists what it asks.
 
 ## 2. The model: open inside, value return outside
 
@@ -167,14 +169,22 @@ long-felt need FRQTL answers: a generator that produces physical outcomes nobody
 
 **Open licensing, with a restricted enterprise tier.** Any company can ask for a licence
 through the form in section 8. Alongside the ordinary licences, Courant Group offers a restricted
-number of enterprise licences at escalating prices.
+number of enterprise licences at escalating prices. Acquiring a licence requires EGPT tokens, not
+dollars, so the price scales with the tokens in circulation.
 
-| Enterprise licence | Price |
+| Enterprise licence | Price, in EGPT tokens |
 |---|---|
-| First | $10 million |
+| First | 10 million |
 | Second to ninth | escalating between the first and the last |
-| Tenth, the last | $100 million |
-| Average across the ten | about $50 million |
+| Tenth, the last | 100 million |
+
+**Licence types.** The types of licence follow the roles the DeSciX Community License and the
+DeSciX Whitepaper lay out for the ecosystem, among them network operators, DApp developers,
+witness validators and referrers ([Site_Provenance.md](Site_Provenance.md) §4 quotes the clause;
+[DeSciX_Whitepaper.md](DeSciX_Whitepaper.md) is copied here). This is the main engine of the
+flywheel: a licence is bought with the token that contribution earns.
+
+**Term.** Licences are not perpetual. The initial term is five years.
 
 These terms are exemplary. Every licence is negotiated individually, and none carries equity in
 Courant Group. Two things shape every negotiation:
@@ -223,6 +233,10 @@ form, which asks:
 | Hardware or software | whether FRQTL goes into software, into hardware designs, or both |
 | Timeline | when the licensee needs it |
 | Contact | how Courant Group reaches the requester |
+
+The form checks the requester's wallet for the number of EGPT tokens the requested licence needs,
+through the Powch wallet integration of the DeSciX app, and sends a requester who holds too few to
+the markets to buy them. Until that integration lands, the site shows a placeholder for the check.
 
 Courant Group answers each request individually.
 

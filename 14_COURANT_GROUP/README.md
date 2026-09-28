@@ -7,6 +7,10 @@ its business plan, which is the plan of record.
 | File | What it is |
 |---|---|
 | [Business_Plan.md](Business_Plan.md) | The plan: an executive summary first, then the model, what is licensed, the technology, the robotics-AI market measured by funding events, licensing, the return of value to the community through the DeSciX treasury, how to request a licence at courantgroup.com, strategy, the founder, and what is public and what is not |
+| [Site_Provenance.md](Site_Provenance.md) | For the courantgroup.com site: each claim it makes, with the passages verbatim and where they are held in this collection, and how to deep-link them |
+| [DeSciX_Whitepaper.md](DeSciX_Whitepaper.md) | The DeSciX whitepaper, copied from the platform's documentation (`V2_docs/reference/DeSciX_Whitepaper.md`) on 28 September 2026, with its own banner recording which parts of its economic model were superseded on 1 July 2026; two links into that documentation's neighbouring pages do not resolve here |
+| [DeSciX_Community_License_v1.pdf](DeSciX_Community_License_v1.pdf) | The DeSciX Community License, v1, as compiled from the platform's `DSCL/DeSciX_Community_License_v1.tex`; the same bytes as the copy at the root of the author's research repository |
+| [Press_Release_2026-04-01.md](Press_Release_2026-04-01.md) | The EGPT community's press release of 1 April 2026, "EGPT Opens 18.313x", as prepared in the author's studio repository (`projects/launch-april1/press-release-final.md`) |
 
 Related parts of the collection: the FRQTL patent, [../11_PATENT/README.md](../11_PATENT/README.md);
 the token economy, [../guide/make-money.md](../guide/make-money.md); how to contribute,
