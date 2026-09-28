@@ -188,10 +188,12 @@ the App Shell, a 2.7 KB DeSciX page that wraps the bundle; the bundle itself is 
 `https://descix.net/prod/egpt/site/<path>` (DEV: `https://dev.descix.net/dev/egpt/site/<path>`).
 Served-equals-built is measured at the bundle path; the shell carries no stamp.
 
-**Credential.** `.descix/wallet.json` is this workspace's single-holder chain, written by the
-author's device logins (DEV on 2026-09-27, PROD the same evening) and rewritten by the CLI on use;
-never copied, never inspected beyond its key names. On the PROD pin it authenticates
-(`whoami` sam@descix.net, `kb list -a egpt` answers). DEV is not worked.
+**Credential.** `.descix/wallet.json` is this workspace's single-holder chain, never copied and
+never inspected beyond its key names. A device login replaces the whole file with the wallet
+connected in that browser flow (`lib/commands/auth.js:229-239` builds it, `lib/wallet-file.js:70`
+writes it, no merge; named by the platform party 2026-09-28 and spot-checked here), so the file
+holds one environment's credential at a time; the author's PROD login is the one it holds. On the
+PROD pin it authenticates (`whoami` sam@descix.net, `kb list -a egpt` answers). DEV is not worked.
 
 ## Copyright basis and held-out works
 
