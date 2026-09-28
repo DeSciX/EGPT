@@ -1,0 +1,22 @@
+{
+  "title": "the patent application, as published",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`11_PATENT/`]"
+  },
+  "primary_ideas": [
+    "ID4",
+    "ID1"
+  ],
+  "highlights": [
+    {
+      "file": "README.md",
+      "label": "README: the numbers, the dates, the links"
+    },
+    {
+      "file": "US2026-0127327A1_Patent_Application_Publication.pdf",
+      "label": "US 2026/0127327 A1"
+    }
+  ],
+  "subsections": "auto"
+}

@@ -1,0 +1,45 @@
+{
+  "title": "the papers",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`10_PAPERS/`]"
+  },
+  "primary_ideas": [
+    "ID2"
+  ],
+  "highlights": [
+    {
+      "file": "README.md",
+      "label": "README: published and unpublished, the DOIs, the dates"
+    },
+    {
+      "file": "PPNP_Paper/PprobablyEqualsNP_formal.pdf",
+      "label": "P Probably Equals NP"
+    },
+    {
+      "file": "Entropy Game/TheEntropyGame.pdf",
+      "label": "The Entropy Game"
+    },
+    {
+      "file": "Without_Attraction_There_Is_Nothing/Without_Attraction_There_Is_Nothing.pdf",
+      "label": "Without Attraction, You have Got Nothing"
+    },
+    {
+      "file": "GravityPaper/GravityPaper.pdf",
+      "label": "Emergent inverse-square laws from cellular automata (Nile Abadir and Essam Abadir)"
+    },
+    {
+      "file": "Address_Is_The_Map/Address_Is_The_Map.pdf",
+      "label": "The Address is the Map"
+    },
+    {
+      "file": "AddressMap_And_Crypto/Structural_Security_Of_Crypto_When_PeqNP.pdf",
+      "label": "Why P=NP does not break RSA"
+    },
+    {
+      "file": "egpt_circuit_sat/paper/egpt_circuit_sat_whitepaper.pdf",
+      "label": "The Circuit SAT whitepaper"
+    }
+  ],
+  "subsections": "auto"
+}

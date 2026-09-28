@@ -1,0 +1,34 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`02_VON_NEUMANN/`]"
+  },
+  "primary_ideas": [
+    "ID2"
+  ],
+  "highlights": [
+    {
+      "file": "The_Mathematician_JvM.md",
+      "label": "The Mathematician (1947)"
+    },
+    {
+      "file": "letters_to_godel/Letter3_Jan12_1931.md",
+      "label": "The 1931 letter to Gödel"
+    },
+    {
+      "file": "letters_to_godel/Godel_Letter_to_Von_Neumann_1956_AUTHORITATIVE.txt",
+      "label": "The 1956 letter, authoritative text"
+    },
+    {
+      "file": "letters_to_godel/1956-LETTER-PROVENANCE.md",
+      "label": "Provenance record for the 1956 letter"
+    },
+    {
+      "file": "Ulam_von_Neumann_Obituary_BAMS_1958.md",
+      "label": "Ulam's BAMS obituary, 1958"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "The_Mathematician_JvM.md"
+}

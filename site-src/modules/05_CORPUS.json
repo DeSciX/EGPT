@@ -1,0 +1,30 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`05_CORPUS/`]"
+  },
+  "primary_ideas": [
+    "ID7"
+  ],
+  "highlights": [
+    {
+      "file": "CORPUS_README.md",
+      "label": "How the corpus is built and what a record holds"
+    },
+    {
+      "file": "PROVENANCE_DB_ORDERS.md",
+      "label": "The rules"
+    },
+    {
+      "file": "composer/composer.html",
+      "label": "The composer: writes a paper out of the corpus, in a browser"
+    },
+    {
+      "file": "corpus/quotes.json",
+      "label": "The built corpus"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "CORPUS_README.md"
+}

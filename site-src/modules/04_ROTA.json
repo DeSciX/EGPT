@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`04_ROTA/`]"
+  },
+  "primary_ideas": [
+    "ID3",
+    "ID1"
+  ],
+  "highlights": [
+    {
+      "file": "The_Barrier_of_Meaning_Rota.md",
+      "label": "The Barrier of Meaning, from Ulam's memorial"
+    },
+    {
+      "file": "Mathematics, Philosophy, and Artificial Intelligence.html",
+      "label": "The 1985 dialogue on AI, Los Alamos Science"
+    },
+    {
+      "file": "Rota_Interview_1985_Los_Alamos_Science.pdf",
+      "label": "Rota interviewed, 1985"
+    },
+    {
+      "file": "Rota_CV_1996_archived_1999-02-19.txt",
+      "label": "His 1996 CV as archived in 1999"
+    },
+    {
+      "file": "entropy_theorem/Rota_Entropy_Theorem_Original_Proof.pdf",
+      "label": "Rota's Entropy Theorem, written up"
+    },
+    {
+      "file": "Rota-Baclawski-Prob-Theory-79.pdf",
+      "label": "The 1979 typescript of the probability manuscript"
+    },
+    {
+      "file": "Guidi_Notes_Rota_Probability_18313_Spring1998.pdf",
+      "label": "Guidi's notes of 18.313, Spring 1998"
+    },
+    {
+      "file": "Indiscrete Thoughts.md",
+      "label": "Indiscrete Thoughts"
+    },
+    {
+      "file": "Ten lessons of an MIT Education.html",
+      "label": "Ten Lessons of an MIT Education"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "The_Barrier_of_Meaning_Rota.md"
+}

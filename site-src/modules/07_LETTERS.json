@@ -1,0 +1,22 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`07_LETTERS/`]"
+  },
+  "primary_ideas": [
+    "ID4"
+  ],
+  "highlights": [
+    {
+      "file": "all-in-letter.md",
+      "label": "The original All-In letter"
+    },
+    {
+      "file": "all-in-update-letter-decision-to-publish.md",
+      "label": "The update letter announcing the decision to publish"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "all-in-update-letter-decision-to-publish.md"
+}

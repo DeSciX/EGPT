@@ -1,0 +1,48 @@
+{
+  "title": "The guide",
+  "description_from": {
+    "file": "guide/README.md",
+    "startsWith": "Short documents"
+  },
+  "primary_ideas": [
+    "ID1",
+    "ID2",
+    "ID3",
+    "ID4",
+    "ID5",
+    "ID6",
+    "ID7"
+  ],
+  "highlights": [
+    {
+      "file": "robotic-imagination.md",
+      "label": "learn about robotic imagination and crossing the barrier of meaning"
+    },
+    {
+      "file": "einstein-von-neumann.md",
+      "label": "learn the math and physics of Einstein and von Neumann instead of Bohr and Gödel"
+    },
+    {
+      "file": "government-science.md",
+      "label": "explore the history of government science versus academia"
+    },
+    {
+      "file": "make-money.md",
+      "label": "make money"
+    },
+    {
+      "file": "avert-the-singularity.md",
+      "label": "avert the Singularity"
+    },
+    {
+      "file": "get-involved.md",
+      "label": "get involved"
+    },
+    {
+      "file": "about-this-collection.md",
+      "label": "know what this collection is and how to check it"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "README.md"
+}

@@ -1,0 +1,34 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`01_TRIAL/`]"
+  },
+  "primary_ideas": [
+    "ID3"
+  ],
+  "highlights": [
+    {
+      "file": "JURY_INSTRUCTIONS.md",
+      "label": "JURY_INSTRUCTIONS.md"
+    },
+    {
+      "file": "OPENING_STATEMENT.md",
+      "label": "The opening statement"
+    },
+    {
+      "file": "EXHIBIT_A_report.md",
+      "label": "Exhibit A: the report"
+    },
+    {
+      "file": "EXHIBIT_B_sources.md",
+      "label": "Exhibit B: the sources"
+    },
+    {
+      "file": "EXHIBIT_C_addendum.md",
+      "label": "Exhibit C: the addendum"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "JURY_INSTRUCTIONS.md"
+}

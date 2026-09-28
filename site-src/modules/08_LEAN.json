@@ -1,0 +1,29 @@
+{
+  "title": "the Lean source",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`08_LEAN/`]"
+  },
+  "primary_ideas": [
+    "ID2"
+  ],
+  "highlights": [
+    {
+      "file": "README.md",
+      "label": "README: the branch, the commit, how to build"
+    },
+    {
+      "file": "PROOF_CHAINS.md",
+      "label": "The three sorry-free proof chains"
+    },
+    {
+      "file": "EGPT/InformationTheory/Complexity/PPNP.lean",
+      "label": "PPNP.lean"
+    },
+    {
+      "file": "EGPT/InformationTheory/Basic.lean",
+      "label": "Basic.lean: IIDParticleSource"
+    }
+  ],
+  "subsections": "auto"
+}

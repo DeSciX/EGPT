@@ -1,0 +1,26 @@
+{
+  "title": "the 18.313x debate record, through Exchange 34",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`09_DEBATE/`]"
+  },
+  "primary_ideas": [
+    "ID2",
+    "ID1"
+  ],
+  "highlights": [
+    {
+      "file": "README.md",
+      "label": "README: what the folder holds and where it ends"
+    },
+    {
+      "file": "AUTHORS_STATEMENT.md",
+      "label": "The author's statement"
+    },
+    {
+      "file": "DEBATE_STATE.md",
+      "label": "The accumulated state"
+    }
+  ],
+  "subsections": "auto"
+}

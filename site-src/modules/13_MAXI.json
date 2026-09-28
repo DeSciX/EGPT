@@ -1,0 +1,33 @@
+{
+  "title": "what Maxi is raised on",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`13_MAXI/`]"
+  },
+  "primary_ideas": [
+    "ID1"
+  ],
+  "highlights": [
+    {
+      "file": "bedtime_stories/README.md",
+      "label": "The reading order and the provenance of each story"
+    },
+    {
+      "file": "bedtime_stories/Maxi_Origin.md",
+      "label": "Maxi_Origin.md"
+    },
+    {
+      "file": "bedtime_stories/The_Story_of_EGPT.md",
+      "label": "The Story of EGPT"
+    },
+    {
+      "file": "bedtime_stories/Nile_Deriving_Gravity.md",
+      "label": "Nile deriving gravity"
+    },
+    {
+      "file": "bedtime_stories/The_Impossible_Audit.md",
+      "label": "The Impossible Audit"
+    }
+  ],
+  "subsections": "auto"
+}

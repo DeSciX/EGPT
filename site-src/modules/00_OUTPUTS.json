@@ -1,0 +1,30 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`00_OUTPUTS/`]"
+  },
+  "primary_ideas": [
+    "ID3"
+  ],
+  "highlights": [
+    {
+      "file": "Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf",
+      "label": "The report: Los Alamos, Computation, AI, and Gian-Carlo Rota"
+    },
+    {
+      "file": "EGPT_Backstory.md",
+      "label": "EGPT_Backstory.md"
+    },
+    {
+      "file": "Rota_Bibliography_Exhibit.tsv",
+      "label": "The bibliography exhibit, 189 rows"
+    },
+    {
+      "file": "Departure_Not_Complement_Quote_Pack.md",
+      "label": "Departure, not complement: the quote pack"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf"
+}

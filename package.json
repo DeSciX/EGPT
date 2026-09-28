@@ -2,7 +2,7 @@
   "name": "egpt-evidence",
   "version": "1.0.0",
   "scripts": {
-    "build:site": "node scripts/build-site.mjs",
+    "build:site": "node scripts/generate-site.js",
     "render": "node scripts/render.mjs"
   },
   "repository": {
@@ -15,8 +15,7 @@
   },
   "homepage": "https://github.com/eabadir/EGPT-Evidence#readme",
   "devDependencies": {
-    "@descix/cli": "^1.0.18",
-    "marked": "^15.0.12"
+    "@descix/cli": "^1.0.18"
   },
   "private": true
 }

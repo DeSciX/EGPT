@@ -1,0 +1,30 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`06_LEAN_MATHLIB/`]"
+  },
+  "primary_ideas": [
+    "ID3"
+  ],
+  "highlights": [
+    {
+      "file": "lean-zulip-2025-04-request-for-feedback-p-eq-np.md",
+      "label": "The April 2025 Zulip thread"
+    },
+    {
+      "file": "mathlib-pr-submissions.md",
+      "label": "The mathlib4 pull requests"
+    },
+    {
+      "file": "zulip-moderation-and-conduct.md",
+      "label": "The moderation record"
+    },
+    {
+      "file": "ai_policy_snapshots/README.md",
+      "label": "The Mathlib contribution policy, four dated snapshots"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "lean-zulip-2025-04-request-for-feedback-p-eq-np.md"
+}

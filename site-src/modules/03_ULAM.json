@@ -1,0 +1,18 @@
+{
+  "title": "",
+  "description_from": {
+    "file": "guide/about-this-collection.md",
+    "startsWith": "**[`03_ULAM/`]"
+  },
+  "primary_ideas": [
+    "ID2"
+  ],
+  "highlights": [
+    {
+      "file": "Science Computers And People.md",
+      "label": "Science, Computers, and People"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "Science Computers And People.md"
+}
