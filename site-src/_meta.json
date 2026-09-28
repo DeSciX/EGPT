@@ -204,6 +204,10 @@
     {
       "dir": "14_COURANT_GROUP",
       "label": "14_COURANT_GROUP/"
+    },
+    {
+      "dir": "15_GAME_THEORY",
+      "label": "15_GAME_THEORY/"
     }
   ]
 }

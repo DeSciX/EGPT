@@ -1,0 +1,26 @@
+{
+  "title": "the token economy and its history",
+  "description_from": {
+    "file": "15_GAME_THEORY/README.md",
+    "startsWith": "The documents of the economic model"
+  },
+  "primary_ideas": [
+    "ID4"
+  ],
+  "highlights": [
+    {
+      "file": "README.md",
+      "label": "The history of the economic model, and how it extends to any project"
+    },
+    {
+      "file": "DAITA_Whitepaper_2023-09-25.md",
+      "label": "The DAITA whitepaper, 25 September 2023"
+    },
+    {
+      "file": "DeSciX_Token_Plan_2026-07-01.md",
+      "label": "The token plan ratified on 1 July 2026"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "README.md"
+}

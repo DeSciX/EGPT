@@ -85,6 +85,14 @@
       "doc_class": "guide",
       "doc_type": "documentation",
       "syncignore": []
+    },
+    {
+      "path": "15_GAME_THEORY",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
     }
   ]
 }
