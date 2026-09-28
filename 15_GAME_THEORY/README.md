@@ -36,7 +36,7 @@ Its abstract (line 17):
 > through contributing to the community, or, by buying in with fiat currency.
 
 Section II defines the personas and roles of its economy, with healthcare as the worked example
-(lines 116–127): Stakeholders (SH):, Witness-Validators (WV):, Data Providers (HP):, Creators (P), Foundation Members (FM):, Delegates (DG):, Node Operators (NO):, Developers (DV):, Treasury (T):, and two future roles, Referrers and Resellers. Section III
+(lines 116–127): Stakeholders (SH), Witness-Validators (WV), Data Providers (HP), Creators (P), Foundation Members (FM), Delegates (DG), Node Operators (NO), Developers (DV), Treasury (T), and two future roles, Referrers and Resellers. Section III
 gives its market-efficiency protocols and incentive fractions, and section V its governance. On
 its example (line 112):
 
