@@ -183,18 +183,18 @@ chain-writing command; any account creation; pushing his own branches; committin
 in-progress files. The assistant stages its own paths and commits by pathspec, so no commit of
 its carries his uncommitted work. The flip to public is his act.
 
-## State on PROD, measured 2026-09-28 00:30Z
+## State on PROD, measured 2026-09-28 05:12Z
 
-After the author's PROD device login (whoami sam@descix.net, user pMMQNik5xfgC-gj-xmoQpQ1_AYY):
-`Corpus` and `Sources` registered (before: no knowledge bases on PROD); `Corpus` synced from
-`main`, 8 files, 750 vectors, `kb doctor --live` HEALTHY on index `descix-prod`. `Sources`
-0 vectors: the deny lint passes and the source gate refuses one file by name,
-`13_MAXI/bedtime_stories/The_Room_Where_It_Happened.md`, untracked at `main`; it syncs once that
-story is committed. The site was uploaded on his word (record Unkamon 33878bf, "Go on all of the
-above."): 16 files from `main @ 3d647af`, deployed 2026-09-28T00:26:33Z, replacing the June
-placeholder (its bytes equalled the rollback artifact at the moment of upload); six files
-served equal built by sha256, the bundle stamp `d928c01` (the commit whose markdown it renders)
-counts 1 on `egpt` and 0 on the control app `daita`.
+`Corpus` synced from `main`, 8 files, 750 vectors, `kb doctor --live` HEALTHY on index
+`descix-prod`. `Sources` 0 vectors: the deny lint passes (0 violations) and the source gate refuses
+one file by name, `13_MAXI/bedtime_stories/The_Room_Where_It_Happened.md`, untracked at `main`; it
+syncs once that story is committed, which is the author's act ("I'll fill in the room where it
+happened shortly - don't commit now."). The site is the collection in the SPA viewer, uploaded on
+his words lifting the hold on the Courant Group plan (record Unkamon 213585d: "Flag A - can be
+published, it is marked exemplary." and "Flag C. Confirmed"): 646 files from `main @ 68ee5cd`,
+deployed 2026-09-28T05:11:38Z, 15 files of the previous static site removed; five files served
+equal built by sha256 (index, the plan, its README, guide/make-money.md, site-assets/site.js);
+stamp `68ee5cd` counts 1 on the `egpt` bundle and 0 on the control app `daita`.
 
 **Where the bundle is served.** `https://egpt.descix.net/` (and the DEV subdomain) answers with
 the App Shell, a 2.7 KB DeSciX page that wraps the bundle; the bundle itself is at
