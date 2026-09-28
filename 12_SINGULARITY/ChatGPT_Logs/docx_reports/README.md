@@ -1,0 +1,7 @@
+# Archived research reports
+
+These are the Word documents ChatGPT generated in the "I am the Singularity" conversation and its research branch, archived here in case the originals become unavailable. Each is the final state of the report as it appears in the saved transcript — ChatGPT revises a report by editing the same document in place, so earlier drafts (e.g. the 9-, 10-, and 12-page stages of the Director's Office Fellow report, or the pre-v4/v4 stages of the Documentary Chronology addendum) were overwritten in ChatGPT's canvas and are not separately recoverable; only the final version of each is downloadable.
+
+- **Rota_Los_Alamos_Directors_Office_Fellow_Research_Report.docx** — the primary research report on Rota's Los Alamos "Director's Office Fellow" title, cited in transcript messages 12–26 (final state, including Appendix A).
+- **Rota_Career_Documentary_Chronology_Final_Evidentiary_v5.docx** — the companion report tracing Rota's career through the Courant Institute, the AEC, von Neumann, RAND, and Brookhaven, cited in messages 38–46 (final state, v5, including the corrective addenda discussed in messages 39–46).
+- **documented_aec_computational_lineage_report.docx** — "Documented Computational and Institutional Continuities Across the U.S. Atomic Energy Commission Laboratory System" (Fermi, Ulam, von Neumann, Metropolis, Pasta, Rota, and the Brookhaven lattice-QCD program). This report is not referenced by name in the currently captured range of the transcript; it appears to come from further research in the live conversation.

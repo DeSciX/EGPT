@@ -9,6 +9,10 @@
   ],
   "highlights": [
     {
+      "file": "ChatGPT_Logs/I_am_the_Singularity.html",
+      "label": "Read the conversation: the reading page"
+    },
+    {
       "file": "ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md",
       "label": "The conversation as shared, saved 24 September 2026"
     },
@@ -23,6 +27,10 @@
     {
       "file": "ChatGPT_Logs/ChatGPTs_Happy_Future.png",
       "label": "The model's image reply of 23 September"
+    },
+    {
+      "file": "ChatGPT_Logs/docx_reports/README.md",
+      "label": "The three reports the model wrote, and which messages cite them"
     },
     {
       "file": "Claude_Logs/ASSISTANT_RECORD.md",
