@@ -13,8 +13,70 @@ is quoted through the trial report, the report is named and the line given.
 
 — Gian-Carlo Rota, Gian-Carlo Rota, “Curriculum Vitae (1996),” Massachusetts Institute of Technology mathematics server, Internet Archive capture of 19 February 1999, heading “Higher Education:” (record `q-gian-carlo-rota-gian-carlo-rota-curr-55a1aba7`)
 
-Rota's own account of his undergraduate hours with Alonzo Church, "Fine Hall in its Golden Age,"
-*Indiscrete Thoughts* (Birkhäuser, 1997), chapter I, as quoted in the trial report
+Rota's own account of his undergraduate hours with Alonzo Church is the section "Alonzo Church" of
+"Fine Hall in its Golden Age," *Indiscrete Thoughts* (Birkhäuser, 1997), pp. 4–7, held as two page
+captures, [pp. 4–5](Indiscrete_Thoughts/Captures/Alonzo_Church_pp4-5.png) and
+[pp. 6–7](Indiscrete_Thoughts/Captures/Alonzo_Church_pp6-7.png), with their transcription,
+[Alonzo_Church_pp4-7.md](Indiscrete_Thoughts/Alonzo_Church_pp4-7.md). The section opens:
+
+> It cannot be a complete coincidence that several outstanding logicians of the twentieth century 
+> found shelter in asylums at some time in their lives: Cantor, Zermelo, Gödel, Peano, and Post 
+> are some. Alonzo Church was one of the saner among them, though in some ways his behavior must 
+> be classified as strange, even by mathematicians’ standards. 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, p. 4, the opening paragraph of the section (record `q-gian-carlo-rota-indiscrete-thoughts--2a9f0d8d`)
+
+> His one year course in mathematical logic was one of Princeton University’s great offerings. It 
+> attracted as many as four students in 1951 (none of them were philosophy students, it must be 
+> added, to philosophy’s discredit). 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, pp. 4–5, the paragraph on the course, opening sentences (record `q-gian-carlo-rota-indiscrete-thoughts--7c1931df`)
+
+> The course began with the axioms for the propositional calculus (those of Russell and 
+> Whitehead’s Principia Mathematica,² I believe) that take material implication as the only 
+> primitive connective. The exercises at the end of the first chapter were mere translations of 
+> some identities of naive set theory in terms of material implication. It took me a tremendous 
+> effort to prove them, since I was unaware of the fact that one could start with an equivalent 
+> set of axioms using “and” and “or” (where the disjunctive normal form provides automatic proofs) 
+> and then translate each proof step by step in terms of implication. I went to see Church to 
+> discuss my difficulties, and far from giving away the easy solution, he spent hours with me 
+> devising direct proofs using implication only. 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, p. 6, the paragraph beginning “The course began”; the superscript is the chapter's endnote marker as printed (record `q-gian-carlo-rota-indiscrete-thoughts--188497c4`)
+
+> Toward the end of the course I brought to him the sheaf of papers containing the solutions to 
+> the problems (all problems he assigned were optional, since they could not logically be made to 
+> fit into the formal text). He looked at them as if expecting them, and then pulled out of his 
+> drawer a note he had just published in Portugaliae Mathematica,³ where similar problems were 
+> posed for “conditional disjunction,” a ternary connective he had introduced. Now that I was 
+> properly trained, he wanted me to repeat the work with conditional disjunction as the primitive 
+> connective. His graduate students had declined a similar request, no doubt because they 
+> considered it to be beneath them. 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, p. 6, the paragraph beginning “The course began,” its close; the superscript is the chapter's endnote marker as printed (record `q-gian-carlo-rota-indiscrete-thoughts--292be37a`)
+
+> Mathematical logic has not been held in high regard at Princeton, then or now. Two minutes 
+> before the end of Church’s lecture (the course met in the largest classroom in Fine Hall), 
+> Lefschetz would begin to peek through the door. He glared at me and the spotless text on the 
+> blackboard; sometimes he shook his head to make it clear that he considered me a lost cause. 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, p. 6, the paragraph beginning “Mathematical logic has not been held in high regard” (record `q-gian-carlo-rota-indiscrete-thoughts--fa4a129d`)
+
+> I was too young and too shy to have an opinion of my own about Church and mathematical logic. I 
+> was in love with the subject, and his course was my first graduate course. I sensed disapproval 
+> all around me; only Roger Lyndon (the inventor of spectral sequences), who had been my freshman 
+> advisor, encouraged me. Shortly afterward he himself was encouraged to move to Michigan. 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, p. 7, the paragraph beginning “I was too young” (record `q-gian-carlo-rota-indiscrete-thoughts--af0686d7`)
+
+> “There is no reason why a great mathematician should not also be a great bigot,” he once said on 
+> concluding a discussion whose beginning I have by now forgotten. “Look at your teachers in Fine 
+> Hall, at how they treat one of the greatest living mathematicians, Alonzo Church.” 
+
+— Gian-Carlo Rota, Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”, p. 7, the penultimate paragraph of the section: Rota quoting John Kemeny (record `q-gian-carlo-rota-indiscrete-thoughts--633b4ed8`)
+
+The same section as quoted in the trial report, before the pages were held:
+
 ([`../01_TRIAL/EXHIBIT_A_report.md`](../01_TRIAL/EXHIBIT_A_report.md):492; endnote 52):
 
 > The competence begins earlier than the doctorate, and on the other side of the subject. Rota 

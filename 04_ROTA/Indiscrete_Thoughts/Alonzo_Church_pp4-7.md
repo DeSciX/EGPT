@@ -1,0 +1,48 @@
+# Gian-Carlo Rota, *Indiscrete Thoughts*, chapter I, "Fine Hall in its Golden Age": the section "Alonzo Church," pp. 4–7
+
+*Indiscrete Thoughts*, edited by Fabrizio Palombi (Boston: Birkhäuser, 1997), Part I, "Persons and
+Places," chapter I, "Fine Hall in its Golden Age: Remembrances of Princeton in the Early Fifties."
+This is the transcription of the two page captures beside it,
+[Captures/Alonzo_Church_pp4-5.png](Captures/Alonzo_Church_pp4-5.png) and
+[Captures/Alonzo_Church_pp6-7.png](Captures/Alonzo_Church_pp6-7.png), supplied by the author on
+28 September 2026. It was transcribed by the author's Gemini page-transcription script and read
+against the captures word by word by the assistant the same day. The captures are the source;
+this text is the reading aid. The superscript numerals are the chapter's endnote markers as
+printed; the endnotes are not on these pages. The page breaks fall mid-word at 4/5
+("philos-|ophy's"), mid-sentence at 5/6 ("as he | spoke") and at 6/7 ("he | stuttered"); each
+page number below stands before the first paragraph that begins on that page. Page 7 continues
+with the section "William Feller."
+
+## Alonzo Church
+
+*p. 4*
+
+It cannot be a complete coincidence that several outstanding logicians of the twentieth century found shelter in asylums at some time in their lives: Cantor, Zermelo, Gödel, Peano, and Post are some. Alonzo Church was one of the saner among them, though in some ways his behavior must be classified as strange, even by mathematicians’ standards.
+
+He looked like a cross between a panda and a large owl. He spoke softly in complete paragraphs which seemed to have been read out of a book, evenly and slowly enunciated, as by a talking machine. When interrupted, he would pause for an uncomfortably long period to recover the thread of the argument. He never made casual remarks: they did not belong in the baggage of formal logic. For example, he would not say, “It is raining.” Such a statement, taken in isolation, makes no sense. (Whether it is actually raining or not does not matter; what matters is consistence). He would say instead, “I must postpone my departure for Nassau Street, inasmuch as it is raining, a fact which I can verify by looking out the window.” (These were not his exact words). Gilbert Ryle has criticized philosophers for testing their theories of language with examples which are never used in ordinary speech. Church’s discourse was precisely one such example.
+
+He had unusual working habits. He could be seen in a corridor in Fine Hall at any time of day or night, rather like the Phantom of the Opera. Once, on Christmas day, I decided to go to the Fine Hall library (which was always open) to look up something. I met Church on the stairs. He greeted me without surprise.
+
+He owned a sizable collection of science-fiction novels, most of which looked well thumbed. Each volume was mysteriously marked either with a circle or with a cross. Corrections to wrong page numberings in the table of contents had been penciled into several volumes.
+
+His one year course in mathematical logic was one of Princeton University’s great offerings. It attracted as many as four students in 1951 (none of them were philosophy students, it must be added, to philosophy’s discredit). Every lecture began with a ten-minute ceremony of erasing the blackboard until it was absolutely spotless. We tried to save him the effort by erasing the board before his arrival, but to no avail. The ritual could not be disposed of; often it required water, soap, and brush, and was followed by another ten minutes of total silence while the blackboard was drying. Perhaps he was preparing the lecture while erasing; I don’t think so. His lectures hardly needed any preparation. They were a literal repetition of the typewritten text he had written over a period of twenty years, a copy of which was to be found upstairs in the Fine Hall library. (The manuscript’s pages had yellowed with the years, and smelled foul. Church’s definitive treatise was not published for another five years).¹ Occasionally, one of the sentences spoken in class would be at variance with the text upstairs, and he would warn us in advance of the discrepancy between oral and written presentation. For greater precision, everything he said (except some fascinating side excursions which he invariably prefixed by a sentence like, “I will now interrupt and make a meta-mathematical [sic] remark”) was carefully written down on the blackboard, in large English-style handwriting, like that of a grade-school teacher, complete with punctuation and paragraphs. Occasionally, he carelessly skipped a letter in a word. At first we pointed out these oversights, but we quickly learned that they would create a slight panic, so we kept our mouths shut. Once he had to use a variant of a previously proved theorem, which differed only by a change of notation. After a moment of silence, he turned to the class and said, “I could simply say ‘likewise,’ but I’d better prove it again.”
+
+*p. 5*
+
+It may be asked why anyone would bother to sit in a lecture which was the literal repetition of an available text. Such a question would betray an oversimplified view of what goes on in a classroom. What one really learns in class is what one does not know at the time one is learning. The person lecturing to us was logic incarnate. His pauses, hesitations, emphases, his betrayals of emotion (however rare) and sundry other nonverbal phenomena taught us a lot more logic than any written text could. We learned to think in unison with him as he spoke, as if following the demonstration of a calisthenics instructor. Church’s course permanently improved the rigor of our reasoning.
+
+*p. 6*
+
+The course began with the axioms for the propositional calculus (those of Russell and Whitehead’s *Principia Mathematica*,² I believe) that take material implication as the only primitive connective. The exercises at the end of the first chapter were mere translations of some identities of naive set theory in terms of material implication. It took me a tremendous effort to prove them, since I was unaware of the fact that one could start with an equivalent set of axioms using “and” and “or” (where the disjunctive normal form provides automatic proofs) and then translate each proof step by step in terms of implication. I went to see Church to discuss my difficulties, and far from giving away the easy solution, he spent hours with me devising direct proofs using implication only. Toward the end of the course I brought to him the sheaf of papers containing the solutions to the problems (all problems he assigned were optional, since they could not logically be made to fit into the formal text). He looked at them as if expecting them, and then pulled out of his drawer a note he had just published in *Portugaliae Mathematica*,³ where similar problems were posed for “conditional disjunction,” a ternary connective he had introduced. Now that I was properly trained, he wanted me to repeat the work with conditional disjunction as the primitive connective. His graduate students had declined a similar request, no doubt because they considered it to be beneath them.
+
+Mathematical logic has not been held in high regard at Princeton, then or now. Two minutes before the end of Church’s lecture (the course met in the largest classroom in Fine Hall), Lefschetz would begin to peek through the door. He glared at me and the spotless text on the blackboard; sometimes he shook his head to make it clear that he considered me a lost cause. The following class was taught by Kodaira, at that time a recent arrival from Japan, whose work in geometry was revered by everyone in the Princeton main line. The classroom was packed during Kodaira’s lecture. Even though his English was atrocious, his lectures were crystal clear. (Among other things, he stuttered. Because of deep-seated prejudices of some of its members, the mathematics department refused to appoint him full-time to the Princeton faculty).
+
+*p. 7*
+
+I was too young and too shy to have an opinion of my own about Church and mathematical logic. I was in love with the subject, and his course was my first graduate course. I sensed disapproval all around me; only Roger Lyndon (the inventor of spectral sequences), who had been my freshman advisor, encouraged me. Shortly afterward he himself was encouraged to move to Michigan. Fortunately, I had met one of Church’s most flamboyant former students, John Kemeny, who, having just finished his term as a mathematics instructor, was being eased — by Lefschetz’s gentle hand — into the philosophy department. (The following year he left for Dartmouth, where he eventually became president).
+
+Kemeny’s seminar in the philosophy of science (which that year attracted as many as six students, a record) was refreshing training in basic reasoning. Kemeny was not afraid to appear pedestrian, trivial, or stupid; what mattered was to respect the facts, to draw distinctions even when they clashed with our prejudices, and to avoid black-and-white oversimplifications. Mathematicians have always found Kemeny’s common sense revolting.
+
+“There is no reason why a great mathematician should not also be a great bigot,” he once said on concluding a discussion whose beginning I have by now forgotten. “Look at your teachers in Fine Hall, at how they treat one of the greatest living mathematicians, Alonzo Church.”
+
+I left literally speechless. What? These demi-gods of Fine Hall were not perfect beings? I had learned from Kemeny a basic lesson: a good mathematician is not necessarily a “nice guy.”

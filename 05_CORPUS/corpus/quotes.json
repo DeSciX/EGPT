@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 371,
+ "count": 387,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -4594,6 +4594,470 @@
    ],
    "quote_sha256": "3c795ac95430476c9db027443b763e347942eb1c5ddd3d0b996985cf2486654b",
    "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser) | ch. VI, “The Lost Café” | 1997 | In his fascination with physics, he was led to formulate mathematical thoughts that had a background of physics, but that bore the unmistakable ring of mathematics (he once started to draft a long paper which was to be titled ‘Physics for Mathematicians’). One of the most striking is his proposal for the reconstruction of the CGS system on the basis of random walk."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--e3f7ffb5",
+   "quote": "He never made casual remarks: they did not belong in the baggage of formal logic. For example, he would not say, “It is raining.” Such a statement, taken in isolation, makes no sense. (Whether it is actually raining or not does not matter; what matters is consistence).",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 4, second paragraph",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "e3f7ffb538677db6a26ea38b1108d760d031de5b58f78dbf8e84352d1158f439",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 4, second paragraph | 1997 | He never made casual remarks: they did not belong in the baggage of formal logic. For example, he would not say, “It is raining.” Such a statement, taken in isolation, makes no sense. (Whether it is actually raining or not does not matter; what matters is consistence)."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--973a365a",
+   "quote": "He looked like a cross between a panda and a large owl. He spoke softly in complete paragraphs which seemed to have been read out of a book, evenly and slowly enunciated, as by a talking machine.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 4, second paragraph, opening sentences",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "973a365ab000a1c3db48e8af22e9de3b14f75b39e684cec8ea9da8519b1615d5",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 4, second paragraph, opening sentences | 1997 | He looked like a cross between a panda and a large owl. He spoke softly in complete paragraphs which seemed to have been read out of a book, evenly and slowly enunciated, as by a talking machine."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--2a9f0d8d",
+   "quote": "It cannot be a complete coincidence that several outstanding logicians of the twentieth century found shelter in asylums at some time in their lives: Cantor, Zermelo, Gödel, Peano, and Post are some. Alonzo Church was one of the saner among them, though in some ways his behavior must be classified as strange, even by mathematicians’ standards.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 4, the opening paragraph of the section",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "2a9f0d8dc0a233c2b0ecfb4137e8e3ceb6821822202cc526f87086337a84c71f",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 4, the opening paragraph of the section | 1997 | It cannot be a complete coincidence that several outstanding logicians of the twentieth century found shelter in asylums at some time in their lives: Cantor, Zermelo, Gödel, Peano, and Post are some. Alonzo Church was one of the saner among them, though in some ways his behavior must be classified as strange, even by mathematicians’ standards."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--2846af50",
+   "quote": "He had unusual working habits. He could be seen in a corridor in Fine Hall at any time of day or night, rather like the Phantom of the Opera. Once, on Christmas day, I decided to go to the Fine Hall library (which was always open) to look up something. I met Church on the stairs. He greeted me without surprise.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 4, third paragraph",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "2846af500cffae74dcfc0a0d1c25948ea9275881321d3341f79446cb00733e5e",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 4, third paragraph | 1997 | He had unusual working habits. He could be seen in a corridor in Fine Hall at any time of day or night, rather like the Phantom of the Opera. Once, on Christmas day, I decided to go to the Fine Hall library (which was always open) to look up something. I met Church on the stairs. He greeted me without surprise."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--228146c5",
+   "quote": "For greater precision, everything he said (except some fascinating side excursions which he invariably prefixed by a sentence like, “I will now interrupt and make a meta-mathematical [sic] remark”) was carefully written down on the blackboard, in large English-style handwriting, like that of a grade-school teacher, complete with punctuation and paragraphs.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 5, the paragraph on the course",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "228146c59312cac661cb6d78b116bc80c4531c7ccf411f06e6dbcf5cf3e0252c",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 5, the paragraph on the course | 1997 | For greater precision, everything he said (except some fascinating side excursions which he invariably prefixed by a sentence like, “I will now interrupt and make a meta-mathematical [sic] remark”) was carefully written down on the blackboard, in large English-style handwriting, like that of a grade-school teacher, complete with punctuation and paragraphs."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--6ace9a29",
+   "quote": "His lectures hardly needed any preparation. They were a literal repetition of the typewritten text he had written over a period of twenty years, a copy of which was to be found upstairs in the Fine Hall library. (The manuscript’s pages had yellowed with the years, and smelled foul. Church’s definitive treatise was not published for another five years).¹",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 5, the paragraph on the course; the superscript is the chapter's endnote marker as printed",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "6ace9a29373fbf72124853424efb5d55b985509ddeefee5cbc85029a9576f90c",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 5, the paragraph on the course; the superscript is the chapter's endnote marker as printed | 1997 | His lectures hardly needed any preparation. They were a literal repetition of the typewritten text he had written over a period of twenty years, a copy of which was to be found upstairs in the Fine Hall library. (The manuscript’s pages had yellowed with the years, and smelled foul. Church’s definitive treatise was not published for another five years).¹"
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--fa4a129d",
+   "quote": "Mathematical logic has not been held in high regard at Princeton, then or now. Two minutes before the end of Church’s lecture (the course met in the largest classroom in Fine Hall), Lefschetz would begin to peek through the door. He glared at me and the spotless text on the blackboard; sometimes he shook his head to make it clear that he considered me a lost cause.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 6, the paragraph beginning “Mathematical logic has not been held in high regard”",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "fa4a129def3dfd366dca01ca611a0890af09e3b63e6186684467082ea83436ed",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 6, the paragraph beginning “Mathematical logic has not been held in high regard” | 1997 | Mathematical logic has not been held in high regard at Princeton, then or now. Two minutes before the end of Church’s lecture (the course met in the largest classroom in Fine Hall), Lefschetz would begin to peek through the door. He glared at me and the spotless text on the blackboard; sometimes he shook his head to make it clear that he considered me a lost cause."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--292be37a",
+   "quote": "Toward the end of the course I brought to him the sheaf of papers containing the solutions to the problems (all problems he assigned were optional, since they could not logically be made to fit into the formal text). He looked at them as if expecting them, and then pulled out of his drawer a note he had just published in Portugaliae Mathematica,³ where similar problems were posed for “conditional disjunction,” a ternary connective he had introduced. Now that I was properly trained, he wanted me to repeat the work with conditional disjunction as the primitive connective. His graduate students had declined a similar request, no doubt because they considered it to be beneath them.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 6, the paragraph beginning “The course began,” its close; the superscript is the chapter's endnote marker as printed",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "292be37a5983748f730c643dc8355a1cc30fba73a07e7a2ff94752f591f4bee8",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 6, the paragraph beginning “The course began,” its close; the superscript is the chapter's endnote marker as printed | 1997 | Toward the end of the course I brought to him the sheaf of papers containing the solutions to the problems (all problems he assigned were optional, since they could not logically be made to fit into the formal text). He looked at them as if expecting them, and then pulled out of his drawer a note he had just published in Portugaliae Mathematica,³ where similar problems were posed for “conditional disjunction,” a ternary connective he had introduced. Now that I was properly trained, he wanted me to repeat the work with conditional disjunction as the primitive connective. His graduate students had declined a similar request, no doubt because they considered it to be beneath them."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--188497c4",
+   "quote": "The course began with the axioms for the propositional calculus (those of Russell and Whitehead’s Principia Mathematica,² I believe) that take material implication as the only primitive connective. The exercises at the end of the first chapter were mere translations of some identities of naive set theory in terms of material implication. It took me a tremendous effort to prove them, since I was unaware of the fact that one could start with an equivalent set of axioms using “and” and “or” (where the disjunctive normal form provides automatic proofs) and then translate each proof step by step in terms of implication. I went to see Church to discuss my difficulties, and far from giving away the easy solution, he spent hours with me devising direct proofs using implication only.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 6, the paragraph beginning “The course began”; the superscript is the chapter's endnote marker as printed",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "188497c47fdeae6f9aa9f61f96f0b9dbc19b04aabc162984aac13e6c4b31c21a",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 6, the paragraph beginning “The course began”; the superscript is the chapter's endnote marker as printed | 1997 | The course began with the axioms for the propositional calculus (those of Russell and Whitehead’s Principia Mathematica,² I believe) that take material implication as the only primitive connective. The exercises at the end of the first chapter were mere translations of some identities of naive set theory in terms of material implication. It took me a tremendous effort to prove them, since I was unaware of the fact that one could start with an equivalent set of axioms using “and” and “or” (where the disjunctive normal form provides automatic proofs) and then translate each proof step by step in terms of implication. I went to see Church to discuss my difficulties, and far from giving away the easy solution, he spent hours with me devising direct proofs using implication only."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--924d3775",
+   "quote": "I left literally speechless. What? These demi-gods of Fine Hall were not perfect beings? I had learned from Kemeny a basic lesson: a good mathematician is not necessarily a “nice guy.”",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 7, the last paragraph of the section",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "924d3775939742da3c6817e495b9eb29b238be2a59db80fb9cc541a5d675d98a",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 7, the last paragraph of the section | 1997 | I left literally speechless. What? These demi-gods of Fine Hall were not perfect beings? I had learned from Kemeny a basic lesson: a good mathematician is not necessarily a “nice guy.”"
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--0b1a234e",
+   "quote": "Fortunately, I had met one of Church’s most flamboyant former students, John Kemeny, who, having just finished his term as a mathematics instructor, was being eased — by Lefschetz’s gentle hand — into the philosophy department. (The following year he left for Dartmouth, where he eventually became president).",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 7, the paragraph beginning “I was too young,” its close",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "0b1a234ee510882a6383fff904cb87c9d5424abc143f15f665a614c5fde9a693",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 7, the paragraph beginning “I was too young,” its close | 1997 | Fortunately, I had met one of Church’s most flamboyant former students, John Kemeny, who, having just finished his term as a mathematics instructor, was being eased — by Lefschetz’s gentle hand — into the philosophy department. (The following year he left for Dartmouth, where he eventually became president)."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--af0686d7",
+   "quote": "I was too young and too shy to have an opinion of my own about Church and mathematical logic. I was in love with the subject, and his course was my first graduate course. I sensed disapproval all around me; only Roger Lyndon (the inventor of spectral sequences), who had been my freshman advisor, encouraged me. Shortly afterward he himself was encouraged to move to Michigan.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 7, the paragraph beginning “I was too young”",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "af0686d76776943499b562cfe83e92940d3aa8b44b360640f1cf9625282c267f",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 7, the paragraph beginning “I was too young” | 1997 | I was too young and too shy to have an opinion of my own about Church and mathematical logic. I was in love with the subject, and his course was my first graduate course. I sensed disapproval all around me; only Roger Lyndon (the inventor of spectral sequences), who had been my freshman advisor, encouraged me. Shortly afterward he himself was encouraged to move to Michigan."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--bcd9f3b5",
+   "quote": "Kemeny was not afraid to appear pedestrian, trivial, or stupid; what mattered was to respect the facts, to draw distinctions even when they clashed with our prejudices, and to avoid black-and-white oversimplifications. Mathematicians have always found Kemeny’s common sense revolting.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 7, the paragraph on Kemeny's seminar",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "bcd9f3b5d74ed798df1a87edbd94a0c207924113976d582faa7b7a0a8ad8e182",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 7, the paragraph on Kemeny's seminar | 1997 | Kemeny was not afraid to appear pedestrian, trivial, or stupid; what mattered was to respect the facts, to draw distinctions even when they clashed with our prejudices, and to avoid black-and-white oversimplifications. Mathematicians have always found Kemeny’s common sense revolting."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--633b4ed8",
+   "quote": "“There is no reason why a great mathematician should not also be a great bigot,” he once said on concluding a discussion whose beginning I have by now forgotten. “Look at your teachers in Fine Hall, at how they treat one of the greatest living mathematicians, Alonzo Church.”",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "p. 7, the penultimate paragraph of the section: Rota quoting John Kemeny",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "633b4ed85362c2a507c1dc910b70ea283e7e8a6383f7e65747cee1aab605ccf5",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | p. 7, the penultimate paragraph of the section: Rota quoting John Kemeny | 1997 | “There is no reason why a great mathematician should not also be a great bigot,” he once said on concluding a discussion whose beginning I have by now forgotten. “Look at your teachers in Fine Hall, at how they treat one of the greatest living mathematicians, Alonzo Church.”"
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--7c1931df",
+   "quote": "His one year course in mathematical logic was one of Princeton University’s great offerings. It attracted as many as four students in 1951 (none of them were philosophy students, it must be added, to philosophy’s discredit).",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "pp. 4–5, the paragraph on the course, opening sentences",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "7c1931df5001ab127d17ca0e3bebf5a03e32bd8d48cb1c712b03d364482e14ca",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | pp. 4–5, the paragraph on the course, opening sentences | 1997 | His one year course in mathematical logic was one of Princeton University’s great offerings. It attracted as many as four students in 1951 (none of them were philosophy students, it must be added, to philosophy’s discredit)."
+  },
+  {
+   "id": "q-gian-carlo-rota-indiscrete-thoughts--b154def4",
+   "quote": "What one really learns in class is what one does not know at the time one is learning. The person lecturing to us was logic incarnate. His pauses, hesitations, emphases, his betrayals of emotion (however rare) and sundry other nonverbal phenomena taught us a lot more logic than any written text could. We learned to think in unison with him as he spoke, as if following the demonstration of a calisthenics instructor. Church’s course permanently improved the rigor of our reasoning.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church”",
+    "locus": "pp. 5–6, the paragraph beginning “It may be asked”",
+    "date": "1997",
+    "file": "04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1997
+   ],
+   "themes": [
+    "rota-church-princeton"
+   ],
+   "collections": [
+    "rota_church_fine_hall"
+   ],
+   "quote_sha256": "b154def480df3790a19af170e488930d7f904085cf4a928ae330c186defb5b2e",
+   "embed_text": "Gian-Carlo Rota | Indiscrete Thoughts (Birkhäuser, 1997), Part I, ch. I, “Fine Hall in its Golden Age,” section “Alonzo Church” | pp. 5–6, the paragraph beginning “It may be asked” | 1997 | What one really learns in class is what one does not know at the time one is learning. The person lecturing to us was logic incarnate. His pauses, hesitations, emphases, his betrayals of emotion (however rare) and sundry other nonverbal phenomena taught us a lot more logic than any written text could. We learned to think in unison with him as he spoke, as if following the demonstration of a calisthenics instructor. Church’s course permanently improved the rigor of our reasoning."
   },
   {
    "id": "q-gian-carlo-rota-indiscrete-thoughts--2e2cd26e",

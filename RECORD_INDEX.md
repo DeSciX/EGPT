@@ -100,6 +100,8 @@ Problems Involving Equations of the Diffusion … | `q-nelson-h-f-beebe-nelson-h
 | EXHIBIT_A_report.md | prove that essentially all the interesting distributions we have seen … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | there are more distributions determined by maximum entropy, especially… | `q-gian-carlo-rota-introduction-to-prob-f3c003a5` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | What do we mean by understanding something? | `q-richard-feynman-the-feynman-lectures-374a5b75` |  |
+| EXHIBIT_A_report.md | attracted as many as four students in 1951 (none of them were philosop… | `q-gian-carlo-rota-indiscrete-thoughts--7c1931df` | `04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md` |
+| EXHIBIT_A_report.md | I went to see Church to discuss my difficulties, and far from giving a… | `q-gian-carlo-rota-indiscrete-thoughts--188497c4` | `04_ROTA/Indiscrete_Thoughts/Alonzo_Church_pp4-7.md` |
 | EXHIBIT_A_report.md | enabled him to seriously influence the direction of research in comput… | `q-martin-davis-and-e-martin-davis-and-edm-24110453` |  |
 | EXHIBIT_A_report.md | That probability is closely connected with information should come as … | `q-gian-carlo-rota-introduction-to-prob-864507c1` | `04_ROTA/manuscript_1992/ch8_Entropy_and_Information.md` |
 | EXHIBIT_A_report.md | The four principal processes of probability theory are all determined … | `q-kenneth-baclawski--introduction-to-prob-413ba930` |  |
