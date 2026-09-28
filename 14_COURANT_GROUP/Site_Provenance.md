@@ -99,7 +99,7 @@ with its provenance record beside it.
 The letter's opening, from the same file:
 
 > "With the greatest sorrow I have learned of your illness. The news came to me as quite
-> unexpected. Morgen-stern already last summer told me of a bout of weakness you once had, but at
+> unexpected. Morgenstern already last summer told me of a bout of weakness you once had, but at
 > that time he thought that this was not of any greater significance. As I hear, in the last
 > months you have undergone a radical treatment and I am happy that this treatment was successful
 > as desired, and that you are now doing better."
@@ -136,20 +136,62 @@ His statement of 28 September 2026, to the assistant compiling this sheet, verba
 > know he is working AI ... under a more probable than not standard the question is whether Godel
 > is stating "You might have been right in 1931, I thought I tell you that while I still can.""
 
-### Ulam and the Monte Carlo method
+### Ulam and the Monte Carlo method, by scale
 
-Ulam, *Science, Computers, and People*, ch. 5, pp. 38–39
-([`../03_ULAM/Science Computers And People.md`](../03_ULAM/Science%20Computers%20And%20People.md);
-record `q-stanislaw-ulam-science-computers-an-8c91ad41`):
+The passages below are from the held transcription of Ulam, *Science, Computers, and People:
+From the Tree of Mathematics* (Birkhäuser, 1986), [`../03_ULAM/Science Computers And People.md`](../03_ULAM/Science%20Computers%20And%20People.md), which holds the front matter, chapters 1 and 2, chapter 5 pp. 38–42, chapter 9 pp. 77–81
+and chapter 18 pp. 223–229; the book's other chapters are marked in that file as not yet
+transcribed. Page numbers are the file's own. Where a passage has a corpus record, its id is given.
 
-> "Let me point to the so-called Monte Carlo approach as an example of one of the methods that can
-> lead to insight into the behavior of complicated systems. Essentially it consists of imitating
-> physical processes on a computer by following a large but manageable number, replacing the
-> trillions or more that are involved in the real process, by thousands of histories of the
-> behavior of individual particles. This method is used, for instance, in calculations involving
-> nuclear reactors, where neutrons, produced by fission, emerge with various velocities, collide,
-> scatter, and are absorbed or multiply according to probabilities which depend on the initial
-> data."
+**The method, in general** (chapter 5, p. 38; the first sentence is record
+`q-stanislaw-ulam-science-computers-an-d365a8d9`):
+
+> The first meaningful applications were made in problems of mathematical physics, where the complexity of the interaction of many elements may be such that no methods of classical mathematical analysis can give even a qualitative picture of their solution. In hydrodynamics (the study of the motion of fluids) one must have recourse (other than in very simple cases) to numerical work which becomes so massive that only the fastest machines can provide useful approximations. In problems of weather prediction or of the circulation of the atmosphere, initial data also lacks the simplicity and symmetry that allow for the use of theoretical methods of analysis.
+
+**Nuclear: neutrons, fission, reactors** (chapter 5, pp. 38–39; records
+`q-stanislaw-ulam-science-computers-an-8c91ad41` and `q-stanislaw-ulam-science-computers-an-397f6e23`):
+
+> Let me point to the so-called Monte Carlo approach as an example of one of the methods that can lead to insight into the behavior of complicated systems. Essentially it consists of imitating physical processes on a computer by following a large but manageable number, replacing the trillions or more that are involved in the real process, by thousands of histories of the behavior of individual particles. This method is used, for instance, in calculations involving nuclear reactors, where neutrons, produced by fission, emerge with various velocities,
+> [39]
+> collide, scatter, and are absorbed or multiply according to probabilities which depend on the initial data. Thus, instead of considering all of the possible eventualities, one selects a number of chains of events which are then followed in a complicated tree of branching eventualities. By surveying the statistics of these “histories” one then gets a good idea of the behavior of the whole system. Without very fast computers, this elaborate procedure would be totally impractical.
+
+**Astrophysics: stellar genesis, multiple stars, novae** (chapter 5, pp. 39–40; the second passage is
+record `q-stanislaw-ulam-science-computers-an-63ca3231`):
+
+> 1. Of the visible stars, a high proportion are multiple – double, triple and more – held together by gravitational forces. The process of stellar genesis could perhaps explain this great frequency. Assuming a mass of gas of large dimensions, say on the scale of our entire planetary system, originating as a fluctuation in a perhaps larger mass, one could speculate as to how that mass would contract through gravity. It would be interesting to perform a great number of computations starting with different plausible hypotheses about the initial state of that gas, in order to evaluate the chance that the matter would contract to a single mass in amounts sufficient to produce a star, perhaps with a number of planets, as in the solar system, or that it would contract into a double or multiple system of comparable masses. A vast number of calculations would have to be performed to obtain meaningful statistics for this research.
+
+> 2. The behavior of a multiple star surrounded by a number of planet-like masses subject to mutual attractions is a classical problem of mechanics. One of the questions in such an *n*-body problem is: How often will there be physical collisions, that is to say, how often will two of the stars collide, or how often will a “planet” hit one of the stars of a double or triple system? A
+> [40]
+> number of such calculations could give an approximate idea of the frequency of such collisions and might possibly explain some of the nova stars, those stars which suddenly become exceedingly bright. There are a number of binary stars where novae are observed, sometimes periodically. After all, in our solar system there are periodic collisions of similar chains of meteorites with one member of the system, namely the earth. Of course these are very small bodies, but if there were much larger ones, we would perhaps occasionally observe the considerable brightening of one of the gravitating bodies of the system.
+
+> These and similar problems involve so many computations that they can only be performed with the help of very big computers.
+
+**Chemistry and biology: growth patterns, molecules, cells, evolution** (chapter 9, pp. 77–78, record
+`q-stanislaw-ulam-science-computers-an-206c3335`; then chapter 5, p. 41):
+
+> The simplest patterns observed, for example in crystals, are periodic and the properties of such have been studied mathematically very extensively. The rules which we shall employ will lead to much more complicated and in general non-periodic structures whose properties are more difficult to establish, despite the relative simplicity of our recursion relations. The objects defined in that way seem to be, so to say, intermediate in complexity between inorganic patterns like those of crystals and the more varied intricacies of organic molecules and structures. In fact, one of our aims here is to show, by admittedly somewhat artificial examples, an enormous variety of objects which may be obtained by means of rather simple inductive definitions and to throw a sidelight on the question of how much “information”
+> [78]
+> is necessary to describe the seemingly enormously elaborate structures of living objects.
+
+> A list of the advances in science which have only become possible by the use of computers would fill volumes. Let me list just a few examples of the often pioneering work done in the Institute's Applied Mathematics Department during the years of its existence. The electronic energy levels of helium-like atoms have been computed to very high accuracy. Numerical solutions have been obtained of the partial differential equations formulated by Laplace to describe ocean tides, and the solutions agreed remarkably well with observational data. In theoretical seismology, studies have been made of the propagation of seismic waves in a layered spherical earth. In terrestrial spectroscopy, calculations have been made of the periods of free vibrations of the earth on various postulated models of the earth's structure, and comparison with observations could then yield information about the interior of the globe. For the first time accurate numerical solutions of the complete Navier-Stokes equations have been made in fluid dynamics without any approximations or further assumptions. In numerical analysis, efficient methods were developed for the solution of complex differential systems. Biological processes were modeled on the molecular, cellular and population levels.
+
+> We have indicated how computers have made it possible to determine the structure of proteins and in many cases decipher the meaning of DNA codes. Soon, it may be possible to experiment with modifying, and even perhaps increasing, the speed of evolution.
+
+**Mathematics: the computer as an experimental instrument** (chapter 5, p. 40; the second sentence
+of the second passage is record `q-stanislaw-ulam-science-computers-an-ba0ecf57`; then chapter 18,
+p. 224):
+
+> In pure mathematics computers have already played a decisive role in certain problems of combinatorics, that is in the study of arrangements and patterns of systems. The famous four-color problem is a shining example. It had long been conjectured that any map drawn on a plane or on the surface of a sphere can be colored using not more than four colors so that countries having a common border will be colored differently. A few years ago, this conjecture was proved on a computer after the general problem had been reduced to one that only involved a finite number of possible standard configurations. The number of these, however, was so great that it took hundreds of hours of computer time to study them.
+
+> One could quote many instances of interesting work in pure mathematics, group theory or other areas of algebra in which experimental work has proved useful. The study of non-linear transformations or equations is one field of increasing importance, both in pure mathematics and in applications to physical problems, where heuristic work has already yielded new insights.
+
+> It was von Neumann's belief that computing machines would not only help solve existing problems but also open new perspectives in mathematics and physics. Obviously the machines could be used to test tentative theories by computations too laborious and too lengthy for manual methods. But, more important, they could provide the imaginative investigator with new “experimental” material which could suggest new theories.
+
+**Los Alamos and the scale of the computations** (chapter 18, pp. 223–224):
+
+> It was the problems of mathematical physics that arose at the Los Alamos Scientific Laboratory which created the need to plan massive computations on the new machines. The solution of one of these problems may require billions of elementary steps: additions, multiplications, and so on. Beyond the mere bulk
+> [224]
+> of repetitive computations the problem may involve combinations and logical operations of considerable complexity. The program of calculation must be prepared in advance, first in a general form. This is done by means of a flow diagram, which is then elaborated by a detailed set of instructions — a “code.” This very scheme of a flow diagram and a code is due to von Neumann, along with many other concepts now commonplace in the art of computing.
 
 Martin Gardner, preface to the same book, p. viii (record
 `q-martin-gardner-preface-to-stanislaw-5bb40637`):
