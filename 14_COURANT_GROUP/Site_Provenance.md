@@ -96,6 +96,46 @@ with its provenance record beside it.
 > that in spite of the undecidability of the Entscheidungsproblem, the mental work of a
 > mathematician concerning Yes-or-No questions could be completely replaced by a machine."
 
+The letter's opening, from the same file:
+
+> "With the greatest sorrow I have learned of your illness. The news came to me as quite
+> unexpected. Morgen-stern already last summer told me of a bout of weakness you once had, but at
+> that time he thought that this was not of any greater significance. As I hear, in the last
+> months you have undergone a radical treatment and I am happy that this treatment was successful
+> as desired, and that you are now doing better."
+
+What von Neumann was working on then. His bibliography in Ulam's obituary
+([`../02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md`](../02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md)),
+entry 124:
+
+> "1956 **124\.** *Probabilistic logics and the synthesis of reliable organisms from unreliable
+> components.* "Automata Studies," edited by C. E. Shannon and J. McCarthy, Princeton University
+> Press, 1956, pp. 43-98."
+
+Claude E. Shannon, "Von Neumann's Contributions to Automata Theory," *Bulletin of the American
+Mathematical Society* 64 (1958), p. 124 (record `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4`):
+
+> "Involving a mixture of pure and applied mathematics as well as other sciences, automata theory
+> was an ideal field for von Neumann's wide-ranging intellect. He brought to it many new insights
+> and opened up at least two new directions of research. It is unfortunate that he was unable to
+> complete the work he had in progress, some of which is in the form of rough notes or unedited
+> lectures, and for some of which no record exists apart from his colleagues' memories of casual
+> conversations."
+
+#### The author's reading of the 1956 letter, to the more-probable-than-not standard
+
+His statement of 28 September 2026, to the assistant compiling this sheet, verbatim:
+
+> "Since you included the Godel to von Neumann letter, the context relevant to the reading is
+> that taken together with the 1931 letter it is a reply to it and not a new topic - one last
+> letter written to a friend who he knows is dying (the reading of the formal German tone of the
+> opening would suggest this is what the polite phrasing suggests). As a reply, the context and
+> question is whether it is a concession "that in spite of the undecidability of the
+> Entscheidungsproblem, the mental work of a mathematician concerning Yes-or-No questions could
+> be completely replaced by a machine." because in 1956 as Shannon notes, von Neumann's friends
+> know he is working AI ... under a more probable than not standard the question is whether Godel
+> is stating "You might have been right in 1931, I thought I tell you that while I still can.""
+
 ### Ulam and the Monte Carlo method
 
 Ulam, *Science, Computers, and People*, ch. 5, pp. 38–39
