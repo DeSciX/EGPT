@@ -254,6 +254,28 @@ J. J. O'Connor and E. F. Robertson, MacTutor History of Mathematics (record
 > "Rota was also a consultant with the Rand Corporation from 1966 to 1971 and with the Brookhaven
 > National Laboratory from 1969 to 1973."
 
+The same CV, under its heading "Security Clearances:" (lines 252–256):
+
+> Security Clearances:
+>
+> Top Secret  Clearance (Air Force) 1969-1971.
+> Q - Clearance (DOE), 1966-.
+> SI - Clearance (NSA), 1981-.
+
+and under "Honors:" (line 79) and "Prizes:" (line 69):
+
+> Director's Office Fellow, Los Alamos National Laboratory, 1971-.
+
+> Medal for Distinguished Service, National Security Agency, 1992.
+
+The report in the trial record on the laboratory's standing
+([`../01_TRIAL/EXHIBIT_A_report.md`](../01_TRIAL/EXHIBIT_A_report.md):766–769):
+
+> "Brookhaven National Laboratory is a Department of Energy laboratory. Its founding purpose was
+> Atomic Energy Commission research; its modern computational programme is built on Monte Carlo and
+> lattice gauge theory, as its own 2005 retrospective states. Los Alamos is the other Atomic Energy
+> Commission laboratory of the Super period."
+
 The report in the trial record, [`../01_TRIAL/EXHIBIT_A_report.md`](../01_TRIAL/EXHIBIT_A_report.md),
 section "Monte Carlo becomes the discrete lattice, at Brookhaven" (lines 355–384), with its
 endnotes 97 to 102 (lines 1271–1282), which carry the published sources:
