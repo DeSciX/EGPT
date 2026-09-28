@@ -4,13 +4,13 @@
 
 **Author: Essam Abadir**
 
-When my daughter, Jolie, was with me over Thanksgiving break from her sophomore year in college, I found myself wistfully recalling her junior year in high school. That was the year I served as her physics, calculus, and computer science teacher. If you ask me, I'd tell you I did such a good job that she skipped a grade and went to college a year early. If you ask her, she might tell you the experience was so confusing that she couldn't fathom doing it again.
+When my daughter, Jolie, was with me over Thanksgiving break from her sophomore year in college, I found myself wistfully recalling her junior year in high school. That was the year I served as her physics, calculus, and computer science teacher. If you ask me, I'd tell you I did such a good job that she was able to skip a grade and go to college a year early. If you ask her she might describe the inspiration to leave differently. I will tell it the way I like to remember it.
 
 "Do you remember 2022, habibti?" I asked, sitting across from her at the same kitchen table where we spent countless hours that year. The table is clearer now, no longer buried under piles of graph paper and checkerboards, but the memory is vivid.
 
-"I remember," she smiled, tracing a grain in the wood. "I remember because you kept showing me videos about the fundamental theorem of calculus and I couldn't make sense of them or write them down. I remember because after that you didn't actually teach me calculus."
+"I remember," she smiled, tracing a grain in the wood. "I remember because you kept showing me videos about the fundamental theorem of calculus in and I couldn't make sense of the equations or write them down. I remember because after that you didn't actually teach me calculus."
 
-I winced. "For both of us. The dyslexia and dysgraphia I passed to you made those floating symbols impossible. We couldn't trust them. We needed something we could touch, something we could count. So, I threw away the symbols and got out the checkerboard."
+I winced. "It's a problem for both of us. The dyslexia and dysgraphia I passed to you made those floating symbols impossible. We couldn't trust them. We needed something we could touch, something we could count. So, I threw away the symbols and got out the checkerboard."
 
 "And the graph paper," she added.
 
@@ -18,7 +18,7 @@ I winced. "For both of us. The dyslexia and dysgraphia I passed to you made thos
 
 "'Are we doing your Electronic Graph Paper Theory?'" she smiled. "E-G-P-T. Like Egypt. Like us."
 
-"That was the moment," I said, leaning forward. "That was when I realized we weren't just simplifying things for school. We were describing the universe. And now, I can finally explain to you what we actually built. It turns out, you were right. Physics, Calculus, and Computer Science? They aren't three different subjects. They are just three different languages for talking about the exact same thing: **Moving on the Grid.**"
+"That was the moment," I said, leaning forward. "That was when I realized we weren't just simplifying things for school. We were describing the universe. And now, I can finally explain to you what we actually built. Physics, Calculus, and Computer Science? They aren't three different subjects. They are just three different languages for talking about the exact same thing: **Moving on the Grid.**"
 
 I took a breath. "I'm about to publish the EGPT proof of this grand unified theory. Can I tell the story of EGPT to the world as if I were teaching it to you again? Can I tell them our story?"
 
