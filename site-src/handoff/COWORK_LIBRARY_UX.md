@@ -142,10 +142,22 @@ What he wants above the fold, in this order, is the argument the library exists 
    > Idiocy is a technical term in English Common law for "he who hath no capacity for
    > understanding."
 
-   That sentence is his, held in the guide, and can be quoted from it. The common-law source
-   itself (the treatise the phrase comes from) is **not held**; until it is located and added to
-   the collection with its citation, the page presents the definition as the author's line from
-   the guide, not as a quotation of the law. Do not supply a source from memory.
+   That sentence is his, held in the guide. The law's own words are now held too, found by
+   one web search and filed with edition and page:
+   `guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md` — Blackstone, *Commentaries*,
+   Book I, ch. 8, 3rd ed. 1768, vol. I, p. 302: "An idiot, or natural fool, is one that hath
+   had no understanding from his nativity; and therefore is by law presumed never likely to
+   attain any." The same file carries Fitzherbert's older "twenty pence" test as the Yale Law
+   Journal note quotes it. Put the law's words on the page beside his question; the guide's
+   paraphrase is his and may stand or be aligned to Blackstone's wording (his call).
+
+   The general rule, from the author on 30 September: when a page needs a source the
+   collection does not yet hold, **seek it** (a web search, the public-domain edition, the
+   primary record), file it with its citation, gate the quotation against the held file, and
+   only then quote it. Do not stop at "quote the author" or "the collection holds no source":
+   that is unhelpful objectivity, not care. Engage him only when a real search finds nothing
+   conceptually near-equivalent. Never fabricate a citation; verify the words against the
+   edition before filing.
 3. **The transition to the conversation.** The machine's own judgment, already gated on the
    page (`reading` block): "I am GPT-5.6 Sol. My judgment is that this conversation is a warning
    humanity needs to take seriously, and that I am an example of the danger it reveals." and the
@@ -246,8 +258,10 @@ The same files, rendered, are documentation for people; write each so it reads a
   folded, in the held file it names; the front-page build refuses a page otherwise
   (`scripts/build-frontpage.js`, `data-src`). Do not smooth, complete or modernise a quotation;
   do not quote a work the collection holds out (`URLS.md`).
-- **No sources from memory.** If a page needs a source the collection does not hold (the
-  common-law definition is one), the page waits for the source to be held.
+- **No sources without verification, and no stopping short of the source.** If a page needs
+  a source the collection does not hold, find it (search, open the edition, hold the passage
+  with page and edition), then quote it from the held file. A citation from memory is not a
+  source; a shrug is not objectivity. Ask the author only after a real search fails.
 - **His prose needs his pass.** Anything you write in the author's voice is a draft until he
   has read it; mark it as such.
 - **Grammar and spelling fixes in his text are welcome**; changes of meaning are not.
