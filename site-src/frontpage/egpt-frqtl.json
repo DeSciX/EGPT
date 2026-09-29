@@ -1,5 +1,5 @@
 {
-  "_purpose": "The egpt-frqtl app's front page (frqtl.com → egpt-frqtl.descix.net): CEO words recorded Unkamon d3d9a7c ('promote the Impossible Things, Running first… users promoting the simulations or building new ones… in order to gain tokens') under 055c907 (no SDK CTA; one alpha line). The IDE lives at app.html on the same site; the root forwards any query-string load there.",
+  "_purpose": "The egpt-frqtl app's front page (frqtl.com → egpt-frqtl.descix.net): CEO words recorded Unkamon d3d9a7c ('promote the Impossible Things, Running first… users promoting the simulations or building new ones… in order to gain tokens') under 055c907 (no SDK CTA; one alpha line). The IDE lives at app.html on the same site; the root forwards any query-string load there. Named scene tiles carry the verified deep links (STUDIO walkthroughs, GYM experiments, the FAT notebook); generic Open STUDIO/FAT buttons stay bare.",
   "title": "FRQTL — Impossible things, running",
   "description": "FRQTL, the physics engine that doesn't know any physics equations: the double slit, a sun, a mirror loop, a blackbody, a half-adder, a big bang, an atom, all computed live in your tab. Open STUDIO.",
   "brand": {
@@ -89,6 +89,44 @@
           "href=\"https://egpt-frqtl.descix.net/?preset=ide\" target=\"_blank\" rel=\"noopener\"",
           "href=\"app.html?preset=ide\""
         ]
+      ],
+      "anchors": [
+        {
+          "match": "<b>Double slit</b>",
+          "href": "app.html?preset=author&walkthrough=dse-tunnel-rebuild&mode=3d"
+        },
+        {
+          "match": "<b>A sun</b>",
+          "href": "app.html?preset=author&walkthrough=r8-sun"
+        },
+        {
+          "match": "<b>Infinite mirror</b>",
+          "href": "app.html?preset=author&walkthrough=cl1d-mirror-route"
+        },
+        {
+          "match": "<b>A pool</b>",
+          "href": "app.html?preset=author&walkthrough=r5-fountain-pool"
+        },
+        {
+          "match": "<b>Blackbody</b>",
+          "href": "app.html?preset=compare&experiment=blackbody"
+        },
+        {
+          "match": "<b>Circuit SAT</b>",
+          "href": "app.html?preset=compare&experiment=circuit-sat"
+        },
+        {
+          "match": "<b>Big Bang</b>",
+          "href": "app.html?preset=compare&experiment=big-bang"
+        },
+        {
+          "match": "<b>Atomic model</b>",
+          "href": "app.html?preset=compare&experiment=atomic-model"
+        },
+        {
+          "match": "<b>3D Collisions Lab</b>",
+          "href": "app.html?preset=ide&notebook=gallery-collision-matrix-3d"
+        }
       ]
     },
     {
@@ -127,6 +165,12 @@
           "href=\"https://egpt-frqtl.descix.net/?preset=ide\" target=\"_blank\" rel=\"noopener\"",
           "href=\"app.html?preset=ide\""
         ]
+      ],
+      "anchors": [
+        {
+          "match": "Open ROSETTA",
+          "href": "app.html?preset=codec&module=qft-order-finding"
+        }
       ]
     },
     {

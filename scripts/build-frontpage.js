@@ -159,10 +159,22 @@ function gateFragment(html, file) {
   }
   return html;
 }
+// anchors: [{match, href}] — the one <a> in the section whose inner html contains `match` gets
+// `href` (a relative href drops target/rel: it stays on this site). 0 or 2+ matches fail.
+function reanchor(html, anchors) {
+  for (const { match, href } of anchors || []) {
+    const hits = [...html.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/g)].filter(m => m[0].includes(match));
+    if (hits.length !== 1) die(`anchor match "${match}" hits ${hits.length} anchors (needs exactly 1)`);
+    let a = hits[0][0].replace(/ href="[^"]*"/, ` href="${href}"`);
+    if (!/^https?:/.test(href)) a = a.replace(/ target="_blank"/, '').replace(/ rel="noopener"/, '');
+    html = html.replace(hits[0][0], a);
+  }
+  return html;
+}
 const body_sections = spec.sections.map(s => {
   if (s.use) {
     if (!sections[s.use]) die(`template has no section "${s.use}" (has: ${Object.keys(sections).join(', ')})`);
-    return rewrite(rewrite(sections[s.use], spec.links), s.links);
+    return reanchor(rewrite(rewrite(sections[s.use], spec.links), s.links), s.anchors);
   }
   if (s.file) {
     const p = path.join(SRC, s.file);
