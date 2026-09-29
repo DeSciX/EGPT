@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 806 files, 148836413 bytes.
+# 806 files, 148838651 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -738,13 +738,13 @@ d3fd1319cc6388b4f1334b052941af08f7c54e5ff6b35d9002a57e97f051d982  plugins/frqtl/
 6d0ffaa0c2315d9b01c239b70ec70fedaeb5119075f3d4dd5b3633c08c4e6d4e  plugins/godsworld/.claude-plugin/plugin.json
 c024619e72eb502602445d1902f908471d9777dd931bcf9df22b75ce5e2d80fa  plugins/godsworld/.mcp.json
 67a582df7fd695606a5622991a711aff8dc4fe4d8c75a3c86c45e29a37d1ef88  plugins/godsworld/skills/godsworld/SKILL.md
-012b1e634ffc50f3ec3c1310ef46bc9966d677c349811c75baaebb32a41a7417  scripts/build-frontpage.js
+6071d1476f43a7aba1503d57f2a6412b489278d9876ac046765692ac6f99d2bd  scripts/build-frontpage.js
 4ebd53e5a773434161c2582f6460cc9a2e3d91acce1091f149671dbfa36e1c6b  scripts/build-singularity-page.js
 0bfbeca2944da704f23b99d6329d2daa2a1ee8dddf45567ec419469a73ada6fe  scripts/generate-site.js
 c46fa09212171fc2db72f909ec25303f904dd72b5d17e9b7b49253e5cfa25587  scripts/render.mjs
 fce868e9c3b2a8c9e7526c64fa21d73247b9ab507216a7b250fdf740de7850ce  site-src/_meta.json
 0bb89b5d0dc23f22e6076433eb37e980163f9609391a47dc7bfc7a9184502b9e  site-src/frontpage/daita-economy.json
-caa99d6f3d4de211d8d140cc2117caa9e54c1d3f7606e60ca1a46951e86d641c  site-src/frontpage/egpt-frqtl.json
+8e10f5d31e32ae8d591f2b19419b6478ef0f3863a0054a64139ccd9da13cf151  site-src/frontpage/egpt-frqtl.json
 48be8ff57300220de0eefadafced424e7bc592d07ebe695f8d9aedbf0b109861  site-src/frontpage/egpt-frqtl/earn.html
 6bb1e5f3f7b63a004575baa515685e845e84654a3710689a9629d6fea8cd5eab  site-src/frontpage/egpt-frqtl/licence.html
 e3d97320282a18b23a7ed933d6942f84756fa38ebe00d92b69a0b1f9dc592d04  site-src/frontpage/egpt-godsworld.json
