@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 783 files, 146836390 bytes.
+# 783 files, 146838959 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -673,8 +673,8 @@ a0da6a81d4f21b54910710af15b0574e437270ea97279b28da58c63141543d0d  guide/images/b
 126783a3e334dda39807de963c04ca6f2e1c1a3f320c229e93481e6a4dd436df  guide/images/blackbody_gym_canvas.png
 1168ba9ab6249eb4ef3ae404974ce9514c0d50d99a28e3134d5f264b96163488  guide/images/circuit_sat.png
 75dc03a12b7eff00458c3de3cb1f30a3881267efc4ec9890b8fc00636ef569aa  guide/images/circuit_sat_canvas.png
-c4bed33d311d5708de1c4d026b28be5e9df9d3d234dcc7f67d48e7eebea30fe0  guide/images/collisions_3d.png
-ea08634850b3d13b187411cb498727eda6c3ed8e9536b5b6162a42661943bbd0  guide/images/collisions_3d_canvas.png
+4678ee17753473ee1263cb32fb3cc4a5622dc423b945180f0bdead367a8fcb25  guide/images/collisions_3d.png
+aa16cd90d9f7935e909858982dd61d057a1a26658026e11c9586da356cb5ac6f  guide/images/collisions_3d_canvas.png
 75057263648916faa9530e69415e0f125a77cfdfd034c5603f7c9de54fb10653  guide/images/frqtl-studio_3D_DSE.png
 3102ccc8824af58e20ac2b977707aee788969eed6534e13bbb726aafecc326bf  guide/images/infinite_mirror_1.png
 59a7ca57ada425e8bf93def1ab960cc0a548268df60473f932f9617bc379ad20  guide/images/infinite_mirror_3.png
