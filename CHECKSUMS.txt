@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 769 files, 145338611 bytes.
+# 769 files, 145338822 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -728,7 +728,7 @@ c024619e72eb502602445d1902f908471d9777dd931bcf9df22b75ce5e2d80fa  plugins/godswo
 e417f8addfaea92d64f1e6990c48af68711324e6c9eaf48f35d018775d1b1943  scripts/build-singularity-page.js
 d1c49a5e523642d69d2d93df5a3fe50728167a7a910684c209ba62f6f973dcf0  scripts/generate-site.js
 c46fa09212171fc2db72f909ec25303f904dd72b5d17e9b7b49253e5cfa25587  scripts/render.mjs
-ccbc7550b5c4d6253f595374fe96494a1b2ad851beb1df7105b0facfe9765848  site-src/_meta.json
+fce868e9c3b2a8c9e7526c64fa21d73247b9ab507216a7b250fdf740de7850ce  site-src/_meta.json
 174ed263f89d2de7d97ee1b3d0753f01900440aa131f4881e90ce7aac592dd55  site-src/modules/00_OUTPUTS.json
 4934f7a3983ed9af7aa254df9e73cc7202858adc3b1be615d657c6b3d1ee80d2  site-src/modules/01_TRIAL.json
 a271215b9d74058502bcdd5277cca488b63dbf405ddc3dbdc7f4aec8602b6fc3  site-src/modules/02_VON_NEUMANN.json
