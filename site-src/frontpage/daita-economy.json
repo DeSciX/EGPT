@@ -2,12 +2,53 @@
   "_purpose": "The daita-economy app: DeSciX.net's anonymous home (CEO words recorded Unkamon 6f846aa: 'largely be the courantgroup content (which we can reuse now for a placeholder/test) - but we need a login button that shows powch and then on login pingpong redirects to the dashboard/platform PWA'). Placeholder now: Cowork's Courant page verbatim from the pinned template commit, plus the login component. The DeSciX.net focus (the flywheel first, the pools, pointers to the four sites) replaces the placeholder content later.",
   "title": "DeSciX — Courant Group (placeholder front page)",
   "description": "DeSciX front page, placeholder: the Courant Group page. Log in with Powch to reach the platform.",
-  "brand": "template", "nav": "template", "hero": "template", "footer": "template",
+  "brand": "template",
+  "nav": "template",
+  "hero": "template",
+  "footer": "template",
   "login": true,
   "sections": [
-    { "use": "gapi" }, { "use": "maxi" }, { "use": "proof" }, { "use": "technology" }, { "use": "products" },
-    { "use": "opencore" }, { "use": "media" }, { "use": "heritage" }, { "use": "patent" }, { "use": "licensing" }, { "use": "request" }
+    {
+      "use": "gapi"
+    },
+    {
+      "use": "maxi"
+    },
+    {
+      "use": "proof"
+    },
+    {
+      "use": "technology"
+    },
+    {
+      "use": "products"
+    },
+    {
+      "use": "opencore"
+    },
+    {
+      "use": "media"
+    },
+    {
+      "use": "heritage"
+    },
+    {
+      "use": "patent"
+    },
+    {
+      "use": "licensing"
+    },
+    {
+      "use": "request"
+    }
   ],
   "links": [],
-  "scripts": { "codesite": true, "sdk_from": "../../godsworld-dev/site/DeSciXAppSDK.js", "extra": ["login.js"] }
+  "scripts": {
+    "codesite": true,
+    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js",
+    "extra": [
+      "login.js"
+    ],
+    "template_scripts": true
+  }
 }

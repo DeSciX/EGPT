@@ -173,16 +173,15 @@ const body_sections = spec.sections.map(s => {
 });
 
 // ---------------------------------------------------------------- scripts
+// Behind the DeSciX App Shell this page takes the full CodeSite view (no chat panel). The bus is
+// reached through the generated app-side SDK (DeSciX.ready() resolves the frame hop; never a
+// hand-computed window.parent); standalone, ready() resolves without a shell and nothing changes.
 const CODESITE = `(function(){
-  // Behind the DeSciX App Shell this page takes the full CodeSite view (no chat panel); outside
-  // the shell there is no parent bus, every failure is swallowed and nothing changes.
-  var tries=0;
-  function codeSite(){
-    try{var D=window.parent&&window.parent!==window&&window.parent.DeSciX;
-      if(D&&D.view&&typeof D.view.set==='function'){D.view.set('CodeSite');return;}}catch(e){}
-    if(++tries<25)setTimeout(codeSite,200);
-  }
-  codeSite();
+  if(!(window.DeSciX&&typeof DeSciX.ready==='function'))return;
+  DeSciX.ready().then(function(r){
+    if(!r||r.mode!=='shell')return;
+    var v=DeSciX.view; if(v&&typeof v.set==='function')v.set('CodeSite');
+  });
 })();`;
 function forwarder() {
   const f = spec.scripts.forward;
@@ -200,7 +199,11 @@ if (spec.scripts.sdk_from) {
   sdk = { name: path.basename(p), data: fs.readFileSync(p) };
   if (!sdk.data.toString('utf8').includes('GENERATED FILE')) die(`${p} is not the generated DeSciXAppSDK.js`);
 }
-const scripts = [spec.scripts.codesite ? CODESITE : '', ...(spec.scripts.extra || []).map(f => {
+if (spec.scripts.codesite && !sdk) die('scripts.codesite needs scripts.sdk_from: the CodeSite call goes through the SDK');
+// the template's own inline scripts (its form and wallet mock), when the spec keeps its sections verbatim
+const templateScripts = spec.scripts.template_scripts ? [...body.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1].trim()) : [];
+if (spec.scripts.template_scripts && !templateScripts.length) die('template_scripts requested but the template has no inline script');
+const scripts = [...templateScripts, spec.scripts.codesite ? CODESITE : '', ...(spec.scripts.extra || []).map(f => {
   const p = path.join(SRC, f); if (!fs.existsSync(p)) die(`script not found: ${f}`); return fs.readFileSync(p, 'utf8');
 })].filter(Boolean);
 
@@ -231,7 +234,7 @@ ${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script
 `;
 
 // every library deep link on the page, reused sections included, names a file tracked at HEAD
-for (const m of html.matchAll(/href="library\.html#([^"]+)"/g)) {
+for (const m of html.matchAll(/href="(?:library\.html|https:\/\/egpt\.descix\.net\/)#([^"]+)"/g)) {
   const p = decodeURIComponent(m[1]).split('#')[0];
   if (!tracked.has(p)) die(`deep link to a path not tracked at HEAD: ${p}`);
 }

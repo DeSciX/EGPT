@@ -166,7 +166,8 @@
     "codesite": true,
     "forward": {
       "hash_to": "library.html"
-    }
+    },
+    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js"
   },
   "self_host": "https://egpt.descix.net"
 }

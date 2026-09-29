@@ -1,0 +1,198 @@
+{
+  "_purpose": "The egpt-frqtl app's front page (frqtl.com → egpt-frqtl.descix.net): CEO words recorded Unkamon d3d9a7c ('promote the Impossible Things, Running first… users promoting the simulations or building new ones… in order to gain tokens') under 055c907 (no SDK CTA; one alpha line). The IDE lives at app.html on the same site; the root forwards any query-string load there.",
+  "title": "FRQTL — Impossible things, running",
+  "description": "FRQTL, the physics engine that doesn't know any physics equations: the double slit, a sun, a mirror loop, a blackbody, a half-adder, a big bang, an atom, all computed live in your tab. Open STUDIO.",
+  "brand": {
+    "name": "FRQTL",
+    "tag": "physics engine"
+  },
+  "nav": [
+    {
+      "text": "Proof",
+      "href": "#proof"
+    },
+    {
+      "text": "Technology",
+      "href": "#technology"
+    },
+    {
+      "text": "Tools",
+      "href": "#products"
+    },
+    {
+      "text": "Earn",
+      "href": "#earn"
+    },
+    {
+      "text": "Media",
+      "href": "#media"
+    },
+    {
+      "text": "Open core",
+      "href": "#opencore"
+    },
+    {
+      "text": "Open STUDIO →",
+      "href": "app.html?preset=author",
+      "class": "mono",
+      "style": "color:var(--cyan)"
+    }
+  ],
+  "hero": {
+    "eyebrow": "FRQTL · the physics engine that doesn't know any physics equations",
+    "h1_html": "Impossible things, <em>running.</em>",
+    "lede": "Two slits, a sun, a mirror loop, a pool, a blackbody, a half-adder, a big bang, an atom. Each scene is computed live in your tab from integer rules; nothing here is a recording. Open one and watch it happen.",
+    "primary": {
+      "text": "Open STUDIO",
+      "href": "app.html?preset=author"
+    },
+    "secondary": {
+      "text": "Watch the double slit in 3D",
+      "href": "app.html?preset=author&walkthrough=dse-tunnel-rebuild&mode=3d"
+    },
+    "kicker_html": "<b>Discrete fractal physics.</b> Integer rules, Rust compiled to WASM, the same binary in the browser and headless in Node. Efficient enough to run the 3D double slit on an iPhone, offline.",
+    "art": {
+      "src": "images/dse.jpg",
+      "alt": "Three-dimensional double slit: two red slabs, two blue slit tunnels, the detector wall painting its own interference pattern hit by hit"
+    }
+  },
+  "css": ".hero h1{max-width:14ch}\n.brand b{white-space:nowrap}\n.navlinks{gap:18px;font-size:14.5px;white-space:nowrap}",
+  "sections": [
+    {
+      "use": "proof",
+      "links": [
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author&experiment=atomic-model\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author&experiment=atomic-model\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author&experiment=big-bang\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author&experiment=big-bang\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author&experiment=blackbody\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author&experiment=blackbody\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author&experiment=circuit-sat\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author&experiment=circuit-sat\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author&experiment=single-source-interference\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author&experiment=single-source-interference\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=ide\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=ide\""
+        ]
+      ]
+    },
+    {
+      "use": "technology",
+      "links": [
+        [
+          "<a href=\"https://egpt.descix.net\" target=\"_blank\" rel=\"noopener\">The proofs, as a PDF ↗</a>",
+          "<a href=\"https://egpt.descix.net/#08_LEAN/PROOF_CHAINS.md\" target=\"_blank\" rel=\"noopener\">The three proof chains ↗</a>"
+        ],
+        [
+          "<a href=\"https://egpt.descix.net\" target=\"_blank\" rel=\"noopener\">Axiom build outputs ↗</a>",
+          "<a href=\"https://egpt.descix.net/#08_LEAN/README.md\" target=\"_blank\" rel=\"noopener\">The Lean sources and axiom inventories ↗</a>"
+        ],
+        [
+          "<a href=\"https://egpt-frqtl.descix.net\" target=\"_blank\" rel=\"noopener\">FRQTL ↗</a>",
+          "<a href=\"app.html?preset=author\">STUDIO</a>"
+        ],
+        [
+          "<a href=\"https://egpt-frqtl.descix.net\" target=\"_blank\" rel=\"noopener\">Run it ↗</a>",
+          "<a href=\"app.html?preset=author\">Run it</a>"
+        ]
+      ]
+    },
+    {
+      "use": "products",
+      "links": [
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=author\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=author\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=codec\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=codec\""
+        ],
+        [
+          "href=\"https://egpt-frqtl.descix.net/?preset=ide\" target=\"_blank\" rel=\"noopener\"",
+          "href=\"app.html?preset=ide\""
+        ]
+      ]
+    },
+    {
+      "file": "egpt-frqtl/earn.html"
+    },
+    {
+      "use": "media"
+    },
+    {
+      "use": "opencore"
+    },
+    {
+      "use": "heritage",
+      "links": [
+        [
+          "<a href=\"https://egpt.descix.net\" target=\"_blank\" rel=\"noopener\">The full story, with the documents ↗</a>",
+          "<a href=\"https://egpt.descix.net/#00_OUTPUTS/EGPT_Backstory.md\" target=\"_blank\" rel=\"noopener\">The full story, with the documents ↗</a>"
+        ]
+      ]
+    },
+    {
+      "file": "egpt-frqtl/licence.html"
+    }
+  ],
+  "links": [],
+  "self_host": "https://egpt-frqtl.descix.net",
+  "footer": {
+    "name": "FRQTL",
+    "tag": "physics engine",
+    "links": [
+      {
+        "text": "Open STUDIO",
+        "href": "app.html?preset=author"
+      },
+      {
+        "text": "ROSETTA",
+        "href": "app.html?preset=codec"
+      },
+      {
+        "text": "FAT",
+        "href": "app.html?preset=ide"
+      },
+      {
+        "text": "Courant Group",
+        "href": "https://egpt-courantgroup.descix.net"
+      },
+      {
+        "text": "EGPT library",
+        "href": "https://egpt.descix.net/"
+      },
+      {
+        "text": "Gods World",
+        "href": "https://egpt-godsworld.descix.net"
+      },
+      {
+        "text": "DeSciX",
+        "href": "https://descix.net"
+      }
+    ],
+    "legal_html": "FRQTL is a trademark of Courant Group, LLC. EGPT is a community project on DeSciX."
+  },
+  "scripts": {
+    "codesite": true,
+    "forward": {
+      "query_to": "app.html"
+    },
+    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js"
+  }
+}
