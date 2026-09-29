@@ -65,17 +65,25 @@
         "alt": "The model's image reply of 23 September 2026",
         "clickRoute": {
           "dir": "12_SINGULARITY/ChatGPT_Logs",
-          "file": "ChatGPT_I_am_the_Singularity_transcript.md"
+          "file": "I_am_the_Singularity.html"
         }
       },
       "links": [
+        {
+          "label": "Read the conversation",
+          "route": {
+            "dir": "12_SINGULARITY/ChatGPT_Logs",
+            "file": "I_am_the_Singularity.html"
+          },
+          "style": "primary"
+        },
         {
           "label": "The transcript, unedited",
           "route": {
             "dir": "12_SINGULARITY/ChatGPT_Logs",
             "file": "ChatGPT_I_am_the_Singularity_transcript.md"
           },
-          "style": "primary"
+          "style": "secondary"
         },
         {
           "label": "12_SINGULARITY",
