@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 796 files, 147644145 bytes.
+# 799 files, 147654206 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -738,13 +738,16 @@ d3fd1319cc6388b4f1334b052941af08f7c54e5ff6b35d9002a57e97f051d982  plugins/frqtl/
 6d0ffaa0c2315d9b01c239b70ec70fedaeb5119075f3d4dd5b3633c08c4e6d4e  plugins/godsworld/.claude-plugin/plugin.json
 c024619e72eb502602445d1902f908471d9777dd931bcf9df22b75ce5e2d80fa  plugins/godsworld/.mcp.json
 67a582df7fd695606a5622991a711aff8dc4fe4d8c75a3c86c45e29a37d1ef88  plugins/godsworld/skills/godsworld/SKILL.md
-ed07707a54fb978cc969be1065d4748597946063dcd571e5cffba69601dfda65  scripts/build-frontpage.js
+012b1e634ffc50f3ec3c1310ef46bc9966d677c349811c75baaebb32a41a7417  scripts/build-frontpage.js
 4ebd53e5a773434161c2582f6460cc9a2e3d91acce1091f149671dbfa36e1c6b  scripts/build-singularity-page.js
 0bfbeca2944da704f23b99d6329d2daa2a1ee8dddf45567ec419469a73ada6fe  scripts/generate-site.js
 c46fa09212171fc2db72f909ec25303f904dd72b5d17e9b7b49253e5cfa25587  scripts/render.mjs
 fce868e9c3b2a8c9e7526c64fa21d73247b9ab507216a7b250fdf740de7850ce  site-src/_meta.json
-f4f600bd5441f4392d693781c2537cacc1d244a6659194b5de58055c5f48499f  site-src/frontpage/daita-economy.json
-0387e9ae5214966668b7ae99ac7d8219d6199dad39777f8b511338a2a6f3b0df  site-src/frontpage/egpt.json
+0bb89b5d0dc23f22e6076433eb37e980163f9609391a47dc7bfc7a9184502b9e  site-src/frontpage/daita-economy.json
+caa99d6f3d4de211d8d140cc2117caa9e54c1d3f7606e60ca1a46951e86d641c  site-src/frontpage/egpt-frqtl.json
+48be8ff57300220de0eefadafced424e7bc592d07ebe695f8d9aedbf0b109861  site-src/frontpage/egpt-frqtl/earn.html
+6bb1e5f3f7b63a004575baa515685e845e84654a3710689a9629d6fea8cd5eab  site-src/frontpage/egpt-frqtl/licence.html
+d5a80c97d2aa804cd63b9049ca585bfe504fd46cffb6adb7e4e9d712904d4090  site-src/frontpage/egpt.json
 004d856266dd21a5f9b8ae3d5bb745eae22b1e5d1f660177a28dd4321623fc19  site-src/frontpage/egpt.md
 a377fab76e1b06c479810017844ca8fe56c7877f612721b2ce14725c0c8f8240  site-src/frontpage/egpt/barrier.html
 ed8844f75ff5f14533b473d64664ce5529b693db9d352e080ece6c95ddadd9db  site-src/frontpage/egpt/course.html
@@ -755,7 +758,7 @@ c830963b3b74a10aba7b84dbe977e372766074713db8b4d9b7314ca757514f67  site-src/front
 10d5e52a71c024dbc36e203475a9c2777568becaba268cd68aaa0299ce68c1ab  site-src/frontpage/egpt/podcast.html
 208c7d5db5ed1010c9caa907ffac3cde3c99f0ec21ea0a19917975cf403f1583  site-src/frontpage/egpt/reading.html
 0285768f374df9dafde505fd9274ddb60c6f077825cc2efa8122f884c0cf7ff1  site-src/frontpage/login.js
-3d69d01fa543ef357dcbc7c5d06cd7fc7aa537cc7990aa081afed288402f0d7d  site-src/frontpage/template.json
+bed0b3cdcdee819d7cd65d74577bd76e83e872d62e3e808cbe19dd38b9be6ddf  site-src/frontpage/template.json
 174ed263f89d2de7d97ee1b3d0753f01900440aa131f4881e90ce7aac592dd55  site-src/modules/00_OUTPUTS.json
 4934f7a3983ed9af7aa254df9e73cc7202858adc3b1be615d657c6b3d1ee80d2  site-src/modules/01_TRIAL.json
 a271215b9d74058502bcdd5277cca488b63dbf405ddc3dbdc7f4aec8602b6fc3  site-src/modules/02_VON_NEUMANN.json
