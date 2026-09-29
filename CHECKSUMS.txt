@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 806 files, 148838651 bytes.
+# 807 files, 148841732 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -686,6 +686,7 @@ f6f5e8343d2d94171d6aa0a2b36eb38f9db5715d596ee00c25f02733c8ad03cd  guide/images/s
 88bee6fdd115bb10d9a4308ff956991cb1b0a0a37098b0f378b63d7385c5abfc  guide/images/sun_particles.png
 d18de98e10909fcc645290345ff9e45c09096857680d5cfa0df477d97b50d5f1  guide/make-money.md
 067fad02bd22c263a86a54fd71029142c1b8b07e7ec676b5d740b701cad5dc14  guide/robotic-imagination.md
+50c619ce3a9ea2487ed674903268bc9de82ea2fab8da07d72b6ac0f281b389c3  guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md
 158667628cd843b10090a44c9e2ac8082cfc1d75f4e8398b8b426f30c0ff6aff  kb/README.md
 774a4de93db549c5fe7871843ac57fe3a571f50cad7e259f2e59355665802656  microservice/.gitignore
 6c26c58b998453070fdea983085c860e5a8f99cfebb711d4832e0892fad24b3f  microservice/Dockerfile
@@ -762,7 +763,7 @@ c830963b3b74a10aba7b84dbe977e372766074713db8b4d9b7314ca757514f67  site-src/front
 208c7d5db5ed1010c9caa907ffac3cde3c99f0ec21ea0a19917975cf403f1583  site-src/frontpage/egpt/reading.html
 0285768f374df9dafde505fd9274ddb60c6f077825cc2efa8122f884c0cf7ff1  site-src/frontpage/login.js
 bed0b3cdcdee819d7cd65d74577bd76e83e872d62e3e808cbe19dd38b9be6ddf  site-src/frontpage/template.json
-88b563f160e12cd252e35c86fb03d2de20e9a98944b82f613e1369d2c5492ac2  site-src/handoff/COWORK_LIBRARY_UX.md
+6f223b51144afee73411c9543f484ce2fa5b2b63cfa47a989a47ef45b22b7bef  site-src/handoff/COWORK_LIBRARY_UX.md
 09cd387f57ea962d0e47767d2d12ac82346bac798a921a7d7acdfaa28ad87376  site-src/handoff/cowork-library-ux/frontpage_hero_prod.png
 33ff16f45d84fd7d4394739373930c5dc1474278a9651f4f799be7dca811ce78  site-src/handoff/cowork-library-ux/viewer_cv_records.png
 99e1ca9288d071cf6d5c82dd4e4da8f6b889a16fb92e1eb2de3bbb99ba6dcaaf  site-src/handoff/cowork-library-ux/viewer_essay_frontmatter.png
