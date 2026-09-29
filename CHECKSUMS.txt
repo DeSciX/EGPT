@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 799 files, 147654206 bytes.
+# 802 files, 147660495 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -747,6 +747,9 @@ fce868e9c3b2a8c9e7526c64fa21d73247b9ab507216a7b250fdf740de7850ce  site-src/_meta
 caa99d6f3d4de211d8d140cc2117caa9e54c1d3f7606e60ca1a46951e86d641c  site-src/frontpage/egpt-frqtl.json
 48be8ff57300220de0eefadafced424e7bc592d07ebe695f8d9aedbf0b109861  site-src/frontpage/egpt-frqtl/earn.html
 6bb1e5f3f7b63a004575baa515685e845e84654a3710689a9629d6fea8cd5eab  site-src/frontpage/egpt-frqtl/licence.html
+e3d97320282a18b23a7ed933d6942f84756fa38ebe00d92b69a0b1f9dc592d04  site-src/frontpage/egpt-godsworld.json
+554c110efc34ca438cb81db30be90adc1a8649ce9075bb1d6e1d92f32d69b064  site-src/frontpage/egpt-godsworld/earn.html
+6bb1e5f3f7b63a004575baa515685e845e84654a3710689a9629d6fea8cd5eab  site-src/frontpage/egpt-godsworld/licence.html
 d5a80c97d2aa804cd63b9049ca585bfe504fd46cffb6adb7e4e9d712904d4090  site-src/frontpage/egpt.json
 004d856266dd21a5f9b8ae3d5bb745eae22b1e5d1f660177a28dd4321623fc19  site-src/frontpage/egpt.md
 a377fab76e1b06c479810017844ca8fe56c7877f612721b2ce14725c0c8f8240  site-src/frontpage/egpt/barrier.html
