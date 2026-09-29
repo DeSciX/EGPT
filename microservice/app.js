@@ -2,7 +2,7 @@
  * egpt podcast Microservice — Express Server (control plane); re-homed from daita-ssgpod 2026-09-29
  *
  * DeSciX SSG Podcast Server. Exposes 6 podcast-publishing commands via
- * POST /api/:command and POST /apifront/ (Core broker proxy compatibility).
+ * POST /api/:command, behind the mesh verifier.
  *
  * TWO-PLANE design (WS-SSGPOD, CEO-D-2026-06-01):
  *   - Control plane (this service): manages episode state in Firestore and
@@ -94,12 +94,6 @@ initializeServiceConfig().then(() => {
 
     // Direct invocation: POST /api/:command
     app.post('/api/:command', (req, res) => dispatch(req.params.command, req.body, res));
-
-    // Core broker proxy: POST /apifront/  with { command, ...params }
-    app.post('/apifront/', (req, res) => {
-        const { command, ...params } = req.body;
-        dispatch(command, params, res);
-    });
 
     const port = utils.PORT;
     if (!port || port === 'auto') {
