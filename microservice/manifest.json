@@ -5,6 +5,7 @@
     "description": "DeSciX SSG Podcast Server for the egpt app — RSS 2.0 / iTunes podcast publishing (control plane). Manages episode state in Firestore and publishes a static feed to GCS that Apple Podcasts polls.",
     "healthEndpoint": "/health",
     "debugPort": 3015,
+    "runtime": { "profile": "media", "system_packages": ["ffmpeg"] },
     "app_id": "egpt",
     "community_id": "egpt"
   },
