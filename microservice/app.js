@@ -22,9 +22,8 @@ import { dirname, join } from 'path';
 
 import { initializeServiceConfig, utils } from './services/utils.js';
 import { killExistingProcess } from '@descix/cloud-core';
+import { mountMeshApi } from '@descix/sdk/microservice';
 import * as podcast from './services/podcastCommands.js';
-// WS-EDGE-MESH wave 2 — signed `_descix` mesh verification (opt-in; deployed WARN on demo).
-import { buildSsgpodMeshVerifier } from './services/meshVerify.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -68,17 +67,6 @@ initializeServiceConfig().then(() => {
     app.use(cors({ origin: true }));
     app.use(express.json({ limit: '4mb' }));
 
-    // WS-EDGE-MESH wave 2: mount the mesh verifier on the /api command routes (the
-    // surface Core's apifront proxies to, carrying the signed _descix). Null when
-    // MESH_CTX_VERIFY_MODE is unset (opt-in — unchanged behavior). WARN mode observes
-    // signed vs unsigned traffic without rejecting. express.json() above already
-    // parsed req.body._descix. Mirrors BEAST/Powch meshVerifyGate.
-    const meshVerifier = buildSsgpodMeshVerifier(utils);
-    if (meshVerifier) {
-        app.use('/api', meshVerifier);
-        console.log(`[ssgpod] Mesh context verification ENABLED (mode=${utils.MESH_CTX_VERIFY_MODE}, keyId=${utils.MESH_CTX_KEY_ID})`);
-    }
-
     app.get('/health', (req, res) => {
         res.json({ status: 'ok', service: 'egpt', version: '1.0.0', plane: 'control' });
     });
@@ -92,8 +80,13 @@ initializeServiceConfig().then(() => {
         }
     });
 
-    // Direct invocation: POST /api/:command
-    app.post('/api/:command', (req, res) => dispatch(req.params.command, req.body, res));
+    // The command routes, mounted under /api by the SDK behind the mesh verifier (cloud-core
+    // 1.2.0: verification fails closed; the trust anchors have one owner in cloud-core, and a
+    // service carrying its own key copy refuses to boot). MESH_CTX_VERIFY_MODE stays "enforce"
+    // in defaults-config.json; express.json() above has already parsed req.body._descix.
+    const api = express.Router();
+    api.post('/:command', (req, res) => dispatch(req.params.command, req.body, res));
+    mountMeshApi(app, api);
 
     const port = utils.PORT;
     if (!port || port === 'auto') {
