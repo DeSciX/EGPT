@@ -1,3 +1,6 @@
 {
-  "FIRESTORE_DATABASE_ID": "descix-dev"
+  "_comment": "Per-env NON-SECRET config for the egpt DEV service. CORE_API_URL points the developer-identity api-client at the DEV core broker (the base file's localhost value is for local runs only). DEVELOPER_WALLET_ADDRESS is the app owner's PUBLIC wallet, the developer the microservice authenticates AS via reconnect_by_wallet; the matching DEVELOPER_SIGNATURE is a SECRET whose name the deploy lane derives from this service's app_id and mounts as env DEVELOPER_SIGNATURE. Never put a signature value in this checked-in file.",
+  "FIRESTORE_DATABASE_ID": "descix-dev",
+  "CORE_API_URL": "https://dev.descix.net/apifront",
+  "DEVELOPER_WALLET_ADDRESS": "0xe71b412d61e7f9b9319455fc7ec53725b6039310"
 }
