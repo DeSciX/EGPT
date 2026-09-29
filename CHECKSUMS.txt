@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 783 files, 146836395 bytes.
+# 783 files, 146836155 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -691,7 +691,7 @@ d18de98e10909fcc645290345ff9e45c09096857680d5cfa0df477d97b50d5f1  guide/make-mon
 6c26c58b998453070fdea983085c860e5a8f99cfebb711d4832e0892fad24b3f  microservice/Dockerfile
 50b0fcb9b24e44a5cbd9f831116599483c87283d023c55d8845ff947bec00c3c  microservice/SERVICE_README_egpt.md
 01026a499cf5787c4da3e6301c543a2d45a7388ab527bee1d83e850de9c66f1c  microservice/SERVICE_README_sdk.md
-ddfc4763b65c0132af93d65a62437e17194b2a5e47b0bf8793a188d274730c5d  microservice/app.js
+3806c6dacf80aafa72673ba8b8de0398b6f70972bc1afc7147bd822056360ca5  microservice/app.js
 5decf1b8b7c04635e7c850b1127ec1b268be133d08f8ad0e22ba9f68433d5955  microservice/app.yaml
 1c0ae23e2c16b1e387e01917eb55a0f2db5646e4d05bcc8aa10665c636cbd99e  microservice/defaults-config-demo.json
 37f5db3a0b9e88c868cb3bda70f360f7a5025be09276ebb2bd7a530136f28cd0  microservice/defaults-config-dev.json
