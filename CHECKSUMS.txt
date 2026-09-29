@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 769 files, 145338594 bytes.
+# 769 files, 145338611 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -683,7 +683,7 @@ ddfc4763b65c0132af93d65a62437e17194b2a5e47b0bf8793a188d274730c5d  microservice/a
 5decf1b8b7c04635e7c850b1127ec1b268be133d08f8ad0e22ba9f68433d5955  microservice/app.yaml
 1c0ae23e2c16b1e387e01917eb55a0f2db5646e4d05bcc8aa10665c636cbd99e  microservice/defaults-config-demo.json
 f04d22a8f2d78b8c9b25814f23eb08b5e70d19f416e0581399d39e666a679acf  microservice/defaults-config-dev.json
-b9a07b780796399fe71618bf0e96dc6edb1819ef3099cd5ec63afc108d12814f  microservice/defaults-config-prod.json
+6b023d3f616acc779bbf6f7fac6774fbc2a64d58034936fa743c9cf95d33c5eb  microservice/defaults-config-prod.json
 37c7d903a31bfff25bdddd1bda70aa98b2b766981846b84fe0fe07690b81b40b  microservice/defaults-config.json
 14a11779f1cdbf65da4d2bcd547b201d07a7e84f228db2b9c64e26a8d9d05686  microservice/dev-overrides.example.json
 37500c8304b6d2b93c03d84a7f6120242e5f4bba667a00fb628e3a46af1a8a2a  microservice/manifest.json
