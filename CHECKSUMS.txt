@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 782 files, 146784012 bytes.
+# 783 files, 146786981 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -708,7 +708,7 @@ e3abb435f0281ca646d1600abe82eb6951509701271a7c65c9b653f4b740f49d  microservice/p
 84242299bfa1926bc28a2033cb953eccd8eae83bc92b0158e0090401eae64858  microservice/services/meshVerify.js
 a306d83f8b7a95166184184114b7376f654f764a2e3fdfdc2846d28c4b7ea1d7  microservice/services/podcastCommands.js
 f51a9869a684019fbb2ab59946aa9eda3c5b47f6b78d4bc59e1a1c596c1a92d3  microservice/services/podcastStore.js
-6fcdabcfbc672beeb1843ecf149f3ea4758b1c50caa7c25308b71d2bbc57cb23  microservice/services/publisher.js
+d5c917f267a36a96e5071f942640ba9f6e167bdef74f65c96e3ed67a001b2c70  microservice/services/publisher.js
 22b969388e74a4cec5c4663d31ae9e9218d2c4a5578ee539fd6a5bc696145bd7  microservice/services/serviceClient.js
 f0158266f26443dfe2aa4982cf2ed9e8a3d8d4981237898160082c98e8c4709c  microservice/services/utils.js
 6cec66a030cd7946b24c2bc6f1ffd4cdc419dd359cfd5079f79dce060d0a71e8  microservice/setup-schema.json
@@ -721,6 +721,7 @@ cfbd5620bc4c0c53a1c51f24c0e3f3a2b66d4e73f65d947cd2b6150b89f3d416  microservice/t
 3ea74b2c4344d554577e8647181198a289a4d24232d8c095d0ba932e588ed8d7  microservice/tests/fixtures/sample.wav
 35b86bfefa7ec2a259ab3fd552b21cb0d5205020a99ac5bd74eed1ce73776dac  microservice/tests/manifest.test.js
 93e7d48051addb4435882004febd979c735f2150bc0f04ab0ae33c8d4fc22907  microservice/tests/podcastStore.test.js
+d146ac1b81155836c5c038653708b08c86ff51cfa800818f4c9fb40dd775d607  microservice/tests/publisher.test.js
 1d2ee614e5d36a2ba1bbfe3d3c73ce053cd9bb8ea74fc7780ea042f6b77152f4  package-lock.json
 52bd6f0cc92f56b92f1cee5a607f90f92e095b9b44385336a928c13e168de010  package.json
 85e827230dd45a750e921031cc30a5355a8cec801e693d289cc5bb7ab90d1342  plugins/egpt/.claude-plugin/plugin.json
