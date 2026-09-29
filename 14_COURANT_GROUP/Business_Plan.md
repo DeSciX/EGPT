@@ -13,10 +13,11 @@ the egpt community on DeSciX, the FRQTL and EGPTMath engines are open. Outside i
 wants FRQTL in a product buys a commercial licence from Courant Group, and part of what it pays
 comes back to the people who built the work.
 
-**One flow of value.** Courant Group sells commercial licences to FRQTL. Of all licence
-revenue, a minimum of 10 percent goes to buying back community tokens on the open market through
-the DeSciX treasury. In the first year, Courant Group commits 50 percent of licence revenue to
-that buyback. Section 7 sets out the mechanism.
+**Two mechanisms, one model.** A licensee qualifies to purchase a licence by paying EGPT tokens
+to Courant Group, the licensor (section 6). Courant Group then pays an ongoing royalty fraction of
+its licence revenue as public buy-backs of community tokens through the DeSciX treasury: a minimum
+of 10 percent, and 50 percent in the first year (section 7). The two are one model, read
+together; section 2 states it in the author's words.
 
 **What is licensed.** The Maxi VLA stack, the FRQTL engines, the Rust source libraries behind
 them, and the tools used to build with them (STUDIO and Rosetta). These are licensed for custom
@@ -47,7 +48,17 @@ The DeSciX model separates two audiences.
   contributions are rewarded is in [../guide/make-money.md](../guide/make-money.md) and
   [../guide/get-involved.md](../guide/get-involved.md).
 - **Outside the community.** A company that puts FRQTL into a commercial product, or resells it,
-  licenses it from Courant Group. The licence fee is the value that returns to the community.
+  licenses it from Courant Group. It qualifies for the licence by paying EGPT tokens to the
+  licensor, and Courant Group's ongoing royalty fraction returns to the community as public
+  buy-backs.
+
+The author states the model in one sentence (Essam Abadir, 28 September 2026, record Unkamon
+8f20698):
+
+> "The model is BOTH token-paid license qualification to purchase from Courant Group (i.e. similar to proof of stake by the licensee paid to the licensor - this creates demand for the underlying contributions to the open core) PLUS the ongoing royality fraction payment by Courant Group in public buy backs."
+
+Both mechanisms are part of every licence: the token payment that qualifies the licensee (section
+6) and the royalty fraction paid as buy-backs (section 7). Neither stands alone.
 
 Courant Group is therefore the commercial door to a technology that is partly open, in the way
 an open-core company sells licences to a codebase whose core anyone can read. What is open is
@@ -75,8 +86,8 @@ Every licence can be for software, or for hardware designs where the licensee bu
 silicon. The request form asks which.
 
 **Services are outside the licence.** Support, integration and consulting are sold separately.
-Their cost is labour and infrastructure, so they are not part of the licence revenue that funds
-the buyback in section 7.
+Their cost is labour and infrastructure, so they are not part of the licence revenue on which
+the royalty fraction in section 7 is paid.
 
 ## 4. The technology
 
@@ -169,8 +180,12 @@ long-felt need FRQTL answers: a generator that produces physical outcomes nobody
 
 **Open licensing, with a restricted enterprise tier.** Any company can ask for a licence
 through the form in section 8. Alongside the ordinary licences, Courant Group offers a restricted
-number of enterprise licences at escalating prices. Acquiring a licence requires EGPT tokens, not
-dollars, so the price scales with the tokens in circulation.
+number of enterprise licences at escalating prices. Qualifying to purchase a licence requires
+EGPT tokens paid to the licensor, not dollars, so the qualification scales with the tokens in
+circulation. In the author's framing, the payment is "similar to proof of stake by the licensee
+paid to the licensor" and "creates demand for the underlying contributions to the open core"
+(section 2 quotes the sentence). The licence purchased on that qualification then carries Courant
+Group's royalty fraction, paid as public buy-backs (section 7).
 
 | Enterprise licence | Price, in EGPT tokens |
 |---|---|
@@ -206,18 +221,20 @@ license FRQTL without licensing from a rival.
 Two streams of value go back to the community, both through the DeSciX treasury, as the DeSciX
 token plan ratified on 1 July 2026 (decision D4) provides:
 
-- **Off-platform licences.** A minimum of 10 percent of Courant Group's licence revenue funds
-  buybacks of community tokens on the open market. Courant Group can pay more than the minimum
-  and intends to, to reward participation. In the first year it commits 50 percent of licence
-  revenue.
+- **Off-platform licences: the royalty fraction.** Courant Group pays an ongoing royalty fraction
+  of its licence revenue as public buy-backs of community tokens on the open market: a minimum of
+  10 percent. Courant Group can pay more than the minimum and intends to, to reward
+  participation. In the first year it commits 50 percent of licence revenue. This is the second
+  half of the model whose first half, the token-paid qualification, is section 6.
 - **On-platform use.** When people and agents use the egpt community's apps on DeSciX, the
   platform's sales of AI credits fund buybacks of the community's tokens, in proportion to how
   much each community's apps are actually used.
 
 The token is EGPT. Tokens are awarded to
 contributors under the DeSciX Community Agreement; see [../guide/make-money.md](../guide/make-money.md).
-Buybacks from licence revenue raise demand for the same token contributors earn, and that is how
-the value of commercial use returns to the people whose work made it possible.
+The token-paid qualification (section 6) and the buy-backs from the royalty fraction both raise
+demand for the same token contributors earn, and that is how the value of commercial use returns
+to the people whose work made it possible.
 
 ## 8. How to request a licence
 
