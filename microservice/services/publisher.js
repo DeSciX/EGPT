@@ -165,11 +165,11 @@ export async function publishAssets(invoke, assets) {
         const url = signedUrls[a.path];
         if (!url) throw new Error(`No signed URL returned for ${a.path}`);
         const body = Buffer.isBuffer(a.body) ? a.body : Buffer.from(a.body, 'utf8');
-        const resp = await fetch(url, {
-            method: 'PUT',
-            headers: { 'Content-Type': a.contentType },
-            body,
-        });
+        // The broker signs the exact byte size into the URL (x-goog-content-length-range) and
+        // returns every header the PUT must carry; send that bag verbatim, never a rebuilt one.
+        const headers = token.upload_headers?.[a.path];
+        if (!headers) throw new Error(`No upload_headers for ${a.path} (get_asset_upload_token response is missing the header bag)`);
+        const resp = await fetch(url, { method: 'PUT', headers, body });
         if (!resp.ok) {
             throw new Error(`Upload failed for ${a.path}: HTTP ${resp.status}`);
         }
