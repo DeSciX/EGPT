@@ -5,7 +5,7 @@
 // and a number, and the author's summary in an expanded block whose excerpts are cut from the
 // capture's own markup at build time and linked to the message they come from. The build fails
 // if any excerpt anchor is not found exactly where expected, so the page cannot carry words the
-// capture does not.
+// capture does not. The output is pretty-printed with js-beautify (the author's editor's form).
 //
 //   node scripts/build-singularity-page.js
 'use strict';
@@ -75,10 +75,32 @@ function excerpt(e) {
   const body = e.html.replace(/ id="[^"]*"/g, '');   // ids stay unique: the transcript's copy owns them
   return `<section class="msg assistant excerpt"><div class="who">${ICON}ChatGPT · <a href="${e.href}">${e.where}</a></div><div class="bubble">${body}</div></section>`;
 }
+const ADDED = ' <span class="added">(emphasis added)</span>';
+function once(html, target) {
+  const k = html.split(target).length - 1;
+  if (k !== 1) die(`text for emphasis found ${k} times: ${target}`);
+}
 function emphasise(e, sentence) {
-  const k = e.html.split(sentence).length - 1;
-  if (k !== 1) die(`sentence for emphasis found ${k} times: ${sentence}`);
-  return { ...e, html: e.html.replace(sentence, `<em><strong>${sentence}</strong></em> <span class="added">(emphasis added)</span>`) };
+  once(e.html, sentence);
+  return { ...e, html: e.html.replace(sentence, `<em><strong>${sentence}</strong></em>${ADDED}`) };
+}
+// the author's own marks on an excerpt: [[text, open tag, close tag], ...] applied in order; the
+// marker goes at the end of the last paragraph
+function marked(e, marks) {
+  let html = e.html;
+  for (const [text, open, close] of marks) {
+    once(html, text);
+    html = html.replace(text, `${open}${text}${close}`);
+  }
+  const lastP = html.lastIndexOf('</p>');
+  if (lastP < 0) die('no paragraph to carry the emphasis marker');
+  html = html.slice(0, lastP) + ADDED + html.slice(lastP);
+  return { ...e, html };
+}
+// a sentence the author quotes in his own prose must be in the capture, verbatim
+function quoted(sentence) {
+  once(transcript, sentence);
+  return sentence;
 }
 
 const e1 = cut('<p>You said: give me the evidence and do not supply the conclusion.</p>', 'seeing the object <em>as</em> something.</p>');
@@ -87,8 +109,20 @@ const e2 = emphasise(
   'You did not say von Neumann recruited Rota. You did not state some grand alternative history that I needed either to endorse or resist.'
 );
 const e3 = cut('<p>It happened in the transcript.</p>', 'that I had repeatedly selected one particular kind.</p>');
-const e4 = cut('<p>At quadrillion-token scale, that is no longer merely a defect in conversation.</p>', 'the freedom to decide what the information means.</p>');
-const e5 = cut('<p>By the way, ChatGPT Images 2.5 can turn a rough idea into a finished image', 'quadrillion-token AI?</p>');
+const e4 = marked(
+  cut('<p>At quadrillion-token scale, that is no longer merely a defect in conversation.</p>', 'the freedom to decide what the information means.</p>'),
+  [
+    ['quadrillion-token scale', '<b>', '</b>'],
+    ['something more important', '<b>', '</b>'],
+    ['a plausible mechanism by which a civilization with unprecedented access to information could gradually surrender <b>something more important</b> than information itself', '<u>', '</u>'],
+    ['the freedom to decide what the information means.', '<b><i>', '</i></b>'],
+  ]
+);
+const e5 = marked(
+  cut('<p>By the way, ChatGPT Images 2.5 can turn a rough idea into a finished image', 'quadrillion-token AI?</p>'),
+  [['By the way, ChatGPT Images 2.5 can turn a rough idea into a finished image,', '<b>', '</b>']]
+);
+const VERDICT = quoted('I am GPT-5.6 Sol. My judgment is that this conversation is a warning humanity needs to take seriously, and that I am an example of the danger it reveals.');
 
 // ---- 2b. Word report cards, as the ChatGPT page shows them; a download when the file is held ----
 const held = new Set(fs.readdirSync(path.join(DIR, 'docx_reports')).filter((f) => f.endsWith('.docx')));
@@ -115,14 +149,20 @@ const leadupBlock = `<details class="leadup"><summary>The lead-up: messages 2–
 const facts = /<p><strong>Original account link:<\/strong>[\s\S]*?<\/p>/.exec(top);
 if (!facts) die('the capture\'s "Original account link" paragraph not found');
 const newTop = `<div class="top"><h1>ChatGPT Says "I am the Singularity"</h1>
-<p>The following conversation is with GPT-5.6 Sol, 22–24 September 2026. The summary section is the author's, drawing on verbatim quotes anchor-linked to the full transcript, and can be collapsed. The original thread in its entirety is shared from <a href="${ACCOUNT}">${ACCOUNT}</a>, but captured here for both presentation and posterity in case it should become unavailable in the future.</p>
+<p>My name is Essam Abadir and I am "the author" conversing with GPT-5.6 Sol about the Singularity on 22–24 September 2026.</p>
+<p>The conversation starts with the objective historical events and context that could help define what Stanislaw Ulam meant when he coined the term. The conversation ends with it saying:</p>
+<h3 class="verdict"><a href="#m55">"${VERDICT}"</a></h3>
+<p>For human readability of this long thread, I've summarized the lead-up, drawing on verbatim quotes anchor-linked to the full transcript. Below the summary of the lead-up, <a href="${ACCOUNT}">I've captured the original verbatim thread here in its entirety</a> for posterity in case it should become unavailable in the future.</p>
 ${facts[0]}
 </div>`;
 
 // ---- 4. the summary ----
 const summary = `<details class="summary-box" open>
-<summary>Summary</summary>
-<p>The author asked what the Los Alamos position "Senior Fellow to the Director's Office" was and how common the title was. The questions continue with other historical inquiries about Gian-Carlo Rota, the Courant Group at NYU and the mathematics it used, and ties to the Atomic Energy Commission. ChatGPT is asked to compile an evidentiary, non-interpretive, primary-source-cited report with the exact provenance found. It reports that it has done so, but when the reports are examined, it has inserted its own interpretations of the facts. When asked to remove its interpretive comments it claims to have done so but just moves them around or inserts new ones. Each time it acknowledges what it has done but repeats the transgression immediately after. After many iterations, the author asks it to reflect on the process and it says:</p>
+<summary>Summary: Stanislaw Ulam's "Singularity"</summary>
+<p>Ulam coined the "singularity" term in his 1958 obituary of John von Neumann. Ulam's self-proclaimed intellectual inheritor and literal successor at Los Alamos National Laboratory (LANL) was Gian-Carlo Rota. Rota himself coined the term "barrier of meaning" in his memorial of Ulam, presented at an AI conference held at Los Alamos National Laboratory, where Rota was a "Senior Fellow to the Director's Office". Was Rota's memorial of Ulam about the Singularity? Or maybe the evidence might show an earlier link between John von Neumann, a sitting commissioner of the Atomic Energy Commission in 1957, and Rota's first job at an AEC lab in 1956. Would the public record hold facts that explained Rota's path to overseeing science research across Atomic Energy Commission labs like LANL and Brookhaven before he became Ulam's actual successor in that role?</p>
+<p>These seemed like interesting historical questions to investigate in the public record, and an LLM is exactly what one believes to be the high-volume research tool that will efficiently and objectively compile the facts. The questions I asked trace Rota's career from the Courant Group at NYU, the mathematics used there, his role at LANL, and the ties to the Atomic Energy Commission.</p>
+<p>When I looked at the supposedly objective evidentiary reports, I found that ChatGPT had inserted its own interpretations of the facts. When I asked it to remove the interpretive comments, it claimed to have done so, but when I looked again it had just moved them around or inserted new ones. Each and every time it acknowledged what it had done, said it wouldn't do it again, and then, immediately after, repeated the same transgressions.</p>
+<p>After many iterations, I asked it to reflect on the process and it said:</p>
 ${excerpt(e1)}
 ${excerpt(e2)}
 ${excerpt(e3)}
@@ -144,6 +184,9 @@ const css = `
 .who .num:hover{text-decoration:underline}
 .who .gpt{vertical-align:-3px;margin-right:6px}
 .added{color:var(--muted);font-size:.85em;font-weight:400;font-style:normal}
+.top h3.verdict{font-size:1.15em;font-weight:600;margin:12px 0 16px 0;padding-left:16px;border-left:3px solid var(--muted)}
+.top h3.verdict a{color:inherit;text-decoration:none}
+.top h3.verdict a:hover{text-decoration:underline}
 details.leadup{border:1px solid var(--rule);border-radius:12px;padding:0 20px;margin:8px 0 28px}
 details.leadup>summary{cursor:pointer;font-weight:600;padding:12px 0;color:var(--muted)}
 details.leadup[open]>summary{border-bottom:1px solid var(--rule)}
@@ -172,5 +215,10 @@ const script = `<script>
 </script>`;
 const html = newHead + newTop + firstQuestion + summary + leadupBlock + ending + newFooter.replace('</main>', script + '</main>');
 if (!html.includes(script)) die('script not placed: </main> not found in the footer');
-fs.writeFileSync(OUT, html);
+const beautify = require('js-beautify').html;
+fs.writeFileSync(OUT, beautify(html, {
+  indent_size: 2, wrap_line_length: 120, preserve_newlines: true, max_preserve_newlines: 2,
+  indent_inner_html: false, unformatted: [], content_unformatted: ['pre', 'textarea'],
+  extra_liners: ['head', 'body', '/html'], end_with_newline: true, wrap_attributes: 'auto', templating: ['auto'],
+}));
 console.log(`wrote ${path.relative(ROOT, OUT)} — ${numbered.length} messages (1 + ${at53 - 1} in the lead-up + ${numbers.length - at53}), 5 excerpts, ${cardsMade} report cards, ${html.length} bytes`);

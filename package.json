@@ -15,7 +15,8 @@
   },
   "homepage": "https://github.com/eabadir/EGPT-Evidence#readme",
   "devDependencies": {
-    "@descix/cli": "^1.0.18"
+    "@descix/cli": "^1.0.18",
+    "js-beautify": "^2.0.3"
   },
   "private": true
 }
