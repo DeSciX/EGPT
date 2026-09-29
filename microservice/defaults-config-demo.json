@@ -1,4 +1,4 @@
 {
-  "_comment": "Per-env NON-SECRET config for the egpt DEMO service (the podcast microservice re-homed from daita-ssgpod). Mesh verification runs through @descix/sdk/microservice mountMeshApi with the trust anchors owned by cloud-core; this service carries no key of its own. WARN observes signed vs unsigned without rejecting.",
-  "MESH_CTX_VERIFY_MODE": "warn"
+  "_comment": "Per-env NON-SECRET config for the egpt DEMO service (the podcast microservice re-homed from daita-ssgpod). Mesh verification runs through @descix/sdk/microservice mountMeshApi with the trust anchors owned by cloud-core; this service carries no key of its own. Enforce: under cloud-core 1.2.0 a managed runtime refuses to boot on warn.",
+  "MESH_CTX_VERIFY_MODE": "enforce"
 }

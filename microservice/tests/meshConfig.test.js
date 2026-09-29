@@ -10,9 +10,13 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const configs = readdirSync(ROOT).filter(f => /^defaults-config(-[a-z]+)?\.json$/.test(f));
 
-test('the base config runs mesh verification in enforce mode', () => {
+test('the base config runs mesh verification in enforce mode, and no layer weakens it', () => {
     const base = JSON.parse(readFileSync(join(ROOT, 'defaults-config.json'), 'utf8'));
     assert.equal(base.MESH_CTX_VERIFY_MODE, 'enforce');
+    for (const f of configs) {
+        const d = JSON.parse(readFileSync(join(ROOT, f), 'utf8'));
+        if ('MESH_CTX_VERIFY_MODE' in d) assert.equal(d.MESH_CTX_VERIFY_MODE, 'enforce', `${f}: a managed runtime refuses to boot on any other mode`);
+    }
 });
 
 test('no config layer carries a mesh trust anchor of its own', () => {
