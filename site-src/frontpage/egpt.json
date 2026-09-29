@@ -167,5 +167,6 @@
     "forward": {
       "hash_to": "library.html"
     }
-  }
+  },
+  "self_host": "https://egpt.descix.net"
 }

@@ -48,9 +48,9 @@ if (bodyAt < 0) die('template has no <body>');
 const head = template.slice(0, bodyAt);
 const body = template.slice(template.indexOf('>', bodyAt) + 1);
 function block(re, name) { const m = re.exec(body); if (!m) die(`template ${name} not found`); return m[0]; }
-block(/<nav class="nav">[\s\S]*?<\/nav>/, 'nav');
-block(/<header class="hero"[\s\S]*?<\/header>/, 'hero');
-block(/<footer>[\s\S]*?<\/footer>/, 'footer');
+const tplNav = block(/<nav class="nav">[\s\S]*?<\/nav>/, 'nav');
+const tplHero = block(/<header class="hero"[\s\S]*?<\/header>/, 'hero');
+const tplFooter = block(/<footer>[\s\S]*?<\/footer>/, 'footer');
 const sections = {};
 for (const m of body.matchAll(/<section class="sec[^"]*" id="([^"]+)">[\s\S]*?<\/section>/g)) sections[m[1]] = m[0];
 const closes = (body.match(/<\/section>/g) || []).length;
@@ -89,9 +89,23 @@ if (!fs.existsSync(specPath)) die(`no spec: ${specPath}`);
 const spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
 for (const k of ['title', 'description', 'brand', 'nav', 'hero', 'sections', 'footer', 'scripts']) if (!(k in spec)) die(`spec lacks ${k}`);
 
+const rewrite = (html, pairs) => (pairs || []).reduce((h, [from, to]) => {
+  if (!h.includes(from)) die(`link rewrite target not present: ${from}`);
+  return h.split(from).join(to);
+}, html);
 const link = a => `<a href="${esc(a.href)}"${/^https?:/.test(a.href) ? ' target="_blank" rel="noopener"' : ''}${a.class ? ` class="${esc(a.class)}"` : ''}${a.style ? ` style="${esc(a.style)}"` : ''}>${a.html || esc(a.text)}</a>`;
 
+const LOGIN_BUTTON = '<a class="btn btn-primary btn-sm" id="descix-login" href="https://descix.net/">Log in with Powch</a>';
 function navHtml() {
+  if (spec.nav === 'template') {
+    let nav = rewrite(tplNav, spec.links);
+    if (spec.login) {
+      const at = '</a>\n  </div>\n</div></nav>';
+      if (!nav.includes(at)) die('template nav: no place for the login button');
+      nav = nav.replace(at, `</a>${LOGIN_BUTTON}\n  </div>\n</div></nav>`);
+    }
+    return nav;
+  }
   return `<nav class="nav"><div class="wrap">
   <a class="brand" href="#top"><b>${esc(spec.brand.name)}</b><span>${esc(spec.brand.tag)}</span></a>
   <div class="navlinks">
@@ -100,6 +114,7 @@ function navHtml() {
 </div></nav>`;
 }
 function heroHtml() {
+  if (spec.hero === 'template') return rewrite(tplHero, spec.links);
   const h = spec.hero;
   return `<header class="hero" id="top">
   ${h.art ? `<div class="hero-art"><img src="${esc(h.art.src)}" alt="${esc(h.art.alt)}"></div>` : ''}
@@ -116,6 +131,7 @@ function heroHtml() {
 </header>`;
 }
 function footerHtml() {
+  if (spec.footer === 'template') return rewrite(tplFooter, spec.links);
   const f = spec.footer;
   return `<footer><div class="wrap">
   <div class="brand"><b>${esc(f.name)}</b><span>${esc(f.tag)}</span></div>
@@ -127,10 +143,6 @@ function footerHtml() {
 }
 
 // ---------------------------------------------------------------- sections: reused by id, or the app's fragments (gated)
-const rewrite = (html, pairs) => (pairs || []).reduce((h, [from, to]) => {
-  if (!h.includes(from)) die(`link rewrite target not present: ${from}`);
-  return h.split(from).join(to);
-}, html);
 let gated = 0;
 function gateFragment(html, file) {
   for (const m of html.matchAll(/<(blockquote|q)\b[^>]*data-src="([^"]+)"[^>]*>([\s\S]*?)<\/\1>/g)) {
@@ -181,6 +193,13 @@ function forwarder() {
   if (f.query_to) return `<script>if(location.search)location.replace(${JSON.stringify(f.query_to)}+location.search+location.hash);</script>`;
   die('scripts.forward needs hash_to or query_to');
 }
+let sdk = null;
+if (spec.scripts.sdk_from) {
+  const p = path.resolve(ROOT, spec.scripts.sdk_from);
+  if (!fs.existsSync(p)) die(`SDK file not found: ${p}`);
+  sdk = { name: path.basename(p), data: fs.readFileSync(p) };
+  if (!sdk.data.toString('utf8').includes('GENERATED FILE')) die(`${p} is not the generated DeSciXAppSDK.js`);
+}
 const scripts = [spec.scripts.codesite ? CODESITE : '', ...(spec.scripts.extra || []).map(f => {
   const p = path.join(SRC, f); if (!fs.existsSync(p)) die(`script not found: ${f}`); return fs.readFileSync(p, 'utf8');
 })].filter(Boolean);
@@ -206,7 +225,7 @@ ${body_sections.join('\n\n')}
 
 ${footerOut}
 
-${scripts.map(s => `<script>\n${s}\n</script>`).join('\n')}
+${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script>\n${s}\n</script>`).join('\n')}
 </body>
 </html>
 `;
@@ -217,7 +236,7 @@ for (const m of html.matchAll(/href="library\.html#([^"]+)"/g)) {
   if (!tracked.has(p)) die(`deep link to a path not tracked at HEAD: ${p}`);
 }
 // nothing on the page still points at the app's own public host (a self-link is a deep link)
-if (html.includes('https://egpt.descix.net')) die('a self-link to https://egpt.descix.net remains; rewrite it to library.html#<path>');
+if (spec.self_host && html.includes(spec.self_host)) die(`a self-link to ${spec.self_host} remains; rewrite it to a deep link`);
 
 // ---------------------------------------------------------------- images: what the page uses, from the template commit or the spec
 const used = new Set([...html.matchAll(/(?:src|href)="images\/([^"]+)"/g)].map(m => m[1]));
@@ -245,5 +264,6 @@ if (!DRY) {
   fs.mkdirSync(path.join(OUT, 'images'), { recursive: true });
   for (const [name, data] of images) fs.writeFileSync(path.join(OUT, 'images', name), data);
   fs.writeFileSync(path.join(OUT, 'index.html'), html);
+  if (sdk) fs.writeFileSync(path.join(OUT, sdk.name), sdk.data);
 }
 console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.length} sections (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);
