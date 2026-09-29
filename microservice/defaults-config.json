@@ -3,5 +3,8 @@
   "LOCAL_PORT": 3015,
   "CORE_API_URL": "https://localhost:4000/apifront",
   "community_id": "egpt",
-  "app_id": "egpt"
+  "app_id": "egpt",
+  "MESH_CTX_VERIFY_MODE": "enforce",
+  "MESH_CTX_PUBLIC_KEY": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDWrDg8Q7eOROcPT8u1JQJvTRo7nX\niQWPVTq/WNE532byWXvDpfQw+pDSJbO4X3AEme1hqVFEJW5DTG2HPtjonA==\n-----END PUBLIC KEY-----\n",
+  "MESH_CTX_KEY_ID": "mesh-dev-1"
 }
