@@ -154,10 +154,13 @@ Links: **About this collection** → `guide/about-this-collection.md`; **Where e
 ## 7. Podcast: the first incented content
 
 Served by the egpt app's podcast microservice, held at `microservice/` (the SSG podcast server
-re-homed under egpt on 29 September 2026; deploy pending), with the player from the prototype's
-site. The block shows the show's feed and episodes once the service is deployed and a show is
-published; the collection holds no episode yet, so the block carries only the feed link when
-there is one.
+re-homed under egpt and deployed on PROD, 29 September 2026), with the player from the
+prototype's site. The show `egpt` exists on PROD with the title "EGPT: the New Manhattan
+Project" and a provisional cover; its public feed is
+`https://storage.googleapis.com/descix-assets-public/prod/egpt/assets/egpt/feed.xml`. The
+collection holds no episode yet: the only item in the feed at the time of writing is a
+twelve-second public-domain verification mp3, to be removed. The block carries the feed link
+and the episodes the feed holds.
 
 ## 8. Promote and share: earn the token
 
