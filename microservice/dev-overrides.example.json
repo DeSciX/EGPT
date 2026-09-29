@@ -1,0 +1,5 @@
+{
+  "_comment": "Local dev overrides — copy to dev-overrides.json (GITIGNORED, NEVER commit) and fill in. cloud-core's _loadDevOverrides force-assigns these onto the config singleton in dev, so utils.DEVELOPER_* resolves with no schema change. The microservice is the CLI's REST api-client running in the cloud, authenticated AS THE DEVELOPER (the app owner) via their durable wallet credential. Copy walletAddress + signature from the repo's .descix/wallet.json. createServiceApiClient hard-fails (no fallback) if either is absent.",
+  "DEVELOPER_WALLET_ADDRESS": "",
+  "DEVELOPER_SIGNATURE": ""
+}

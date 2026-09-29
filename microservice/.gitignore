@@ -1,0 +1,8 @@
+# Per-machine dev config overrides (CORE_API_URL etc.). NEVER commit.
+# (The mesh data plane is now caller-authenticated via SA-OIDC ADC — no SERVICE_KEY /
+#  delegate credentials live here anymore.)
+dev-overrides.json
+
+# Dependencies / logs
+node_modules/
+*.log

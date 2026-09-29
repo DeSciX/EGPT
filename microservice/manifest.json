@@ -1,0 +1,259 @@
+{
+  "service": {
+    "name": "egpt",
+    "version": "1.0.0",
+    "description": "DeSciX SSG Podcast Server for the egpt app — RSS 2.0 / iTunes podcast publishing (control plane). Manages episode state in Firestore and publishes a static feed to GCS that Apple Podcasts polls.",
+    "healthEndpoint": "/health",
+    "debugPort": 3015,
+    "app_id": "egpt",
+    "community_id": "egpt"
+  },
+  "commands": {
+    "podcast_create_show": {
+      "handler": "podcastCommands.createShow",
+      "guestAllowed": false,
+      "description": "Create or update a podcast show's channel-level metadata. Validates required Apple channel fields.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "show": {
+            "type": "string",
+            "description": "Show slug (URL-safe identifier, unique per app)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Channel title"
+          },
+          "author": {
+            "type": "string",
+            "description": "itunes:author"
+          },
+          "category": {
+            "type": "string",
+            "description": "itunes:category text"
+          },
+          "language": {
+            "type": "string",
+            "description": "RSS language code (e.g. en-us)"
+          },
+          "explicit": {
+            "type": "boolean",
+            "description": "itunes:explicit"
+          },
+          "image": {
+            "type": "string",
+            "description": "itunes:image href (square 1400-3000px cover art URL)"
+          },
+          "description": {
+            "type": "string",
+            "description": "Channel description"
+          },
+          "ownerEmail": {
+            "type": "string",
+            "description": "itunes:owner email (required by Apple)"
+          },
+          "ownerName": {
+            "type": "string",
+            "description": "itunes:owner name (defaults to author)"
+          },
+          "link": {
+            "type": "string",
+            "description": "Channel link (defaults to image URL)"
+          }
+        },
+        "required": [
+          "show",
+          "title",
+          "author",
+          "category",
+          "language",
+          "explicit",
+          "image",
+          "description",
+          "ownerEmail"
+        ]
+      }
+    },
+    "podcast_publish_episode": {
+      "handler": "podcastCommands.publishEpisode",
+      "guestAllowed": false,
+      "description": "Publish a podcast episode and republish the show's feed.xml. TWO PATHS keyed off the audio input: (1) MP3 FAST PATH — when `audio` is an already-encoded .mp3 (by extension) OR `mp3:true` is set, the file is used AS-IS: no transcode, no loudness normalization, no ID3 re-embed, no re-upload. The mp3 MUST already be a gs:// or https:// ref (upload it first with `descix app media-upload`); enclosure byte-length and duration are read from the object/probe (or taken from `enclosureLength`/`duration` if provided). This path stays synchronous and fast so it never exceeds the ~60s edge request timeout. (2) SLOW PATH — any non-mp3 input (e.g. m4a, or a local file) is streamed to disk, loudness-normalized to -16 LUFS, ID3-tagged (artwork + chapters), transcoded to mp3, and uploaded as the canonical enclosure. Both paths append episode state to Firestore (source of truth) and regenerate + upload feed.xml. Returns { episode_url, enclosure_length, duration_seconds, fast_path (boolean), feed_url, guid }.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "show": {
+            "type": "string",
+            "description": "Show slug"
+          },
+          "audio": {
+            "type": "string",
+            "description": "Episode audio source. MP3 FAST PATH: a gs:// or https:// ref to an already-encoded .mp3 (preferred; upload via `descix app media-upload`) — used as-is. SLOW PATH: any other format (m4a) or a local dev path — transcoded + normalized to mp3."
+          },
+          "title": {
+            "type": "string",
+            "description": "Episode title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Episode description"
+          },
+          "pubDate": {
+            "type": "string",
+            "description": "ISO date; defaults to now"
+          },
+          "season": {
+            "type": "integer",
+            "description": "itunes:season"
+          },
+          "episode": {
+            "type": "integer",
+            "description": "itunes:episode number (drives enclosure filename ep-NNNN.mp3)"
+          },
+          "explicit": {
+            "type": "boolean",
+            "description": "itunes:explicit; defaults to channel value"
+          },
+          "guid": {
+            "type": "string",
+            "description": "Stable GUID; auto-generated if omitted"
+          },
+          "imagePath": {
+            "type": "string",
+            "description": "Local path to episode cover art for ID3 artwork embed. SLOW PATH only (the fast path does not re-tag). Alias: image_path."
+          },
+          "chapters": {
+            "type": "array",
+            "description": "Chapter markers for ID3 embed",
+            "items": {
+              "type": "object",
+              "properties": {
+                "startMs": {
+                  "type": "integer"
+                },
+                "endMs": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "startMs",
+                "endMs",
+                "title"
+              ]
+            }
+          },
+          "contentEncoded": {
+            "type": "string",
+            "description": "Rich HTML show notes for content:encoded; defaults to description"
+          },
+          "mp3": {
+            "type": "boolean",
+            "description": "Force the MP3 fast path even if `audio` lacks a .mp3 extension (audio must still be a gs:///https:// mp3 ref). Default: inferred from the .mp3 extension."
+          },
+          "enclosureLength": {
+            "type": "integer",
+            "description": "MP3 fast path only: enclosure byte length. If omitted, read via a HEAD on the gs:///https:// object."
+          },
+          "duration": {
+            "type": "integer",
+            "description": "MP3 fast path only: episode duration in seconds. If omitted, probed from the audio."
+          }
+        },
+        "required": [
+          "show",
+          "audio",
+          "title",
+          "description"
+        ]
+      }
+    },
+    "podcast_unpublish_episode": {
+      "handler": "podcastCommands.unpublishEpisode",
+      "guestAllowed": false,
+      "description": "Remove an episode's state and regenerate the feed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "show": {
+            "type": "string",
+            "description": "Show slug"
+          },
+          "guid": {
+            "type": "string",
+            "description": "Episode GUID to remove"
+          }
+        },
+        "required": [
+          "show",
+          "guid"
+        ]
+      }
+    },
+    "podcast_list_episodes": {
+      "handler": "podcastCommands.listEpisodes",
+      "guestAllowed": false,
+      "description": "Return episodes (newest first) and the live feed URL for a show.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "show": {
+            "type": "string",
+            "description": "Show slug"
+          }
+        },
+        "required": [
+          "show"
+        ]
+      }
+    },
+    "podcast_regenerate_feed": {
+      "handler": "podcastCommands.regenerateFeed",
+      "guestAllowed": false,
+      "description": "Idempotent rebuild + republish of feed.xml from Firestore episode state.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "show": {
+            "type": "string",
+            "description": "Show slug"
+          }
+        },
+        "required": [
+          "show"
+        ]
+      }
+    },
+    "podcast_validate_feed": {
+      "handler": "podcastCommands.validateFeedCommand",
+      "guestAllowed": false,
+      "description": "Validate the generated feed against Apple Podcasts requirements; returns pass/fail + specific violations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "show": {
+            "type": "string",
+            "description": "Show slug"
+          },
+          "imageWidth": {
+            "type": "integer",
+            "description": "Cover art width px (enables square 1400-3000 check)"
+          },
+          "imageHeight": {
+            "type": "integer",
+            "description": "Cover art height px"
+          }
+        },
+        "required": [
+          "show"
+        ]
+      }
+    }
+  },
+  "webhooks": [],
+  "permissions": {
+    "requires": [],
+    "grants": []
+  }
+}

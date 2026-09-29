@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title><![CDATA[DeSciX Lab Notes]]></title>
+    <description><![CDATA[Notes from the lab.]]></description>
+    <language>en-us</language>
+    <link>https://egpt.descix.net/labnotes/</link>
+    <lastBuildDate>Mon, 01 Jun 2026 20:49:18 GMT</lastBuildDate>
+    <itunes:author><![CDATA[DeSciX]]></itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Science" />
+    <itunes:image href="https://egpt.descix.net/labnotes/cover.png" />
+    <itunes:owner>
+      <itunes:name><![CDATA[DeSciX Execs]]></itunes:name>
+      <itunes:email>execs@descix.net</itunes:email>
+    </itunes:owner>
+    <item>
+      <title><![CDATA[Episode 1: P=NP]]></title>
+      <description><![CDATA[We discuss the proof.]]></description>
+      <content:encoded><![CDATA[<p>We discuss the <b>proof</b>.</p>]]></content:encoded>
+      <enclosure url="https://egpt.descix.net/labnotes/ep-0001.mp3" length="1234567" type="audio/mpeg" />
+      <guid isPermaLink="false">egpt:labnotes:1717-abc</guid>
+      <pubDate>Mon, 01 Jun 2026 14:00:00 GMT</pubDate>
+      <itunes:duration>1:02:05</itunes:duration>
+      <itunes:season>1</itunes:season>
+      <itunes:episode>1</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
