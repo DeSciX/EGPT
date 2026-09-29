@@ -6,8 +6,10 @@
  *   node scripts/generate-site.js --dry-run  # validate and report, write nothing
  *
  * The bundle is the collection itself (the evidence folders, guide/ and the root documents), copied
- * from HEAD — never from the working tree — plus one generated index.html (the viewer, from
- * site-src/template.html and site-src/_meta.json) and site-src/site-assets/. A git-lfs pointer at
+ * from HEAD — never from the working tree — plus the generated library.html (the viewer, from
+ * site-src/template.html and site-src/_meta.json), site-src/site-assets/, and the app's front
+ * page at index.html with its images/ (scripts/build-frontpage.js egpt: the full-screen page
+ * the App Shell serves first; a #<path> on it forwards to library.html#<path>). A git-lfs pointer at
  * HEAD is resolved from the working tree only when that file's SHA-256 equals the pointer's oid.
  * Every file the metadata names must be in the bundle; a missing one is an error, not a warning.
  * Pure Node, no dependencies. FAIL LOUD.
@@ -257,8 +259,10 @@ if (!DRY) {
     fs.writeFileSync(dest, data);
     bytes += data.length;
   }
-  fs.writeFileSync(path.join(OUT, 'index.html'), html);
+  fs.writeFileSync(path.join(OUT, 'library.html'), html);
 } else {
   for (const e of bundle) bytes += contentFor(e).length;
 }
-console.log(`${DRY ? '[dry-run] ' : ''}site/: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas`);
+// the front page: index.html + images/, from the Courant template and site-src/frontpage/egpt.json
+execFileSync('node', [path.join(__dirname, 'build-frontpage.js'), 'egpt', '--out', OUT, ...(DRY ? ['--dry-run'] : [])], { cwd: ROOT, stdio: 'inherit' });
+console.log(`${DRY ? '[dry-run] ' : ''}site/: library.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas`);

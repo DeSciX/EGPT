@@ -38,7 +38,7 @@ the same day it is caught.
 | `.descix/manifests/` | `site.json` (`site/` only) and one manifest per knowledge base, whose sources are the evidence folders at a git ref |
 | `kb/` | no copies; its README says which manifest is which KB |
 | `site-src/` | the site's code and metadata: `template.html`, `site-assets/` (the viewer `site.js`, `style.css`, vendored `marked.min.js`, the CDN loaders for highlight.js and mermaid; shared with the research repository's GitHub Pages site), `_meta.json` (title, the reasons a reader is here, the carousel, the module order) and `modules/<dir>.json` (each module's highlights and where its description is read from) |
-| `site/` | ignored by git; `npm run build:site` (`scripts/generate-site.js`) writes it from HEAD: one `index.html` stamped `data-egpt-site-build="<sha>"`, `site-assets/`, and the collection copied from HEAD (LFS objects from the working tree only when their SHA-256 equals the pointer's oid). Uploaded from here; deployed to GitHub Pages by `.github/workflows/pages.yml` from the same script |
+| `site/` | ignored by git; `npm run build:site` (`scripts/generate-site.js`) writes it from HEAD: the front page `index.html` with `images/` (from `site-src/frontpage/`, see `scripts/build-frontpage.js`; a `#<path>` on it forwards to the viewer), the viewer `library.html` stamped `data-egpt-site-build="<sha>"`, `site-assets/`, and the collection copied from HEAD (LFS objects from the working tree only when their SHA-256 equals the pointer's oid). Uploaded from here; deployed to GitHub Pages by `.github/workflows/pages.yml` from the same script |
 | `.descix/workspace.json`, `.descix/wallet.json`, `node_modules/` | per-developer; ignored |
 
 ## Gates, in order, after any edit to the collection

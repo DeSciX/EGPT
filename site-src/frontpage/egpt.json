@@ -1,0 +1,171 @@
+{
+  "_purpose": "Content spec of the egpt app's front page (egpt.cc → egpt.descix.net), assembled by scripts/build-frontpage.js from the Courant Group template. The author's direction and the content brief are in frontpage/egpt.md; fragments in frontpage/egpt/. The collection viewer is library.html; the root index.html forwards any #<path> to it.",
+  "title": "EGPT-Evidence — the missing corpus: 18.313x, the New Manhattan Project",
+  "description": "A digital library of the primary documents behind EGPT: von Neumann and Ulam at Los Alamos, Rota at MIT and the Courant Institute, three machine-checked proofs, a patent, and a conversation with a machine about what it all means.",
+  "brand": {
+    "name": "EGPT-Evidence",
+    "tag": "library"
+  },
+  "nav": [
+    {
+      "text": "Read first",
+      "href": "#reading"
+    },
+    {
+      "text": "Barrier of Meaning",
+      "href": "#barrier"
+    },
+    {
+      "text": "18.313x",
+      "href": "#course"
+    },
+    {
+      "text": "Los Alamos",
+      "href": "#losalamos"
+    },
+    {
+      "text": "Proof",
+      "href": "#proof"
+    },
+    {
+      "text": "Library",
+      "href": "#library"
+    },
+    {
+      "text": "Podcast",
+      "href": "#podcast"
+    },
+    {
+      "text": "Open the library →",
+      "href": "library.html",
+      "class": "mono",
+      "style": "color:var(--cyan)"
+    }
+  ],
+  "hero": {
+    "eyebrow": "EGPT-Evidence · a digital library",
+    "h1_html": "What if the very foundations of modern mathematics, physics, and computation are <em>wrong?</em>",
+    "src": "guide/README.md",
+    "lede": "The primary documents behind EGPT: von Neumann and Ulam at Los Alamos, Rota at MIT and the Courant Institute, three machine-checked proofs, a patent, and a conversation with a machine about what it all means. Read them, check them, and judge for yourself.",
+    "primary": {
+      "text": "Read the conversation",
+      "href": "library.html#12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html"
+    },
+    "secondary": {
+      "text": "Open the library",
+      "href": "library.html"
+    },
+    "kicker_html": "<b>18.313x, the New Manhattan Project.</b> Gian-Carlo Rota's probability course at MIT, reopened on the documents held here. The first content the community is paid to make is the podcast.",
+    "art": {
+      "src": "images/happy-future.jpg",
+      "alt": "The image GPT-5.6 Sol made when asked to picture its happy future: message 53a of the transcript"
+    }
+  },
+  "css": ".hero h1{max-width:16ch;font-size:clamp(36px,5.2vw,64px)}\n.hero-art img{right:-14%;height:112%;opacity:.42;mask-image:linear-gradient(90deg,transparent 0,transparent 42%,rgba(0,0,0,.55) 68%,#000 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 42%,rgba(0,0,0,.55) 68%,#000 100%)}\n@media (max-width:820px){.hero-art img{opacity:.22;right:-40%}}\n.brand b{white-space:nowrap}\n.navlinks{gap:18px;font-size:14.5px;white-space:nowrap}\n.prods.ideas{grid-template-columns:repeat(4,1fr)}\n.prods.ideas a.prod{text-decoration:none!important;color:inherit}\n.prods.ideas a.prod:hover{border-color:var(--cyan)}\n.tech .quote blockquote+cite{margin-bottom:6px}\n@media (max-width:1000px){.prods.ideas{grid-template-columns:repeat(2,1fr)}}\n@media (max-width:520px){.prods.ideas{grid-template-columns:1fr}}",
+  "sections": [
+    {
+      "file": "egpt/reading.html"
+    },
+    {
+      "file": "egpt/barrier.html"
+    },
+    {
+      "file": "egpt/course.html"
+    },
+    {
+      "file": "egpt/losalamos.html"
+    },
+    {
+      "use": "heritage",
+      "links": [
+        [
+          "<a href=\"https://egpt.descix.net\" target=\"_blank\" rel=\"noopener\">The full story, with the documents ↗</a>",
+          "<a href=\"library.html#00_OUTPUTS/EGPT_Backstory.md\">The full story, with the documents</a>"
+        ]
+      ]
+    },
+    {
+      "use": "proof"
+    },
+    {
+      "use": "technology",
+      "links": [
+        [
+          "<a href=\"https://egpt.descix.net\" target=\"_blank\" rel=\"noopener\">The proofs, as a PDF ↗</a>",
+          "<a href=\"library.html#08_LEAN/PROOF_CHAINS.md\">The three proof chains</a>"
+        ],
+        [
+          "<a href=\"https://egpt.descix.net\" target=\"_blank\" rel=\"noopener\">Axiom build outputs ↗</a>",
+          "<a href=\"library.html#08_LEAN/README.md\">The Lean sources and axiom inventories</a>"
+        ]
+      ]
+    },
+    {
+      "file": "egpt/library.html"
+    },
+    {
+      "file": "egpt/podcast.html"
+    },
+    {
+      "use": "opencore"
+    },
+    {
+      "use": "patent"
+    },
+    {
+      "file": "egpt/licence.html"
+    }
+  ],
+  "links": [],
+  "images": [
+    {
+      "from": "frontpage:egpt/images/happy-future.jpg",
+      "to": "images/happy-future.jpg"
+    }
+  ],
+  "footer": {
+    "name": "EGPT-Evidence",
+    "tag": "the missing corpus",
+    "links": [
+      {
+        "text": "Read this first",
+        "href": "library.html#12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html"
+      },
+      {
+        "text": "The library",
+        "href": "library.html"
+      },
+      {
+        "text": "Record index",
+        "href": "library.html#RECORD_INDEX.md"
+      },
+      {
+        "text": "CHECKSUMS.txt",
+        "href": "CHECKSUMS.txt"
+      },
+      {
+        "text": "GitHub",
+        "href": "https://github.com/eabadir/EGPT-Evidence"
+      },
+      {
+        "text": "Courant Group",
+        "href": "https://egpt-courantgroup.descix.net"
+      },
+      {
+        "text": "DeSciX",
+        "href": "https://descix.net"
+      },
+      {
+        "text": "The patent",
+        "href": "library.html#11_PATENT/README.md"
+      }
+    ],
+    "legal_html": "EGPT is a community project on DeSciX. The basis on which the collection holds its documents is stated in <a href=\"library.html#Copyright_Fair-use_Memo.md\">the fair-use memorandum</a>; CHECKSUMS.txt verifies every file."
+  },
+  "scripts": {
+    "codesite": true,
+    "forward": {
+      "hash_to": "library.html"
+    }
+  }
+}
