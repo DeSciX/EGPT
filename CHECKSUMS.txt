@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 735 files, 144544214 bytes.
+# 735 files, 144545638 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -644,7 +644,7 @@ e42fc0d7aa0754547a3cc7156db1e303798be861cf98c4815e30ad71821c9b7d  13_MAXI/bedtim
 f7a39c55830494e4a01ecd0624a32e1d52a979beecc4cc73acae3bae04c1da9d  13_MAXI/bedtime_stories/The_Impossible_Audit.md
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  13_MAXI/bedtime_stories/The_Room_Where_It_Happened.md
 f0988a168b830607f89e91127540479fab748301eba07a75e2b4d19685dffc74  13_MAXI/bedtime_stories/The_Story_of_EGPT.md
-f9b76ea79455537757c28efa658df071af590bf9952b5f9649d5f525dd03a3d7  14_COURANT_GROUP/Business_Plan.md
+211ba3e548ddaaebac983d19d7920293cf36a2722385d5a66af8fe8158a8f77b  14_COURANT_GROUP/Business_Plan.md
 d0ce3225fc6b6c281125b2ea6102239854b1f0198bd6ef7b62b0499fe6857068  14_COURANT_GROUP/DeSciX_Community_License_v1.pdf
 cd27f55c5cafba7a715b2456a1d7d5746401e601047e14cb559340c6299fd697  14_COURANT_GROUP/DeSciX_Whitepaper.md
 f587c3dd0f5fc25132bf565b0bb3465adc28e7c2e4430d4b0345e01ed998bece  14_COURANT_GROUP/Press_Release_2026-04-01.md
