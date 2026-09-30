@@ -8,12 +8,10 @@
  *   node scripts/build-frontpage.js <app> [--out <dir>] [--dry-run]
  *
  * The template's nav, hero and footer are regenerated from the spec with the template's own
- * classes (or the hero is the app's own fragment, "hero": {"file": …}); its sections are reused
- * by id, or replaced by the app's fragments. FAIL LOUD:
+ * classes; its sections are reused by id, or replaced by the app's fragments. FAIL LOUD:
  * - every <blockquote data-src="…"> or <q data-src="…"> in a fragment must be found, folded,
  *   in the named file at HEAD of this repository (a quotation the collection does not hold
- *   cannot be on the page); a <div data-cut-src …> is filled from the held file itself and
- *   gated block by block (see renderCut);
+ *   cannot be on the page);
  * - every href to library.html#<path> must name a file tracked at HEAD (no dead deep links);
  * - every images/<name> the page uses must come from the template commit or the spec.
  * Pure Node, no dependencies.
@@ -119,14 +117,6 @@ function navHtml() {
 }
 function heroHtml() {
   if (spec.hero === 'template') return rewrite(tplHero, spec.links);
-  if (spec.hero.file) {
-    // a hero written as a fragment: it must be the page's <header class="hero" id="top">; gated below like every fragment
-    const p = path.join(SRC, spec.hero.file);
-    if (!fs.existsSync(p)) die(`hero fragment not found: ${spec.hero.file}`);
-    const html = fs.readFileSync(p, 'utf8');
-    if (!/^\s*<header class="hero[^"]*" id="top">/.test(html)) die(`${spec.hero.file}: a hero fragment starts with <header class="hero…" id="top">`);
-    return html;
-  }
   const h = spec.hero;
   return `<header class="hero" id="top">
   ${h.art ? `<div class="hero-art"><img src="${esc(h.art.src)}" alt="${esc(h.art.alt)}"></div>` : ''}
@@ -154,47 +144,9 @@ function footerHtml() {
 </div></footer>`;
 }
 
-// ---------------------------------------------------------------- a verbatim cut from a held file, rendered at build time
-// <div data-cut-src="<path>" data-cut-from="<first line>" data-cut-to="<last line>" data-cut-mark="<line>|<line>…"></div>
-// The span between the two lines (inclusive) of the held file at HEAD becomes the element's content:
-// headings, paragraphs, bold, italic and links, nothing else, nothing altered. Lines named in
-// data-cut-mark get class="cut-mark". Every block is then gated like a quotation (it must be
-// found, folded, in the file it came from), so a cut can never carry words the file does not.
-const inline = t => esc(t)
-  .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>')
-  .replace(/\[\[([^\]]+)\]\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
-  .replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-function renderCut(el, file) {
-  const attr = n => { const m = el.match(new RegExp(`data-cut-${n}="([^"]*)"`)); return m ? unent(m[1]) : ''; };
-  const src = attr('src'), from = attr('from'), to = attr('to'), marks = attr('mark').split('|').map(x => x.trim()).filter(Boolean);
-  if (!src || !from || !to) die(`${file}: a data-cut needs src, from and to`);
-  if (!tracked.has(src)) die(`${file}: cut source is not tracked at HEAD: ${src}`);
-  const lines = git('cat-file', 'blob', tracked.get(src)).toString('utf8').split('\n');
-  const a = lines.findIndex(l => l.trim() === from), b = lines.findIndex((l, i) => i >= a && l.trim() === to);
-  if (a < 0) die(`${file}: cut start not found in ${src}: "${from}"`);
-  if (b < 0) die(`${file}: cut end not found in ${src} after its start: "${to}"`);
-  const blocks = lines.slice(a, b + 1).join('\n').split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
-  const heldF = heldText(src);
-  let n = 0;
-  const html = blocks.map(block => {
-    const text = fold(block);
-    if (!heldF.includes(text)) die(`${file}: cut block not found in ${src}: "${text.slice(0, 80)}…"`);
-    n++;
-    const mark = marks.some(m => block.replace(/^#+\s*/, '').replace(/[*_]/g, '').trim() === m) ? ' class="cut-mark"' : '';
-    const h = block.match(/^(#{1,6})\s+(.*)$/);
-    if (h) return `<h${Math.min(6, h[1].length + 1)}${mark}>${inline(h[2])}</h${Math.min(6, h[1].length + 1)}>`;
-    return `<p${mark}>${inline(block.replace(/\s*\n\s*/g, ' '))}</p>`;
-  }).join('\n');
-  const unmarked = marks.filter(m => !blocks.some(bk => bk.replace(/^#+\s*/, '').replace(/[*_]/g, '').trim() === m));
-  if (unmarked.length) die(`${file}: cut mark not a block of the cut: "${unmarked[0]}"`);
-  gated += n;
-  return el.replace(/>\s*<\/div>$/, `>${html}</div>`);
-}
-
 // ---------------------------------------------------------------- sections: reused by id, or the app's fragments (gated)
 let gated = 0;
 function gateFragment(html, file) {
-  html = html.replace(/<div\b[^>]*data-cut-src="[^"]+"[^>]*>\s*<\/div>/g, m => renderCut(m, file));
   for (const m of html.matchAll(/<(blockquote|q)\b[^>]*data-src="([^"]+)"[^>]*>([\s\S]*?)<\/\1>/g)) {
     const src = m[2];
     const quote = fold(unent(strip(m[3])));
