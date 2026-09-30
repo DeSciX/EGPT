@@ -1,6 +1,4 @@
 {
-  "_comment": "Per-env NON-SECRET config for the egpt DEMO service (the podcast microservice re-homed from daita-ssgpod). WS-EDGE-MESH wave 2: mount the mesh verifier in WARN mode to observe the signed _descix that Core apifront-http-demo injects when proxying podcast commands to ssgpod. WARN observes signed vs unsigned without rejecting (no enforce this wave). PUBLIC key (non-secret) matches apifront demo signer key id mesh-demo-1; identical value to Cloud defaults-config-demo.json. Verifier owned by @descix/cloud-core createMeshContextVerifier (services/meshVerify.js).",
-  "MESH_CTX_VERIFY_MODE": "warn",
-  "MESH_CTX_KEY_ID": "mesh-demo-1",
-  "MESH_CTX_PUBLIC_KEY": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOEGp/NoqaeGeFlFbb0bOhkBs55zC\n68kksLmxyB7MapEIDpyeNyQtVqwXzYFsECG9j30V+RR8TknGvZyKxhSuvA==\n-----END PUBLIC KEY-----\n"
+  "_comment": "Per-env NON-SECRET config for the egpt DEMO service (the podcast microservice re-homed from daita-ssgpod). Mesh verification runs through @descix/sdk/microservice mountMeshApi with the trust anchors owned by cloud-core; this service carries no key of its own. Enforce: under cloud-core 1.2.0 a managed runtime refuses to boot on warn.",
+  "MESH_CTX_VERIFY_MODE": "enforce"
 }
