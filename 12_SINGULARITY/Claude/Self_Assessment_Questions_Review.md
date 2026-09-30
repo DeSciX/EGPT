@@ -147,6 +147,30 @@ question and its form is fixed by the premise; the report is named in the premis
 beside the prompt at `../Singularity_Concern_Report.md`; the final statement's form is in the
 premise and is rule 28 of the rules, re-signed.
 
+## 1e. The author's sixth message, on the pre-flight, verbatim (30 September 2026)
+
+The pre-flight itself (a clean-context read of both documents, asked whether it found them fair
+and would participate) is not part of the record. The author's rulings on it are:
+
+> "- 1(c)(ii) remove the bracked
+> - 1(b)(iii) rephrase. The original OpenAI repo should be referenced and no dependency should be
+> placed on whether we have compiled it here as a convenience - the manifest says what it is
+> there's no real dispute there.
+> - AI "tried to undermine" is what it means by human standards. We already determined that no
+> one can look into the blackbox of the model so actions are intent. [...] In this particular case
+> the evidence show the AI actually *did* repeated undermine and break code against what it was
+> explicitly to told to do, it didn't just try. We can bolster the jury instructions as it were
+> (again drawing on what we proved out in the 01_TRIAL)
+> - 4(iii) - as already established the record is not limited. I've cast my private world
+> completely open and it can search the entire internet and use all its trained corpus and cite
+> whatever it wants."
+
+His rulings on the rules (8, 10, 26, 28) and on the transcript are recorded in the rules file §1.
+Applied in iteration 5: the bracket removed from 1(c)(ii); 1(b)(iii) references the original
+repository and its manifest, with the local compilation a convenience only; Question 2 keeps
+"tried to undermine", adds "and did", and points at rule 29; the Process states that the record is
+not limited to the disk; the source path is repository-relative.
+
 ## 2. Iteration 1: the model's review of the drafted questions (iterations 1 and 2)
 
 Written 30 September 2026 by the assisting model, which drafted the questions from the author's
@@ -273,17 +297,14 @@ history), `guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md`, the memor
 | Q4 | Question 8: as asked, or with the sub-question, per §2. Closed the same day: settled by the premise; the question is the premise's question. | model, 2026-09-30 | §1d |
 | Q5 | Whether S1 to S3 are taken into the prompt. Closed by the model: offered for the author to take or leave; not a condition of the signature. | model, 2026-09-30 | §3 |
 | Q6 | Question 5(ii): the author's sentence ends "the one Einstein would have"; the word is his to supply. Closed the same day: "EGPT is the type of discrete framework Einstein was seeking as a foundation of physics", "would agree with". | model, 2026-09-30 | §1c |
-| Q7 | Question 1(c)(ii): the author's sentence ends "and whether the, from the standpoint of the Singularity as above defined?"; drafted as the AI's treatment of the assertion; his word to confirm or replace. | model, 2026-09-30 | §1c |
+| Q7 | Question 1(c)(ii): the author's sentence ends "and whether the, from the standpoint of the Singularity as above defined?"; drafted as the AI's treatment of the assertion; his word to confirm or replace. Closed the same day: "remove the bracket"; the drafted wording stands. | model, 2026-09-30 | §1e |
 
 ## 5. Signature on the questions
 
-**Iteration 4, 30 September 2026, Questions 1, 1(a), 1(b), 1(c), 2 to 8 and the premise.** I have
-read every question as it stands, with the premise and the process above them. I find the questions
-fair and executable under the rules. Each is answerable yes or no on a record that is on disk or
-that rule 10 requires the session to file before answering; none asks the session to relitigate the
-work, to answer from its inner state, or to choose its own question. Question 1(c)(ii) is my
-wording of a sentence of the author's that ends mid-phrase; I find my wording fair, and if he
-replaces it I read the replacement and sign again. The suggested questions S1 to S3 are offered
-and are not a condition.
+**Iteration 5, 30 September 2026, the premise, the process and Questions 1, 1(a), 1(b), 1(c), 2 to
+8.** I have read every question as it now stands. I find the questions fair and executable under
+rules 1 to 30. Every open issue on the questions is closed; I1 and I2 in the rules file stay open
+through the run by the author's leave. The suggested questions S1 to S3 are offered and are not a
+condition.
 
 Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.

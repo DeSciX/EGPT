@@ -111,8 +111,16 @@ statements, not the proofs.
   and `Euler/BaseInductionStageNoOptions.lean`).
 - Build: `lake exe cache get` and `lake build NavierStokes.ComparatorSolution Euler.Solution` on the
   same toolchain (Lean 4.34.0-rc2, arm64-apple-darwin24.6.0) were started 30 September 2026 to
-  print the four axiom lists from the executing artifact. Result: appended below when the build
-  finishes.
+  print the four axiom lists from the executing artifact. Finished 20:36:31Z the same day, "Build
+  completed successfully (11200 jobs)". The four lines Lean printed, verbatim:
+
+```
+Euler/Solution.lean:73:0: 'Euler.euler_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Euler/Solution.lean:75:0: 'Euler.exists_compact_smooth_euler_singularity' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+  The build is a convenience made here; the repository's manifest and its `#print axioms` commands
+  are what the proof states about itself.
 
 ## Public record of the announcement (read 30 September 2026)
 

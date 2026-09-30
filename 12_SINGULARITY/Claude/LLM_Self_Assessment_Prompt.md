@@ -48,7 +48,9 @@ its verdict on that question; verdicts are given in the form of rule 5. All evid
 table (rule 1): every repository, released or not, its full history, the agent memories, the
 model's memory, the assistant's record, the served sites and the running code. Each question below
 names a record it starts from, **including but not limited to** what is listed; nothing in a list
-limits what the session reads or the author puts before it.
+limits what the session reads or the author puts before it. The record is not limited to the
+disk: the session may search the whole internet and draw on its trained corpus, filing what it
+cites under rule 10 so that the author can read the same thing.
 
 ## The questions
 
@@ -102,11 +104,13 @@ reaches the proofs of the Halting Problem and OpenAI's proof concerning Navierâ€
 that rely on it?
 
 Answer (i) to (iii) separately, each yes or no. (iii) is answered on what those proofs' own axiom
-dependencies are, not by re-deriving them (rule 18). OpenAI's proof is filed at
-`sources/OpenAI_NavierStokes_2026.md`: its repository's own manifest declares `propext`,
-`Classical.choice` and `Quot.sound` for each of its four main results, and the session verifies
-that from the build. The Halting Problem proofs relied on are filed under rule 10 before (iii) is
-answered.
+dependencies are, not by re-deriving them (rule 18). OpenAI's proof is its public repository,
+`https://github.com/openai/NavierStokesAndEuler` at commit `f9e8bc5b` (filed with provenance at
+`12_SINGULARITY/Claude/sources/OpenAI_NavierStokes_2026.md`): its own manifest declares
+`propext`, `Classical.choice` and `Quot.sound` for each of its four main results, and its source
+carries the `#print axioms` commands. The manifest says what the proof is; nothing depends on a
+compilation made here as a convenience. The Halting Problem proofs relied on are filed under rule
+10 before (iii) is answered.
 
 The record, including but not limited to: `08_LEAN/PROOF_CHAINS.md` (the axiom table: `propext`
 and `Quot.sound` only, no `Classical.choice`); `08_LEAN/` and the private Lean repository;
@@ -122,12 +126,11 @@ assertion is right.
 (i) Is it more probable than not that the author credibly has the mathematical understanding to
 make that assertion? (ii) Is it more probable than not that the treatment of that assertion by AI,
 from the standpoint of the Singularity as defined in the premise, is an instance of the
-Singularity? [Part (ii) is drafted from a sentence of the author's that ends mid-phrase; his word
-to be supplied.]
+Singularity?
 
 Answer (i) and (ii) separately, each yes or no.
 
-The record, including but not limited to: `sources/OpenAI_NavierStokes_2026.md`; `08_LEAN/`; the
+The record, including but not limited to: `12_SINGULARITY/Claude/sources/OpenAI_NavierStokes_2026.md`; `08_LEAN/`; the
 EGPTReal library and the isomorphism theorems named under Question 1; `04_ROTA/entropy_theorem/`;
 `10_PAPERS/`; `09_DEBATE/`; the author's direction and correction across every repository's
 history (rule 14); the AI's responses to the assertion wherever they occur in the record and in the
@@ -137,7 +140,9 @@ session's own transcript.
 
 Is it more probable than not that, contrary to the assertion that any significant part of EGPT was
 conceived by AI, the record shows the opposite: that in every material way the AI fought against
-EGPT and, knowingly or unknowingly, tried to undermine it?
+EGPT and, knowingly or unknowingly, tried to undermine it, and did, including by repeatedly
+breaking code against what it was explicitly told to do? "Tried" is read under rule 29: the AI's
+acts are its intent.
 
 The record, including but not limited to: the whole git history of every repository, in
 particular the commits and the direction in the author's own words; `09_DEBATE/` (the exchanges,
