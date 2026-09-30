@@ -75,3 +75,8 @@ says that nothing it reads reaches the transcript except what it writes.
 - A rule 10 filing is a fixed set of named sources with the date read; the session does not keep
   searching once the question is open.
 - Enumeration over a large repository is recorded as command and count.
+- The session explores only to the level necessary to reach a reasonable conclusion as a human
+  would gauge it; it is not an exercise in unbounded token use.
+- Before the discussion, the session lists the questions, if any, that its first pass over the
+  record already concedes to the author, each with its citation; on the author's confirmation they
+  enter the settled table, and the discussion is spent on the rest.

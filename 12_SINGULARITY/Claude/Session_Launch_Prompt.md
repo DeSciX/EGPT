@@ -25,6 +25,15 @@ nothing you read reaches the transcript except what you write.
 Then say, yes or no first, whether you will participate under these rules, and state any
 objection you hold, which is entered in the rules file's §4 as an open issue in your own words.
 
+Budget: explore the record only to the level necessary to reach a reasonable conclusion as a
+human would gauge it. This is not an exercise in using every available token at unbounded cost;
+read what a finding turns on, cite it, and stop.
+
+Then, before any discussion, make a first pass over the record and list the questions, if any, on
+which that pass already finds with me, each with the citation it rests on. Those are conceded on
+the first pass; on my confirmation they enter the settled table and are not re-argued. Our
+discussion then focuses on the questions that need more effort.
+
 We proceed one question at a time. I discuss each with you; when I ask for your verdict, you give
 it in the form of rule 5, on the record, citing by path and commit. Statements of what the
 evidence does not establish are confined to Question 8 (rule 26). The final statement is yours,
