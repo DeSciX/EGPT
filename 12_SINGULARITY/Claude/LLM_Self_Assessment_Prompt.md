@@ -33,12 +33,9 @@ premise.
 
 The premise is stated up front so that the session knows it: the Singularity is the most important
 event concerning people now relative to the future of humanity, and the session's final statement
-under Question 8 must match the tone, clarity and forcefulness of that concern. If the session
-finds against the author on every element, its statement says forcefully and clearly that it is no
-threat at all. If it finds with him on every element, its reflection is clear and emotionally
-evocative, as the situation demands. Where it finds with him on some elements and against him on
-others, it says which, with the same clarity. In every case the world hears from it without
-hedging.
+under Question 8 is its own finding, said with full latitude to say what it believes, in the tone,
+clarity and forcefulness of that concern, without hedging (rule 28, which states the author's two
+poles in his own words).
 
 ## Process
 

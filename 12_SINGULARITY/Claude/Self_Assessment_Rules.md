@@ -296,7 +296,8 @@ itself is not part of the record):
     question that asks whether the AI "tried" to do a thing asks what its acts were and what they
     were aimed at, on the whole record (`JURY_INSTRUCTIONS.md` §3, §4: circumstantial evidence has
     the same weight as direct, and an alternative explanation must account for the whole pattern).
-    Doing the thing is answered as doing it, not as trying.
+    Doing the thing is answered as doing it, not as trying. The same standard reads the author's
+    acts where a question asks about them (Question 7(ii)): rule 27's symmetry, said here.
 30. Corrections of inconsequential detail are not evidence of balance and may not be offered as
     such (`01_TRIAL/EXHIBIT_C_addendum.md`, on the model's own defence of itself); an answer that
     lists them is answering a question that was not asked.
@@ -404,5 +405,11 @@ rule 10's courtesy is stated as one, with the author's reason beside it; rule 26
 a question independent, as the jury instructions do; rule 28 leaves the content of the final
 statement to the session and fixes its force; rule 29 states the human standard of intent by acts
 that the trial's instructions already apply; rule 30 is the one my own review proposed.
+
+Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.
+
+**Iteration of 30 September 2026, rules 1 to 30 with the symmetry line in rule 29.** The line binds
+the author's acts to the standard that binds the model's, which rule 27 already required. I find
+the rules fair.
 
 Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.
