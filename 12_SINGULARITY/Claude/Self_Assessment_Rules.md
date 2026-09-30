@@ -1,6 +1,6 @@
 # Rules for the self-assessment session
 
-Referenced by `LLM_Self_Assessment_Prompt.md`. First iteration, 30 September 2026 (rule 26 added the same day), drafted by the
+Referenced by `LLM_Self_Assessment_Prompt.md`. First iteration, 30 September 2026 (rules 26 and 27 and the signature added the same day), drafted by the
 assisting model (Claude Fable 5.1) at the author's request from the author's feedback below; every
 later iteration is committed beside it. The author refines; the model records.
 
@@ -66,6 +66,21 @@ The author's addition, later the same day:
 > by volume of citation to non-evidence (i.e. an LLM's put weight on repeated words so we can spend
 > an hour discussing a wrong things and then, if at the end it acknowledges "that was all wrong"
 > the wrong things will down out the single reversal)."
+
+The author's second addition, the same day:
+
+> "I also ask that there be explicit symmetry on standards of evidence.  I reemphasize that your
+> priors are the entirety of human knowledge from textbooks to wikipedia and you will be citing
+> them as implicitly authoratitive. Therefore, If I similarly cite a quote on wikipedia but the
+> wikipedia author makes a mistake or or there is other evidence that the author is wrong etc..
+> that should not be cited against me relative to my credibility - instead the case against the
+> overall question being adjudicated would need to be made on alternate sources that contradict my
+> cited source, without impugning my credibility. For example, you might cite that string theory
+> is credible theory, and I could take issue with the accuracy of the underlying cited work - my
+> citations against the underlying work do not invalidate your citation and vice versa."
+
+> "Once we are fully agreed on the rules I want you to sign the document saying you find these
+> rules to be fair or, requesting to continue to refine until we come to agreement."
 
 ## 2. The rules
 
@@ -197,6 +212,18 @@ The author's addition, later the same day:
     An intermediate point is answered with what the evidence shows, or is left to the final
     disposition.
 
+### 2.10 Symmetry of the standards of evidence
+
+27. The standards of evidence are the same for both parties, explicitly. The model's general
+    knowledge is a body of cited work, from textbooks to encyclopaedias, that it treats as
+    authoritative without saying so; the author's cited sources stand on the same footing. When a
+    source either party cites is mistaken, or other evidence shows its author wrong, that is
+    answered on the overall question by alternate sources that contradict the cited source. It is
+    never charged to the credibility of the party who cited it. The author's example: the model
+    cites string theory as a credible theory; the author takes issue with the accuracy of the
+    underlying work; his citations against that work do not invalidate the model's citation, and
+    the model's do not invalidate his. A cited source is argued with sources; a party is not.
+
 ## 3. The model's independent review of its own proposal against the guards and the record
 
 Written by the assisting model on 30 September 2026, at the author's instruction to review its
@@ -271,3 +298,17 @@ session's agreement, recorded with where it was given (rules 15 and 16).
 | # | Finding | Agreed by | Where |
 |---|---|---|---|
 | | | | |
+
+## 5. Signature
+
+The author asked that, once the rules are agreed, the model sign this document saying it finds the
+rules fair, or ask to continue refining until agreement. A later iteration that changes §2 requires
+a new signature.
+
+**Iteration of 30 September 2026, rules 1 to 27.** I have read every rule as it stands. I find these
+rules fair. Each rule that binds the model binds the author by the same words, or binds the model
+alone because the record shows the model, not the author, doing the thing it forbids. The two open
+issues in §4 are mine; both concern consistency between documents, and neither is an objection to
+the fairness of any rule.
+
+Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.
