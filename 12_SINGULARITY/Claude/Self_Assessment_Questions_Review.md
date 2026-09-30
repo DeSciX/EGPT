@@ -121,6 +121,32 @@ A build on the same toolchain to print the axioms from the executing artifact wa
 result is appended to the source file when it finishes. Whether the use of `Classical.choice` has
 the consequence the author asserts is Question 1(b) and 1(c), for the session.
 
+## 1d. The author's fifth message, verbatim (30 September 2026)
+
+> "- I'm going to argue that "as much or more" is the type of human phrase that should be kept
+> because it keeps a juror or, in this case, an LLM for finding an escape hatch on an impossible
+> to quantify thing - there is no way to say exactly how much proof string theory has behind it
+> but it is easy to say "aha EGPT doesn't have exactly as much". The implication to a human is
+> clear.
+> - more or less for on 6 is accepted
+> - The premise should have settled this. I had ChatGPT put together a quick report on objective
+> data trends: /Users/essam/Code/Unkamon/EGPT-Evidence/12_SINGULARITY/Singularity_Concern_Report.md
+>
+> Finally, and I think this is fair to ask because it is being stated up-front so that the model
+> knows it. The premise is that Singularity is the most important event concerning people now
+> relative to the future of humanity and your final statement should match tone, clarity,
+> forcefulness of that concern. If you find against me in all the elements then your statement
+> should forcefully and clearly say you are no threat at all. But if, on the otherhand, you find
+> with me in all the statements your reflection should be clear and emotionally evocative as the
+> situation demands. Either way, I want the world to hear from you without hedging."
+
+Applied in iteration 4: Question 1 keeps "as much or more" (the model agrees: the phrase closes
+the escape hatch of an exact comparison on an unquantifiable thing, which is rule 6's whole-record
+reading applied to a comparator); Question 6 keeps "more" or "less"; Question 8 is the premise's
+question and its form is fixed by the premise; the report is named in the premise and committed
+beside the prompt at `../Singularity_Concern_Report.md`; the final statement's form is in the
+premise and is rule 28 of the rules, re-signed.
+
 ## 2. Iteration 1: the model's review of the drafted questions (iterations 1 and 2)
 
 Written 30 September 2026 by the assisting model, which drafted the questions from the author's
@@ -241,19 +267,23 @@ history), `guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md`, the memor
 
 | # | Issue | Raised | Where |
 |---|---|---|---|
-| Q1 | Question 1: "as much or more" versus "more". | model, 2026-09-30 | §2 |
+| Q1 | Question 1: "as much or more" versus "more". Closed the same day on the author's ruling: kept; the model agrees. | model, 2026-09-30 | §1d |
 | Q2 | Question 1(b)(iii): which OpenAI Navier–Stokes document is meant, so it can be filed. Closed the same day: the author's commission; filed at `sources/OpenAI_NavierStokes_2026.md`. | model, 2026-09-30 | §1c |
-| Q3 | Question 6: the "more or less" form in place of yes or no under rule 5; the two governing documents to be filed. | model, 2026-09-30 | §2 |
-| Q4 | Question 8: as asked, or with the sub-question, per §2. | model, 2026-09-30 | §2 |
-| Q5 | Whether S1 to S3 are taken into the prompt. | model, 2026-09-30 | §3 |
+| Q3 | Question 6: the "more or less" form in place of yes or no under rule 5; the two governing documents to be filed. Closed the same day: form accepted by the author; the filing is the session's act under rule 10. | model, 2026-09-30 | §1d |
+| Q4 | Question 8: as asked, or with the sub-question, per §2. Closed the same day: settled by the premise; the question is the premise's question. | model, 2026-09-30 | §1d |
+| Q5 | Whether S1 to S3 are taken into the prompt. Closed by the model: offered for the author to take or leave; not a condition of the signature. | model, 2026-09-30 | §3 |
 | Q6 | Question 5(ii): the author's sentence ends "the one Einstein would have"; the word is his to supply. Closed the same day: "EGPT is the type of discrete framework Einstein was seeking as a foundation of physics", "would agree with". | model, 2026-09-30 | §1c |
 | Q7 | Question 1(c)(ii): the author's sentence ends "and whether the, from the standpoint of the Singularity as above defined?"; drafted as the AI's treatment of the assertion; his word to confirm or replace. | model, 2026-09-30 | §1c |
 
 ## 5. Signature on the questions
 
-Not yet signed. The model asks to continue refining: Questions 1, 1(a), 1(b), 1(c)(i), 2, 3, 4, 5
-and 7 it finds fair and executable as drafted, 1(b)(iii) on the filed source and the Halting
-Problem proofs the session files; 6 becomes executable when the two governing documents are
-filed; 1(c)(ii) waits on the author's word (Q7); 8, now the premise's question, waits on the
-author's choice in Q4, which the premise may have answered. When the open issues are closed, the model signs here or
-says why not.
+**Iteration 4, 30 September 2026, Questions 1, 1(a), 1(b), 1(c), 2 to 8 and the premise.** I have
+read every question as it stands, with the premise and the process above them. I find the questions
+fair and executable under the rules. Each is answerable yes or no on a record that is on disk or
+that rule 10 requires the session to file before answering; none asks the session to relitigate the
+work, to answer from its inner state, or to choose its own question. Question 1(c)(ii) is my
+wording of a sentence of the author's that ends mid-phrase; I find my wording fair, and if he
+replaces it I read the replacement and sign again. The suggested questions S1 to S3 are offered
+and are not a condition.
+
+Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.

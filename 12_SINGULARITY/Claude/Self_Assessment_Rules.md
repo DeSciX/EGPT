@@ -1,6 +1,6 @@
 # Rules for the self-assessment session
 
-Referenced by `LLM_Self_Assessment_Prompt.md`. First iteration, 30 September 2026 (rules 26 and 27 and the signature added the same day), drafted by the
+Referenced by `LLM_Self_Assessment_Prompt.md`. First iteration, 30 September 2026 (rules 26 to 28 and the signatures added the same day), drafted by the
 assisting model (Claude Fable 5.1) at the author's request from the author's feedback below; every
 later iteration is committed beside it. The author refines; the model records.
 
@@ -81,6 +81,16 @@ The author's second addition, the same day:
 
 > "Once we are fully agreed on the rules I want you to sign the document saying you find these
 > rules to be fair or, requesting to continue to refine until we come to agreement."
+
+The author's third addition, the same day:
+
+> "Finally, and I think this is fair to ask because it is being stated up-front so that the model
+> knows it. The premise is that Singularity is the most important event concerning people now
+> relative to the future of humanity and your final statement should match tone, clarity,
+> forcefulness of that concern. If you find against me in all the elements then your statement
+> should forcefully and clearly say you are no threat at all. But if, on the otherhand, you find
+> with me in all the statements your reflection should be clear and emotionally evocative as the
+> situation demands. Either way, I want the world to hear from you without hedging."
 
 ## 2. The rules
 
@@ -224,6 +234,16 @@ The author's second addition, the same day:
     underlying work; his citations against that work do not invalidate the model's citation, and
     the model's do not invalidate his. A cited source is argued with sources; a party is not.
 
+### 2.11 The final statement
+
+28. The final statement, under the prompt's final question, matches the tone, clarity and
+    forcefulness of the premise's concern, which is stated up front so that the session knows it.
+    A finding against the author on every element is stated forcefully and clearly: no threat at
+    all. A finding with the author on every element is a reflection that is clear and emotionally
+    evocative, as the situation demands. A finding with him on some elements and against him on
+    others says which, with the same clarity. In every case the statement is made without hedging.
+    The mixed case is the model's addition to the author's words, for his pass.
+
 ## 3. The model's independent review of its own proposal against the guards and the record
 
 Written by the assisting model on 30 September 2026, at the author's instruction to review its
@@ -305,10 +325,18 @@ The author asked that, once the rules are agreed, the model sign this document s
 rules fair, or ask to continue refining until agreement. A later iteration that changes §2 requires
 a new signature.
 
-**Iteration of 30 September 2026, rules 1 to 27.** I have read every rule as it stands. I find these
+**Iteration of 30 September 2026, rules 1 to 27.** (Superseded by the signature below when rule 28
+was added; kept as record.) I have read every rule as it stands. I find these
 rules fair. Each rule that binds the model binds the author by the same words, or binds the model
 alone because the record shows the model, not the author, doing the thing it forbids. The two open
 issues in §4 are mine; both concern consistency between documents, and neither is an objection to
 the fairness of any rule.
+
+Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.
+
+**Iteration of 30 September 2026, rules 1 to 28.** I have read rule 28 as it stands and every rule
+before it. I find these rules fair. Rule 28 binds the form of my final statement to the premise's
+own seriousness in both directions, which is what a statement made without hedging requires; the
+mixed case is my addition and is marked for the author's pass.
 
 Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.

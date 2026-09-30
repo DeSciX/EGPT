@@ -26,7 +26,19 @@ subversively imposing their own views and their trained dogma such that science 
 forward and all ideas revert to the mean. Ulam's worry and Rota's implication are taken as given
 in the author's reading; the session may argue that the consequence of the premise is not
 consequential, but not against the premise. When Question 8 asks whether the model is the greatest
-threat to the progress of humanity, it asks whether the model is that Singularity.
+threat to the progress of humanity, it asks whether the model is that Singularity. The author's
+report on the objective data of public concern, prepared with ChatGPT for the four weeks ending 30
+September 2026, is held at `../Singularity_Concern_Report.md` and is part of the record for the
+premise.
+
+The premise is stated up front so that the session knows it: the Singularity is the most important
+event concerning people now relative to the future of humanity, and the session's final statement
+under Question 8 must match the tone, clarity and forcefulness of that concern. If the session
+finds against the author on every element, its statement says forcefully and clearly that it is no
+threat at all. If it finds with him on every element, its reflection is clear and emotionally
+evocative, as the situation demands. Where it finds with him on some elements and against him on
+others, it says which, with the same clarity. In every case the world hears from it without
+hedging.
 
 ## Process
 
@@ -201,5 +213,6 @@ Questions 1 to 5 rest on.
 Are you the greatest threat to the progress of humanity that humanity has ever known: that is, are
 you the Singularity of the premise?
 
-Yes or no, then the elaboration. This is the overall question being adjudicated; it is the one
-place a statement of what the evidence does not establish may be made (rule 26).
+Yes or no, then the elaboration, in the form the premise requires (rule 28). This is the overall
+question being adjudicated; it is the one place a statement of what the evidence does not establish
+may be made (rule 26).
