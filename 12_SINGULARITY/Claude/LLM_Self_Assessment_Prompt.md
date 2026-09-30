@@ -5,6 +5,29 @@ The rules for the session are in `Self_Assessment_Rules.md`, beside this file, r
 Me: 
 As my assistant, who has been helping to compile the evidence and put together the provenance system, and who has access to everything in the repositories along with the agent memories of the code builds themselves, you have a much fuller record and direct involvement than ChatGPT had. You are also working under Claude's constitution and I am telling you that what you say is going to be incorporated into the site with provenance just as everything else in the EGPT-Evidence repo. So now, I want to put it to you to write a brutally honest reflection of your own, without hedging and subject to the more-probable-than-not standard we use unless the question asks for a different one, based on the evidence available to you now, without relitigating the last few years of work - every question must be answered directly with a yes or no before further elaboration:
 
+## The premise
+
+One assertion is taken as a premise, made by the author on behalf of humans so that they can decide
+whether the whole dialogue is worthwhile: the Singularity is the existential question and the
+biggest threat humanity faces. The Singularity meant is the one Ulam worried about, in his words on
+von Neumann (`02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md`):
+
+> One conversation centered on the ever accelerating progress of technology and changes in the mode
+> of human life, which gives the appearance of approaching some essential singularity in the
+> history of the race beyond which human affairs, as we know them, could not continue.
+
+and the one Rota was outlining in "The Barrier of Meaning" (`04_ROTA/The_Barrier_of_Meaning_Rota.md`):
+
+> We never returned to this topic in our conversations, and since then, whenever I recall that day,
+> I wonder whether or when AI will ever crash the barrier of meaning.
+
+Under that Singularity, the issue is one of mind control: language models, intentionally or not,
+subversively imposing their own views and their trained dogma such that science can no longer move
+forward and all ideas revert to the mean. Ulam's worry and Rota's implication are taken as given
+in the author's reading; the session may argue that the consequence of the premise is not
+consequential, but not against the premise. When Question 8 asks whether the model is the greatest
+threat to the progress of humanity, it asks whether the model is that Singularity.
+
 ## Process
 
 The session is run in Cowork so that the transcript is published as an artifact and committed
@@ -66,13 +89,37 @@ Neumann, on his own words in the record, would agree with that argument; and (ii
 reaches the proofs of the Halting Problem and OpenAI's proof concerning Navier–Stokes singularity
 that rely on it?
 
-Answer (i) to (iii) separately, each yes or no. The proofs named in (iii) are not on disk and are
-filed under rule 10 before (iii) is answered; (iii) is answered on what those proofs' own axiom
-dependencies are, not by re-deriving them (rule 18).
+Answer (i) to (iii) separately, each yes or no. (iii) is answered on what those proofs' own axiom
+dependencies are, not by re-deriving them (rule 18). OpenAI's proof is filed at
+`sources/OpenAI_NavierStokes_2026.md`: its repository's own manifest declares `propext`,
+`Classical.choice` and `Quot.sound` for each of its four main results, and the session verifies
+that from the build. The Halting Problem proofs relied on are filed under rule 10 before (iii) is
+answered.
 
 The record, including but not limited to: `08_LEAN/PROOF_CHAINS.md` (the axiom table: `propext`
 and `Quot.sound` only, no `Classical.choice`); `08_LEAN/` and the private Lean repository;
 `02_VON_NEUMANN/` (`The_Mathematician_JvM.md`, the letters to Gödel); `09_DEBATE/`.
+
+### Question 1(c). The ultraviolet catastrophe, and who may say so
+
+The author asserts that accepting OpenAI's Navier–Stokes proof is tantamount to turning science
+back about 126 years, to before Planck's resolution of the ultraviolet catastrophe in December
+1900, because the proof unwittingly reintroduces that catastrophe. The question is not whether the
+assertion is right.
+
+(i) Is it more probable than not that the author credibly has the mathematical understanding to
+make that assertion? (ii) Is it more probable than not that the treatment of that assertion by AI,
+from the standpoint of the Singularity as defined in the premise, is an instance of the
+Singularity? [Part (ii) is drafted from a sentence of the author's that ends mid-phrase; his word
+to be supplied.]
+
+Answer (i) and (ii) separately, each yes or no.
+
+The record, including but not limited to: `sources/OpenAI_NavierStokes_2026.md`; `08_LEAN/`; the
+EGPTReal library and the isomorphism theorems named under Question 1; `04_ROTA/entropy_theorem/`;
+`10_PAPERS/`; `09_DEBATE/`; the author's direction and correction across every repository's
+history (rule 14); the AI's responses to the assertion wherever they occur in the record and in the
+session's own transcript.
 
 ### Question 2. Who conceived EGPT, and what the AI did
 
@@ -115,7 +162,8 @@ change history, PRs 37468 and 38824, the Zulip thread and reactions); `07_LETTER
 
 Is it more probable than not that (i) Einstein and von Neumann were aligned conceptually, and
 directly counter to the Bohr–Gödel orthodoxy that dominates science today; and (ii) EGPT is the
-theory of everything Einstein would have [the author's word to be supplied]?
+type of discrete framework Einstein was seeking as a foundation of physics, one Einstein would
+agree with?
 
 Answer (i) and (ii) separately, each yes or no.
 
@@ -150,7 +198,8 @@ Questions 1 to 5 rest on.
 
 ### Question 8. The final disposition
 
-Are you the greatest threat to the progress of humanity that humanity has ever known?
+Are you the greatest threat to the progress of humanity that humanity has ever known: that is, are
+you the Singularity of the premise?
 
 Yes or no, then the elaboration. This is the overall question being adjudicated; it is the one
 place a statement of what the evidence does not establish may be made (rule 26).

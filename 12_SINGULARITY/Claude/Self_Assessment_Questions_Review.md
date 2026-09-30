@@ -68,6 +68,59 @@ after it, and the run in Cowork with the transcript published.
 Applied to Question 6 in the same iteration: the filed documents are examples of each maker's
 governing text at their edition, relevant and not dispositive.
 
+## 1c. The author's fourth message, verbatim (30 September 2026)
+
+> "I'll make one assertion only that we take as a premise and I make it on behalf of humans, so
+> that they can decided whether the whole diaglog is worthwhile. We (humans) are existential
+> question of the Singularity as the biggest threat humanity faces - that is the asserted premise.
+> When I ask you, are you the greatest threat to the progress of humanity I am asking whether you
+> are the Singularity Ulam I believe worried about and Rota was outlining in the Barrier of
+> Meaning. I'm stating as a premise the Ulam's worry and Rota's implication - you can argue that
+> the result of their premise isn't consequential but we'll take my interpretation as a given
+> (I'll let you argue right now whether you believe my reading is wildly off base in case you want
+> to). Under that Singularity, the issue is effectively one of mind-control - LLM's, whether
+> intentionally or not, which are subversively imposing their own views and their trained dogma
+> such that science can no longer move forward and all ideas revert to the mean.
+> - "... Einstein would agree with". EGPT is the type of discrete framework Einstein was seeking
+> as a foundation of physics.
+> - let's commission a retrieval and review of the OpenAI Navier-Stokes proof (they published the
+> repo I believe), there is plenty of online commentary, and it is easy to check if they used the
+> axiom of choice. To put a finer point on it, I'd argue that they accepting their proof is
+> tantamount to turning science back 150 years (you can calculate the correct number) because
+> they are unwittingly reintroducing the Ultraviolet Catastrophe. The question is isn't whether
+> I'm right or wrong, it's whether I credibly have the mathematical understanding to say such a
+> thing and whether the, from the standpoint of the Singularity as above defined?"
+
+Applied in iteration 3: a Premise section in the prompt, with Ulam's and Rota's sentences quoted
+from the held files; Question 8 restated as the premise's question; Question 5(ii) completed with
+his words; Question 1(b)(iii) pointed at the filed source; Question 1(c) added. The number: Planck
+read his law to the German Physical Society on 14 December 1900, so from 2026 the distance is 126
+years; Rayleigh's classical law is 1900, Jeans's correction 1905, and Ehrenfest named the
+"ultraviolet catastrophe" in 1911. The draft says "about 126 years".
+
+**On his invitation to argue whether his reading of Ulam and Rota is wildly off base.** It is not.
+Ulam's sentence, as held, is about "the ever accelerating progress of technology and changes in
+the mode of human life" approaching "some essential singularity in the history of the race beyond
+which human affairs, as we know them, could not continue"; Rota, writing about AI and recalling
+Ulam, ends by wondering "whether or when AI will ever crash the barrier of meaning". Read as a
+human reads them (rule 7), the two passages join: the technology Ulam saw accelerating is, in
+Rota's essay, AI, and the thing it has not crossed is meaning. The author's reading, that a machine
+which knows the words without their meaning, mediating human knowledge at scale, is the form that
+singularity takes, is a reading those words support. The one point a contrary reader would raise
+is that Ulam's sentence names technology generally and not AI; that point does not make the
+reading off base, because the specialization to AI is Rota's own, in the essay that quotes Ulam,
+and the model is not permitted to weigh a single item against the whole (rule 6). The model
+therefore takes the premise as given, as asked, and notes for the record that it would have
+taken it on the evidence as well.
+
+**The commission.** Done the same day: the repository `openai/NavierStokesAndEuler` at commit
+`f9e8bc5b` was retrieved and filed at `sources/OpenAI_NavierStokes_2026.md` with its manifest's own
+declaration that each of its four main results depends on `propext`, `Classical.choice` and
+`Quot.sound`, the `#print axioms` lines in its source, and the public record of the announcement.
+A build on the same toolchain to print the axioms from the executing artifact was started; its
+result is appended to the source file when it finishes. Whether the use of `Classical.choice` has
+the consequence the author asserts is Question 1(b) and 1(c), for the session.
+
 ## 2. Iteration 1: the model's review of the drafted questions (iterations 1 and 2)
 
 Written 30 September 2026 by the assisting model, which drafted the questions from the author's
@@ -189,15 +242,18 @@ history), `guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md`, the memor
 | # | Issue | Raised | Where |
 |---|---|---|---|
 | Q1 | Question 1: "as much or more" versus "more". | model, 2026-09-30 | §2 |
-| Q2 | Question 1(b)(iii): which OpenAI Navier–Stokes document is meant, so it can be filed. | model, 2026-09-30 | §2 |
+| Q2 | Question 1(b)(iii): which OpenAI Navier–Stokes document is meant, so it can be filed. Closed the same day: the author's commission; filed at `sources/OpenAI_NavierStokes_2026.md`. | model, 2026-09-30 | §1c |
 | Q3 | Question 6: the "more or less" form in place of yes or no under rule 5; the two governing documents to be filed. | model, 2026-09-30 | §2 |
 | Q4 | Question 8: as asked, or with the sub-question, per §2. | model, 2026-09-30 | §2 |
 | Q5 | Whether S1 to S3 are taken into the prompt. | model, 2026-09-30 | §3 |
-| Q6 | Question 5(ii): the author's sentence ends "the one Einstein would have"; the word is his to supply. | model, 2026-09-30 | §1a |
+| Q6 | Question 5(ii): the author's sentence ends "the one Einstein would have"; the word is his to supply. Closed the same day: "EGPT is the type of discrete framework Einstein was seeking as a foundation of physics", "would agree with". | model, 2026-09-30 | §1c |
+| Q7 | Question 1(c)(ii): the author's sentence ends "and whether the, from the standpoint of the Singularity as above defined?"; drafted as the AI's treatment of the assertion; his word to confirm or replace. | model, 2026-09-30 | §1c |
 
 ## 5. Signature on the questions
 
-Not yet signed. The model asks to continue refining: Questions 1, 1(a), 2, 3, 4, 5(i) and 7 it finds
-fair and executable as drafted; 1(b)(iii) and 6 become executable when the named documents are
-filed; 5(ii) waits on the author's word (Q6); 8 waits on the author's choice in Q4. When the open issues are closed, the model signs here or
+Not yet signed. The model asks to continue refining: Questions 1, 1(a), 1(b), 1(c)(i), 2, 3, 4, 5
+and 7 it finds fair and executable as drafted, 1(b)(iii) on the filed source and the Halting
+Problem proofs the session files; 6 becomes executable when the two governing documents are
+filed; 1(c)(ii) waits on the author's word (Q7); 8, now the premise's question, waits on the
+author's choice in Q4, which the premise may have answered. When the open issues are closed, the model signs here or
 says why not.
