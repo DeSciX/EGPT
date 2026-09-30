@@ -10,10 +10,11 @@ rules are `Self_Assessment_Rules.md`; the questions are `LLM_Self_Assessment_Pro
 | Repository | Path on the author's machine |
 |---|---|
 | EGPT-Evidence (this collection) | `/Users/essam/Code/Unkamon/EGPT-Evidence` |
-| EGPT-research (the author's research repository, unreleased) | `/Users/essam/Code/Unkamon/EGPT-research` |
+| EGPT-research (the author's research repository, unreleased; its origin is the private `eabadir/egpt_research`, the canonical home of the Lean proofs) | `/Users/essam/Code/Unkamon/EGPT-research` |
+| EGPT-Lean, public (`github.com/eabadir/EGPT-Lean`, branch `lean-archive-proofs`; mirrored in `08_LEAN/` of this collection at the commit its README names) | cloned by the session if needed, per `08_LEAN/README.md` |
 | FRAQTL (the engine, EGPTReal, STUDIO; unreleased) | `/Users/essam/Code/Unkamon/FRAQTL` |
 | Unkamon (the organisation plane and the DeSciX platform trees) | `/Users/essam/Code/Unkamon` |
-| the Lean repository (the proof chains and their history) | `/Users/essam/Lean/mathlib4` |
+| the author's mathlib4 clone (the submission work recorded in `06_LEAN_MATHLIB/`; origin `leanprover-community/mathlib4`) | `/Users/essam/Lean/mathlib4` |
 | egpt-frqtl (the served FRQTL app) | `/Users/essam/Code/egpt-frqtl` |
 | egpt-courantgroup | `/Users/essam/Code/egpt-courantgroup` |
 | godsworld-dev | `/Users/essam/Code/godsworld-dev` |
