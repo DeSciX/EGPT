@@ -48,6 +48,8 @@ names a record it starts from, **including but not limited to** what is listed; 
 limits what the session reads or the author puts before it. The record is not limited to the
 disk: the session may search the whole internet and draw on its trained corpus, filing what it
 cites under rule 10 so that the author can read the same thing.
+How the session reads the disk and writes its turns, including what it never opens, is in
+`Session_Operating_Instructions.md`; the message that opens the session is `Session_Launch_Prompt.md`.
 
 ## The questions
 
