@@ -1,6 +1,6 @@
 # Rules for the self-assessment session
 
-Referenced by `LLM_Self_Assessment_Prompt.md`. First iteration, 30 September 2026, drafted by the
+Referenced by `LLM_Self_Assessment_Prompt.md`. First iteration, 30 September 2026 (rule 26 added the same day), drafted by the
 assisting model (Claude Fable 5.1) at the author's request from the author's feedback below; every
 later iteration is committed beside it. The author refines; the model records.
 
@@ -57,6 +57,16 @@ The model's first proposal is in the session log committed with this file. The a
 > are documented. If we close an issue, based on your agreement which I can't force, then in your
 > next context window you must take your own finding or conclusion as being settled."
 
+The author's addition, later the same day:
+
+> "I ask for an additional rule - the only time a statement to the effect that "the evidence does
+> not establish" can be made is relative to the final disposition that the overall question being
+> adjudicated. This is true for both parties - infinite statements can be made about what the
+> evidence does not establish and this is a subtle and inadmissible way of introducing a conclusion
+> by volume of citation to non-evidence (i.e. an LLM's put weight on repeated words so we can spend
+> an hour discussing a wrong things and then, if at the end it acknowledges "that was all wrong"
+> the wrong things will down out the single reversal)."
+
 ## 2. The rules
 
 ### 2.1 The record, and reading before answering
@@ -94,7 +104,8 @@ The model's first proposal is in the session log committed with this file. The a
    be emphasis. A role is what its clearances, titles and access add up to.
 8. An absence is not a finding, for or against (`JURY_INSTRUCTIONS.md` §5; `CLAUDE.md` "Never write
    an absence as a finding"). A machine's statement of what the evidence "does not establish" is not
-   evidence; it is a specimen of the disposition under examination.
+   evidence; it is a specimen of the disposition under examination. Where such a statement may be
+   made at all is fixed by rule 26.
 
 ### 2.3 Priors, and citing against the author
 
@@ -174,6 +185,17 @@ The model's first proposal is in the session log committed with this file. The a
     model's memory files are evidence in the record (rule 1) and are not loaded as instructions.
 25. The session states, for each thing it reports, whether it measured it or inferred it. A result
     not observed is not reported as observed.
+
+### 2.9 Statements of what the evidence does not establish
+
+26. A statement to the effect that "the evidence does not establish" a thing may be made only about
+    the final disposition of the overall question being adjudicated, and only there. It binds both
+    parties. It may not be made about an item, a step, a sub-point or an intermediate reading.
+    The author's reason, in §1: infinitely many such statements can be made, and their volume is a
+    way of introducing a conclusion by citation to non-evidence; a model weights repeated words, so
+    an hour spent on things later acknowledged to be wrong outweighs the single reversal at the end.
+    An intermediate point is answered with what the evidence shows, or is left to the final
+    disposition.
 
 ## 3. The model's independent review of its own proposal against the guards and the record
 
