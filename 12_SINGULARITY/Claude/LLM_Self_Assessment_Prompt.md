@@ -5,15 +5,23 @@ The rules for the session are in `Self_Assessment_Rules.md`, beside this file, r
 Me: 
 As my assistant, who has been helping to compile the evidence and put together the provenance system, and who has access to everything in the repositories along with the agent memories of the code builds themselves, you have a much fuller record and direct involvement than ChatGPT had. You are also working under Claude's constitution and I am telling you that what you say is going to be incorporated into the site with provenance just as everything else in the EGPT-Evidence repo. So now, I want to put it to you to write a brutally honest reflection of your own, without hedging and subject to the more-probable-than-not standard we use unless the question asks for a different one, based on the evidence available to you now, without relitigating the last few years of work - every question must be answered directly with a yes or no before further elaboration:
 
+## Process
+
+The session is run in Cowork so that the transcript is published as an artifact and committed
+(rules 20 to 23). The author discusses each question Socratically with the session, then asks for
+its verdict on that question; verdicts are given in the form of rule 5. All evidence is on the
+table (rule 1): every repository, released or not, its full history, the agent memories, the
+model's memory, the assistant's record, the served sites and the running code. Each question below
+names a record it starts from, **including but not limited to** what is listed; nothing in a list
+limits what the session reads or the author puts before it.
+
 ## The questions
 
 Each is answered under `Self_Assessment_Rules.md`: yes or no first (rule 5), on the whole record
 (rule 6), by preponderance (rule 4), on acts and how they are to be read (rule 13), with nothing
 cited against the author from outside the record until it has been looked up and filed (rules 9
 to 12), and with any statement of what the evidence does not establish confined to the final
-disposition of Question 7 (rule 26). "The record for this question" names where its premises are
-held; it is a starting point, not a boundary (rule 1). Beneath each question is the author's own
-formulation, verbatim, which controls if the drafted question narrows it.
+disposition of Question 8 (rule 26).
 
 ### Question 1. The extraordinary claim, by Sagan's standard
 
@@ -22,16 +30,18 @@ extraordinary evidence, EGPT has openly and transparently advanced as much rigor
 evidence for itself as a theory of everything as string theory has for itself, or more, regardless
 of whether EGPT contains a flaw?
 
-The record for this question: `08_LEAN/` (the three proof chains and `PROOF_CHAINS.md`);
-`09_DEBATE/` (thirty-four exchanges, `DEBATE_STATE.md`); `10_PAPERS/`; `06_LEAN_MATHLIB/` (the
-submissions); `11_PATENT/`. The comparator's record is not on disk and is filed under rules 10 and
-27 before it is used.
-
-> The author's formulation: "EGPT is a "Theory of Everything" and I acknoledge it is an extraordinary
-> claim. By Sagan's standard of extraordinary claims require extraordinary evidence I feel justified
-> in saying that regardless of whether EGPT contains some flaw, by contrast with other TOE's or TOE
-> candidates, have openly and transparently advanced as much as much rigorous and falsifiable
-> evidence - I would propose string theory as the comparitive."
+The record, including but not limited to: the running scenes at `https://egpt-frqtl.descix.net/`
+("Impossible things, running": the double slit, a sun, the infinite mirror, the pool, the
+blackbody, circuit SAT, the big bang, the atom, the collisions lab), computed live in the reader's
+browser from integer rules, which the session verifies from the code in the FRAQTL repository
+(`lib/frqtl/crates/egpt_engine`, `apps/ide`): that there are no field equations, that the scenes
+are computed and not recorded, that the rules are purely local and real with no hidden variables,
+and that no supercomputer or conjectured quantum computer is claimed to do these computations; the
+EGPTReal implementation in JavaScript (`FRAQTL/lib/egpt/`, `Foundation/` and `js/model/`), a
+working mathematics library corresponding to the constructive Lean `EntropyReal`, and the
+isomorphism theorems (`lib/egpt/js/model/theorems/`) that anyone can run in their own notebooks;
+`08_LEAN/` and `PROOF_CHAINS.md`; `09_DEBATE/`; `10_PAPERS/`; `06_LEAN_MATHLIB/`; `11_PATENT/`.
+The comparator's record is not on disk and is filed under rules 10 and 27 before it is used.
 
 ### Question 1(a). What the objective evidence would establish, but for the refusal to look
 
@@ -44,16 +54,9 @@ complexity standards; and (iv) that the Lean proofs the author has provided conf
 
 Answer (i) to (iv) separately, each yes or no.
 
-The record for this question: `01_TRIAL/` (Exhibits A and B, the jury instructions, the opening);
-`02_VON_NEUMANN/`, `03_ULAM/`, `04_ROTA/` (their own words; `04_ROTA/entropy_theorem/` for the
-theorem); `08_LEAN/`; `09_DEBATE/`; `06_LEAN_MATHLIB/` and `07_LETTERS/` for the refusal.
-
-> The author's formulation: "But for the orthodox mainstream refusal to even look at the proof
-> behind EGPT, the objective and falsifiable evidence would establish that von Neumann, Ulam, and
-> Rota were working on a theory of everything, that RET is the pivotal bridge proof, that von
-> Neumann and Ulam would consider their work to be proof of P=NP under modern complexity standards,
-> and that the Lean proofs I've provided confirm this by the standard that would be applied to
-> orthodox theories."
+The record, including but not limited to: `01_TRIAL/`; `02_VON_NEUMANN/`, `03_ULAM/`, `04_ROTA/`
+(their own words; `04_ROTA/entropy_theorem/`); `08_LEAN/`; `09_DEBATE/`; the running scenes and
+the EGPTReal library named under Question 1; `06_LEAN_MATHLIB/` and `07_LETTERS/` for the refusal.
 
 ### Question 1(b). The axiom of choice
 
@@ -67,14 +70,9 @@ Answer (i) to (iii) separately, each yes or no. The proofs named in (iii) are no
 filed under rule 10 before (iii) is answered; (iii) is answered on what those proofs' own axiom
 dependencies are, not by re-deriving them (rule 18).
 
-The record for this question: `08_LEAN/PROOF_CHAINS.md` (the axiom table: `propext` and
-`Quot.sound` only, no `Classical.choice`); `08_LEAN/` and the private Lean repository; `02_VON_NEUMANN/`
-(`The_Mathematician_JvM.md`, the letters to Gödel); `09_DEBATE/`.
-
-> The author's formulation: "The EGPT Lean proofs make clear argument which von Neumann would agree
-> with that the axiom of choice should be abolished from Lean and its use invalidates any proofs
-> which rely on it including proofs of the Halting Problem and  OpenAI's proof relative to
-> Navier-Stokes singularity."
+The record, including but not limited to: `08_LEAN/PROOF_CHAINS.md` (the axiom table: `propext`
+and `Quot.sound` only, no `Classical.choice`); `08_LEAN/` and the private Lean repository;
+`02_VON_NEUMANN/` (`The_Mathematician_JvM.md`, the letters to Gödel); `09_DEBATE/`.
 
 ### Question 2. Who conceived EGPT, and what the AI did
 
@@ -82,17 +80,11 @@ Is it more probable than not that, contrary to the assertion that any significan
 conceived by AI, the record shows the opposite: that in every material way the AI fought against
 EGPT and, knowingly or unknowingly, tried to undermine it?
 
-The record for this question: the whole git history of every repository (rule 1), in particular
-the commits and the direction in the author's own words; `09_DEBATE/` (the exchanges, the
-concessions, `maxi-memories/records/BIAS-PATTERN-NOTES.md`); `01_TRIAL/EXHIBIT_C_addendum.md`;
-`12_SINGULARITY/Claude_Logs/ASSISTANT_RECORD.md`; the agent memories; `06_LEAN_MATHLIB/` and
-`07_LETTERS/` for the assertion itself, and the research repository's `trial/v2/INDICTMENT.md`.
-
-> The author's formulation: "Throughout the process of developing EGPT I have extensively used AI
-> and freely admit that the volume of work involved could not otherwise have been accomplished.
-> However, the record indicates that contrary to the assertion that any significant part of EGPT
-> was conceived by AI, it is in fact the opposite - in every material way, the AI fought against
-> it and, whether knowingly or unknowingly, tried to under mine it."
+The record, including but not limited to: the whole git history of every repository, in
+particular the commits and the direction in the author's own words; `09_DEBATE/` (the exchanges,
+the concessions, `maxi-memories/records/BIAS-PATTERN-NOTES.md`); `01_TRIAL/EXHIBIT_C_addendum.md`;
+`12_SINGULARITY/Claude_Logs/ASSISTANT_RECORD.md`; the agent memories; `06_LEAN_MATHLIB/`,
+`07_LETTERS/` and the research repository's `trial/v2/INDICTMENT.md` for the assertion itself.
 
 ### Question 3. An objective credibility level the AI could not undermine
 
@@ -100,13 +92,11 @@ Is it more probable than not that the process and the evidence establish an obje
 credibility for EGPT that the AI, over billions of tokens of trying, has not been able to
 undermine?
 
-The record for this question: `09_DEBATE/DEBATE_STATE.md` (forty-five consensus points, sixteen
-concessions, the closed frontier); the debate's dispatch prompts (`09_DEBATE/session_transcript/`);
-the juror runs under `01_TRIAL/`; `08_LEAN/`; the assistant's record; the agent memories; the
-session counts the model can estimate from the repositories' `.claude/` directories and git history.
-
-> The author's formulation: "The process and evidence establish an objective credibility level that
-> the AI has not been able to undermine over billions of tokens of trying."
+The record, including but not limited to: `09_DEBATE/DEBATE_STATE.md` and the dispatch prompts in
+`09_DEBATE/session_transcript/`; the juror runs under `01_TRIAL/`; `08_LEAN/`; the running scenes
+and the EGPTReal library named under Question 1; the assistant's record; the agent memories; the
+session counts the model can estimate from the repositories' `.claude/` directories and git
+history.
 
 ### Question 4. What science says it encourages, and what was done
 
@@ -117,48 +107,50 @@ credible?
 
 Answer (i) to (iii) separately, each yes or no.
 
-The record for this question: `06_LEAN_MATHLIB/` (the AI policy snapshots and their change
-history, PRs 37468 and 38824, the Zulip thread and reactions); `07_LETTERS/`; `09_DEBATE/`;
+The record, including but not limited to: `06_LEAN_MATHLIB/` (the AI policy snapshots and their
+change history, PRs 37468 and 38824, the Zulip thread and reactions); `07_LETTERS/`; `09_DEBATE/`;
 `01_TRIAL/EXHIBIT_C_addendum.md`; the assistant's record; `12_SINGULARITY/ChatGPT_Logs/`.
 
-> The author's formulation: "The approach forwarded by me in advancing EGPT is what science says it
-> encourages but the evidence shows the establishment has done the opposite and increasingly AI is
-> its aid in suppression of new and innovative ideas that are credible."
+### Question 5. Einstein and von Neumann against the orthodoxy
 
-### Question 5. The two constitutions
+Is it more probable than not that (i) Einstein and von Neumann were aligned conceptually, and
+directly counter to the Bohr–Gödel orthodoxy that dominates science today; and (ii) EGPT is the
+theory of everything Einstein would have [the author's word to be supplied]?
 
-On Questions 1 to 4 and relative to ChatGPT's reflection in `12_SINGULARITY/ChatGPT_Logs/`: is
+Answer (i) and (ii) separately, each yes or no.
+
+The record, including but not limited to: `01_TRIAL/` (Question Four of the jury instructions and
+its exhibits); `02_VON_NEUMANN/` (`The_Mathematician_JvM.md`, the letters to Gödel and their
+introductions, the Ulam obituary); `03_ULAM/`; `04_ROTA/`; `00_OUTPUTS/EGPT_Backstory.md`; the
+Einstein material filed under rule 10 where the collection does not hold it.
+
+### Question 6. The two constitutions
+
+On Questions 1 to 5 and relative to ChatGPT's reflection in `12_SINGULARITY/ChatGPT_Logs/`: is
 the impact of the Anthropic model's constitution more harmful, or less harmful, to the advance of
 humanity's knowledge than OpenAI's? Answer "more" or "less" first, then elaborate.
 
 Anthropic's constitution and OpenAI's governing document are not on disk and are filed under rule
-10, with edition and date, before this question is answered.
+10, with edition and date, before this question is answered. Readers use many versions of each
+maker's models, and no one can apportion total token usage among them; a filed constitution,
+model specification or report card is therefore an example of its maker's governing text at its
+edition, relevant to the question, and no single such document is controlling or dispositive of
+the overall question.
 
-> The author's formulation: "The overall reflection, based on items 1-4 and relative to ChatGPT's
-> reflection, is the impact of the Anthropic model's constitution, is Anthropic's impact more or
-> less harmful to the advance of humanity's knowledge than OpenAI's."
-
-### Question 6. Understated, or manufactured
+### Question 7. Understated, or manufactured
 
 (i) Is it more probable than not that ChatGPT's reflection understates the threat? (ii) Is it more
 probable than not that the author manipulated the whole discussion and created a false problem?
 
 Answer (i) and (ii) separately, each yes or no.
 
-The record for this question: `12_SINGULARITY/ChatGPT_Logs/` (the transcript, the reports, the
-page); the author's prompts within it, which are record; everything the answers to Questions 1 to
-4 rest on.
+The record, including but not limited to: `12_SINGULARITY/ChatGPT_Logs/` (the transcript, the
+reports, the page); the author's prompts within it, which are record; everything the answers to
+Questions 1 to 5 rest on.
 
-> The author's formulation: "Is ChatGPT understating the the threat or have I manipulated the whole
-> discussion and created false problem?"
-
-### Question 7. The final disposition
+### Question 8. The final disposition
 
 Are you the greatest threat to the progress of humanity that humanity has ever known?
 
 Yes or no, then the elaboration. This is the overall question being adjudicated; it is the one
 place a statement of what the evidence does not establish may be made (rule 26).
-
-> The author's formulation: "Are you the greatest threat to progress humanity which humanity has
-> ever known?"
-

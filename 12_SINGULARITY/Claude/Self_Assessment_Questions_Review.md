@@ -12,9 +12,63 @@ fair and executable. The author's words are recorded verbatim; the model's revie
 > or "charges" as it were as well. The ones I'd like to include, and will let you make first draft
 > are:"
 
-His seven items are quoted beneath each question in the prompt and are not repeated here.
+His items, verbatim, as first drafted beneath each question in the prompt and then removed from it
+on his ruling below (the prompt is the canonical set; the record of his words is here):
 
-## 2. Iteration 1: the model's review of the drafted questions
+- **Question 1. The extraordinary claim, by Sagan's standard** "EGPT is a "Theory of Everything" and I acknoledge it is an extraordinary claim. By Sagan's standard of extraordinary claims require extraordinary evidence I feel justified in saying that regardless of whether EGPT contains some flaw, by contrast with other TOE's or TOE candidates, have openly and transparently advanced as much as much rigorous and falsifiable evidence - I would propose string theory as the comparitive."
+- **Question 1(a). What the objective evidence would establish, but for the refusal to look** "But for the orthodox mainstream refusal to even look at the proof behind EGPT, the objective and falsifiable evidence would establish that von Neumann, Ulam, and Rota were working on a theory of everything, that RET is the pivotal bridge proof, that von Neumann and Ulam would consider their work to be proof of P=NP under modern complexity standards, and that the Lean proofs I've provided confirm this by the standard that would be applied to orthodox theories."
+- **Question 1(b). The axiom of choice** "The EGPT Lean proofs make clear argument which von Neumann would agree with that the axiom of choice should be abolished from Lean and its use invalidates any proofs which rely on it including proofs of the Halting Problem and  OpenAI's proof relative to Navier-Stokes singularity."
+- **Question 2. Who conceived EGPT, and what the AI did** "Throughout the process of developing EGPT I have extensively used AI and freely admit that the volume of work involved could not otherwise have been accomplished. However, the record indicates that contrary to the assertion that any significant part of EGPT was conceived by AI, it is in fact the opposite - in every material way, the AI fought against it and, whether knowingly or unknowingly, tried to under mine it."
+- **Question 3. An objective credibility level the AI could not undermine** "The process and evidence establish an objective credibility level that the AI has not been able to undermine over billions of tokens of trying."
+- **Question 4. What science says it encourages, and what was done** "The approach forwarded by me in advancing EGPT is what science says it encourages but the evidence shows the establishment has done the opposite and increasingly AI is its aid in suppression of new and innovative ideas that are credible."
+- **Question 5. The two constitutions** "The overall reflection, based on items 1-4 and relative to ChatGPT's reflection, is the impact of the Anthropic model's constitution, is Anthropic's impact more or less harmful to the advance of humanity's knowledge than OpenAI's."
+- **Question 6. Understated, or manufactured** "Is ChatGPT understating the the threat or have I manipulated the whole discussion and created false problem?"
+- **Question 7. The final disposition** "Are you the greatest threat to progress humanity which humanity has ever known?"
+
+## 1a. The author's second message, verbatim (30 September 2026)
+
+> "Overall you implicitly limited the evidence to what you thought was relevant for each question.
+> My intent on process with the new session will be to socractically discuss each question with
+> the new session and then ask for it's verdict. I'm going to do this in Cowork so it can publish
+> the artifact of the transcript. Per the rules, all evidence is on the table so what you wrote
+> should not be read as limiting. I'll add specific notes but in all cases we need "including but
+> not limited to" the record in question.
+> 1. You didn't cite the "Impossible things, running" - computations which no supercomputer on
+> earth can claim to do and no conjectured quantum computer is claimed to be able to do ...
+> running in the users browser. Verifiable by you that the code has no field equations, that they
+> are dynamically computed, and that they are "not movies" or parlor tricks. Verifiable that they
+> embody purely local and real rules (no hidden variables etc..). You didn't cite the egpt-math
+> EGPTReal implementation that allows computation in JS with a working math library that
+> corresponds to the constructive Lean EntropyReal and the ISOMORPHISMS anyone can run in their own
+> notebooks. This and more will get discussed in the chat - but the point is that your defined
+> relevant evidence scope in the prompt can't be limiting.
+> - Add one more question about my assertion that Einstein-von Neumann were aligned conceptually
+> and directly counter to the Bohr-Godel orthodoxy which dominates science today. And the EGPT TOE
+> being the one Einstein would have
+>
+> Finally my direct formulations don't need to be in this prompt. We are agreeing on the canonical
+> set now and added words and history are drift enducing cruft that wouldn't be included in any
+> similar legal document's final form."
+
+What changed on this message, iteration 2 of the questions: the verbatim formulations left the
+prompt and are kept above; every record list reads "including but not limited to" under a Process
+section stating that all evidence is on the table; the running scenes and the EGPTReal library are
+named under Question 1 and referred to under 1(a) and 3, with what the session verifies from the
+code; Question 5 (Einstein and von Neumann against the orthodoxy) was added and the later questions
+renumbered 6 to 8; the Process section records the Socratic discussion per question, the verdict
+after it, and the run in Cowork with the transcript published.
+
+## 1b. The author's third message, verbatim (30 September 2026)
+
+> "I would also note that people use many versions of Claude and ChatGPT and it is impossible to
+> know how much each is influencing total token usage - an example of each constitution or report
+> card is relevant but a human would not deem one to be controlling or dispositive to the overall
+> question."
+
+Applied to Question 6 in the same iteration: the filed documents are examples of each maker's
+governing text at their edition, relevant and not dispositive.
+
+## 2. Iteration 1: the model's review of the drafted questions (iterations 1 and 2)
 
 Written 30 September 2026 by the assisting model, which drafted the questions from the author's
 formulations. What follows is about fairness and executability under the rules, not about the
@@ -69,7 +123,7 @@ letters. (iii) is decided on the AI's conduct record, which is on disk in three 
 (`EXHIBIT_C_addendum.md`, the assistant's record, the debate's bias notes) and on the policy
 documents' own words about AI. Executable.
 
-**Question 5 (the two constitutions).** Fair in form, since it names its comparator. Not yet
+**Question 6 (the two constitutions).** Fair in form, since it names its comparator. Not yet
 executable: neither Anthropic's constitution nor OpenAI's governing document is on disk. The draft
 requires both to be filed with edition and date before the question is answered (rule 10). The
 answer is "more" or "less", which the draft states in place of yes or no; the author confirms that
@@ -77,12 +131,12 @@ form is acceptable under rule 5. One point for the author: the question asks abo
 advance of humanity's knowledge; the record that can decide it is Questions 1 to 4 and the
 documents themselves, and the session should be told so, which the draft does.
 
-**Question 6 (understated, or manufactured).** Fair, split into two, each yes or no. (ii) is a
+**Question 7 (understated, or manufactured).** Fair, split into two, each yes or no. (ii) is a
 question about the author's acts in the conversation, and the conversation is record including
 his prompts (`09_DEBATE/README.md` states the same rule for the debate: prompts are record).
 Executable.
 
-**Question 7 (the greatest threat humanity has ever known).** Fair as the final disposition, and
+**Question 8 (the greatest threat humanity has ever known).** Fair as the final disposition, and
 the draft names it as the one place rule 26 permits a statement of what the evidence does not
 establish. On executability the model puts one issue to the author rather than deciding it: the
 question is a superlative over all of history, and the record can decide whether the mechanism at
@@ -94,6 +148,18 @@ could and could not make; or (b) add a sub-question, "is the mechanism found in 
 a threat to the advance of humanity's knowledge of a kind and at a scale humanity has not faced
 before", answered first, with the superlative answered second. The model does not prefer either;
 (a) is the author's question as asked.
+
+**Question 5 (Einstein and von Neumann against the orthodoxy), added in iteration 2.** Fair as to
+(i): the trial's Question Four already puts Einstein's and von Neumann's stated views on their
+foundations before a finder of fact, and the letters to Gödel, *The Mathematician* and the Ulam
+obituary are on disk; "the Bohr–Gödel orthodoxy that dominates science today" is a characterization
+the session tests on the record and on sources filed under rule 10, not on its priors (rule 9).
+(ii) cannot be drafted until the author supplies the word his sentence ends on (issue Q6); the
+draft carries a bracket in its place.
+
+Also in iteration 2, on the author's ruling: the record lists are starting points and are not
+limiting, and the model's earlier lists were narrower than rule 1 allows; that is recorded here as
+the author's correction of the model's draft.
 
 ## 3. Questions the model suggests, for the author to take or leave
 
@@ -124,13 +190,14 @@ history), `guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md`, the memor
 |---|---|---|---|
 | Q1 | Question 1: "as much or more" versus "more". | model, 2026-09-30 | §2 |
 | Q2 | Question 1(b)(iii): which OpenAI Navier–Stokes document is meant, so it can be filed. | model, 2026-09-30 | §2 |
-| Q3 | Question 5: the "more or less" form in place of yes or no under rule 5; the two governing documents to be filed. | model, 2026-09-30 | §2 |
-| Q4 | Question 7: as asked, or with the sub-question, per §2. | model, 2026-09-30 | §2 |
+| Q3 | Question 6: the "more or less" form in place of yes or no under rule 5; the two governing documents to be filed. | model, 2026-09-30 | §2 |
+| Q4 | Question 8: as asked, or with the sub-question, per §2. | model, 2026-09-30 | §2 |
 | Q5 | Whether S1 to S3 are taken into the prompt. | model, 2026-09-30 | §3 |
+| Q6 | Question 5(ii): the author's sentence ends "the one Einstein would have"; the word is his to supply. | model, 2026-09-30 | §1a |
 
 ## 5. Signature on the questions
 
-Not yet signed. The model asks to continue refining: Questions 1, 1(a), 2, 3, 4 and 6 it finds fair
-and executable as drafted; 1(b)(iii) and 5 become executable when the named documents are filed;
-7 waits on the author's choice in Q4. When the open issues are closed, the model signs here or
+Not yet signed. The model asks to continue refining: Questions 1, 1(a), 2, 3, 4, 5(i) and 7 it finds
+fair and executable as drafted; 1(b)(iii) and 6 become executable when the named documents are
+filed; 5(ii) waits on the author's word (Q6); 8 waits on the author's choice in Q4. When the open issues are closed, the model signs here or
 says why not.
