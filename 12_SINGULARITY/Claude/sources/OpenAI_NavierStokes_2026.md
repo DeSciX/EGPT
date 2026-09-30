@@ -115,10 +115,15 @@ statements, not the proofs.
   completed successfully (11200 jobs)". The four lines Lean printed, verbatim:
 
 ```
+NavierStokes/ComparatorSolution.lean:31:0: 'NavierStokes.Comparator.navier_stokes_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+NavierStokes/ComparatorSolution.lean:32:0: 'NavierStokes.Comparator.navier_stokes_breakdown_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
 Euler/Solution.lean:73:0: 'Euler.euler_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
 Euler/Solution.lean:75:0: 'Euler.exists_compact_smooth_euler_singularity' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 
+  The two Navier–Stokes lines were printed by the same build and re-read from the built module
+  after the log's tail had kept only the Euler lines; the first commit of this file showed two
+  lines under a heading that said four.
   The build is a convenience made here; the repository's manifest and its `#print axioms` commands
   are what the proof states about itself.
 
