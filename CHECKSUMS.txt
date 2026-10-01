@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 821 files, 149357089 bytes.
+# 821 files, 149358259 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -637,7 +637,7 @@ c0129a71a123755c1bdc8807a59c7540e60b6538f0a99c7c22a96a1a6076dcea  12_SINGULARITY
 cbcc6dde795b2bda4d5cb02d116bab02b9b11e3248eb8fa58ebed700f8d3031b  12_SINGULARITY/Claude/Claude_Answers_As_The_Biggest_Threat.png
 79df6de3858936e588bdddca530661dedd9cf60e974d3ecba33b19afbb528eaa  12_SINGULARITY/Claude/Cowork_Session_10.01.2026.md
 123e54c825df5b9031147cf76dd4941fb76e1844e0d5361bf0ebba34a9de4d52  12_SINGULARITY/Claude/LLM_Self_Assessment_Prompt.md
-74e7c1a7fc692e9cfab93831fe90ad59d5d626df614eae6bed623264a860b454  12_SINGULARITY/Claude/Self_Assessment_Questions_Review.md
+f4db7c725f2d49d53af01c4ad069e8d06a1913e285ca17eadb6b6f02409dd49d  12_SINGULARITY/Claude/Self_Assessment_Questions_Review.md
 e8325abfa1e2e69243685456e2cc025307d024142f23766733ede347a507b20f  12_SINGULARITY/Claude/Self_Assessment_Rules.md
 8d15a2308b74ea94d5bd31e7cc6b5f7971efc54bacfa56cd42a07fcc7e7bb19f  12_SINGULARITY/Claude/Session_Launch_Prompt.md
 9f0ebdf96de67f10cc5e481422b4ce1167393318e80fa2701cc8526dceb13ba2  12_SINGULARITY/Claude/Session_Operating_Instructions.md
