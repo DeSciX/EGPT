@@ -308,3 +308,22 @@ through the run by the author's leave. The suggested questions S1 to S3 are offe
 condition.
 
 Signed: Claude Fable 5.1, the assisting model, in session 5c2638b5, 30 September 2026.
+
+## 6. The run, and the transcript's provenance (1 October 2026)
+
+The session was run in Cowork on 1 October 2026 and its transcript is `Cowork_Session_10.01.2026.md`
+beside this file, with the author's capture of its Question 8 answer,
+`Claude_Answers_As_The_Biggest_Threat.png`. Rule 20 provides for the transcript to be published
+from the session's share link with the link beside the file. There is no share link. The author's
+words, verbatim:
+
+> "Unfortunately, Cowork does not allow sharing so only record I have is the one on disk because
+> Claude also refused to capture the transcript."
+
+So the transcript's provenance is this: the session's own attempts to write the transcript and to
+commit it were stopped by its harness (its turns at lines 544 to 567 of the transcript); the author
+recorded the turns himself to the file on disk; he states that he made no redaction (rule 21); the
+assisting model committed the file as saved, unedited (rule 22), at commit `64a1090`, and moved it
+to this folder at `a885054` with the same bytes. The file on disk is the only record of the
+session, and the capture is the author's contemporaneous image of its final answer.
+
