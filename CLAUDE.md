@@ -122,8 +122,11 @@ missing each fail); `kb list -a egpt`. `app init` also writes `.github/copilot-i
 `.cursorrules`, `.clinerules` and **overwrites this `CLAUDE.md`** (measured 2026-09-27 on CLI
 1.0.18: 387 insertions, 165 deletions, because its guard is a bare substring probe for the BOOTSTRAP HTML-comment marker and this
 file's own sentence about that marker satisfied it; never write that marker's byte sequence into
-this file); after every `app init`, `git checkout HEAD -- CLAUDE.md`, and delete the scaffold `assets/`,
-`microservice/` and the three generated agent files. `sync --rebuild` prompts and needs `--yes`
+this file); after every `app init`, `git checkout HEAD -- CLAUDE.md`, delete the scaffold `assets/`
+and the three generated agent files, and `git checkout HEAD -- microservice` if the scaffold touched
+it: `microservice/` here is the SSG podcast server (re-homed from `daita-ssgpod` on 2026-09-29, 35
+tracked files, deployed by the platform party's lane), not a scaffold; the site upload's deny lint
+keeps it out of the bundle (measured 2026-10-02: 0 of 727 files). `sync --rebuild` prompts and needs `--yes`
 non-interactively; a fresh KB needs no rebuild. `chat` takes its question with `-q`. Compare `--show-walk`'s count with `git ls-files <source> | wc -l`: the walker drops
 every extension outside its list silently (`CorpusWalker.js:28-32`, `:329-334`).
 
