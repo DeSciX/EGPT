@@ -156,6 +156,12 @@
       "line": "One cited page per reason a reader is here."
     },
     {
+      "dir": "journal",
+      "label": "journal/",
+      "name": "The journal",
+      "line": "Standing on the Shoulders of Giants, by issue: the library records, the journal argues."
+    },
+    {
       "dir": "12_SINGULARITY",
       "label": "12_SINGULARITY/",
       "name": "The machine's own account",

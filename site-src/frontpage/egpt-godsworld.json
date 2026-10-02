@@ -118,11 +118,15 @@
     "legal_html": "Maxi and FRQTL are trademarks of Courant Group, LLC. EGPT is a community project on DeSciX."
   },
   "scripts": {
-    "codesite": true,
+    "codesite": false,
     "forward": {
       "query_to": "app.html"
     },
-    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js"
+    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js",
+    "modules": [
+      "app-assets/host-view.js"
+    ],
+    "_note": "Full screen on load through the one shared declarer, app-assets/host-view.js, copied from egpt-frqtl c4e340b; no inline view call (CEO-COMMS relay of the author, 2026-10-02)."
   },
   "share": {
     "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload (CEO priority 2, Unkamon bef716a). One block per app: what a share card and a browser tab show for this site.",
