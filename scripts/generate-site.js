@@ -32,7 +32,7 @@ const git = (...a) => execFileSync('git', a, { cwd: ROOT, maxBuffer: 1 << 28 });
 
 const ROOT_FILES = new Set(['README.md', 'CLAUDE.md', 'URLS.md', 'RECORD_INDEX.md',
   'Copyright_Fair-use_Memo.md', 'CHECKSUMS.txt']);
-const inBundle = p => /^(guide|[0-9]{2}_[A-Z_]+)\//.test(p) || ROOT_FILES.has(p);
+const inBundle = p => /^(guide|journal|[0-9]{2}_[A-Z_]+)\//.test(p) || ROOT_FILES.has(p);
 
 function die(msg) { console.error('ERROR: ' + msg); process.exit(1); }
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
