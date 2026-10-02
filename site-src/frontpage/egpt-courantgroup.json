@@ -1,0 +1,24 @@
+{
+  "_purpose": "The egpt-courantgroup app (courantgroup.com → egpt-courantgroup.descix.net). Its page is the template itself, authored in the egpt-courantgroup repository; this file holds only what the one-source generator owns for it: the share block.",
+  "share": {
+    "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload (CEO priority 2, Unkamon bef716a). One block per app: what a share card and a browser tab show for this site.",
+    "site": "courantgroup.com",
+    "title": "Courant Group — Meet Maxi, robotic AI with true imagination",
+    "description": "Courant Group licenses Maxi, the imagining AI, and FRQTL, the physics engine that doesn't know any physics equations, for robotics, chips and platforms.",
+    "icon": {
+      "glyph": "C",
+      "ink": "#e5b95a",
+      "tile": "#0b0f14",
+      "accent": "#e5b95a"
+    },
+    "card": {
+      "kicker": "Courant Group, LLC",
+      "headline": "Meet Maxi, robotic AI with true imagination.",
+      "line": "Now licensable for robotics, chips and platforms.",
+      "art": {
+        "template": "site/images/hero.jpg",
+        "fit": "cover"
+      }
+    }
+  }
+}

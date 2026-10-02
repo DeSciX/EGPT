@@ -1,0 +1,162 @@
+{
+  "_purpose": "The library's reading lists: ordered stops through the collection, read by the viewer (library.html, the 'where you are' bar) and by the librarian skills (plugins/egpt/skills/). scripts/generate-site.js validates every path and record id against HEAD and expands the idea lists from the guide pages' own links. A stop points; it does not explain. Titles and questions are the author's where he has written them (COURSE_PLAN.md 'Session Map', the guide's headings); the rest are shelf labels for his pass.",
+  "schema": "egpt.spine/1",
+  "metaphor": {
+    "list": "reading list",
+    "stop": "stop",
+    "shelf": "shelf"
+  },
+  "spines": [
+    {
+      "id": "start",
+      "title": "Read this first",
+      "short": "Read this first",
+      "blurb": "The argument the library exists for, in the order the front page gives it.",
+      "color": "#5fcbe6",
+      "stops": [
+        {
+          "id": "singularity",
+          "title": "The Singularity",
+          "read": ["guide/avert-the-singularity.md", "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md"],
+          "records": ["q-stanislaw-ulam-john-von-neumann-190-a3511ae4"]
+        },
+        {
+          "id": "barrier",
+          "title": "The Barrier of Meaning",
+          "read": ["04_ROTA/The_Barrier_of_Meaning_Rota.md"],
+          "records": ["q-stanislaw-ulam-quoted-in-gian-carlo-4c8e8259", "q-gian-carlo-rota-the-barrier-of-meani-b33a4470"]
+        },
+        {
+          "id": "idiocy",
+          "title": "A Dark Age of Idiocy",
+          "question": "Is AI sending us to a dark age of idiocy?",
+          "read": ["guide/avert-the-singularity.md#a-dark-age-of-idiocy-navier-stokes-and-the-ultraviolet-catastrophe", "guide/sources/Blackstone_Commentaries_1768_I_302_idiot.md"]
+        },
+        {
+          "id": "conversation",
+          "title": "The machine's own account",
+          "read": ["12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html", "12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md", "12_SINGULARITY/ChatGPT_Logs/docx_reports/README.md"]
+        },
+        {
+          "id": "why",
+          "title": "Why the corpus is missing",
+          "read": ["README.md#why-the-corpus-is-missing"]
+        },
+        {
+          "id": "choose",
+          "title": "You are here to…",
+          "read": ["guide/README.md"]
+        }
+      ]
+    },
+    {
+      "id": "18313x",
+      "title": "18.313x: The Constructive Proof",
+      "short": "18.313x",
+      "blurb": "Rota's probability course, reopened on the documents held here: the course plan's eleven sessions, each a question.",
+      "color": "#e5b95a",
+      "source": "09_DEBATE/COURSE_PLAN.md",
+      "stops": [
+        {
+          "id": "course",
+          "title": "The course",
+          "read": ["09_DEBATE/COURSE_PLAN.md", "09_DEBATE/course_materials/SYLLABUS.md", "09_DEBATE/course_materials/CLASS_DESCRIPTION.md", "09_DEBATE/course_materials/COURSE_MATERIALS_GUIDE.md"]
+        },
+        {
+          "id": "18313",
+          "title": "Rota's 18.313, as held",
+          "read": ["04_ROTA/Guidi_Notes_Rota_Probability_18313_Spring1998.pdf", "04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf", "04_ROTA/manuscript_1992/Index.md", "04_ROTA/entropy_theorem/Rota_Entropy_Theorem_Original_Proof.pdf"]
+        },
+        {
+          "id": "s0", "label": "Session 0",
+          "title": "Session 0",
+          "question": "What does water boiling have to do with pennies on a carpet?",
+          "anchor": "Rota's 18.313 Day 1",
+          "read": ["09_DEBATE/course_materials/sessions/Session_00.md", "02_VON_NEUMANN/The_Mathematician_JvM.md"]
+        },
+        {
+          "id": "s1", "label": "Session 1",
+          "title": "Session 1",
+          "question": "Can a machine replace a mathematician?",
+          "anchor": "Gödel → JvM, 1956",
+          "read": ["09_DEBATE/course_materials/sessions/Session_01.md", "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md"]
+        },
+        {
+          "id": "s2", "label": "Session 2",
+          "title": "Session 2",
+          "question": "How does this stuff get over there?",
+          "anchor": "Shannon's thesis, 1937",
+          "read": ["09_DEBATE/course_materials/sessions/Session_02.md"]
+        },
+        {
+          "id": "s3", "label": "Session 3",
+          "title": "Session 3",
+          "question": "Can you formalize intuition?",
+          "anchor": "JvM → Gödel, Jan 12 1931",
+          "read": ["09_DEBATE/course_materials/sessions/Session_03.md", "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md", "02_VON_NEUMANN/letters_to_godel/Letter1_Nov20_1930.md", "04_ROTA/The_Barrier_of_Meaning_Rota.md"]
+        },
+        {
+          "id": "s4", "label": "Session 4",
+          "title": "Session 4",
+          "question": "Is the universe built from numbers?",
+          "anchor": "Einstein 1954, JvM 1957, Ulam's random walk",
+          "read": ["09_DEBATE/course_materials/sessions/Session_04.md"]
+        },
+        {
+          "id": "s5", "label": "Session 5",
+          "title": "Session 5",
+          "question": "Is there only one way to measure information?",
+          "anchor": "Rota's 30-year manuscript",
+          "read": ["09_DEBATE/course_materials/sessions/Session_05.md", "04_ROTA/The_Barrier_of_Meaning_Rota.md", "04_ROTA/manuscript_1992/Index.md"]
+        },
+        {
+          "id": "s6", "label": "Session 6",
+          "title": "Session 6",
+          "question": "Does every part reveal the whole?",
+          "anchor": "Fundamental Theorem of Arithmetic",
+          "read": ["09_DEBATE/course_materials/sessions/Session_06.md"]
+        },
+        {
+          "id": "s7", "label": "Session 7",
+          "title": "Session 7",
+          "question": "Can you ask about something that doesn't exist?",
+          "anchor": "Cantor, Gödel, zero-probability",
+          "read": ["09_DEBATE/course_materials/sessions/Session_07.md"]
+        },
+        {
+          "id": "s8", "label": "Session 8",
+          "title": "Session 8",
+          "question": "Does stating a problem solve it?",
+          "anchor": "Ulam & Rota in Santa Fe",
+          "read": ["09_DEBATE/course_materials/sessions/Session_08.md", "04_ROTA/The_Barrier_of_Meaning_Rota.md", "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md"]
+        },
+        {
+          "id": "s9", "label": "Session 9",
+          "title": "Session 9",
+          "question": "What makes a proof valid?",
+          "anchor": "JvM & Gödel, 1931 = 2026",
+          "read": ["09_DEBATE/course_materials/sessions/Session_09.md", "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md", "02_VON_NEUMANN/letters_to_godel/Godel_Letter_to_Von_Neumann.md"]
+        },
+        {
+          "id": "s10", "label": "Session 10",
+          "title": "Session 10",
+          "question": "Why does this cost so much?",
+          "anchor": "JvM's dying words",
+          "read": ["09_DEBATE/course_materials/sessions/Session_10.md", "02_VON_NEUMANN/The_Mathematician_JvM.md"]
+        },
+        {
+          "id": "record",
+          "title": "The debate record and the proofs",
+          "read": ["09_DEBATE/README.md", "09_DEBATE/DEBATE_STATE.md", "08_LEAN/PROOF_CHAINS.md"]
+        }
+      ]
+    },
+    { "id": "id1", "idea": "ID1", "from_guide": "guide/robotic-imagination.md" },
+    { "id": "id2", "idea": "ID2", "from_guide": "guide/einstein-von-neumann.md" },
+    { "id": "id3", "idea": "ID3", "from_guide": "guide/government-science.md" },
+    { "id": "id4", "idea": "ID4", "from_guide": "guide/make-money.md" },
+    { "id": "id5", "idea": "ID5", "from_guide": "guide/avert-the-singularity.md" },
+    { "id": "id6", "idea": "ID6", "from_guide": "guide/get-involved.md" },
+    { "id": "id7", "idea": "ID7", "from_guide": "guide/about-this-collection.md" }
+  ]
+}

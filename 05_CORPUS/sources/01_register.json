@@ -250,9 +250,10 @@
    "speaker": "Albert Einstein",
    "quote": "I consider it quite possible that physics cannot be based on the field concept, i.e., on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics.",
    "work": "letter to Michele Besso, quoted in Bob Doyle, My God, He Plays Dice! (Information Philosopher)",
-   "locus": "",
+   "locus": "Doyle, Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\"), p.316-317; Doyle's footnote 2 on this quotation cites \"Pais, 1982, p.467\" (Abraham Pais, \"Subtle is the Lord\"); Doyle prints \"i.e:,\" where this record reads \"i.e.,\"",
    "date": "1954",
-   "theme": "physics-and-continuum"
+   "theme": "physics-and-continuum",
+   "source_url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf"
   },
   {
    "speaker": "Albert Einstein",

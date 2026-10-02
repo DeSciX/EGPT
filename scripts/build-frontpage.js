@@ -8,12 +8,16 @@
  *   node scripts/build-frontpage.js <app> [--out <dir>] [--dry-run]
  *
  * The template's nav, hero and footer are regenerated from the spec with the template's own
- * classes; its sections are reused by id, or replaced by the app's fragments. FAIL LOUD:
+ * classes (or the hero is the app's own fragment, "hero": {"file": …}); its sections are reused
+ * by id, or replaced by the app's fragments. FAIL LOUD:
  * - every <blockquote data-src="…"> or <q data-src="…"> in a fragment must be found, folded,
  *   in the named file at HEAD of this repository (a quotation the collection does not hold
- *   cannot be on the page);
+ *   cannot be on the page); a <div data-cut-src …> is filled from the held file itself and
+ *   gated block by block (see renderCut);
  * - every href to library.html#<path> must name a file tracked at HEAD (no dead deep links);
  * - every images/<name> the page uses must come from the template commit or the spec.
+ * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
+ * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
  * Pure Node, no dependencies.
  */
 'use strict';
@@ -117,6 +121,14 @@ function navHtml() {
 }
 function heroHtml() {
   if (spec.hero === 'template') return rewrite(tplHero, spec.links);
+  if (spec.hero.file) {
+    // a hero written as a fragment: it must be the page's <header class="hero" id="top">; gated below like every fragment
+    const p = path.join(SRC, spec.hero.file);
+    if (!fs.existsSync(p)) die(`hero fragment not found: ${spec.hero.file}`);
+    const html = fs.readFileSync(p, 'utf8');
+    if (!/^\s*<header class="hero[^"]*" id="top">/.test(html)) die(`${spec.hero.file}: a hero fragment starts with <header class="hero…" id="top">`);
+    return html;
+  }
   const h = spec.hero;
   return `<header class="hero" id="top">
   ${h.art ? `<div class="hero-art"><img src="${esc(h.art.src)}" alt="${esc(h.art.alt)}"></div>` : ''}
@@ -144,9 +156,101 @@ function footerHtml() {
 </div></footer>`;
 }
 
+// ---------------------------------------------------------------- a verbatim cut from a held file, rendered at build time
+// <div data-cut-src="<path>" data-cut-from="<first line>" data-cut-to="<last line>" data-cut-mark="<line>|<line>…"></div>
+// The span between the two lines (inclusive) of the held file at HEAD becomes the element's content:
+// headings, paragraphs, bold, italic and links, nothing else, nothing altered. Lines named in
+// data-cut-mark get class="cut-mark". Every block is then gated like a quotation (it must be
+// found, folded, in the file it came from), so a cut can never carry words the file does not.
+const inline = t => esc(t)
+  .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>').replace(/\*([^*]+)\*/g, '<i>$1</i>')
+  .replace(/\[\[([^\]]+)\]\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+  .replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+function renderCut(el, file) {
+  const attr = n => { const m = el.match(new RegExp(`data-cut-${n}="([^"]*)"`)); return m ? unent(m[1]) : ''; };
+  const src = attr('src'), from = attr('from'), to = attr('to'), marks = attr('mark').split('|').map(x => x.trim()).filter(Boolean);
+  if (!src || !from || !to) die(`${file}: a data-cut needs src, from and to`);
+  if (!tracked.has(src)) die(`${file}: cut source is not tracked at HEAD: ${src}`);
+  const lines = git('cat-file', 'blob', tracked.get(src)).toString('utf8').split('\n');
+  const a = lines.findIndex(l => l.trim() === from), b = lines.findIndex((l, i) => i >= a && l.trim() === to);
+  if (a < 0) die(`${file}: cut start not found in ${src}: "${from}"`);
+  if (b < 0) die(`${file}: cut end not found in ${src} after its start: "${to}"`);
+  const blocks = lines.slice(a, b + 1).join('\n').split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+  const heldF = heldText(src);
+  let n = 0;
+  const html = blocks.map(block => {
+    const text = fold(block);
+    if (!heldF.includes(text)) die(`${file}: cut block not found in ${src}: "${text.slice(0, 80)}…"`);
+    n++;
+    const mark = marks.some(m => block.replace(/^#+\s*/, '').replace(/[*_]/g, '').trim() === m) ? ' class="cut-mark"' : '';
+    const h = block.match(/^(#{1,6})\s+(.*)$/);
+    if (h) return `<h${Math.min(6, h[1].length + 1)}${mark}>${inline(h[2])}</h${Math.min(6, h[1].length + 1)}>`;
+    return `<p${mark}>${inline(block.replace(/\s*\n\s*/g, ' '))}</p>`;
+  }).join('\n');
+  const unmarked = marks.filter(m => !blocks.some(bk => bk.replace(/^#+\s*/, '').replace(/[*_]/g, '').trim() === m));
+  if (unmarked.length) die(`${file}: cut mark not a block of the cut: "${unmarked[0]}"`);
+  gated += n;
+  return el.replace(/>\s*<\/div>$/, `>${html}</div>`);
+}
+
 // ---------------------------------------------------------------- sections: reused by id, or the app's fragments (gated)
 let gated = 0;
+// A library deep link is either a path tracked at HEAD or a corpus record (#record:<id>) whose id
+// the corpus holds at HEAD. Returns why the link is dead, or '' when it is live.
+let recordIds = null;
+function deadLink(target) {
+  if (target.startsWith('record:')) {
+    const CORPUS = '05_CORPUS/corpus/quotes.json';
+    if (!tracked.has(CORPUS)) return `deep link to a corpus record, but ${CORPUS} is not tracked at HEAD`;
+    if (!recordIds) recordIds = new Set(JSON.parse(git('cat-file', 'blob', tracked.get(CORPUS)).toString('utf8')).records.map(r => r.id));
+    const id = target.slice('record:'.length);
+    return recordIds.has(id) ? '' : `deep link to a corpus record the corpus does not hold: ${id}`;
+  }
+  // a shelf (#shelf:<id>) is a subject in site-src/shelves.json; a place in a book
+  // (#book:<id>[/<part>[/<ref>]]) is checked against the book's own index in site-src/books/, by the
+  // same reference forms the reader resolves: a question's key without punctuation ("1a"), a message
+  // ("m12"), or an anchor one of the part's items lands on
+  if (target.startsWith('shelf:')) {
+    const f = path.join(ROOT, 'site-src', 'shelves.json'), id = target.slice('shelf:'.length);
+    if (!fs.existsSync(f)) return `deep link to a shelf, but site-src/shelves.json does not exist`;
+    return JSON.parse(fs.readFileSync(f, 'utf8')).shelves.some(x => x.id === id) ? '' : `deep link to a shelf that shelves.json does not hold: ${id}`;
+  }
+  if (target.startsWith('book:')) {
+    const [id, part, ref] = target.slice('book:'.length).split('/');
+    const f = path.join(ROOT, 'site-src', 'books', `${id}.json`);
+    if (!fs.existsSync(f)) return `deep link to a book that site-src/books/ does not hold: ${id}`;
+    if (part === undefined) return '';
+    const pt = JSON.parse(fs.readFileSync(f, 'utf8')).parts.find(x => x.id === part);
+    if (!pt) return `deep link to a part the book ${id} does not have: ${part}`;
+    if (ref === undefined) return '';
+    const refs = new Set(), frag = h => (h || '').split('#')[1];
+    const add = it => { if (it.key !== undefined) refs.add(String(it.key).replace(/[^A-Za-z0-9]/g, '').toLowerCase());
+      if (it.message !== undefined) refs.add(`m${it.message}`); if (frag(it.href)) refs.add(frag(it.href));
+      for (const a of it.answers || []) if (frag(a.href)) refs.add(frag(a.href)); for (const sp of it.parts || []) add(sp); };
+    pt.items.forEach(add);
+    return refs.has(ref) ? '' : `deep link to a place the book ${id} does not have: ${part}/${ref}`;
+  }
+  const p = target.split('#')[0];
+  return tracked.has(p) ? '' : `deep link to a path not tracked at HEAD: ${p}`;
+}
+
+// <nav class="jumbo-cards" data-shelves …></nav> is filled from site-src/shelves.json, the one set of
+// shelves the viewer's landing and sidebar also read: a numbered card per shelf, its title, its card
+// line (or its line), its thumbnail where it has one, linking the shelf's page in the viewer.
+function renderShelves(html, file) {
+  return html.replace(/<nav\b([^>]*)\bdata-shelves\b([^>]*)>\s*<\/nav>/g, (m, a, b) => {
+    const f = path.join(ROOT, 'site-src', 'shelves.json');
+    if (!fs.existsSync(f)) die(`${file}: data-shelves, but site-src/shelves.json does not exist`);
+    const shelves = JSON.parse(fs.readFileSync(f, 'utf8')).shelves;
+    if (!shelves.length) die(`${file}: data-shelves, but shelves.json holds no shelf`);
+    const cards = shelves.map((sh, i) => `      <a class="jcard${sh.thumb ? ' jcard--thumb' : ''}" href="library.html#shelf:${esc(sh.id)}"><span class="jcard-n">${String(i + 1).padStart(2, '0')}</span>${sh.thumb ? `<img src="${esc(sh.thumb)}" alt="${esc(sh.thumb_alt || sh.title)}">` : ''}<p class="tag">${esc(sh.title)}</p><p>${esc(sh.card || sh.line)}</p></a>`);
+    return `<nav${a}${b}>\n${cards.join('\n')}\n    </nav>`.replace(/\s+>/, '>');
+  });
+}
+
 function gateFragment(html, file) {
+  html = renderShelves(html, file);
+  html = html.replace(/<div\b[^>]*data-cut-src="[^"]+"[^>]*>\s*<\/div>/g, m => renderCut(m, file));
   for (const m of html.matchAll(/<(blockquote|q)\b[^>]*data-src="([^"]+)"[^>]*>([\s\S]*?)<\/\1>/g)) {
     const src = m[2];
     const quote = fold(unent(strip(m[3])));
@@ -156,8 +260,8 @@ function gateFragment(html, file) {
   }
   for (const m of html.matchAll(/<(blockquote|q)\b(?![^>]*data-src=)[^>]*>/g)) die(`${file}: a <${m[1]}> without data-src (every quotation names its held file)`);
   for (const m of html.matchAll(/href="library\.html#([^"]+)"/g)) {
-    const p = decodeURIComponent(m[1]).split('#')[0];
-    if (!tracked.has(p)) die(`${file}: deep link to a path not tracked at HEAD: ${p}`);
+    const why = deadLink(decodeURIComponent(m[1]));
+    if (why) die(`${file}: ${why}`);
   }
   return html;
 }
@@ -190,12 +294,22 @@ const body_sections = spec.sections.map(s => {
 // Behind the DeSciX App Shell this page takes the full CodeSite view (no chat panel). The bus is
 // reached through the generated app-side SDK (DeSciX.ready() resolves the frame hop; never a
 // hand-computed window.parent); standalone, ready() resolves without a shell and nothing changes.
-const CODESITE = `(function(){
-  if(!(window.DeSciX&&typeof DeSciX.ready==='function'))return;
-  DeSciX.ready().then(function(r){
-    if(!r||r.mode!=='shell')return;
-    var v=DeSciX.view; if(v&&typeof v.set==='function')v.set('CodeSite');
-  });
+// The page's ONE declaration of the view it wants from the DeSciX host. The contract's owner is the
+// SDK template's documented sequence (DEVPLANE, 1 October 2026): await DeSciX.ready(), THEN
+// view.set(mode), and only when view.available() says the host is listening, because a host that
+// is not listening drops the call. What happened is recorded on <html data-descix-view>, in the
+// vocabulary FRQTL's host-view.js uses, so a harness can read it: requested:CodeSite,
+// not-listening, view-unpublished, standalone, embedded-no-bridge, sdk-absent.
+const CODESITE = `(async function(){
+  var d=document.documentElement, S=window.DeSciX, rec=function(x){d.dataset.descixView=x;};
+  if(!S||typeof S.ready!=='function'){rec('sdk-absent');return;}
+  rec('pending');
+  var r; try{ r=await S.ready(); }catch(e){ rec('embedded-no-bridge'); d.dataset.descixViewDetail='ready() rejected: '+(e&&e.message?e.message:e); return; }
+  if(!r||r.mode!=='shell'){ rec(r&&r.mode==='standalone'?'standalone':'embedded-no-bridge'); return; }
+  var v=S.view;
+  if(!v||typeof v.available!=='function'||typeof v.set!=='function'){ rec('view-unpublished'); return; }
+  if(!v.available()){ rec('not-listening'); return; }
+  v.set('CodeSite'); rec('requested:CodeSite');
 })();`;
 function forwarder() {
   const f = spec.scripts.forward;
@@ -246,15 +360,15 @@ ${body_sections.join('\n\n')}
 
 ${footerOut}
 
-${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script>\n${s}\n</script>`).join('\n')}
+${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script>\n${s}\n</script>`).join('\n')}${(spec.scripts.modules || []).map((m, i) => `${i || scripts.length ? '\n' : ''}<script type="module" src="${m}"></script>`).join('')}
 </body>
 </html>
 `;
 
 // every library deep link on the page, reused sections included, names a file tracked at HEAD
 for (const m of html.matchAll(/href="(?:library\.html|https:\/\/egpt\.descix\.net\/)#([^"]+)"/g)) {
-  const p = decodeURIComponent(m[1]).split('#')[0];
-  if (!tracked.has(p)) die(`deep link to a path not tracked at HEAD: ${p}`);
+  const why = deadLink(decodeURIComponent(m[1]));
+  if (why) die(why);
 }
 // nothing on the page still points at the app's own public host (a self-link is a deep link)
 if (spec.self_host && html.includes(spec.self_host)) die(`a self-link to ${spec.self_host} remains; rewrite it to a deep link`);
@@ -285,6 +399,7 @@ if (!DRY) {
   fs.mkdirSync(path.join(OUT, 'images'), { recursive: true });
   for (const [name, data] of images) fs.writeFileSync(path.join(OUT, 'images', name), data);
   fs.writeFileSync(path.join(OUT, 'index.html'), html);
+  if (spec.share) { try { require('./lib/share').emitShare(app, spec.share, SRC, OUT); } catch (e) { die(e.message); } }
   if (sdk) fs.writeFileSync(path.join(OUT, sdk.name), sdk.data);
 }
 console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.length} sections (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);

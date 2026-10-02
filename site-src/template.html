@@ -2,48 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>{{PAGE_TITLE}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="site-assets/style.css">
   <link rel="stylesheet" href="site-assets/hljs-theme.css">
   <style>{{IDEA_CSS}}</style>
 </head>
 <body data-egpt-site-build="{{BUILD_SHA}}">
+  <a class="skip-link" href="#main-content">Skip to the document</a>
   <div class="app">
-    <aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar" aria-label="The library">
       <div class="sidebar-header">
-        <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
-        <a class="sidebar-brand" href="#" data-home>{{BRAND}}</a>
-        <p class="sidebar-subtitle">{{SUBTITLE}}</p>
+        <a class="sidebar-brand" href="#" data-home><b>{{BRAND}}</b><span>{{SUBTITLE}}</span></a>
+        <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Close the library menu">×</button>
       </div>
+      <div class="sidebar-search">
+        <input type="search" id="tree-filter" placeholder="Find a document…" aria-label="Find a document by name" autocomplete="off">
+      </div>
+      <nav class="book-nav" id="book-nav" hidden aria-label="The book's index">
+        <!-- site-assets/reader.js builds: the open book's index, from books/<id>.json -->
+      </nav>
       <nav class="tree-nav" id="tree-nav">
-        <!-- JS builds tree from SITE_DATA -->
+        <!-- site.js builds: reading lists, the seven reasons, the shelves -->
       </nav>
       <div class="sidebar-footer">
-        <a href="{{REPO_URL}}" target="_blank">GitHub</a>
+        <a href="index.html">Front page</a>
         <a href="#guide/about-this-collection.md">About</a>
+        <a href="#RECORD_INDEX.md">Record index</a>
         <a href="CHECKSUMS.txt">CHECKSUMS.txt</a>
+        <a href="{{REPO_URL}}" target="_blank" rel="noopener">GitHub</a>
       </div>
     </aside>
-    <main class="main-content" id="main-content">
+    <main class="main-content" id="main-content" tabindex="-1">
       <div class="content-toolbar" id="content-toolbar">
-        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">☰</button>
-        <span class="content-breadcrumb" id="content-breadcrumb"></span>
-        <a class="content-github-link" id="content-github-link" href="#" target="_blank" title="View on GitHub">↗ GitHub</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open the library menu">☰</button>
+        <nav class="shelfmark" id="content-breadcrumb" aria-label="Where this document is shelved"></nav>
+        <div class="toolbar-actions">
+          <a class="toolbar-link" id="content-raw-link" href="#" target="_blank" rel="noopener" title="Open the file itself">File ↗</a>
+          <a class="toolbar-link" id="content-github-link" href="#" target="_blank" rel="noopener" title="View on GitHub">GitHub ↗</a>
+        </div>
       </div>
+      <div class="spine-bar" id="spine-bar" hidden></div>
+      <div class="book-bar" id="book-bar" hidden></div>
       <div class="landing" id="landing">
         {{LANDING_CONTENT}}
       </div>
-      <iframe class="content-iframe" id="content-iframe" sandbox="allow-scripts allow-same-origin allow-popups" style="display:none"></iframe>
+      <iframe class="content-iframe" id="content-iframe" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads" style="display:none" title="Document"></iframe>
       <div class="content-rendered" id="content-rendered" style="display:none"></div>
     </main>
   </div>
+  <div class="record-drawer" id="record-drawer" hidden role="dialog" aria-modal="false" aria-labelledby="record-drawer-title"></div>
   <script>
     window.SITE_DATA = {{SITE_DATA_JSON}};
   </script>
+  <script src="DeSciXAppSDK.js" onerror="this.remove()"></script>
   <script src="site-assets/marked.min.js"></script>
   <script src="site-assets/hljs.min.js"></script>
   <script src="site-assets/mermaid.min.js"></script>
   <script src="site-assets/site.js"></script>
+  <script src="site-assets/reader.js"></script>
 </body>
 </html>

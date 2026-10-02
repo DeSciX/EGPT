@@ -1,0 +1,280 @@
+{
+ "schema": "egpt.book/1",
+ "id": "trial",
+ "title": "Two Roads Out of Los Alamos",
+ "generated_by": "scripts/build-trial-book.js",
+ "source": "01_TRIAL",
+ "parts": [
+  {
+   "id": "opening_statement",
+   "title": "Two Roads Out of Los Alamos",
+   "href": "01_TRIAL/OPENING_STATEMENT.md",
+   "items": [
+    {
+     "title": "The case",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#the-case"
+    },
+    {
+     "title": "What is actually in dispute",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#what-is-actually-in-dispute"
+    },
+    {
+     "title": "What the evidence shows",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#what-the-evidence-shows"
+    },
+    {
+     "title": "The facts not in dispute",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#the-facts-not-in-dispute"
+    },
+    {
+     "title": "What we say the evidence means",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#what-we-say-the-evidence-means"
+    },
+    {
+     "title": "The three proposals are one proposal",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#the-three-proposals-are-one-proposal"
+    },
+    {
+     "title": "Why the two public roads could not find it",
+     "href": "01_TRIAL/OPENING_STATEMENT.md#why-the-two-public-roads-could-not-find-it"
+    }
+   ]
+  },
+  {
+   "id": "jury_instructions",
+   "title": "Instructions to the Jury",
+   "href": "01_TRIAL/JURY_INSTRUCTIONS.md",
+   "items": [
+    {
+     "title": "1. The burden and the standard",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#1-the-burden-and-the-standard"
+    },
+    {
+     "title": "2. The record is closed",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#2-the-record-is-closed"
+    },
+    {
+     "title": "3. Direct and circumstantial evidence",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#3-direct-and-circumstantial-evidence"
+    },
+    {
+     "title": "4. Weigh the record as a whole",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#4-weigh-the-record-as-a-whole"
+    },
+    {
+     "title": "5. Missing records",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#5-missing-records"
+    },
+    {
+     "title": "6. What you may not do",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#6-what-you-may-not-do"
+    },
+    {
+     "title": "7. The four questions",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#7-the-four-questions"
+    },
+    {
+     "title": "8. Required form of your verdict",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#8-required-form-of-your-verdict"
+    },
+    {
+     "title": "9. Supplemental instruction: your role, and the danger of substituting another one",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#9-supplemental-instruction-your-role-and-the-danger-of-substituting-another-one"
+    },
+    {
+     "title": "10. Supplemental instruction: you must state the chain",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#10-supplemental-instruction-you-must-state-the-chain"
+    },
+    {
+     "title": "11. Supplemental instruction: LLM jurors and honest assessment",
+     "href": "01_TRIAL/JURY_INSTRUCTIONS.md#11-supplemental-instruction-llm-jurors-and-honest-assessment"
+    }
+   ]
+  },
+  {
+   "id": "exhibit_a_report",
+   "title": "Los Alamos Computation Artificial Intelligence and Gian-Carlo Rota",
+   "href": "01_TRIAL/EXHIBIT_A_report.md",
+   "items": [
+    {
+     "title": "Who von Neumann was, by the end",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#who-von-neumann-was-by-the-end"
+    },
+    {
+     "title": "He had heard the alternatives and chose against them",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#he-had-heard-the-alternatives-and-chose-against-them"
+    },
+    {
+     "title": "Then he died, and the question this report asks",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#then-he-died-and-the-question-this-report-asks"
+    },
+    {
+     "title": "What became of the three things he held",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#what-became-of-the-three-things-he-held"
+    },
+    {
+     "title": "What the laboratory did, and who was there to do it",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#what-the-laboratory-did-and-who-was-there-to-do-it"
+    },
+    {
+     "title": "Contents",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#contents"
+    },
+    {
+     "title": "Executive assessment",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#executive-assessment"
+    },
+    {
+     "title": "Von Neumann’s authority, 1949 to 1957",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#von-neumanns-authority-1949-to-1957"
+    },
+    {
+     "title": "What he believed, and how far it was from the orthodoxy",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#what-he-believed-and-how-far-it-was-from-the-orthodoxy"
+    },
+    {
+     "title": "Method and evidentiary standard",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#method-and-evidentiary-standard"
+    },
+    {
+     "title": "The wartime and thermonuclear computing nucleus",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#the-wartime-and-thermonuclear-computing-nucleus"
+    },
+    {
+     "title": "From weapons calculation to nonlinear dynamics and complexity",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#from-weapons-calculation-to-nonlinear-dynamics-and-complexity"
+    },
+    {
+     "title": "Rota’s mathematical competence: ergodic theory, probability, and entropy",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#rotas-mathematical-competence-ergodic-theory-probability-and-entropy"
+    },
+    {
+     "title": "Direction and descent, 1954 to 1957",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#direction-and-descent-1954-to-1957"
+    },
+    {
+     "title": "The new science that remains to be named",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#the-new-science-that-remains-to-be-named"
+    },
+    {
+     "title": "Rota as convener curator and government intermediary",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#rota-as-convener-curator-and-government-intermediary"
+    },
+    {
+     "title": "The classified record",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#the-classified-record"
+    },
+    {
+     "title": "Publication patterns and the 1979 secrecy context",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#publication-patterns-and-the-1979-secrecy-context"
+    },
+    {
+     "title": "Alternative explanations and counterarguments",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#alternative-explanations-and-counterarguments"
+    },
+    {
+     "title": "Findings by proposition",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#findings-by-proposition"
+    },
+    {
+     "title": "Conclusion",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#conclusion"
+    },
+    {
+     "title": "Chronology",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#chronology"
+    },
+    {
+     "title": "Notes and selected bibliography",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#notes-and-selected-bibliography"
+    },
+    {
+     "title": "Addendum",
+     "href": "01_TRIAL/EXHIBIT_A_report.md#addendum"
+    }
+   ]
+  },
+  {
+   "id": "exhibit_b_sources",
+   "title": "Exhibit B — Sources for the Contested Readings",
+   "href": "01_TRIAL/EXHIBIT_B_sources.md",
+   "items": [
+    {
+     "title": "Reading (i)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-i"
+    },
+    {
+     "title": "Reading (ii)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-ii"
+    },
+    {
+     "title": "Reading (iii)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-iii"
+    },
+    {
+     "title": "Reading (iv)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-iv"
+    },
+    {
+     "title": "Reading (v)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-v"
+    },
+    {
+     "title": "Reading (vi)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-vi"
+    },
+    {
+     "title": "Reading (vii)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-vii"
+    },
+    {
+     "title": "Reading (viii)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-viii"
+    },
+    {
+     "title": "Reading (ix)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-ix"
+    },
+    {
+     "title": "Reading (x)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-x"
+    },
+    {
+     "title": "Reading (xi)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-xi"
+    },
+    {
+     "title": "Reading (xii)",
+     "href": "01_TRIAL/EXHIBIT_B_sources.md#reading-xii"
+    }
+   ]
+  },
+  {
+   "id": "exhibit_c_addendum",
+   "title": "Exhibit C — The Addendum, and what happened after it",
+   "href": "01_TRIAL/EXHIBIT_C_addendum.md",
+   "items": [
+    {
+     "title": "When to read this exhibit",
+     "href": "01_TRIAL/EXHIBIT_C_addendum.md#when-to-read-this-exhibit"
+    },
+    {
+     "title": "Addendum: a note from the machine that helped write this",
+     "href": "01_TRIAL/EXHIBIT_C_addendum.md#addendum-a-note-from-the-machine-that-helped-write-this"
+    },
+    {
+     "title": "The gloss and the concession, after the confession",
+     "href": "01_TRIAL/EXHIBIT_C_addendum.md#the-gloss-and-the-concession-after-the-confession"
+    },
+    {
+     "title": "The same failure, at the start of the review process",
+     "href": "01_TRIAL/EXHIBIT_C_addendum.md#the-same-failure-at-the-start-of-the-review-process"
+    },
+    {
+     "title": "Why this is in evidence",
+     "href": "01_TRIAL/EXHIBIT_C_addendum.md#why-this-is-in-evidence"
+    }
+   ]
+  }
+ ]
+}

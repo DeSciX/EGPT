@@ -1,726 +1,766 @@
 /* ============================================================
-   EGPT Course Site — site.js
-   Two-panel SPA: sidebar tree nav + main content frame
-   Vanilla JS, no framework, no build step
+   EGPT-Evidence library viewer — site.js
+   The reading room: shelves (the collection's folders), reading lists (site-src/spine.json),
+   and one document at a time, with its provenance beside it rather than in the reading line.
+   Vanilla JS, no framework, no build step. Data: window.SITE_DATA (scripts/generate-site.js).
    ============================================================ */
-
 (function () {
   'use strict';
 
   var DATA = window.SITE_DATA;
-  if (!DATA) {
-    console.warn('SITE_DATA not found — site.js cannot initialize.');
-    return;
-  }
-
+  if (!DATA) { console.warn('SITE_DATA not found — site.js cannot initialize.'); return; }
   if (!DATA.site || !DATA.site.raw_url || !DATA.site.repo_url) {
     throw new Error('SITE_DATA.site.raw_url and SITE_DATA.site.repo_url are required (set them in site-src/_meta.json)');
   }
-  var RAW_BASE = DATA.site.raw_url;   // "." = the files are served beside index.html
+  var RAW_BASE = DATA.site.raw_url;
   var REPO_BASE = DATA.site.repo_url;
-  var FILES = {};                     // every path in the bundle, for link resolution
+  var FILES = {};
   for (var fi = 0; fi < (DATA.files || []).length; fi++) FILES[DATA.files[fi]] = true;
-  var currentPath = '';               // the file being shown, bundle-relative
+  var MODULES = DATA.modules || [];
+  var SPINES = DATA.spines || [];
+  var TITLES = DATA.titles || {};
+  var READING_PAGE = '12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html';
+  var currentPath = '';
 
-  // POSIX-style join + normalize for bundle paths ("a/b" + "../c.md" -> "a/c.md").
+  var $ = function (id) { return document.getElementById(id); };
+  var treeNav = $('tree-nav'), landing = $('landing'), iframe = $('content-iframe'), rendered = $('content-rendered');
+  var shelfmark = $('content-breadcrumb'), githubLink = $('content-github-link'), rawLink = $('content-raw-link');
+  var sidebar = $('sidebar'), spineBar = $('spine-bar'), drawer = $('record-drawer'), filterInput = $('tree-filter');
+
+  /* ============================================================ utilities */
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
+  function rawUrl(p) { return RAW_BASE + '/' + p.split('/').map(encodeURIComponent).join('/'); }
+  function extOf(p) { var n = p.split('/').pop(); var k = n.lastIndexOf('.'); return k < 0 ? '' : n.slice(k + 1).toLowerCase(); }
+  function baseName(p) { return p.split('/').pop(); }
+  function humanName(p) { return baseName(p).replace(/\.[^.]+$/, '').replace(/_+/g, ' '); }
+  function cssEsc(s) { return String(s).replace(/["\\]/g, '\\$&'); }
   function resolvePath(fromFile, href) {
     var base = fromFile.indexOf('/') >= 0 ? fromFile.slice(0, fromFile.lastIndexOf('/')) : '';
-    var parts = (base ? base.split('/') : []).concat(href.split('/'));
-    var out = [];
-    for (var i = 0; i < parts.length; i++) {
-      var seg = parts[i];
-      if (seg === '' || seg === '.') continue;
-      if (seg === '..') { out.pop(); continue; }
-      out.push(seg);
-    }
+    var parts = (base ? base.split('/') : []).concat(href.split('/')), out = [];
+    for (var i = 0; i < parts.length; i++) { var s = parts[i]; if (s === '' || s === '.') continue; if (s === '..') { out.pop(); continue; } out.push(s); }
     return out.join('/');
   }
-  function splitDirFile(fullPath) {
-    var k = fullPath.lastIndexOf('/');
-    return k < 0 ? ['', fullPath] : [fullPath.slice(0, k), fullPath.slice(k + 1)];
+  // GitHub's heading slugs, so "#a-dark-age-of-idiocy-…" in a link or a reading list lands on the heading
+  function slug(t) { return String(t).trim().toLowerCase().replace(/[^\w\s\u00C0-\u024F-]/g, '').replace(/\s/g, '-'); }
+  function moduleOf(p) { for (var i = 0; i < MODULES.length; i++) if (p.indexOf(MODULES[i].dir + '/') === 0) return MODULES[i]; return null; }
+  function highlightLabel(p) {
+    var m = moduleOf(p); if (!m) return '';
+    for (var i = 0; i < (m.highlights || []).length; i++) if (m.dir + '/' + m.highlights[i].file === p) return m.highlights[i].label || '';
+    return '';
+  }
+  function titleFor(p) { return TITLES[p] || highlightLabel(p) || humanName(p); }
+  function whenDefined(name, ms) {
+    return new Promise(function (resolve, reject) {
+      var t0 = Date.now();
+      (function poll() { if (typeof window[name] !== 'undefined') return resolve(window[name]); if (Date.now() - t0 > ms) return reject(new Error(name + ' did not load')); setTimeout(poll, 80); })();
+    });
+  }
+  var scriptPromises = {};
+  function loadScript(src, globalName) {
+    if (typeof window[globalName] !== 'undefined') return Promise.resolve(window[globalName]);
+    if (!scriptPromises[src]) scriptPromises[src] = new Promise(function (resolve, reject) {
+      var s = document.createElement('script'); s.src = src; s.async = true;
+      s.onload = function () { typeof window[globalName] !== 'undefined' ? resolve(window[globalName]) : reject(new Error(globalName + ' missing')); };
+      s.onerror = function () { delete scriptPromises[src]; reject(new Error('could not load ' + src)); };
+      document.head.appendChild(s);
+    });
+    return scriptPromises[src];
   }
 
-  // DOM refs
-  var treeNav = document.getElementById('tree-nav');
-  var landing = document.getElementById('landing');
-  var iframe = document.getElementById('content-iframe');
-  var rendered = document.getElementById('content-rendered');
-  var breadcrumb = document.getElementById('content-breadcrumb');
-  var githubLink = document.getElementById('content-github-link');
-  var sidebar = document.getElementById('sidebar');
-  var sidebarToggle = document.getElementById('sidebar-toggle');
-  var mobileMenuBtn = document.getElementById('mobile-menu-btn');
-  var homeLink = document.querySelector('[data-home]');
+  /* ============================================================ the reader's place (this browser only) */
+  var STORE_KEY = 'egpt.library.v1';
+  function load() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch (e) { return {}; } }
+  var state = load();
+  state.visited = state.visited || {};
+  function save() { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* private window: the bar still works */ } }
 
-  // Create backdrop element for mobile sidebar
-  var backdrop = document.createElement('div');
-  backdrop.className = 'sidebar-backdrop';
-  document.body.appendChild(backdrop);
+  /* ============================================================ integrity data, fetched on demand */
+  var checksums = null, quotes = null;
+  function getChecksums() {
+    if (!checksums) checksums = fetch(rawUrl('CHECKSUMS.txt')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (t) {
+      var map = {}; t.split('\n').forEach(function (l) { var m = l.match(/^([0-9a-f]{64})\s+(.+)$/); if (m) map[m[2]] = m[1]; }); return map;
+    }).catch(function () { return {}; });
+    return checksums;
+  }
+  function getQuotes() {
+    if (!quotes) quotes = fetch(rawUrl('05_CORPUS/corpus/quotes.json')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) {
+      var byId = {}, byFile = {};
+      (j.records || []).forEach(function (r) { byId[r.id] = r; var f = r.source && r.source.file; if (f) (byFile[f] = byFile[f] || []).push(r); });
+      return { byId: byId, byFile: byFile };
+    }).catch(function () { return { byId: {}, byFile: {} }; });
+    return quotes;
+  }
 
-  /* ============================================================
-     TREE BUILDING
-     ============================================================ */
+  /* ============================================================ reading lists */
+  function stopPaths(stop) { return stop.read.map(function (r) { return r.split('#')[0]; }); }
+  function spineById(id) { for (var i = 0; i < SPINES.length; i++) if (SPINES[i].id === id) return SPINES[i]; return null; }
+  // a stop that names this exact heading wins over one that names the whole file
+  function locate(spine, path, anchor) {
+    var i;
+    if (anchor) for (i = 0; i < spine.stops.length; i++) if (spine.stops[i].read.indexOf(path + '#' + anchor) >= 0) return i;
+    for (i = 0; i < spine.stops.length; i++) if (stopPaths(spine.stops[i]).indexOf(path) >= 0) return i;
+    return -1;
+  }
+  function listsContaining(path) { return SPINES.filter(function (s) { return locate(s, path) >= 0; }); }
+  function queryList() { var m = location.search.match(/[?&]list=([^&]+)/); return m ? decodeURIComponent(m[1]) : ''; }
+  function activeSpineFor(path) {
+    var want = [queryList(), state.active];
+    for (var i = 0; i < want.length; i++) { var s = want[i] && spineById(want[i]); if (s && locate(s, path) >= 0) return s; }
+    return listsContaining(path)[0] || null;
+  }
+  function visitedOf(spine, st) { return ((state.visited[spine.id] || {})[st.id]) || []; }
+  function markVisited(spine, i, path) {
+    var v = state.visited[spine.id] = state.visited[spine.id] || {}, st = spine.stops[i];
+    v[st.id] = v[st.id] || []; if (v[st.id].indexOf(path) < 0) v[st.id].push(path);
+  }
+  function stopDone(spine, st) { return visitedOf(spine, st).length > 0; }
+  function doneCount(spine) { var n = 0; spine.stops.forEach(function (st) { if (stopDone(spine, st)) n++; }); return n; }
+  function stopName(st) { return st.label && st.label !== st.title ? st.label : st.title; }
+  function spineLink(spine, ref, cls, inner, title) {
+    return '<a class="' + cls + '" href="' + esc('#' + ref) + '" data-spine="' + esc(spine.id) + '"' + (title ? ' title="' + esc(title) + '"' : '') + '>' + inner + '</a>';
+  }
 
+  function renderSpineBar(path, anchor) {
+    var spine = activeSpineFor(path);
+    if (!spine) { spineBar.hidden = true; spineBar.innerHTML = ''; return null; }
+    var i = locate(spine, path, anchor), st = spine.stops[i];
+    state.active = spine.id; state.last = { path: path, spine: spine.id };
+    markVisited(spine, i, path); save();
+    var prev = spine.stops[i - 1], next = spine.stops[i + 1];
+    var dots = spine.stops.map(function (s, k) {
+      var cls = 'spine-dot' + (k === i ? ' is-current' : '') + (stopDone(spine, s) ? ' is-done' : '');
+      return spineLink(spine, s.read[0], cls, '<span class="visually-hidden">' + esc((k + 1) + '. ' + stopName(s)) + '</span>', (k + 1) + '. ' + stopName(s) + (s.question ? ' — ' + s.question : ''));
+    }).join('');
+    var reads = st.read.length > 1 ? '<ol class="spine-reads" aria-label="In this stop">' + st.read.map(function (r) {
+      var p = r.split('#')[0], on = p === path, seen = visitedOf(spine, st).indexOf(p) >= 0;
+      return '<li' + (on ? ' class="is-current" aria-current="page"' : '') + '>' + spineLink(spine, r, 'spine-read', (seen && !on ? '<span class="tick" aria-label="read">✓</span>' : '') + '<span class="spine-read__t">' + esc(titleFor(p)) + '</span><span class="spine-read__ext">' + esc(extOf(p)) + '</span>') + '</li>';
+    }).join('') + '</ol>' : '';
+    var others = listsContaining(path).filter(function (s) { return s.id !== spine.id; });
+    var also = others.length ? '<span class="spine-also">Also on ' + others.map(function (s) { return spineLink(s, path, '', esc(s.short || s.title)); }).join(', ') + '</span>' : '';
+    spineBar.style.setProperty('--list-color', spine.color || 'var(--accent)');
+    spineBar.innerHTML =
+      '<div class="spine-head">' +
+        '<span class="spine-kind">Reading list</span>' + spineLink(spine, spine.stops[0].read[0], 'spine-title', esc(spine.title)) +
+        '<span class="spine-count">Stop ' + (i + 1) + ' of ' + spine.stops.length + ' · ' + doneCount(spine) + ' read</span>' + also +
+      '</div>' +
+      '<div class="spine-track" role="navigation" aria-label="Stops on this reading list">' + dots + '</div>' +
+      '<div class="spine-stop">' +
+        (prev ? spineLink(spine, prev.read[0], 'spine-nav spine-nav--prev', '<span aria-hidden="true">←</span><span class="spine-nav__label">' + esc(stopName(prev)) + '</span>') : '<span class="spine-nav spine-nav--prev is-empty"></span>') +
+        '<div class="spine-here"><span class="spine-here__title">' + esc(stopName(st)) + '</span>' +
+          (st.question ? '<span class="spine-here__q">' + esc(st.question) + '</span>' : '') +
+          (st.anchor ? '<span class="spine-here__anchor">' + esc(st.anchor) + '</span>' : '') + '</div>' +
+        (next ? spineLink(spine, next.read[0], 'spine-nav spine-nav--next', '<span class="spine-nav__label">' + esc(stopName(next)) + '</span><span aria-hidden="true">→</span>') : '<span class="spine-nav spine-nav--next is-end">End of the list</span>') +
+      '</div>' + reads;
+    spineBar.hidden = false;
+    return { spine: spine, index: i, stop: st };
+  }
+
+  /* ============================================================ sidebar: reading lists, the seven reasons, the shelves */
+  function fileRow(p, label, extra) {
+    var ext = extOf(p);
+    return '<a class="tree-file" href="' + esc('#' + p) + '" data-path="' + esc(p) + '">' +
+      '<span class="tree-file__name">' + esc(label || humanName(p)) + (extra || '') + '</span>' +
+      (ext ? '<span class="tree-file__ext">' + esc(ext) + '</span>' : '') + '</a>';
+  }
+  function group(id, title, inner, cls) {
+    return '<details class="tree-group' + (cls ? ' ' + cls : '') + '" data-group="' + esc(id) + '">' +
+      '<summary>' + title + '</summary><div class="tree-group__body">' + inner + '</div></details>';
+  }
+  function listGroup(s) {
+    var stops = s.stops.map(function (st, k) {
+      return '<a class="tree-stop" href="' + esc('#' + st.read[0]) + '" data-spine="' + esc(s.id) + '" data-stop="' + esc(st.id) + '">' +
+        '<span class="tree-stop__n">' + (k + 1) + '</span><span class="tree-stop__t">' + esc(stopName(st)) +
+        (st.question ? '<small>' + esc(st.question) + '</small>' : '') + '</span></a>';
+    }).join('');
+    var head = '<span class="tree-dot" style="background:' + esc(s.color || 'var(--accent)') + '"></span><span class="tree-group__title">' + esc(s.title) + '</span><span class="tree-group__meta" data-spine-meter="' + esc(s.id) + '"></span>';
+    return group('list:' + s.id, head, stops, 'tree-group--list');
+  }
   function buildTree() {
-    if (!DATA.modules || !DATA.modules.length) {
-      treeNav.innerHTML = '<p style="padding:1rem;opacity:0.5;font-size:0.8rem">No modules found.</p>';
-      return;
-    }
-
-    var html = '';
-
-    for (var i = 0; i < DATA.modules.length; i++) {
-      var mod = DATA.modules[i];
-      var primaryIdea = (mod.primary_ideas && mod.primary_ideas.length) ? mod.primary_ideas[0].toLowerCase() : 'id1';
-
-      html += '<div class="tree-node tree-node--module" data-dir="' + esc(mod.dir) + '">';
-      html += '<div class="tree-toggle" tabindex="0" role="button" aria-expanded="false" data-expanded="false">';
-      html += '<span class="tree-arrow">&#9656;</span>'; // ▸
-      html += '<span class="tree-dot" style="background:var(--' + esc(primaryIdea) + '-color)"></span>';
-      html += '<span class="tree-label">' + esc(mod.label) + '</span>';
-      html += '</div>';
-      html += '<div class="tree-children" style="display:none">';
-
-      // Highlights section
-      if (mod.highlights && mod.highlights.length) {
-        html += '<div class="tree-node tree-node--section">';
-        html += '<div class="tree-toggle" tabindex="0" role="button" aria-expanded="false" data-expanded="false">';
-        html += '<span class="tree-arrow">&#9656;</span>';
-        html += '<span class="tree-label">&#9733; Highlights</span>'; // ★
-        html += '</div>';
-        html += '<div class="tree-children" style="display:none">';
-        for (var h = 0; h < mod.highlights.length; h++) {
-          var hl = mod.highlights[h];
-          var hfname = hl.file.split('/').pop();
-          html += '<div class="tree-node tree-node--file" tabindex="0" role="button" data-dir="' + esc(mod.dir) + '" data-file="' + esc(hl.file) + '">';
-          html += '<span class="tree-label" title="' + esc(hl.label || hfname) + '">' + esc(hfname) + '</span>';
-          html += '</div>';
-        }
-        html += '</div></div>';
-      }
-
-      // Subsections
-      if (mod.subsections) {
-        for (var s = 0; s < mod.subsections.length; s++) {
-          var sub = mod.subsections[s];
-          html += '<div class="tree-node tree-node--section">';
-          html += '<div class="tree-toggle" tabindex="0" role="button" aria-expanded="false" data-expanded="false">';
-          html += '<span class="tree-arrow">&#9656;</span>';
-          html += '<span class="tree-label">' + esc(sub.title) + '</span>';
-          html += '</div>';
-          html += '<div class="tree-children" style="display:none">';
-          if (sub.files) {
-            for (var f = 0; f < sub.files.length; f++) {
-              var fname = sub.files[f].split('/').pop();
-              html += '<div class="tree-node tree-node--file" tabindex="0" role="button" data-dir="' + esc(mod.dir) + '" data-file="' + esc(sub.files[f]) + '">';
-              html += '<span class="tree-label">' + esc(fname) + '</span>';
-              html += '</div>';
-            }
-          }
-          html += '</div></div>';
-        }
-      }
-
-      html += '</div></div>'; // close tree-children and tree-node--module
-    }
-
+    var lists = SPINES.filter(function (s) { return !s.idea; }), ideaLists = SPINES.filter(function (s) { return s.idea; });
+    var SHELVES = DATA.shelves || [];
+    var html = SHELVES.length ? '<p class="tree-heading">The shelves</p>' + SHELVES.map(function (sh, i) {
+      return '<a class="tree-shelf" href="#shelf:' + esc(sh.id) + '" data-shelf="' + esc(sh.id) + '"><span class="tree-shelf__n">' + (i + 1 < 10 ? '0' : '') + (i + 1) + '</span><span class="tree-shelf__t">' + esc(sh.title) + '</span></a>';
+    }).join('') : '';
+    html += '<p class="tree-heading">Reading lists</p>' + lists.map(listGroup).join('');
+    html += '<p class="tree-heading">You are here to…</p>' + ideaLists.map(listGroup).join('');
+    html += '<p class="tree-heading">The folders</p>';
+    html += MODULES.map(function (m) {
+      var inner = '';
+      if (m.highlights && m.highlights.length) inner += '<p class="tree-sub">Start here</p>' + m.highlights.map(function (h) { return fileRow(m.dir + '/' + h.file, h.label || humanName(h.file)); }).join('');
+      (m.subsections || []).forEach(function (sub) {
+        var rows = (sub.files || []).map(function (f) { return fileRow(m.dir + '/' + f, humanName(f)); }).join('');
+        inner += sub.title === 'Files' ? '<p class="tree-sub">All files</p>' + rows
+          : group('dir:' + m.dir + '/' + sub.title, '<span class="tree-folder">' + esc(sub.title) + '</span><span class="tree-group__meta">' + (sub.files || []).length + '</span>', rows, 'tree-group--folder');
+      });
+      var mark = /^[0-9]{2}_/.test(m.dir) ? m.dir.slice(0, 2) : '··';
+      var head = '<span class="tree-mark">' + esc(mark) + '</span><span class="tree-group__title">' + esc(m.name || m.label) + '<small>' + esc(m.line || '') + '</small></span>';
+      return group('shelf:' + m.dir, head, inner, 'tree-group--shelf');
+    }).join('');
+    html += '<div class="tree-results" id="tree-results" hidden></div>';
     treeNav.innerHTML = html;
-    attachTreeListeners();
+    treeNav.addEventListener('toggle', function (e) {
+      var d = e.target; if (!d.matches || !d.matches('details[data-group]')) return;
+      state.open = state.open || {};
+      if (d.open) state.open[d.getAttribute('data-group')] = 1; else delete state.open[d.getAttribute('data-group')];
+      save();
+    }, true);
+    Object.keys(state.open || {}).forEach(function (g) { var d = treeNav.querySelector('details[data-group="' + cssEsc(g) + '"]'); if (d) d.open = true; });
+  }
+  function updateMeters() {
+    SPINES.forEach(function (s) {
+      var n = doneCount(s), els = document.querySelectorAll('[data-spine-meter="' + cssEsc(s.id) + '"]');
+      for (var i = 0; i < els.length; i++) {
+        if (els[i].classList.contains('list-card__meter')) {
+          els[i].innerHTML = '<span class="meter" aria-hidden="true"><span style="width:' + Math.round(100 * n / s.stops.length) + '%"></span></span><span class="list-card__count">' + (n ? n + ' of ' + s.stops.length + ' stops read' : s.stops.length + ' stops') + '</span>';
+        } else els[i].textContent = n ? n + '/' + s.stops.length : String(s.stops.length);
+      }
+    });
+  }
+  function openParents(el) { var d = el.parentElement; while (d && d !== treeNav) { if (d.tagName === 'DETAILS') d.open = true; d = d.parentElement; } }
+  function isMobile() { return window.matchMedia && window.matchMedia('(max-width: 900px)').matches; }
+  function markTree(path, loc) {
+    var olds = treeNav.querySelectorAll('.is-active'); for (var i = 0; i < olds.length; i++) olds[i].classList.remove('is-active');
+    var rows = treeNav.querySelectorAll('.tree-file[data-path="' + cssEsc(path) + '"]');
+    for (var r = 0; r < rows.length; r++) { rows[r].classList.add('is-active'); if (!loc) openParents(rows[r]); }
+    if (loc) {
+      var stopEl = treeNav.querySelector('.tree-stop[data-spine="' + cssEsc(loc.spine.id) + '"][data-stop="' + cssEsc(loc.stop.id) + '"]');
+      if (stopEl) { stopEl.classList.add('is-active'); openParents(stopEl); }
+    }
+    var marks = treeNav.querySelectorAll('.tree-stop');
+    for (var k = 0; k < marks.length; k++) {
+      var sp = spineById(marks[k].getAttribute('data-spine')), sid = marks[k].getAttribute('data-stop');
+      var st = sp && sp.stops.filter(function (x) { return x.id === sid; })[0];
+      marks[k].classList.toggle('is-done', !!(st && stopDone(sp, st)));
+    }
+    var act = treeNav.querySelector('.tree-stop.is-active') || treeNav.querySelector('.tree-file.is-active');
+    if (act && !isMobile()) { var rc = act.getBoundingClientRect(), nr = treeNav.getBoundingClientRect(); if (rc.top < nr.top || rc.bottom > nr.bottom) act.scrollIntoView({ block: 'center' }); }
   }
 
-  function attachTreeListeners() {
-    treeNav.addEventListener('click', handleTreeClick);
-    treeNav.addEventListener('keydown', handleTreeKeydown);
+  if (filterInput) filterInput.addEventListener('input', function () {
+    var q = filterInput.value.trim().toLowerCase(), box = $('tree-results');
+    var groups = treeNav.querySelectorAll('.tree-heading, details.tree-group');
+    for (var i = 0; i < groups.length; i++) if (!groups[i].parentElement.closest('details')) groups[i].style.display = q ? 'none' : '';
+    if (!q) { box.hidden = true; box.innerHTML = ''; return; }
+    var hits = (DATA.files || []).filter(function (p) { return (p + ' ' + (TITLES[p] || '') + ' ' + highlightLabel(p)).toLowerCase().indexOf(q) >= 0; }).slice(0, 80);
+    box.innerHTML = hits.length ? hits.map(function (p) { return fileRow(p, titleFor(p), '<small class="tree-file__path">' + esc(p) + '</small>'); }).join('')
+      : '<p class="tree-empty">No file name or title matches “' + esc(filterInput.value) + '”.</p>';
+    box.hidden = false;
+  });
+
+  /* ============================================================ the App Shell: beside the chat by default, the whole frame when a page needs it */
+  var shellReady = null;
+  function shellView(mode) {
+    if (!(window.DeSciX && typeof DeSciX.ready === 'function')) return;
+    shellReady = shellReady || DeSciX.ready().catch(function () { return null; });
+    shellReady.then(function (r) {
+      if (!r || r.mode !== 'shell') return;
+      try { var v = DeSciX.view; if (v && typeof v.set === 'function') v.set(mode); } catch (e) { /* the SDK names the absence */ }
+    });
   }
+  function wantsFullView(path, kind) { return path === READING_PAGE || kind === 'pdf'; }
 
-  function handleTreeClick(e) {
-    // Toggle expand/collapse
-    var toggle = e.target.closest('.tree-toggle');
-    if (toggle) {
-      toggleNode(toggle);
-      return;
-    }
-
-    // File click
-    var fileNode = e.target.closest('.tree-node--file');
-    if (fileNode) {
-      var dir = fileNode.getAttribute('data-dir');
-      var file = fileNode.getAttribute('data-file');
-      navigateTo(dir, file);
-      markActive(fileNode);
-    }
+  /* ============================================================ navigation: #<path>, #<path>#<heading>, #record:<id> */
+  function parseHash() {
+    var h = location.hash.slice(1); try { h = decodeURIComponent(h); } catch (e) { /* keep raw */ }
+    var k = h.indexOf('#'); return { path: k < 0 ? h : h.slice(0, k), anchor: k < 0 ? '' : h.slice(k + 1) };
   }
-
-  function handleTreeKeydown(e) {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-
-    var toggle = e.target.closest('.tree-toggle');
-    if (toggle) {
-      e.preventDefault();
-      toggleNode(toggle);
-      return;
-    }
-
-    var fileNode = e.target.closest('.tree-node--file');
-    if (fileNode) {
-      e.preventDefault();
-      var dir = fileNode.getAttribute('data-dir');
-      var file = fileNode.getAttribute('data-file');
-      navigateTo(dir, file);
-      markActive(fileNode);
-    }
+  function kindOf(p) {
+    var ext = extOf(p);
+    if (ext === 'md') return 'md';
+    if (ext === 'html' || ext === 'htm') return 'html';
+    if (ext === 'pdf') return 'pdf';
+    if (/^(png|jpe?g|gif|svg|webp)$/.test(ext)) return 'image';
+    if (ext === 'docx') return 'docx';
+    if (/^(zip|jsonl|mp3|mp4|wav|xlsx|pptx|olean)$/.test(ext)) return 'download';
+    if (/^(tsv|csv)$/.test(ext)) return 'table';
+    return 'code';
   }
-
-  function toggleNode(toggle) {
-    var children = toggle.nextElementSibling;
-    if (!children) return;
-    var arrow = toggle.querySelector('.tree-arrow');
-    var isExpanded = toggle.getAttribute('data-expanded') === 'true';
-
-    toggle.setAttribute('data-expanded', String(!isExpanded));
-    toggle.setAttribute('aria-expanded', String(!isExpanded));
-    children.style.display = isExpanded ? 'none' : 'block';
-    if (arrow) {
-      arrow.innerHTML = isExpanded ? '&#9656;' : '&#9662;'; // ▸ or ▾
-    }
+  function setToolbar(path) {
+    githubLink.href = REPO_BASE + '/blob/main/' + path.split('/').map(encodeURIComponent).join('/');
+    rawLink.href = rawUrl(path);
+    githubLink.style.display = rawLink.style.display = '';
   }
-
-  function markActive(fileNode) {
-    var prev = treeNav.querySelectorAll('.tree-node--active');
-    for (var i = 0; i < prev.length; i++) {
-      prev[i].classList.remove('tree-node--active');
-    }
-    fileNode.classList.add('tree-node--active');
-  }
-
-  /* ============================================================
-     NAVIGATION
-     ============================================================ */
-
-  function navigateTo(moduleDir, filePath) {
-    var fullPath = moduleDir ? (moduleDir + '/' + filePath) : filePath;
-    var ext = filePath.split('.').pop().toLowerCase();
-    currentPath = fullPath;
-    if (location.hash.slice(1) !== fullPath) {
-      try { history.replaceState(null, '', '#' + fullPath); } catch (e) { location.hash = fullPath; }
-    }
-    if (window.scrollTo) window.scrollTo(0, 0);
-
-    // Hide landing, prepare content area
+  function navigate(path, anchor) {
+    var kind = kindOf(path);
+    currentPath = path;
+    closeDrawer();
     landing.style.display = 'none';
-
-    // Update breadcrumb
-    var parts = fullPath.split('/');
-    breadcrumb.textContent = parts.join(' / ');
-
-    // Update GitHub link
-    githubLink.href = REPO_BASE + '/blob/main/' + fullPath;
-    githubLink.style.display = '';
-
-    // Route by file type
-    if (ext === 'html' || ext === 'htm') {
-      showIframe(fullPath);
-    } else if (ext === 'pdf' || ext === 'png' || ext === 'jpg' || ext === 'jpeg' || ext === 'svg') {
-      showIframe(fullPath);
-    } else if (ext === 'md') {
+    document.body.classList.add('is-reading');
+    renderShelfmark(path);
+    setToolbar(path);
+    var loc = renderSpineBar(path, anchor);
+    markTree(path, loc);
+    updateMeters();
+    shellView(wantsFullView(path, kind) ? 'CodeSite' : 'SplitView');
+    document.title = titleFor(path) + ' — ' + DATA.site.brand;
+    if (kind === 'html') showIframe(path, anchor);
+    else {
       showRendered();
-      fetchAndRenderMarkdown(fullPath);
-    } else if (ext === 'docx' || ext === 'jsonl' || ext === 'zip') {
-      showRendered();
-      rendered.innerHTML = '<p class="loading">' + escapeHtml(fullPath) + ' is not viewable here: <a href="' + RAW_BASE + '/' + encodeURI(fullPath) + '" download>download it</a>.</p>';
-    } else {
-      // Source code
-      showRendered();
-      fetchAndRenderCode(fullPath, ext);
+      if (kind === 'md') renderMarkdown(path, anchor);
+      else if (kind === 'pdf') renderPdf(path);
+      else if (kind === 'image') renderImage(path);
+      else if (kind === 'docx') renderDocx(path);
+      else if (kind === 'download') renderDownload(path);
+      else if (kind === 'table') renderTable(path);
+      else renderCode(path);
     }
-
-    // Close mobile sidebar
+    if (!anchor) window.scrollTo(0, 0);
     closeMobileSidebar();
+    if (window.EGPTReader) window.EGPTReader.onNavigate(path, anchor, kind);
   }
-
-  function showIframe(src) {
-    iframe.src = src;
+  function renderShelfmark(path) {
+    var m = moduleOf(path), parts = path.split('/'), html = '';
+    if (m) {
+      var mark = /^[0-9]{2}_/.test(m.dir) ? m.dir.slice(0, 2) : '';
+      html += '<a class="shelfmark__shelf" href="' + esc('#' + (m.entry ? m.dir + '/' + m.entry : path)) + '">' + (mark ? '<span class="shelfmark__no">' + esc(mark) + '</span>' : '') + esc(m.name || m.label) + '</a>';
+      var rest = parts.slice(m.dir.split('/').length);
+      for (var i = 0; i < rest.length - 1; i++) html += '<span class="shelfmark__sep">/</span><span class="shelfmark__dir">' + esc(rest[i]) + '</span>';
+    } else html += '<span class="shelfmark__shelf">The collection</span>';
+    html += '<span class="shelfmark__sep">/</span><span class="shelfmark__file" title="' + esc(path) + '">' + esc(baseName(path)) + '</span>';
+    shelfmark.innerHTML = html;
+  }
+  function showIframe(path, anchor) {
+    rendered.style.display = 'none'; rendered.innerHTML = '';
+    iframe.src = rawUrl(path) + (anchor ? '#' + anchor : '');
     iframe.style.display = 'block';
-    rendered.style.display = 'none';
+  }
+  function showRendered() { iframe.style.display = 'none'; iframe.src = 'about:blank'; rendered.style.display = 'block'; }
+  function openHash() {
+    var h = parseHash();
+    if (!h.path) { goHome(); return; }
+    // the reader (site-assets/reader.js) owns #book:<id>/… and #shelf:<id>
+    if ((h.path.indexOf('book:') === 0 || h.path.indexOf('shelf:') === 0) && window.EGPTReader) { window.EGPTReader.open(h.path); return; }
+    if (h.path.indexOf('record:') === 0) { openRecordPage(h.path.slice(7)); return; }
+    if (!FILES[h.path]) {
+      var readme = h.path.replace(/\/$/, '') + '/README.md';
+      if (FILES[readme]) { location.replace('#' + readme); return; }
+      console.warn('not in this bundle: ' + h.path); goHome(); return;
+    }
+    if (h.path === currentPath) { markTree(h.path, renderSpineBar(h.path, h.anchor)); updateMeters(); if (h.anchor) scrollToAnchor(h.anchor); return; }
+    navigate(h.path, h.anchor);
+  }
+  window.addEventListener('hashchange', openHash);
+
+  // a link that names a reading list makes it the active one
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-spine]');
+    if (!a || !a.getAttribute('data-spine')) return;
+    state.active = a.getAttribute('data-spine'); save();
+    var h = parseHash(), target = (a.getAttribute('href') || '').slice(1).split('#')[0];
+    if (target && target === h.path) { e.preventDefault(); currentPath = ''; if (a.getAttribute('href') !== location.hash) location.hash = a.getAttribute('href'); else openHash(); }
+  }, true);
+  // cards from the older landing carry data-nav-dir/data-nav-file
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-nav-dir]');
+    if (!a || a.getAttribute('data-nav-file') === null) return;
+    var d = a.getAttribute('data-nav-dir'), f = a.getAttribute('data-nav-file');
+    e.preventDefault(); location.hash = '#' + (d ? d + '/' + f : f);
+  });
+
+  function goHome() {
+    currentPath = '';
+    if (window.EGPTReader) window.EGPTReader.leave();
+    if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* ignore */ } }
+    document.body.classList.remove('is-reading');
+    landing.style.display = '';
+    iframe.style.display = 'none'; iframe.src = 'about:blank';
+    rendered.style.display = 'none'; rendered.innerHTML = '';
+    shelfmark.innerHTML = '<span class="shelfmark__shelf">The reading room</span>';
+    githubLink.style.display = rawLink.style.display = 'none';
+    spineBar.hidden = true;
+    markTree('', null);
+    renderResume();
+    updateMeters();
+    shellView('SplitView');
+    document.title = DATA.site.title;
+  }
+  function renderResume() {
+    var box = $('rr-resume'); if (!box) return;
+    var last = state.last, sp = last && spineById(last.spine), i = sp ? locate(sp, last.path) : -1;
+    if (!sp || !FILES[last.path] || i < 0) { box.hidden = true; return; }
+    box.innerHTML = '<span class="rr-resume__k">Where you left off</span>' + spineLink(sp, last.path, 'rr-resume__link', '<b>' + esc(sp.title) + '</b> · stop ' + (i + 1) + ' of ' + sp.stops.length + ' — ' + esc(titleFor(last.path)) + ' →');
+    box.hidden = false;
   }
 
-  function showRendered() {
-    iframe.style.display = 'none';
-    iframe.src = 'about:blank';
-    rendered.style.display = 'block';
+  /* ============================================================ provenance: beside the document, not in its reading line */
+  function parseFrontMatter(text) {
+    var m = text.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+    if (!m) return { meta: null, body: text };
+    var meta = {}, key = null;
+    m[1].split(/\r?\n/).forEach(function (l) {
+      var kv = l.match(/^([A-Za-z_][\w-]*):\s*(.*)$/);
+      if (kv) { key = kv[1]; meta[key] = kv[2].replace(/^"(.*)"$/, '$1').replace(/^'(.*)'$/, '$1'); }
+      else if (key && /^\s+\S/.test(l)) meta[key] += ' ' + l.trim();
+    });
+    return { meta: meta, body: text.slice(m[0].length) };
+  }
+  function linkify(s) { return s.replace(/(https?:\/\/[^\s)<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>'); }
+  function provenanceCard(path, meta) {
+    var rows = '', order = ['author', 'date', 'source'];
+    if (meta) {
+      order.forEach(function (k) { if (meta[k]) rows += '<div><dt>' + esc(k) + '</dt><dd>' + linkify(esc(meta[k].replace(/--/g, '–'))) + '</dd></div>'; });
+      Object.keys(meta).forEach(function (k) { if (order.indexOf(k) < 0 && k !== 'title' && meta[k]) rows += '<div><dt>' + esc(k.replace(/_/g, ' ')) + '</dt><dd>' + linkify(esc(meta[k])) + '</dd></div>'; });
+    }
+    rows += '<div><dt>held at</dt><dd class="mono">' + esc(path) + '</dd></div>';
+    rows += '<div><dt>SHA-256</dt><dd class="mono break" data-sha-for="' + esc(path) + '">…</dd></div>';
+    var summary = [meta && meta.author, meta && meta.date].filter(Boolean).join(', ');
+    var html = '<details class="provenance">' +
+      '<summary><span class="provenance__k">Provenance</span><span class="provenance__s">' + esc(summary || 'held in this collection') + '</span>' +
+      '<span class="provenance__sha mono" data-sha-short-for="' + esc(path) + '"></span></summary>' +
+      '<dl>' + rows + '</dl>' +
+      '<p class="provenance__links"><a href="#RECORD_INDEX.md">Record index</a><a href="' + esc(rawUrl('CHECKSUMS.txt')) + '" target="_blank" rel="noopener">CHECKSUMS.txt</a><a href="' + esc(rawUrl(path)) + '" target="_blank" rel="noopener">The file itself</a><span class="mono">shasum -a 256 -c CHECKSUMS.txt</span></p>' +
+      '</details>';
+    getChecksums().then(function (map) {
+      var sha = map[path], full = rendered.querySelector('[data-sha-for="' + cssEsc(path) + '"]'), short = rendered.querySelector('[data-sha-short-for="' + cssEsc(path) + '"]');
+      if (full) full.textContent = sha || 'not in CHECKSUMS.txt at this build';
+      if (short) short.textContent = sha ? 'sha ' + sha.slice(0, 10) : '';
+    });
+    return html;
   }
 
-  /* ============================================================
-     CONTENT RENDERING
-     ============================================================ */
-
-  function fetchAndRenderMarkdown(path) {
-    rendered.innerHTML = '<p class="loading">Loading...</p>';
-
-    fetch(RAW_BASE + '/' + path)
-      .then(function (res) {
-        if (!res.ok) throw new Error(String(res.status));
-        return res.text();
-      })
+  /* ============================================================ markdown */
+  var RECORD_RE = /^q-[a-z0-9][a-z0-9-]*-[0-9a-f]{8}$/;
+  function renderMarkdown(path, anchor) {
+    rendered.innerHTML = '<p class="loading">Loading…</p>';
+    fetch(rawUrl(path)).then(function (res) { if (!res.ok) throw new Error(String(res.status)); return res.text(); })
       .then(function (text) {
         if (typeof marked === 'undefined') throw new Error('site-assets/marked.min.js did not load');
-        rendered.innerHTML = '<article class="markdown-body">' + marked.parse(text) + '</article>';
-        rebaseRelativeUrls(rendered, path);
+        if (path !== currentPath) return;
+        var fm = parseFrontMatter(text);
+        rendered.innerHTML = '<div class="doc">' + provenanceCard(path, fm.meta) + '<article class="markdown-body">' + marked.parse(fm.body) + '</article><footer class="doc-foot" id="doc-foot"></footer></div>';
+        var art = rendered.querySelector('.markdown-body');
+        if (fm.meta && fm.meta.title && !art.querySelector('h1')) art.insertAdjacentHTML('afterbegin', '<h1>' + esc(fm.meta.title) + '</h1>');
+        headingIds(art);
+        pairQuotations(art);
+        recordChips(art);
+        rebaseRelativeUrls(art, path);
+        wrapTables(art);
         whenDefined('hljs', 8000).then(highlightCodeBlocks, function () {});
-        if (rendered.querySelector('code.language-mermaid')) whenDefined('mermaid', 15000).then(initMermaidBlocks, function () {});
+        if (art.querySelector('code.language-mermaid')) whenDefined('mermaid', 15000).then(initMermaidBlocks, function () {});
+        heldRecordsNote(path);
+        if (anchor) setTimeout(function () { scrollToAnchor(anchor); }, 30);
       })
-      .catch(function (e) {
-        rendered.innerHTML = '<p class="error">Could not load file. <a href="' + REPO_BASE + '/blob/main/' + escapeHtml(path) + '" target="_blank">View on GitHub</a></p>';
-      });
+      .catch(function () { if (path === currentPath) rendered.innerHTML = errorHtml(path); });
   }
-
+  function errorHtml(path) {
+    return '<div class="doc"><div class="notice"><p>This file could not be loaded here.</p><p><a href="' + esc(rawUrl(path)) + '" target="_blank" rel="noopener">Open the file itself</a> · <a href="' + esc(REPO_BASE + '/blob/main/' + path) + '" target="_blank" rel="noopener">View on GitHub</a></p></div></div>';
+  }
+  function heldRecordsNote(path) {
+    getQuotes().then(function (q) {
+      var foot = $('doc-foot'); if (!foot || path !== currentPath) return;
+      var recs = q.byFile[path] || [];
+      if (!recs.length) return;
+      foot.innerHTML = '<p class="doc-foot__k">In the quotation corpus</p><p class="doc-foot__t">' + recs.length + ' record' + (recs.length > 1 ? 's are' : ' is') + ' drawn from this file.</p><p class="doc-foot__chips">' +
+        recs.map(function (r) { return '<button class="record-chip" type="button" data-record="' + esc(r.id) + '" title="' + esc(r.quote.slice(0, 140)) + '">' + esc(r.quote.slice(0, 48)) + '…</button>'; }).join('') + '</p>';
+    });
+  }
+  function headingIds(root) {
+    var seen = {}, hs = root.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    for (var i = 0; i < hs.length; i++) {
+      var id = hs[i].id || slug(hs[i].textContent), base = id, n = 1;
+      while (seen[id]) id = base + '-' + (n++);
+      seen[id] = 1; hs[i].id = id;
+    }
+  }
+  function scrollToAnchor(a) {
+    var el = document.getElementById(a) || document.getElementById(slug(a));
+    if (el) { el.scrollIntoView({ block: 'start' }); el.classList.add('is-target'); setTimeout(function () { el.classList.remove('is-target'); }, 2400); }
+  }
+  // A quotation, its attribution and its record id are one thing in this collection: set them as one.
+  var DASH_RE = /^\s*(?:[\u2014\u2013]|--)\s*/;
+  function pairQuotations(root) {
+    var bqs = root.querySelectorAll('blockquote');
+    for (var i = 0; i < bqs.length; i++) {
+      var bq = bqs[i];
+      if (bq.closest('figure.quote') || (bq.parentElement && bq.parentElement.closest('blockquote'))) continue;
+      var cap = null, lastP = bq.lastElementChild;
+      if (lastP && lastP.tagName === 'P') {
+        if (bq.children.length > 1 && DASH_RE.test(lastP.textContent) && /^\s*[\u2014\u2013]/.test(lastP.textContent)) { cap = lastP; }
+        else {
+          // "> …quote…\n> — Speaker" (one paragraph in Markdown)
+          var parts = lastP.innerHTML.split(/\n\s*(?=[\u2014\u2013]\s)|<br>\s*(?=[\u2014\u2013]\s)/);
+          if (parts.length > 1) { var tail = parts.pop(); lastP.innerHTML = parts.join('\n'); cap = document.createElement('p'); cap.innerHTML = tail; }
+        }
+      }
+      // "> …quote…" then "— Speaker, Work … (record `q-…`)" as the next paragraph
+      var next = bq.nextElementSibling;
+      if (!cap && next && next.tagName === 'P' && /^\s*[\u2014\u2013]/.test(next.textContent)) cap = next;
+      if (!cap) { bq.classList.add('quote--bare'); continue; }
+      var fig = document.createElement('figure'); fig.className = 'quote';
+      bq.parentNode.insertBefore(fig, bq); fig.appendChild(bq);
+      if (cap.parentNode) cap.parentNode.removeChild(cap);
+      var fc = document.createElement('figcaption');
+      fc.innerHTML = '<span class="quote__by">' + cap.innerHTML.replace(DASH_RE, '') + '</span>';
+      fig.appendChild(fc);
+      var codes = fc.querySelectorAll('code'), ids = [];
+      for (var c = 0; c < codes.length; c++) if (RECORD_RE.test(codes[c].textContent.trim())) ids.push(codes[c]);
+      ids.forEach(function (code) {
+        var id = code.textContent.trim(), prev = code.previousSibling, nxt = code.nextSibling;
+        if (prev && prev.nodeType === 3) prev.textContent = prev.textContent.replace(/\s*\(\s*(?:corpus\s+)?records?:?\s*$/i, '').replace(/[,;]\s*$/, '');
+        if (nxt && nxt.nodeType === 3) nxt.textContent = nxt.textContent.replace(/^\s*\)/, '');
+        code.parentNode.removeChild(code);
+        fc.insertAdjacentHTML('beforeend', '<button class="record-chip" type="button" data-record="' + esc(id) + '" title="Open the record ' + esc(id) + '">record</button>');
+      });
+    }
+  }
+  function recordChips(root) {
+    var codes = root.querySelectorAll('code');
+    for (var i = 0; i < codes.length; i++) {
+      var t = codes[i].textContent.trim();
+      if (!RECORD_RE.test(t) || codes[i].closest('pre') || codes[i].closest('figcaption')) continue;
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'record-chip record-chip--inline'; b.setAttribute('data-record', t); b.textContent = t;
+      codes[i].parentNode.replaceChild(b, codes[i]);
+    }
+  }
+  // Links inside a document become deep links (#<path>), so the reading list and the back button follow them.
   function rebaseRelativeUrls(root, fromFile) {
     var imgs = root.querySelectorAll('img[src]');
     for (var i = 0; i < imgs.length; i++) {
       var src = imgs[i].getAttribute('src');
       if (/^(https?:|data:|\/)/.test(src)) continue;
-      imgs[i].setAttribute('src', RAW_BASE + '/' + resolvePath(fromFile, src));
+      var sp; try { sp = decodeURIComponent(src); } catch (e) { sp = src; }
+      imgs[i].setAttribute('src', rawUrl(resolvePath(fromFile, sp)));
+      imgs[i].setAttribute('loading', 'lazy');
     }
     var links = root.querySelectorAll('a[href]');
     for (var j = 0; j < links.length; j++) {
-      var href = links[j].getAttribute('href');
-      if (/^(https?:|mailto:|javascript:|#|\/)/.test(href)) continue;
-      var hash = '';
-      var k = href.indexOf('#');
+      var a = links[j], href = a.getAttribute('href');
+      if (/^(mailto:|javascript:|\/)/.test(href)) continue;
+      if (/^https?:/.test(href)) { a.setAttribute('target', '_blank'); a.setAttribute('rel', 'noopener'); a.classList.add('is-external'); continue; }
+      if (href.charAt(0) === '#') { a.setAttribute('href', '#' + fromFile + href); continue; }
+      var hash = '', k = href.indexOf('#');
       if (k >= 0) { hash = href.slice(k); href = href.slice(0, k); }
-      var target = resolvePath(fromFile, decodeURIComponent(href));
-      links[j].setAttribute('data-bundle-path', target);
-      links[j].setAttribute('href', RAW_BASE + '/' + encodeURI(target) + hash);
+      var target; try { target = resolvePath(fromFile, decodeURIComponent(href)); } catch (e) { target = resolvePath(fromFile, href); }
+      if (!FILES[target] && FILES[target.replace(/\/$/, '') + '/README.md']) target = target.replace(/\/$/, '') + '/README.md';
+      if (FILES[target]) a.setAttribute('href', '#' + target + hash);
+      else { a.setAttribute('href', rawUrl(target) + hash); a.classList.add('is-unheld'); a.title = 'Not in this bundle'; }
     }
   }
-
-  // Resolves once window[name] exists (the CDN loader stubs append their script tags asynchronously).
-  function whenDefined(name, timeoutMs) {
-    return new Promise(function (resolve, reject) {
-      var start = Date.now();
-      (function poll() {
-        if (typeof window[name] !== 'undefined') return resolve(window[name]);
-        if (Date.now() - start > timeoutMs) return reject(new Error(name + ' did not load'));
-        setTimeout(poll, 100);
-      })();
-    });
+  function wrapTables(root) {
+    var ts = root.querySelectorAll('table');
+    for (var i = 0; i < ts.length; i++) { if (ts[i].parentElement.classList.contains('table-wrap')) continue; var w = document.createElement('div'); w.className = 'table-wrap'; ts[i].parentNode.insertBefore(w, ts[i]); w.appendChild(ts[i]); }
   }
-
-  function fetchAndRenderCode(path, lang) {
-    rendered.innerHTML = '<p class="loading">Loading...</p>';
-
-    Promise.all([fetch(RAW_BASE + '/' + path), whenDefined('hljs', 8000).catch(function () { return null; })])
-      .then(function (r) {
-        var res = r[0];
-        if (!res.ok) throw new Error(String(res.status));
-        return res.text();
-      })
-      .then(function (text) {
-        var langMap = { lean: 'plaintext', js: 'javascript', py: 'python', tex: 'latex', ts: 'typescript', sh: 'bash', zsh: 'bash', yml: 'yaml', json: 'json', css: 'css' };
-        var hljsLang = langMap[lang] || lang;
-        var highlighted;
-
-        if (typeof hljs !== 'undefined' && hljs.getLanguage && hljs.getLanguage(hljsLang)) {
-          highlighted = hljs.highlight(text, { language: hljsLang }).value;
-        } else if (typeof hljs !== 'undefined' && hljs.highlightAuto) {
-          highlighted = hljs.highlightAuto(text).value;
-        } else {
-          highlighted = escapeHtml(text);
-        }
-
-        rendered.innerHTML = '<pre class="code-view"><code class="hljs">' + highlighted + '</code></pre>';
-      })
-      .catch(function (e) {
-        rendered.innerHTML = '<p class="error">Could not load file. <a href="' + REPO_BASE + '/blob/main/' + escapeHtml(path) + '" target="_blank">View on GitHub</a></p>';
-      });
-  }
-
   function highlightCodeBlocks() {
     if (typeof hljs === 'undefined') return;
     var blocks = rendered.querySelectorAll('pre code');
     for (var i = 0; i < blocks.length; i++) {
-      // Skip mermaid blocks
       if (blocks[i].classList.contains('language-mermaid')) continue;
-      try {
-        hljs.highlightElement(blocks[i]);
-      } catch (e) { /* ignore */ }
+      if (blocks[i].classList.contains('language-lean') || blocks[i].classList.contains('language-lean4')) { blocks[i].innerHTML = highlightLean(blocks[i].textContent); blocks[i].classList.add('hljs'); continue; }
+      try { hljs.highlightElement(blocks[i]); } catch (e) { /* plain */ }
     }
   }
-
   function initMermaidBlocks() {
     if (typeof mermaid === 'undefined') return;
-    // Find mermaid code blocks and convert them
-    var mermaidBlocks = rendered.querySelectorAll('code.language-mermaid');
-    for (var i = 0; i < mermaidBlocks.length; i++) {
-      var pre = mermaidBlocks[i].closest('pre');
-      if (!pre) continue;
-      var div = document.createElement('div');
-      div.className = 'mermaid';
-      div.textContent = mermaidBlocks[i].textContent;
-      pre.parentNode.replaceChild(div, pre);
-    }
-    try {
-      mermaid.run({ querySelector: '.markdown-body .mermaid' });
-    } catch (e) { /* ignore */ }
+    var bs = rendered.querySelectorAll('code.language-mermaid');
+    for (var i = 0; i < bs.length; i++) { var pre = bs[i].closest('pre'); if (!pre) continue; var d = document.createElement('div'); d.className = 'mermaid'; d.textContent = bs[i].textContent; pre.parentNode.replaceChild(d, pre); }
+    try { mermaid.initialize({ startOnLoad: false, theme: 'dark', securityLevel: 'loose' }); mermaid.run({ querySelector: '.markdown-body .mermaid' }); } catch (e) { /* plain */ }
   }
 
-  /* ============================================================
-     INTERNAL LINK INTERCEPTION
-     Intercept clicks on links with data-nav-dir/data-nav-file
-     so they route through the SPA instead of downloading raw files
-     ============================================================ */
-
+  /* ============================================================ records: the words, the citation, the hash */
+  function recordHtml(r, asPage) {
+    var s = r.source || {}, sp = r.speaker || {};
+    var file = s.file ? (FILES[s.file] ? '<a href="#' + esc(s.file) + '">' + esc(s.file) + '</a>' : esc(s.file)) : '';
+    var rows = [['speaker', esc(sp.name || sp.as_given || '')], ['work', esc(s.work || '')], ['locus', esc(s.locus || '')], ['date', esc(s.date || '')],
+      ['held file', file], ['url', s.url ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.url) + '</a>' : ''],
+      ['record', '<span class="mono">' + esc(r.id) + '</span>'], ['quote SHA-256', '<span class="mono break">' + esc(r.quote_sha256 || '') + '</span>']]
+      .filter(function (x) { return x[1]; }).map(function (x) { return '<div><dt>' + x[0] + '</dt><dd>' + x[1] + '</dd></div>'; }).join('');
+    return '<figure class="quote quote--record"><blockquote><p>' + esc(r.quote) + '</p></blockquote><figcaption><span class="quote__by">' + esc(sp.name || '') + (s.work ? ', ' + esc(s.work) : '') + (s.locus ? ', ' + esc(s.locus) : '') + '</span></figcaption></figure>' +
+      '<dl class="record-meta">' + rows + '</dl>' +
+      '<p class="record-links">' + (asPage ? '' : '<a href="#record:' + esc(r.id) + '">This record as a page</a>') + '<a href="#05_CORPUS/CORPUS_README.md">About the corpus</a><a href="#RECORD_INDEX.md">Record index</a></p>';
+  }
+  var lastFocus = null;
+  function openRecord(id) {
+    lastFocus = document.activeElement;
+    drawer.innerHTML = '<div class="drawer__head"><p class="eyebrow" id="record-drawer-title">Corpus record</p><button class="drawer__close" type="button" aria-label="Close the record">×</button></div><div class="drawer__body"><p class="loading">Loading the record…</p></div>';
+    drawer.hidden = false; document.body.classList.add('has-drawer');
+    getQuotes().then(function (q) {
+      var r = q.byId[id], body = drawer.querySelector('.drawer__body'); if (!body) return;
+      body.innerHTML = r ? recordHtml(r, false) : '<p>The record <span class="mono">' + esc(id) + '</span> is not in 05_CORPUS/corpus/quotes.json at this build.</p>';
+    });
+    var btn = drawer.querySelector('.drawer__close'); btn.addEventListener('click', closeDrawer); btn.focus();
+  }
+  function closeDrawer() {
+    if (drawer.hidden) return;
+    drawer.hidden = true; drawer.innerHTML = ''; document.body.classList.remove('has-drawer');
+    if (lastFocus && lastFocus.focus) try { lastFocus.focus(); } catch (e) { /* gone */ }
+  }
+  function openRecordPage(id) {
+    currentPath = 'record:' + id; closeDrawer();
+    landing.style.display = 'none'; document.body.classList.add('is-reading'); showRendered();
+    shelfmark.innerHTML = '<a class="shelfmark__shelf" href="#05_CORPUS/CORPUS_README.md"><span class="shelfmark__no">05</span>The quotation corpus</a><span class="shelfmark__sep">/</span><span class="shelfmark__file">' + esc(id) + '</span>';
+    githubLink.style.display = 'none'; rawLink.href = rawUrl('05_CORPUS/corpus/quotes.json'); rawLink.style.display = '';
+    spineBar.hidden = true; markTree('', null);
+    document.title = id + ' — ' + DATA.site.brand;
+    rendered.innerHTML = '<p class="loading">Loading the record…</p>';
+    getQuotes().then(function (q) {
+      var r = q.byId[id];
+      rendered.innerHTML = '<div class="doc"><header class="doc-head"><p class="doc-head__kind">Corpus record</p></header>' + (r ? recordHtml(r, true) : '<p>The record <span class="mono">' + esc(id) + '</span> is not in the corpus at this build.</p>') + '</div>';
+    });
+  }
   document.addEventListener('click', function (e) {
-    // 1. Explicit data-nav-dir/data-nav-file attributes (highest priority)
-    var link = e.target.closest('a[data-nav-dir]');
-    if (link) {
-      var dir = link.getAttribute('data-nav-dir');
-      var file = link.getAttribute('data-nav-file');
-      if (dir !== null && file !== null) {
-        e.preventDefault();
-        navigateTo(dir, file);
-        return;
-      }
-    }
-
-    // 2. Internal file links (relative paths to viewable files)
-    //    Intercept so they render in the SPA viewer instead of downloading
-    var anchor = e.target.closest('a[href]');
-    if (!anchor) return;
-    var href = anchor.getAttribute('href');
-    if (!href) return;
-
-    // Skip external links, anchors, javascript:, and already-handled links
-    if (href.startsWith('http') || href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('mailto:')) return;
-    // Skip links that explicitly open in new tab
-    if (anchor.getAttribute('target') === '_blank') return;
-
-    // Match internal file paths with viewable extensions
-    var viewableExts = /\.(lean|md|js|ts|py|json|yml|yaml|css|tex|sh|zsh|txt|html|htm|pdf|png|jpg|jpeg|svg|tsv|c|h|bib|mjs)(#.*)?$/i;
-    if (!viewableExts.test(href)) return;
-
-    e.preventDefault();
-    var bundlePath = anchor.getAttribute('data-bundle-path') || resolvePath(currentPath, decodeURIComponent(href.split('#')[0]));
-    var df = splitDirFile(bundlePath);
-    navigateTo(df[0], df[1]);
+    var b = e.target.closest && e.target.closest('[data-record]');
+    if (b) { e.preventDefault(); openRecord(b.getAttribute('data-record')); }
   });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeDrawer(); closeMobileSidebar(); } });
 
-  // A link to a directory in the bundle opens that directory's README.
-  document.addEventListener('click', function (e) {
-    var anchor = e.target.closest('a[href]');
-    if (!anchor) return;
-    var href = anchor.getAttribute('href');
-    if (!href || /^(https?:|mailto:|javascript:|#)/.test(href) || anchor.getAttribute('target') === '_blank') return;
-    if (!/\/$/.test(href)) return;
-    var dir = anchor.getAttribute('data-bundle-path') || resolvePath(currentPath, decodeURIComponent(href));
-    dir = dir.replace(/\/$/, '');
-    if (FILES[dir + '/README.md']) {
-      e.preventDefault();
-      navigateTo(dir, 'README.md');
-    }
-  });
-
-  // Deep links: #<bundle path> opens that file; the hash is written by navigateTo.
-  function openHash() {
-    var h = decodeURIComponent(location.hash.slice(1));
-    if (!h) { goHome(); return; }
-    if (!FILES[h]) { console.warn('not in this bundle: ' + h); goHome(); return; }
-    if (h === currentPath) return;
-    var df = splitDirFile(h);
-    navigateTo(df[0], df[1]);
-    var node = treeNav.querySelector('.tree-node--file[data-dir="' + df[0].replace(/"/g, '&quot;') + '"][data-file="' + df[1].replace(/"/g, '&quot;') + '"]');
-    if (node) markActive(node);
+  /* ============================================================ files that are not Markdown */
+  function fileNote(path) { var h = highlightLabel(path); if (h && h !== titleFor(path)) return h; var m = moduleOf(path); return m ? (m.name || '') + (m.line ? ' — ' + m.line : '') : ''; }
+  function fileHead(path, kindLabel, actionsHtml, note) {
+    return '<header class="file-head"><div class="file-head__text"><p class="doc-head__kind">' + esc(kindLabel) + '</p><h1 class="doc-head__title">' + esc(titleFor(path)) + '</h1>' +
+      (note ? '<p class="file-head__note">' + esc(note) + '</p>' : '') + '</div><div class="file-head__actions">' + (actionsHtml || '') + '</div></header>';
   }
-  window.addEventListener('hashchange', openHash);
-
-  /* ============================================================
-     HOME / LANDING
-     ============================================================ */
-
-  function goHome() {
-    currentPath = '';
-    if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { location.hash = ''; } }
-    landing.style.display = '';
-    iframe.style.display = 'none';
-    iframe.src = 'about:blank';
-    rendered.style.display = 'none';
-    rendered.innerHTML = '';
-    breadcrumb.textContent = '';
-    githubLink.style.display = 'none';
-
-    var prev = treeNav.querySelectorAll('.tree-node--active');
-    for (var i = 0; i < prev.length; i++) {
-      prev[i].classList.remove('tree-node--active');
-    }
+  function actions(path) {
+    return '<a class="btn btn-ghost btn-sm" href="' + esc(rawUrl(path)) + '" target="_blank" rel="noopener">Open the file ↗</a><a class="btn btn-ghost btn-sm" href="' + esc(rawUrl(path)) + '" download>Download</a>';
   }
-
-  if (homeLink) {
-    homeLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      goHome();
-    });
-  }
-
-  /* ============================================================
-     MOBILE SIDEBAR
-     ============================================================ */
-
-  function openMobileSidebar() {
-    sidebar.classList.add('sidebar--open');
-    backdrop.classList.add('sidebar-backdrop--visible');
-  }
-
-  function closeMobileSidebar() {
-    sidebar.classList.remove('sidebar--open');
-    backdrop.classList.remove('sidebar-backdrop--visible');
-  }
-
-  if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', function () {
-      openMobileSidebar();
-    });
-  }
-
-  if (sidebarToggle) {
-    sidebarToggle.addEventListener('click', function () {
-      closeMobileSidebar();
-    });
-  }
-
-  backdrop.addEventListener('click', function () {
-    closeMobileSidebar();
-  });
-
-  /* ============================================================
-     PERSONA TABS (landing page)
-     ============================================================ */
-
-  function initPersonaTabs() {
-    var containers = document.querySelectorAll('.do-this-first');
-    for (var c = 0; c < containers.length; c++) {
-      (function (container) {
-        var tabs = container.querySelectorAll('.persona-tab');
-        var panes = container.querySelectorAll('.persona-content');
-
-        for (var t = 0; t < tabs.length; t++) {
-          tabs[t].addEventListener('click', function () {
-            var target = this.getAttribute('data-persona');
-
-            for (var j = 0; j < tabs.length; j++) { tabs[j].classList.remove('active'); }
-            for (var j = 0; j < panes.length; j++) { panes[j].classList.remove('active'); }
-
-            this.classList.add('active');
-            var pane = container.querySelector('.persona-content[data-persona="' + target + '"]');
-            if (pane) pane.classList.add('active');
-          });
-        }
-
-        // Auto-activate first tab
-        if (!container.querySelector('.persona-tab.active') && tabs.length > 0) {
-          tabs[0].click();
-        }
-      })(containers[c]);
-    }
-  }
-
-  function initPersonaGroups() {
-    var groups = document.querySelectorAll('.persona-group');
-    for (var g = 0; g < groups.length; g++) {
-      (function (group) {
-        var groupTabs = group.querySelectorAll('.persona-tab');
-        for (var t = 0; t < groupTabs.length; t++) {
-          groupTabs[t].addEventListener('click', function () {
-            var groupName = this.getAttribute('data-group');
-            if (!groupName) return;
-
-            var container = group.closest('.do-this-first');
-            if (!container) return;
-
-            for (var j = 0; j < groupTabs.length; j++) { groupTabs[j].classList.remove('active'); }
-            this.classList.add('active');
-
-            var personaTabs = container.querySelectorAll('.persona-tab[data-in-group]');
-            for (var p = 0; p < personaTabs.length; p++) {
-              if (personaTabs[p].getAttribute('data-in-group') === groupName) {
-                personaTabs[p].style.display = '';
-              } else {
-                personaTabs[p].style.display = 'none';
-                var pane = container.querySelector('.persona-content[data-persona="' + personaTabs[p].getAttribute('data-persona') + '"]');
-                if (pane) pane.classList.remove('active');
-                personaTabs[p].classList.remove('active');
-              }
-            }
-
-            var firstVisible = container.querySelector('.persona-tab[data-in-group="' + groupName + '"]');
-            if (firstVisible && !container.querySelector('.persona-tab[data-in-group="' + groupName + '"].active')) {
-              firstVisible.click();
-            }
-          });
-        }
-      })(groups[g]);
-    }
-  }
-
-  /* ============================================================
-     MERMAID INITIALIZATION
-     ============================================================ */
-
-  function initMermaid() {
-    if (typeof mermaid !== 'undefined') {
-      mermaid.initialize({
-        startOnLoad: true,
-        theme: 'neutral',
-        securityLevel: 'loose',
-        flowchart: { useMaxWidth: true, htmlLabels: true }
-      });
-    }
-  }
-
-  /* ============================================================
-     CAROUSEL (landing page)
-     ============================================================ */
-
-  function initCarousel() {
-    var carousel = document.getElementById('carousel');
-    if (!carousel) return;
-
-    var track = document.getElementById('carousel-track');
-    var cards = track.querySelectorAll('.carousel-card');
-    var dots = carousel.querySelectorAll('.carousel-dot');
-    var prevBtn = document.getElementById('carousel-prev');
-    var nextBtn = document.getElementById('carousel-next');
-    var current = 0;
-    var isFullscreen = false;
-
-    // Fullscreen first visit
-    if (!localStorage.getItem('carouselSeen')) {
-      carousel.classList.add('carousel--fullscreen');
-      isFullscreen = true;
-      // Add skip button
-      var skipBtn = document.createElement('button');
-      skipBtn.className = 'carousel-skip';
-      skipBtn.textContent = 'Skip intro \u2192';
-      skipBtn.addEventListener('click', dismissFullscreen);
-      carousel.appendChild(skipBtn);
-    }
-
-    function dismissFullscreen() {
-      if (!isFullscreen) return;
-      isFullscreen = false;
-      localStorage.setItem('carouselSeen', 'true');
-      carousel.classList.remove('carousel--fullscreen');
-      var skip = carousel.querySelector('.carousel-skip');
-      if (skip) skip.remove();
-    }
-
-    function goTo(index) {
-      if (index < 0) return;
-      // On last card next click in fullscreen → dismiss
-      if (index >= cards.length) {
-        if (isFullscreen) dismissFullscreen();
-        return;
+  function renderPdf(path) {
+    rendered.innerHTML = '<div class="doc doc--wide">' + fileHead(path, 'PDF', actions(path), fileNote(path)) + provenanceCard(path, null) +
+      '<div class="pdf-view" id="pdf-view" aria-label="' + esc(titleFor(path)) + '"><p class="loading">Rendering the pages…</p></div><footer class="doc-foot" id="doc-foot"></footer></div>';
+    heldRecordsNote(path);
+    loadScript('site-assets/pdf.min.js', 'pdfjsLib').then(function (lib) {
+      lib.GlobalWorkerOptions.workerSrc = 'site-assets/pdf.worker.min.js';
+      return lib.getDocument({ url: rawUrl(path), isEvalSupported: false }).promise;
+    }).then(function (pdf) {
+      if (path !== currentPath) return;
+      var view = $('pdf-view'); view.innerHTML = '';
+      var count = document.createElement('p'); count.className = 'pdf-count'; count.textContent = pdf.numPages + ' page' + (pdf.numPages > 1 ? 's' : ''); view.appendChild(count);
+      var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) { if (en.isIntersecting) { io.unobserve(en.target); drawPage(pdf, en.target, path); } });
+      }, { rootMargin: '1200px 0px' }) : null;
+      for (var n = 1; n <= pdf.numPages; n++) {
+        var pg = document.createElement('div'); pg.className = 'pdf-page'; pg.setAttribute('data-page', n);
+        pg.innerHTML = '<span class="pdf-page__n">' + n + '</span>'; view.appendChild(pg);
+        if (io) io.observe(pg); else drawPage(pdf, pg, path);
       }
-
-      // Deactivate old card, unload its iframe
-      cards[current].classList.remove('active');
-      var oldIframe = cards[current].querySelector('.carousel-iframe');
-      if (oldIframe) oldIframe.src = 'about:blank';
-      if (dots[current]) dots[current].classList.remove('active');
-
-      // Activate new card
-      current = index;
-      cards[current].classList.add('active');
-      if (dots[current]) dots[current].classList.add('active');
-
-      // Lazy-load the new card's iframe
-      var newIframe = cards[current].querySelector('.carousel-iframe');
-      if (newIframe) {
-        var targetSrc = newIframe.getAttribute('data-carousel-src');
-        if (targetSrc && newIframe.src !== targetSrc && !newIframe.src.endsWith(targetSrc)) {
-          newIframe.src = targetSrc;
-        }
-      }
-
-      // Update arrow disabled states
-      if (prevBtn) prevBtn.disabled = (current === 0);
-      if (nextBtn) nextBtn.disabled = (!isFullscreen && current === cards.length - 1);
-    }
-
-    // Initialize: load first card's iframe
-    goTo(0);
-
-    if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); });
-
-    for (var d = 0; d < dots.length; d++) {
-      (function (idx) {
-        dots[idx].addEventListener('click', function () { goTo(idx); });
-      })(d);
-    }
-
-    // Keyboard navigation
-    carousel.setAttribute('tabindex', '0');
-    carousel.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(current - 1); }
-      if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
+    }).catch(function (err) {
+      if (path !== currentPath) return;
+      var view = $('pdf-view'); if (!view) return;
+      // the browser's own viewer, outside the sandbox, as the fallback
+      view.innerHTML = '<iframe class="pdf-native" src="' + esc(rawUrl(path)) + '" title="' + esc(titleFor(path)) + '"></iframe><p class="file-head__note">If the pages do not show here, use “Open the file” above.</p>';
+      console.warn('pdf.js: ' + (err && err.message));
     });
-
-    // Visual overlay click → navigate to demo
-    var overlays = carousel.querySelectorAll('.carousel-visual-overlay');
-    for (var o = 0; o < overlays.length; o++) {
-      overlays[o].addEventListener('click', function (e) {
-        e.stopPropagation();
-        var visual = this.parentElement;
-        var dir = visual.getAttribute('data-click-dir');
-        var file = visual.getAttribute('data-click-file');
-        if (dir && file) {
-          dismissFullscreen();
-          navigateTo(dir, file);
-        }
-      });
-    }
-
-    // Dismiss fullscreen when SPA navigation hides the landing panel
-    var observer = new MutationObserver(function () {
-      if (landing && landing.style.display === 'none' && isFullscreen) {
-        dismissFullscreen();
-      }
+  }
+  function drawPage(pdf, holder, path) {
+    var n = +holder.getAttribute('data-page');
+    pdf.getPage(n).then(function (page) {
+      if (path !== currentPath) return;
+      var w = Math.min(holder.clientWidth || 900, 1100), vp0 = page.getViewport({ scale: 1 }), scale = w / vp0.width;
+      var ratio = Math.min(window.devicePixelRatio || 1, 2), vp = page.getViewport({ scale: scale * ratio });
+      var c = document.createElement('canvas'); c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
+      c.style.width = Math.floor(vp.width / ratio) + 'px'; c.style.height = Math.floor(vp.height / ratio) + 'px';
+      c.setAttribute('role', 'img'); c.setAttribute('aria-label', 'Page ' + n);
+      holder.classList.add('is-drawn'); holder.appendChild(c);
+      return page.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
+    }).catch(function () { holder.insertAdjacentHTML('beforeend', '<p class="file-head__note">Page ' + n + ' could not be drawn.</p>'); });
+  }
+  function renderImage(path) {
+    var label = highlightLabel(path);
+    rendered.innerHTML = '<div class="doc doc--wide">' + fileHead(path, 'Image', actions(path), '') + provenanceCard(path, null) +
+      '<figure class="image-view"><a href="' + esc(rawUrl(path)) + '" target="_blank" rel="noopener"><img src="' + esc(rawUrl(path)) + '" alt="' + esc(label || titleFor(path)) + '"></a>' +
+      '<figcaption><span class="image-view__cap">' + esc(label || humanName(path)) + '</span><span class="image-view__src mono">' + esc(path) + '</span></figcaption></figure><footer class="doc-foot" id="doc-foot"></footer></div>';
+    heldRecordsNote(path);
+  }
+  function renderDocx(path) {
+    rendered.innerHTML = '<div class="doc">' + fileHead(path, 'Word document', '', fileNote(path)) + provenanceCard(path, null) +
+      '<div class="docx-cards"><a class="doc-card" href="' + esc(rawUrl(path)) + '" download><span class="doc-icon" aria-hidden="true">W</span><span class="doc-text"><span class="doc-name">' + esc(baseName(path)) + '</span><span class="doc-kind">Word · download</span></span></a>' +
+      '<button class="btn btn-ghost btn-sm" type="button" id="docx-preview">Show the text here</button></div>' +
+      '<article class="markdown-body docx-text" id="docx-text" hidden></article><footer class="doc-foot" id="doc-foot"></footer></div>';
+    heldRecordsNote(path);
+    $('docx-preview').addEventListener('click', function () {
+      var btn = this, box = $('docx-text'); btn.disabled = true; btn.textContent = 'Reading the document…';
+      Promise.all([loadScript('site-assets/mammoth.browser.min.js', 'mammoth'), fetch(rawUrl(path)).then(function (r) { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })])
+        .then(function (x) { return x[0].convertToHtml({ arrayBuffer: x[1] }); })
+        .then(function (res) {
+          if (path !== currentPath) return;
+          box.innerHTML = '<p class="docx-text__note">The text of the Word file, read in your browser. Its layout, headers and footers are the file’s own; the download is the document.</p>' + res.value;
+          box.hidden = false; btn.remove(); headingIds(box); pairQuotations(box); recordChips(box); wrapTables(box);
+        })
+        .catch(function () { btn.disabled = false; btn.textContent = 'The text could not be read here; download the file'; });
     });
-    if (landing) observer.observe(landing, { attributes: true, attributeFilter: ['style'] });
+  }
+  function renderDownload(path) {
+    rendered.innerHTML = '<div class="doc">' + fileHead(path, extOf(path).toUpperCase() + ' file', actions(path), fileNote(path)) + provenanceCard(path, null) +
+      '<div class="notice"><p>This file is data, held here byte for byte. Download it to open it.</p></div></div>';
+  }
+  function splitRow(l, sep) {
+    if (sep === '\t') return l.split('\t');
+    var out = [], cur = '', q = false;
+    for (var i = 0; i < l.length; i++) { var c = l[i]; if (c === '"') { if (q && l[i + 1] === '"') { cur += '"'; i++; } else q = !q; } else if (c === ',' && !q) { out.push(cur); cur = ''; } else cur += c; }
+    out.push(cur); return out;
+  }
+  function renderTable(path) {
+    rendered.innerHTML = '<p class="loading">Loading…</p>';
+    fetch(rawUrl(path)).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (t) {
+      if (path !== currentPath) return;
+      var sep = extOf(path) === 'tsv' ? '\t' : ',';
+      var rows = t.replace(/\r/g, '').split('\n').filter(function (l) { return l.length; }).map(function (l) { return splitRow(l, sep); });
+      var head = rows.shift() || [];
+      var html = '<div class="table-wrap"><table><thead><tr>' + head.map(function (h) { return '<th>' + esc(h) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+        rows.map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div>';
+      rendered.innerHTML = '<div class="doc doc--wide">' + fileHead(path, extOf(path).toUpperCase() + ' · ' + rows.length + ' rows', actions(path), fileNote(path)) + provenanceCard(path, null) + '<article class="markdown-body markdown-body--table">' + html + '</article></div>';
+    }).catch(function () { rendered.innerHTML = errorHtml(path); });
+  }
+  var LANG = { js: 'javascript', mjs: 'javascript', py: 'python', tex: 'latex', bib: 'latex', ts: 'typescript', sh: 'bash', zsh: 'bash', yml: 'yaml', yaml: 'yaml', json: 'json', css: 'css', c: 'c', h: 'c' };
+  var KIND = { lean: 'Lean 4 source', tex: 'LaTeX source', bib: 'BibTeX', py: 'Python', js: 'JavaScript', mjs: 'JavaScript', json: 'JSON', txt: 'Text', sh: 'Shell script', html: 'HTML' };
+  function renderCode(path) {
+    var ext = extOf(path);
+    rendered.innerHTML = '<p class="loading">Loading…</p>';
+    fetch(rawUrl(path)).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (text) {
+      if (path !== currentPath) return;
+      var lang = LANG[ext] || ext, body;
+      if (ext === 'txt' || ext === '') body = '<pre class="text-view">' + esc(text) + '</pre>';
+      else if (ext === 'lean') body = '<pre class="code-view"><code class="hljs language-lean">' + highlightLean(text) + '</code></pre>';
+      else body = '<pre class="code-view"><code class="hljs">' + esc(text) + '</code></pre>';
+      var lines = text.split('\n').length;
+      rendered.innerHTML = '<div class="doc doc--wide">' + fileHead(path, (KIND[ext] || (ext ? ext.toUpperCase() : 'File')) + ' · ' + lines + ' lines', actions(path), fileNote(path)) + provenanceCard(path, null) + body + '<footer class="doc-foot" id="doc-foot"></footer></div>';
+      heldRecordsNote(path);
+      if (ext !== 'txt' && ext !== '' && ext !== 'lean') whenDefined('hljs', 8000).then(function (h) {
+        var el = rendered.querySelector('pre.code-view code'); if (!el || path !== currentPath) return;
+        try { el.innerHTML = (h.getLanguage && h.getLanguage(lang)) ? h.highlight(text, { language: lang }).value : h.highlightAuto(text).value; } catch (e) { /* plain */ }
+      }, function () {});
+    }).catch(function () { rendered.innerHTML = errorHtml(path); });
+  }
+  // Lean 4 has no highlight.js grammar here: comments, strings, keywords, types, numbers.
+  var LEAN_KW = /^(theorem|lemma|def|abbrev|structure|class|instance|inductive|where|with|fun|let|have|show|from|by|at|if|then|else|match|do|namespace|end|section|variable|open|import|noncomputable|private|protected|axiom|example|calc|exact|intro|intros|apply|rw|simp|omega|decide|rfl|cases|induction|refine|constructor|unfold|obtain|use|linarith|norm_num|sorry|universe|set_option|mutual|deriving|extends|partial|macro|syntax|attribute|local|scoped|export|termination_by|decreasing_by|Type|Prop|Sort)$/;
+  function highlightLean(src) {
+    var out = '', i = 0, n = src.length;
+    while (i < n) {
+      var ch = src[i], two = src.slice(i, i + 2);
+      if (two === '/-') { var j = src.indexOf('-/', i + 2); j = j < 0 ? n : j + 2; out += '<span class="hljs-comment">' + esc(src.slice(i, j)) + '</span>'; i = j; continue; }
+      if (two === '--') { var e = src.indexOf('\n', i); e = e < 0 ? n : e; out += '<span class="hljs-comment">' + esc(src.slice(i, e)) + '</span>'; i = e; continue; }
+      if (ch === '"') { var k = i + 1; while (k < n && src[k] !== '"') { if (src[k] === '\\') k++; k++; } k = Math.min(n, k + 1); out += '<span class="hljs-string">' + esc(src.slice(i, k)) + '</span>'; i = k; continue; }
+      var m = /^[A-Za-z_\u03b1-\u03c9\u0391-\u03a9\u2115\u2124\u211d\u211a][\w'.\u03b1-\u03c9\u0391-\u03a9\u2115\u2124\u211d\u211a\u2080-\u2089!?]*/.exec(src.slice(i, i + 200));
+      if (m) { var w = m[0]; out += LEAN_KW.test(w) ? '<span class="hljs-keyword">' + esc(w) + '</span>' : (/^[A-Z]/.test(w) ? '<span class="hljs-type">' + esc(w) + '</span>' : esc(w)); i += w.length; continue; }
+      var num = /^\d+(\.\d+)?/.exec(src.slice(i, i + 40));
+      if (num) { out += '<span class="hljs-number">' + num[0] + '</span>'; i += num[0].length; continue; }
+      out += esc(ch); i++;
+    }
+    return out;
   }
 
-  /* ============================================================
-     UTILITIES
-     ============================================================ */
+  /* ============================================================ mobile sidebar */
+  var backdrop = document.createElement('div'); backdrop.className = 'sidebar-backdrop'; document.body.appendChild(backdrop);
+  function openMobileSidebar() { sidebar.classList.add('sidebar--open'); backdrop.classList.add('sidebar-backdrop--visible'); }
+  function closeMobileSidebar() { sidebar.classList.remove('sidebar--open'); backdrop.classList.remove('sidebar-backdrop--visible'); }
+  $('mobile-menu-btn').addEventListener('click', openMobileSidebar);
+  $('sidebar-toggle').addEventListener('click', closeMobileSidebar);
+  backdrop.addEventListener('click', closeMobileSidebar);
+  var homeLink = document.querySelector('[data-home]');
+  if (homeLink) homeLink.addEventListener('click', function (e) { e.preventDefault(); goHome(); });
 
-  function escapeHtml(s) {
-    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
+  /* ============================================================ the viewer's surface for site-assets/reader.js */
+  window.EGPTViewer = {
+    data: DATA, files: FILES, titleFor: titleFor, kindOf: kindOf, esc: esc, slug: slug, rawUrl: rawUrl, extOf: extOf,
+    parseHash: parseHash, navigate: navigate, scrollToAnchor: scrollToAnchor, closeDrawer: closeDrawer, shellView: shellView,
+    isMobile: isMobile, closeMobileSidebar: closeMobileSidebar, markTree: markTree, renderShelfmark: renderShelfmark,
+    showRendered: showRendered, state: state, save: save, updateMeters: updateMeters,
+    setCurrentPath: function (p) { currentPath = p; }, currentPath: function () { return currentPath; },
+    el: { rendered: rendered, iframe: iframe, landing: landing, treeNav: treeNav, spineBar: spineBar, shelfmark: shelfmark, sidebar: sidebar, githubLink: githubLink, rawLink: rawLink }
+  };
 
-  function esc(s) {
-    // Escape for safe insertion into HTML attributes
-    return String(s || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-
-  /* ============================================================
-     INITIALIZATION
-     ============================================================ */
-
+  /* ============================================================ init */
   function init() {
     buildTree();
-    initCarousel();
-    initPersonaTabs();
-    initPersonaGroups();
-    initMermaid();
-
-    // Hide GitHub link initially (shown on navigate)
-    if (githubLink) githubLink.style.display = 'none';
-    if (location.hash) openHash();
+    if (location.hash.length > 1) openHash(); else goHome();
   }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

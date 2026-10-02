@@ -14,6 +14,9 @@
     "url": "https://github.com/eabadir/EGPT-Evidence/issues"
   },
   "homepage": "https://github.com/eabadir/EGPT-Evidence#readme",
+  "dependencies": {
+    "marked": "^15.0.12"
+  },
   "devDependencies": {
     "@descix/cli": "^1.0.18",
     "js-beautify": "^2.0.3"

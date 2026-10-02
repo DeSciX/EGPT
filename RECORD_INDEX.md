@@ -164,10 +164,10 @@ Problems Involving Equations of the Diffusion … | `q-nelson-h-f-beebe-nelson-h
 | OPENING_STATEMENT.md | not probabilities, but conceived facts, as one took for granted only a… | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
 | OPENING_STATEMENT.md | my little finger as a witness, which cannot claim any authority to be … | `q-albert-einstein-letter-to-max-born-r-1c1eb5e4` |  |
 | OPENING_STATEMENT.md | our younger colleagues interpret this as a consequence of senility. | `q-albert-einstein-letter-to-max-born-7-2712552f` |  |
-| OPENING_STATEMENT.md | nothing remains of my entire castle in the air, gravitation theory inc… | `q-albert-einstein-bob-doyle-my-god-he--19a0d646` |  |
+| OPENING_STATEMENT.md | nothing remains of my entire castle in the air, gravitation theory inc… | `q-albert-einstein-letter-to-michele-be-9a8096c7` |  |
 | OPENING_STATEMENT.md | we are not at all interested in semantics or the meaning implications … | `q-claude-e-shannon-the-redundancy-of-en-b993b1ec` |  |
 | OPENING_STATEMENT.md | his colleagues' memories of casual conversations. | `q-claude-e-shannon-claude-e-shannon-von-dfcf75c4` |  |
-| OPENING_STATEMENT.md | on the field concept, i.e., on continuous structures, | `q-albert-einstein-bob-doyle-my-god-he--19a0d646` |  |
+| OPENING_STATEMENT.md | on the field concept, i.e., on continuous structures, | `q-albert-einstein-letter-to-michele-be-9a8096c7` |  |
 | OPENING_STATEMENT.md | avoid the continuum (together with space and time) altogether. | `q-albert-einstein-bob-doyle-my-god-he--3f9177ff` |  |
 | OPENING_STATEMENT.md | discrete (point) spectra, in order to avoid the difficulties connected… | `q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e` | `02_VON_NEUMANN/letters_to_godel/IntroComments_05_Quantum_Mechanics.md` |
 | OPENING_STATEMENT.md | the existence of the electron. | `q-john-von-neumann-the-mathematician-in-3cfbdf16` | `02_VON_NEUMANN/The_Mathematician_JvM.md` |

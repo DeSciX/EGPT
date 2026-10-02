@@ -25,6 +25,10 @@ up to. Sarcasm is in the record. The instances where this assistant failed that 
 `12_SINGULARITY/Claude_Logs/ASSISTANT_RECORD.md`; every new instance is appended there, dated,
 the same day it is caught.
 
+Before asking the author to review anything served, confirm it in Playwright first (his
+standing instruction, 2026-10-02): load it on the surface he will use, read the console and the
+failed requests, look at the screenshot, and only then hand him the address.
+
 ## Layout
 
 | Path | What it is |
@@ -151,13 +155,58 @@ This app is worked on PROD only, in the author's words (2026-09-28, to this assi
 repository's own `.descix/workspace.json` is pinned to PROD (`config init --env prod` run from
 this root, which has its own file; the parent Unkamon workspace file's hash was unchanged by it,
 measured), `config show` reads `Environment: prod` and `Chosen by: .descix/workspace.json
-env.apiUrl`, and every command here is `env -u DESCIX_API_URL npx descix …` with no `--env` flag.
+env.apiUrl`. In the author's own terminal a bare `descix …` from this root is therefore PROD with
+no flag and no variable (`whoami` measured 2026-10-02: `env: prod (.descix/workspace.json
+env.apiUrl)`). A session rooted in FRAQTL inherits `DESCIX_API_URL=https://dev.descix.net` from
+that repo's `.claude/settings.json`, and the variable outranks the workspace file (precedence,
+DEVPLANE from the CLI source 2026-10-02: `--env`/`--api-url` > `DESCIX_API_URL` > workspace
+`env.apiUrl` > `~/.descix/config.json` > PROD), so from such a session every command here is
+`env -u DESCIX_API_URL npx descix …` with no `--env` flag.
 A network command's first line reads `env: prod …`. Cap every command that could fall to the
 interactive device prompt (`perl -e 'alarm N; exec @ARGV' -- …`): measured 2026-09-28, one
 `whoami` on the pinned workspace fell to the prompt and the next two answered `Session: Valid`;
 a capped command that hung is re-run once, and a second hang is reported, never a `descix login`.
 No seat or agent uses the SDK in a true external-user mode for now; that default flips later, on
 his word.
+
+**Serving the site.** `descix serve` is the local gateway: it puts the app at `/p/egpt` inside
+the App Shell exactly as the cloud does, with no path rewriting, so what is seen locally is
+what ships. In the author's words (2026-10-02, to DEVPLANE): "The point of descix serve is to
+do dev hotserving like vite does and, in fact, you can use it with a vite or localserver. The
+point of using descix serve is to let the developer serve off the local disk". One contract,
+three modes, each a local-only write to `.descix/workspace.json` by `descix app set-site`:
+
+1. **Author against a dev server.** Run the site's own dev server on a port, then
+   `descix app set-site -a egpt --port <n>`; `serve` proxies `/p/egpt` to it, hot reload
+   inside the shell. This repository has no dev server today (the site is generated from
+   HEAD), so this mode is unused here.
+2. **Preview the build.** `npm run build:site`, then `descix app set-site -a egpt --static site`
+   (the state this workspace is in, written 2026-10-02); `serve` reads `site/` from disk on
+   every request, so a rebuild shows on refresh with no restart.
+3. **Ship.** `descix site upload` (the PROD sequence above); the cloud serves the same build in
+   the same shell at the same path shape.
+
+From this root:
+
+```
+descix serve
+```
+
+then open **`https://localhost:5173/`**, the gateway root: the shell with login, wrapping the
+app. The banner's `/p/egpt` line is the bare bundle without the shell; do not hand that one
+out. `serve` finds the app from the directory it is run in; the port is the built-in 5173.
+
+Measured 2026-10-02 on CLI 1.0.18: in mode 2 the banner read `API: https://descix.net
+[workspace env.apiUrl]`, `App: egpt [cwd]`, `/p/egpt → <this root>/site`, and
+`/p/egpt/index.html`, `/p/egpt/library.html` and `/p/egpt/share.json` came back byte-equal
+to `site/` by sha256. `set-site --port` and `--static` both write into the one `site.{}` slot
+and **the port wins while both are present**: after `--port 5612` then `--static site` the
+banner still read `/p/egpt → https://localhost:5612` and the route answered 500 with the
+port dead. `set-site -a egpt --unset` clears the slot; then `--static site` restores mode 2.
+The proxy target is `https://localhost:<port>`; a plain `http` server on the port answered
+nothing through the gateway. The assistant's own look is a short-lived `python3 -m
+http.server` over `site/`, torn down in the same run; a long-lived `serve` is the author's,
+because the assistant's harness stops background processes at its time limit.
 
 This repository replaces EGPT-research as the source of the `egpt` app, in his words (same
 record): "EGPT-Evidence to replace EGPT-Research as the source. Confirmed that is the intent since

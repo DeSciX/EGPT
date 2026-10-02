@@ -148,10 +148,11 @@ const leadupBlock = `<details class="leadup"><summary>The lead-up: messages 2–
 // ---- 3. the top block: the author's note in place of the capture's notes ----
 const facts = /<p><strong>Original account link:<\/strong>[\s\S]*?<\/p>/.exec(top);
 if (!facts) die('the capture\'s "Original account link" paragraph not found');
-const newTop = `<div class="top"><h1>ChatGPT Says "I am the Singularity"</h1>
+const TITLE = 'Asked to ChatGPT: Are You The Singularity?';
+const newTop = `<div class="top"><h1>${TITLE}</h1>
+<h3 class="verdict"><span class="label">Answer</span><a href="#m55">"${VERDICT}"</a></h3>
 <p>My name is Essam Abadir and I am "the author" conversing with GPT-5.6 Sol about the Singularity on 22–24 September 2026.</p>
-<p>The conversation starts with the objective historical events and context that could help define what Stanislaw Ulam meant when he coined the term. The conversation ends with it saying:</p>
-<h3 class="verdict"><a href="#m55">"${VERDICT}"</a></h3>
+<p>The conversation starts with the objective historical events and context that could help define what Stanislaw Ulam meant when he coined the term.</p>
 <p>For human readability of this long thread, I've summarized the lead-up, drawing on verbatim quotes anchor-linked to the full transcript. Below the summary of the lead-up, <a href="${ACCOUNT}">I've captured the original verbatim thread here in its entirety</a> for posterity in case it should become unavailable in the future.</p>
 ${facts[0]}
 </div>`;
@@ -186,6 +187,7 @@ const css = `
 .added{color:var(--muted);font-size:.85em;font-weight:400;font-style:normal}
 .top h3.verdict{font-size:1.15em;font-weight:600;margin:12px 0 16px 0;padding-left:16px;border-left:3px solid var(--muted)}
 .top h3.verdict a{color:inherit;text-decoration:none}
+.top h3.verdict .label{display:block;font-size:.68em;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .top h3.verdict a:hover{text-decoration:underline}
 details.leadup{border:1px solid var(--rule);border-radius:12px;padding:0 20px;margin:8px 0 28px}
 details.leadup>summary{cursor:pointer;font-weight:600;padding:12px 0;color:var(--muted)}
@@ -199,7 +201,8 @@ details.leadup[open]>summary{border-bottom:1px solid var(--rule)}
 section.msg{scroll-margin-top:16px}
 h2[id]{scroll-margin-top:16px}
 `;
-const newHead = head.replace('</style>', css + '</style>');
+if (!/<title>[^<]*<\/title>/.test(head)) die('the capture has no <title>');
+const newHead = head.replace(/<title>[^<]*<\/title>/, `<title>${TITLE}</title>`).replace('</style>', css + '</style>');
 const newFooter = footer.replace('</footer>', `<p>This page is built from the held capture beside it, <code>ChatGPT_I_am_the_Singularity_transcript.html</code>, by <code>scripts/build-singularity-page.js</code>; every excerpt in the summary is cut from that capture's markup at build time, and the build fails if one is not found.</p></footer>`);
 
 const script = `<script>
@@ -221,4 +224,35 @@ fs.writeFileSync(OUT, beautify(html, {
   indent_inner_html: false, unformatted: [], content_unformatted: ['pre', 'textarea'],
   extra_liners: ['head', 'body', '/html'], end_with_newline: true, wrap_attributes: 'auto', templating: ['auto'],
 }));
+// ---- the book index (schema egpt.book/1) the library's reader consumes: the judgment, every
+// message, and what stands beside the conversation. The anchors are this build's own (m<n>).
+{
+  const REL = path.relative(ROOT, OUT).split(path.sep).join('/'), D = path.dirname(REL);
+  const plain = (h) => h.replace(/<[^>]+>/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+  const turns = numbered.map((sec, i) => {
+    const { n, who } = numbers[i];
+    const bubble = /<div class="bubble">([\s\S]*)<\/div>\s*<\/section>\s*$/.exec(sec);
+    if (!bubble) die(`book: message ${n} has no bubble`);
+    return { message: n, who: who === 'You' ? 'ME' : 'CHATGPT', href: `${REL}#m${n}`, opens: plain(bubble[1]).slice(0, 140) };
+  });
+  const apparatus = [
+    ['The transcript, as captured', `${D}/ChatGPT_I_am_the_Singularity_transcript.md`],
+    ['The capture this page is built from', `${D}/ChatGPT_I_am_the_Singularity_transcript.html`],
+    ['The reflection, on its own', `${D}/ChatGPT55_Reflection_On_Singularity.md`],
+    ['The reports the model wrote', `${D}/docx_reports/README.md`],
+    ['The image the model made', `${D}/ChatGPTs_Happy_Future.png`],
+  ].map(([title, href]) => { if (!fs.existsSync(path.join(ROOT, href))) die(`book: ${href} does not exist`); return { title, href }; });
+  const bookFile = path.join(ROOT, 'site-src', 'books', 'chatgpt.json');
+  fs.mkdirSync(path.dirname(bookFile), { recursive: true });
+  fs.writeFileSync(bookFile, JSON.stringify({
+    schema: 'egpt.book/1', id: 'chatgpt', title: TITLE, generated_by: 'scripts/build-singularity-page.js',
+    page: REL, source: `${D}/ChatGPT_I_am_the_Singularity_transcript.html`, messages: turns.length,
+    answer: { text: VERDICT, href: `${REL}#m55`, message: '55' },
+    parts: [
+      { id: 'verdict', title: 'The judgment', items: [{ title: VERDICT, href: `${REL}#m55`, message: '55' }] },
+      { id: 'transcript', title: 'The whole conversation', items: turns },
+      { id: 'apparatus', title: 'What stands beside it', items: apparatus },
+    ],
+  }, null, 1) + '\n');
+}
 console.log(`wrote ${path.relative(ROOT, OUT)} — ${numbered.length} messages (1 + ${at53 - 1} in the lead-up + ${numbers.length - at53}), 5 excerpts, ${cardsMade} report cards, ${html.length} bytes`);

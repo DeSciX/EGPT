@@ -1,10 +1,20 @@
 # egpt — the evidence plugin
 
 The thin adopter for the `egpt` app on DeSciX (https://descix.net): the egpt community's default
-app, whose knowledge bases are built from the EGPT-Evidence collection. The plugin carries one
-skill, `egpt-evidence`, which teaches a model to query those knowledge bases and to cite what it
-finds by the collection's record ids. The content is served live by the platform; nothing here
-is a copy of it.
+app, whose knowledge bases are built from the EGPT-Evidence collection. The content is served
+live by the platform and the library site; nothing here is a copy of it.
+
+| Skill | What it teaches |
+|---|---|
+| `egpt-evidence` | query the knowledge bases and cite what they return by the collection's record ids |
+| `librarian` | receive a reader, find which of the seven reasons brought them, and walk a reading list in the browser |
+| `course-guide` | 18.313x, session by session: the question, the documents, the proofs, what done looks like |
+| `provenance` | from a quotation to its corpus record, its held file and its SHA-256, and how to check them |
+| `contribute` | from the guide's get-involved and make-money pages to a first piece of work |
+
+The reading lists the librarian skills walk are `site-src/spine.json` in the collection, served
+expanded at `https://descix.net/prod/egpt/site/spine.json`. Each skill is written to be read as a
+page by people too.
 
 Connector: `descix` at `https://descix.net/mcp`, the same connector every DeSciX plugin names, so
 installing this plugin adds no second authorization.

@@ -123,5 +123,26 @@
       "query_to": "app.html"
     },
     "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js"
+  },
+  "share": {
+    "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload (CEO priority 2, Unkamon bef716a). One block per app: what a share card and a browser tab show for this site.",
+    "site": "godsworld.ai",
+    "title": "Gods World — Maxi's Lab",
+    "description": "Maxi builds a scene, changes it, runs it forward, watches what happens and learns from what it watched. Talk to Maxi and watch its imagination.",
+    "icon": {
+      "glyph": "G",
+      "ink": "#06202a",
+      "tile": "#5fcbe6",
+      "accent": "#06202a"
+    },
+    "card": {
+      "kicker": "Gods World · Maxi's Lab",
+      "headline": "Talk to Maxi and watch it imagine.",
+      "line": "Robotic AI that runs the future before it acts.",
+      "art": {
+        "template": "site/images/studio.jpg",
+        "fit": "cover"
+      }
+    }
   }
 }

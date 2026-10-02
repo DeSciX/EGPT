@@ -7,7 +7,7 @@
     "raw_url": "."
   },
   "ideas_heading": "You are here to…",
-  "modules_heading": "The collection",
+  "modules_heading": "The folders",
   "ideas": {
     "ID1": {
       "label": "learn about robotic imagination and crossing the barrier of meaning",
@@ -151,71 +151,122 @@
   "modules": [
     {
       "dir": "guide",
-      "label": "guide/"
+      "label": "guide/",
+      "name": "The guide",
+      "line": "One cited page per reason a reader is here."
     },
     {
       "dir": "12_SINGULARITY",
-      "label": "12_SINGULARITY/"
+      "label": "12_SINGULARITY/",
+      "name": "The machine's own account",
+      "line": "The September 2026 conversations with GPT-5.6 Sol, as shared."
     },
     {
       "dir": "00_OUTPUTS",
-      "label": "00_OUTPUTS/"
+      "label": "00_OUTPUTS/",
+      "name": "The reports",
+      "line": "The report on Los Alamos, computation, AI and Rota, its summary and the bibliography exhibit."
     },
     {
       "dir": "01_TRIAL",
-      "label": "01_TRIAL/"
+      "label": "01_TRIAL/",
+      "name": "The trial record",
+      "line": "The jury instructions and the two exhibits put to the panels."
     },
     {
       "dir": "02_VON_NEUMANN",
-      "label": "02_VON_NEUMANN/"
+      "label": "02_VON_NEUMANN/",
+      "name": "Von Neumann",
+      "line": "Who he was by the end, and what he said about foundations."
     },
     {
       "dir": "03_ULAM",
-      "label": "03_ULAM/"
+      "label": "03_ULAM/",
+      "name": "Ulam",
+      "line": "The participant account."
     },
     {
       "dir": "04_ROTA",
-      "label": "04_ROTA/"
+      "label": "04_ROTA/",
+      "name": "Rota",
+      "line": "Rota in his own words."
     },
     {
       "dir": "05_CORPUS",
-      "label": "05_CORPUS/"
+      "label": "05_CORPUS/",
+      "name": "The quotation corpus",
+      "line": "Each record a verbatim quote, its citation and its SHA-256."
     },
     {
       "dir": "06_LEAN_MATHLIB",
-      "label": "06_LEAN_MATHLIB/"
+      "label": "06_LEAN_MATHLIB/",
+      "name": "Lean and Mathlib",
+      "line": "The chronology, with timestamps, captured from public sources."
     },
     {
       "dir": "07_LETTERS",
-      "label": "07_LETTERS/"
+      "label": "07_LETTERS/",
+      "name": "The letters",
+      "line": "The All-In letter and the update announcing the decision to publish."
     },
     {
       "dir": "08_LEAN",
-      "label": "08_LEAN/"
+      "label": "08_LEAN/",
+      "name": "The Lean source",
+      "line": "Mirrored byte-for-byte from the public repository."
     },
     {
       "dir": "09_DEBATE",
-      "label": "09_DEBATE/"
+      "label": "09_DEBATE/",
+      "name": "The 18.313x debate",
+      "line": "The P=NP debate record through Exchange 34, and the course materials."
     },
     {
       "dir": "10_PAPERS",
-      "label": "10_PAPERS/"
+      "label": "10_PAPERS/",
+      "name": "The papers",
+      "line": "Nine papers, each as its PDF and its LaTeX source."
     },
     {
       "dir": "11_PATENT",
-      "label": "11_PATENT/"
+      "label": "11_PATENT/",
+      "name": "The patent",
+      "line": "US 2026/0127327 A1, as published by the USPTO."
     },
     {
       "dir": "13_MAXI",
-      "label": "13_MAXI/"
+      "label": "13_MAXI/",
+      "name": "What Maxi is raised on",
+      "line": "The bedtime stories of EGPT, each linked to what it teaches."
     },
     {
       "dir": "14_COURANT_GROUP",
-      "label": "14_COURANT_GROUP/"
+      "label": "14_COURANT_GROUP/",
+      "name": "Courant Group",
+      "line": "The business plan, public version, with its provenance."
     },
     {
       "dir": "15_GAME_THEORY",
-      "label": "15_GAME_THEORY/"
+      "label": "15_GAME_THEORY/",
+      "name": "The token economy",
+      "line": "The documents of the token economy, in order."
     }
-  ]
+  ],
+  "landing": {
+    "_note": "The viewer's front door (replaces the carousel on the landing). Every quotation is gated by scripts/generate-site.js against the held file it names.",
+    "eyebrow": "EGPT-Evidence · the reading room",
+    "title": "The missing corpus.",
+    "quotes": [
+      {
+        "text": "The machine reached past the documents in front of it for the sentences that usually appear near them, because the documents were never in its training data. This repository is those documents.",
+        "src": "README.md",
+        "cite": "README.md, “Why the corpus is missing”"
+      },
+      {
+        "text": "This digital library was put together to let you ask the questions and judge the implications for yourself",
+        "src": "guide/README.md",
+        "cite": "The guide"
+      }
+    ]
+  }
 }

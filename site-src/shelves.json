@@ -1,0 +1,257 @@
+{
+ "_purpose": "The library's shelves: the subjects it is a library about, in one file read by the front page's card row (scripts/build-frontpage.js, the jumbo-cards fragment), by the viewer's landing and sidebar (scripts/generate-site.js, site-assets/site.js) and by the reader's shelf pages (site-assets/reader.js, #shelf:<id>). A shelf has a title and a line (and, when the front page card needs a shorter one, a card line and a thumb). It points: at the documents to start with, at the books and reading lists on it, at the folders (the numbered collections) that sit on it, and at the one place outside the library it opens onto. It does not explain. scripts/generate-site.js validates every path against HEAD, every list against spine.json, every folder against _meta.json and every book against books/. DRAFT: the titles and lines are Cowork's wording (1 October 2026) from the author's list of subjects — EGPT itself, the history, Ulam / von Neumann / Rota, the Singularity, the mathematics, the physics — and from the card row the seat sketched; every one waits on the author's pass.",
+ "schema": "egpt.shelves/1",
+ "shelves": [
+  {
+   "id": "singularity",
+   "title": "The Singularity",
+   "line": "Two machines asked whether they are it, and the documents behind them.",
+   "question": {
+    "text": "Are you the Singularity?",
+    "slide": 0
+   },
+   "guide": "guide/avert-the-singularity.md",
+   "start": [
+    "12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html",
+    "12_SINGULARITY/Claude/Cowork_Session_10.01.2026.html",
+    "guide/avert-the-singularity.md",
+    "04_ROTA/The_Barrier_of_Meaning_Rota.md"
+   ],
+   "books": [
+    "chatgpt",
+    "claude-session"
+   ],
+   "lists": [
+    "start",
+    "id5"
+   ],
+   "folders": [
+    "12_SINGULARITY"
+   ]
+  },
+  {
+   "id": "egpt",
+   "title": "EGPT",
+   "line": "Electronic Graph Paper Theory: the backstory, the papers, the patent.",
+   "question": {
+    "text": "Is EGPT the theory they were looking for?",
+    "slide": 4
+   },
+   "start": [
+    "00_OUTPUTS/EGPT_Backstory.md",
+    "10_PAPERS/README.md",
+    "11_PATENT/README.md"
+   ],
+   "folders": [
+    "10_PAPERS",
+    "11_PATENT",
+    "00_OUTPUTS"
+   ]
+  },
+  {
+   "id": "pnp",
+   "title": "P = NP",
+   "line": "Three proof chains the Lean kernel checks, and the debate that tested them.",
+   "start": [
+    "08_LEAN/PROOF_CHAINS.md",
+    "10_PAPERS/PPNP_Paper/PprobablyEqualsNP_formal.pdf",
+    "09_DEBATE/README.md",
+    "06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.md"
+   ],
+   "folders": [
+    "08_LEAN",
+    "09_DEBATE",
+    "06_LEAN_MATHLIB"
+   ]
+  },
+  {
+   "id": "quantum",
+   "title": "Quantum computing",
+   "line": "Impossible things, running: the double slit, a sun, a blackbody, a half-adder, live in your tab.",
+   "card": "Impossible things, running: FRQTL, live in your tab.",
+   "thumb": "images/impossible-things.png",
+   "start": [
+    "10_PAPERS/Quantum Computing vs Fractal Compression In a Chaotic Discontinuum.docx",
+    "10_PAPERS/egpt_circuit_sat/paper/egpt_circuit_sat_whitepaper.pdf"
+   ],
+   "outside": [
+    {
+     "title": "FRQTL, in your browser",
+     "href": "https://egpt-frqtl.descix.net",
+     "line": "The quantum computer the papers describe, running."
+    }
+   ],
+   "thumb_alt": "Impossible things, running: the FRQTL scene tiles"
+  },
+  {
+   "id": "losalamos",
+   "title": "Los Alamos",
+   "line": "Government science versus academia: the trial record, the report, the interview.",
+   "question": {
+    "text": "Were the scientific leads of Los Alamos National Laboratory secretly working on a theory of everything?",
+    "slide": 3
+   },
+   "guide": "guide/government-science.md",
+   "start": [
+    "01_TRIAL/OPENING_STATEMENT.md",
+    "00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf",
+    "04_ROTA/Rota_Interview_1985_Los_Alamos_Science.pdf",
+    "guide/government-science.md"
+   ],
+   "books": [
+    "trial"
+   ],
+   "lists": [
+    "id3"
+   ],
+   "folders": [
+    "01_TRIAL",
+    "00_OUTPUTS"
+   ]
+  },
+  {
+   "id": "three",
+   "title": "Von Neumann, Ulam, Rota",
+   "line": "In their own words: the memorial, the letters, the lectures.",
+   "question": {
+    "text": "Did von Neumann believe half of mathematics was wrong?",
+    "slide": 2
+   },
+   "start": [
+    "02_VON_NEUMANN/The_Mathematician_JvM.md",
+    "02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md",
+    "03_ULAM/Science Computers And People.md",
+    "04_ROTA/The_Barrier_of_Meaning_Rota.md",
+    "04_ROTA/Rota_CV_Extended.md"
+   ],
+   "folders": [
+    "02_VON_NEUMANN",
+    "03_ULAM",
+    "04_ROTA"
+   ]
+  },
+  {
+   "id": "mathematics",
+   "title": "The mathematics",
+   "line": "18.313x: Rota's probability course reopened, eleven sessions, each a question.",
+   "start": [
+    "09_DEBATE/COURSE_PLAN.md",
+    "04_ROTA/entropy_theorem/Rota_Entropy_Theorem_Original_Proof.pdf",
+    "04_ROTA/manuscript_1992/Index.md",
+    "04_ROTA/Guidi_Notes_Rota_Probability_18313_Spring1998.pdf"
+   ],
+   "lists": [
+    "18313x"
+   ],
+   "folders": [
+    "09_DEBATE",
+    "04_ROTA"
+   ]
+  },
+  {
+   "id": "physics",
+   "title": "The physics",
+   "line": "Einstein and von Neumann instead of Bohr and Gödel.",
+   "question": {
+    "text": "Did Einstein believe modern physics was flawed?",
+    "slide": 1
+   },
+   "guide": "guide/einstein-von-neumann.md",
+   "start": [
+    "guide/einstein-von-neumann.md",
+    "02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md",
+    "10_PAPERS/GravityPaper/GravityPaper.pdf",
+    "10_PAPERS/Without_Attraction_There_Is_Nothing/Without_Attraction_There_Is_Nothing.pdf"
+   ],
+   "lists": [
+    "id2"
+   ],
+   "folders": [
+    "02_VON_NEUMANN",
+    "10_PAPERS"
+   ]
+  },
+  {
+   "id": "imagination",
+   "title": "Robotic imagination",
+   "line": "Maxi, and crossing the barrier of meaning.",
+   "guide": "guide/robotic-imagination.md",
+   "start": [
+    "guide/robotic-imagination.md",
+    "13_MAXI/README.md",
+    "13_MAXI/bedtime_stories/README.md"
+   ],
+   "lists": [
+    "id1"
+   ],
+   "folders": [
+    "13_MAXI"
+   ]
+  },
+  {
+   "id": "money",
+   "title": "Make money",
+   "line": "The token that represents the value of a contribution.",
+   "guide": "guide/make-money.md",
+   "start": [
+    "guide/make-money.md",
+    "15_GAME_THEORY/README.md",
+    "14_COURANT_GROUP/Business_Plan.md"
+   ],
+   "lists": [
+    "id4"
+   ],
+   "folders": [
+    "15_GAME_THEORY",
+    "14_COURANT_GROUP"
+   ],
+   "outside": [
+    {
+     "title": "Courant Group",
+     "href": "https://egpt-courantgroup.descix.net",
+     "line": "Commercial licensing."
+    },
+    {
+     "title": "DeSciX",
+     "href": "https://descix.net",
+     "line": "The platform the tokens trade on."
+    }
+   ]
+  },
+  {
+   "id": "involved",
+   "title": "Get involved",
+   "line": "Where the work is and how to join it.",
+   "guide": "guide/get-involved.md",
+   "start": [
+    "guide/get-involved.md",
+    "07_LETTERS/all-in-letter.md",
+    "07_LETTERS/all-in-update-letter-decision-to-publish.md"
+   ],
+   "lists": [
+    "id6"
+   ],
+   "folders": [
+    "07_LETTERS"
+   ]
+  },
+  {
+   "id": "record",
+   "title": "The record",
+   "line": "Every source, every quotation, every hash: how to check the files.",
+   "guide": "guide/about-this-collection.md",
+   "start": [
+    "RECORD_INDEX.md",
+    "05_CORPUS/CORPUS_README.md",
+    "guide/about-this-collection.md"
+   ],
+   "lists": [
+    "id7"
+   ],
+   "folders": [
+    "05_CORPUS",
+    "guide"
+   ]
+  }
+ ]
+}

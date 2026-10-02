@@ -12,6 +12,10 @@
  * the App Shell serves first; a #<path> on it forwards to library.html#<path>). A git-lfs pointer at
  * HEAD is resolved from the working tree only when that file's SHA-256 equals the pointer's oid.
  * Every file the metadata names must be in the bundle; a missing one is an error, not a warning.
+ * The reading lists (site-src/spine.json) are validated the same way: every stop's paths tracked
+ * at HEAD, every record id in 05_CORPUS/corpus/quotes.json at HEAD; the idea lists are expanded
+ * from the guide pages' own links, in their order. The expanded lists are written to site/spine.json
+ * for the librarian skills. The landing's quotations are gated against the held files they name.
  * Pure Node, no dependencies. FAIL LOUD.
  */
 'use strict';
@@ -115,7 +119,7 @@ for (const m of meta.modules) {
   const entry = mm.entry || (files.has(`${m.dir}/README.md`) ? 'README.md' : (highlights[0] && highlights[0].file));
   if (entry) mustExist(`${m.dir}/${entry}`, where + ' entry');
   for (const id of mm.primary_ideas || []) if (!meta.ideas[id]) die(`${where}: unknown idea ${id}`);
-  modules.push({ dir: m.dir, label: m.label, title: mm.title || '', description, entry: entry || '',
+  modules.push({ dir: m.dir, label: m.label, name: m.name || m.label, line: m.line || '', title: mm.title || '', description, entry: entry || '',
     primary_ideas: mm.primary_ideas || [], highlights, subsections });
 }
 
@@ -124,6 +128,137 @@ for (const c of meta.carousel || []) {
   if (c.visual && c.visual.src) mustExist(c.visual.src, `carousel ${c.id} visual`);
   if (c.visual && c.visual.clickRoute) mustExist(`${c.visual.clickRoute.dir}/${c.visual.clickRoute.file}`, `carousel ${c.id} visual.clickRoute`);
 }
+
+// ---------------------------------------------------------------- the quotation gate (as build-frontpage.js folds)
+function fold(t) {
+  return t.normalize('NFKC')
+    .replace(/[‘’‚′]/g, "'").replace(/[“”„″]/g, '"')
+    .replace(/[‐-―−]/g, '-').replace(/…/g, '...').replace(/ /g, ' ')
+    .replace(/-\n\s*/g, '').replace(/[*_`>#|]/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/\s+/g, ' ').trim();
+}
+const heldFold = new Map();
+function gateQuote(text, src, where) {
+  mustExist(src, where);
+  if (!heldFold.has(src)) heldFold.set(src, fold(blobAtHead(src).toString('utf8')));
+  if (!heldFold.get(src).includes(fold(text))) die(`${where}: quotation not found in ${src}: "${text.slice(0, 80)}…"`);
+}
+
+// ---------------------------------------------------------------- document titles (front matter, first heading, <title>)
+function titleOf(p) {
+  const name = p.split('/').pop();
+  const ext = name.split('.').pop().toLowerCase();
+  if (ext === 'md' || ext === 'html' || ext === 'htm') {
+    const t = blobAtHead(p).toString('utf8');
+    let m = ext === 'md' && t.match(/^---\n[\s\S]*?^title:\s*"?(.+?)"?\s*$[\s\S]*?^---/m);
+    if (!m && ext === 'md') m = t.match(/^#\s+(.+)$/m);
+    if (!m && ext !== 'md') m = t.match(/<title>([^<]+)<\/title>/i);
+    if (m) return m[1].replace(/[*_`]/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').trim();
+  }
+  const mod = modules.find(x => p.startsWith(x.dir + '/'));
+  const hl = mod && mod.highlights.find(h => `${mod.dir}/${h.file}` === p);
+  return hl && hl.label ? hl.label : name.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ');
+}
+
+// ---------------------------------------------------------------- reading lists (site-src/spine.json)
+const spineSpec = readJSON(path.join(SRC, 'spine.json'));
+const quotesAtHead = (() => { mustExist('05_CORPUS/corpus/quotes.json', 'spine.json records');
+  return new Set(JSON.parse(blobAtHead('05_CORPUS/corpus/quotes.json').toString('utf8')).records.map(r => r.id)); })();
+const titles = {};
+function stopPath(ref, where) {
+  const p = ref.split('#')[0];
+  mustExist(p, where);
+  if (!(p in titles)) titles[p] = titleOf(p);
+  return ref;
+}
+function guideLinks(guide) {
+  const text = blobAtHead(guide).toString('utf8');
+  const out = [];
+  for (const m of text.matchAll(/\]\(([^)\s]+)\)/g)) {
+    let href = m[1].split('#')[0];
+    if (!href || /^(https?:|mailto:)/.test(href)) continue;
+    let p = path.posix.normalize(path.posix.join(path.posix.dirname(guide), decodeURIComponent(href)));
+    if (href.endsWith('/') || !files.has(p)) p = p.replace(/\/$/, '') + '/README.md';
+    if (files.has(p) && p !== guide && !out.includes(p)) out.push(p);
+  }
+  return out;
+}
+const spines = [];
+for (const sp of spineSpec.spines || []) {
+  const where = `spine.json ${sp.id}`;
+  if (!sp.id) die('spine.json: every list needs an id');
+  let out;
+  if (sp.from_guide) {
+    const idea = meta.ideas[sp.idea];
+    if (!idea) die(`${where}: unknown idea ${sp.idea}`);
+    if (idea.file !== sp.from_guide) die(`${where}: ${sp.from_guide} is not the file of ${sp.idea}`);
+    stopPath(sp.from_guide, where);
+    const stops = [{ id: 'guide', title: titles[sp.from_guide], read: [sp.from_guide] }]
+      .concat(guideLinks(sp.from_guide).map((p, i) => ({ id: 'd' + (i + 1), title: titleOf(p), read: [stopPath(p, where)] })));
+    out = { id: sp.id, idea: sp.idea, title: idea.short, short: idea.short, blurb: 'You are here to ' + idea.label + '.', color: idea.color, source: sp.from_guide, stops };
+  } else {
+    if (!sp.title || !Array.isArray(sp.stops) || !sp.stops.length) die(`${where}: title and stops are required`);
+    if (sp.source) stopPath(sp.source, where);
+    const stops = sp.stops.map(st => {
+      if (!st.id || !st.title || !Array.isArray(st.read) || !st.read.length) die(`${where}: every stop needs id, title and read`);
+      for (const r of st.records || []) if (!quotesAtHead.has(r)) die(`${where} ${st.id}: record ${r} is not in 05_CORPUS/corpus/quotes.json at HEAD`);
+      return { ...st, read: st.read.map(r => stopPath(r, `${where} ${st.id}`)) };
+    });
+    out = { id: sp.id, title: sp.title, short: sp.short || sp.title, blurb: sp.blurb || '', color: sp.color || '', source: sp.source || '', stops };
+  }
+  if (spines.some(x => x.id === out.id)) die(`${where}: duplicate id`);
+  spines.push(out);
+}
+
+// ---------------------------------------------------------------- the books (site-src/books/<id>.json, schema egpt.book/1)
+// Each index is written by its own build script and served whole at books/<id>.json; the viewer
+// fetches one when a reader opens it. What the viewer needs at load is only the summary below:
+// which book a path belongs to, so a link that lands on a page of a book can say so.
+// (Cowork, 1 October 2026, for the reader component: site-assets/reader.js.)
+const books = [];
+const booksDir = path.join(SRC, 'books');
+if (fs.existsSync(booksDir)) {
+  for (const f of fs.readdirSync(booksDir).filter(f => f.endsWith('.json')).sort()) {
+    const b = readJSON(path.join(booksDir, f));
+    if (b.schema !== 'egpt.book/1' || !b.id || !b.title || !Array.isArray(b.parts)) die(`books/${f}: not an egpt.book/1 index with id, title and parts`);
+    if (b.id + '.json' !== f) die(`books/${f}: id ${b.id} does not match the file name`);
+    const paths = new Set();
+    const walk = items => { for (const it of items || []) {
+      if (it.href) paths.add(it.href.split('#')[0]);
+      if (it.asked) paths.add(it.asked.split('#')[0]);
+      for (const a of it.answers || []) if (a.href) paths.add(a.href.split('#')[0]);
+      walk(it.parts);
+    } };
+    for (const p of b.parts) { if (p.href) paths.add(p.href.split('#')[0]); walk(p.items); }
+    if (b.page) paths.add(b.page);
+    // a page of a book that is not tracked at HEAD is reported, not fatal: the session page enters
+    // site/ when it is committed, and the seat copies it in by hand until then (hand-off §6).
+    for (const p of paths) if (!files.has(p)) console.warn(`books/${f}: ${p} is not tracked at HEAD (the reader will say the page is not in this bundle)`);
+    books.push({ id: b.id, title: b.title, answer: b.answer || null, page: b.page || '', source: b.source || '', messages: b.messages || 0,
+      parts: b.parts.map(p => ({ id: p.id, title: p.title, items: (p.items || []).length })), paths: [...paths].sort() });
+  }
+}
+
+// ---------------------------------------------------------------- the shelves (site-src/shelves.json, schema egpt.shelves/1)
+// The subjects the library is a library about. One file, read here for the viewer's landing and
+// sidebar, by the reader for #shelf:<id>, and by the front page's card row. (Cowork, 1 October 2026.)
+const shelfSpec = fs.existsSync(path.join(SRC, 'shelves.json')) ? readJSON(path.join(SRC, 'shelves.json')) : { shelves: [] };
+if (shelfSpec.shelves.length && shelfSpec.schema !== 'egpt.shelves/1') die('shelves.json: schema must be egpt.shelves/1');
+const bookPages = new Set(books.map(b => b.page).filter(Boolean));
+const shelves = shelfSpec.shelves.map(sh => {
+  const where = `shelves.json ${sh.id}`;
+  if (!sh.id || !sh.title) die(`${where}: every shelf needs an id and a title`);
+  for (const p of (sh.start || []).concat(sh.guide ? [sh.guide] : [])) {
+    const bare = p.split('#')[0];
+    if (bookPages.has(bare) && !files.has(bare)) { console.warn(`${where}: ${bare} is a book's page not yet tracked at HEAD`); continue; }
+    mustExist(bare, where); if (!(bare in titles)) titles[bare] = titleOf(bare);
+  }
+  for (const l of sh.lists || []) if (!spines.some(x => x.id === l)) die(`${where}: no reading list ${l} in spine.json`);
+  for (const d of sh.folders || []) if (!modules.some(m => m.dir === d)) die(`${where}: no folder ${d} in _meta.json`);
+  for (const b of sh.books || []) if (!books.some(x => x.id === b)) die(`${where}: no book ${b} in site-src/books/`);
+  for (const o of sh.outside || []) if (!o.title || !/^https:\/\//.test(o.href || '')) die(`${where}: an outside link needs a title and an https href`);
+  return sh;
+});
+if (new Set(shelves.map(s => s.id)).size !== shelves.length) die('shelves.json: duplicate id');
 
 // ---------------------------------------------------------------- landing HTML
 const navAttrs = full => { const k = full.lastIndexOf('/'); const d = k < 0 ? '' : full.slice(0, k); const f = k < 0 ? full : full.slice(k + 1);
@@ -183,7 +318,79 @@ ${cardsHtml}
 </div>`;
 }
 
+function readingRoomHtml() {
+  const L = meta.landing;
+  const quotes = (L.quotes || []).map((q, i) => { gateQuote(q.text, q.src, `_meta.json landing.quotes[${i}]`);
+    return `<figure class="rr-quote"><blockquote>${esc(q.text)}</blockquote><figcaption><a href="#${esc(q.src)}"${navAttrs(q.src)}>${esc(q.cite || q.src)}</a></figcaption></figure>`; }).join('\n      ');
+  const listCard = sp => {
+    const first = sp.stops[0].read[0];
+    return `<a class="list-card" href="#${esc(first)}" data-spine="${esc(sp.id)}" style="--list-color:${esc(sp.color || 'var(--accent)')}">
+        <span class="list-card__kind">${sp.idea ? 'Reading list · ' + esc(sp.idea) : 'Reading list'}</span>
+        <span class="list-card__title">${esc(sp.title)}</span>
+        <span class="list-card__blurb">${esc(sp.blurb)}</span>
+        <span class="list-card__meter" data-spine-meter="${esc(sp.id)}"><span class="list-card__count">${sp.stops.length} stops</span></span>
+      </a>`;
+  };
+  const main = spines.filter(sp => !sp.idea), ideas = spines.filter(sp => sp.idea);
+  // the seventeen folders' cards (the name `shelves` belongs to the subjects read from shelves.json above)
+  const folderCards = modules.map((m, i) => {
+    const full = m.entry ? `${m.dir}/${m.entry}` : '';
+    const mark = /^[0-9]{2}_/.test(m.dir) ? m.dir.slice(0, 2) : '··';
+    const tag = full ? 'a' : 'div';
+    return `<${tag} class="shelf-card"${full ? ` href="#${esc(full)}"${navAttrs(full)}` : ''}>
+        <span class="shelf-card__mark">${esc(mark)}</span>
+        <span class="shelf-card__body"><span class="shelf-card__name">${esc(m.name)}</span><span class="shelf-card__line">${esc(m.line)}</span><span class="shelf-card__dir">${esc(m.dir)}/</span></span>
+      </${tag}>`;
+  }).join('\n      ');
+  const shelfCards = shelves.map((sh, i) => `<a class="subject-card" href="#shelf:${esc(sh.id)}">
+        <span class="subject-card__n">${String(i + 1).padStart(2, '0')}</span>
+        <span class="subject-card__t">${esc(sh.title)}</span>
+        <span class="subject-card__l">${esc(sh.line || '')}</span>
+      </a>`).join('\n      ');
+  const shelvesSection = shelves.length ? `
+  <section class="landing-section">
+    <div class="landing-section__head"><p class="eyebrow">The shelves</p><h2>A library on an expansive subject: ${shelves.length} shelves.</h2></div>
+    <div class="subject-grid">
+      ${shelfCards}
+    </div>
+  </section>` : '';
+  return `<header class="rr-hero">
+    <p class="eyebrow">${esc(L.eyebrow || meta.site.brand)}</p>
+    <h1 class="rr-title">${esc(L.title || meta.site.title)}</h1>
+    <div class="rr-quotes">
+      ${quotes}
+    </div>
+    <div class="rr-resume" id="rr-resume" hidden></div>
+    <div class="rr-cta">
+      <a class="btn btn-primary" href="#${esc(main[0] ? main[0].stops[0].read[0] : 'README.md')}" data-spine="${esc(main[0] ? main[0].id : '')}">Start reading</a>
+      <a class="btn btn-ghost" href="#12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html"${navAttrs('12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html')}>Read the conversation</a>
+    </div>
+  </header>${shelvesSection}
+  <section class="landing-section">
+    <div class="landing-section__head"><p class="eyebrow">Reading lists</p><h2>Follow a path through the collection.</h2></div>
+    <div class="list-grid list-grid--main">
+      ${main.map(listCard).join('\n      ')}
+    </div>
+  </section>
+  <section class="landing-section">
+    <div class="landing-section__head"><p class="eyebrow">${esc(meta.ideas_heading || 'You are here to…')}</p><h2>Seven reasons, seven short lists.</h2></div>
+    <div class="list-grid">
+      ${ideas.map(listCard).join('\n      ')}
+    </div>
+  </section>
+  <section class="landing-section">
+    <div class="landing-section__head"><p class="eyebrow">${esc(meta.modules_heading || 'The folders')}</p><h2>Seventeen folders, every file hashed.</h2></div>
+    <div class="shelf-grid">
+      ${folderCards}
+    </div>
+  </section>
+  <footer class="landing-footer">
+    <p>${esc(meta.site.title)} · built from commit <span class="mono">${sha}</span> · <a href="CHECKSUMS.txt">CHECKSUMS.txt</a> · <a href="#RECORD_INDEX.md"${navAttrs('RECORD_INDEX.md')}>Record index</a> · <a href="${esc(meta.site.repo_url)}" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>`;
+}
+
 function landingHtml() {
+  if (meta.landing) return readingRoomHtml();
   const sections = [carouselHtml()];
   const ideaCards = Object.entries(meta.ideas).map(([id, idea]) => {
     const inner = `<h3 class="module-card__title">${esc(idea.short)}</h3>
@@ -234,7 +441,7 @@ function ideaCss() {
 // ---------------------------------------------------------------- assemble
 const template = fs.readFileSync(path.join(SRC, 'template.html'), 'utf8');
 const siteData = {
-  site: meta.site, ideas: meta.ideas, modules,
+  site: meta.site, ideas: meta.ideas, modules, spines, titles, books, shelves,
   files: [...files].sort(),
   build: { commit: sha, generator: 'scripts/generate-site.js', date: new Date().toISOString() }
 };
@@ -252,6 +459,9 @@ if (!DRY) {
   if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true });
   fs.mkdirSync(path.join(OUT, 'site-assets'), { recursive: true });
   for (const f of fs.readdirSync(path.join(SRC, 'site-assets'))) fs.copyFileSync(path.join(SRC, 'site-assets', f), path.join(OUT, 'site-assets', f));
+  // the book indexes (schema egpt.book/1), each written by its own build script; served as books/<id>.json
+  if (fs.existsSync(path.join(SRC, 'books'))) { fs.mkdirSync(path.join(OUT, 'books'), { recursive: true });
+    for (const f of fs.readdirSync(path.join(SRC, 'books'))) fs.copyFileSync(path.join(SRC, 'books', f), path.join(OUT, 'books', f)); }
   for (const e of bundle) {
     const data = contentFor(e);
     const dest = path.join(OUT, e.path);
@@ -260,9 +470,11 @@ if (!DRY) {
     bytes += data.length;
   }
   fs.writeFileSync(path.join(OUT, 'library.html'), html);
+  fs.writeFileSync(path.join(OUT, 'shelves.json'), JSON.stringify({ schema: shelfSpec.schema || 'egpt.shelves/1', generated_from: 'site-src/shelves.json', commit: sha, shelves }, null, 1) + '\n');
+  fs.writeFileSync(path.join(OUT, 'spine.json'), JSON.stringify({ schema: spineSpec.schema, generated_from: 'site-src/spine.json', commit: sha, metaphor: spineSpec.metaphor, spines, titles }, null, 1) + '\n');
 } else {
   for (const e of bundle) bytes += contentFor(e).length;
 }
 // the front page: index.html + images/, from the Courant template and site-src/frontpage/egpt.json
 execFileSync('node', [path.join(__dirname, 'build-frontpage.js'), 'egpt', '--out', OUT, ...(DRY ? ['--dry-run'] : [])], { cwd: ROOT, stdio: 'inherit' });
-console.log(`${DRY ? '[dry-run] ' : ''}site/: library.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas`);
+console.log(`${DRY ? '[dry-run] ' : ''}site/: library.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas, ${spines.length} reading lists (${spines.reduce((n, s) => n + s.stops.length, 0)} stops)`);

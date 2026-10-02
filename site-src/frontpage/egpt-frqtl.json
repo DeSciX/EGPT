@@ -233,10 +233,35 @@
     "legal_html": "FRQTL is a trademark of Courant Group, LLC. EGPT is a community project on DeSciX."
   },
   "scripts": {
-    "codesite": true,
+    "codesite": false,
     "forward": {
       "query_to": "app.html"
     },
-    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js"
+    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js",
+    "modules": [
+      "app-assets/host-view.js"
+    ],
+    "_note": "The page asks the DeSciX host for full screen through the one shared declarer, app-assets/host-view.js (egpt-frqtl c4e340b, the FRAQTL orchestrator's change on the CEO's words; ruling in egpt-frqtl-notes/architect-review-host-view-fullscreen.md §6). No inline view call."
+  },
+  "share": {
+    "_note": "Title and description from the FRAQTL orchestrator (fraqtl-78, 1 October 2026); icon and card drawn in the family of the other four. card.art is a template still until the orchestrator's live STUDIO capture arrives. For the author's eye before upload (CEO priority 2, Unkamon bef716a).",
+    "site": "frqtl.com",
+    "title": "FRQTL — Impossible things, running",
+    "description": "The physics engine that knows no physics equations: interference, gravity and atoms emerge from integer rules, live in your browser.",
+    "icon": {
+      "glyph": "F",
+      "ink": "#06202a",
+      "tile": "#e5b95a",
+      "accent": "#06202a"
+    },
+    "card": {
+      "kicker": "FRQTL · physics engine",
+      "headline": "Impossible things, running.",
+      "line": "Interference, gravity and atoms emerge from integer rules, live in your browser.",
+      "art": {
+        "template": "site/images/dse.jpg",
+        "fit": "cover"
+      }
+    }
   }
 }

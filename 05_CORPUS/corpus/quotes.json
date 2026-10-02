@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 387,
+ "count": 386,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -1105,33 +1105,6 @@
    "embed_text": "Freeman Dyson | Quoted by Jim Holt, “How the Computers Exploded,” The New York Review of Books, 7 June 2012 (review of George Dyson, Turing's Cathedral) | unpaginated online text | date of utterance not established; quoted 2012 | When von Neumann tragically died, the snobs took their revenge and got rid of the computing project root and branch"
   },
   {
-   "id": "q-albert-einstein-bob-doyle-my-god-he--19a0d646",
-   "quote": "I consider it quite possible that physics cannot be based on the field concept, i.e:, on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics.",
-   "speaker": {
-    "name": "Albert Einstein",
-    "role": "author",
-    "sort": "einstein, albert",
-    "as_given": "Albert Einstein"
-   },
-   "source": {
-    "work": "Bob Doyle, \"My God, He Plays Dice!\" — Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\")",
-    "locus": "Chapter 38, p.316-317 (section \"Castle In The Air\"); Doyle's footnote 2 on this quotation cites \"Pais, 1982, p.467\" (Abraham Pais, \"Subtle is the Lord\")",
-    "date": "1954",
-    "file": "",
-    "url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf"
-   },
-   "restored": "",
-   "years": [
-    1954
-   ],
-   "themes": [],
-   "collections": [
-    "expanded_passages"
-   ],
-   "quote_sha256": "19a0d646d38087f70a79c8bb5117f320745c15fc86e2435febb68aaf2a43408f",
-   "embed_text": "Albert Einstein | Bob Doyle, \"My God, He Plays Dice!\" — Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\") | Chapter 38, p.316-317 (section \"Castle In The Air\"); Doyle's footnote 2 on this quotation cites \"Pais, 1982, p.467\" (Abraham Pais, \"Subtle is the Lord\") | 1954 | I consider it quite possible that physics cannot be based on the field concept, i.e:, on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics."
-  },
-  {
    "id": "q-albert-einstein-bob-doyle-my-god-he--3f9177ff",
    "quote": "I must confess that I was not able to find a way to explain the atomistic character of nature. My opinion is that if the objective description through the field as an elementary concept is not possible, then one has to find a possibility to avoid the continuum (together with space and time) altogether. But I have not the slightest idea what kind of elemen-tary concepts could be used in such a theory.",
    "speaker": {
@@ -1310,10 +1283,10 @@
    },
    "source": {
     "work": "letter to Michele Besso, quoted in Bob Doyle, My God, He Plays Dice! (Information Philosopher)",
-    "locus": "",
+    "locus": "Doyle, Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\"), p.316-317; Doyle's footnote 2 on this quotation cites \"Pais, 1982, p.467\" (Abraham Pais, \"Subtle is the Lord\"); Doyle prints \"i.e:,\" where this record reads \"i.e.,\"",
     "date": "1954",
     "file": "",
-    "url": ""
+    "url": "https://www.informationphilosopher.com/books/einstein/Einstein.pdf"
    },
    "restored": "",
    "years": [
@@ -1326,7 +1299,7 @@
     "register"
    ],
    "quote_sha256": "9a8096c7d269d0da6e663e3f9de50cc5f642b5dd3abdf0db45e7a1ddb5480576",
-   "embed_text": "Albert Einstein | letter to Michele Besso, quoted in Bob Doyle, My God, He Plays Dice! (Information Philosopher) | 1954 | I consider it quite possible that physics cannot be based on the field concept, i.e., on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics."
+   "embed_text": "Albert Einstein | letter to Michele Besso, quoted in Bob Doyle, My God, He Plays Dice! (Information Philosopher) | Doyle, Chapter 38, \"Einstein's Field Theory\" (section \"Castle In The Air\"), p.316-317; Doyle's footnote 2 on this quotation cites \"Pais, 1982, p.467\" (Abraham Pais, \"Subtle is the Lord\"); Doyle prints \"i.e:,\" where this record reads \"i.e.,\" | 1954 | I consider it quite possible that physics cannot be based on the field concept, i.e., on continuous structures. In that case, nothing remains of my entire castle in the air, gravitation theory included, [and of] the rest of modern physics."
   },
   {
    "id": "q-enrico-fermi-john--studies-of-nonlinear-53b2d28f",
