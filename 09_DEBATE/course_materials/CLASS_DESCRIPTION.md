@@ -80,7 +80,7 @@ The Singularity — a term coined by Stanislaw Ulam in his 1958 tribute to von N
 
 **The GPU Heatdeath simulation** (`www/GPUHeatDeath.html`) demonstrates this live: watch precision erode as you scale from a CPU to an iPhone to an Nvidia GPU to a supercomputer. The erosion is exponential. Von Neumann diagnosed it in 1957.
 
-**The circuit SAT experiment** (`egpt_circuit_sat/`) demonstrates the alternative: particles diffusing through a half-adder circuit find satisfying assignments with 100% accuracy across 80 runs. No floating point. No error accumulation. Physical computation.
+**The circuit SAT experiment** (`content/Papers/egpt_circuit_sat/`) demonstrates the alternative: particles diffusing through a half-adder circuit find satisfying assignments with 100% accuracy across 80 runs. No floating point. No error accumulation. Physical computation.
 
 These aren't historical curiosities. This is the crisis. And the mathematics in this course is the diagnosis.
 

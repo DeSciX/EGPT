@@ -37,7 +37,7 @@ The student who built their own constructive proof now understands what it means
 ## Simulations
 
 - `www/GPUHeatDeath.html` — Precision erosion visualization
-- `egpt_circuit_sat/index.html` — The alternative: physical computation
+- `content/Papers/egpt_circuit_sat/index.html` — The alternative: physical computation
 
 ## Key Lean Symbols
 

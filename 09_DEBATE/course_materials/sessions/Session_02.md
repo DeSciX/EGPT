@@ -24,7 +24,7 @@ Shannon's 1937 master thesis — "A Symbolic Analysis of Relay and Switching Cir
 
 ## Simulations
 
-- `egpt_circuit_sat/index.html` — Interactive half-adder visualization: watch particles find satisfying assignments by diffusing through circuit gates
+- `content/Papers/egpt_circuit_sat/index.html` — Interactive half-adder visualization: watch particles find satisfying assignments by diffusing through circuit gates
 - 80 runs, 20 seeds, zero failures — this is physical computation, not search
 
 ## What the Student Does

@@ -103,7 +103,7 @@ Interactive demonstrations and the working integer-only math library.
 | Resource | Location | Sessions | Description |
 |----------|----------|----------|-------------|
 | GPU Heatdeath Simulation | `www/GPUHeatDeath.html` | 0, 10 | Interactive precision erosion: CPU → iPhone → GPU → supercomputer |
-| Circuit SAT Experiment | `egpt_circuit_sat/index.html` | 2, 10 | Half-adder via particle transport: 80 runs, 20 seeds, zero failures |
+| Circuit SAT Experiment | `content/Papers/egpt_circuit_sat/index.html` | 2, 10 | Half-adder via particle transport: 80 runs, 20 seeds, zero failures |
 | EGPTMath Library | `EGPTMath/EGPTMath.js` | 10 | Integer-only vector algebra engine (~6800 lines, 157 tests) |
 | EGPTNumber | `EGPTMath/EGPTNumber.js` | 4 | PPF number representation: lossless Shannon coding |
 | Pedagogical FAT | `EGPTMath/FAT/EGPTFAT.js` | 10 | Integer-only FFT/QFT (Cooley-Tukey, no floats) |

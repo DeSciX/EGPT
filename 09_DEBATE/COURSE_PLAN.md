@@ -82,7 +82,7 @@ The Singularity — a term coined by Stanislaw Ulam in his 1958 tribute to von N
 
 **The GPU Heatdeath simulation** (`www/GPUHeatDeath.html`) demonstrates this live: watch precision erode as you scale from a CPU to an iPhone to an Nvidia GPU to a supercomputer. The erosion is exponential. Von Neumann diagnosed it in 1957.
 
-**The circuit SAT experiment** (`egpt_circuit_sat/`) demonstrates the alternative: particles diffusing through a half-adder circuit find satisfying assignments with 100% accuracy across 80 runs. No floating point. No error accumulation. Physical computation.
+**The circuit SAT experiment** (`content/Papers/egpt_circuit_sat/`) demonstrates the alternative: particles diffusing through a half-adder circuit find satisfying assignments with 100% accuracy across 80 runs. No floating point. No error accumulation. Physical computation.
 
 These aren't historical curiosities. This is the crisis. And the mathematics in this course is the diagnosis.
 
@@ -172,7 +172,7 @@ This is Part 1 of Session 8's capstone ("Does Stating a Problem Solve It?") — 
 **The historical connection:** Shannon's 1937 master thesis — "A Symbolic Analysis of Relay and Switching Circuits" — proved that Boolean algebra governs electrical circuits. This is fundamentally related to Shannon Entropy. Not a coincidence: the same man who showed that circuits ARE logic also showed that information has a unique measure. The "Coding" in Shannon Coding IS about the same bits that computers use. That's what I naively thought everyone understood.
 
 **Simulations:**
-- `egpt_circuit_sat/index.html` — Interactive half-adder visualization: watch particles find satisfying assignments by diffusing through circuit gates
+- `content/Papers/egpt_circuit_sat/index.html` — Interactive half-adder visualization: watch particles find satisfying assignments by diffusing through circuit gates
 - 80 runs, 20 seeds, zero failures — this is physical computation, not search
 
 **What the student does:** Run the circuit SAT simulation. Watch particles cross the maze. Understand that the particles aren't "searching" — they're following the wires. The maze (the CNF) determines the paths. Defining the maze IS defining the solution. Ask: "If the electron just follows the wires, where is the exponential work?"
@@ -391,7 +391,7 @@ The student who built their own constructive proof now understands what it means
 
 **Simulations:**
 - `www/GPUHeatDeath.html` — Precision erosion visualization
-- `egpt_circuit_sat/index.html` — The alternative: physical computation
+- `content/Papers/egpt_circuit_sat/index.html` — The alternative: physical computation
 
 **Key Lean symbols:**
 - `walkComplexity_upper_bound` (TableauFromCNF.lean) — Walk cost ≤ |cnf| × k
