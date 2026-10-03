@@ -57,15 +57,26 @@ EGPT-research stages; this repository publishes. Two tracks here:
   text is the author's or carries a machine's own byline; words in curly quotes on the journal's
   pages must be found in their source, case included (the build refuses otherwise).
 
-**Procedure.** Content is written in EGPT-research `journal/<issue>/` (articles with front
-matter `status: draft | stub | ready`, `issue.json`, timelines, audio) and crosses only by
-`python3 EGPT-research/evidence/publish_journal.py --issue <id> --check` then `--write`: ready
-articles, the issue file when everything it names is ready or already here, data as it is;
-nothing is deleted here by that script. Then `npm run build:site`, `descix serve`, the author's
-review, his word, commit by pathspec, upload. Changes to the site system (`scripts/`,
-`site-src/`) are made on a branch of this repository (`stage/<name>`), served the same way, and
-merged on his word; PROD is uploaded from `main` only. Issue 1 (`2026-10`) was begun here before
-this procedure existed; its drafts stay here, status `draft`, until he says otherwise.
+**Procedure, the journal.** An issue is written in EGPT-research `journal/<issue>/` (its
+`README.md` says what each file controls: `editors-note.md` is the letter, `issue.json` the
+order and progression, each `<slug>.md` an article with `status: draft | stub | ready`). It
+crosses only by `python3 EGPT-research/evidence/publish_journal.py --issue <id> --check` then
+`--write`: `ready` and `stub` articles, the issue file when everything it names has crossed,
+timelines and audio as they are; `draft` is held; nothing here is deleted by that script.
+
+**Procedure, the library.** A library file is edited at its ORIGIN, the path the author's
+manifest (`EGPT-research/evidence/MANIFEST.tsv`) records for it, never here: for example
+`09_DEBATE/course_materials/sessions/Session_07.md` is edited at
+`EGPT-research/18.313x/course_materials/sessions/Session_07.md`. The edit crosses by
+`python3 EGPT-research/evidence/sync_collection.py --check` (the plan: every copy whose origin
+changed, less the declared divergences) then `--write`, or `--write --only <path here>` for one
+file; then `python3 EGPT-research/evidence/build_manifest.py --write`.
+
+**After either crossing, here:** `python3 tools/build_record_index.py --write`,
+`python3 tools/build_checksums.py --write`, `npm run build:site` (its gates run), `descix
+serve`, the author's review, his word, commit by pathspec, upload. Changes to the site system
+(`scripts/`, `site-src/`) are made on a branch of this repository (`stage/<name>`), served the
+same way, and merged on his word; PROD is uploaded from `main` only.
 
 ## Layout
 
