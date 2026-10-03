@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="site-assets/style.css">
   <link rel="stylesheet" href="site-assets/hljs-theme.css">
+  <link rel="stylesheet" href="site-assets/timeline.css">
   <style>{{IDEA_CSS}}</style>
 </head>
 <body data-egpt-site-build="{{BUILD_SHA}}">
@@ -25,11 +26,15 @@
       <nav class="book-nav" id="book-nav" hidden aria-label="The book's index">
         <!-- site-assets/reader.js builds: the open book's index, from books/<id>.json -->
       </nav>
+      <nav class="jr-nav" id="journal-nav" hidden aria-label="This issue of the journal">
+        <!-- site-assets/journal.js builds: the issue's contents, from issues/<id>.json -->
+      </nav>
       <nav class="tree-nav" id="tree-nav">
         <!-- site.js builds: reading lists, the seven reasons, the shelves -->
       </nav>
       <div class="sidebar-footer">
         <a href="index.html">Front page</a>
+        <a href="journal.html">The journal</a>
         <a href="#guide/about-this-collection.md">About</a>
         <a href="#RECORD_INDEX.md">Record index</a>
         <a href="CHECKSUMS.txt">CHECKSUMS.txt</a>
@@ -64,5 +69,7 @@
   <script src="site-assets/mermaid.min.js"></script>
   <script src="site-assets/site.js"></script>
   <script src="site-assets/reader.js"></script>
+  <script src="site-assets/timeline.js"></script>
+  <script src="site-assets/journal.js"></script>
 </body>
 </html>

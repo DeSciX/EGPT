@@ -32,7 +32,7 @@ const git = (...a) => execFileSync('git', a, { cwd: ROOT, maxBuffer: 1 << 28 });
 
 const ROOT_FILES = new Set(['README.md', 'CLAUDE.md', 'URLS.md', 'RECORD_INDEX.md',
   'Copyright_Fair-use_Memo.md', 'CHECKSUMS.txt']);
-const inBundle = p => /^(guide|journal|[0-9]{2}_[A-Z_]+)\//.test(p) || ROOT_FILES.has(p);
+const inBundle = p => /^(guide|[0-9]{2}_[A-Z_]+)\//.test(p) || ROOT_FILES.has(p);
 
 function die(msg) { console.error('ERROR: ' + msg); process.exit(1); }
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -475,6 +475,8 @@ if (!DRY) {
 } else {
   for (const e of bundle) bytes += contentFor(e).length;
 }
+// the journal: journal.html, issues/<id>.json, journal/<id>/… (editorial; read from the working tree)
+if (!DRY && fs.existsSync(path.join(SRC, 'issues'))) execFileSync('node', [path.join(__dirname, 'build-journal.js'), '--out', OUT], { cwd: ROOT, stdio: 'inherit' });
 // the front page: index.html + images/, from the Courant template and site-src/frontpage/egpt.json
 execFileSync('node', [path.join(__dirname, 'build-frontpage.js'), 'egpt', '--out', OUT, ...(DRY ? ['--dry-run'] : [])], { cwd: ROOT, stdio: 'inherit' });
 console.log(`${DRY ? '[dry-run] ' : ''}site/: library.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas, ${spines.length} reading lists (${spines.reduce((n, s) => n + s.stops.length, 0)} stops)`);

@@ -63,6 +63,7 @@
     return out;
   }
   function partEntries(book, part) { return book._flat.filter(function (e) { return e.part === part; }); }
+  function partName(p) { return p.short || p.title; }
   function partById(book, id) { for (var i = 0; i < book.parts.length; i++) if (book.parts[i].id === id) return book.parts[i]; return null; }
   function findEntry(book, part, ref) {
     var list = partEntries(book, part), i;
@@ -86,7 +87,8 @@
   function questionNumber(it) { var m = /^Question\s+([^.]+)\./.exec(it.title || ''); return m ? m[1] : String(it.key); }
   function questionTitle(it) { return (it.title || '').replace(/^Question\s+[^.]+\.\s*/, ''); }
   function plain(t) { return String(t || '').replace(/\*\*|__|`/g, '').replace(/(^|\s)[*_](?=\S)/g, '$1').replace(/(\S)[*_](?=\s|$)/g, '$1'); }
-  function who(w) { return w === 'ME' ? 'The author' : w === 'CLAUDE' ? 'Claude' : (w || '').charAt(0) + (w || '').slice(1).toLowerCase(); }
+  var WHO = { ME: 'The author', CLAUDE: 'Claude', CHATGPT: 'ChatGPT' };
+  function who(w, it) { if (it && it.who_name) return it.who_name; return WHO[w] || String(w || ''); }
   function bookLine(b) {
     if (b.messages) return b.messages + ' messages';
     var docs = {}; (b._flat || []).forEach(function (e) { var p = splitHref(e.href).path; if (p) docs[p] = 1; });
@@ -182,13 +184,13 @@
   /* ---------------------------------------------------------- the index at the side */
   function entryLabel(e) {
     if (e.kind === 'question') return 'Question ' + questionNumber(e.item) + '. ' + questionTitle(e.item);
-    if (e.kind === 'turn') return 'Message ' + e.item.message + ' \u00b7 ' + who(e.item.who);
+    if (e.kind === 'turn') return 'Message ' + e.item.message + ' \u00b7 ' + who(e.item.who, e.item);
     return e.item.title;
   }
   function navRow(b, e) {
     var a = '<a class="book-ix book-ix--' + e.kind + (e.depth ? ' book-ix--sub' : '') + '" href="#' + esc(e.addr) + '" data-addr="' + esc(e.addr) + '">';
     if (e.kind === 'question') return a + '<span class="book-ix__k">Question ' + esc(questionNumber(e.item)) + '</span><span class="book-ix__t">' + esc(questionTitle(e.item)) + '</span>' + (e.depth ? '' : '<span class="book-ix__text">' + esc(e.item.text.replace(/\s*\n\s*/g, ' ')) + '</span>') + '</a>';
-    if (e.kind === 'turn') return a + '<span class="book-ix__k">' + esc(e.item.message) + '</span><span class="book-ix__who">' + esc(who(e.item.who)) + '</span><span class="book-ix__opens">' + esc(plain(e.item.opens)) + '</span></a>';
+    if (e.kind === 'turn') return a + '<span class="book-ix__k">' + esc(e.item.message) + '</span><span class="book-ix__who">' + esc(who(e.item.who, e.item)) + '</span><span class="book-ix__opens">' + esc(plain(e.item.opens)) + '</span></a>';
     return a + '<span class="book-ix__t">' + esc(e.item.title) + '</span></a>';
   }
   function buildNav(b) {
@@ -204,7 +206,7 @@
         return navRow(b, e) + sub;
       }).join('');
       var meta = top.length ? (top[0].kind === 'turn' ? top.length + ' messages' : top[0].kind === 'question' ? top.length + ' questions' : top.length) : '';
-      return '<details class="book-part" data-part="' + esc(p.id) + '"' + (isOpen ? ' open' : '') + '><summary><span class="book-part__t">' + esc(p.title) + '</span><span class="book-part__meta">' + esc(String(meta)) + '</span></summary><div class="book-part__body">' + rows + '</div></details>';
+      return '<details class="book-part" data-part="' + esc(p.id) + '"' + (isOpen ? ' open' : '') + '><summary><span class="book-part__t">' + esc(partName(p)) + '</span><span class="book-part__meta">' + esc(String(meta)) + '</span></summary><div class="book-part__body">' + rows + '</div></details>';
     }).join('');
     bookNav.innerHTML = html;
     builtNav = b.id;
@@ -230,13 +232,13 @@
     var prev, next, here, k, list;
     if (e.kind === 'turn') {
       list = partEntries(b, e.part); k = list.indexOf(e); prev = list[k - 1]; next = list[k + 1];
-      here = '<span class="book-bar__k">Message ' + esc(e.item.message) + ' of ' + list.length + '</span><span class="book-bar__t">' + esc(who(e.item.who)) + '</span>';
+      here = '<span class="book-bar__k">Message ' + esc(e.item.message) + ' of ' + list.length + '</span><span class="book-bar__t">' + esc(who(e.item.who, e.item)) + '</span>';
     } else if (e.kind === 'question') {
       list = b._flat.filter(function (x) { return x.kind === 'question'; }); k = list.indexOf(e); prev = list[k - 1]; next = list[k + 1];
-      here = '<span class="book-bar__k">' + esc(e.part.title) + '</span><span class="book-bar__t">Question ' + esc(questionNumber(e.item)) + '</span>';
+      here = '<span class="book-bar__k">' + esc(partName(e.part)) + '</span><span class="book-bar__t">Question ' + esc(questionNumber(e.item)) + '</span>';
     } else {
       list = b._flat.filter(function (x) { return x.kind === 'place'; }); k = list.indexOf(e); prev = list[k - 1]; next = list[k + 1];
-      here = '<span class="book-bar__k">' + esc(e.part.title) + (list.filter(function (x) { return x.part === e.part; }).length > 1 ? ' \u00b7 ' + (partEntries(b, e.part).indexOf(e) + 1) + ' of ' + partEntries(b, e.part).length : '') + '</span><span class="book-bar__t">' + esc(e.item.title) + '</span>';
+      here = '<span class="book-bar__k">' + esc(partName(e.part)) + (list.filter(function (x) { return x.part === e.part; }).length > 1 ? ' \u00b7 ' + (partEntries(b, e.part).indexOf(e) + 1) + ' of ' + partEntries(b, e.part).length : '') + '</span><span class="book-bar__t">' + esc(e.item.title) + '</span>';
     }
     var nav = function (x, cls, arrow) { return x ? '<a class="book-bar__nav ' + cls + '" href="#' + esc(x.addr) + '" title="' + esc(entryLabel(x)) + '">' + (arrow === 'prev' ? '<span aria-hidden="true">\u2190</span>' : '') + '<span class="book-bar__label">' + esc(shortLabel(x)) + '</span>' + (arrow === 'next' ? '<span aria-hidden="true">\u2192</span>' : '') + '</a>' : '<span class="book-bar__nav ' + cls + ' is-empty"></span>'; };
     return '<div class="book-bar__head"><span class="book-bar__kind">Book</span><a class="book-bar__title" href="#book:' + esc(b.id) + '">' + esc(b.title) + '</a>' +
@@ -244,7 +246,7 @@
       '<div class="book-bar__row">' + nav(prev, 'book-bar__prev', 'prev') + '<div class="book-bar__here">' + here + '</div>' + nav(next, 'book-bar__next', 'next') + '</div>';
   }
   function shortLabel(e) {
-    if (e.kind === 'turn') return 'Message ' + e.item.message + ' \u00b7 ' + who(e.item.who);
+    if (e.kind === 'turn') return 'Message ' + e.item.message + ' \u00b7 ' + who(e.item.who, e.item);
     if (e.kind === 'question') return 'Question ' + questionNumber(e.item);
     return e.item.title;
   }
@@ -270,8 +272,8 @@
   // the transcript page, when it is read inside the book, hands its own top index to the sidebar
   // the same rules the patch to scripts/build-claude-session-page.js carries; injected here until the page's build has them
   var IN_BOOK_CSS = '.bubble p:target{outline:0;box-shadow:-3px 0 0 var(--link);padding-left:12px;margin-left:-15px;border-radius:0}' +
-    '.in-book .top .index{display:none}.in-book .top{margin-bottom:12px}.in-book .top h1{font-size:1.35em;margin-top:0}' +
-    '@media (prefers-color-scheme:dark){.in-book{--bg:#0b0f14;--fg:#e9eef3;--muted:#7f8ea0;--bubble:#151d27;--rule:#233040;--link:#5fcbe6;--note:#10161e}}';
+    '.in-book .top .index{display:none}.in-book .top{margin-bottom:12px}.in-book .top h1{font-size:1.35em;margin-top:0}';
+  // the author, 2 October 2026: the transcript pages keep their own light theme inside the book; no palette is injected
   function dressIframe() {
     try {
       var doc = iframe.contentDocument; if (!doc || !doc.documentElement) return;
@@ -286,6 +288,7 @@
 
   /* ---------------------------------------------------------- open an address */
   function open(addr) {
+    if (window.EGPTJournal) window.EGPTJournal.leave();
     if (addr.indexOf('shelf:') === 0) { openShelf(addr.slice(6)); return; }
     var rest = addr.slice(5), seg = rest.split('/'), id = seg[0], partId = seg[1] || '', ref = seg.slice(2).join('/');
     fetchBook(id).then(function (b) {
@@ -327,7 +330,7 @@
   function footNav(b, e) {
     var list = b._flat.filter(function (x) { return x.kind === e.kind; }), k = list.indexOf(e), prev = list[k - 1], next = list[k + 1];
     if (!prev && !next) return '';
-    var side = function (x, cls, arrow) { return x ? '<a class="' + cls + '" href="#' + esc(x.addr) + '">' + (arrow === 'prev' ? '<span aria-hidden="true">\u2190</span>' : '') + '<span><small>' + esc(x.part.title) + '</small>' + esc(shortLabel(x)) + '</span>' + (arrow === 'next' ? '<span aria-hidden="true">\u2192</span>' : '') + '</a>' : '<span></span>'; };
+    var side = function (x, cls, arrow) { return x ? '<a class="' + cls + '" href="#' + esc(x.addr) + '">' + (arrow === 'prev' ? '<span aria-hidden="true">\u2190</span>' : '') + '<span><small>' + esc(partName(x.part)) + '</small>' + esc(shortLabel(x)) + '</span>' + (arrow === 'next' ? '<span aria-hidden="true">\u2192</span>' : '') + '</a>' : '<span></span>'; };
     return '<nav class="book-pn" aria-label="Previous and next in the book">' + side(prev, 'book-pn__prev', 'prev') + side(next, 'book-pn__next', 'next') + '</nav>';
   }
   var footWatch = null;

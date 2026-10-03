@@ -282,6 +282,7 @@
   }
   function navigate(path, anchor) {
     var kind = kindOf(path);
+    if (window.EGPTJournal) window.EGPTJournal.onNavigate(path);      // the journal's article mode (site-assets/journal.js)
     currentPath = path;
     closeDrawer();
     landing.style.display = 'none';
@@ -296,7 +297,8 @@
     if (kind === 'html') showIframe(path, anchor);
     else {
       showRendered();
-      if (kind === 'md') renderMarkdown(path, anchor);
+      if (kind === 'md' && window.EGPTJournal && window.EGPTJournal.owns(path)) window.EGPTJournal.render(path, anchor);
+      else if (kind === 'md') renderMarkdown(path, anchor);
       else if (kind === 'pdf') renderPdf(path);
       else if (kind === 'image') renderImage(path);
       else if (kind === 'docx') renderDocx(path);
@@ -331,7 +333,7 @@
     // the reader (site-assets/reader.js) owns #book:<id>/… and #shelf:<id>
     if ((h.path.indexOf('book:') === 0 || h.path.indexOf('shelf:') === 0) && window.EGPTReader) { window.EGPTReader.open(h.path); return; }
     if (h.path.indexOf('record:') === 0) { openRecordPage(h.path.slice(7)); return; }
-    if (!FILES[h.path]) {
+    if (!FILES[h.path] && !(window.EGPTJournal && window.EGPTJournal.owns(h.path))) {
       var readme = h.path.replace(/\/$/, '') + '/README.md';
       if (FILES[readme]) { location.replace('#' + readme); return; }
       console.warn('not in this bundle: ' + h.path); goHome(); return;
@@ -360,6 +362,7 @@
   function goHome() {
     currentPath = '';
     if (window.EGPTReader) window.EGPTReader.leave();
+    if (window.EGPTJournal) window.EGPTJournal.leave();
     if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* ignore */ } }
     document.body.classList.remove('is-reading');
     landing.style.display = '';
@@ -753,6 +756,7 @@
     parseHash: parseHash, navigate: navigate, scrollToAnchor: scrollToAnchor, closeDrawer: closeDrawer, shellView: shellView,
     isMobile: isMobile, closeMobileSidebar: closeMobileSidebar, markTree: markTree, renderShelfmark: renderShelfmark,
     showRendered: showRendered, state: state, save: save, updateMeters: updateMeters,
+    parseFrontMatter: parseFrontMatter, headingIds: headingIds, rebaseRelativeUrls: rebaseRelativeUrls, wrapTables: wrapTables,
     setCurrentPath: function (p) { currentPath = p; }, currentPath: function () { return currentPath; },
     el: { rendered: rendered, iframe: iframe, landing: landing, treeNav: treeNav, spineBar: spineBar, shelfmark: shelfmark, sidebar: sidebar, githubLink: githubLink, rawLink: rawLink }
   };

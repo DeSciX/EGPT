@@ -1,29 +1,47 @@
 ---
-title: "Standing on the Shoulders of Giants: the Singularity, AI, A Theory of Everything, & P=NP"
+title: Standing on the Shoulders of Giants
+dek: A memorial, decades late, for Gian-Carlo Rota: the philosopher-mathematician hired to translate Stanislaw Ulam’s dark prophecies about machines that do not understand.
 author: Essam Abadir
-issue: 2026-10
-section: three
+section: The History
 status: draft
-source: scratch/editors_letter_ideas.md
-source_lines: 26-44
+audio: audio/placeholder.wav
+audio_placeholder: true
 ---
 
-Standing on the Shoulders of Giants: the Singularity, AI, A Theory of Everything, & P=NP
-I owe Gian-Carlo rota a memorial so that the world understands who he was. If I’ve done my job well you’ll have read “The Barrier of Meaning Memorial” which Gian-Carlo and the notion that it is impossible to understand a thing in isolation of its role. Describe a key down to its every atom and you do not understand what a key is without understanding the role or function of a key relative to what a lock is, what property is, or the desire to keep something safe. As Rota described, we need to formalize the concept of “as” properly. I would do a disservice to you if I spoke of Rota’s teaching at MIT and his many papers on the obscure branch of mathematics he published prolifically in. You would understand him no better than a metal object with jagged edges. 
+I owe Gian-Carlo Rota a memorial, so that the world understands who he was.
 
-Rota gave that example in memory of Stanislaw Ulam to open a 1986 AI conference held at Los Alamos National Laboratory including classified secret sessions. In that address Rota described himself as a hermeneut whose job at Los Alamos was to translate the dark and cryptic prophesies of Stanislaw Ulam. And what were those dark and cryptic prophesies about? They were about the Singularity in the form of machines that lack understanding. 
+If I do the job well, you will come away knowing "The Barrier of Meaning," the address in which Rota argued that it is impossible to understand a thing in isolation from its role. Describe a key down to its last atom and you still do not understand what a key is. For that you need the lock, and property, and the wish to keep something safe. As Rota put it, we need to formalize the concept of "as."
 
-Every one of those facts is an oddity according to the mainstream scientific orthodoxy. Who was Rota to be speaking at Los Alamos, and why was Los Alamos, a quantum physics lab holding classified sessions on AI of all subjects? And why would Ulam’s memorial be given by Rota, and why would Rota be recounting Ulam’s and Rota’s discussions at Los Alamos about the Singularity and AI? Does anyone associate Ulam and Rota with AI?
+So I would do you a disservice if I told you only about Rota's teaching at MIT and his many papers in the obscure branch of mathematics he made his own. You would understand him no better than you understand a key by calling it a metal object with jagged edges.
 
-In my mathematical, or perhaps philosophical, family tree you should consider puzzlingly prophetic memorials about AI to be a weird tradition. After all, in 1957 Ulam’s obituary of John von Neumann coined the phrase the Singularity in relation to a conversation he and von Neumann once had - so technically von Neumann coined the term and Ulam told us about it. He described von Neumann’s most promising work as starting a new mathematical discipline which we would now likely call AI and which agreed with Einstein. 
+## The hermeneut
 
-Does anyone associate Einstein with AI? Does anyone consider AI to be the most promising work of the singularly legendary career of John von Neumann? Why would von Neumann’s obituary be the source of the “Singularity”, the most searched term on the internet today, and why was von Neumann thinking about it? Did you know that von Neumann was holding meetings with Secretary of Defense and the Airforce along with the Joint Chiefs while on his death bed at Walter Reed in a room across from President Eisenhower’s? Did you know that von Neumann was in charge the nations top priority secret projects at the time? Did you know that he had stopped all work on everything else except papers that would posthumously get published as “The Computer And The Brain”?
+Rota gave that example in memory of Stanislaw Ulam, to open a 1985 conference on artificial intelligence at Los Alamos National Laboratory, a conference that included classified sessions. In that address he described himself as a hermeneut: his job at Los Alamos, he said, was to translate the dark and cryptic prophecies of Stanislaw Ulam.
 
-This memorial is perhaps a few decades late but I’d like to recount to you a conversation I had in Gian-Carlo Rota. To my memory I only had two real ones with him and in the first one he said he expected we’d have second one but hoped that we wouldn’t - I can say I met his expectations. 
+> In bygone days, the Sybil's dark mumblings would be interpreted by trained specialists, Hermeneuts they were called, who were charged with the task of expressing her cryptic messages in lapidary Greek sentences. In Ulam's case, the Los Alamos Laboratory would instead hire consultants, charged with the task of expressing his cryptic messages in the dilapidated jargon of modern mathematics.
+>
+> — Gian-Carlo Rota, "The Barrier of Meaning," 1985
 
-The world knew Rota as a dynamic professor of an obscure branch of mathematics at MIT known as combinatorics. Technically he was a professor of Applied Mathematics and Philosophy - neither of which are actually degree programs at MIT. As a mathematician he was known for “combinatorics” Lest Rota be too mainstream his chosen branch of philosophy was even more obscure 
+And what were those prophecies about? They were about the Singularity, in the form of machines that lack understanding.
 
-the philosophical study of conscious experience and the structures of first-person perspectives was a great fan of Phenomonology , a 
-When Stanislaw Ulam coined the term “Singularity” relative to AI it was in the obituary of John von Neumann and few people, if any, now consider von Neumann’s great work to be AI. Yet, in the same obituary Ulam pointed out that von Neumann’s last years were spent on what a sort of unified theory and [new mathematical discipline, of cellular automata …] and whose ideas agreed with Einstein. Ulam outlined this as von Neumann’s most promising work relative to what was already a legendary, and perhaps, historically unmatched career. Ulam pointed out that von Neumann was working a possible  were on a new mathematical 
+Every one of those facts is an oddity by the lights of mainstream science. Who was Rota to be speaking at Los Alamos? Why was Los Alamos, a physics laboratory, holding classified sessions on AI, of all subjects? Why would Ulam's memorial be given by Rota, and why would it recount their conversations about the Singularity? Does anyone associate Ulam and Rota with AI?
 
-I want to be clear that I know that I’m standing on the shoulders of giants. So let me repeat for the record, again, I’m at best fourth to have proved that P=NP and second to prove a so-called “grand unified theory” of physics - both were handed to me (and every other student in my class) by the late MIT Professor Gian-Carlo Rota. What I haven’t said before is that at the time Gian-Carlo Rota was the Senior Fellow to the Directors Office of Los Alamos National Labs - SFDO, LANL since that’s a mouthful. The evidence is convincing that Rota had scientific oversight of the top secret continuation and of the Manhattan Project and that the subject of the continuation was AI and a theory of everything.
+## A family tradition
+
+In my mathematical family tree, or perhaps my philosophical one, puzzlingly prophetic memorials about AI are something of a tradition. In 1958 Ulam's obituary of John von Neumann gave the world the word "Singularity," recalling a conversation the two men once had. Strictly speaking, von Neumann coined the term and Ulam told us about it. In the same obituary Ulam described von Neumann's most promising work as the start of a new mathematical discipline, one we would now call AI, and one that agreed with Einstein.
+
+Does anyone associate Einstein with AI? Does anyone consider AI the most promising work of von Neumann's singularly legendary career? Why would his obituary be the source of the Singularity, and why was he thinking about it at all?
+
+Did you know that von Neumann, on his deathbed at Walter Reed, was holding meetings with the Secretary of Defense, the Air Force and the Joint Chiefs? That he was in charge of the nation's highest-priority secret projects? That he had stopped work on everything except the papers published after his death as *The Computer and the Brain*?
+
+## Two conversations
+
+This memorial is a few decades late, but I would like to tell you about a conversation I had with Gian-Carlo Rota. To my memory I had only two real ones. In the first he said he expected we would have a second, and hoped we would not. I can say I met his expectations.
+
+The world knew Rota as a dynamic professor of combinatorics. His title was Professor of Applied Mathematics and Philosophy, and at MIT neither of those is a degree program. Lest that be too mainstream, his chosen branch of philosophy was more obscure still: phenomenology, the study of conscious experience from the first-person point of view.
+
+What I have not said before is what else he was. At the time, Gian-Carlo Rota was Senior Fellow to the Director's Office of Los Alamos National Laboratory.
+
+## For the record
+
+I know that I am standing on the shoulders of giants. So let me say it again, for the record: I am at best the fourth person to have proved that P = NP, and the second to prove a so-called grand unified theory of physics. Both were handed to me, and to every other student in my class, by the late Professor Gian-Carlo Rota.

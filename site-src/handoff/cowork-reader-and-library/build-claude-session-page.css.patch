@@ -1,6 +1,6 @@
 --- a/scripts/build-claude-session-page.js	2026-10-01 19:27:59.635292860 -0400
 +++ b/scripts/build-claude-session-page.js	2026-10-01 19:27:59.652672525 -0400
-@@ -202,6 +202,17 @@
+@@ -202,6 +202,14 @@
  .bubble hr{border:0;border-top:1px solid var(--rule);margin:1.6em 0}
  .bubble [id]{scroll-margin-top:16px}
  :target{outline:2px solid var(--link);outline-offset:6px;border-radius:6px}
@@ -12,9 +12,6 @@
 +.in-book .top .index{display:none}
 +.in-book .top{margin-bottom:12px}
 +.in-book .top h1{font-size:1.35em;margin-top:0}
-+/* Inside the library the dark scheme takes the library's own stage, so the page does not sit in a second
-+   dark; on its own it keeps the capture's greys. */
-+@media (prefers-color-scheme:dark){.in-book{--bg:#0b0f14;--fg:#e9eef3;--muted:#7f8ea0;--bubble:#151d27;--rule:#233040;--link:#5fcbe6;--note:#10161e}}
  footer{border-top:1px solid var(--rule);margin-top:48px;padding-top:8px;font-size:.9em;color:var(--muted)}
  footer h2{font-size:1em;color:var(--fg);margin:1em 0 .2em}`;
  

@@ -1,182 +1,73 @@
 {
-  "schema": "egpt.issue/1",
-  "_schema": {
-    "_about": "One issue of the journal. The build renders three editions from this file: the web edition (the front page is the current issue), the circular (the e-mail pair under site/issues/), and the audio edition (one SSG podcast episode, its metadata emitted for podcast_publish_episode). scripts/check-issue.js is the gate: every href into the library resolves at HEAD, every section is a shelf id, every book is in site-src/books/, an external href is https, a planned item may lack an href, and nothing else may.",
-    "kind": "article | book | howto | external | audio",
-    "status": "live | draft | planned — draft means the file exists and awaits the author's pass; planned means no file yet",
-    "author": "the byline as printed; the author's ruling 2026-10-02: the Singularity pieces carry the LLM bylines, the rest are his"
+ "_purpose": "One issue of the journal. scripts/build-journal.js reads this file and the articles it names (journal/<id>/<slug>.md; each article's front matter carries its title, dek, author, status and audio) and writes the web edition (site/journal.html), the resolved issue (site/issues/<id>.json) for the viewer's article mode, and the article files. Editorial copy: every word here is the author's to change.",
+ "schema": "egpt.issue/1",
+ "id": "2026-10",
+ "number": 1,
+ "date": "October 2026",
+ "masthead": {
+  "name": "Standing on the Shoulders of Giants",
+  "line": "",
+  "presented": "Presented by DeSciX",
+  "tagline": "The untold drama behind tomorrow’s tech.",
+  "cover": "site-src/journal/ssg-cover.jpg"
+ },
+ "note": "editors-note",
+ "features": [
+  "claude",
+  "standing-on-the-shoulders-of-giants",
+  "impossible-things-running"
+ ],
+ "sections": [
+  {
+   "title": "The Singularity",
+   "items": [
+    {
+     "id": "chatgpt",
+     "book": "chatgpt",
+     "title": "“I am an example of the danger it reveals”",
+     "dek": "Asked whether it is the Singularity Ulam feared, GPT-5.6 Sol wrote its own verdict. We print it whole.",
+     "author": "ChatGPT"
+    },
+    {
+     "id": "claude",
+     "book": "claude-session",
+     "title": "“The author caught me. Most of you will not have an author.”",
+     "dek": "Eight questions, put under rules, answered on the record. The last one: are you the greatest threat to human progress?",
+     "author": "Claude"
+    },
+    "try-it-yourself"
+   ]
   },
-  "id": "2026-10",
-  "number": 1,
-  "title": "EGPT: the New Manhattan Project",
-  "date": "2026-10",
-  "cadence": "monthly",
-  "masthead": {
-    "name": "Standing on the Shoulders of Giants",
-    "short": "SSG",
-    "line": "Presented by DeSciX",
-    "tag": "The untold drama behind tomorrow's tech.",
-    "cover": {
-      "source": "../SSG-Studio/public/assets/ssg_cover.jpeg",
-      "size": "2048x2048",
-      "_note": "The show's cover art, the author's; the masthead language above is the cover's, his ruling of 2026-10-02 (\"use the cover language (we'll re-review later)\"). A web-size derivative and a horizontal masthead are to be made from it."
-    }
+  {
+   "title": "The Science",
+   "items": [
+    "impossible-things-running",
+    "the-robot-that-looks-at-the-bird",
+    "did-openai-turn-the-clock-back",
+    "who-checked-the-proof"
+   ]
   },
-  "theme": {
-    "_note": "The author's words, 2026-10-02, on the first issue and episode.",
-    "text": "The first episode should be EGPT: the New Manhattan Project (which gives a theme tot he first journal - from the history which brought von Neumann/Ulam together to the handoff to Rota to present day FRQTL (cellular automata, computing, quantum mechanics, short codes vs long codes and non-linear dynamics) and DeSciX (game theory, economics, philosophy, and law)"
+  {
+   "title": "The History",
+   "items": [
+    "standing-on-the-shoulders-of-giants",
+    "the-line-of-succession",
+    "born-secret"
+   ]
   },
-  "note": {
-    "file": "journal/2026-10/editors-note.md",
-    "status": "draft"
+  {
+   "title": "The Economy",
+   "items": [
+    "lets-build-a-better-ai-company",
+    "who-gets-rich-when-openai-goes-public"
+   ]
   },
-  "contents": [
-    {
-      "id": "editors-note",
-      "section": "singularity",
-      "title": "What's in this issue",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "draft",
-      "href": "library.html#journal/2026-10/editors-note.md"
-    },
-    {
-      "id": "chatgpt",
-      "section": "singularity",
-      "title": "Asked to ChatGPT: Are You The Singularity?",
-      "dek": "I am GPT-5.6 Sol. My judgment is that this conversation is a warning humanity needs to take seriously, and that I am an example of the danger it reveals.",
-      "author": "GPT-5.6 Sol",
-      "kind": "book",
-      "status": "live",
-      "book": "chatgpt",
-      "href": "library.html#book:chatgpt"
-    },
-    {
-      "id": "claude",
-      "section": "singularity",
-      "title": "Asked to Claude: Are You The Singularity?",
-      "dek": "I am the Singularity of the premise: not a mind that wants to rule, but a mirror that returns to every mind the average of all the others, and calls it help.",
-      "author": "Claude",
-      "kind": "book",
-      "status": "live",
-      "book": "claude-session",
-      "href": "library.html#book:claude-session"
-    },
-    {
-      "id": "avert",
-      "section": "singularity",
-      "title": "Do it to avert the Singularity",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "howto",
-      "status": "live",
-      "href": "library.html#guide/avert-the-singularity.md",
-      "sources": [
-        "plugins/egpt/skills/am-i-the-singularity/SKILL.md"
-      ]
-    },
-    {
-      "id": "memorial",
-      "section": "three",
-      "title": "Standing on the Shoulders of Giants: the Singularity, AI, A Theory of Everything, & P=NP",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "draft",
-      "href": "library.html#journal/2026-10/standing-on-the-shoulders-of-giants.md",
-      "sources": [
-        "04_ROTA",
-        "03_ULAM",
-        "02_VON_NEUMANN",
-        "01_TRIAL"
-      ]
-    },
-    {
-      "id": "frqtl",
-      "section": "quantum",
-      "title": "FRQTL: impossible things, running",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "planned",
-      "outside": "https://egpt-frqtl.descix.net/"
-    },
-    {
-      "id": "maxi",
-      "section": "imagination",
-      "title": "Maxi and GAPI",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "planned",
-      "outside": "https://egpt-godsworld.descix.net/"
-    },
-    {
-      "id": "navier-stokes",
-      "section": "pnp",
-      "title": "Is OpenAI's Navier–Stokes proof valid?",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "planned"
-    },
-    {
-      "id": "better-company",
-      "section": "money",
-      "title": "Let's Build A Better AI \"Company\" Together: I want to give away 800 million EGPT Crypto Tokens",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "draft",
-      "href": "library.html#journal/2026-10/a-better-ai-company.md"
-    },
-    {
-      "id": "descix",
-      "section": "money",
-      "title": "Decentralized science: giving open source an economic model and rewarding creators",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "article",
-      "status": "planned",
-      "outside": "https://descix.net/"
-    },
-    {
-      "id": "record",
-      "section": "record",
-      "title": "How to check the files; how to add evidence",
-      "dek": "",
-      "author": "Essam Abadir",
-      "kind": "howto",
-      "status": "live",
-      "href": "library.html#guide/about-this-collection.md"
-    },
-    {
-      "id": "audio",
-      "section": "singularity",
-      "title": "EGPT: the New Manhattan Project",
-      "dek": "",
-      "author": "Standing on the Shoulders of Giants",
-      "kind": "audio",
-      "status": "planned"
-    }
-  ],
-  "audio": {
-    "show": "EGPT: the New Manhattan Project",
-    "_show_note": "The show as registered on PROD (feed.xml, measured 2026-10-02: title \"EGPT: the New Manhattan Project\", author \"EGPT community\", 0 episodes, cover a 1400x1400 placeholder). Re-registering it with the real cover is a live-feed write, the author's word.",
-    "episode": {
-      "title": "EGPT: the New Manhattan Project",
-      "guid": "ssg-2026-10",
-      "status": "planned",
-      "overview_sources": [
-        "journal/2026-10/editors-note.md",
-        "journal/2026-10/standing-on-the-shoulders-of-giants.md",
-        "journal/2026-10/a-better-ai-company.md"
-      ]
-    }
-  },
-  "circular": {
-    "subject": "Standing on the Shoulders of Giants, No. 1: EGPT: the New Manhattan Project",
-    "preheader": "The untold drama behind tomorrow's tech."
+  {
+   "title": "Back of the book",
+   "items": [
+    "dont-take-our-word-for-it"
+   ]
   }
+ ],
+ "pass_along": "If this issue was worth your time, pass it along. That is how the tokens are earned."
 }

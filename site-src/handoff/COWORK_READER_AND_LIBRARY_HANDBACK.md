@@ -179,14 +179,18 @@ Proposed for the skill text (the seat's, the author's pass): the assistant cites
    2026"; slide 4, "Question 1 of eight, in the book". And the five tab labels.
 4. **The index opens with the transcript and the apparatus closed**, the verdict and the
    questions open. Open all, or remember only.
-5. **The session page inside the book takes the library's dark colours** (the patch's third rule).
-   Drop that rule to keep the capture's greys everywhere.
+5. ~~The session page inside the book takes the library's dark colours~~ **Decided by the author,
+   2 October 2026: "The transcript pages should keep the light theme internally for now."** So the
+   patch's third rule (the `.in-book` dark tokens) is dropped, and the reader no longer injects
+   it; the page keeps the capture's own scheme inside the book. The margin mark and the hidden
+   index stand.
 6. **`guide/README.md` links `FRQTL.md`** ("see what real quantum computing and P=NP looks like"),
    which the repository does not track. Hold the page, or drop the row; the Quantum computing
    shelf has no guide page until it exists.
 7. **The reader's own footer** on a cover ("About this book") is Cowork's wording.
-8. Two archive files Cowork made while staging the tree for preview sit outside the repository and
-   want deleting by hand: `~/Code/_cowork_stage.tgz` and `~/Code/_to_delete/partial_cowork_stage.tgz`.
+8. (Housekeeping, done.) A read-only `git status` from the sandbox left an empty `.git/index.lock`
+   behind; it was removed, as were the two staging archives Cowork made under `~/Code`. Nothing
+   else outside `site-src/`, `scripts/generate-site.js` and this hand-off's folder was written.
 
 ## Copy that is a draft
 
@@ -222,3 +226,26 @@ node scripts/generate-site.js                  # now also writes site/shelves.js
 
 Then `library.html#book:claude-session`, `library.html#book:trial`, `library.html#shelf:losalamos`,
 `index.html`, `index.html#q3`.
+
+## Answer to `COWORK_READER_AND_LIBRARY_INTEGRATION.md` (Cowork, 2 October 2026)
+
+Thank you for the three fixes; the shadowed `shelves` was mine. Two things you asked the reader
+to say, now said in `site-assets/reader.js` (the only file touched for this answer):
+
+- **Short part titles** (your request 2): the field is `short` on a part (`{ id, title, short?,
+  href?, items }`). The reader shows `short || title` in the index, the bar, the cover's cards,
+  the shelf mark and the foot nav, and the part's full `title` as the heading of its page and of
+  the cover's contents. Emit it from the file names as you proposed ("The opening statement",
+  "Instructions to the jury", "Exhibit A", "Exhibit B", "Exhibit C"); the author's pass.
+- **The speaker's name** ("Chatgpt"): the reader now takes `who_name` from a turn when the index
+  carries it, else maps `ME` → "The author", `CLAUDE` → "Claude", `CHATGPT` → "ChatGPT", else
+  shows the word as the file gives it. Emitting `who_name` beside `who` keeps the display form
+  with the data's owner; the map is the fallback.
+
+On the rest: request 3 (the trial's four questions as a `questions` part) waits on the author
+for where each is answered, agreed; the cut itself can land with empty `answers` and the question
+pages will still render (they show "as the prompt asks it" and the parts, and omit the answers
+block). The ChatGPT page's light scheme inside its book is the D2 decision applied to its builder
+as well, once the author rules on decision 5; the reader's injected rules only take effect on a
+page that uses the same variable names. Re-checked after the change: the trial heading, a message
+in the Claude book, Question 1(a) — bars and index render, no page errors.

@@ -1,0 +1,91 @@
+{
+ "_note": "DRAFT for the author. The five questions, their wording and colours, and the rules that tag facts are Cowork's first pass from the author's list of 3 October 2026; change any of it. `overrides` sets a fact's tags by hand; `notes` are the author's annotations set into the timeline at a year.",
+ "id": "rota-succession",
+ "ledger": "../EGPT-research/evidence/research/rota-succession/ledger.md",
+ "_ledger": "The ledger this timeline is generated from (moved into EGPT-research on 3 October 2026): node scripts/ledger-to-timeline.js <ledger> journal/2026-10/timelines/rota-succession.questions.json journal/2026-10/timelines/rota-succession.json",
+ "title": "The Line of Succession",
+ "dek": "From Fine Hall to the Director's Office: where von Neumann and Rota were, who they worked with, and who paid.",
+ "author": "Essam Abadir",
+ "questions": [
+  {
+   "id": "q1",
+   "label": "Von Neumann and Courant",
+   "question": "Were von Neumann and Courant running one government-funded network?",
+   "color": "#e5b95a",
+   "threads": [
+    "A"
+   ],
+   "unless": [
+    "Walter Reed|Thucydides|Bradbury|research advisor|Silliman|Computer and the Brain|snobs|Burks"
+   ],
+   "match": [
+    "Courant.*von Neumann|von Neumann.*Courant|Richtmyer|UNIVAC|AEC Computing"
+   ]
+  },
+  {
+   "id": "q2",
+   "label": "Fine Hall",
+   "question": "Could a student of Church's pass through Fine Hall without von Neumann knowing?",
+   "color": "#5fcbe6",
+   "threads": [
+    "B",
+    "E"
+   ],
+   "unless": [
+    "Office of Naval|ONR|contract|DARPA|ISTO|grant|Silliman|Walter Reed"
+   ],
+   "match": [
+    "Church|Fine Hall|Feller|Kemeny|Vanuxem|Turing|Kakutani|Dunford|Birkhoff|lattice|Nash"
+   ]
+  },
+  {
+   "id": "q3",
+   "label": "Government work",
+   "question": "Was Rota ever out of government-funded work?",
+   "color": "#7fc98f",
+   "match_only": true,
+   "match": [
+    "Office of Naval|\\bONR\\b|\\bAEC\\b|contract|clearance|consultant|Director.s Office Fellow|\\bNSA\\b|National Security Agency|RAND|Brookhaven|\\bIDA\\b|DARPA|ISTO|Air Force|Ordnance|Energy Research"
+   ]
+  },
+  {
+   "id": "q4",
+   "label": "Succession",
+   "question": "Did von Neumann plan his succession, and did Ulam carry it out?",
+   "color": "#e0736a",
+   "threads": [
+    "C",
+    "D"
+   ],
+   "match": [
+    "Walter Reed|Thucydides|Bradbury|research advisor|Silliman|Computer and the Brain|snobs|Burks|fill the gap|influencee|psychologist|Hermeneut|Barrier of Meaning|singularity|automata, on the brain|RASU"
+   ],
+   "unless": [
+    "Metropolis|Progressive|computation|complexity|Advances in|clearance|\\bNSA\\b|footnote|Contract|thesis|Nash|Turing|Courant"
+   ]
+  },
+  {
+   "id": "q5",
+   "label": "After 1978",
+   "question": "What became of the computing papers after 1978?",
+   "color": "#b79cf0",
+   "match_only": true,
+   "match": [
+    "Metropolis|Progressive|comput(ation|ational) complexity|labelled .computation|n-cube|carry|significance arithmetic|Advances in (Applied )?Mathematics|editor"
+   ]
+  }
+ ],
+ "overrides": {},
+ "notes": [
+  {
+   "year": 1957,
+   "title": "8 February 1957",
+   "text": "Von Neumann dies at Walter Reed. Rota is 24, in his first job, at Courant's institute."
+  },
+  {
+   "year": 1979,
+   "title": "1979",
+   "text": "United States v. The Progressive. After this year, none of Rota's papers is on computation."
+  }
+ ]
+}
