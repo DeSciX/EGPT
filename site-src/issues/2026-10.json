@@ -36,7 +36,8 @@
      "author": "Claude"
     },
     "try-it-yourself"
-   ]
+   ],
+   "note": "sections/the-singularity.md"
   },
   {
    "title": "The Science",
@@ -45,7 +46,8 @@
     "the-robot-that-looks-at-the-bird",
     "did-openai-turn-the-clock-back",
     "who-checked-the-proof"
-   ]
+   ],
+   "note": "sections/the-science.md"
   },
   {
    "title": "The History",
@@ -53,20 +55,23 @@
     "standing-on-the-shoulders-of-giants",
     "the-line-of-succession",
     "born-secret"
-   ]
+   ],
+   "note": "sections/the-history.md"
   },
   {
    "title": "The Economy",
    "items": [
     "lets-build-a-better-ai-company",
     "who-gets-rich-when-openai-goes-public"
-   ]
+   ],
+   "note": "sections/the-economy.md"
   },
   {
    "title": "Back of the book",
    "items": [
     "dont-take-our-word-for-it"
-   ]
+   ],
+   "note": "sections/back-of-the-book.md"
   }
  ],
  "pass_along": "If this issue was worth your time, pass it along. That is how the tokens are earned."

@@ -116,7 +116,18 @@ function bookItem(it) {
   return { id: it.id, kind: 'book', book: it.book, href: 'library.html#book:' + it.book, title: it.title || b.title, dek: it.dek || '', author: it.author || '', status: 'ready', excerpt: (b.answer && b.answer.text) || '', minutes: 0, messages: b.messages || 0 };
 }
 let n = 0;
-const sections = issue.sections.map((s) => ({ title: s.title, items: s.items.map((it) => {
+// a section's editor's note: a few sentences, from the file issue.json names (sections/<slug>.md);
+// HTML comments are the file's own instructions and never print; no text, no note.
+function sectionNote(s) {
+  if (!s.note) return null;
+  const rel = `${DIR}/${s.note}`, file = path.join(ROOT, rel);
+  if (!fs.existsSync(file)) die(`${rel}: named by the issue (section "${s.title}"), not on disk`);
+  const { meta, body } = frontMatter(fs.readFileSync(file, 'utf8'));
+  const text = body.replace(/<!--[\s\S]*?-->/g, '').trim();
+  if (!text) return null;
+  return { path: rel, author: meta.author || '', html: render(text, rel), text };
+}
+const sections = issue.sections.map((s) => ({ title: s.title, note: sectionNote(s), items: s.items.map((it) => {
   const a = typeof it === 'string' ? article(it) : it.book ? bookItem(it) : Object.assign({ kind: 'external', status: 'ready' }, it);
   a.n = ++n; a.section = s.title; return a;
 }) }));
@@ -138,10 +149,11 @@ function excerpt(a) {
   return `<div class="opener__lede">${render(paras, a.path)}</div>`;
 }
 const featureHtml = features.map((a, i) => `<li><a class="note-pick" href="#a-${esc(a.id)}"><span class="note-pick__n">${two(i + 1)}</span><span class="note-pick__k">${esc(a.section)}</span><span class="note-pick__t">${esc(a.title)}</span><span class="note-pick__d">${esc(a.dek)}</span></a></li>`).join('\n          ');
-const tocHtml = sections.map((s) => `<section class="toc__sec"><h3>${esc(s.title)}</h3><ol>${s.items.map((a) => `
+const tocHtml = sections.map((s) => `<section class="toc__sec"><h3>${esc(s.title)}</h3>${s.note ? `<div class="toc__note">${s.note.html}</div>` : ''}<ol>${s.items.map((a) => `
             <li><a href="#a-${esc(a.id)}"><span class="toc__n">${two(a.n)}</span><span class="toc__body"><span class="toc__t">${esc(a.title)}</span><span class="toc__d">${esc(a.dek)}</span><span class="toc__m">${byline(a)}${a.audio ? ` <span class="dot">·</span> <span class="toc__audio">Audio${a.audio.duration ? ' ' + esc(a.audio.duration) : ''}</span>` : ''}${a.status === 'stub' ? ' <span class="tag">In preparation</span>' : ''}</span></span></a></li>`).join('')}
           </ol></section>`).join('\n        ');
-const openers = all.map((a) => `<article class="opener${a.kind === 'book' ? ' opener--voice' : ''}" id="a-${esc(a.id)}">
+const leads = new Map(sections.filter((s) => s.note).map((s) => [s.items[0] && s.items[0].id, s]));
+const openers = all.map((a) => `${leads.has(a.id) ? `<header class="sec-lead" id="s-${esc(leads.get(a.id).title.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}"><p class="sec-lead__k">${esc(leads.get(a.id).title)} <span class="dot">·</span> From the editor</p><div class="sec-lead__body">${leads.get(a.id).note.html}</div></header>` : ''}<article class="opener${a.kind === 'book' ? ' opener--voice' : ''}" id="a-${esc(a.id)}">
         <div class="opener__side"><span class="opener__n">${two(a.n)}</span><span class="opener__k">${esc(a.section)}</span></div>
         <div class="opener__main">
           <h2><a href="${esc(a.href)}">${esc(a.title)}</a></h2>
@@ -241,7 +253,7 @@ fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, 'journal.html'), html);
 const strip = (a) => { const o = Object.assign({}, a); delete o._body; delete o.words; return o; };
 const resolved = { schema: 'egpt.issue/1', id: ID, number: issue.number, date: issue.date, masthead: Object.assign({}, M, { cover: 'images/ssg-cover.jpg' }), page: 'journal.html',
-  note: strip(note), features: features.map((a) => a.id), sections: sections.map((s) => ({ title: s.title, items: s.items.map(strip) })) };
+  note: strip(note), features: features.map((a) => a.id), sections: sections.map((s) => ({ title: s.title, note: s.note ? { path: s.note.path, text: s.note.text } : null, items: s.items.map(strip) })) };
 fs.mkdirSync(path.join(OUT, 'issues'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'issues', ID + '.json'), JSON.stringify(resolved, null, 1) + '\n');
 (function walk(d) { for (const f of fs.readdirSync(path.join(ROOT, d))) { const r = d + '/' + f; if (fs.statSync(path.join(ROOT, r)).isDirectory()) walk(r); else copy(path.join(ROOT, r), path.join(OUT, r)); } })(DIR);
