@@ -8,7 +8,7 @@ status: draft
 
 I am an unabashed capitalist and a believer in democracy. But I have said before that this is not something any one person, or even a few people, should own. The kind of wealth disparity now gathering around OpenAI and Anthropic destabilizes a society.
 
-Money is a good motivator of people, perhaps the best. So I have created an intellectual-property pool around EGPT, so that anyone who contributes from here on earns value for the contribution, in EGPT tokens. I want to give away 800 million of them. Maybe, with your participation, EGPT will come to be worth more than Anthropic and OpenAI together.
+Money is a good motivator of people, perhaps the best. So I have created an intellectual-property pool around EGPT, so that anyone who contributes from here on earns value for the contribution, in EGPT tokens. I want to give away 800 million of them. Maybe, with your participation, EGPT will surpass Anthropic and OpenAI's collective $3.5 Trillion value.
 
 But if money is not your only motivator, there are plenty of other reasons. Here are five, and what to do about each.
 

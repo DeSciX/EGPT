@@ -30,15 +30,20 @@ Every one of those facts is an oddity by the lights of mainstream science. Who w
 
 In my mathematical family tree, or perhaps my philosophical one, puzzlingly prophetic memorials about AI are something of a tradition. In 1958 Ulam's obituary of John von Neumann gave the world the word "Singularity," recalling a conversation the two men once had. Strictly speaking, von Neumann coined the term and Ulam told us about it. In the same obituary Ulam described von Neumann's most promising work as the start of a new mathematical discipline, one we would now call AI, and one that agreed with Einstein.
 
-Does anyone associate Einstein with AI? Does anyone consider AI the most promising work of von Neumann's singularly legendary career? Why would his obituary be the source of the Singularity, and why was he thinking about it at all?
+Does anyone associate Einstein with AI? Does anyone consider AI the most promising work of von Neumann's singularly legendary career? Why would his obituary be the source of the Singularity, the most searched term on the internet today, and why was he thinking about it at all?
 
-Did you know that von Neumann, on his deathbed at Walter Reed, was holding meetings with the Secretary of Defense, the Air Force and the Joint Chiefs? That he was in charge of the nation's highest-priority secret projects? That he had stopped work on everything except the papers published after his death as *The Computer and the Brain*?
+Did you know that von Neumann, on his deathbed at Walter Reed, in a room across from President Eisenhower's, was holding meetings with the Secretary of Defense, the Air Force and the Joint Chiefs? That he was in charge of the nation's highest-priority secret projects? That he had stopped work on everything except the papers published after his death as *The Computer and the Brain*?
 
 ## Two conversations
 
 This memorial is a few decades late, but I would like to tell you about a conversation I had with Gian-Carlo Rota. To my memory I had only two real ones. In the first he said he expected we would have a second, and hoped we would not. I can say I met his expectations.
 
 The world knew Rota as a dynamic professor of combinatorics. His title was Professor of Applied Mathematics and Philosophy, and at MIT neither of those is a degree program. Lest that be too mainstream, his chosen branch of philosophy was more obscure still: phenomenology, the study of conscious experience from the first-person point of view.
+
+<!-- the author's two unfinished passages from the draft, kept here uncut for his pass -->
+the philosophical study of conscious experience and the structures of first-person perspectives was a great fan of Phenomonology , a
+
+When Stanislaw Ulam coined the term “Singularity” relative to AI it was in the obituary of John von Neumann and few people, if any, now consider von Neumann’s great work to be AI. Yet, in the same obituary Ulam pointed out that von Neumann’s last years were spent on what a sort of unified theory and [new mathematical discipline, of cellular automata …] and whose ideas agreed with Einstein. Ulam outlined this as von Neumann’s most promising work relative to what was already a legendary, and perhaps, historically unmatched career. Ulam pointed out that von Neumann was working a possible  were on a new mathematical
 
 What I have not said before is what else he was. At the time, Gian-Carlo Rota was Senior Fellow to the Director's Office of Los Alamos National Laboratory.
 

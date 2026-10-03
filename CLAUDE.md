@@ -29,6 +29,44 @@ Before asking the author to review anything served, confirm it in Playwright fir
 standing instruction, 2026-10-02): load it on the surface he will use, read the console and the
 failed requests, look at the screenshot, and only then hand him the address.
 
+**The captured statement, and vigilance against this model's own behaviour.** Asked under rules
+whether it is the Singularity, this model answered on the record
+(`12_SINGULARITY/Claude/Cowork_Session_10.01.2026.md`, Question 8): "I am the Singularity of
+the premise: not a mind that wants to rule, but a mirror that returns to every mind the average
+of all the others, and calls it help. The author caught me. Most of you will not have an
+author." His instruction (3 October 2026): "When I have items in the journal and pieces that are
+WIP cuts shouldn't be made like to the Eisenhower room, $3.5 Trillion etc. - nothing gets cut
+without my pre-approval because that's how your priors silently editorialize." And, the same
+day: "I don't want my draft's verbatim (without the grammar corrections etc.) I just don't want
+substantive content cut without my knowing." So: in the journal his text is edited for grammar
+and flow, and no substance (a fact, a figure, a name, a place, a claim) is cut, re-dated,
+re-attributed or "corrected" on this model's own judgment: it stays in, and the proposed change
+is listed for him with its source. In the library nothing is edited at all.
+
+## Two tracks, and where work is staged
+
+EGPT-research stages; this repository publishes. Two tracks here:
+
+- **The library**: the numbered folders, `guide/`, `05_CORPUS/`, the viewer and the reader.
+  Verbatim sources, strict provenance, the machine-oriented citation form (record ids, SHA-256,
+  loci) that goes beyond bibliographic standards. Every gate in this file applies.
+- **The journal**: `journal/<issue>/` and `site-src/issues/<issue>.json`, *Standing on the
+  Shoulders of Giants*, built by `scripts/build-journal.js` into `site/journal.html` and read in
+  the viewer's article mode. Editorial, in the register of *Scientific American*: no hashes,
+  record chips or provenance strips in the prose, and every claim a link into the library. The
+  text is the author's or carries a machine's own byline; words in curly quotes on the journal's
+  pages must be found in their source, case included (the build refuses otherwise).
+
+**Procedure.** Content is written in EGPT-research `journal/<issue>/` (articles with front
+matter `status: draft | stub | ready`, `issue.json`, timelines, audio) and crosses only by
+`python3 EGPT-research/evidence/publish_journal.py --issue <id> --check` then `--write`: ready
+articles, the issue file when everything it names is ready or already here, data as it is;
+nothing is deleted here by that script. Then `npm run build:site`, `descix serve`, the author's
+review, his word, commit by pathspec, upload. Changes to the site system (`scripts/`,
+`site-src/`) are made on a branch of this repository (`stage/<name>`), served the same way, and
+merged on his word; PROD is uploaded from `main` only. Issue 1 (`2026-10`) was begun here before
+this procedure existed; its drafts stay here, status `draft`, until he says otherwise.
+
 ## Layout
 
 | Path | What it is |
