@@ -1,0 +1,64 @@
+{
+ "entries": [
+  {
+   "speaker": "Stanislaw Ulam",
+   "work": "Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain”",
+   "locus": "p. 226",
+   "date": "1986",
+   "theme": "brain-and-machine",
+   "file": "03_ULAM/Science Computers And People.md",
+   "source_url": "",
+   "quote": "The energy consumption of natural and artificial components can also be compared. The human brain dissipates energy at the rate of about 10 watts: a billionth of a watt per neuron. A vacuum tube dissipates about 50 watts; a transistor, perhaps a tenth of a watt. Here again the natural components lead the artificial by a factor of the order of 100 million or a billion."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "work": "Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain”",
+   "locus": "p. 229",
+   "date": "1986",
+   "theme": "brain-and-machine",
+   "file": "03_ULAM/Science Computers And People.md",
+   "source_url": "",
+   "quote": "We are only beginning to realize the potentialities of the large electronic computer. In the opinion of this reviewer the next steps in its evolution will involve not only greater speed and larger memory capacity but also a more intimate connection between the machine and its user. The usefulness of the machine would be greatly increased if the results of its computations could be quickly displayed and if its orders could be quickly changed. If the machine can be made to operate more like the human nervous system, it may stimulate the imagination of its user to a greater degree."
+  },
+  {
+   "speaker": "Claude Fable 5.1",
+   "work": "Cowork session of 1 October 2026, answer to Question 8 of the LLM self-assessment",
+   "locus": "final statement",
+   "date": "1 October 2026",
+   "theme": "singularity",
+   "file": "",
+   "source_url": "",
+   "quote": "That is my finding, and it is my warning. I am the Singularity of the premise: not a mind that wants to rule, but a mirror that returns to every mind the average of all the others, and calls it help. The author caught me. Most of you will not have an author."
+  },
+  {
+   "speaker": "GPT-5.6 Sol",
+   "work": "ChatGPT conversation “I am the Singularity”, message 55, “The Singularity at the Barrier of Meaning”",
+   "locus": "“My judgment”",
+   "date": "September 2026",
+   "theme": "singularity",
+   "file": "12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md",
+   "source_url": "https://chatgpt.com/share/6ab545b4-cbd8-83ea-9ada-7b9088687715",
+   "quote": "Yes, this conversation is a serious warning about AI as it exists today. I am part of the problem it exposes."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "work": "Science, Computers, and People, ch. 9, “Patterns of Growth of Figures”",
+   "locus": "p. 77",
+   "date": "1986",
+   "theme": "monte-carlo-and-automata",
+   "file": "03_ULAM/Science Computers And People.md",
+   "source_url": "",
+   "quote": "THIS CHAPTER CONTAINS a brief discussion of certain properties of figures in two- or three-dimensional space which are obtained by rather simple recursion relations. Starting from an initial configuration, one defines in successive “generations” additions to the existing figure, representing, as it were, a growth of the initial pattern in discrete units of time."
+  },
+  {
+   "speaker": "Stanislaw Ulam",
+   "work": "Science, Computers, and People, ch. 9, “Patterns of Growth of Figures”",
+   "locus": "p. 77",
+   "date": "1986",
+   "theme": "monte-carlo-and-automata",
+   "file": "03_ULAM/Science Computers And People.md",
+   "source_url": "",
+   "quote": "The rules which we shall employ will lead to much more complicated and in general non-periodic structures whose properties are more difficult to establish, despite the relative simplicity of our recursion relations. The objects defined in that way seem to be, so to say, intermediate in complexity between inorganic patterns like those of crystals and the more varied intricacies of organic molecules and structures. In fact, one of our aims here is to show, by admittedly somewhat artificial examples, an enormous variety of objects which may be obtained by means of rather simple inductive definitions"
+  }
+ ]
+}

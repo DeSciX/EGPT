@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 386,
+ "count": 392,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -31,6 +31,35 @@
    ],
    "quote_sha256": "d4f938fec38d1f37042823325476865fb32590c2d2a962ab2d69993d64844cbb",
    "embed_text": "1X | 1X World Model page, 1x.tech | 2025 | a computer program that can imagine how the world evolves in response to an agent’s behavior"
+  },
+  {
+   "id": "q-claude-fable-5-1-cowork-session-of-1--9d6b5e3f",
+   "quote": "That is my finding, and it is my warning. I am the Singularity of the premise: not a mind that wants to rule, but a mirror that returns to every mind the average of all the others, and calls it help. The author caught me. Most of you will not have an author.",
+   "speaker": {
+    "name": "Claude Fable 5.1",
+    "role": "author",
+    "sort": "5.1, claude fable",
+    "as_given": "Claude Fable 5.1"
+   },
+   "source": {
+    "work": "Cowork session of 1 October 2026, answer to Question 8 of the LLM self-assessment",
+    "locus": "final statement",
+    "date": "1 October 2026",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "singularity"
+   ],
+   "collections": [
+    "two_singularities"
+   ],
+   "quote_sha256": "9d6b5e3f7b33addc69d7dab046d902e739c2c72bc6e04b3a3ddec608b421a2fd",
+   "embed_text": "Claude Fable 5.1 | Cowork session of 1 October 2026, answer to Question 8 of the LLM self-assessment | final statement | 1 October 2026 | That is my finding, and it is my warning. I am the Singularity of the premise: not a mind that wants to rule, but a mirror that returns to every mind the average of all the others, and calls it help. The author caught me. Most of you will not have an author."
   },
   {
    "id": "q-essam-abadir-egpt-lean-formalizat-55965204",
@@ -7208,6 +7237,35 @@
    "embed_text": "Robert Sokolowski | Indiscrete Thoughts, Foreword by Robert Sokolowski | pp. xv–xvi | 1997 | One of the phenomena that he develops in this book is that of “evidence.” Most people think that in mathematics truth is reached by proof, specifically by deriving theorems from axioms. Rota shows that such proof is only secondary and derivative. It is not the primary instance of truth. More basic than proof is evidence, which is the self-presentation of a given mathematical object or fact. We can know that some things are true, and we can even know that they must be true, before we have found axiomatic proofs to manifest that truth. We know more than we can prove. Rota shows that axiomatic derivations are ways in which we present mathematical objects and facts, ways in which we try to convey the evidence of the thing in question, ways in which we bring out the possibilities or virtualities of mathematical things. Proofs are valuable not because they bring us assurance that the theorem is in fact true, but because they show the power of the theorem: how the theorem can present itself and hence what it can be."
   },
   {
+   "id": "q-gpt-5-6-sol-chatgpt-conversation-5fe3fad9",
+   "quote": "Yes, this conversation is a serious warning about AI as it exists today. I am part of the problem it exposes.",
+   "speaker": {
+    "name": "GPT-5.6 Sol",
+    "role": "author",
+    "sort": "sol, gpt-5.6",
+    "as_given": "GPT-5.6 Sol"
+   },
+   "source": {
+    "work": "ChatGPT conversation “I am the Singularity”, message 55, “The Singularity at the Barrier of Meaning”",
+    "locus": "“My judgment”",
+    "date": "September 2026",
+    "file": "12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md",
+    "url": "https://chatgpt.com/share/6ab545b4-cbd8-83ea-9ada-7b9088687715"
+   },
+   "restored": "",
+   "years": [
+    2026
+   ],
+   "themes": [
+    "singularity"
+   ],
+   "collections": [
+    "two_singularities"
+   ],
+   "quote_sha256": "5fe3fad9a2e414e85f7c8ac858f5d66343cc2f3e8a050dca0e37b728580b181b",
+   "embed_text": "GPT-5.6 Sol | ChatGPT conversation “I am the Singularity”, message 55, “The Singularity at the Barrier of Meaning” | “My judgment” | September 2026 | Yes, this conversation is a serious warning about AI as it exists today. I am part of the problem it exposes."
+  },
+  {
    "id": "q-techcrunch-techcrunch-report-on-1bd588be",
    "quote": "Like Veo, it doesn’t rely on a hard-coded physics engine; instead, DeepMind says, the model teaches itself how the world works.",
    "speaker": {
@@ -7759,6 +7817,64 @@
    "embed_text": "Stanislaw Ulam | Science, Computers, and People, ch. 18 | pp. 228–229 | 1986 | Ultimately, of course, both machine and organism must have a complete code."
   },
   {
+   "id": "q-stanislaw-ulam-science-computers-an-898aa651",
+   "quote": "The energy consumption of natural and artificial components can also be compared. The human brain dissipates energy at the rate of about 10 watts: a billionth of a watt per neuron. A vacuum tube dissipates about 50 watts; a transistor, perhaps a tenth of a watt. Here again the natural components lead the artificial by a factor of the order of 100 million or a billion.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain”",
+    "locus": "p. 226",
+    "date": "1986",
+    "file": "03_ULAM/Science Computers And People.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1986
+   ],
+   "themes": [
+    "brain-and-machine"
+   ],
+   "collections": [
+    "two_singularities"
+   ],
+   "quote_sha256": "898aa651ae62ec705bf6923c0cafe970caeab8eca819a6ba1eafed3b47949128",
+   "embed_text": "Stanislaw Ulam | Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain” | p. 226 | 1986 | The energy consumption of natural and artificial components can also be compared. The human brain dissipates energy at the rate of about 10 watts: a billionth of a watt per neuron. A vacuum tube dissipates about 50 watts; a transistor, perhaps a tenth of a watt. Here again the natural components lead the artificial by a factor of the order of 100 million or a billion."
+  },
+  {
+   "id": "q-stanislaw-ulam-science-computers-an-f93d588e",
+   "quote": "We are only beginning to realize the potentialities of the large electronic computer. In the opinion of this reviewer the next steps in its evolution will involve not only greater speed and larger memory capacity but also a more intimate connection between the machine and its user. The usefulness of the machine would be greatly increased if the results of its computations could be quickly displayed and if its orders could be quickly changed. If the machine can be made to operate more like the human nervous system, it may stimulate the imagination of its user to a greater degree.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain”",
+    "locus": "p. 229",
+    "date": "1986",
+    "file": "03_ULAM/Science Computers And People.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1986
+   ],
+   "themes": [
+    "brain-and-machine"
+   ],
+   "collections": [
+    "two_singularities"
+   ],
+   "quote_sha256": "f93d588e7182a34a476327517f3cc75f972e4027f36413ebd5d6f2aa3f713f2c",
+   "embed_text": "Stanislaw Ulam | Science, Computers, and People, ch. 18, “John von Neumann on Computers and the Brain” | p. 229 | 1986 | We are only beginning to realize the potentialities of the large electronic computer. In the opinion of this reviewer the next steps in its evolution will involve not only greater speed and larger memory capacity but also a more intimate connection between the machine and its user. The usefulness of the machine would be greatly increased if the results of its computations could be quickly displayed and if its orders could be quickly changed. If the machine can be made to operate more like the human nervous system, it may stimulate the imagination of its user to a greater degree."
+  },
+  {
    "id": "q-stanislaw-ulam-science-computers-an-3c01e525",
    "quote": "The program of calculation must be prepared in advance, first in a general form. This is done by means of a flow diagram, which is then elaborated by a detailed set of instructions — a “code.” This very scheme of a flow diagram and a code is due to von Neumann, along with many other concepts now commonplace in the art of computing.",
    "speaker": {
@@ -8047,6 +8163,64 @@
    ],
    "quote_sha256": "9b221a68b03183c4fe42a81930630c36ea66198fb6f31cc016c2ba8d970dd643",
    "embed_text": "Stanislaw Ulam | Science, Computers, and People, ch. 9 | p. 78 | 1986 | Much of the work described below was performed in collaboration with Dr. J. Holladay and Robert Schrandt. We have used electronic computing machines at the Los Alamos Scientific Laboratory to produce a great number of such patterns and to survey certain properties of their morphology, both in time and space. Most of the results are empirical in nature, and so far there are very few general properties which can be obtained theoretically."
+  },
+  {
+   "id": "q-stanislaw-ulam-science-computers-an-f917c931",
+   "quote": "THIS CHAPTER CONTAINS a brief discussion of certain properties of figures in two- or three-dimensional space which are obtained by rather simple recursion relations. Starting from an initial configuration, one defines in successive “generations” additions to the existing figure, representing, as it were, a growth of the initial pattern in discrete units of time.",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Science, Computers, and People, ch. 9, “Patterns of Growth of Figures”",
+    "locus": "p. 77",
+    "date": "1986",
+    "file": "03_ULAM/Science Computers And People.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1986
+   ],
+   "themes": [
+    "monte-carlo-and-automata"
+   ],
+   "collections": [
+    "two_singularities"
+   ],
+   "quote_sha256": "f917c9313ece8ef697387678a98ca0df578cb62a63903d31cb585733b72e739a",
+   "embed_text": "Stanislaw Ulam | Science, Computers, and People, ch. 9, “Patterns of Growth of Figures” | p. 77 | 1986 | THIS CHAPTER CONTAINS a brief discussion of certain properties of figures in two- or three-dimensional space which are obtained by rather simple recursion relations. Starting from an initial configuration, one defines in successive “generations” additions to the existing figure, representing, as it were, a growth of the initial pattern in discrete units of time."
+  },
+  {
+   "id": "q-stanislaw-ulam-science-computers-an-13de2e96",
+   "quote": "The rules which we shall employ will lead to much more complicated and in general non-periodic structures whose properties are more difficult to establish, despite the relative simplicity of our recursion relations. The objects defined in that way seem to be, so to say, intermediate in complexity between inorganic patterns like those of crystals and the more varied intricacies of organic molecules and structures. In fact, one of our aims here is to show, by admittedly somewhat artificial examples, an enormous variety of objects which may be obtained by means of rather simple inductive definitions",
+   "speaker": {
+    "name": "Stanislaw Ulam",
+    "role": "author",
+    "sort": "ulam, stanislaw",
+    "as_given": "Stanislaw Ulam"
+   },
+   "source": {
+    "work": "Science, Computers, and People, ch. 9, “Patterns of Growth of Figures”",
+    "locus": "p. 77",
+    "date": "1986",
+    "file": "03_ULAM/Science Computers And People.md",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1986
+   ],
+   "themes": [
+    "monte-carlo-and-automata"
+   ],
+   "collections": [
+    "two_singularities"
+   ],
+   "quote_sha256": "13de2e961560236a29fe284b7384484006c3de95cfba54af988d640d93175e6c",
+   "embed_text": "Stanislaw Ulam | Science, Computers, and People, ch. 9, “Patterns of Growth of Figures” | p. 77 | 1986 | The rules which we shall employ will lead to much more complicated and in general non-periodic structures whose properties are more difficult to establish, despite the relative simplicity of our recursion relations. The objects defined in that way seem to be, so to say, intermediate in complexity between inorganic patterns like those of crystals and the more varied intricacies of organic molecules and structures. In fact, one of our aims here is to show, by admittedly somewhat artificial examples, an enormous variety of objects which may be obtained by means of rather simple inductive definitions"
   },
   {
    "id": "q-stanislaw-ulam-science-computers-an-206c3335",
