@@ -1,0 +1,25 @@
+In the self-deprecating, irreverent but intuitive tone of Abadir, give the deep philosophical and intuitive technical explanation of the implications. Match Abadir's approach of taking the tension and putting a determined smile on its face. Try to capture the deep importance and the tension, the stress Abadir must be under, while keeping his entertaining and irreverent approach throughout. Quote the people in the sources in their own words; the source file "notebook-llms.txt" has a quotation sheet at its end with each passage and its citation.
+
+Trace the whole story, in this order:
+
+1. The letter and the gift. To the people who got the gift from Abadir, explain the letter to the All-In Podcast, and why Abadir has spent the last two years since his patent application went under security review. Explain his unique perspective and his years grappling with the moral and legal implications of releasing his life's work: he is a JD, and the direct connection to Ulam's work has always been known to him. He has obviously known about the Atomic Energy Act of 1954 all along.
+
+2. From Rota to Abadir. Include the personal story of Abadir meeting Rota, and Rota guiding his career: the freshman who said he wanted to build Isaac Asimov's positronic brain and psychohistory, and Rota's answer, "Don't ever tell anyone you're working on AI - they'll think you're crazy. Call it applied mathematics!" Rota then pointed him to the Blueprints and handed him the Manuscript.
+
+3. From Rota to the masters, via Los Alamos. Trace the line from Rota back to Ulam, von Neumann and Einstein through Los Alamos. Ulam called Rota his "most eminent" influencee. Include the unknown and subversive history of Ulam and von Neumann as supporters of Einstein, and how Ulam explains it in his von Neumann obituary: after the war von Neumann "would express sentiments, somewhat similar to remarks reportedly made by Einstein, that the bewildering wealth of nuclear and elementary particle physics make premature any attempt to formulate a general quantum theory of fields." Explain why Essam says physics without physical things and mathematics without dependable proofs are oxymorons. Explain why he believes Einstein was a master of probability: Einstein disagreed with the metaphysics of objects being probabilities instead of facts, not with the use of probability in physics.
+
+4. The Infinity War. Cite Ulam's opinion that Gödel's theorem is a mere diagonalization: "In a sense it is a diagonalization." And Rota's reply, regarding the Singularity: "You have a higher opinion of Godel than I have."
+
+5. The irony. This work is the same subject matter as United States versus The Progressive. And Rota may have been working around Restricted Data himself, by playing a game of chance in which generations of MIT students were handed his unpublished manuscript, and one of them might do something with it.
+
+6. The Societal Darwin Award. What is the meaning behind Abadir's Societal Darwin Award, doing the dumbest thing possible in the most brilliant way, that he believes we might be headed towards by building AI without understanding how it works? How is that like the psychohistory of Asimov? Explain how Asimov's Foundation is a story about robotics and a societal Darwin Award. Note how Maxi is the incarnation of the positronic brain and Dee Sigh X is the psychohistory. What does it mean to understand something? The name is not the thing itself.
+
+7. Factoring and cryptography. Explain why P versus NP does not cover factorization, because factoring is "NP adjacent": Abadir used Rota's Entropy Theorem to show that factoring numbers has a thermodynamic cost that cannot be broken, just like Maxwell's demon, and so cryptography is safe.
+
+8. The tension. What is the tension in his motivations between wanting to create a system that rewards the innovators and lures them to cutting-edge science, versus the potential harm in publicly releasing his work?
+
+9. Weinstein and the All-In crew. Why was Weinstein's appearance on All-In fortuitous, giving Abadir an avenue to reach out, release and a window, by relying on public and historical primary sources? How does he believe the All-In crew can help? His desire for David Sacks to be on the call is in relation to Sacks's position in the current administration as White House Special Advisor for AI and Crypto.
+
+10. Wrap up. Close with why Abadir is choosing not to release Maxi, but is telling the world to avoid its Darwin Award now; and how, with his letter and this history, he follows the same path Rota used of seeding the public record, so these ideas can slowly trickle into the public the same way Weinstein says they did the first time, and it might have saved us from destroying ourselves.
+
+Pronunciation guide: say "P versus NP" instead of "P vs NP"; "Dee Sigh X" for DeSciX; "fractal" instead of FRAQTL and "fractal" instead of FRQTL; "flops" instead of "FLOPS"; "Essahm Aba-deer" instead of "Essam Abadir"; "ee-nee-ack" instead of ENIAC; "ed-vac" instead of EDVAC; "is" instead of "IS". For logical operators say "and, or, and not" instead of "AND, OR, and NOT"; never spell them out.

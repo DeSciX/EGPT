@@ -1,0 +1,55 @@
+{
+  "title": "Standing on the Shoulders of Giants — The All-In Letter: the gift, the Darwin Award and the record",
+  "episode": "2026-10-all-in-letter",
+  "header": "Source package for one episode of Standing on the Shoulders of Giants (SSG), from the EGPT-Evidence collection (github.com/eabadir/EGPT-Evidence). Every file below is copied verbatim from the collection; its path is printed above it. The quotation sheet at the end gives each quoted passage with its citation.\n\nWhere each part of the story is in this package:\n\n- The letter and the gift: 07_LETTERS/all-in-letter.md (the letter to Chamath, Jason, Sacks and Friedberg) and 07_LETTERS/all-in-update-letter-decision-to-publish.md (the update: the decision to publish, the risks weighed, what is not claimed). The patent application, its filing (6 November 2024), its publication hold for security review and its publication (7 May 2026): 11_PATENT/README.md, which also states that the January 2025 letter offering the token gift concerns that application and is not reproduced in the collection.\n- Rota and Abadir: 00_OUTPUTS/EGPT_Backstory.md, Appendix II (the positronic brain and psychohistory, 'Call it applied mathematics!', the Blueprints and the Manuscript).\n- Rota to the masters via Los Alamos: 04_ROTA/The_Barrier_of_Meaning_Rota.md; 07_LETTERS/all-in-letter.md; the quotation sheet (Ulam and Rota's 1974 conversation; Ulam's 1958 obituary of von Neumann). The oxymorons and Einstein as a master of probability: 00_OUTPUTS/EGPT_Backstory.md, opening and 'Wrong physics, wrong math'.\n- The Infinity War, Gödel as a diagonalization, Rota's reply: the quotation sheet (Ulam and Rota discuss von Neumann, Gainesville, January 1974).\n- United States v. The Progressive and Restricted Data: 01_TRIAL/EXHIBIT_A_report.md (the case, the Atomic Energy Act, and 'The threshold that was never crossed' on Rota circulating the Manuscript to MIT students); the quotation sheet (Weinstein on All-In, Morland, the Act's definition of Restricted Data).\n- The Societal Darwin Award, Asimov, understanding, the barrier of meaning: 00_OUTPUTS/EGPT_Backstory.md ('Is it a good idea to build a new consciousness...'); 12_SINGULARITY/ChatGPT_Logs/ChatGPT55_Reflection_On_Singularity.md (a machine's own reflection on Asimov's laws, psychohistory and Ulam's singularity); guide/avert-the-singularity.md.\n- Maxi and DeSciX: 13_MAXI/README.md, 13_MAXI/bedtime_stories/Maxi_Origin.md; 14_COURANT_GROUP/README.md; guide/make-money.md.\n- Factoring, Rota's Entropy Theorem and cryptography: 10_PAPERS/AddressMap_And_Crypto/Structural_Security_Of_Crypto_When_PeqNP.tex; 07_LETTERS/all-in-update-letter-decision-to-publish.md ('Encryption'); 04_ROTA/entropy_theorem/RET_Excerpt.tex.\n- Weinstein on All-In and the pieces in the public record: the quotation sheet (All-In Podcast, 26 August 2026); guide/government-science.md.",
+  "files": [
+    { "path": "07_LETTERS/all-in-letter.md", "includeFile": true, "note": "the letter to the All-In hosts" },
+    { "path": "07_LETTERS/all-in-update-letter-decision-to-publish.md", "includeFile": true, "note": "the update: the decision to publish, risks weighed, what is not claimed" },
+    { "path": "11_PATENT/README.md", "includeFile": true, "note": "the patent application, its security-review hold and publication" },
+    { "path": "00_OUTPUTS/EGPT_Backstory.md", "includeFile": true, "note": "the author's backstory: oxymorons, the Infinity War, meeting Rota, the Darwin Award" },
+    { "path": "04_ROTA/The_Barrier_of_Meaning_Rota.md", "includeFile": true, "note": "Rota's memorial address for Ulam, Los Alamos 1985" },
+    { "path": "01_TRIAL/EXHIBIT_A_report.md", "includeFile": true, "note": "the Los Alamos, computation and Rota report: Restricted Data, The Progressive, the Manuscript" },
+    { "path": "07_LETTERS/realists-vs-morons-quotes.md", "includeFile": true, "note": "Team Reality vs. Team Oxymorons, verified quotation sheet" },
+    { "path": "12_SINGULARITY/ChatGPT_Logs/ChatGPT55_Reflection_On_Singularity.md", "includeFile": true, "note": "a machine's reflection on Asimov, psychohistory and Ulam's singularity" },
+    { "path": "guide/avert-the-singularity.md", "includeFile": true, "note": "guide page: averting the Singularity" },
+    { "path": "guide/government-science.md", "includeFile": true, "note": "guide page: government science and secrecy" },
+    { "path": "guide/make-money.md", "includeFile": true, "note": "guide page: DeSciX and rewarding contributors" },
+    { "path": "13_MAXI/README.md", "includeFile": true, "note": "Maxi" },
+    { "path": "13_MAXI/bedtime_stories/Maxi_Origin.md", "includeFile": true, "note": "Maxi's origin story, named after Maxwell's demon" },
+    { "path": "14_COURANT_GROUP/README.md", "includeFile": true, "note": "the Courant Group and DeSciX" },
+    { "path": "10_PAPERS/AddressMap_And_Crypto/Structural_Security_Of_Crypto_When_PeqNP.tex", "includeFile": true, "note": "why cryptography stays secure when P = NP" },
+    { "path": "04_ROTA/entropy_theorem/RET_Excerpt.tex", "includeFile": true, "note": "Rota's Entropy Theorem, the author's statement" }
+  ],
+  "corpus": {
+    "speakers": ["Eric Weinstein"],
+    "ids": [
+      "q-stanislaw-ulam-ulam-and-rota-discus-d87c6265",
+      "q-gian-carlo-rota-ulam-and-rota-discus-ce27cb40",
+      "q-stanislaw-ulam-ulam-and-rota-discus-64e3c1e1",
+      "q-stanislaw-ulam-john-von-neumann-190-a3511ae4",
+      "q-stanislaw-ulam-john-von-neumann-190-8c84d278",
+      "q-stanislaw-ulam-s-ulam-john-von-neum-59bd1841",
+      "q-gian-carlo-rota-the-barrier-of-meani-bddeb01f",
+      "q-gian-carlo-rota-the-barrier-of-meani-b33a4470",
+      "q-stanislaw-ulam-quoted-in-gian-carlo-4c8e8259",
+      "q-stanislaw-ulam-quoted-in-gian-carlo-7198a6d1",
+      "q-stanislaw-ulam-quoted-in-gian-carlo-11484546",
+      "q-gian-carlo-rota-mathematics-philosop-63496d51",
+      "q-gian-carlo-rota-mathematics-philosop-91c4edf4",
+      "q-gian-carlo-rota-indiscrete-thoughts--3c795ac9",
+      "q-gian-carlo-rota-indiscrete-thoughts--6ace9a29",
+      "q-gian-carlo-rota-introduction-to-prob-11b215bb",
+      "q-f-faltin-n-metropo-a-boolean-analysis-o-31f8d66e",
+      "q-albert-einstein-letter-to-michele-be-9a8096c7",
+      "q-albert-einstein-letter-to-max-born-7-2712552f",
+      "q-albert-einstein-letter-to-max-born-r-1c1eb5e4",
+      "q-united-states-cong-atomic-energy-act-of-82e09ba3",
+      "q-howard-morland-howard-morland-on-th-d25f1fdd",
+      "q-mario-carneiro-lean-zulip-program-v-5ff88ec9",
+      "q-essam-abadir-ret-excerpt-latex-so-a64d6dd0"
+    ]
+  },
+  "own_words": [
+    "NP adjacent"
+  ]
+}
