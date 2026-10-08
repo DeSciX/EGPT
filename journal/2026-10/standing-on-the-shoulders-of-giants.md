@@ -38,14 +38,38 @@ Did you know that von Neumann, on his deathbed at Walter Reed, in a room across 
 
 This memorial is a few decades late, but I would like to tell you about a conversation I had with Gian-Carlo Rota. To my memory I had only two real ones. In the first he said he expected we would have a second, and hoped we would not. I can say I met his expectations.
 
-The world knew Rota as a dynamic professor of combinatorics. His title was Professor of Applied Mathematics and Philosophy, and at MIT neither of those is a degree program. Lest that be too mainstream, his chosen branch of philosophy was more obscure still: phenomenology, the study of conscious experience from the first-person point of view.
+The world knew Rota as a dynamic professor of combinatorics. His title was Professor of Applied Mathematics and Philosophy, and at MIT neither of those is a degree program. Lest that be too mainstream, his chosen branch of philosophy was more obscure still: phenomenology, the study of conscious experience from the first-person point of view. 
 
-<!-- the author's two unfinished passages from the draft, kept here uncut for his pass -->
-the philosophical study of conscious experience and the structures of first-person perspectives was a great fan of Phenomonology , a
+Like the key needs the notion of a lock and protecting property to understand the key as filling a function, so does Rota need to his secret government CV to understand his role in history - [The Line of Succession](./the-line-of-succession.md) strongly suggests he was hand picked by John von Neumann to oversee US government's secret science and carry forward von Neumann's unfinished magnum opus unifying all of science and AI. At that time I met Rota he was the highest science advisor across the programs of Los Alamos National Labs which, under his predecessor, Stanislaw Ulam, had become focused on super-computing fractal like non-linear dynamics that would result cellular automata like Conway's Game of Life. Let's just say it was minding bending AI and physics for the military industrial complex.
 
-When Stanislaw Ulam coined the term “Singularity” relative to AI it was in the obituary of John von Neumann and few people, if any, now consider von Neumann’s great work to be AI. Yet, in the same obituary Ulam pointed out that von Neumann’s last years were spent on what a sort of unified theory and [new mathematical discipline, of cellular automata …] and whose ideas agreed with Einstein. Ulam outlined this as von Neumann’s most promising work relative to what was already a legendary, and perhaps, historically unmatched career. Ulam pointed out that von Neumann was working a possible  were on a new mathematical
 
-What I have not said before is what else he was. At the time, Gian-Carlo Rota was Senior Fellow to the Director's Office of Los Alamos National Laboratory.
+### The Room Where It Happend: The potential to be the worst student in the history of the MIT mathematics department
+In 1991, as a sophomore at MIT, I walked into the office of Gian-Carlo Rota an Italian man who reminded me my father on my father's best days. Rota reeked erudition and spoke while giving you a wry smile in a way that you knew every word was meant to poke fun at you. You knew that he would found everything greatly amusing, that he thought he might be better than you, and that it would annoy you I 
+
+To compress what felt like an hour-long conversation int a few salient exchanges you need to know that in 1991 I was fresh off academic probation after my freshman year - this is no small acomplishment when freshman year was pass/fail. I was a great fan of the author Isaac Asimov and his stories of Robot laws, positronic brains, and the societal dark age of ignorance that the science of psychohistory could avert.
+
+From my perspective I saw the age of AI coming and I wanted to be a part of it.However, given my less than stellar academic record I needed "special permission" to take more classes - I would need a professor to go to bat for me. My advisor didn't really know what to do with a kid on the verge of failing out of MIt and wanted to study science fiction ... so he sent me to Rota. I suspect my he also thought this would be spectacularly amusing.
+
+> Rota: Ahh, Mr. Abadir - of my many and storied accomplishments in this department this might be the most unique yet. Your advisor tells me I am the first mathematics professor to have seen you before the end of a semester. It's my understanding you want to study AI?  
+
+>>Me: um ... yes.
+
+> Rota: Let me put you at ease - I'm not in the habit of standing between a student and a desire to pursue knowledge however hazardous it might be to my reputation with my colleagues. But a word of advice if I might, don't ever call it AI, people will think you're crazy. Call it Applied Mathematics!
+
+In all honesty at the time nothing sounded less like what I wanted to do than applied mathematics. Part of the reason I stopped going to the advanced math and physics classes in the first place was that those students invariably stopped sleeping, and more importantly showering, after the first week of class. I quite literraly couldn't sit through the classes.
+
+>> Me: I really don't want to waste your time and I'm incredibly grateful you agreed to meet with me, but I maybe I'm not in the right place. 
+
+>Rota: Well we've already established that you have the potential to be the worst student in the history of the MIT mathematics department. As luck would have it my program has plenty of room in it, I believe you'd be the only person in it! It looks like neither of us has anything to lose.
+
+>Rota: Let's focus on the positives tell me you think did well.
+
+>>Me: I'm not entirely sure. I think I visualize transforms well, I don't write symbols very well so visualize is all I have. 
+
+>Rota: Ah you are a specialist in the highly obscure skill of mathematical guessing! I'm not in the habit of teaching prophets and wouldn't know how to even if I wanted.
+>if you re going to study AI, why are you here instead of the CS department?
+
+>Me: I took Minsky's class for a day and don't think heuristics are going to work.
 
 ## For the record
 
