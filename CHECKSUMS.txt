@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 944 files, 162118442 bytes.
+# 944 files, 162115351 bytes.
 e7154bc1336da91d0c6dc2efc221bb87657e2a22fdb3b209c2796d8bc5d080a1  .claude-plugin/marketplace.json
 c4eb950ebed70bb8c1d28eb1bb4179e0218f0de346ca5c4fa5cac4bb59ba96e4  .descix-marketplace-source
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
@@ -11,7 +11,7 @@ dabe8dc137684fdc9fe48c72bd98a6b7b24d66168c20eab878f6e8d64a664c45  .descix/rollba
 332807933b94a3b6fad9d5502bdf5a6b86e893d4ea4d16ec5d1b5847e3149d93  .gitattributes
 378628be42df87b8b81f1df3f049d00e23912b81ba9f8bc9a461c74928933a62  .github/workflows/pages.yml
 04c6dd344d13a90c964863014a36b111b4a1908e237c988a3a941e44357637c1  .github/workflows/render.yml
-52ac14fe06585a17181937e2a3b3820451875b2287389d39174dd89b86b3cf69  .gitignore
+d0f06401ea964ed520ce3279ea8bcce381aea427f1ccb4774838fe8197ad3d42  .gitignore
 bfa7a14296c5fb9d314b217546cae74e639d04e7a53b6facf2cea33094154b20  00_OUTPUTS/AI_Agents_Meaning_and_Obedient_Risk_Summary.docx
 4a4672eddb5d38f9b50e66ce86b35781fd4ac98ef201ad6522cf694cc8e949c2  00_OUTPUTS/Departure_Not_Complement_Quote_Pack.md
 e01996399ad1d12648ba1cff4159beeb98d841e44197b841cd1c3e8070c383ff  00_OUTPUTS/EGPT_Backstory.md
@@ -716,7 +716,7 @@ ad18eed8d0cedc57e0fb262330571341de4b14c92f72386f83624afde6234c75  journal/2026-1
 db30fff07f995a8753abeb90b6f2f91c2b88b3a21bcf43372d1f56bef224487f  journal/2026-10/sections/the-history.md
 3b57b7cf637e23f9d9b79b15d98ecb3a1e292e8987ef39024317e59e0365bdb3  journal/2026-10/sections/the-science.md
 98aebd88646c290e346dbd797e103c21851651f03ccb97a450162f98d8097933  journal/2026-10/sections/the-singularity.md
-556c041d2a99e348149ea9c42a2006ea533fada763027cb67eecd8b094d1eb07  journal/2026-10/standing-on-the-shoulders-of-giants.md
+871100b10100eb7be8e3e33bf50ff0e11f22f3b10508a2915c717657a19d8b1b  journal/2026-10/standing-on-the-shoulders-of-giants.md
 df372753c9a08a68fe0837756573286eddeed154cf0f38236af2668fe482f1dc  journal/2026-10/the-line-of-succession.md
 9b08ba44640c5cf7bedc13ebe7c058b947dfc56b43cfc50cface5aa82ea5a6e8  journal/2026-10/the-robot-that-looks-at-the-bird.md
 8c1ea4a3373c289ea9e4c02849da7d5805bc066d39b2803a3cdfd2543b39c7d2  journal/2026-10/timelines/rota-succession.json
