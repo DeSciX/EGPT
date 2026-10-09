@@ -1,7 +1,7 @@
 # 08_LEAN — the Lean source
 
 This folder mirrors the `Lean/` directory of the public repository
-**github.com/eabadir/EGPT-Lean**, branch **`lean-archive-proofs`**, at commit
+**github.com/DeSciX/egpt-lean**, branch **`lean-archive-proofs`**, at commit
 **`6a2769f8bb94c851070c6cf03b0e90da7c0917f2`** (3 September 2026). Every file is byte-identical
 to that commit; `CHECKSUMS.txt` at the root of this collection carries the hash of each.
 
@@ -26,7 +26,7 @@ chronology cites.
 The standard is the kernel, not this folder. To check any claim about a theorem, build it:
 
 ```
-git clone -b lean-archive-proofs https://github.com/eabadir/EGPT-Lean.git
+git clone -b lean-archive-proofs https://github.com/DeSciX/egpt-lean.git
 cd EGPT-Lean/Lean && lake build
 ```
 

@@ -134,7 +134,7 @@ publish. The patent correspondence is not reproduced; the application it concern
 US 2026/0127327 A1 and is cited in `URLS.md`.
 
 **[`08_LEAN/`](../08_LEAN/)** — the Lean source, mirrored byte-for-byte from the public repository
-eabadir/EGPT-Lean, branch `lean-archive-proofs`, at a pinned commit named in its README. `EGPT/` is
+DeSciX/egpt-lean, branch `lean-archive-proofs`, at a pinned commit named in its README. `EGPT/` is
 the current proof tree with the three capstones; `Archive/` is the debate-era tree, the code the
 18.313x debate was about; `EGPT/InformationTheory/Basic.lean` declares `IIDParticleSource`, the
 i.i.d. coin stream the whole formalization is built from. The standard here is the kernel: clone

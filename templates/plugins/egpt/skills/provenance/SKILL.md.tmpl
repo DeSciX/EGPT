@@ -66,7 +66,7 @@ shasum -a 256 -c CHECKSUMS.txt            # every held file, in a clone of the r
 printf '%s' '<the quote field>' | shasum -a 256   # compare with quote_sha256
 ```
 
-The repository is `https://github.com/eabadir/EGPT-Evidence`. `CORPUS_README.md` states how
+The repository is `https://github.com/DeSciX/EGPT`. `CORPUS_README.md` states how
 `quote_sha256` is computed; quote that passage when a reader's hash differs, rather than
 explaining it from memory.
 

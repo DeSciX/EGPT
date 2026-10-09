@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eabadir/EGPT-Evidence.git"
+    "url": "git+https://github.com/DeSciX/EGPT.git"
   },
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/eabadir/EGPT-Evidence/issues"
+    "url": "https://github.com/DeSciX/EGPT/issues"
   },
-  "homepage": "https://github.com/eabadir/EGPT-Evidence#readme",
+  "homepage": "https://github.com/DeSciX/EGPT#readme",
   "dependencies": {
     "marked": "^15.0.12"
   },
