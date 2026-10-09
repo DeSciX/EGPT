@@ -26,7 +26,8 @@ function emitShare(app, sh, srcDir, out) {
   const from = path.join(srcDir, app, 'share');
   for (const f of Object.values(ASSETS)) if (!fs.existsSync(path.join(from, f))) throw new Error(`${app}: share asset not rendered: ${path.join(from, f)} (run scripts/build-share-assets.js ${app})`);
   const og = fs.statSync(path.join(from, ASSETS.og_image)).size;
-  if (og >= 1024 * 1024) throw new Error(`${app}: share image is ${og} bytes; it must be under 1 MB`);
+  // 1 MB per the canonical app-developer runbook (daita docs, app-sdk/app-developer-runbook.md: og_image "under 1 MB"); the egpt-frqtl validator cites the same literal.
+  if (og >= 1000000) throw new Error(`${app}: share image is ${og} bytes; it must be under 1 MB`);
   fs.mkdirSync(path.join(out, BUNDLE_DIR), { recursive: true });
   for (const f of Object.values(ASSETS)) fs.copyFileSync(path.join(from, f), path.join(out, BUNDLE_DIR, f));
   const json = { title: sh.title, description: sh.description, icon: `${BUNDLE_DIR}/${ASSETS.icon}`, og_image: `${BUNDLE_DIR}/${ASSETS.og_image}`,
