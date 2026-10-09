@@ -18,7 +18,7 @@
  * - every images/<name> the page uses must come from the template commit or the spec.
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
  * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
- * Pure Node, no dependencies.
+ * Pure Node; the one dependency is @descix/app-sdk, for the generated app-side bridge.
  */
 'use strict';
 const fs = require('fs');
@@ -320,14 +320,19 @@ function forwarder() {
   if (f.query_to) return `<script>if(location.search)location.replace(${JSON.stringify(f.query_to)}+location.search+location.hash);</script>`;
   die('scripts.forward needs hash_to or query_to');
 }
+// "sdk": true puts the generated app-side bridge on the page. Its bytes come from the ONE OWNER of
+// that path, @descix/app-sdk's exported SITE_SCAFFOLD_BRIDGE (the pinned devDependency), never a
+// path into another checkout.
 let sdk = null;
-if (spec.scripts.sdk_from) {
-  const p = path.resolve(ROOT, spec.scripts.sdk_from);
-  if (!fs.existsSync(p)) die(`SDK file not found: ${p}`);
+if (spec.scripts.sdk) {
+  let p;
+  try { ({ SITE_SCAFFOLD_BRIDGE: p } = require('@descix/app-sdk/scaffold')); }
+  catch (e) { die(`@descix/app-sdk is not installed (npm install): ${e.message}`); }
+  if (!p || !fs.existsSync(p)) die(`@descix/app-sdk exports no SITE_SCAFFOLD_BRIDGE file: ${p}`);
   sdk = { name: path.basename(p), data: fs.readFileSync(p) };
   if (!sdk.data.toString('utf8').includes('GENERATED FILE')) die(`${p} is not the generated DeSciXAppSDK.js`);
 }
-if (spec.scripts.codesite && !sdk) die('scripts.codesite needs scripts.sdk_from: the CodeSite call goes through the SDK');
+if (spec.scripts.codesite && !sdk) die('scripts.codesite needs scripts.sdk: the CodeSite call goes through the SDK');
 // the template's own inline scripts (its form and wallet mock), when the spec keeps its sections verbatim
 const templateScripts = spec.scripts.template_scripts ? [...body.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1].trim()) : [];
 if (spec.scripts.template_scripts && !templateScripts.length) die('template_scripts requested but the template has no inline script');

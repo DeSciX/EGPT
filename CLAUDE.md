@@ -151,9 +151,9 @@ exists here (`lib/workspace-config.js:354-378`), and `config init` alone rewrite
 parent Unkamon workspace still maps `egpt` to EGPT-research; re-pointing it is the author's act, and
 that mapping is stale the moment this repository's KBs land. `app init -a egpt --kb <name>` from
 this root, after login, is what maps the app into this file. This workspace also maps the sibling
-app `egpt-courantgroup` (localPath `../../egpt-courantgroup`, its own repository
+app `egpt-courantgroup` (localPath `../egpt-courantgroup`, its own repository
 DeSciX/egpt-courantgroup): created 2026-09-28 with `app init -a courantgroup -c egpt -s courantgroup
--p ../../egpt-courantgroup` from this root, on the author's word (record Unkamon 9bf6bc6). A
+-p ../egpt-courantgroup` from this root, on the author's word (record Unkamon 9bf6bc6). A
 localPath must be workspace-relative; an absolute one is refused before anything is written
 (measured). The create leg writes app records and the default KB only, no chain, token or account
 (the platform party's citation, `appInit.js:50-62`, spot-checked). `site upload -a

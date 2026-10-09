@@ -122,7 +122,7 @@
     "forward": {
       "query_to": "app.html"
     },
-    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js",
+    "sdk": true,
     "modules": [
       "app-assets/host-view.js"
     ],

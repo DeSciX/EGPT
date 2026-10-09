@@ -48,7 +48,7 @@
   "links": [],
   "scripts": {
     "codesite": true,
-    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js",
+    "sdk": true,
     "extra": [
       "login.js",
       "quests.js"

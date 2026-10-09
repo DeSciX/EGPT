@@ -163,7 +163,7 @@
     "forward": {
       "hash_to": "library.html"
     },
-    "sdk_from": "../apps/daita-splitviewdemo/site/DeSciXAppSDK.js",
+    "sdk": true,
     "extra": [
       "egpt/teleprompter.js"
     ]

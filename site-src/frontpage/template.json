@@ -1,6 +1,6 @@
 {
   "_purpose": "The front-page template is Cowork's Courant Group page, read from the egpt-courantgroup checkout at the pinned commit (never from its working tree, never copied here). Every app's front page is assembled from it by scripts/build-frontpage.js.",
-  "repo": "../../egpt-courantgroup",
+  "repo": "../egpt-courantgroup",
   "commit": "ee3fdb4",
   "page": "site/index.html"
 }

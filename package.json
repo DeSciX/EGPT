@@ -18,6 +18,7 @@
     "marked": "^15.0.12"
   },
   "devDependencies": {
+    "@descix/app-sdk": "0.2.1",
     "@descix/cli": "^1.0.18",
     "js-beautify": "^2.0.3"
   },
