@@ -150,15 +150,10 @@ exists here (`lib/workspace-config.js:354-378`), and `config init` alone rewrite
 (`lib/commands/config.js:96-99`). Never `config init` from a directory without its own file. The
 parent Unkamon workspace still maps `egpt` to EGPT-research; re-pointing it is the author's act, and
 that mapping is stale the moment this repository's KBs land. `app init -a egpt --kb <name>` from
-this root, after login, is what maps the app into this file. This workspace also maps the sibling
-app `egpt-courantgroup` (localPath `../egpt-courantgroup`, its own repository
-DeSciX/egpt-courantgroup): created 2026-09-28 with `app init -a courantgroup -c egpt -s courantgroup
--p ../egpt-courantgroup` from this root, on the author's word (record Unkamon 9bf6bc6). A
-localPath must be workspace-relative; an absolute one is refused before anything is written
-(measured). The create leg writes app records and the default KB only, no chain, token or account
-(the platform party's citation, `appInit.js:50-62`, spot-checked). `site upload -a
-egpt-courantgroup` reads the sibling's own `.descix/manifests/site.json`; its stub site (one
-page) was uploaded and served-equals-built at `https://descix.net/prod/egpt-courantgroup/site/index.html`.
+this root, after login, is what maps the app into this file. The sibling app `egpt-courantgroup` is
+NOT mapped here: it uploads from its own repository and workspace (DeSciX/egpt-courantgroup); this
+repository only reads its template checkout at `../egpt-courantgroup` (`site-src/frontpage/template.json`,
+pinned commit).
 
 **Re-init, by plane** (the author's ruling, record 73b7aab): the app's vectors are purged and
 refilled by the owner with `kb corpus sync --rebuild` on each KB this repository defines; the site
