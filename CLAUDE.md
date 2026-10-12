@@ -152,8 +152,10 @@ parent Unkamon workspace still maps `egpt` to EGPT-research; re-pointing it is t
 that mapping is stale the moment this repository's KBs land. `app init -a egpt --kb <name>` from
 this root, after login, is what maps the app into this file. The sibling app `egpt-courantgroup` is
 NOT mapped here: it uploads from its own repository and workspace (DeSciX/egpt-courantgroup); this
-repository only reads its template checkout at `../egpt-courantgroup` (`site-src/frontpage/template.json`,
-pinned commit).
+repository reads the template from that checkout at `../egpt-courantgroup` (`template/` at the commit
+pinned in `site-src/frontpage/template.json`) and generates that app's front page from
+`site-src/frontpage/egpt-courantgroup.json` (`node scripts/build-frontpage.js egpt-courantgroup --out
+../egpt-courantgroup/site`); the page is committed and uploaded there.
 
 **Re-init, by plane** (the author's ruling, record 73b7aab): the app's vectors are purged and
 refilled by the owner with `kb corpus sync --rebuild` on each KB this repository defines; the site

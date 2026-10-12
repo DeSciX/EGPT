@@ -49,7 +49,9 @@ const gitT = (...a) => execFileSync('git', a, { cwd: TREPO, maxBuffer: 1 << 28 }
 let tplSha;
 try { tplSha = gitT('rev-parse', '--verify', '--short', `${tpl.commit}^{commit}`).toString().trim(); }
 catch (e) { die(`template commit ${tpl.commit} is not in ${TREPO}`); }
-const template = gitT('show', `${tpl.commit}:${tpl.page}`).toString('utf8');
+let template;
+try { template = gitT('show', `${tpl.commit}:${tpl.page}`).toString('utf8'); }
+catch (e) { die(`template page ${tpl.page} is not in template commit ${tplSha} (${tpl.repo}); template.json names the page and the commit together`); }
 const templateImage = name => gitT('show', `${tpl.commit}:${path.posix.join(path.posix.dirname(tpl.page), 'images', name)}`);
 // The roster is the one owner of the tiles; the template owns the section's shape and one empty slot.
 {
