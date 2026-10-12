@@ -1,0 +1,5 @@
+{
+  "_purpose": "The front-page tiles are the showcase roster, read from the egpt-frqtl checkout's SERVED copy (site/pub/<upstream_sha>/ide/registry/exhibits.js, upstream_sha from .descix/site-provenance.json; never FRAQTL's tree, never copied here) by scripts/build-frontpage.js renderExhibits, only when a page carries a data-exhibits slot. The tiles link that app's GYM at the origin its spec declares as self_host. A row's tile still lives in exhibits/<sceneKey>.png beside its <sceneKey>.provenance.json, present iff the row declares a still.",
+  "app": "egpt-frqtl",
+  "repo": "../egpt-frqtl"
+}

@@ -15,7 +15,12 @@
  *   cannot be on the page); a <div data-cut-src …> is filled from the held file itself and
  *   gated block by block (see renderCut);
  * - every href to library.html#<path> must name a file tracked at HEAD (no dead deep links);
- * - every images/<name> the page uses must come from the template commit or the spec.
+ * - every images/<name> the page uses must come from the template commit or the spec, or be a tile
+ *   still from site-src/frontpage/exhibits/;
+ * - the template owns zero tiles: it must carry a <div … data-exhibits></div> slot and no hand
+ *   <a class="tile"; every slot is filled from the showcase roster (renderExhibits), and a page
+ *   whose slot does not end up holding one tile per roster row is a build failure.
+ * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
  * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
  * Pure Node; the one dependency is @descix/app-sdk, for the generated app-side bridge.
@@ -46,6 +51,14 @@ try { tplSha = gitT('rev-parse', '--verify', '--short', `${tpl.commit}^{commit}`
 catch (e) { die(`template commit ${tpl.commit} is not in ${TREPO}`); }
 const template = gitT('show', `${tpl.commit}:${tpl.page}`).toString('utf8');
 const templateImage = name => gitT('show', `${tpl.commit}:${path.posix.join(path.posix.dirname(tpl.page), 'images', name)}`);
+// The roster is the one owner of the tiles; the template owns the section's shape and one empty slot.
+{
+  const handTiles = (template.match(/<a\b[^>]*\bclass="tile[\s"]/g) || []).length;
+  const slots = (template.match(/<[a-z][a-z0-9]*\b[^>]*\bdata-exhibits\b[^>]*>/g) || []).length;
+  if (handTiles || !slots) {
+    die(`template ${tplSha} (${tpl.repo}:${tpl.page}) ${[handTiles ? `carries ${handTiles} hand-written <a class="tile"` : '', slots ? '' : 'declares no data-exhibits slot'].filter(Boolean).join(' and ')}; the roster is the one owner of tiles — bump template.json to a commit that has the slot and no tiles`);
+  }
+}
 
 const bodyAt = template.indexOf('<body');
 if (bodyAt < 0) die('template has no <body>');
@@ -248,8 +261,75 @@ function renderShelves(html, file) {
   });
 }
 
+// ---------------------------------------------------------------- the showcase roster: the one owner of the tiles
+// site-src/frontpage/exhibits.json names the app that serves the roster and its checkout; the rows are
+// that checkout's SERVED copy, <repo>/site/pub/<upstream_sha>/ide/registry/exhibits.js, upstream_sha from
+// <repo>/.descix/site-provenance.json. Read on the first data-exhibits slot only: a page without one never
+// touches the app. The rows are ferried as exported (EXHIBITS) and a still is named by the roster's own
+// sceneKey; nothing here re-enumerates a row's fields.
+const STILLS = path.join(SRC, 'exhibits');
+let roster = null;
+function loadRoster() {
+  if (roster) return roster;
+  const cfgPath = path.join(SRC, 'exhibits.json');
+  if (!fs.existsSync(cfgPath)) die(`data-exhibits slot, but ${cfgPath} does not exist`);
+  const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8'));
+  const repo = path.resolve(ROOT, cfg.repo);
+  const prov = path.join(repo, '.descix', 'site-provenance.json');
+  if (!fs.existsSync(prov)) die(`roster unreadable: ${prov} does not exist (exhibits.json repo ${cfg.repo} is not a refreshed ${cfg.app} checkout)`);
+  const up = JSON.parse(fs.readFileSync(prov, 'utf8')).upstream_sha;
+  if (!/^[0-9a-f]{8}$/.test(up || '')) die(`roster unreadable: ${prov} carries no 8-hex upstream_sha (got ${JSON.stringify(up)})`);
+  const mod = path.join(repo, 'site', 'pub', up, 'ide', 'registry', 'exhibits.js');
+  if (!fs.existsSync(mod)) die(`roster unreadable: ${mod} does not exist (${cfg.app} serves build ${up})`);
+  let X;
+  try { X = require(mod); } catch (e) { die(`roster unreadable: ${mod} failed to load: ${e.message}`); }
+  if (!Array.isArray(X.EXHIBITS) || !X.EXHIBITS.length || typeof X.sceneKey !== 'function') die(`roster unreadable: ${mod} exports no EXHIBITS rows / sceneKey`);
+  const appSpec = path.join(SRC, `${cfg.app}.json`);
+  if (!fs.existsSync(appSpec)) die(`exhibits.json app ${cfg.app} has no spec ${appSpec} (its self_host is where the tiles link)`);
+  const origin = JSON.parse(fs.readFileSync(appSpec, 'utf8')).self_host;
+  if (!/^https:\/\/[^/]+$/.test(origin || '')) die(`${appSpec} self_host ${JSON.stringify(origin)} is not an https origin; the tiles link the GYM there`);
+  const stills = new Map(X.EXHIBITS.map(r => [r, `${X.sceneKey({ kind: r.kind, id: r.id, modeId: r.mode })}.png`]));
+  // a still is present iff its row declares one (row.still): declared + missing, or present + undeclared, fails
+  const onDisk = fs.existsSync(STILLS) ? fs.readdirSync(STILLS).filter(f => f.endsWith('.png')) : [];
+  for (const [r, name] of stills) {
+    if (!r.still) continue;
+    if (!onDisk.includes(name)) die(`roster row ${r.id} declares a still (tick ${r.still.tick}) but ${path.join(STILLS, name)} does not exist — promote the instrument's capture there`);
+    const pv = path.join(STILLS, name.replace(/\.png$/, '.provenance.json'));
+    if (!fs.existsSync(pv)) die(`still ${name} has no provenance sidecar ${pv}`);
+    if (JSON.parse(fs.readFileSync(pv, 'utf8')).sceneKey !== name.replace(/\.png$/, '')) die(`${pv} is not the provenance of ${name}`);
+  }
+  const declared = new Set([...stills].filter(([r]) => r.still).map(([, n]) => n));
+  for (const f of onDisk) if (!declared.has(f)) die(`${path.join(STILLS, f)} is a still no roster row declares (served build ${up})`);
+  return (roster = { rows: X.EXHIBITS, stills, origin, build: up });
+}
+// The ONE writer of a tile's link: the GYM of the roster's app, absolute; on the app's own page (its spec's
+// self_host is that origin) the relative form, which stays on the site (no target/rel).
+const GYM = 'app.html?preset=compare';
+function tileHref(row) {
+  const { origin } = loadRoster();
+  let q;
+  if (row.kind === 'rung') q = `&walkthrough=${encodeURIComponent(row.id)}${row.mode ? `&mode=${encodeURIComponent(row.mode)}` : ''}`;
+  else if (row.kind === 'experiment') q = `&experiment=${encodeURIComponent(row.id)}`;
+  else die(`roster row ${row.id}: kind ${JSON.stringify(row.kind)} has no GYM link`);
+  return spec.self_host === origin ? { href: GYM + q, rel: '' } : { href: `${origin}/${GYM}${q}`, rel: ' target="_blank" rel="noopener"' };
+}
+// <div … data-exhibits></div> (empty) is filled with one tile per roster row, in roster order.
+function renderExhibits(html) {
+  return html.replace(/<div\b([^>]*)\bdata-exhibits\b([^>]*)>\s*<\/div>/g, (m, a, b) => {
+    const { rows, stills } = loadRoster();
+    const tiles = rows.map(r => {
+      const { href, rel } = tileHref(r);
+      const img = r.still ? `<img src="images/${esc(stills.get(r))}" alt="">` : '';
+      return `    <a class="tile${img ? '' : ' dark'}" href="${esc(href)}"${rel}>${img}<span class="cap"><b>${esc(r.title)}</b>${r.what === null ? '' : `<span>${esc(r.what)}</span>`}<i>Open live ↗</i></span></a>`;
+    });
+    return `<div${a}data-exhibits${b}>\n${tiles.join('\n')}\n  </div>`;
+  });
+}
+// Every slot fill, applied to every part of the page whichever path produced it (template section or fragment).
+const fillSlots = (html, file) => renderExhibits(renderShelves(html, file));
+
 function gateFragment(html, file) {
-  html = renderShelves(html, file);
+  html = fillSlots(html, file);
   html = html.replace(/<div\b[^>]*data-cut-src="[^"]+"[^>]*>\s*<\/div>/g, m => renderCut(m, file));
   for (const m of html.matchAll(/<(blockquote|q)\b[^>]*data-src="([^"]+)"[^>]*>([\s\S]*?)<\/\1>/g)) {
     const src = m[2];
@@ -277,10 +357,15 @@ function reanchor(html, anchors) {
   }
   return html;
 }
+// {"hero": true} places the hero among the sections (at most once); without it the hero follows the nav
+const heroOut = gateFragment(heroHtml(), 'hero');
+const heroAt = spec.sections.filter(s => s.hero !== undefined);
+if (heroAt.length > 1 || heroAt.some(s => s.hero !== true || Object.keys(s).length !== 1)) die(`sections: the hero is placed by exactly one {"hero": true} entry (got ${JSON.stringify(heroAt)})`);
 const body_sections = spec.sections.map(s => {
+  if (s.hero === true) return heroOut;
   if (s.use) {
     if (!sections[s.use]) die(`template has no section "${s.use}" (has: ${Object.keys(sections).join(', ')})`);
-    return reanchor(rewrite(rewrite(sections[s.use], spec.links), s.links), s.anchors);
+    return fillSlots(reanchor(rewrite(rewrite(sections[s.use], spec.links), s.links), s.anchors), `template section ${s.use}`);
   }
   if (s.file) {
     const p = path.join(SRC, s.file);
@@ -353,15 +438,12 @@ if (spec.login) {
 }
 const stamp = `data-frontpage-app="${esc(app)}" data-frontpage-template="${tplSha}" data-frontpage-build="${sha}"`;
 
-const heroOut = gateFragment(heroHtml(), 'hero');
 const footerOut = gateFragment(footerHtml(), 'footer');
 const html = `${newHead}<body ${stamp}>
 
 ${navHtml()}
 
-${heroOut}
-
-${body_sections.join('\n\n')}
+${(heroAt.length ? body_sections : [heroOut, ...body_sections]).join('\n\n')}
 
 ${footerOut}
 
@@ -375,6 +457,14 @@ for (const m of html.matchAll(/href="(?:library\.html|https:\/\/egpt\.descix\.ne
   const why = deadLink(decodeURIComponent(m[1]));
   if (why) die(why);
 }
+// every data-exhibits element on the assembled page holds exactly one tile per roster row
+for (const m of html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-exhibits\b[^>]*>/g)) {
+  const rest = html.slice(m.index + m[0].length);
+  const inner = m[1] === 'div' ? rest.slice(0, rest.indexOf('</div>')) : '';
+  const n = (inner.match(/<a\b[^>]*\bclass="tile[\s"]/g) || []).length;
+  const want = loadRoster().rows.length;
+  if (n !== want) die(`${app}: a data-exhibits slot holds ${n} tiles, the served roster (build ${loadRoster().build}) has ${want} rows — an unfilled slot cannot ship (${m[0]})`);
+}
 // nothing on the page still points at the app's own public host (a self-link is a deep link)
 if (spec.self_host && html.includes(spec.self_host)) die(`a self-link to ${spec.self_host} remains; rewrite it to a deep link`);
 
@@ -383,7 +473,10 @@ const used = new Set([...html.matchAll(/(?:src|href)="images\/([^"]+)"/g)].map(m
 const extra = new Map((spec.images || []).map(i => [i.to.replace(/^images\//, ''), i.from]));
 const images = new Map();
 for (const name of used) {
-  if (extra.has(name)) {
+  const still = roster && [...roster.stills.values()].includes(name);
+  if (still && extra.has(name)) die(`spec declares image ${name}, which is a tile still; tile stills live only in site-src/frontpage/exhibits/`);
+  if (still) images.set(name, fs.readFileSync(path.join(STILLS, name)));
+  else if (extra.has(name)) {
     const from = extra.get(name);
     if (from.startsWith('frontpage:')) {
       const p = path.join(SRC, from.slice('frontpage:'.length));
@@ -407,4 +500,4 @@ if (!DRY) {
   if (spec.share) { try { require('./lib/share').emitShare(app, spec.share, SRC, OUT); } catch (e) { die(e.message); } }
   if (sdk) fs.writeFileSync(path.join(OUT, sdk.name), sdk.data);
 }
-console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.length} sections (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);
+console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.filter(s => !s.hero).length} sections${heroAt.length ? ' (hero placed among them)' : ''} (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);
