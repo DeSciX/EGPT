@@ -144,7 +144,7 @@
       "headline": "Talk to Maxi and watch it imagine.",
       "line": "Robotic AI that runs the future before it acts.",
       "art": {
-        "template": "site/images/studio.jpg",
+        "template": "template/images/studio.jpg",
         "fit": "cover"
       }
     }
