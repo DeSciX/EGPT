@@ -1065,4 +1065,30 @@ noncomputable def primeGenerator
   else n.factorization.support.toList.map
     (fun p => (p, n.factorization p))
 
+/-- The complete choice-free, lossless bijective chain between the semantic subspace
+    of `EntropyReal` (`ConstructibleLog`) and positive `Nat`s (`PNat`).
+
+    - Forward (`toFun`): Extracts the semantic integer source.
+    - Return (`invFun`): Inductively unrolls the unique prime alphabet back into the
+      infinite bit-stream, bypassing Cantor's diagonal.
+
+    This is the syntactic sugar that packages the entire reversible encoding. -/
+def semanticEntropyRealEquivPNat
+    (h_prod : ∀ n : PNat, (primesToPNat (factorListC n.val)).prod = n) :
+    ConstructibleLog ≃ PNat where
+  toFun c := c.src
+  invFun n := log_add_list (primesToPNat (factorListC n.val))
+  left_inv c := by
+    dsimp
+    have h := fta_via_information_C c.src.val c.src.prop (h_prod c.src)
+    rw [h]
+    exact logEquivPNat.left_inv c
+  right_inv n := by
+    dsimp
+    rw [log_add_list_eq_prod]
+    have h2 : (logEquivPNat.invFun (primesToPNat (factorListC n.val)).prod).src =
+        (primesToPNat (factorListC n.val)).prod := rfl
+    rw [h2]
+    exact h_prod n
+
 end InformationTheory
