@@ -6,7 +6,9 @@
 // Each case runs the REAL generator (copied into a throwaway repository) against the REAL served roster
 // — the egpt-frqtl checkout named by site-src/frontpage/exhibits.json, at the build its
 // .descix/site-provenance.json names — and the real stills home. A template, a spec and the stills are
-// the inputs a case varies. No checkout of the served roster is a FAILURE here, never a skip.
+// the inputs a case varies; a case that needs a row WITHOUT a still serves the real roster with one row's
+// still withdrawn (world({ undeclare })), so it runs whatever the live roster declares. No checkout of the
+// served roster is a FAILURE here, never a skip.
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert');
@@ -48,7 +50,8 @@ const git = (cwd, ...a) => execFileSync('git', a, { cwd, stdio: ['ignore', 'pipe
 
 // A throwaway world: <T>/ev (this repository's generator + inputs, committed), <T>/tpl (the template repo),
 // <T>/frqtl (a served checkout whose registry is the real one, symlinked).
-function world({ template = page(SLOT), stills = 'real', provenance = true, specs = {} } = {}) {
+// undeclare: a roster row id the served checkout serves WITHOUT its still (its still files leave the home too).
+function world({ template = page(SLOT), stills = 'real', provenance = true, specs = {}, undeclare = null } = {}) {
   const T = fs.mkdtempSync(path.join(os.tmpdir(), 'frontpage-exhibits-'));
   const tpl = path.join(T, 'tpl');
   fs.mkdirSync(path.join(tpl, 'site'), { recursive: true });
@@ -57,7 +60,19 @@ function world({ template = page(SLOT), stills = 'real', provenance = true, spec
   const frqtl = path.join(T, 'frqtl');
   fs.mkdirSync(path.join(frqtl, '.descix'), { recursive: true });
   fs.mkdirSync(path.join(frqtl, 'site', 'pub', up, 'ide'), { recursive: true });
-  fs.symlinkSync(registry, path.join(frqtl, 'site', 'pub', up, 'ide', 'registry'));
+  const served = path.join(frqtl, 'site', 'pub', up, 'ide', 'registry');
+  if (!undeclare) fs.symlinkSync(registry, served);
+  else {
+    if (!X.EXHIBITS.some(r => r.id === undeclare && r.still)) throw new Error(`fixture: roster row ${undeclare} declares no still to withdraw`);
+    fs.mkdirSync(served);
+    for (const f of fs.readdirSync(registry)) if (f !== 'exhibits.js') fs.symlinkSync(path.join(registry, f), path.join(served, f));
+    fs.writeFileSync(path.join(served, 'exhibits.js'), `'use strict';
+const X = require(${JSON.stringify(path.join(registry, 'exhibits.js'))});
+module.exports = { ...X, EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(undeclare)} ? { ...r, still: undefined } : r)) };
+`);
+  }
+  const rows = X.EXHIBITS.map(r => (r.id === undeclare ? { ...r, still: undefined } : r));
+  const withdrawn = undeclare ? `${key(X.EXHIBITS.find(r => r.id === undeclare))}.` : null;
   if (provenance) fs.writeFileSync(path.join(frqtl, '.descix', 'site-provenance.json'), JSON.stringify({ upstream_sha: up }));
   const ev = path.join(T, 'ev');
   const src = path.join(ev, 'site-src', 'frontpage');
@@ -70,10 +85,11 @@ function world({ template = page(SLOT), stills = 'real', provenance = true, spec
   for (const [name, s] of Object.entries(all)) fs.writeFileSync(path.join(src, `${name}.json`), JSON.stringify(s));
   const home = path.join(REAL_SRC, 'exhibits');
   const real = fs.readdirSync(home);
-  for (const f of (stills === 'real' ? real : stills(real))) fs.copyFileSync(path.join(home, f), path.join(src, 'exhibits', f));
+  const kept = withdrawn ? real.filter(f => !f.startsWith(withdrawn)) : real;
+  for (const f of (stills === 'real' ? kept : stills(kept))) fs.copyFileSync(path.join(home, f), path.join(src, 'exhibits', f));
   git(ev, 'init', '-q'); git(ev, 'add', '.'); git(ev, '-c', 'user.name=t', '-c', 'user.email=t@t', 'commit', '-qm', 'ev');
   return {
-    T,
+    T, rows,
     build(app) {
       const out = path.join(T, 'out', app);
       const r = spawnSync(process.execPath, [path.join(ev, 'scripts', 'build-frontpage.js'), app, '--out', out], { cwd: ev, encoding: 'utf8' });
@@ -87,12 +103,12 @@ const tiles = html => [...html.match(/<div\b[^>]*data-exhibits[^>]*>([\s\S]*?)<\
 const gymLink = r => `app.html?preset=compare&walkthrough=${r.id}${r.mode ? `&mode=${r.mode}` : ''}`;
 
 test('another site\'s page: one tile per roster row, in order, absolute GYM links, stills iff declared', () => {
-  const w = world();
+  const w = world({ undeclare: X.EXHIBITS.find(x => x.still).id });
   const r = w.build('other');
   assert.equal(r.code, 0, r.err);
   const got = tiles(r.html);
-  assert.equal(got.length, X.EXHIBITS.length);
-  X.EXHIBITS.forEach((row, i) => {
+  assert.equal(got.length, w.rows.length);
+  w.rows.forEach((row, i) => {
     assert.equal(got[i].title, row.title.replace(/&/g, '&amp;'));
     assert.equal(got[i].href, `${ORIGIN}/${gymLink(row)}`);
     assert.match(got[i].attrs, / target="_blank" rel="noopener"/);
@@ -100,7 +116,7 @@ test('another site\'s page: one tile per roster row, in order, absolute GYM link
     assert.equal(/class="tile dark"/.test(got[i].attrs), !row.still);
     if (row.still) assert.ok(fs.existsSync(path.join(r.out, 'images', `${key(row)}.png`)), `${key(row)}.png written`);
   });
-  assert.ok(X.EXHIBITS.some(x => x.still) && X.EXHIBITS.some(x => !x.still), 'the roster exercises both tile forms');
+  assert.ok(w.rows.some(x => x.still) && w.rows.some(x => !x.still), 'the roster exercises both tile forms');
 });
 
 test('the roster app\'s own page (self_host = the GYM origin): relative links, no target', () => {
@@ -159,8 +175,8 @@ test('stills: a declared still missing from the home refuses, naming the row', (
 });
 
 test('stills: a still no row declares refuses (no per-page image lists by the back door)', () => {
-  const w = world();
-  const undeclared = X.EXHIBITS.find(x => !x.still);
+  const undeclared = X.EXHIBITS.find(x => x.still);
+  const w = world({ undeclare: undeclared.id });
   const home = path.join(w.T, 'ev', 'site-src', 'frontpage', 'exhibits');
   fs.copyFileSync(path.join(home, fs.readdirSync(home).find(f => f.endsWith('.png'))), path.join(home, `${key(undeclared)}.png`));
   const r = w.build('other');
