@@ -138,6 +138,7 @@
   ],
   "links": [],
   "self_host": "https://egpt-frqtl.descix.net",
+  "through_line": { "source": "served-roster" },
   "footer": {
     "name": "FRQTL",
     "tag": "physics engine",
