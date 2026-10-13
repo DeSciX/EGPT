@@ -28,15 +28,21 @@ const ORIGIN = JSON.parse(fs.readFileSync(path.join(REAL_SRC, `${cfg.app}.json`)
 const key = r => X.sceneKey({ kind: r.kind, id: r.id, modeId: r.mode });
 
 const SLOT = '<div class="grid" data-exhibits></div>';
-const page = grid => `<!doctype html><html><head><meta charset="utf-8"><title>t</title><meta name="description" content="d"><style>
+const THROUGH = '<p class="grid-note" data-showcase-throughline></p>';
+const GRID_CSS = '.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}\n@media (max-width:820px){.grid{grid-template-columns:repeat(2,1fr)}}';
+// The template shape the generator reads: the proof grid's CSS, the slot, the through-line marker under it.
+const page = (grid, { css = GRID_CSS, through = THROUGH, plain = '<p>plain</p>' } = {}) => `<!doctype html><html><head><meta charset="utf-8"><title>t</title><meta name="description" content="d"><style>
+${css}
 </style></head><body>
 <nav class="nav"><div class="wrap"><a class="brand" href="#top">T</a></div></nav>
 <header class="hero" id="top"><div class="wrap">h</div></header>
 <section class="sec" id="proof"><div class="wrap">
   <div class="sec-head"><p class="eyebrow">Proof</p></div>
   ${grid}
+  ${through}
+  <p class="grid-note">note</p>
 </div></section>
-<section class="sec" id="plain"><div class="wrap"><p>plain</p></div></section>
+<section class="sec" id="plain"><div class="wrap">${plain}</div></section>
 <footer><div class="wrap">f</div></footer>
 </body></html>
 `;
@@ -51,7 +57,10 @@ const git = (cwd, ...a) => execFileSync('git', a, { cwd, stdio: ['ignore', 'pipe
 // A throwaway world: <T>/ev (this repository's generator + inputs, committed), <T>/tpl (the template repo),
 // <T>/frqtl (a served checkout whose registry is the real one, symlinked).
 // undeclare: a roster row id the served checkout serves WITHOUT its still (its still files leave the home too).
-function world({ template = page(SLOT), stills = 'real', provenance = true, specs = {}, undeclare = null } = {}) {
+// serve: a JS object expression over X (the real served module) whose keys replace the served exports —
+// how a case plants a fault in the SERVED roster without touching it (e.g. one row's still.alt stripped).
+// fragments: { <file>: html } written beside the specs.
+function world({ template = page(SLOT), stills = 'real', provenance = true, specs = {}, undeclare = null, serve = null, fragments = {} } = {}) {
   const T = fs.mkdtempSync(path.join(os.tmpdir(), 'frontpage-exhibits-'));
   const tpl = path.join(T, 'tpl');
   fs.mkdirSync(path.join(tpl, 'site'), { recursive: true });
@@ -61,14 +70,15 @@ function world({ template = page(SLOT), stills = 'real', provenance = true, spec
   fs.mkdirSync(path.join(frqtl, '.descix'), { recursive: true });
   fs.mkdirSync(path.join(frqtl, 'site', 'pub', up, 'ide'), { recursive: true });
   const served = path.join(frqtl, 'site', 'pub', up, 'ide', 'registry');
-  if (!undeclare) fs.symlinkSync(registry, served);
+  if (undeclare && !X.EXHIBITS.some(r => r.id === undeclare && r.still)) throw new Error(`fixture: roster row ${undeclare} declares no still to withdraw`);
+  const override = [undeclare ? `EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(undeclare)} ? { ...r, still: undefined } : r))` : '', serve ? `...(${serve})` : ''].filter(Boolean);
+  if (!override.length) fs.symlinkSync(registry, served);
   else {
-    if (!X.EXHIBITS.some(r => r.id === undeclare && r.still)) throw new Error(`fixture: roster row ${undeclare} declares no still to withdraw`);
     fs.mkdirSync(served);
     for (const f of fs.readdirSync(registry)) if (f !== 'exhibits.js') fs.symlinkSync(path.join(registry, f), path.join(served, f));
     fs.writeFileSync(path.join(served, 'exhibits.js'), `'use strict';
 const X = require(${JSON.stringify(path.join(registry, 'exhibits.js'))});
-module.exports = { ...X, EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(undeclare)} ? { ...r, still: undefined } : r)) };
+module.exports = { ...X, ${override.join(', ')} };
 `);
   }
   const rows = X.EXHIBITS.map(r => (r.id === undeclare ? { ...r, still: undefined } : r));
@@ -83,6 +93,7 @@ module.exports = { ...X, EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringif
   fs.writeFileSync(path.join(src, 'exhibits.json'), JSON.stringify({ app: 'frqtl', repo: '../frqtl' }));
   const all = { frqtl: spec(ORIGIN, [{ use: 'proof' }]), other: spec('https://other.example', [{ use: 'proof' }]), ...specs };
   for (const [name, s] of Object.entries(all)) fs.writeFileSync(path.join(src, `${name}.json`), JSON.stringify(s));
+  for (const [name, html] of Object.entries(fragments)) fs.writeFileSync(path.join(src, name), html);
   const home = path.join(REAL_SRC, 'exhibits');
   const real = fs.readdirSync(home);
   const kept = withdrawn ? real.filter(f => !f.startsWith(withdrawn)) : real;
@@ -99,7 +110,16 @@ module.exports = { ...X, EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringif
   };
 }
 const tiles = html => [...html.match(/<div\b[^>]*data-exhibits[^>]*>([\s\S]*?)<\/div>/)[1].matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)]
-  .map(([, attrs, body]) => ({ attrs, href: attrs.match(/href="([^"]*)"/)[1].replace(/&amp;/g, '&'), img: (body.match(/<img src="([^"]*)"/) || [])[1] || null, title: body.match(/<b>([\s\S]*?)<\/b>/)[1] }));
+  .map(([, attrs, body]) => {
+    const img = (body.match(/<img\b[^>]*>/) || [])[0] || '';
+    const a = n => { const m = img.match(new RegExp(`\\s${n}="([^"]*)"`)); return m ? unent(m[1]) : null; };
+    return { attrs, href: attrs.match(/href="([^"]*)"/)[1].replace(/&amp;/g, '&'), img: a('src'), alt: a('alt'), loading: a('loading'), decoding: a('decoding'),
+      title: body.match(/<b>([\s\S]*?)<\/b>/)[1], line: unent((body.match(/<\/b><span>([\s\S]*?)<\/span>/) || [])[1] || '') };
+  });
+const unent = s => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+// every filled through-line marker on a page: its decoded text
+const throughLines = html => [...html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-showcase-throughline\b[^>]*>([\s\S]*?)<\/\1>/g)].map(m => unent(m[2]));
+const THROUGH_TEXT = X.SHOWCASE_THROUGH_LINE.join('');
 const gymLink = r => `app.html?preset=compare&walkthrough=${r.id}${r.mode ? `&mode=${r.mode}` : ''}`;
 
 test('another site\'s page: one tile per roster row, in order, absolute GYM links, stills iff declared', () => {
@@ -187,4 +207,104 @@ test('stills: a still without its provenance sidecar refuses', () => {
   const declared = X.EXHIBITS.find(x => x.still);
   const r = world({ stills: fs_ => fs_.filter(f => f !== `${key(declared)}.provenance.json`) }).build('other');
   assert.equal(r.code, 1); assert.match(r.err, /has no provenance sidecar/);
+});
+
+// ---------------------------------------------------------------- the tile's copy: its line and its still's alt
+test('tile copy: the caption line is the row\'s tile line and the img alt is its still.alt, from the served roster', () => {
+  const r = world().build('other');
+  assert.equal(r.code, 0, r.err);
+  const got = tiles(r.html);
+  X.EXHIBITS.forEach((row, i) => {
+    assert.equal(got[i].line, row.tile, `tile ${i + 1} line`);
+    if (row.still) assert.equal(got[i].alt, row.still.alt, `tile ${i + 1} alt`);
+  });
+  assert.ok(X.EXHIBITS.some(row => row.tile !== row.what), 'the roster distinguishes tile from what, so this case can tell the fields apart');
+});
+
+test('tile copy: a declared still without its alt refuses, naming the row; no alt="" ships', () => {
+  const row = X.EXHIBITS.find(x => x.still);
+  for (const alt of ['undefined', "' '"]) {
+    const w = world({ serve: `{ EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(row.id)} ? { ...r, still: { ...r.still, alt: ${alt} } } : r)) }` });
+    const r = w.build('other');
+    assert.equal(r.code, 1, `alt ${alt}: ${r.err}`); assert.match(r.err, new RegExp(`roster row ${row.id} declares a still without its alt text`)); assert.equal(r.html, null);
+  }
+});
+
+test('tile copy: a row without its tile line refuses, naming the row', () => {
+  const row = X.EXHIBITS[0];
+  const r = world({ serve: `{ EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(row.id)} ? { ...r, tile: null } : r)) }` }).build('other');
+  assert.equal(r.code, 1); assert.match(r.err, new RegExp(`roster row ${row.id} has no tile line`)); assert.equal(r.html, null);
+});
+
+// ---------------------------------------------------------------- lazy loading, derived from the template's grid
+const lazyOf = html => tiles(html).filter(t => t.img).map(t => t.loading === 'lazy' && t.decoding === 'async');
+test('lazy: tiles past the template grid\'s first desktop row (repeat(N,1fr)) load lazily, the first N eagerly', () => {
+  const r = world().build('other');
+  assert.equal(r.code, 0, r.err);
+  assert.ok(X.EXHIBITS.every(x => x.still), 'every row has a still, so every tile index is exercised');
+  assert.deepEqual(lazyOf(r.html), X.EXHIBITS.map((_, i) => i >= 3));
+  for (const t of tiles(r.html).slice(0, 3)) { assert.equal(t.loading, null); assert.equal(t.decoding, null); }
+});
+
+test('lazy: the column count is read from the template, never a literal (repeat(2,1fr) → tile 3 lazy; repeat(4,1fr) under a narrower @media → 4 eager)', () => {
+  const two = world({ template: page(SLOT, { css: '.grid{display:grid;grid-template-columns:repeat(2,1fr)}' }) }).build('other');
+  assert.equal(two.code, 0, two.err);
+  assert.deepEqual(lazyOf(two.html), X.EXHIBITS.map((_, i) => i >= 2));
+  const four = world({ template: page(SLOT, { css: '@media (max-width:820px){.grid{grid-template-columns:repeat(2,1fr)}}\n.grid{grid-template-columns:repeat(4,1fr)}' }) }).build('other');
+  assert.equal(four.code, 0, four.err);
+  assert.deepEqual(lazyOf(four.html), X.EXHIBITS.map((_, i) => i >= 4));
+});
+
+test('lazy: a template whose .grid has no repeat(N,1fr) refuses (no default column count)', () => {
+  for (const css of ['.grid{display:grid;gap:18px}', '@media (max-width:820px){.grid{grid-template-columns:repeat(2,1fr)}}']) {
+    const r = world({ template: page(SLOT, { css }) }).build('other');
+    assert.equal(r.code, 1, css); assert.match(r.err, /has 0 top-level \.grid\{grid-template-columns:repeat\(N,1fr\)\} rules/); assert.equal(r.html, null);
+  }
+});
+
+// ---------------------------------------------------------------- the through-line slot
+test('through-line: the template marker is filled with the served SHOWCASE_THROUGH_LINE, once, under the grid and above the grid-note', () => {
+  for (const app of ['frqtl', 'other']) {
+    const r = world().build(app);
+    assert.equal(r.code, 0, r.err);
+    assert.deepEqual(throughLines(r.html), [THROUGH_TEXT]);
+    const proof = r.html.slice(r.html.indexOf('id="proof"'));
+    const at = proof.indexOf('data-showcase-throughline');
+    assert.ok(proof.lastIndexOf('data-exhibits', at) >= 0 && at < proof.indexOf('<p class="grid-note">note</p>'), 'the through-line sits between the grid and the grid-note');
+  }
+});
+
+test('through-line precondition: a template without the marker refuses (every page, even one not using #proof)', () => {
+  const w = world({ template: page(SLOT, { through: '' }), specs: { plainonly: spec('https://p.example', [{ use: 'plain' }]) } });
+  for (const app of ['other', 'plainonly']) {
+    const r = w.build(app);
+    assert.equal(r.code, 1); assert.match(r.err, /carries 0 data-showcase-throughline markers, needs exactly one/); assert.equal(r.html, null);
+  }
+});
+
+test('through-line precondition: hand text in the marker, two markers, or a marker outside #proof refuse', () => {
+  const hand = world({ template: page(SLOT, { through: '<p class="grid-note" data-showcase-throughline>typed by hand</p>' }) }).build('other');
+  assert.equal(hand.code, 1); assert.match(hand.err, /marker holds hand text \("typed by hand/);
+  const two = world({ template: page(SLOT, { through: THROUGH + THROUGH }) }).build('other');
+  assert.equal(two.code, 1); assert.match(two.err, /carries 2 data-showcase-throughline markers/);
+  const outside = world({ template: page(SLOT, { through: '', plain: THROUGH }) }).build('other');
+  assert.equal(outside.code, 1); assert.match(outside.err, /is not a closed element inside <section id="proof">/);
+});
+
+test('through-line: a fragment page carrying the marker is filled; a fragment marker with hand text refuses at the final sweep', () => {
+  const w = world({
+    fragments: { 'frag.html': `<section class="sec" id="frag"><div class="wrap">${THROUGH}</div></section>`, 'hand.html': '<section class="sec" id="hand"><div class="wrap"><p data-showcase-throughline>hand</p></div></section>' },
+    specs: { frag: spec('https://p.example', [{ file: 'frag.html' }]), hand: spec('https://p.example', [{ file: 'hand.html' }]) },
+  });
+  const ok = w.build('frag');
+  assert.equal(ok.code, 0, ok.err); assert.deepEqual(throughLines(ok.html), [THROUGH_TEXT]);
+  const bad = w.build('hand');
+  assert.equal(bad.code, 1); assert.match(bad.err, /holds "hand…", not the served roster's SHOWCASE_THROUGH_LINE/);
+});
+
+test('through-line: a served through-line that is not plain text refuses (the page has no link renderer); a missing one refuses', () => {
+  const link = world({ serve: `{ SHOWCASE_THROUGH_LINE: ['FRQTL ', { text: 'links', href: 'https://example.org' }] }` }).build('other');
+  assert.equal(link.code, 1); assert.match(link.err, /holds a non-string or empty segment; the through-line is plain text/);
+  const gone = world({ serve: `{ SHOWCASE_THROUGH_LINE: undefined }` }).build('other');
+  assert.equal(gone.code, 1); assert.match(gone.err, /exports no SHOWCASE_THROUGH_LINE paragraph/);
 });

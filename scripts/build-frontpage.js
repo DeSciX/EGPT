@@ -19,7 +19,13 @@
  *   still from site-src/frontpage/exhibits/;
  * - the template owns zero tiles: it must carry a <div … data-exhibits></div> slot and no hand
  *   <a class="tile"; every slot is filled from the showcase roster (renderExhibits), and a page
- *   whose slot does not end up holding one tile per roster row is a build failure.
+ *   whose slot does not end up holding one tile per roster row is a build failure. A tile carries the
+ *   row's tile line (TILE_LINE) and its still's alt (row.still.alt); tiles past the template's first
+ *   desktop row (gridColumns(): the .grid rule's repeat(N,1fr)) load lazily;
+ * - the template owns zero through-line text: its #proof carries exactly one EMPTY
+ *   <… data-showcase-throughline></…>, filled with the served roster's SHOWCASE_THROUGH_LINE (plain
+ *   text) wherever a page carries it, and an assembled page whose marker does not hold exactly that
+ *   text is a build failure.
  * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
  * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
@@ -60,6 +66,28 @@ const templateImage = name => gitT('show', `${tpl.commit}:${path.posix.join(path
   if (handTiles || !slots) {
     die(`template ${tplSha} (${tpl.repo}:${tpl.page}) ${[handTiles ? `carries ${handTiles} hand-written <a class="tile"` : '', slots ? '' : 'declares no data-exhibits slot'].filter(Boolean).join(' and ')}; the roster is the one owner of tiles — bump template.json to a commit that has the slot and no tiles`);
   }
+}
+// The roster owns the through-line too: the template carries exactly one EMPTY marker, inside #proof.
+const THROUGH_MARK = /<[a-z][a-z0-9]*\b[^>]*\bdata-showcase-throughline\b[^>]*>/g;
+const THROUGH_SLOT = /<([a-z][a-z0-9]*)\b([^>]*\bdata-showcase-throughline\b[^>]*)>([\s\S]*?)<\/\1>/g;
+{
+  const where = `template ${tplSha} (${tpl.repo}:${tpl.page})`;
+  const marks = (template.match(THROUGH_MARK) || []).length;
+  if (marks !== 1) die(`${where} carries ${marks} data-showcase-throughline markers, needs exactly one (in #proof) — the roster's SHOWCASE_THROUGH_LINE fills it; bump template.json to a commit that has it`);
+  const proof = (/<section class="sec[^"]*" id="proof">[\s\S]*?<\/section>/.exec(template) || [''])[0];
+  const inProof = [...proof.matchAll(THROUGH_SLOT)];
+  if (inProof.length !== 1) die(`${where}: the data-showcase-throughline marker is not a closed element inside <section id="proof">`);
+  if (inProof[0][3].trim()) die(`${where}: the data-showcase-throughline marker holds hand text ("${inProof[0][3].trim().slice(0, 60)}…"); the roster is the one owner of the through-line — the template's marker is empty`);
+}
+// The template's proof grid: its desktop column count, read from the top-level .grid rule's
+// repeat(N,1fr) (the @media overrides are narrower). Tiles past the first N load lazily.
+function gridColumns() {
+  const style = (/<style>([\s\S]*?)<\/style>/.exec(template) || [, ''])[1];
+  const topLevel = style.replace(/@media[^{]*\{(?:[^{}]*\{[^{}]*\})*[^{}]*\}/g, '');
+  const cols = [...topLevel.matchAll(/(?<![\w-])\.grid\{([^}]*)\}/g)]
+    .map(m => /grid-template-columns:\s*repeat\((\d+),\s*1fr\)/.exec(m[1])).filter(Boolean);
+  if (cols.length !== 1) die(`template ${tplSha} (${tpl.repo}:${tpl.page}) has ${cols.length} top-level .grid{grid-template-columns:repeat(N,1fr)} rules, needs exactly one — the tiles' lazy loading is derived from it`);
+  return Number(cols[0][1]);
 }
 
 const bodyAt = template.indexOf('<body');
@@ -302,7 +330,28 @@ function loadRoster() {
   }
   const declared = new Set([...stills].filter(([r]) => r.still).map(([, n]) => n));
   for (const f of onDisk) if (!declared.has(f)) die(`${path.join(STILLS, f)} is a still no roster row declares (served build ${up})`);
-  return (roster = { rows: X.EXHIBITS, stills, origin, build: up });
+  // every declared still carries its alt (the roster's one home for it); a tile never ships alt=""
+  for (const r of X.EXHIBITS) {
+    if (r.still && (typeof r.still.alt !== 'string' || !r.still.alt.trim())) die(`roster row ${r.id} declares a still without its alt text (still.alt, served build ${up}) — a tile never ships alt=""`);
+  }
+  return (roster = { rows: X.EXHIBITS, stills, origin, build: up, X });
+}
+// The tile's one-line caption is the row's published short sentence (CEO #129: "approve: tile line stays,
+// captions on the card"); what/why/how are the GYM card's. Required on every row: a roster served without it
+// (an old build) refuses instead of rendering a tile with no line.
+const TILE_LINE = 'tile';
+function tileLine(r) {
+  const v = r[TILE_LINE];
+  if (typeof v !== 'string' || !v.trim()) die(`roster row ${r.id} has no ${TILE_LINE} line (served build ${loadRoster().build}) — the tile caption is the row's ${TILE_LINE}`);
+  return v;
+}
+// The through-line: the served SHOWCASE_THROUGH_LINE, one paragraph of plain strings.
+function throughLine() {
+  const { X, build } = loadRoster();
+  const p = X.SHOWCASE_THROUGH_LINE;
+  if (!Array.isArray(p) || !p.length) die(`roster unreadable: served build ${build} exports no SHOWCASE_THROUGH_LINE paragraph (the template's data-showcase-throughline marker is filled from it)`);
+  if (!p.every(s => typeof s === 'string' && s.length)) die(`served SHOWCASE_THROUGH_LINE (build ${build}) holds a non-string or empty segment; the through-line is plain text — the page has no link renderer`);
+  return p.join('');
 }
 // The ONE writer of a tile's link: the GYM of the roster's app, absolute; on the app's own page (its spec's
 // self_host is that origin) the relative form, which stays on the site (no target/rel).
@@ -319,16 +368,22 @@ function tileHref(row) {
 function renderExhibits(html) {
   return html.replace(/<div\b([^>]*)\bdata-exhibits\b([^>]*)>\s*<\/div>/g, (m, a, b) => {
     const { rows, stills } = loadRoster();
-    const tiles = rows.map(r => {
+    const eager = gridColumns();
+    const tiles = rows.map((r, i) => {
       const { href, rel } = tileHref(r);
-      const img = r.still ? `<img src="images/${esc(stills.get(r))}" alt="">` : '';
-      return `    <a class="tile${img ? '' : ' dark'}" href="${esc(href)}"${rel}>${img}<span class="cap"><b>${esc(r.title)}</b>${r.what === null ? '' : `<span>${esc(r.what)}</span>`}<i>Open live ↗</i></span></a>`;
+      const lazy = i >= eager ? ' loading="lazy" decoding="async"' : '';
+      const img = r.still ? `<img src="images/${esc(stills.get(r))}" alt="${esc(r.still.alt)}"${lazy}>` : '';
+      return `    <a class="tile${img ? '' : ' dark'}" href="${esc(href)}"${rel}>${img}<span class="cap"><b>${esc(r.title)}</b><span>${esc(tileLine(r))}</span><i>Open live ↗</i></span></a>`;
     });
     return `<div${a}data-exhibits${b}>\n${tiles.join('\n')}\n  </div>`;
   });
 }
+// <… data-showcase-throughline></…> (empty) is filled with the served through-line.
+function renderThroughLine(html) {
+  return html.replace(THROUGH_SLOT, (m, tag, attrs, inner) => (inner.trim() ? m : `<${tag}${attrs}>${esc(throughLine())}</${tag}>`));
+}
 // Every slot fill, applied to every part of the page whichever path produced it (template section or fragment).
-const fillSlots = (html, file) => renderExhibits(renderShelves(html, file));
+const fillSlots = (html, file) => renderThroughLine(renderExhibits(renderShelves(html, file)));
 
 function gateFragment(html, file) {
   html = fillSlots(html, file);
@@ -466,6 +521,15 @@ for (const m of html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-exhibits\b[^>]*>/g
   const n = (inner.match(/<a\b[^>]*\bclass="tile[\s"]/g) || []).length;
   const want = loadRoster().rows.length;
   if (n !== want) die(`${app}: a data-exhibits slot holds ${n} tiles, the served roster (build ${loadRoster().build}) has ${want} rows — an unfilled slot cannot ship (${m[0]})`);
+}
+// every data-showcase-throughline marker on the assembled page holds exactly the served through-line
+{
+  const marks = (html.match(THROUGH_MARK) || []).length;
+  const filled = [...html.matchAll(THROUGH_SLOT)];
+  if (filled.length !== marks) die(`${app}: ${marks} data-showcase-throughline markers but ${filled.length} closed elements — a marker the fill cannot reach cannot ship`);
+  for (const m of filled) {
+    if (unent(m[3]) !== throughLine()) die(`${app}: a data-showcase-throughline marker holds "${unent(m[3]).slice(0, 60)}…", not the served roster's SHOWCASE_THROUGH_LINE (build ${loadRoster().build})`);
+  }
 }
 // nothing on the page still points at the app's own public host (a self-link is a deep link)
 if (spec.self_host && html.includes(spec.self_host)) die(`a self-link to ${spec.self_host} remains; rewrite it to a deep link`);
