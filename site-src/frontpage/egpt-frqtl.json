@@ -1,5 +1,5 @@
 {
-  "_purpose": "The egpt-frqtl app's front page (frqtl.com → egpt-frqtl.descix.net): CEO words recorded Unkamon d3d9a7c ('promote the Impossible Things, Running first… users promoting the simulations or building new ones… in order to gain tokens') under 055c907 (no SDK CTA; one alpha line). The IDE lives at app.html on the same site; the root forwards any query-string load there. The #proof tiles are generated from the showcase roster (exhibits.json) and open the GYM. On the CEO's request #proof sits above the hero (egpt-frqtl 66cc446) and opens with his paragraph (egpt-frqtl f8249d7, carried here byte-for-byte); generic Open STUDIO/FAT buttons stay bare.",
+  "_purpose": "The egpt-frqtl app's front page (frqtl.com → egpt-frqtl.descix.net): CEO words recorded Unkamon d3d9a7c ('promote the Impossible Things, Running first… users promoting the simulations or building new ones… in order to gain tokens') under 055c907 (no SDK CTA; one alpha line). The IDE lives at app.html on the same site; the root forwards any query-string load there. The #proof tiles are generated from the showcase roster (exhibits.json) and open the GYM. On the CEO's request #proof sits above the hero (egpt-frqtl 66cc446) and opens with his paragraph (egpt-frqtl f8249d7, carried here byte-for-byte); generic Open STUDIO/FAT buttons stay bare. On the CEO's words of 13 October 2026 the AI section (Maxi) follows Quantum (#proof, then the hero) and the products section is the page's own fragment without the Maxi card.",
   "title": "FRQTL — Impossible things, running",
   "description": "FRQTL, the physics engine that doesn't know any physics equations: the double slit, a sun, a mirror loop, a blackbody, a half-adder, a big bang, an atom, all computed live in your tab. Open STUDIO.",
   "brand": {
@@ -9,11 +9,15 @@
   "nav": [
     {
       "text": "Proof",
+      "href": "#technology"
+    },
+    {
+      "text": "Quantum",
       "href": "#proof"
     },
     {
-      "text": "Technology",
-      "href": "#technology"
+      "text": "AI",
+      "href": "#ai"
     },
     {
       "text": "Tools",
@@ -56,7 +60,7 @@
       "alt": "Three-dimensional double slit: two red slabs, two blue slit tunnels, the detector wall painting its own interference pattern hit by hit"
     }
   },
-  "css": ".hero h1{max-width:14ch}\n.brand b{white-space:nowrap}\n.navlinks{gap:18px;font-size:14.5px;white-space:nowrap}",
+  "css": ".hero h1{max-width:14ch}\n.brand b{white-space:nowrap}\n.navlinks{gap:18px;font-size:14.5px;white-space:nowrap}\n#proof .sec-head,#proof .sec-head .lede{max-width:none}",
   "sections": [
     {
       "use": "proof",
@@ -64,11 +68,18 @@
         [
           "<p class=\"lede\">Each scene opens live in the engine. Click one and watch it compute in your own tab.</p>",
           "<p class=\"lede\">FRQTL is an actual quantum computer that runs so efficiently it calculates what the father of quantum computing called ‘absolutely impossible.’ In 1981 Feynman birthed the idea of what you know as qubit based quantum computing. FRQTL takes a different approach based on the Monte Carlo method and the work of Stanislaw Ulam. FRQTL’s model is inspired by the approach of Stanislaw Ulam which was continued after the Manhattan Project at Los Alamos National Laboratory and later pursued at Brookhaven National Laboratory Quantum Chromodynamics (QCD) and super-computing projects.</p>"
+        ],
+        [
+          "<p class=\"eyebrow\">Proof</p>",
+          "<p class=\"eyebrow\">Quantum</p>"
         ]
       ]
     },
     {
       "hero": true
+    },
+    {
+      "file": "egpt-frqtl/ai.html"
     },
     {
       "use": "technology",
@@ -88,31 +99,15 @@
         [
           "<a href=\"https://egpt-frqtl.descix.net\" target=\"_blank\" rel=\"noopener\">Run it ↗</a>",
           "<a href=\"app.html?preset=author\">Run it</a>"
+        ],
+        [
+          "<p class=\"eyebrow\">Technology</p>",
+          "<p class=\"eyebrow\">Proof</p>"
         ]
       ]
     },
     {
-      "use": "products",
-      "links": [
-        [
-          "href=\"https://egpt-frqtl.descix.net/?preset=author\" target=\"_blank\" rel=\"noopener\"",
-          "href=\"app.html?preset=author\""
-        ],
-        [
-          "href=\"https://egpt-frqtl.descix.net/?preset=codec\" target=\"_blank\" rel=\"noopener\"",
-          "href=\"app.html?preset=codec\""
-        ],
-        [
-          "href=\"https://egpt-frqtl.descix.net/?preset=ide\" target=\"_blank\" rel=\"noopener\"",
-          "href=\"app.html?preset=ide\""
-        ]
-      ],
-      "anchors": [
-        {
-          "match": "Open ROSETTA",
-          "href": "app.html?preset=codec&module=qft-order-finding"
-        }
-      ]
+      "file": "egpt-frqtl/products.html"
     },
     {
       "file": "egpt-frqtl/earn.html"
