@@ -68,6 +68,10 @@
         [
           "<p class=\"lede\">Each scene opens live in the engine. Click one and watch it compute in your own tab.</p>",
           "<p class=\"lede\">FRQTL is an actual quantum computer that runs so efficiently it calculates what the father of quantum computing called ‘absolutely impossible.’ In 1981 Feynman birthed the idea of what you know as qubit based quantum computing. FRQTL takes a different approach based on the Monte Carlo method and the work of Stanislaw Ulam. FRQTL’s model is inspired by the approach of Stanislaw Ulam which was continued after the Manhattan Project at Los Alamos National Laboratory and later pursued at Brookhaven National Laboratory Quantum Chromodynamics (QCD) and super-computing projects.</p>"
+        ],
+        [
+          "<p class=\"eyebrow\">Proof</p>",
+          "<p class=\"eyebrow\">Quantum</p>"
         ]
       ]
     },
@@ -95,6 +99,10 @@
         [
           "<a href=\"https://egpt-frqtl.descix.net\" target=\"_blank\" rel=\"noopener\">Run it ↗</a>",
           "<a href=\"app.html?preset=author\">Run it</a>"
+        ],
+        [
+          "<p class=\"eyebrow\">Technology</p>",
+          "<p class=\"eyebrow\">Proof</p>"
         ]
       ]
     },
