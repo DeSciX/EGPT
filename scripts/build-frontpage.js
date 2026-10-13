@@ -23,9 +23,10 @@
  *   row's tile line (TILE_LINE) and its still's alt (row.still.alt); tiles past the template's first
  *   desktop row (gridColumns(): the .grid rule's repeat(N,1fr)) load lazily;
  * - the template owns zero through-line text: its #proof carries exactly one EMPTY
- *   <… data-showcase-throughline></…>, filled with the served roster's SHOWCASE_THROUGH_LINE (plain
- *   text) wherever a page carries it, and an assembled page whose marker does not hold exactly that
- *   text is a build failure.
+ *   <… data-showcase-throughline></…>. A spec that declares "through_line": {"source": "served-roster"}
+ *   gets it filled with the served roster's SHOWCASE_THROUGH_LINE (plain text); a spec that does not
+ *   declares nothing and its marker stays empty. The assembled page is checked either way: every marker
+ *   holds exactly the served text (declared) or nothing (undeclared); an unknown source fails.
  * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
  * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
@@ -135,6 +136,16 @@ const specPath = path.join(SRC, `${app}.json`);
 if (!fs.existsSync(specPath)) die(`no spec: ${specPath}`);
 const spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
 for (const k of ['title', 'description', 'brand', 'nav', 'hero', 'sections', 'footer', 'scripts']) if (!(k in spec)) die(`spec lacks ${k}`);
+// "through_line": a DECLARED choice per spec, never a default (CEO #130: "approve: through-line on both pages,
+// above the grid-note" — egpt-frqtl and egpt-courantgroup). Absent: the template's marker stays empty.
+const THROUGH_SOURCES = ['served-roster'];
+if (spec.through_line !== undefined) {
+  const t = spec.through_line;
+  if (!t || typeof t !== 'object' || Array.isArray(t) || Object.keys(t).join() !== 'source' || !THROUGH_SOURCES.includes(t.source)) {
+    die(`${app}.json through_line ${JSON.stringify(t)}: the one form is {"source": ${THROUGH_SOURCES.map(x => JSON.stringify(x)).join(' | ')}} (omit it to leave the through-line slot empty)`);
+  }
+}
+const throughDeclared = spec.through_line !== undefined;
 
 const rewrite = (html, pairs) => (pairs || []).reduce((h, [from, to]) => {
   if (!h.includes(from)) die(`link rewrite target not present: ${from}`);
@@ -378,8 +389,9 @@ function renderExhibits(html) {
     return `<div${a}data-exhibits${b}>\n${tiles.join('\n')}\n  </div>`;
   });
 }
-// <… data-showcase-throughline></…> (empty) is filled with the served through-line.
+// <… data-showcase-throughline></…> (empty) is filled with the served through-line when the spec declares it.
 function renderThroughLine(html) {
+  if (!throughDeclared) return html;
   return html.replace(THROUGH_SLOT, (m, tag, attrs, inner) => (inner.trim() ? m : `<${tag}${attrs}>${esc(throughLine())}</${tag}>`));
 }
 // Every slot fill, applied to every part of the page whichever path produced it (template section or fragment).
@@ -522,13 +534,17 @@ for (const m of html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-exhibits\b[^>]*>/g
   const want = loadRoster().rows.length;
   if (n !== want) die(`${app}: a data-exhibits slot holds ${n} tiles, the served roster (build ${loadRoster().build}) has ${want} rows — an unfilled slot cannot ship (${m[0]})`);
 }
-// every data-showcase-throughline marker on the assembled page holds exactly the served through-line
+// every data-showcase-throughline marker on the assembled page holds exactly the served through-line (the
+// spec declares it) or nothing (it does not); a declaration with no marker on the page fills nothing and fails
 {
   const marks = (html.match(THROUGH_MARK) || []).length;
   const filled = [...html.matchAll(THROUGH_SLOT)];
   if (filled.length !== marks) die(`${app}: ${marks} data-showcase-throughline markers but ${filled.length} closed elements — a marker the fill cannot reach cannot ship`);
+  if (throughDeclared && !marks) die(`${app}.json declares through_line but the page carries no data-showcase-throughline marker (it uses no #proof)`);
   for (const m of filled) {
-    if (unent(m[3]) !== throughLine()) die(`${app}: a data-showcase-throughline marker holds "${unent(m[3]).slice(0, 60)}…", not the served roster's SHOWCASE_THROUGH_LINE (build ${loadRoster().build})`);
+    const got = unent(m[3]);
+    if (throughDeclared && got !== throughLine()) die(`${app}: a data-showcase-throughline marker holds "${got.slice(0, 60)}…", not the served roster's SHOWCASE_THROUGH_LINE (build ${loadRoster().build})`);
+    if (!throughDeclared && got.trim()) die(`${app}: a data-showcase-throughline marker holds "${got.slice(0, 60)}…", but ${app}.json declares no through_line — the slot stays empty`);
   }
 }
 // nothing on the page still points at the app's own public host (a self-link is a deep link)

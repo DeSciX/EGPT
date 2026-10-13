@@ -46,12 +46,14 @@ ${css}
 <footer><div class="wrap">f</div></footer>
 </body></html>
 `;
-const spec = (selfHost, sections) => ({
+const spec = (selfHost, sections, extra = {}) => ({
   title: 'T', description: 'D', brand: { name: 'B', tag: 't' }, nav: [],
   hero: { eyebrow: 'e', h1_html: 'H', lede: 'l', primary: { text: 'p', href: '#top' } },
   sections, links: [], self_host: selfHost,
-  footer: { name: 'F', tag: 't', links: [], legal_html: 'L' }, scripts: {},
+  footer: { name: 'F', tag: 't', links: [], legal_html: 'L' }, scripts: {}, ...extra,
 });
+// the one declared form of the through-line fill
+const THROUGH_DECL = { through_line: { source: 'served-roster' } };
 const git = (cwd, ...a) => execFileSync('git', a, { cwd, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
 
 // A throwaway world: <T>/ev (this repository's generator + inputs, committed), <T>/tpl (the template repo),
@@ -91,7 +93,8 @@ module.exports = { ...X, ${override.join(', ')} };
   fs.copyFileSync(path.join(REAL, 'scripts', 'build-frontpage.js'), path.join(ev, 'scripts', 'build-frontpage.js'));
   fs.writeFileSync(path.join(src, 'template.json'), JSON.stringify({ repo: '../tpl', commit: git(tpl, 'rev-parse', '--short', 'HEAD'), page: 'site/index.html' }));
   fs.writeFileSync(path.join(src, 'exhibits.json'), JSON.stringify({ app: 'frqtl', repo: '../frqtl' }));
-  const all = { frqtl: spec(ORIGIN, [{ use: 'proof' }]), other: spec('https://other.example', [{ use: 'proof' }]), ...specs };
+  // frqtl and other declare the through-line (as the real egpt-frqtl and egpt-courantgroup specs do); bare does not
+  const all = { frqtl: spec(ORIGIN, [{ use: 'proof' }], THROUGH_DECL), other: spec('https://other.example', [{ use: 'proof' }], THROUGH_DECL), bare: spec('https://bare.example', [{ use: 'proof' }]), ...specs };
   for (const [name, s] of Object.entries(all)) fs.writeFileSync(path.join(src, `${name}.json`), JSON.stringify(s));
   for (const [name, html] of Object.entries(fragments)) fs.writeFileSync(path.join(src, name), html);
   const home = path.join(REAL_SRC, 'exhibits');
@@ -294,7 +297,7 @@ test('through-line precondition: hand text in the marker, two markers, or a mark
 test('through-line: a fragment page carrying the marker is filled; a fragment marker with hand text refuses at the final sweep', () => {
   const w = world({
     fragments: { 'frag.html': `<section class="sec" id="frag"><div class="wrap">${THROUGH}</div></section>`, 'hand.html': '<section class="sec" id="hand"><div class="wrap"><p data-showcase-throughline>hand</p></div></section>' },
-    specs: { frag: spec('https://p.example', [{ file: 'frag.html' }]), hand: spec('https://p.example', [{ file: 'hand.html' }]) },
+    specs: { frag: spec('https://p.example', [{ file: 'frag.html' }], THROUGH_DECL), hand: spec('https://p.example', [{ file: 'hand.html' }], THROUGH_DECL) },
   });
   const ok = w.build('frag');
   assert.equal(ok.code, 0, ok.err); assert.deepEqual(throughLines(ok.html), [THROUGH_TEXT]);
@@ -307,4 +310,54 @@ test('through-line: a served through-line that is not plain text refuses (the pa
   assert.equal(link.code, 1); assert.match(link.err, /holds a non-string or empty segment; the through-line is plain text/);
   const gone = world({ serve: `{ SHOWCASE_THROUGH_LINE: undefined }` }).build('other');
   assert.equal(gone.code, 1); assert.match(gone.err, /exports no SHOWCASE_THROUGH_LINE paragraph/);
+});
+
+// ---------------------------------------------------------------- the through-line is a DECLARED choice per spec
+test('through-line: a spec that does not declare through_line renders its slot EMPTY (tiles still filled)', () => {
+  const r = world().build('bare');
+  assert.equal(r.code, 0, r.err);
+  assert.deepEqual(throughLines(r.html), ['']);
+  assert.equal(tiles(r.html).length, X.EXHIBITS.length);
+});
+
+test('through-line: an undeclared spec whose page carries through-line text refuses at the final sweep', () => {
+  const w = world({
+    fragments: { 'hand.html': `<section class="sec" id="hand"><div class="wrap"><p data-showcase-throughline>${THROUGH_TEXT}</p></div></section>` },
+    specs: { hand: spec('https://p.example', [{ file: 'hand.html' }]) },
+  });
+  const r = w.build('hand');
+  assert.equal(r.code, 1); assert.match(r.err, /but hand\.json declares no through_line — the slot stays empty/);
+});
+
+test('through-line: an unknown source, an extra key or a bare string refuses; a declaration on a page with no marker refuses', () => {
+  const w = world({ specs: {
+    unknown: spec('https://p.example', [{ use: 'proof' }], { through_line: { source: 'typed' } }),
+    extra: spec('https://p.example', [{ use: 'proof' }], { through_line: { source: 'served-roster', text: 'x' } }),
+    str: spec('https://p.example', [{ use: 'proof' }], { through_line: 'served-roster' }),
+    nomark: spec('https://p.example', [{ use: 'plain' }], THROUGH_DECL),
+  } });
+  for (const app of ['unknown', 'extra', 'str']) {
+    const r = w.build(app);
+    assert.equal(r.code, 1, app); assert.match(r.err, new RegExp(`${app}\\.json through_line .*the one form is \\{"source": "served-roster"\\}`)); assert.equal(r.html, null);
+  }
+  const n = w.build('nomark');
+  assert.equal(n.code, 1); assert.match(n.err, /nomark\.json declares through_line but the page carries no data-showcase-throughline marker/);
+});
+
+// The REAL specs, built by the real generator from this repository against the real template pin and the served
+// roster: the through-line is on exactly the two pages the CEO approved (#130), every other #proof page leaves it empty.
+const THROUGH_PAGES = ['egpt-frqtl', 'egpt-courantgroup'];
+test('through-line: the real specs fill it on egpt-frqtl and egpt-courantgroup only; every other #proof page renders it empty', () => {
+  const real = fs.readdirSync(REAL_SRC).filter(f => f.endsWith('.json') && !['template.json', 'exhibits.json'].includes(f)).map(f => f.slice(0, -5));
+  const proofPages = real.filter(a => JSON.parse(fs.readFileSync(path.join(REAL_SRC, `${a}.json`), 'utf8')).sections.some(s => s.use === 'proof'));
+  assert.ok(THROUGH_PAGES.every(a => proofPages.includes(a)) && proofPages.length > THROUGH_PAGES.length, `#proof pages: ${proofPages.join(', ')}`);
+  const T = fs.mkdtempSync(path.join(os.tmpdir(), 'frontpage-real-'));
+  for (const app of proofPages) {
+    const out = path.join(T, app);
+    const r = spawnSync(process.execPath, [path.join(REAL, 'scripts', 'build-frontpage.js'), app, '--out', out], { cwd: REAL, encoding: 'utf8' });
+    assert.equal(r.status, 0, `${app}: ${r.stderr}`);
+    const got = throughLines(fs.readFileSync(path.join(out, 'index.html'), 'utf8'));
+    assert.deepEqual(got, [THROUGH_PAGES.includes(app) ? THROUGH_TEXT : ''], `${app}: through-line ${THROUGH_PAGES.includes(app) ? 'filled' : 'empty'}`);
+  }
+  fs.rmSync(T, { recursive: true, force: true });
 });

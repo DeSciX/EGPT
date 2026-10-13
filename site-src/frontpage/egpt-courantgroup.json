@@ -47,5 +47,6 @@
     "sdk": true,
     "template_scripts": true
   },
-  "self_host": "https://egpt-courantgroup.descix.net"
+  "self_host": "https://egpt-courantgroup.descix.net",
+  "through_line": { "source": "served-roster" }
 }
