@@ -11,15 +11,15 @@
     400
   ],
   "pose": {
-    "azimuth": 35,
-    "elevation": 42,
-    "distance": 950,
+    "azimuth": 0,
+    "elevation": 0,
+    "distance": 780,
     "roll": 0,
     "target": null
   },
   "wasmSha256": "52de3763b72a31c8ffdf4fe7cb6aa3f51d2276fb6aef5dc23d8c4b7a8b2a9642",
-  "servedFrom": "http://127.0.0.1:5863/app.html?preset=compare&walkthrough=cl1d-mirror-route&mode=3d",
-  "siteBuild": "98d7ec44",
-  "capturedAt": "2026-10-12T22:43:01.715Z",
+  "servedFrom": "http://127.0.0.1:5873/app.html?preset=compare&walkthrough=cl1d-mirror-route&mode=3d",
+  "siteBuild": "77474b88",
+  "capturedAt": "2026-10-13T00:51:22.469Z",
   "instrument": "apps/ide/test/tile-stills-capture.spec.js"
 }
