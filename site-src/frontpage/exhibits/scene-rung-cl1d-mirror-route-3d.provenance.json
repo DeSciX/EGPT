@@ -4,7 +4,7 @@
   "mode": "3d",
   "link": "./app.html?preset=compare&walkthrough=cl1d-mirror-route&mode=3d",
   "tick": 1200,
-  "sceneHash": "sha256:45ea2f0a63167da009544f51501bbfcf3c247560663e1966a10507be0b236203",
+  "sceneHash": "sha256:fadd930d8f4e5a864850c46c75e9197a97743a30b391daca42318bb2431a8d9e",
   "seed": 42,
   "world": [
     600,
@@ -17,9 +17,9 @@
     "roll": 0,
     "target": null
   },
-  "wasmSha256": "52de3763b72a31c8ffdf4fe7cb6aa3f51d2276fb6aef5dc23d8c4b7a8b2a9642",
-  "servedFrom": "http://127.0.0.1:5873/app.html?preset=compare&walkthrough=cl1d-mirror-route&mode=3d",
-  "siteBuild": "77474b88",
-  "capturedAt": "2026-10-13T00:51:22.469Z",
+  "wasmSha256": "62d85248bb8bd963d5acfc36d484414067d1dd1d516a59f4eb74c591a9341e68",
+  "servedFrom": "http://127.0.0.1:5923/app.html?preset=compare&walkthrough=cl1d-mirror-route&mode=3d",
+  "siteBuild": "29bfdb75",
+  "capturedAt": "2026-10-14T01:14:29.329Z",
   "instrument": "apps/ide/test/tile-stills-capture.spec.js"
 }
