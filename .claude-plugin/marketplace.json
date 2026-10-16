@@ -11,7 +11,11 @@
   "plugins": [
     {
       "name": "godsworld",
-      "source": "./plugins/godsworld",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/DeSciX/egpt-godsworld.git",
+        "path": "plugin"
+      },
       "description": "Gods World — talk to Maxi, build physically realistic simulations for it to learn from, and see what it dreams about.",
       "category": "science",
       "keywords": [
