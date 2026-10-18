@@ -124,9 +124,10 @@
     },
     "sdk": true,
     "modules": [
-      "app-assets/host-view.js"
+      "app-assets/maxi-host-view.js"
     ],
-    "_note": "Full screen on load through the one shared declarer, app-assets/host-view.js, copied from egpt-frqtl c4e340b; no inline view call (CEO-COMMS relay of the author, 2026-10-02)."
+    "import_map": true,
+    "_note": "The page declares its host view once, through the app's own module app-assets/maxi-host-view.js, which calls the host-view declarer of @descix/frqtl-web; there is no inline view call. \"import_map\": true leaves an empty import-map block at the end of the head; the app repository's scripts/gen-import-maps.mjs fills it with the map that resolves @descix/frqtl-web to the version the app vendors, so a rebuilt page is current again after one run of that script."
   },
   "share": {
     "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload (CEO priority 2, Unkamon bef716a). One block per app: what a share card and a browser tab show for this site.",
