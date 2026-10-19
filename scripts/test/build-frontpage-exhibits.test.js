@@ -3,28 +3,34 @@
 //
 //   node --test scripts/test/build-frontpage-exhibits.test.js
 //
-// Each case runs the REAL generator (copied into a throwaway repository) against the REAL served roster
-// — the egpt-frqtl checkout named by site-src/frontpage/exhibits.json, at the build its
-// .descix/site-provenance.json names — and the real stills home. A template, a spec and the stills are
-// the inputs a case varies; a case that needs a row WITHOUT a still serves the real roster with one row's
-// still withdrawn (world({ undeclare })), so it runs whatever the live roster declares. No checkout of the
-// served roster is a FAILURE here, never a skip.
+// Each case runs the REAL generator (copied into a throwaway repository) against the REAL roster — this
+// repository's pinned @descix/frqtl-web (its ./registry export), installed into the throwaway repository's
+// node_modules as a fixture package — and the real stills home. A template, a spec and the stills are the
+// inputs a case varies; a case that needs a row WITHOUT a still installs a fixture package that re-exports the
+// real roster with one row's still withdrawn (world({ undeclare })), so it runs whatever the pinned roster
+// declares. The pinned package not installed here (no npm ci) is a FAILURE, never a skip.
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
+const { pathToFileURL } = require('url');
 const { execFileSync, spawnSync } = require('child_process');
 
 const REAL = path.resolve(__dirname, '..', '..');
 const REAL_SRC = path.join(REAL, 'site-src', 'frontpage');
 const cfg = JSON.parse(fs.readFileSync(path.join(REAL_SRC, 'exhibits.json'), 'utf8'));
-const servedRepo = path.resolve(REAL, cfg.repo);
-const up = JSON.parse(fs.readFileSync(path.join(servedRepo, '.descix', 'site-provenance.json'), 'utf8')).upstream_sha;
-const registry = path.join(servedRepo, 'site', 'pub', up, 'ide', 'registry');
-const X = require(path.join(registry, 'exhibits.js'));
+const PKG = '@descix/frqtl-web';
 const ORIGIN = JSON.parse(fs.readFileSync(path.join(REAL_SRC, `${cfg.app}.json`), 'utf8')).self_host;
+// the pinned package as this repository installs it: its directory, its ./registry module, the module itself
+let PKG_DIR, REGISTRY_FILE, X, THROUGH_TEXT;
+test.before(async () => {
+  try { PKG_DIR = path.dirname(require.resolve(`${PKG}/package.json`)); REGISTRY_FILE = require.resolve(`${PKG}/registry`); }
+  catch (e) { throw new Error(`${PKG} is not installed in ${REAL} — run npm ci (package.json pins it): ${e.message}`); }
+  X = await import(`${PKG}/registry`);
+  THROUGH_TEXT = X.SHOWCASE_THROUGH_LINE.join('');
+});
 const key = r => X.sceneKey({ kind: r.kind, id: r.id, modeId: r.mode });
 
 const SLOT = '<div class="grid" data-exhibits></div>';
@@ -56,43 +62,32 @@ const spec = (selfHost, sections, extra = {}) => ({
 const THROUGH_DECL = { through_line: { source: 'served-roster' } };
 const git = (cwd, ...a) => execFileSync('git', a, { cwd, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
 
-// A throwaway world: <T>/ev (this repository's generator + inputs, committed), <T>/tpl (the template repo),
-// <T>/frqtl (a served checkout whose registry is the real one, symlinked).
-// undeclare: a roster row id the served checkout serves WITHOUT its still (its still files leave the home too).
-// serve: a JS object expression over X (the real served module) whose keys replace the served exports —
-// how a case plants a fault in the SERVED roster without touching it (e.g. one row's still.alt stripped).
+// A throwaway world: <T>/ev (this repository's generator + inputs, committed; node_modules/ ignored),
+// <T>/tpl (the template repo). <T>/ev/node_modules/@descix/frqtl-web is the roster package the generator imports:
+// the real installed package (symlinked), or, when a case varies the roster, a fixture package whose ./registry
+// re-exports the real module with the case's exports replaced; pkg: false installs none; pkg: 'broken' installs a
+// package whose ./registry resolves but fails to load (it imports a file the package does not have).
+// undeclare: a roster row id the fixture package serves WITHOUT its still (its still files leave the home too).
+// serve: a JS object expression over X (the real module) whose keys replace the package's exports —
+// how a case plants a fault in the roster without touching it (e.g. one row's still.alt stripped).
 // fragments: { <file>: html } written beside the specs.
-function world({ template = page(SLOT), stills = 'real', provenance = true, specs = {}, undeclare = null, serve = null, fragments = {} } = {}) {
+function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {}, undeclare = null, serve = null, fragments = {} } = {}) {
   const T = fs.mkdtempSync(path.join(os.tmpdir(), 'frontpage-exhibits-'));
   const tpl = path.join(T, 'tpl');
   fs.mkdirSync(path.join(tpl, 'site'), { recursive: true });
   fs.writeFileSync(path.join(tpl, 'site', 'index.html'), template);
   git(tpl, 'init', '-q'); git(tpl, 'add', '.'); git(tpl, '-c', 'user.name=t', '-c', 'user.email=t@t', 'commit', '-qm', 'tpl');
-  const frqtl = path.join(T, 'frqtl');
-  fs.mkdirSync(path.join(frqtl, '.descix'), { recursive: true });
-  fs.mkdirSync(path.join(frqtl, 'site', 'pub', up, 'ide'), { recursive: true });
-  const served = path.join(frqtl, 'site', 'pub', up, 'ide', 'registry');
   if (undeclare && !X.EXHIBITS.some(r => r.id === undeclare && r.still)) throw new Error(`fixture: roster row ${undeclare} declares no still to withdraw`);
   const override = [undeclare ? `EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(undeclare)} ? { ...r, still: undefined } : r))` : '', serve ? `...(${serve})` : ''].filter(Boolean);
-  if (!override.length) fs.symlinkSync(registry, served);
-  else {
-    fs.mkdirSync(served);
-    for (const f of fs.readdirSync(registry)) if (f !== 'exhibits.js') fs.symlinkSync(path.join(registry, f), path.join(served, f));
-    fs.writeFileSync(path.join(served, 'exhibits.js'), `'use strict';
-const X = require(${JSON.stringify(path.join(registry, 'exhibits.js'))});
-module.exports = { ...X, ${override.join(', ')} };
-`);
-  }
   const rows = X.EXHIBITS.map(r => (r.id === undeclare ? { ...r, still: undefined } : r));
   const withdrawn = undeclare ? `${key(X.EXHIBITS.find(r => r.id === undeclare))}.` : null;
-  if (provenance) fs.writeFileSync(path.join(frqtl, '.descix', 'site-provenance.json'), JSON.stringify({ upstream_sha: up }));
   const ev = path.join(T, 'ev');
   const src = path.join(ev, 'site-src', 'frontpage');
   fs.mkdirSync(path.join(ev, 'scripts'), { recursive: true });
   fs.mkdirSync(path.join(src, 'exhibits'), { recursive: true });
   fs.copyFileSync(path.join(REAL, 'scripts', 'build-frontpage.js'), path.join(ev, 'scripts', 'build-frontpage.js'));
   fs.writeFileSync(path.join(src, 'template.json'), JSON.stringify({ repo: '../tpl', commit: git(tpl, 'rev-parse', '--short', 'HEAD'), page: 'site/index.html' }));
-  fs.writeFileSync(path.join(src, 'exhibits.json'), JSON.stringify({ app: 'frqtl', repo: '../frqtl' }));
+  fs.writeFileSync(path.join(src, 'exhibits.json'), JSON.stringify({ app: 'frqtl' }));
   // frqtl and other declare the through-line (as the real egpt-frqtl and egpt-courantgroup specs do); bare does not
   const all = { frqtl: spec(ORIGIN, [{ use: 'proof' }], THROUGH_DECL), other: spec('https://other.example', [{ use: 'proof' }], THROUGH_DECL), bare: spec('https://bare.example', [{ use: 'proof' }]), ...specs };
   for (const [name, s] of Object.entries(all)) fs.writeFileSync(path.join(src, `${name}.json`), JSON.stringify(s));
@@ -101,11 +96,37 @@ module.exports = { ...X, ${override.join(', ')} };
   const real = fs.readdirSync(home);
   const kept = withdrawn ? real.filter(f => !f.startsWith(withdrawn)) : real;
   for (const f of (stills === 'real' ? kept : stills(kept))) fs.copyFileSync(path.join(home, f), path.join(src, 'exhibits', f));
-  git(ev, 'init', '-q'); git(ev, 'add', '.'); git(ev, '-c', 'user.name=t', '-c', 'user.email=t@t', 'commit', '-qm', 'ev');
+  fs.writeFileSync(path.join(ev, '.gitignore'), 'node_modules/\n');
+  const commit = () => { git(ev, 'add', '.'); git(ev, '-c', 'user.name=t', '-c', 'user.email=t@t', 'commit', '-qm', 'ev'); };
+  git(ev, 'init', '-q'); commit();
+  if (pkg) {
+    const scope = path.join(ev, 'node_modules', '@descix');
+    fs.mkdirSync(scope, { recursive: true });
+    const dir = path.join(scope, 'frqtl-web');
+    if (pkg === 'broken') {
+      fs.mkdirSync(dir);
+      fs.writeFileSync(path.join(dir, 'package.json'), JSON.stringify({ name: PKG, version: '0.0.0-broken', type: 'module', exports: { './registry': './registry.js', './package.json': './package.json' } }));
+      fs.writeFileSync(path.join(dir, 'registry.js'), "export * from './absent.js';\n");
+    } else if (!override.length) fs.symlinkSync(PKG_DIR, dir);
+    else {
+      const body = `{ ${override.join(', ')} }`;
+      const names = Object.keys(new Function('X', `return ${body};`)(X));
+      const real = JSON.stringify(pathToFileURL(REGISTRY_FILE).href);
+      fs.mkdirSync(dir);
+      const { version } = JSON.parse(fs.readFileSync(path.join(PKG_DIR, 'package.json'), 'utf8'));
+      fs.writeFileSync(path.join(dir, 'package.json'), JSON.stringify({ name: PKG, version, type: 'module', exports: { './registry': './registry.js', './package.json': './package.json' } }));
+      fs.writeFileSync(path.join(dir, 'registry.js'), `import * as X from ${real};
+export * from ${real};
+const O = ${body};
+${names.map(n => `export const ${n} = O.${n};`).join('\n')}
+`);
+    }
+  }
   return {
-    T, rows,
+    T, rows, commit,
     build(app) {
       const out = path.join(T, 'out', app);
+      fs.rmSync(out, { recursive: true, force: true });   // a refused build must not be read as an earlier build's page
       const r = spawnSync(process.execPath, [path.join(ev, 'scripts', 'build-frontpage.js'), app, '--out', out], { cwd: ev, encoding: 'utf8' });
       const html = fs.existsSync(path.join(out, 'index.html')) ? fs.readFileSync(path.join(out, 'index.html'), 'utf8') : null;
       return { code: r.status, err: r.stderr, html, out };
@@ -122,7 +143,6 @@ const tiles = html => [...html.match(/<div\b[^>]*data-exhibits[^>]*>([\s\S]*?)<\
 const unent = s => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 // every filled through-line marker on a page: its decoded text
 const throughLines = html => [...html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-showcase-throughline\b[^>]*>([\s\S]*?)<\/\1>/g)].map(m => unent(m[2]));
-const THROUGH_TEXT = X.SHOWCASE_THROUGH_LINE.join('');
 const gymLink = r => `app.html?preset=compare&walkthrough=${r.id}${r.mode ? `&mode=${r.mode}` : ''}`;
 
 test('another site\'s page: one tile per roster row, in order, absolute GYM links, stills iff declared', () => {
@@ -174,16 +194,56 @@ test('template precondition: no data-exhibits slot refuses, even for a page that
   }
 });
 
-test('roster unreadable refuses, naming the path; a page without the slot never reads it', () => {
-  const w = world({ provenance: false, specs: { plainonly: spec('https://p.example', [{ use: 'plain' }]) } });
+test('roster package absent refuses, naming npm ci; a page without the slot never needs it', () => {
+  const w = world({ pkg: false, specs: { plainonly: spec('https://p.example', [{ use: 'plain' }]) } });
   const r = w.build('other');
-  assert.equal(r.code, 1); assert.match(r.err, /roster unreadable: .*site-provenance\.json does not exist/);
+  assert.equal(r.code, 1); assert.match(r.err, /roster unreadable: @descix\/frqtl-web\/registry is not installed — run npm ci/); assert.equal(r.html, null);
   assert.equal(w.build('plainonly').code, 0);
+});
+
+test('roster package installed but failing to load reports the load error as itself, never "not installed"', () => {
+  const r = world({ pkg: 'broken' }).build('other');
+  assert.equal(r.code, 1); assert.match(r.err, /roster unreadable: @descix\/frqtl-web\/registry failed to load: .*absent\.js/);
+  assert.doesNotMatch(r.err, /not installed|npm ci/); assert.equal(r.html, null);
+});
+
+// The roster owns the kinds (EXHIBIT_KINDS); its sceneKey refuses any other before a tile is written.
+test('a roster row that is not a walk-through rung refuses (no ?experiment= tile; the GYM refuses it)', () => {
+  const row = X.EXHIBITS[0];
+  const r = world({ serve: `{ EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(row.id)} ? { ...r, kind: 'experiment' } : r)) }` }).build('other');
+  assert.equal(r.code, 1); assert.match(r.err, /unknown scene kind "experiment"/); assert.doesNotMatch(r.err, /experiment=/); assert.equal(r.html, null);
+});
+
+// The build reads site-src/frontpage/ through one door that refuses an uncommitted INPUT of this page, by name; an
+// uncommitted file this page does not read blocks nothing (another app's spec in progress stays where it is).
+test('an uncommitted input refuses, naming it; an uncommitted file the page does not read does not', () => {
+  const w = world();
+  const src = path.join(w.T, 'ev', 'site-src', 'frontpage');
+  const edit = (name, title) => { const s = JSON.parse(fs.readFileSync(path.join(src, name), 'utf8')); fs.writeFileSync(path.join(src, name), JSON.stringify({ ...s, title })); };
+  fs.writeFileSync(path.join(src, 'untracked.json'), '{}');
+  edit('bare.json', 'another app, uncommitted');
+  const free = w.build('frqtl');
+  assert.equal(free.code, 0, `an unrelated uncommitted spec blocked the build: ${free.err}`);
+  edit('frqtl.json', 'uncommitted');
+  const r = w.build('frqtl');
+  assert.equal(r.code, 1); assert.match(r.err, /site-src\/frontpage\/frqtl\.json is uncommitted; .* — commit it, or build another app/);
+  assert.doesNotMatch(r.err, /stash|bare\.json|untracked\.json/); assert.equal(r.html, null);
+  // the roster app's spec is an input of every tiled page (its self_host), so another page refuses on it too
+  const o = w.build('other');
+  assert.equal(o.code, 1); assert.match(o.err, /frqtl\.json is uncommitted/);
+  // an untracked file inside a directory the page reads (the stills home) refuses, naming the file
+  w.commit();
+  fs.writeFileSync(path.join(src, 'exhibits', 'stray.png'), 'png');
+  const d = w.build('frqtl');
+  assert.equal(d.code, 1); assert.match(d.err, /site-src\/frontpage\/exhibits\/stray\.png is uncommitted/);
+  fs.unlinkSync(path.join(src, 'exhibits', 'stray.png'));
+  const ok = w.build('frqtl');
+  assert.equal(ok.code, 0, ok.err); assert.match(ok.html, /<title>uncommitted<\/title>/);
 });
 
 test('final sweep: a slot the fill cannot reach refuses (unfilled grid)', () => {
   const r = world({ template: page('<div class="grid" data-exhibits>&nbsp;</div>') }).build('other');
-  assert.equal(r.code, 1); assert.match(r.err, /a data-exhibits slot holds 0 tiles, the served roster \(build [0-9a-f]{8}\) has \d+ rows/);
+  assert.equal(r.code, 1); assert.match(r.err, /a data-exhibits slot holds 0 tiles, the roster \(@descix\/frqtl-web@\d+\.\d+\.\d+\S*\) has \d+ rows/);
 });
 
 test('final sweep: a slot on a non-div element refuses', () => {
@@ -202,6 +262,7 @@ test('stills: a still no row declares refuses (no per-page image lists by the ba
   const w = world({ undeclare: undeclared.id });
   const home = path.join(w.T, 'ev', 'site-src', 'frontpage', 'exhibits');
   fs.copyFileSync(path.join(home, fs.readdirSync(home).find(f => f.endsWith('.png'))), path.join(home, `${key(undeclared)}.png`));
+  w.commit();
   const r = w.build('other');
   assert.equal(r.code, 1); assert.match(r.err, new RegExp(`${key(undeclared)}\\.png is a still no roster row declares`));
 });
@@ -213,7 +274,7 @@ test('stills: a still without its provenance sidecar refuses', () => {
 });
 
 // ---------------------------------------------------------------- the tile's copy: its line and its still's alt
-test('tile copy: the caption line is the row\'s tile line and the img alt is its still.alt, from the served roster', () => {
+test('tile copy: the caption line is the row\'s tile line and the img alt is its still.alt, from the roster', () => {
   const r = world().build('other');
   assert.equal(r.code, 0, r.err);
   const got = tiles(r.html);
@@ -266,7 +327,7 @@ test('lazy: a template whose .grid has no repeat(N,1fr) refuses (no default colu
 });
 
 // ---------------------------------------------------------------- the through-line slot
-test('through-line: the template marker is filled with the served SHOWCASE_THROUGH_LINE, once, under the grid and above the grid-note', () => {
+test('through-line: the template marker is filled with the roster\'s SHOWCASE_THROUGH_LINE, once, under the grid and above the grid-note', () => {
   for (const app of ['frqtl', 'other']) {
     const r = world().build(app);
     assert.equal(r.code, 0, r.err);
@@ -302,10 +363,10 @@ test('through-line: a fragment page carrying the marker is filled; a fragment ma
   const ok = w.build('frag');
   assert.equal(ok.code, 0, ok.err); assert.deepEqual(throughLines(ok.html), [THROUGH_TEXT]);
   const bad = w.build('hand');
-  assert.equal(bad.code, 1); assert.match(bad.err, /holds "hand…", not the served roster's SHOWCASE_THROUGH_LINE/);
+  assert.equal(bad.code, 1); assert.match(bad.err, /holds "hand…", not the roster's SHOWCASE_THROUGH_LINE/);
 });
 
-test('through-line: a served through-line that is not plain text refuses (the page has no link renderer); a missing one refuses', () => {
+test('through-line: a roster through-line that is not plain text refuses (the page has no link renderer); a missing one refuses', () => {
   const link = world({ serve: `{ SHOWCASE_THROUGH_LINE: ['FRQTL ', { text: 'links', href: 'https://example.org' }] }` }).build('other');
   assert.equal(link.code, 1); assert.match(link.err, /holds a non-string or empty segment; the through-line is plain text/);
   const gone = world({ serve: `{ SHOWCASE_THROUGH_LINE: undefined }` }).build('other');
@@ -344,7 +405,7 @@ test('through-line: an unknown source, an extra key or a bare string refuses; a 
   assert.equal(n.code, 1); assert.match(n.err, /nomark\.json declares through_line but the page carries no data-showcase-throughline marker/);
 });
 
-// The REAL specs, built by the real generator from this repository against the real template pin and the served
+// The REAL specs, built by the real generator from this repository against the real template pin and the pinned
 // roster: the through-line is on exactly the two pages the CEO approved (#130), every other #proof page leaves it empty.
 const THROUGH_PAGES = ['egpt-frqtl', 'egpt-courantgroup'];
 test('through-line: the real specs fill it on egpt-frqtl and egpt-courantgroup only; every other #proof page renders it empty', () => {

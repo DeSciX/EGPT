@@ -19,11 +19,14 @@ function validateShare(app, sh) {
   return sh;
 }
 
+// Where an app's rendered share assets live: site-src/frontpage/<app>/share/, drawn by scripts/build-share-assets.js.
+const shareSourceDir = (srcDir, app) => path.join(srcDir, app, 'share');
+
 // Writes <out>/share.json and <out>/images/share/* from the block and its rendered assets
-// (site-src/frontpage/<app>/share/, drawn by scripts/build-share-assets.js). Returns the object written.
+// (shareSourceDir). Returns the object written.
 function emitShare(app, sh, srcDir, out) {
   validateShare(app, sh);
-  const from = path.join(srcDir, app, 'share');
+  const from = shareSourceDir(srcDir, app);
   for (const f of Object.values(ASSETS)) if (!fs.existsSync(path.join(from, f))) throw new Error(`${app}: share asset not rendered: ${path.join(from, f)} (run scripts/build-share-assets.js ${app})`);
   const og = fs.statSync(path.join(from, ASSETS.og_image)).size;
   // 1 MB per the canonical app-developer runbook (daita docs, app-sdk/app-developer-runbook.md: og_image "under 1 MB"); the egpt-frqtl validator cites the same literal.
@@ -35,4 +38,4 @@ function emitShare(app, sh, srcDir, out) {
   fs.writeFileSync(path.join(out, 'share.json'), JSON.stringify(json, null, 1) + '\n');
   return json;
 }
-module.exports = { validateShare, emitShare, ASSETS, BUNDLE_DIR };
+module.exports = { validateShare, emitShare, shareSourceDir, ASSETS, BUNDLE_DIR };
