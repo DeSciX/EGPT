@@ -30,7 +30,10 @@
  * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
  * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
- * Pure Node; the one dependency is @descix/app-sdk, for the generated app-side bridge.
+ * The spec and its fragments are read from the working tree, so a dirty site-src/frontpage/ refuses: the
+ * page is built from committed inputs only.
+ * Pure Node; the dependencies are the pinned devDependencies @descix/app-sdk (the generated app-side
+ * bridge) and @descix/frqtl-web (the showcase roster, its ./registry export).
  */
 'use strict';
 const fs = require('fs');
@@ -46,6 +49,10 @@ const outAt = args.indexOf('--out');
 const OUT = outAt > 0 ? path.resolve(args[outAt + 1]) : path.join(ROOT, 'site');
 function die(msg) { console.error('ERROR: ' + msg); process.exit(1); }
 if (!app || app.startsWith('--')) die('usage: build-frontpage.js <app> [--out <dir>] [--dry-run]');
+{
+  const dirty = execFileSync('git', ['status', '--porcelain', '--', path.relative(ROOT, SRC)], { cwd: ROOT }).toString('utf8').split('\n').filter(Boolean);
+  if (dirty.length) die(`site-src/frontpage/ has uncommitted changes; the page is built from committed inputs only — commit or stash them:\n  ${dirty.join('\n  ')}`);
+}
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // ---------------------------------------------------------------- the template, at its pinned commit
@@ -303,11 +310,14 @@ function renderShelves(html, file) {
 }
 
 // ---------------------------------------------------------------- the showcase roster: the one owner of the tiles
-// site-src/frontpage/exhibits.json names the app that serves the roster and its checkout; the rows are
-// that checkout's SERVED copy, <repo>/site/pub/<upstream_sha>/ide/registry/exhibits.js, upstream_sha from
-// <repo>/.descix/site-provenance.json. Read on the first data-exhibits slot only: a page without one never
-// touches the app. The rows are ferried as exported (EXHIBITS) and a still is named by the roster's own
-// sceneKey; nothing here re-enumerates a row's fields.
+// The rows are the pinned @descix/frqtl-web package's ./registry export (FRAQTL's showcase roster, the release
+// egpt-frqtl serves), imported by package name in main(); site-src/frontpage/exhibits.json names the app whose
+// spec's self_host the tiles link. Read on the first data-exhibits slot only: a page without one never needs the
+// package. The rows are ferried as exported (EXHIBITS) and a still is named by the roster's own sceneKey; nothing
+// here re-enumerates a row's fields.
+const ROSTER_PKG = '@descix/frqtl-web';
+const ROSTER_EXPORT = `${ROSTER_PKG}/registry`;
+let rosterModule = null; // { X } | { err }, set by main() before the page is assembled
 const STILLS = path.join(SRC, 'exhibits');
 let roster = null;
 function loadRoster() {
@@ -315,16 +325,13 @@ function loadRoster() {
   const cfgPath = path.join(SRC, 'exhibits.json');
   if (!fs.existsSync(cfgPath)) die(`data-exhibits slot, but ${cfgPath} does not exist`);
   const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8'));
-  const repo = path.resolve(ROOT, cfg.repo);
-  const prov = path.join(repo, '.descix', 'site-provenance.json');
-  if (!fs.existsSync(prov)) die(`roster unreadable: ${prov} does not exist (exhibits.json repo ${cfg.repo} is not a refreshed ${cfg.app} checkout)`);
-  const up = JSON.parse(fs.readFileSync(prov, 'utf8')).upstream_sha;
-  if (!/^[0-9a-f]{8}$/.test(up || '')) die(`roster unreadable: ${prov} carries no 8-hex upstream_sha (got ${JSON.stringify(up)})`);
-  const mod = path.join(repo, 'site', 'pub', up, 'ide', 'registry', 'exhibits.js');
-  if (!fs.existsSync(mod)) die(`roster unreadable: ${mod} does not exist (${cfg.app} serves build ${up})`);
-  let X;
-  try { X = require(mod); } catch (e) { die(`roster unreadable: ${mod} failed to load: ${e.message}`); }
-  if (!Array.isArray(X.EXHIBITS) || !X.EXHIBITS.length || typeof X.sceneKey !== 'function') die(`roster unreadable: ${mod} exports no EXHIBITS rows / sceneKey`);
+  if (!rosterModule) die('roster read before main() imported it');
+  const { err } = rosterModule;
+  if (err && err.code === 'ERR_MODULE_NOT_FOUND') die(`roster unreadable: ${ROSTER_EXPORT} is not installed — run npm ci (package.json pins ${ROSTER_PKG}): ${err.message}`);
+  if (err) die(`roster unreadable: ${ROSTER_EXPORT} failed to load: ${err.message}`);
+  const X = rosterModule.X;
+  const release = `${ROSTER_PKG}@${require(`${ROSTER_PKG}/package.json`).version}`;
+  if (!Array.isArray(X.EXHIBITS) || !X.EXHIBITS.length || typeof X.sceneKey !== 'function') die(`roster unreadable: ${ROSTER_EXPORT} (${release}) exports no EXHIBITS rows / sceneKey`);
   const appSpec = path.join(SRC, `${cfg.app}.json`);
   if (!fs.existsSync(appSpec)) die(`exhibits.json app ${cfg.app} has no spec ${appSpec} (its self_host is where the tiles link)`);
   const origin = JSON.parse(fs.readFileSync(appSpec, 'utf8')).self_host;
@@ -340,28 +347,28 @@ function loadRoster() {
     if (JSON.parse(fs.readFileSync(pv, 'utf8')).sceneKey !== name.replace(/\.png$/, '')) die(`${pv} is not the provenance of ${name}`);
   }
   const declared = new Set([...stills].filter(([r]) => r.still).map(([, n]) => n));
-  for (const f of onDisk) if (!declared.has(f)) die(`${path.join(STILLS, f)} is a still no roster row declares (served build ${up})`);
+  for (const f of onDisk) if (!declared.has(f)) die(`${path.join(STILLS, f)} is a still no roster row declares (roster ${release})`);
   // every declared still carries its alt (the roster's one home for it); a tile never ships alt=""
   for (const r of X.EXHIBITS) {
-    if (r.still && (typeof r.still.alt !== 'string' || !r.still.alt.trim())) die(`roster row ${r.id} declares a still without its alt text (still.alt, served build ${up}) — a tile never ships alt=""`);
+    if (r.still && (typeof r.still.alt !== 'string' || !r.still.alt.trim())) die(`roster row ${r.id} declares a still without its alt text (still.alt, roster ${release}) — a tile never ships alt=""`);
   }
-  return (roster = { rows: X.EXHIBITS, stills, origin, build: up, X });
+  return (roster = { rows: X.EXHIBITS, stills, origin, release, X });
 }
 // The tile's one-line caption is the row's published short sentence (CEO #129: "approve: tile line stays,
 // captions on the card"); what/why/how are the GYM card's. Required on every row: a roster served without it
-// (an old build) refuses instead of rendering a tile with no line.
+// (an old release) refuses instead of rendering a tile with no line.
 const TILE_LINE = 'tile';
 function tileLine(r) {
   const v = r[TILE_LINE];
-  if (typeof v !== 'string' || !v.trim()) die(`roster row ${r.id} has no ${TILE_LINE} line (served build ${loadRoster().build}) — the tile caption is the row's ${TILE_LINE}`);
+  if (typeof v !== 'string' || !v.trim()) die(`roster row ${r.id} has no ${TILE_LINE} line (roster ${loadRoster().release}) — the tile caption is the row's ${TILE_LINE}`);
   return v;
 }
-// The through-line: the served SHOWCASE_THROUGH_LINE, one paragraph of plain strings.
+// The through-line: the roster's SHOWCASE_THROUGH_LINE, one paragraph of plain strings.
 function throughLine() {
-  const { X, build } = loadRoster();
+  const { X, release } = loadRoster();
   const p = X.SHOWCASE_THROUGH_LINE;
-  if (!Array.isArray(p) || !p.length) die(`roster unreadable: served build ${build} exports no SHOWCASE_THROUGH_LINE paragraph (the template's data-showcase-throughline marker is filled from it)`);
-  if (!p.every(s => typeof s === 'string' && s.length)) die(`served SHOWCASE_THROUGH_LINE (build ${build}) holds a non-string or empty segment; the through-line is plain text — the page has no link renderer`);
+  if (!Array.isArray(p) || !p.length) die(`roster unreadable: ${release} exports no SHOWCASE_THROUGH_LINE paragraph (the template's data-showcase-throughline marker is filled from it)`);
+  if (!p.every(s => typeof s === 'string' && s.length)) die(`the roster's SHOWCASE_THROUGH_LINE (${release}) holds a non-string or empty segment; the through-line is plain text — the page has no link renderer`);
   return p.join('');
 }
 // The ONE writer of a tile's link: the GYM of the roster's app, absolute; on the app's own page (its spec's
@@ -369,10 +376,8 @@ function throughLine() {
 const GYM = 'app.html?preset=compare';
 function tileHref(row) {
   const { origin } = loadRoster();
-  let q;
-  if (row.kind === 'rung') q = `&walkthrough=${encodeURIComponent(row.id)}${row.mode ? `&mode=${encodeURIComponent(row.mode)}` : ''}`;
-  else if (row.kind === 'experiment') q = `&experiment=${encodeURIComponent(row.id)}`;
-  else die(`roster row ${row.id}: kind ${JSON.stringify(row.kind)} has no GYM link`);
+  if (row.kind !== 'rung') die(`roster row ${row.id}: kind ${JSON.stringify(row.kind)} has no GYM link — a tile is a walk-through rung (the GYM refuses ?experiment=)`);
+  const q = `&walkthrough=${encodeURIComponent(row.id)}${row.mode ? `&mode=${encodeURIComponent(row.mode)}` : ''}`;
   return spec.self_host === origin ? { href: GYM + q, rel: '' } : { href: `${origin}/${GYM}${q}`, rel: ' target="_blank" rel="noopener"' };
 }
 // <div … data-exhibits></div> (empty) is filled with one tile per roster row, in roster order.
@@ -389,7 +394,7 @@ function renderExhibits(html) {
     return `<div${a}data-exhibits${b}>\n${tiles.join('\n')}\n  </div>`;
   });
 }
-// <… data-showcase-throughline></…> (empty) is filled with the served through-line when the spec declares it.
+// <… data-showcase-throughline></…> (empty) is filled with the roster's through-line when the spec declares it.
 function renderThroughLine(html) {
   if (!throughDeclared) return html;
   return html.replace(THROUGH_SLOT, (m, tag, attrs, inner) => (inner.trim() ? m : `<${tag}${attrs}>${esc(throughLine())}</${tag}>`));
@@ -426,35 +431,41 @@ function reanchor(html, anchors) {
   }
   return html;
 }
-// {"hero": true} places the hero among the sections (at most once); without it the hero follows the nav
-const heroOut = gateFragment(heroHtml(), 'hero');
-const heroAt = spec.sections.filter(s => s.hero !== undefined);
-if (heroAt.length > 1 || heroAt.some(s => s.hero !== true || Object.keys(s).length !== 1)) die(`sections: the hero is placed by exactly one {"hero": true} entry (got ${JSON.stringify(heroAt)})`);
-const body_sections = spec.sections.map(s => {
-  if (s.hero === true) return heroOut;
-  if (s.use) {
-    if (!sections[s.use]) die(`template has no section "${s.use}" (has: ${Object.keys(sections).join(', ')})`);
-    return fillSlots(reanchor(rewrite(rewrite(sections[s.use], spec.links), s.links), s.anchors), `template section ${s.use}`);
-  }
-  if (s.file) {
-    const p = path.join(SRC, s.file);
-    if (!fs.existsSync(p)) die(`fragment not found: ${s.file}`);
-    return gateFragment(fs.readFileSync(p, 'utf8'), s.file);
-  }
-  die(`section entry needs "use" or "file": ${JSON.stringify(s)}`);
-});
+// ---------------------------------------------------------------- assembly (async: the roster is an ES module)
+// The roster module is imported by package name before the page is assembled; an import failure is held and
+// raised by loadRoster, so a page without a roster slot never needs the package.
+async function main() {
+  try { rosterModule = { X: await import(ROSTER_EXPORT) }; }
+  catch (e) { rosterModule = { err: e }; }
+  // {"hero": true} places the hero among the sections (at most once); without it the hero follows the nav
+  const heroOut = gateFragment(heroHtml(), 'hero');
+  const heroAt = spec.sections.filter(s => s.hero !== undefined);
+  if (heroAt.length > 1 || heroAt.some(s => s.hero !== true || Object.keys(s).length !== 1)) die(`sections: the hero is placed by exactly one {"hero": true} entry (got ${JSON.stringify(heroAt)})`);
+  const body_sections = spec.sections.map(s => {
+    if (s.hero === true) return heroOut;
+    if (s.use) {
+      if (!sections[s.use]) die(`template has no section "${s.use}" (has: ${Object.keys(sections).join(', ')})`);
+      return fillSlots(reanchor(rewrite(rewrite(sections[s.use], spec.links), s.links), s.anchors), `template section ${s.use}`);
+    }
+    if (s.file) {
+      const p = path.join(SRC, s.file);
+      if (!fs.existsSync(p)) die(`fragment not found: ${s.file}`);
+      return gateFragment(fs.readFileSync(p, 'utf8'), s.file);
+    }
+    die(`section entry needs "use" or "file": ${JSON.stringify(s)}`);
+  });
 
-// ---------------------------------------------------------------- scripts
-// Behind the DeSciX App Shell this page takes the full CodeSite view (no chat panel). The bus is
-// reached through the generated app-side SDK (DeSciX.ready() resolves the frame hop; never a
-// hand-computed window.parent); standalone, ready() resolves without a shell and nothing changes.
-// The page's ONE declaration of the view it wants from the DeSciX host. The contract's owner is the
-// SDK template's documented sequence (DEVPLANE, 1 October 2026): await DeSciX.ready(), THEN
-// view.set(mode), and only when view.available() says the host is listening, because a host that
-// is not listening drops the call. What happened is recorded on <html data-descix-view>, in the
-// vocabulary FRQTL's host-view.js uses, so a harness can read it: requested:CodeSite,
-// not-listening, view-unpublished, standalone, embedded-no-bridge, sdk-absent.
-const CODESITE = `(async function(){
+  // ---------------------------------------------------------------- scripts
+  // Behind the DeSciX App Shell this page takes the full CodeSite view (no chat panel). The bus is
+  // reached through the generated app-side SDK (DeSciX.ready() resolves the frame hop; never a
+  // hand-computed window.parent); standalone, ready() resolves without a shell and nothing changes.
+  // The page's ONE declaration of the view it wants from the DeSciX host. The contract's owner is the
+  // SDK template's documented sequence (DEVPLANE, 1 October 2026): await DeSciX.ready(), THEN
+  // view.set(mode), and only when view.available() says the host is listening, because a host that
+  // is not listening drops the call. What happened is recorded on <html data-descix-view>, in the
+  // vocabulary FRQTL's host-view.js uses, so a harness can read it: requested:CodeSite,
+  // not-listening, view-unpublished, standalone, embedded-no-bridge, sdk-absent.
+  const CODESITE = `(async function(){
   var d=document.documentElement, S=window.DeSciX, rec=function(x){d.dataset.descixView=x;};
   if(!S||typeof S.ready!=='function'){rec('sdk-absent');return;}
   rec('pending');
@@ -465,50 +476,50 @@ const CODESITE = `(async function(){
   if(!v.available()){ rec('not-listening'); return; }
   v.set('CodeSite'); rec('requested:CodeSite');
 })();`;
-function forwarder() {
-  const f = spec.scripts.forward;
-  if (!f) return '';
-  // a #<path> (it has a slash or a dot; in-page anchors have neither) forwards to the viewer, on
-  // load and on any later hash change
-  if (f.hash_to) return `<script>(function(){function f(){var h=location.hash;if(h.length>1&&/[\\/.]/.test(h))location.replace(${JSON.stringify(f.hash_to)}+h);}f();addEventListener('hashchange',f);})();</script>`;
-  if (f.query_to) return `<script>if(location.search)location.replace(${JSON.stringify(f.query_to)}+location.search+location.hash);</script>`;
-  die('scripts.forward needs hash_to or query_to');
-}
-// "sdk": true puts the generated app-side bridge on the page. Its bytes come from the ONE OWNER of
-// that path, @descix/app-sdk's exported SITE_SCAFFOLD_BRIDGE (the pinned devDependency), never a
-// path into another checkout.
-let sdk = null;
-if (spec.scripts.sdk) {
-  let p;
-  try { ({ SITE_SCAFFOLD_BRIDGE: p } = require('@descix/app-sdk/scaffold')); }
-  catch (e) { die(`@descix/app-sdk is not installed (npm install): ${e.message}`); }
-  if (!p || !fs.existsSync(p)) die(`@descix/app-sdk exports no SITE_SCAFFOLD_BRIDGE file: ${p}`);
-  sdk = { name: path.basename(p), data: fs.readFileSync(p) };
-  if (!sdk.data.toString('utf8').includes('GENERATED FILE')) die(`${p} is not the generated DeSciXAppSDK.js`);
-}
-if (spec.scripts.codesite && !sdk) die('scripts.codesite needs scripts.sdk: the CodeSite call goes through the SDK');
-// the template's own inline scripts (its form and wallet mock), when the spec keeps its sections verbatim
-const templateScripts = spec.scripts.template_scripts ? [...body.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1].trim()) : [];
-if (spec.scripts.template_scripts && !templateScripts.length) die('template_scripts requested but the template has no inline script');
-const scripts = [...templateScripts, spec.scripts.codesite ? CODESITE : '', ...(spec.scripts.extra || []).map(f => {
-  const p = path.join(SRC, f); if (!fs.existsSync(p)) die(`script not found: ${f}`); return fs.readFileSync(p, 'utf8');
-})].filter(Boolean);
+  function forwarder() {
+    const f = spec.scripts.forward;
+    if (!f) return '';
+    // a #<path> (it has a slash or a dot; in-page anchors have neither) forwards to the viewer, on
+    // load and on any later hash change
+    if (f.hash_to) return `<script>(function(){function f(){var h=location.hash;if(h.length>1&&/[\\/.]/.test(h))location.replace(${JSON.stringify(f.hash_to)}+h);}f();addEventListener('hashchange',f);})();</script>`;
+    if (f.query_to) return `<script>if(location.search)location.replace(${JSON.stringify(f.query_to)}+location.search+location.hash);</script>`;
+    die('scripts.forward needs hash_to or query_to');
+  }
+  // "sdk": true puts the generated app-side bridge on the page. Its bytes come from the ONE OWNER of
+  // that path, @descix/app-sdk's exported SITE_SCAFFOLD_BRIDGE (the pinned devDependency), never a
+  // path into another checkout.
+  let sdk = null;
+  if (spec.scripts.sdk) {
+    let p;
+    try { ({ SITE_SCAFFOLD_BRIDGE: p } = require('@descix/app-sdk/scaffold')); }
+    catch (e) { die(`@descix/app-sdk is not installed (npm install): ${e.message}`); }
+    if (!p || !fs.existsSync(p)) die(`@descix/app-sdk exports no SITE_SCAFFOLD_BRIDGE file: ${p}`);
+    sdk = { name: path.basename(p), data: fs.readFileSync(p) };
+    if (!sdk.data.toString('utf8').includes('GENERATED FILE')) die(`${p} is not the generated DeSciXAppSDK.js`);
+  }
+  if (spec.scripts.codesite && !sdk) die('scripts.codesite needs scripts.sdk: the CodeSite call goes through the SDK');
+  // the template's own inline scripts (its form and wallet mock), when the spec keeps its sections verbatim
+  const templateScripts = spec.scripts.template_scripts ? [...body.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1].trim()) : [];
+  if (spec.scripts.template_scripts && !templateScripts.length) die('template_scripts requested but the template has no inline script');
+  const scripts = [...templateScripts, spec.scripts.codesite ? CODESITE : '', ...(spec.scripts.extra || []).map(f => {
+    const p = path.join(SRC, f); if (!fs.existsSync(p)) die(`script not found: ${f}`); return fs.readFileSync(p, 'utf8');
+  })].filter(Boolean);
 
-// ---------------------------------------------------------------- head: the template's, retitled, stamped, forwarder first
-let newHead = head
-  .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(spec.title)}</title>`)
-  .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(spec.description)}">`);
-if (!newHead.includes(`<title>${esc(spec.title)}</title>`)) die('title not placed');
-newHead = newHead.replace('<meta charset="utf-8">', `<meta charset="utf-8">\n${forwarder()}`);
-if (spec.css) newHead = newHead.replace('</style>', `\n/* ${app} */\n${spec.css}\n</style>`);
-if (spec.login) {
-  if (!newHead.includes('--cyan-ink:')) die('login button: template has no --cyan-ink token');
-  newHead = newHead.replace('</style>', `\n/* login */\n${LOGIN_CSS}\n</style>`);
-}
-const stamp = `data-frontpage-app="${esc(app)}" data-frontpage-template="${tplSha}" data-frontpage-build="${sha}"`;
+  // ---------------------------------------------------------------- head: the template's, retitled, stamped, forwarder first
+  let newHead = head
+    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(spec.title)}</title>`)
+    .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(spec.description)}">`);
+  if (!newHead.includes(`<title>${esc(spec.title)}</title>`)) die('title not placed');
+  newHead = newHead.replace('<meta charset="utf-8">', `<meta charset="utf-8">\n${forwarder()}`);
+  if (spec.css) newHead = newHead.replace('</style>', `\n/* ${app} */\n${spec.css}\n</style>`);
+  if (spec.login) {
+    if (!newHead.includes('--cyan-ink:')) die('login button: template has no --cyan-ink token');
+    newHead = newHead.replace('</style>', `\n/* login */\n${LOGIN_CSS}\n</style>`);
+  }
+  const stamp = `data-frontpage-app="${esc(app)}" data-frontpage-template="${tplSha}" data-frontpage-build="${sha}"`;
 
-const footerOut = gateFragment(footerHtml(), 'footer');
-const html = `${newHead}<body ${stamp}>
+  const footerOut = gateFragment(footerHtml(), 'footer');
+  const html = `${newHead}<body ${stamp}>
 
 ${navHtml()}
 
@@ -521,65 +532,67 @@ ${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script
 </html>
 `;
 
-// every library deep link on the page, reused sections included, names a file tracked at HEAD
-for (const m of html.matchAll(/href="(?:library\.html|https:\/\/egpt\.descix\.net\/)#([^"]+)"/g)) {
-  const why = deadLink(decodeURIComponent(m[1]));
-  if (why) die(why);
-}
-// every data-exhibits element on the assembled page holds exactly one tile per roster row
-for (const m of html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-exhibits\b[^>]*>/g)) {
-  const rest = html.slice(m.index + m[0].length);
-  const inner = m[1] === 'div' ? rest.slice(0, rest.indexOf('</div>')) : '';
-  const n = (inner.match(/<a\b[^>]*\bclass="tile[\s"]/g) || []).length;
-  const want = loadRoster().rows.length;
-  if (n !== want) die(`${app}: a data-exhibits slot holds ${n} tiles, the served roster (build ${loadRoster().build}) has ${want} rows — an unfilled slot cannot ship (${m[0]})`);
-}
-// every data-showcase-throughline marker on the assembled page holds exactly the served through-line (the
-// spec declares it) or nothing (it does not); a declaration with no marker on the page fills nothing and fails
-{
-  const marks = (html.match(THROUGH_MARK) || []).length;
-  const filled = [...html.matchAll(THROUGH_SLOT)];
-  if (filled.length !== marks) die(`${app}: ${marks} data-showcase-throughline markers but ${filled.length} closed elements — a marker the fill cannot reach cannot ship`);
-  if (throughDeclared && !marks) die(`${app}.json declares through_line but the page carries no data-showcase-throughline marker (it uses no #proof)`);
-  for (const m of filled) {
-    const got = unent(m[3]);
-    if (throughDeclared && got !== throughLine()) die(`${app}: a data-showcase-throughline marker holds "${got.slice(0, 60)}…", not the served roster's SHOWCASE_THROUGH_LINE (build ${loadRoster().build})`);
-    if (!throughDeclared && got.trim()) die(`${app}: a data-showcase-throughline marker holds "${got.slice(0, 60)}…", but ${app}.json declares no through_line — the slot stays empty`);
+  // every library deep link on the page, reused sections included, names a file tracked at HEAD
+  for (const m of html.matchAll(/href="(?:library\.html|https:\/\/egpt\.descix\.net\/)#([^"]+)"/g)) {
+    const why = deadLink(decodeURIComponent(m[1]));
+    if (why) die(why);
   }
-}
-// nothing on the page still points at the app's own public host (a self-link is a deep link)
-if (spec.self_host && html.includes(spec.self_host)) die(`a self-link to ${spec.self_host} remains; rewrite it to a deep link`);
-
-// ---------------------------------------------------------------- images: what the page uses, from the template commit or the spec
-const used = new Set([...html.matchAll(/(?:src|href)="images\/([^"]+)"/g)].map(m => m[1]));
-const extra = new Map((spec.images || []).map(i => [i.to.replace(/^images\//, ''), i.from]));
-const images = new Map();
-for (const name of used) {
-  const still = roster && [...roster.stills.values()].includes(name);
-  if (still && extra.has(name)) die(`spec declares image ${name}, which is a tile still; tile stills live only in site-src/frontpage/exhibits/`);
-  if (still) images.set(name, fs.readFileSync(path.join(STILLS, name)));
-  else if (extra.has(name)) {
-    const from = extra.get(name);
-    if (from.startsWith('frontpage:')) {
-      const p = path.join(SRC, from.slice('frontpage:'.length));
-      if (!fs.existsSync(p)) die(`image not found: ${p}`);
-      images.set(name, fs.readFileSync(p));
-    } else {
-      if (!tracked.has(from)) die(`image source not tracked at HEAD: ${from}`);
-      images.set(name, git('cat-file', 'blob', tracked.get(from)));
+  // every data-exhibits element on the assembled page holds exactly one tile per roster row
+  for (const m of html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-exhibits\b[^>]*>/g)) {
+    const rest = html.slice(m.index + m[0].length);
+    const inner = m[1] === 'div' ? rest.slice(0, rest.indexOf('</div>')) : '';
+    const n = (inner.match(/<a\b[^>]*\bclass="tile[\s"]/g) || []).length;
+    const want = loadRoster().rows.length;
+    if (n !== want) die(`${app}: a data-exhibits slot holds ${n} tiles, the roster (${loadRoster().release}) has ${want} rows — an unfilled slot cannot ship (${m[0]})`);
+  }
+  // every data-showcase-throughline marker on the assembled page holds exactly the roster's through-line (the
+  // spec declares it) or nothing (it does not); a declaration with no marker on the page fills nothing and fails
+  {
+    const marks = (html.match(THROUGH_MARK) || []).length;
+    const filled = [...html.matchAll(THROUGH_SLOT)];
+    if (filled.length !== marks) die(`${app}: ${marks} data-showcase-throughline markers but ${filled.length} closed elements — a marker the fill cannot reach cannot ship`);
+    if (throughDeclared && !marks) die(`${app}.json declares through_line but the page carries no data-showcase-throughline marker (it uses no #proof)`);
+    for (const m of filled) {
+      const got = unent(m[3]);
+      if (throughDeclared && got !== throughLine()) die(`${app}: a data-showcase-throughline marker holds "${got.slice(0, 60)}…", not the roster's SHOWCASE_THROUGH_LINE (${loadRoster().release})`);
+      if (!throughDeclared && got.trim()) die(`${app}: a data-showcase-throughline marker holds "${got.slice(0, 60)}…", but ${app}.json declares no through_line — the slot stays empty`);
     }
-  } else {
-    try { images.set(name, templateImage(name)); }
-    catch (e) { die(`image "${name}" is neither in the template commit nor declared in the spec`); }
   }
-}
-for (const name of extra.keys()) if (!used.has(name)) die(`spec declares an unused image: ${name}`);
+  // nothing on the page still points at the app's own public host (a self-link is a deep link)
+  if (spec.self_host && html.includes(spec.self_host)) die(`a self-link to ${spec.self_host} remains; rewrite it to a deep link`);
 
-if (!DRY) {
-  fs.mkdirSync(path.join(OUT, 'images'), { recursive: true });
-  for (const [name, data] of images) fs.writeFileSync(path.join(OUT, 'images', name), data);
-  fs.writeFileSync(path.join(OUT, 'index.html'), html);
-  if (spec.share) { try { require('./lib/share').emitShare(app, spec.share, SRC, OUT); } catch (e) { die(e.message); } }
-  if (sdk) fs.writeFileSync(path.join(OUT, sdk.name), sdk.data);
+  // ---------------------------------------------------------------- images: what the page uses, from the template commit or the spec
+  const used = new Set([...html.matchAll(/(?:src|href)="images\/([^"]+)"/g)].map(m => m[1]));
+  const extra = new Map((spec.images || []).map(i => [i.to.replace(/^images\//, ''), i.from]));
+  const images = new Map();
+  for (const name of used) {
+    const still = roster && [...roster.stills.values()].includes(name);
+    if (still && extra.has(name)) die(`spec declares image ${name}, which is a tile still; tile stills live only in site-src/frontpage/exhibits/`);
+    if (still) images.set(name, fs.readFileSync(path.join(STILLS, name)));
+    else if (extra.has(name)) {
+      const from = extra.get(name);
+      if (from.startsWith('frontpage:')) {
+        const p = path.join(SRC, from.slice('frontpage:'.length));
+        if (!fs.existsSync(p)) die(`image not found: ${p}`);
+        images.set(name, fs.readFileSync(p));
+      } else {
+        if (!tracked.has(from)) die(`image source not tracked at HEAD: ${from}`);
+        images.set(name, git('cat-file', 'blob', tracked.get(from)));
+      }
+    } else {
+      try { images.set(name, templateImage(name)); }
+      catch (e) { die(`image "${name}" is neither in the template commit nor declared in the spec`); }
+    }
+  }
+  for (const name of extra.keys()) if (!used.has(name)) die(`spec declares an unused image: ${name}`);
+
+  if (!DRY) {
+    fs.mkdirSync(path.join(OUT, 'images'), { recursive: true });
+    for (const [name, data] of images) fs.writeFileSync(path.join(OUT, 'images', name), data);
+    fs.writeFileSync(path.join(OUT, 'index.html'), html);
+    if (spec.share) { try { require('./lib/share').emitShare(app, spec.share, SRC, OUT); } catch (e) { die(e.message); } }
+    if (sdk) fs.writeFileSync(path.join(OUT, sdk.name), sdk.data);
+  }
+  console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.filter(s => !s.hero).length} sections${heroAt.length ? ' (hero placed among them)' : ''} (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);
 }
-console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.filter(s => !s.hero).length} sections${heroAt.length ? ' (hero placed among them)' : ''} (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);
+main().catch(e => die(e && e.stack ? e.stack : String(e)));
