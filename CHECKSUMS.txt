@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 967 files, 164329364 bytes.
+# 969 files, 164528398 bytes.
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
 ce3f19f50fdaa41a04a9c7bd82e6ec7f4c7d33d349f26a31dc73750b793ecf8b  .descix/manifests/Sources.json
@@ -736,6 +736,7 @@ bb84e6e11e54aa42b9c8a610cae0acc8cf3ab3faaa768aa0ebc1a60ebdff9f8f  journal/2026-1
 158667628cd843b10090a44c9e2ac8082cfc1d75f4e8398b8b426f30c0ff6aff  kb/README.md
 774a4de93db549c5fe7871843ac57fe3a571f50cad7e259f2e59355665802656  microservice/.gitignore
 6c26c58b998453070fdea983085c860e5a8f99cfebb711d4832e0892fad24b3f  microservice/Dockerfile
+f958e59a0f2be5e63223e6db982f0fcbed7d58e639bc9a65a614e4f051b3142b  microservice/LICENSE.md
 50b0fcb9b24e44a5cbd9f831116599483c87283d023c55d8845ff947bec00c3c  microservice/SERVICE_README_egpt.md
 01026a499cf5787c4da3e6301c543a2d45a7388ab527bee1d83e850de9c66f1c  microservice/SERVICE_README_sdk.md
 3871de3cf7887944bb03477eea7b0b4038110fdc4470ac79e84411280cc230aa  microservice/app.js
@@ -773,6 +774,7 @@ f3fc8324e0ed2d2203bcc595ab54def8091739cfe2e12185ac85c89eadcf4f7e  package-lock.j
 0fb7d0337dba6d354d466f34ad915257e9ac7e0908d8404122521b2a8dfde37d  package.json
 c09dd2e5d0f3eab17b97031cd3eedeabfb39e365940ef51b3f21f6fe0039056c  plugins/egpt/.claude-plugin/plugin.json
 c024619e72eb502602445d1902f908471d9777dd931bcf9df22b75ce5e2d80fa  plugins/egpt/.mcp.json
+f958e59a0f2be5e63223e6db982f0fcbed7d58e639bc9a65a614e4f051b3142b  plugins/egpt/LICENSE.md
 c1d266db573baf79a49465d2ba3636fe14aee155e256eb895cbbd79da29b65c8  plugins/egpt/README.md
 f0dcfb31210d2ea54f680098ce89d92b8f23f342378fbcf09fcd6c95af4c335d  plugins/egpt/agents/assessed-model.agent.md
 a26f1e2375f01f4d772326a1a03030787ea0bda04aaf3785dc6f3340284034b3  plugins/egpt/skills/am-i-the-singularity/SKILL.md
