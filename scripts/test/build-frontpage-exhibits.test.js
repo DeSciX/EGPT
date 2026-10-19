@@ -65,7 +65,8 @@ const git = (cwd, ...a) => execFileSync('git', a, { cwd, stdio: ['ignore', 'pipe
 // A throwaway world: <T>/ev (this repository's generator + inputs, committed; node_modules/ ignored),
 // <T>/tpl (the template repo). <T>/ev/node_modules/@descix/frqtl-web is the roster package the generator imports:
 // the real installed package (symlinked), or, when a case varies the roster, a fixture package whose ./registry
-// re-exports the real module with the case's exports replaced; pkg: false installs none.
+// re-exports the real module with the case's exports replaced; pkg: false installs none; pkg: 'broken' installs a
+// package whose ./registry resolves but fails to load (it imports a file the package does not have).
 // undeclare: a roster row id the fixture package serves WITHOUT its still (its still files leave the home too).
 // serve: a JS object expression over X (the real module) whose keys replace the package's exports —
 // how a case plants a fault in the roster without touching it (e.g. one row's still.alt stripped).
@@ -102,7 +103,11 @@ function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {},
     const scope = path.join(ev, 'node_modules', '@descix');
     fs.mkdirSync(scope, { recursive: true });
     const dir = path.join(scope, 'frqtl-web');
-    if (!override.length) fs.symlinkSync(PKG_DIR, dir);
+    if (pkg === 'broken') {
+      fs.mkdirSync(dir);
+      fs.writeFileSync(path.join(dir, 'package.json'), JSON.stringify({ name: PKG, version: '0.0.0-broken', type: 'module', exports: { './registry': './registry.js', './package.json': './package.json' } }));
+      fs.writeFileSync(path.join(dir, 'registry.js'), "export * from './absent.js';\n");
+    } else if (!override.length) fs.symlinkSync(PKG_DIR, dir);
     else {
       const body = `{ ${override.join(', ')} }`;
       const names = Object.keys(new Function('X', `return ${body};`)(X));
@@ -121,6 +126,7 @@ ${names.map(n => `export const ${n} = O.${n};`).join('\n')}
     T, rows, commit,
     build(app) {
       const out = path.join(T, 'out', app);
+      fs.rmSync(out, { recursive: true, force: true });   // a refused build must not be read as an earlier build's page
       const r = spawnSync(process.execPath, [path.join(ev, 'scripts', 'build-frontpage.js'), app, '--out', out], { cwd: ev, encoding: 'utf8' });
       const html = fs.existsSync(path.join(out, 'index.html')) ? fs.readFileSync(path.join(out, 'index.html'), 'utf8') : null;
       return { code: r.status, err: r.stderr, html, out };
@@ -195,6 +201,12 @@ test('roster package absent refuses, naming npm ci; a page without the slot neve
   assert.equal(w.build('plainonly').code, 0);
 });
 
+test('roster package installed but failing to load reports the load error as itself, never "not installed"', () => {
+  const r = world({ pkg: 'broken' }).build('other');
+  assert.equal(r.code, 1); assert.match(r.err, /roster unreadable: @descix\/frqtl-web\/registry failed to load: .*absent\.js/);
+  assert.doesNotMatch(r.err, /not installed|npm ci/); assert.equal(r.html, null);
+});
+
 // The roster owns the kinds (EXHIBIT_KINDS); its sceneKey refuses any other before a tile is written.
 test('a roster row that is not a walk-through rung refuses (no ?experiment= tile; the GYM refuses it)', () => {
   const row = X.EXHIBITS[0];
@@ -202,18 +214,30 @@ test('a roster row that is not a walk-through rung refuses (no ?experiment= tile
   assert.equal(r.code, 1); assert.match(r.err, /unknown scene kind "experiment"/); assert.doesNotMatch(r.err, /experiment=/); assert.equal(r.html, null);
 });
 
-test('a dirty site-src/frontpage/ refuses, naming the files (the page is built from committed inputs only)', () => {
+// The build reads site-src/frontpage/ through one door that refuses an uncommitted INPUT of this page, by name; an
+// uncommitted file this page does not read blocks nothing (another app's spec in progress stays where it is).
+test('an uncommitted input refuses, naming it; an uncommitted file the page does not read does not', () => {
   const w = world();
   const src = path.join(w.T, 'ev', 'site-src', 'frontpage');
+  const edit = (name, title) => { const s = JSON.parse(fs.readFileSync(path.join(src, name), 'utf8')); fs.writeFileSync(path.join(src, name), JSON.stringify({ ...s, title })); };
   fs.writeFileSync(path.join(src, 'untracked.json'), '{}');
-  const s = JSON.parse(fs.readFileSync(path.join(src, 'other.json'), 'utf8'));
-  fs.writeFileSync(path.join(src, 'other.json'), JSON.stringify({ ...s, title: 'uncommitted' }));
-  const r = w.build('other');
-  assert.equal(r.code, 1); assert.match(r.err, /site-src\/frontpage\/ has uncommitted changes/);
-  assert.match(r.err, /\?\? site-src\/frontpage\/untracked\.json/); assert.match(r.err, /M site-src\/frontpage\/other\.json/);
-  assert.equal(r.html, null);
+  edit('bare.json', 'another app, uncommitted');
+  const free = w.build('frqtl');
+  assert.equal(free.code, 0, `an unrelated uncommitted spec blocked the build: ${free.err}`);
+  edit('frqtl.json', 'uncommitted');
+  const r = w.build('frqtl');
+  assert.equal(r.code, 1); assert.match(r.err, /site-src\/frontpage\/frqtl\.json is uncommitted; .* — commit it, or build another app/);
+  assert.doesNotMatch(r.err, /stash|bare\.json|untracked\.json/); assert.equal(r.html, null);
+  // the roster app's spec is an input of every tiled page (its self_host), so another page refuses on it too
+  const o = w.build('other');
+  assert.equal(o.code, 1); assert.match(o.err, /frqtl\.json is uncommitted/);
+  // an untracked file inside a directory the page reads (the stills home) refuses, naming the file
   w.commit();
-  const ok = w.build('other');
+  fs.writeFileSync(path.join(src, 'exhibits', 'stray.png'), 'png');
+  const d = w.build('frqtl');
+  assert.equal(d.code, 1); assert.match(d.err, /site-src\/frontpage\/exhibits\/stray\.png is uncommitted/);
+  fs.unlinkSync(path.join(src, 'exhibits', 'stray.png'));
+  const ok = w.build('frqtl');
   assert.equal(ok.code, 0, ok.err); assert.match(ok.html, /<title>uncommitted<\/title>/);
 });
 

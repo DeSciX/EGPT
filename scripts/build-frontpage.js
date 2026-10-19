@@ -30,8 +30,9 @@
  * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
  * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
- * The spec and its fragments are read from the working tree, so a dirty site-src/frontpage/ refuses: the
- * page is built from committed inputs only.
+ * Every input under site-src/frontpage/ is read through one door (frontpageFile), which refuses a file (or a
+ * directory) that is itself uncommitted: the page is built from committed inputs only, and another app's
+ * uncommitted spec blocks nothing.
  * Pure Node; the dependencies are the pinned devDependencies @descix/app-sdk (the generated app-side
  * bridge) and @descix/frqtl-web (the showcase roster, its ./registry export).
  */
@@ -49,14 +50,33 @@ const outAt = args.indexOf('--out');
 const OUT = outAt > 0 ? path.resolve(args[outAt + 1]) : path.join(ROOT, 'site');
 function die(msg) { console.error('ERROR: ' + msg); process.exit(1); }
 if (!app || app.startsWith('--')) die('usage: build-frontpage.js <app> [--out <dir>] [--dry-run]');
-{
-  const dirty = execFileSync('git', ['status', '--porcelain', '--', path.relative(ROOT, SRC)], { cwd: ROOT }).toString('utf8').split('\n').filter(Boolean);
-  if (dirty.length) die(`site-src/frontpage/ has uncommitted changes; the page is built from committed inputs only — commit or stash them:\n  ${dirty.join('\n  ')}`);
+// ---------------------------------------------------------------- the ONE door for reads under site-src/frontpage/
+// The working tree's uncommitted paths under SRC, read once (untracked files listed one by one; a rename's source
+// counts too). frontpageFile(rel) returns SRC/rel, refusing when that file — or, for a directory, anything in it —
+// is uncommitted: the build never ships an input it read from an uncommitted file.
+const UNCOMMITTED = (() => {
+  const out = execFileSync('git', ['status', '--porcelain=v1', '-z', '--untracked-files=all', '--', path.relative(ROOT, SRC)], { cwd: ROOT, maxBuffer: 1 << 26 }).toString('utf8').split('\0');
+  const paths = [];
+  for (let i = 0; i < out.length; i++) {
+    const e = out[i];
+    if (!e) continue;
+    paths.push(e.slice(3));
+    if (/^[RC]/.test(e)) paths.push(out[++i]);
+  }
+  return paths;
+})();
+function frontpageFile(rel) {
+  const abs = path.join(SRC, rel);
+  const r = path.relative(ROOT, abs).split(path.sep).join('/');
+  const hit = UNCOMMITTED.find(u => u === r || u.startsWith(r + '/'));
+  if (hit) die(`${hit} is uncommitted${hit === r ? '' : ` (this build reads ${r}/)`}; the page is built from committed inputs only — commit it, or build another app`);
+  return abs;
 }
+const readFrontpage = (rel, enc) => fs.readFileSync(frontpageFile(rel), enc);
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // ---------------------------------------------------------------- the template, at its pinned commit
-const tpl = JSON.parse(fs.readFileSync(path.join(SRC, 'template.json'), 'utf8'));
+const tpl = JSON.parse(readFrontpage('template.json', 'utf8'));
 const TREPO = path.resolve(ROOT, tpl.repo);
 if (!fs.existsSync(path.join(TREPO, '.git'))) die(`template checkout not found: ${TREPO}`);
 const gitT = (...a) => execFileSync('git', a, { cwd: TREPO, maxBuffer: 1 << 28 });
@@ -139,9 +159,9 @@ const strip = h => h.replace(/<[^>]+>/g, '');
 const unent = s => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
 // ---------------------------------------------------------------- the app's spec
-const specPath = path.join(SRC, `${app}.json`);
+const specPath = frontpageFile(`${app}.json`);
 if (!fs.existsSync(specPath)) die(`no spec: ${specPath}`);
-const spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+const spec = JSON.parse(readFrontpage(`${app}.json`, 'utf8'));
 for (const k of ['title', 'description', 'brand', 'nav', 'hero', 'sections', 'footer', 'scripts']) if (!(k in spec)) die(`spec lacks ${k}`);
 // "through_line": a DECLARED choice per spec, never a default (CEO #130: "approve: through-line on both pages,
 // above the grid-note" — egpt-frqtl and egpt-courantgroup). Absent: the template's marker stays empty.
@@ -184,9 +204,8 @@ function heroHtml() {
   if (spec.hero === 'template') return rewrite(tplHero, spec.links);
   if (spec.hero.file) {
     // a hero written as a fragment: it must be the page's <header class="hero" id="top">; gated below like every fragment
-    const p = path.join(SRC, spec.hero.file);
-    if (!fs.existsSync(p)) die(`hero fragment not found: ${spec.hero.file}`);
-    const html = fs.readFileSync(p, 'utf8');
+    if (!fs.existsSync(frontpageFile(spec.hero.file))) die(`hero fragment not found: ${spec.hero.file}`);
+    const html = readFrontpage(spec.hero.file, 'utf8');
     if (!/^\s*<header class="hero[^"]*" id="top">/.test(html)) die(`${spec.hero.file}: a hero fragment starts with <header class="hero…" id="top">`);
     return html;
   }
@@ -318,33 +337,39 @@ function renderShelves(html, file) {
 const ROSTER_PKG = '@descix/frqtl-web';
 const ROSTER_EXPORT = `${ROSTER_PKG}/registry`;
 let rosterModule = null; // { X } | { err }, set by main() before the page is assembled
-const STILLS = path.join(SRC, 'exhibits');
+const STILLS_DIR = 'exhibits';
+const STILLS = path.join(SRC, STILLS_DIR);
 let roster = null;
 function loadRoster() {
   if (roster) return roster;
-  const cfgPath = path.join(SRC, 'exhibits.json');
+  const cfgPath = frontpageFile('exhibits.json');
   if (!fs.existsSync(cfgPath)) die(`data-exhibits slot, but ${cfgPath} does not exist`);
-  const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8'));
+  const cfg = JSON.parse(readFrontpage('exhibits.json', 'utf8'));
   if (!rosterModule) die('roster read before main() imported it');
   const { err } = rosterModule;
-  if (err && err.code === 'ERR_MODULE_NOT_FOUND') die(`roster unreadable: ${ROSTER_EXPORT} is not installed — run npm ci (package.json pins ${ROSTER_PKG}): ${err.message}`);
-  if (err) die(`roster unreadable: ${ROSTER_EXPORT} failed to load: ${err.message}`);
+  if (err) {
+    // "not installed" only when the export itself does not resolve; any other load error is reported as itself
+    let resolves = true;
+    try { require.resolve(ROSTER_EXPORT); } catch (e) { resolves = false; }
+    if (!resolves) die(`roster unreadable: ${ROSTER_EXPORT} is not installed — run npm ci (package.json pins ${ROSTER_PKG}): ${err.message}`);
+    die(`roster unreadable: ${ROSTER_EXPORT} failed to load: ${err && err.stack ? err.stack : err}`);
+  }
   const X = rosterModule.X;
   const release = `${ROSTER_PKG}@${require(`${ROSTER_PKG}/package.json`).version}`;
   if (!Array.isArray(X.EXHIBITS) || !X.EXHIBITS.length || typeof X.sceneKey !== 'function') die(`roster unreadable: ${ROSTER_EXPORT} (${release}) exports no EXHIBITS rows / sceneKey`);
-  const appSpec = path.join(SRC, `${cfg.app}.json`);
+  const appSpec = frontpageFile(`${cfg.app}.json`);
   if (!fs.existsSync(appSpec)) die(`exhibits.json app ${cfg.app} has no spec ${appSpec} (its self_host is where the tiles link)`);
-  const origin = JSON.parse(fs.readFileSync(appSpec, 'utf8')).self_host;
+  const origin = JSON.parse(readFrontpage(`${cfg.app}.json`, 'utf8')).self_host;
   if (!/^https:\/\/[^/]+$/.test(origin || '')) die(`${appSpec} self_host ${JSON.stringify(origin)} is not an https origin; the tiles link the GYM there`);
   const stills = new Map(X.EXHIBITS.map(r => [r, `${X.sceneKey({ kind: r.kind, id: r.id, modeId: r.mode })}.png`]));
   // a still is present iff its row declares one (row.still): declared + missing, or present + undeclared, fails
-  const onDisk = fs.existsSync(STILLS) ? fs.readdirSync(STILLS).filter(f => f.endsWith('.png')) : [];
+  const onDisk = fs.existsSync(frontpageFile(STILLS_DIR)) ? fs.readdirSync(frontpageFile(STILLS_DIR)).filter(f => f.endsWith('.png')) : [];
   for (const [r, name] of stills) {
     if (!r.still) continue;
     if (!onDisk.includes(name)) die(`roster row ${r.id} declares a still (tick ${r.still.tick}) but ${path.join(STILLS, name)} does not exist — promote the instrument's capture there`);
     const pv = path.join(STILLS, name.replace(/\.png$/, '.provenance.json'));
     if (!fs.existsSync(pv)) die(`still ${name} has no provenance sidecar ${pv}`);
-    if (JSON.parse(fs.readFileSync(pv, 'utf8')).sceneKey !== name.replace(/\.png$/, '')) die(`${pv} is not the provenance of ${name}`);
+    if (JSON.parse(readFrontpage(path.relative(SRC, pv), 'utf8')).sceneKey !== name.replace(/\.png$/, '')) die(`${pv} is not the provenance of ${name}`);
   }
   const declared = new Set([...stills].filter(([r]) => r.still).map(([, n]) => n));
   for (const f of onDisk) if (!declared.has(f)) die(`${path.join(STILLS, f)} is a still no roster row declares (roster ${release})`);
@@ -448,9 +473,8 @@ async function main() {
       return fillSlots(reanchor(rewrite(rewrite(sections[s.use], spec.links), s.links), s.anchors), `template section ${s.use}`);
     }
     if (s.file) {
-      const p = path.join(SRC, s.file);
-      if (!fs.existsSync(p)) die(`fragment not found: ${s.file}`);
-      return gateFragment(fs.readFileSync(p, 'utf8'), s.file);
+      if (!fs.existsSync(frontpageFile(s.file))) die(`fragment not found: ${s.file}`);
+      return gateFragment(readFrontpage(s.file, 'utf8'), s.file);
     }
     die(`section entry needs "use" or "file": ${JSON.stringify(s)}`);
   });
@@ -502,7 +526,7 @@ async function main() {
   const templateScripts = spec.scripts.template_scripts ? [...body.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1].trim()) : [];
   if (spec.scripts.template_scripts && !templateScripts.length) die('template_scripts requested but the template has no inline script');
   const scripts = [...templateScripts, spec.scripts.codesite ? CODESITE : '', ...(spec.scripts.extra || []).map(f => {
-    const p = path.join(SRC, f); if (!fs.existsSync(p)) die(`script not found: ${f}`); return fs.readFileSync(p, 'utf8');
+    if (!fs.existsSync(frontpageFile(f))) die(`script not found: ${f}`); return readFrontpage(f, 'utf8');
   })].filter(Boolean);
 
   // ---------------------------------------------------------------- head: the template's, retitled, stamped, forwarder first
@@ -568,13 +592,13 @@ ${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script
   for (const name of used) {
     const still = roster && [...roster.stills.values()].includes(name);
     if (still && extra.has(name)) die(`spec declares image ${name}, which is a tile still; tile stills live only in site-src/frontpage/exhibits/`);
-    if (still) images.set(name, fs.readFileSync(path.join(STILLS, name)));
+    if (still) images.set(name, readFrontpage(path.join(STILLS_DIR, name)));
     else if (extra.has(name)) {
       const from = extra.get(name);
       if (from.startsWith('frontpage:')) {
-        const p = path.join(SRC, from.slice('frontpage:'.length));
+        const p = frontpageFile(from.slice('frontpage:'.length));
         if (!fs.existsSync(p)) die(`image not found: ${p}`);
-        images.set(name, fs.readFileSync(p));
+        images.set(name, readFrontpage(from.slice('frontpage:'.length)));
       } else {
         if (!tracked.has(from)) die(`image source not tracked at HEAD: ${from}`);
         images.set(name, git('cat-file', 'blob', tracked.get(from)));
@@ -586,11 +610,14 @@ ${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script
   }
   for (const name of extra.keys()) if (!used.has(name)) die(`spec declares an unused image: ${name}`);
 
+  // the share block's rendered assets are read by scripts/lib/share.js from its own directory: gated here, before any write
+  const share = spec.share ? require('./lib/share') : null;
+  if (share) frontpageFile(path.relative(SRC, share.shareSourceDir(SRC, app)));
   if (!DRY) {
     fs.mkdirSync(path.join(OUT, 'images'), { recursive: true });
     for (const [name, data] of images) fs.writeFileSync(path.join(OUT, 'images', name), data);
     fs.writeFileSync(path.join(OUT, 'index.html'), html);
-    if (spec.share) { try { require('./lib/share').emitShare(app, spec.share, SRC, OUT); } catch (e) { die(e.message); } }
+    if (share) { try { share.emitShare(app, spec.share, SRC, OUT); } catch (e) { die(e.message); } }
     if (sdk) fs.writeFileSync(path.join(OUT, sdk.name), sdk.data);
   }
   console.log(`${DRY ? '[dry-run] ' : ''}${app}: index.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) from template ${tplSha} at HEAD ${sha}; ${spec.sections.filter(s => !s.hero).length} sections${heroAt.length ? ' (hero placed among them)' : ''} (${spec.sections.filter(s => s.use).length} reused, ${spec.sections.filter(s => s.file).length} fragments), ${gated} quotations gated, ${images.size} images`);

@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 969 files, 164561700 bytes.
+# 969 files, 164565462 bytes.
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
 ce3f19f50fdaa41a04a9c7bd82e6ec7f4c7d33d349f26a31dc73750b793ecf8b  .descix/manifests/Sources.json
@@ -792,16 +792,16 @@ d3fd1319cc6388b4f1334b052941af08f7c54e5ff6b35d9002a57e97f051d982  plugins/frqtl/
 86157ba9fada926edd3fbc6f777687065930ea8d24ba9b01edc46fd034275373  plugins/frqtl/skills/frqtl-builder/SKILL.md
 23f33c6a4d2df4ce911605c054baef9361dd31f200860bb0c02bbb81f8016218  plugins/frqtl/skills/frqtl-designer/SKILL.md
 a36d5beb36be57354b0d86f930fe4b3499be77a654ac215a612e2e93dcbd8502  scripts/build-claude-session-page.js
-05df1bbdcc61dbc655f71e731734dcf1cb4504c7585eb0dd8c400ae484ac4a18  scripts/build-frontpage.js
+b40100297ec06508ee321626a4990208b26cf18d9eefb8cbf61e1916f3f60f7e  scripts/build-frontpage.js
 4269f19964509a742583b75cd8a76a564c0f460fc3edde42153816fbb8f9d4b6  scripts/build-journal.js
 93080682339a76ce72c1e051c3f34d9a4a81cc6ed3655268400c19a4068613db  scripts/build-share-assets.js
 232ca5f66f0ba190dbc1588ae810ae345a608fbb0002335954b42a699ee52a90  scripts/build-singularity-page.js
 388f4dd60b39601e12145dbe62529d9f8c458470498b97bdc7f5d53786931498  scripts/build-trial-book.js
 59988aa1b4158c9b3c05db5cf9016da12de9c8a7ac6b9d50c26088bfde7f6205  scripts/generate-site.js
 59386a0c6e69191ef5acebc5012e4ed83acd7889be56ece00df04ca18f01a5b2  scripts/ledger-to-timeline.js
-b810363b2d24579521c5052b492ccaa9b30674c2c5dc62b5d4f72986bebfadf2  scripts/lib/share.js
+6b52a977ea18bc40407286adea9bb29f6803dde23cb479a13965d34efb9ef573  scripts/lib/share.js
 c46fa09212171fc2db72f909ec25303f904dd72b5d17e9b7b49253e5cfa25587  scripts/render.mjs
-fb58e08c8eb15edc327dc35ec27169337b5ab46bf67768f91a8942118b4af443  scripts/test/build-frontpage-exhibits.test.js
+5ca75bb424ed5bd082b3076ded4339e96daa62557657e284a9c5a3730e3ef34f  scripts/test/build-frontpage-exhibits.test.js
 64fad7d0184270305ef018b6716dda6ec2928cdfdf93f64dcabbd0ec8198839d  site-src/_meta.json
 d71932cbf7ff8589496d559f408ae97bf340f4deed3da4454a39ecbbd4779ad4  site-src/books/chatgpt.json
 21da063f000648bbf2da593d6fc2bccb3c7f1bbc2ee12c211fc667128079801c  site-src/books/claude-session.json
