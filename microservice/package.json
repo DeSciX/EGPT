@@ -1,7 +1,7 @@
 {
   "name": "@descix/ssgpod-service",
   "version": "1.0.0",
-  "description": "DeSciX SSG Podcast Server \u2014 RSS 2.0 / iTunes podcast publishing microservice (control plane)",
+  "description": "DeSciX SSG Podcast Server — RSS 2.0 / iTunes podcast publishing microservice (control plane)",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -22,5 +22,5 @@
   "devDependencies": {
     "nodemon": "^3.0.2"
   },
-  "license": "@Daita_DeSci_Community_License_v1/Daita_DeSci_Community_License_v1.pdf"
+  "license": "SEE LICENSE IN LICENSE.md"
 }
