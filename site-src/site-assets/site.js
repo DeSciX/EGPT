@@ -19,7 +19,6 @@
   var MODULES = DATA.modules || [];
   var SPINES = DATA.spines || [];
   var TITLES = DATA.titles || {};
-  var READING_PAGE = '12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html';
   var currentPath = '';
 
   var $ = function (id) { return document.getElementById(id); };
@@ -247,17 +246,37 @@
     box.hidden = false;
   });
 
-  /* ============================================================ the App Shell: beside the chat by default, the whole frame when a page needs it */
-  var shellReady = null;
-  function shellView(mode) {
-    if (!(window.DeSciX && typeof DeSciX.ready === 'function')) return;
-    shellReady = shellReady || DeSciX.ready().catch(function () { return null; });
-    shellReady.then(function (r) {
-      if (!r || r.mode !== 'shell') return;
-      try { var v = DeSciX.view; if (v && typeof v.set === 'function') v.set(mode); } catch (e) { /* the SDK names the absence */ }
+  /* ============================================================ the App Shell: the reader opens the librarian; the viewer never sets the view
+     The shell's view is whatever it shows (share.json default_view, or the reader's own choice). The one
+     control below asks the shell, through the served @descix/app-sdk bridge (DeSciXAppSDK.js), for the chat
+     beside the document, and records what happened on <html data-descix-view> as
+     "<outcome>:<mode set, or the bridge when none was>", the outcome being one of DeSciX.VIEW_OUTCOMES.
+     The control exists only where DeSciX.ready() resolves { mode: 'shell' }: with no bridge on the page
+     (a standalone copy) or a bridge that finds no shell, there is nothing to ask and no control. */
+  var VIEW_ATTR = 'data-descix-view';
+  function askLibrarian(S) {
+    var r = S.requestView('SplitView', { fallback: 'Chat' }), outcomes = S.VIEW_OUTCOMES;
+    var known = Object.keys(outcomes).some(function (k) { return outcomes[k] === r.outcome; });
+    if (!known) throw new Error('DeSciX.requestView returned outcome ' + JSON.stringify(r.outcome) + ', not one of DeSciX.VIEW_OUTCOMES');
+    document.documentElement.setAttribute(VIEW_ATTR, r.outcome + ':' + (r.mode || r.bridge));
+    document.documentElement.setAttribute(VIEW_ATTR + '-detail', r.reason || '');
+    return r;
+  }
+  function mountLibrarian() {
+    var S = window.DeSciX;
+    if (!S || typeof S.ready !== 'function') return;          // no bridge on this page: standalone, no control
+    S.ready().then(function (r) {
+      if (!r || r.mode !== 'shell') return;                  // standalone, or framed with no readable shell
+      if (typeof S.requestView !== 'function' || !S.VIEW_OUTCOMES) {
+        throw new Error('DeSciXAppSDK.js has no requestView/VIEW_OUTCOMES: the bundle must ship the @descix/app-sdk >= 0.6.0 bridge (scripts/build-frontpage.js, scripts.sdk)');
+      }
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'toolbar-librarian'; b.id = 'ask-librarian';
+      b.textContent = 'Ask the librarian'; b.title = 'Open the chat beside this document';
+      b.addEventListener('click', function () { askLibrarian(S); });
+      document.querySelector('#content-toolbar .toolbar-actions').prepend(b);
     });
   }
-  function wantsFullView(path, kind) { return path === READING_PAGE || kind === 'pdf'; }
 
   /* ============================================================ navigation: #<path>, #<path>#<heading>, #record:<id> */
   function parseHash() {
@@ -292,7 +311,6 @@
     var loc = renderSpineBar(path, anchor);
     markTree(path, loc);
     updateMeters();
-    shellView(wantsFullView(path, kind) ? 'CodeSite' : 'SplitView');
     document.title = titleFor(path) + ' — ' + DATA.site.brand;
     if (kind === 'html') showIframe(path, anchor);
     else {
@@ -374,7 +392,6 @@
     markTree('', null);
     renderResume();
     updateMeters();
-    shellView('SplitView');
     document.title = DATA.site.title;
   }
   function renderResume() {
@@ -753,7 +770,7 @@
   /* ============================================================ the viewer's surface for site-assets/reader.js */
   window.EGPTViewer = {
     data: DATA, files: FILES, titleFor: titleFor, kindOf: kindOf, esc: esc, slug: slug, rawUrl: rawUrl, extOf: extOf,
-    parseHash: parseHash, navigate: navigate, scrollToAnchor: scrollToAnchor, closeDrawer: closeDrawer, shellView: shellView,
+    parseHash: parseHash, navigate: navigate, scrollToAnchor: scrollToAnchor, closeDrawer: closeDrawer, VIEW_ATTR: VIEW_ATTR,
     isMobile: isMobile, closeMobileSidebar: closeMobileSidebar, markTree: markTree, renderShelfmark: renderShelfmark,
     showRendered: showRendered, state: state, save: save, updateMeters: updateMeters,
     parseFrontMatter: parseFrontMatter, headingIds: headingIds, rebaseRelativeUrls: rebaseRelativeUrls, wrapTables: wrapTables,
@@ -764,6 +781,7 @@
   /* ============================================================ init */
   function init() {
     buildTree();
+    mountLibrarian();
     if (location.hash.length > 1) openHash(); else goHome();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
