@@ -113,6 +113,8 @@ a.shelfmark__shelf:hover { color: var(--cyan); text-decoration: none; }
 .toolbar-actions { display: flex; gap: 16px; flex: none; }
 .toolbar-link { font: 12px var(--mono); color: var(--mute); }
 .toolbar-link:hover { color: var(--cyan); text-decoration: none; }
+.toolbar-librarian { font: 12px var(--mono); color: var(--ink2); background: transparent; border: 1px solid var(--line2); border-radius: 4px; padding: 1px 8px; cursor: pointer; }
+.toolbar-librarian:hover { color: var(--cyan); border-color: var(--cyan); }
 
 /* ============================================================ the reading list bar: where you are */
 .spine-bar { --list-color: var(--accent); padding: 14px 22px 12px; background: linear-gradient(180deg, var(--bg2), var(--bg)); border-bottom: 1px solid var(--line); }

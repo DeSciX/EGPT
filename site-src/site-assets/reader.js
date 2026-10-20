@@ -115,7 +115,6 @@
     V.showRendered();
     rendered.innerHTML = html;
     V.markTree('', null);
-    V.shellView('SplitView');
     document.title = title + ' — ' + V.data.site.brand;
     window.scrollTo(0, 0);
     V.closeMobileSidebar();

@@ -19,7 +19,6 @@
   var MODULES = DATA.modules || [];
   var SPINES = DATA.spines || [];
   var TITLES = DATA.titles || {};
-  var READING_PAGE = '12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html';
   var currentPath = '';
 
   var $ = function (id) { return document.getElementById(id); };
@@ -247,17 +246,43 @@
     box.hidden = false;
   });
 
-  /* ============================================================ the App Shell: beside the chat by default, the whole frame when a page needs it */
-  var shellReady = null;
-  function shellView(mode) {
-    if (!(window.DeSciX && typeof DeSciX.ready === 'function')) return;
-    shellReady = shellReady || DeSciX.ready().catch(function () { return null; });
-    shellReady.then(function (r) {
-      if (!r || r.mode !== 'shell') return;
-      try { var v = DeSciX.view; if (v && typeof v.set === 'function') v.set(mode); } catch (e) { /* the SDK names the absence */ }
-    });
+  /* ============================================================ the App Shell: the reader opens the librarian; the viewer never sets the view
+     The shell's view is whatever it shows (share.json default_view, or the reader's own choice). The one
+     control below asks the shell, through the served @descix/app-sdk bridge (DeSciXAppSDK.js), for the chat
+     beside the document, and records what happened on <html data-descix-view> as
+     "<outcome>:<mode set, or the bridge when none was>", the outcome being one of DeSciX.VIEW_OUTCOMES, and
+     the view the shell showed at the press (DeSciX.view.get(), read then and only then) on data-descix-view-from.
+     The page never calls view.subscribe (subscribing flips view.available() by itself).
+     The control exists only where the bridge's documented surface says a shell is listening: DeSciX.ready()
+     resolves { mode: 'shell' } and DeSciX.view.available() is true. No bridge on the page (a standalone copy),
+     ready() rejecting or resolving any other mode, or no listening view: no control. */
+  var VIEW_ATTR = 'data-descix-view';
+  function askLibrarian(S) {
+    var from = S.view.get();
+    var r = S.requestView('SplitView', { fallback: 'Chat' }), outcomes = S.VIEW_OUTCOMES;
+    var known = Object.keys(outcomes).some(function (k) { return outcomes[k] === r.outcome; });
+    if (!known) throw new Error('DeSciX.requestView returned outcome ' + JSON.stringify(r.outcome) + ', not one of DeSciX.VIEW_OUTCOMES');
+    document.documentElement.setAttribute(VIEW_ATTR, r.outcome + ':' + (r.mode || r.bridge));
+    document.documentElement.setAttribute(VIEW_ATTR + '-detail', r.reason || '');
+    document.documentElement.setAttribute(VIEW_ATTR + '-from', String(from));
+    return r;
   }
-  function wantsFullView(path, kind) { return path === READING_PAGE || kind === 'pdf'; }
+  function mountLibrarian() {
+    var S = window.DeSciX;
+    if (!S || typeof S.ready !== 'function') return;          // no bridge on this page: standalone, no control
+    S.ready().then(function (r) {
+      if (!r || r.mode !== 'shell') return;                  // standalone, or framed with no readable shell
+      if (typeof S.requestView !== 'function' || !S.VIEW_OUTCOMES || !S.view || typeof S.view.get !== 'function' || typeof S.view.available !== 'function') {
+        throw new Error('DeSciXAppSDK.js lacks requestView/VIEW_OUTCOMES/view.get/view.available: the bundle must ship the @descix/app-sdk >= 0.6.0 bridge (scripts/build-frontpage.js, scripts.sdk)');
+      }
+      if (!S.view.available()) return;                       // a shell, but no host listening for a view
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'toolbar-librarian'; b.id = 'ask-librarian';
+      b.textContent = 'Ask the librarian'; b.title = 'Open the chat beside this document';
+      b.addEventListener('click', function () { askLibrarian(S); });
+      document.querySelector('#content-toolbar .toolbar-actions').prepend(b);
+    }, function () { /* ready() rejected: the documented absence of a shell bus; no control */ });
+  }
 
   /* ============================================================ navigation: #<path>, #<path>#<heading>, #record:<id> */
   function parseHash() {
@@ -292,7 +317,6 @@
     var loc = renderSpineBar(path, anchor);
     markTree(path, loc);
     updateMeters();
-    shellView(wantsFullView(path, kind) ? 'CodeSite' : 'SplitView');
     document.title = titleFor(path) + ' — ' + DATA.site.brand;
     if (kind === 'html') showIframe(path, anchor);
     else {
@@ -374,7 +398,6 @@
     markTree('', null);
     renderResume();
     updateMeters();
-    shellView('SplitView');
     document.title = DATA.site.title;
   }
   function renderResume() {
@@ -753,7 +776,7 @@
   /* ============================================================ the viewer's surface for site-assets/reader.js */
   window.EGPTViewer = {
     data: DATA, files: FILES, titleFor: titleFor, kindOf: kindOf, esc: esc, slug: slug, rawUrl: rawUrl, extOf: extOf,
-    parseHash: parseHash, navigate: navigate, scrollToAnchor: scrollToAnchor, closeDrawer: closeDrawer, shellView: shellView,
+    parseHash: parseHash, navigate: navigate, scrollToAnchor: scrollToAnchor, closeDrawer: closeDrawer, VIEW_ATTR: VIEW_ATTR,
     isMobile: isMobile, closeMobileSidebar: closeMobileSidebar, markTree: markTree, renderShelfmark: renderShelfmark,
     showRendered: showRendered, state: state, save: save, updateMeters: updateMeters,
     parseFrontMatter: parseFrontMatter, headingIds: headingIds, rebaseRelativeUrls: rebaseRelativeUrls, wrapTables: wrapTables,
@@ -764,6 +787,7 @@
   /* ============================================================ init */
   function init() {
     buildTree();
+    mountLibrarian();
     if (location.hash.length > 1) openHash(); else goHome();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
