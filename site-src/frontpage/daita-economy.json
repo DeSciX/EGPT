@@ -1,5 +1,5 @@
 {
-  "_purpose": "The daita-economy app: DeSciX.net's anonymous home (CEO words recorded Unkamon 6f846aa: 'largely be the courantgroup content (which we can reuse now for a placeholder/test) - but we need a login button that shows powch and then on login pingpong redirects to the dashboard/platform PWA'). Placeholder now: Cowork's Courant page verbatim from the pinned template commit, plus the login component. The DeSciX.net focus (the flywheel first, the pools, pointers to the four sites) replaces the placeholder content later.",
+  "_purpose": "The daita-economy app: DeSciX.net's anonymous home. The page is a placeholder for now: Cowork's Courant page verbatim from the pinned template commit, plus the login component, a login button that shows Powch and, on login, redirects to the platform dashboard (the PWA). The DeSciX.net content (the flywheel first, the pools, pointers to the four sites) replaces the placeholder later.",
   "title": "DeSciX — Courant Group (placeholder front page)",
   "description": "DeSciX front page, placeholder: the Courant Group page. Log in with Powch to reach the platform.",
   "brand": "template",

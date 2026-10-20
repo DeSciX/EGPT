@@ -1,5 +1,5 @@
 {
-  "_purpose": "The egpt-godsworld app's front page (godsworld.ai → egpt-godsworld.descix.net): CEO words recorded Unkamon d3d9a7c ('start with Maxi but oriented to people building new VLA recipes… in order to gain tokens') under 055c907 (no SDK/recipe-builder CTA beyond one alpha line). Maxi's Lab lives at app.html on the same site; the root forwards any query-string load there. Waits on the CEO's decision about godsworld-dev's site build (scripts/inline-payloads.mjs writes site/index.html) and the empty DeSciX/egpt-godsworld repository.",
+  "_purpose": "The egpt-godsworld app's front page (godsworld.ai → egpt-godsworld.descix.net). The page leads with Maxi and addresses people who build new VLA recipes and earn tokens for them; it carries no SDK or recipe-builder call to action beyond one alpha line. Maxi's Lab lives at app.html on the same site; the root forwards any query-string load there.",
   "title": "Gods World — Meet Maxi, robotic AI with true imagination",
   "description": "Maxi builds a scene, changes it, runs it forward, watches what happens and learns from what it watched. Talk to Maxi and watch its imagination.",
   "brand": {
