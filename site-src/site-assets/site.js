@@ -250,16 +250,21 @@
      The shell's view is whatever it shows (share.json default_view, or the reader's own choice). The one
      control below asks the shell, through the served @descix/app-sdk bridge (DeSciXAppSDK.js), for the chat
      beside the document, and records what happened on <html data-descix-view> as
-     "<outcome>:<mode set, or the bridge when none was>", the outcome being one of DeSciX.VIEW_OUTCOMES.
-     The control exists only where DeSciX.ready() resolves { mode: 'shell' }: with no bridge on the page
-     (a standalone copy) or a bridge that finds no shell, there is nothing to ask and no control. */
+     "<outcome>:<mode set, or the bridge when none was>", the outcome being one of DeSciX.VIEW_OUTCOMES, and
+     the view the shell showed at the press (DeSciX.view.get(), read then and only then) on data-descix-view-from.
+     The page never calls view.subscribe (subscribing flips view.available() by itself).
+     The control exists only where the bridge's documented surface says a shell is listening: DeSciX.ready()
+     resolves { mode: 'shell' } and DeSciX.view.available() is true. No bridge on the page (a standalone copy),
+     ready() rejecting or resolving any other mode, or no listening view: no control. */
   var VIEW_ATTR = 'data-descix-view';
   function askLibrarian(S) {
+    var from = S.view.get();
     var r = S.requestView('SplitView', { fallback: 'Chat' }), outcomes = S.VIEW_OUTCOMES;
     var known = Object.keys(outcomes).some(function (k) { return outcomes[k] === r.outcome; });
     if (!known) throw new Error('DeSciX.requestView returned outcome ' + JSON.stringify(r.outcome) + ', not one of DeSciX.VIEW_OUTCOMES');
     document.documentElement.setAttribute(VIEW_ATTR, r.outcome + ':' + (r.mode || r.bridge));
     document.documentElement.setAttribute(VIEW_ATTR + '-detail', r.reason || '');
+    document.documentElement.setAttribute(VIEW_ATTR + '-from', String(from));
     return r;
   }
   function mountLibrarian() {
@@ -267,15 +272,16 @@
     if (!S || typeof S.ready !== 'function') return;          // no bridge on this page: standalone, no control
     S.ready().then(function (r) {
       if (!r || r.mode !== 'shell') return;                  // standalone, or framed with no readable shell
-      if (typeof S.requestView !== 'function' || !S.VIEW_OUTCOMES) {
-        throw new Error('DeSciXAppSDK.js has no requestView/VIEW_OUTCOMES: the bundle must ship the @descix/app-sdk >= 0.6.0 bridge (scripts/build-frontpage.js, scripts.sdk)');
+      if (typeof S.requestView !== 'function' || !S.VIEW_OUTCOMES || !S.view || typeof S.view.get !== 'function' || typeof S.view.available !== 'function') {
+        throw new Error('DeSciXAppSDK.js lacks requestView/VIEW_OUTCOMES/view.get/view.available: the bundle must ship the @descix/app-sdk >= 0.6.0 bridge (scripts/build-frontpage.js, scripts.sdk)');
       }
+      if (!S.view.available()) return;                       // a shell, but no host listening for a view
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'toolbar-librarian'; b.id = 'ask-librarian';
       b.textContent = 'Ask the librarian'; b.title = 'Open the chat beside this document';
       b.addEventListener('click', function () { askLibrarian(S); });
       document.querySelector('#content-toolbar .toolbar-actions').prepend(b);
-    });
+    }, function () { /* ready() rejected: the documented absence of a shell bus; no control */ });
   }
 
   /* ============================================================ navigation: #<path>, #<path>#<heading>, #record:<id> */

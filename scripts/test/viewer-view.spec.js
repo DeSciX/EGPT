@@ -10,7 +10,8 @@
 //      CodeSite and show no "Hide Chat";
 //   3. "Ask the librarian" sets SplitView (or the Chat fallback): the stamp on <html> is
 //      "<outcome>:<mode>" with the outcome read from the page's own DeSciX.VIEW_OUTCOMES and the
-//      attribute name from EGPTViewer.VIEW_ATTR, and the shell's view equals the mode set;
+//      attribute name from EGPTViewer.VIEW_ATTR, <attr>-from holds the view read at the press (CodeSite),
+//      and the shell's view equals the mode set;
 //   4. the reader's choice survives navigation: a PDF and the Singularity reading page do not move it;
 //   5. no bridge on the page (DeSciXAppSDK.js refused) and a top-level load with no shell: no control,
 //      no page error.
@@ -100,10 +101,11 @@ test('interior pages keep CodeSite; the librarian opens on demand and the choice
     assert.strictEqual(await btn.count(), 1, 'no "Ask the librarian" control in the shell');
     assert.ok(await btn.isVisible(), '"Ask the librarian" is not visible');
     await btn.click();
-    const { attr, outcomes, stamp } = await app.evaluate(() => {
+    const { attr, outcomes, stamp, from } = await app.evaluate(() => {
       const a = window.EGPTViewer.VIEW_ATTR;
-      return { attr: a, outcomes: window.DeSciX.VIEW_OUTCOMES, stamp: document.documentElement.getAttribute(a) };
+      return { attr: a, outcomes: window.DeSciX.VIEW_OUTCOMES, stamp: document.documentElement.getAttribute(a), from: document.documentElement.getAttribute(a + '-from') };
     });
+    assert.strictEqual(from, 'CodeSite', `${attr}-from: the view read at the press`);
     assert.ok(attr, 'EGPTViewer.VIEW_ATTR is not published');
     const accepted = { [`${outcomes.REQUESTED}:SplitView`]: 'SplitView', [`${outcomes.FALLBACK}:Chat`]: 'Chat' };
     t.diagnostic(`${attr}=${stamp}`);
