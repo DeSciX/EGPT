@@ -31,7 +31,9 @@
  *   holds exactly the served text (declared) or nothing (undeclared); an unknown source fails.
  * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec with a "share" block also gets share.json beside index.html and its icon and share image in
- * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time).
+ * images/share/ (scripts/lib/share.js; the file DEVPLANE's edge worker reads at serve time). The block's
+ * optional default_view (the shell view the app starts in) is ferried into share.json and checked by
+ * @descix/app-sdk/share, before any write and on --dry-run too.
  * Every input under site-src/frontpage/ is read through one door (frontpageFile), which refuses a file (or a
  * directory) that is itself uncommitted: the page is built from committed inputs only, and another app's
  * uncommitted spec blocks nothing.
@@ -614,6 +616,7 @@ ${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script
   // the share block's rendered assets are read by scripts/lib/share.js from its own directory: gated here, before any write
   const share = spec.share ? require('./lib/share') : null;
   if (share) frontpageFile(path.relative(SRC, share.shareSourceDir(SRC, app)));
+  if (share) { try { share.shareJson(app, spec.share); } catch (e) { die(e.message); } }
   if (!DRY) {
     fs.mkdirSync(path.join(OUT, 'images'), { recursive: true });
     for (const [name, data] of images) fs.writeFileSync(path.join(OUT, 'images', name), data);
