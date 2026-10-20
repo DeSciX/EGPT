@@ -1,4 +1,0 @@
-{
-  "_purpose": "The front-page tiles are the showcase roster, the pinned devDependency @descix/frqtl-web's ./registry export (EXHIBITS, sceneKey, SHOWCASE_THROUGH_LINE), imported by package name by scripts/build-frontpage.js renderExhibits, only when a page carries a data-exhibits slot, pinned exactly to the release egpt-frqtl serves. The tiles link the GYM of the app named here, at the origin its spec declares as self_host. A row's tile still lives in exhibits/<sceneKey>.png beside its <sceneKey>.provenance.json, present iff the row declares a still.",
-  "app": "egpt-frqtl"
-}

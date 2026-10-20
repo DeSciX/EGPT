@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 969 files, 164565462 bytes.
+# 968 files, 164569574 bytes.
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
 2002719695e0b22b36ebb156cb2ea8a27938c5a748afbc92fc2c0c849d1afac0  .descix/manifests/Corpus.json
 ce3f19f50fdaa41a04a9c7bd82e6ec7f4c7d33d349f26a31dc73750b793ecf8b  .descix/manifests/Sources.json
@@ -770,8 +770,8 @@ cfbd5620bc4c0c53a1c51f24c0e3f3a2b66d4e73f65d947cd2b6150b89f3d416  microservice/t
 76c99826c111e2593b61952ba9f5badfd9549b5e0e6db9ff15da7cd6400e1e22  microservice/tests/meshConfig.test.js
 93e7d48051addb4435882004febd979c735f2150bc0f04ab0ae33c8d4fc22907  microservice/tests/podcastStore.test.js
 d146ac1b81155836c5c038653708b08c86ff51cfa800818f4c9fb40dd775d607  microservice/tests/publisher.test.js
-348835c7896d969a2055281e932af47be2523dd4ce57787a93a4b6268ad576c3  package-lock.json
-f973f612f67cd9b8834ede4808269415f5d227943d9a13d7a8bb09a8ebd6e30c  package.json
+2ab91241361f480cbe7b5d71f01c5a82d92433802b4f09e79c8bc33fe2b6efcb  package-lock.json
+ffea1adcf5e2e09cf23621ca2e30ee464797c5143371844b15f6574a406aaa3b  package.json
 c09dd2e5d0f3eab17b97031cd3eedeabfb39e365940ef51b3f21f6fe0039056c  plugins/egpt/.claude-plugin/plugin.json
 c024619e72eb502602445d1902f908471d9777dd931bcf9df22b75ce5e2d80fa  plugins/egpt/.mcp.json
 3ac69bc03a35d59aa6c6f49d2b9c6d5bb296313109f2957d4cde514358b22c6a  plugins/egpt/LICENSE.md
@@ -792,7 +792,7 @@ d3fd1319cc6388b4f1334b052941af08f7c54e5ff6b35d9002a57e97f051d982  plugins/frqtl/
 86157ba9fada926edd3fbc6f777687065930ea8d24ba9b01edc46fd034275373  plugins/frqtl/skills/frqtl-builder/SKILL.md
 23f33c6a4d2df4ce911605c054baef9361dd31f200860bb0c02bbb81f8016218  plugins/frqtl/skills/frqtl-designer/SKILL.md
 a36d5beb36be57354b0d86f930fe4b3499be77a654ac215a612e2e93dcbd8502  scripts/build-claude-session-page.js
-b40100297ec06508ee321626a4990208b26cf18d9eefb8cbf61e1916f3f60f7e  scripts/build-frontpage.js
+8b69f78162c3059b2e355efbeee1b25abd472bc9b2ffa713e8c63776710afb9f  scripts/build-frontpage.js
 4269f19964509a742583b75cd8a76a564c0f460fc3edde42153816fbb8f9d4b6  scripts/build-journal.js
 93080682339a76ce72c1e051c3f34d9a4a81cc6ed3655268400c19a4068613db  scripts/build-share-assets.js
 232ca5f66f0ba190dbc1588ae810ae345a608fbb0002335954b42a699ee52a90  scripts/build-singularity-page.js
@@ -801,7 +801,7 @@ b40100297ec06508ee321626a4990208b26cf18d9eefb8cbf61e1916f3f60f7e  scripts/build-
 59386a0c6e69191ef5acebc5012e4ed83acd7889be56ece00df04ca18f01a5b2  scripts/ledger-to-timeline.js
 6b52a977ea18bc40407286adea9bb29f6803dde23cb479a13965d34efb9ef573  scripts/lib/share.js
 c46fa09212171fc2db72f909ec25303f904dd72b5d17e9b7b49253e5cfa25587  scripts/render.mjs
-5ca75bb424ed5bd082b3076ded4339e96daa62557657e284a9c5a3730e3ef34f  scripts/test/build-frontpage-exhibits.test.js
+0356175842b2ec5f7e7e62fcfafd07a13b8533945739b4f68a6f91cde6653d16  scripts/test/build-frontpage-exhibits.test.js
 64fad7d0184270305ef018b6716dda6ec2928cdfdf93f64dcabbd0ec8198839d  site-src/_meta.json
 d71932cbf7ff8589496d559f408ae97bf340f4deed3da4454a39ecbbd4779ad4  site-src/books/chatgpt.json
 21da063f000648bbf2da593d6fc2bccb3c7f1bbc2ee12c211fc667128079801c  site-src/books/claude-session.json
@@ -841,7 +841,6 @@ ef26bba95be0dd0a511329cb1029efc1a2f18cd57d5411d67359fe4a513d1cf3  site-src/front
 4d53b98bb3c3f0cc23c546f99dd80f6afe91d3cb3d66518dc48523e0d99eb68a  site-src/frontpage/egpt/share/icon-180.png
 28834a91554090e80e0109edcca7b405e3c5efdaa706815f589fb572bc733b19  site-src/frontpage/egpt/share/share-1200x630.png
 9701f956b70ecee1c2cb45eb39a5fe3992c92ded72a015eb70a78da2ce63755d  site-src/frontpage/egpt/teleprompter.js
-2f62879a4da23171c19c5c56eb3af99f24162d42f9ba0067f537c0321229a114  site-src/frontpage/exhibits.json
 748c6a8bab4e60906dc99a8ee5a7680ae762ce8fbeb0c11958ab1433d279e96c  site-src/frontpage/exhibits/scene-rung-atomic-model.png
 c8a41b2f4efde6887b1e271b367b23c4a4ac1a56cae726cbf46e37a12185eef4  site-src/frontpage/exhibits/scene-rung-atomic-model.provenance.json
 f3e2be16651a03f486d698ec662810a81ca9fd337f4b31c9c11a6d610b0cd8bd  site-src/frontpage/exhibits/scene-rung-big-bang.png
