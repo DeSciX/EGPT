@@ -1,6 +1,6 @@
 'use strict';
 // The per-site share metadata, one owner: the "share" block of site-src/frontpage/<app>.json.
-// DEVPLANE's contract (Unkamon org/records/exec-sum/2026-10-01-devplane-go-live-handbacks.md §C):
+// The DeSciX platform's share contract:
 // each site bundle ships site/share.json beside index.html with title, description (<160),
 // icon (bundle-relative), og_image (bundle-relative 1200×630, under 1 MB), optional twitter_card
 // (default summary_large_image), optional apple_touch_icon and optional default_view (the shell view

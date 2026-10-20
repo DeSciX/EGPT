@@ -461,7 +461,7 @@ test('through-line: an unknown source, an extra key or a bare string refuses; a 
 });
 
 // The REAL specs, built by the real generator from this repository against the real template pin and the pinned
-// roster: the through-line is on exactly the two pages the CEO approved (#130), every other #proof page leaves it empty.
+// roster: the through-line is on exactly the two pages approved for it, every other #proof page leaves it empty.
 const THROUGH_PAGES = ['egpt-frqtl', 'egpt-courantgroup'];
 test('through-line: the real specs fill it on egpt-frqtl and egpt-courantgroup only; every other #proof page renders it empty', () => {
   const real = fs.readdirSync(REAL_SRC).filter(f => f.endsWith('.json') && f !== 'template.json').map(f => f.slice(0, -5));

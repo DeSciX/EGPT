@@ -169,8 +169,8 @@ const specPath = frontpageFile(`${app}.json`);
 if (!fs.existsSync(specPath)) die(`no spec: ${specPath}`);
 const spec = JSON.parse(readFrontpage(`${app}.json`, 'utf8'));
 for (const k of ['title', 'description', 'brand', 'nav', 'hero', 'sections', 'footer', 'scripts']) if (!(k in spec)) die(`spec lacks ${k}`);
-// "through_line": a DECLARED choice per spec, never a default (CEO #130: "approve: through-line on both pages,
-// above the grid-note" — egpt-frqtl and egpt-courantgroup). Absent: the template's marker stays empty.
+// "through_line": a DECLARED choice per spec, never a default (declared on egpt-frqtl and egpt-courantgroup,
+// above the grid-note). Absent: the template's marker stays empty.
 const THROUGH_SOURCES = ['served-roster'];
 if (spec.through_line !== undefined) {
   const t = spec.through_line;
@@ -389,8 +389,8 @@ function loadRoster() {
   }
   return (roster = { rows: X.EXHIBITS, stills, site, release, X });
 }
-// The tile's one-line caption is the row's published short sentence (CEO #129: "approve: tile line stays,
-// captions on the card"); what/why/how are the GYM card's. Required on every row: a roster served without it
+// The tile's one-line caption is the row's published short sentence; the captions (what/why/how) are the GYM
+// card's. Required on every row: a roster served without it
 // (an old release) refuses instead of rendering a tile with no line.
 const TILE_LINE = 'tile';
 function tileLine(r) {

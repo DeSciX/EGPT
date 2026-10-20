@@ -1,9 +1,8 @@
 # Front page content: the egpt app (egpt.cc, egpt.descix.net)
 
-Prepared 29 September 2026 for the reusable full-screen front page of the four egpt apps (CEO
-words recorded Unkamon bdec630 and d3d9a7c; preview-release scope recorded Unkamon 055c907: the
-pages sell to non-developers). The page template is the Courant Group site; this file is the
-egpt app's content for it. The author's direction for this page, verbatim:
+Prepared 29 September 2026 for the reusable full-screen front page of the four egpt apps; in the
+preview release the pages sell to non-developers. The page template is the Courant Group site; this
+file is the egpt app's content for it. The author's direction for this page, verbatim:
 
 > "For your portion of the build and the adaptation of the courantgroup site I want to make the
 > 12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html a key element of the messaging -
@@ -173,9 +172,9 @@ Links: **Make money** → `guide/make-money.md`; **Get involved** → `guide/get
 
 ## 9. Developer alpha, one line
 
-The SDK is not a public product in the preview (CEO, record Unkamon 055c907: "alpha testing with
-devs can be a post MVP preview DAITA token earning quest"). One line on the page, no install
-instructions, no SDK link in the navigation:
+The SDK is not a public product in the preview: alpha testing with developers is a post-MVP
+preview quest that earns DAITA tokens. One line on the page, no install instructions, no SDK link
+in the navigation:
 
 - Developer alpha of the SDK: after the preview, and it earns DAITA.
 

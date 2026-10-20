@@ -189,7 +189,7 @@
     }
   },
   "share": {
-    "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload (CEO priority 2, Unkamon bef716a). One block per app: what a share card and a browser tab show for this site.",
+    "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload. One block per app: what a share card and a browser tab show for this site.",
     "site": "egpt.cc",
     "title": "EGPT-Evidence — the missing corpus",
     "description": "The primary documents behind EGPT: von Neumann, Ulam and Rota in their own words, three machine-checked proofs, and two machines' answers on the Singularity.",

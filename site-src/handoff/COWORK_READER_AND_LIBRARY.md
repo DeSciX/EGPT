@@ -35,7 +35,7 @@ On this hand-off (1 October 2026):
 > "What I'd like to do is break the design session out to Cowork which has better design tools
 > and let you coordinate the integration of the following components and additions that are
 > needed:
-> 1) The /Users/essam/Code/Unkamon/EGPT-Evidence/12_SINGULARITY/Claude/Cowork_Session_10.01.2026.md
+> 1) The [12_SINGULARITY/Claude/Cowork_Session_10.01.2026.md]
 >    needs an html build like ChatGPT has (styled in the same way with the bubbles denoting who is
 >    talking etc..)
 > 2) The Claude response deserves an interactive reader and component for it that could

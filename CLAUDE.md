@@ -283,8 +283,8 @@ its carries his uncommitted work. The flip to public is his act.
 one file by name, `13_MAXI/bedtime_stories/The_Room_Where_It_Happened.md`, untracked at `main`; it
 syncs once that story is committed, which is the author's act ("I'll fill in the room where it
 happened shortly - don't commit now."). The site is the collection in the SPA viewer, uploaded on
-his words lifting the hold on the Courant Group plan (record Unkamon 213585d: "Flag A - can be
-published, it is marked exemplary." and "Flag C. Confirmed"): 646 files from `main @ 68ee5cd`,
+his word lifting the hold on the Courant Group plan (Flag A may be published, marked exemplary;
+Flag C confirmed): 646 files from `main @ 68ee5cd`,
 deployed 2026-09-28T05:11:38Z, 15 files of the previous static site removed; five files served
 equal built by sha256 (index, the plan, its README, guide/make-money.md, site-assets/site.js);
 stamp `68ee5cd` counts 1 on the `egpt` bundle and 0 on the control app `daita`.
