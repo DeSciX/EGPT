@@ -20,7 +20,7 @@
   "devDependencies": {
     "@descix/app-sdk": "0.2.1",
     "@descix/cli": "^1.0.18",
-    "@descix/frqtl-web": "0.6.0",
+    "@descix/frqtl-web": "0.6.1-p1.2",
     "js-beautify": "^2.0.3"
   },
   "private": true

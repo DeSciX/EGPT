@@ -1,5 +1,6 @@
 // The front page's generated tile grid: build-frontpage.js renderExhibits + fillSlots, the template
-// precondition, the one link writer, the stills home and the final sweep.
+// precondition, the roster's link writer (showcaseHref/showcaseUrl, SHOWCASE_SITE) under the self_host rule, the
+// stills home and the final sweep.
 //
 //   node --test scripts/test/build-frontpage-exhibits.test.js
 //
@@ -16,13 +17,12 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { pathToFileURL } = require('url');
+const { createRequire } = require('module');
 const { execFileSync, spawnSync } = require('child_process');
 
 const REAL = path.resolve(__dirname, '..', '..');
 const REAL_SRC = path.join(REAL, 'site-src', 'frontpage');
-const cfg = JSON.parse(fs.readFileSync(path.join(REAL_SRC, 'exhibits.json'), 'utf8'));
 const PKG = '@descix/frqtl-web';
-const ORIGIN = JSON.parse(fs.readFileSync(path.join(REAL_SRC, `${cfg.app}.json`), 'utf8')).self_host;
 // the pinned package as this repository installs it: its directory, its ./registry module, the module itself
 let PKG_DIR, REGISTRY_FILE, X, THROUGH_TEXT;
 test.before(async () => {
@@ -31,6 +31,9 @@ test.before(async () => {
   X = await import(`${PKG}/registry`);
   THROUGH_TEXT = X.SHOWCASE_THROUGH_LINE.join('');
 });
+// The showcase app (its spec name in a world) and its origin: the roster's SHOWCASE_SITE, never typed here.
+const SHOW = () => X.SHOWCASE_SITE.app;
+const SHOW_ORIGIN = () => X.SHOWCASE_SITE.origin;
 const key = r => X.sceneKey({ kind: r.kind, id: r.id, modeId: r.mode });
 
 const SLOT = '<div class="grid" data-exhibits></div>';
@@ -70,8 +73,12 @@ const git = (cwd, ...a) => execFileSync('git', a, { cwd, stdio: ['ignore', 'pipe
 // undeclare: a roster row id the fixture package serves WITHOUT its still (its still files leave the home too).
 // serve: a JS object expression over X (the real module) whose keys replace the package's exports —
 // how a case plants a fault in the roster without touching it (e.g. one row's still.alt stripped).
+// A package that replaces EXHIBITS also exports showcaseHref/showcaseUrl over ITS rows (the real writer of the row
+// at the same position), so the writer's identity refusal holds for the fixture's own rows.
 // fragments: { <file>: html } written beside the specs.
-function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {}, undeclare = null, serve = null, fragments = {} } = {}) {
+// generator: (source) → source, a plant in the generator copy (the negative control of a page assertion).
+// The world's specs: the showcase app's (named SHOWCASE_SITE.app, self_host SHOWCASE_SITE.origin), other and bare.
+function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {}, undeclare = null, serve = null, fragments = {}, generator = null } = {}) {
   const T = fs.mkdtempSync(path.join(os.tmpdir(), 'frontpage-exhibits-'));
   const tpl = path.join(T, 'tpl');
   fs.mkdirSync(path.join(tpl, 'site'), { recursive: true });
@@ -85,11 +92,13 @@ function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {},
   const src = path.join(ev, 'site-src', 'frontpage');
   fs.mkdirSync(path.join(ev, 'scripts'), { recursive: true });
   fs.mkdirSync(path.join(src, 'exhibits'), { recursive: true });
-  fs.copyFileSync(path.join(REAL, 'scripts', 'build-frontpage.js'), path.join(ev, 'scripts', 'build-frontpage.js'));
+  const gen = fs.readFileSync(path.join(REAL, 'scripts', 'build-frontpage.js'), 'utf8');
+  const planted = generator ? generator(gen) : gen;
+  if (generator && planted === gen) throw new Error('fixture: the generator plant changed nothing');
+  fs.writeFileSync(path.join(ev, 'scripts', 'build-frontpage.js'), planted);
   fs.writeFileSync(path.join(src, 'template.json'), JSON.stringify({ repo: '../tpl', commit: git(tpl, 'rev-parse', '--short', 'HEAD'), page: 'site/index.html' }));
-  fs.writeFileSync(path.join(src, 'exhibits.json'), JSON.stringify({ app: 'frqtl' }));
-  // frqtl and other declare the through-line (as the real egpt-frqtl and egpt-courantgroup specs do); bare does not
-  const all = { frqtl: spec(ORIGIN, [{ use: 'proof' }], THROUGH_DECL), other: spec('https://other.example', [{ use: 'proof' }], THROUGH_DECL), bare: spec('https://bare.example', [{ use: 'proof' }]), ...specs };
+  // the showcase app and other declare the through-line (as the real egpt-frqtl and egpt-courantgroup specs do); bare does not
+  const all = { [SHOW()]: spec(SHOW_ORIGIN(), [{ use: 'proof' }], THROUGH_DECL), other: spec('https://other.example', [{ use: 'proof' }], THROUGH_DECL), bare: spec('https://bare.example', [{ use: 'proof' }]), ...specs };
   for (const [name, s] of Object.entries(all)) fs.writeFileSync(path.join(src, `${name}.json`), JSON.stringify(s));
   for (const [name, html] of Object.entries(fragments)) fs.writeFileSync(path.join(src, name), html);
   const home = path.join(REAL_SRC, 'exhibits');
@@ -111,6 +120,7 @@ function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {},
     else {
       const body = `{ ${override.join(', ')} }`;
       const names = Object.keys(new Function('X', `return ${body};`)(X));
+      const writers = names.includes('EXHIBITS') ? ['showcaseHref', 'showcaseUrl'].filter(n => !names.includes(n)) : [];
       const real = JSON.stringify(pathToFileURL(REGISTRY_FILE).href);
       fs.mkdirSync(dir);
       const { version } = JSON.parse(fs.readFileSync(path.join(PKG_DIR, 'package.json'), 'utf8'));
@@ -119,11 +129,14 @@ function world({ template = page(SLOT), stills = 'real', pkg = true, specs = {},
 export * from ${real};
 const O = ${body};
 ${names.map(n => `export const ${n} = O.${n};`).join('\n')}
+${writers.length ? `const real = (r) => { const i = EXHIBITS.indexOf(r); return i === -1 ? r : X.EXHIBITS[i]; };\n` : ''}${writers.map(n => `export const ${n} = (r) => X.${n}(real(r));`).join('\n')}
 `);
     }
   }
   return {
     T, rows, commit,
+    // the roster module this world's generator imports (the fixture package, or the real one it links)
+    async roster() { return import(pathToFileURL(createRequire(path.join(ev, 'package.json')).resolve(`${PKG}/registry`)).href); },
     build(app) {
       const out = path.join(T, 'out', app);
       fs.rmSync(out, { recursive: true, force: true });   // a refused build must not be read as an earlier build's page
@@ -143,17 +156,26 @@ const tiles = html => [...html.match(/<div\b[^>]*data-exhibits[^>]*>([\s\S]*?)<\
 const unent = s => s.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 // every filled through-line marker on a page: its decoded text
 const throughLines = html => [...html.matchAll(/<([a-z][a-z0-9]*)\b[^>]*\bdata-showcase-throughline\b[^>]*>([\s\S]*?)<\/\1>/g)].map(m => unent(m[2]));
-const gymLink = r => `app.html?preset=compare&walkthrough=${r.id}${r.mode ? `&mode=${r.mode}` : ''}`;
+// The §3 tile rule off the world's own roster: showcaseHref(row) iff the page's self_host is SHOWCASE_SITE.origin,
+// else showcaseUrl(row) — the fixture package's own writer over its own rows.
+async function wantHrefs(w, selfHost) {
+  const R = await w.roster();
+  const self = selfHost === R.SHOWCASE_SITE.origin;
+  return R.EXHIBITS.map(r => (self ? R.showcaseHref(r) : R.showcaseUrl(r)));
+}
+const assertTileHrefs = (html, want) => assert.deepEqual(tiles(html).map(t => t.href), want, 'tile hrefs are the roster writer\'s');
 
-test('another site\'s page: one tile per roster row, in order, absolute GYM links, stills iff declared', () => {
+test('another site\'s page: one tile per roster row, in order, absolute links from showcaseUrl, stills iff declared', async () => {
   const w = world({ undeclare: X.EXHIBITS.find(x => x.still).id });
   const r = w.build('other');
   assert.equal(r.code, 0, r.err);
   const got = tiles(r.html);
   assert.equal(got.length, w.rows.length);
+  const want = await wantHrefs(w, 'https://other.example');
+  assertTileHrefs(r.html, want);
   w.rows.forEach((row, i) => {
     assert.equal(got[i].title, row.title.replace(/&/g, '&amp;'));
-    assert.equal(got[i].href, `${ORIGIN}/${gymLink(row)}`);
+    assert.equal(new URL(got[i].href).origin, SHOW_ORIGIN(), `tile ${i + 1} is absolute on SHOWCASE_SITE.origin`);
     assert.match(got[i].attrs, / target="_blank" rel="noopener"/);
     assert.equal(got[i].img, row.still ? `images/${key(row)}.png` : null);
     assert.equal(/class="tile dark"/.test(got[i].attrs), !row.still);
@@ -162,11 +184,44 @@ test('another site\'s page: one tile per roster row, in order, absolute GYM link
   assert.ok(w.rows.some(x => x.still) && w.rows.some(x => !x.still), 'the roster exercises both tile forms');
 });
 
-test('the roster app\'s own page (self_host = the GYM origin): relative links, no target', () => {
-  const r = world().build('frqtl');
+test('the showcase app\'s own page (self_host = SHOWCASE_SITE.origin): relative links from showcaseHref, no target', async () => {
+  const w = world();
+  const r = w.build(SHOW());
   assert.equal(r.code, 0, r.err);
-  const got = tiles(r.html);
-  X.EXHIBITS.forEach((row, i) => { assert.equal(got[i].href, gymLink(row)); assert.doesNotMatch(got[i].attrs, /target=/); });
+  assertTileHrefs(r.html, await wantHrefs(w, SHOW_ORIGIN()));
+  for (const t of tiles(r.html)) { assert.doesNotMatch(t.href, /^[a-z]+:/i, 'relative'); assert.doesNotMatch(t.attrs, /target=/); }
+});
+
+// The negative control of the href assertion: a generator that writes the deleted GYM link shape is red.
+test('a planted GYM href (preset=compare) fails the tile-href assertion', async () => {
+  const w = world({ generator: src => src.replace("const href = self ? X.showcaseHref(r) : X.showcaseUrl(r);",
+    "const href = (self ? X.showcaseHref(r) : X.showcaseUrl(r)).replace('preset=author', 'preset=compare');") });
+  const r = w.build(SHOW());
+  assert.equal(r.code, 0, r.err);
+  assert.match(r.html, /preset=compare/, 'the plant reached the page');
+  const want = await wantHrefs(w, SHOW_ORIGIN());
+  assert.throws(() => assertTileHrefs(r.html, want), /tile hrefs are the roster writer's/);
+});
+
+// The self_host rule names both sides of a drift: the showcase app's spec must sit at SHOWCASE_SITE.origin, and no
+// other app's may.
+test('self_host drift refuses naming both: the showcase spec off SHOWCASE_SITE.origin, another spec on it', () => {
+  const w = world({ specs: { [SHOW()]: spec('https://drift.example', [{ use: 'proof' }], THROUGH_DECL), squat: spec(SHOW_ORIGIN(), [{ use: 'proof' }]) } });
+  const a = w.build(SHOW());
+  assert.equal(a.code, 1); assert.equal(a.html, null);
+  assert.ok(a.err.includes(`self_host "https://drift.example" vs the roster's SHOWCASE_SITE ${JSON.stringify(X.SHOWCASE_SITE)}`), a.err);
+  assert.match(a.err, new RegExp(`is the showcase app, so its spec's self_host must be ${SHOW_ORIGIN().replace(/[.]/g, '\\.')}`));
+  const b = w.build('squat');
+  assert.equal(b.code, 1); assert.equal(b.html, null);
+  assert.ok(b.err.includes(`squat.json self_host ${JSON.stringify(SHOW_ORIGIN())} vs the roster's SHOWCASE_SITE`), b.err);
+  assert.match(b.err, /squat is not .*, so its spec's self_host may not be/);
+});
+
+// A pin that predates the link writer (0.6.0 exports none of the three) refuses, naming what it lacks.
+test('a stale pin without the link writer refuses, naming showcaseHref, showcaseUrl and SHOWCASE_SITE', () => {
+  const r = world({ serve: '{ showcaseHref: undefined, showcaseUrl: undefined, SHOWCASE_SITE: undefined }' }).build('other');
+  assert.equal(r.code, 1); assert.equal(r.html, null);
+  assert.match(r.err, /exports no showcaseHref, showcaseUrl, SHOWCASE_SITE — the tile link writer; pin @descix\/frqtl-web exactly/);
 });
 
 test('{"hero": true} places the hero among the sections; two placements refuse', () => {
@@ -208,7 +263,7 @@ test('roster package installed but failing to load reports the load error as its
 });
 
 // The roster owns the kinds (EXHIBIT_KINDS); its sceneKey refuses any other before a tile is written.
-test('a roster row that is not a walk-through rung refuses (no ?experiment= tile; the GYM refuses it)', () => {
+test('a roster row that is not a walk-through rung refuses (sceneKey refuses it before a tile is written)', () => {
   const row = X.EXHIBITS[0];
   const r = world({ serve: `{ EXHIBITS: X.EXHIBITS.map(r => (r.id === ${JSON.stringify(row.id)} ? { ...r, kind: 'experiment' } : r)) }` }).build('other');
   assert.equal(r.code, 1); assert.match(r.err, /unknown scene kind "experiment"/); assert.doesNotMatch(r.err, /experiment=/); assert.equal(r.html, null);
@@ -222,22 +277,22 @@ test('an uncommitted input refuses, naming it; an uncommitted file the page does
   const edit = (name, title) => { const s = JSON.parse(fs.readFileSync(path.join(src, name), 'utf8')); fs.writeFileSync(path.join(src, name), JSON.stringify({ ...s, title })); };
   fs.writeFileSync(path.join(src, 'untracked.json'), '{}');
   edit('bare.json', 'another app, uncommitted');
-  const free = w.build('frqtl');
+  const free = w.build(SHOW());
   assert.equal(free.code, 0, `an unrelated uncommitted spec blocked the build: ${free.err}`);
-  edit('frqtl.json', 'uncommitted');
-  const r = w.build('frqtl');
-  assert.equal(r.code, 1); assert.match(r.err, /site-src\/frontpage\/frqtl\.json is uncommitted; .* — commit it, or build another app/);
+  edit(`${SHOW()}.json`, 'uncommitted');
+  const r = w.build(SHOW());
+  assert.equal(r.code, 1); assert.match(r.err, new RegExp(`site-src/frontpage/${SHOW()}\\.json is uncommitted; .* — commit it, or build another app`));
   assert.doesNotMatch(r.err, /stash|bare\.json|untracked\.json/); assert.equal(r.html, null);
-  // the roster app's spec is an input of every tiled page (its self_host), so another page refuses on it too
+  // the showcase app's spec is no input of another page (the tiles' origin is the roster's SHOWCASE_SITE)
   const o = w.build('other');
-  assert.equal(o.code, 1); assert.match(o.err, /frqtl\.json is uncommitted/);
+  assert.equal(o.code, 0, `the showcase app's uncommitted spec blocked another page: ${o.err}`);
   // an untracked file inside a directory the page reads (the stills home) refuses, naming the file
   w.commit();
   fs.writeFileSync(path.join(src, 'exhibits', 'stray.png'), 'png');
-  const d = w.build('frqtl');
+  const d = w.build(SHOW());
   assert.equal(d.code, 1); assert.match(d.err, /site-src\/frontpage\/exhibits\/stray\.png is uncommitted/);
   fs.unlinkSync(path.join(src, 'exhibits', 'stray.png'));
-  const ok = w.build('frqtl');
+  const ok = w.build(SHOW());
   assert.equal(ok.code, 0, ok.err); assert.match(ok.html, /<title>uncommitted<\/title>/);
 });
 
@@ -328,7 +383,7 @@ test('lazy: a template whose .grid has no repeat(N,1fr) refuses (no default colu
 
 // ---------------------------------------------------------------- the through-line slot
 test('through-line: the template marker is filled with the roster\'s SHOWCASE_THROUGH_LINE, once, under the grid and above the grid-note', () => {
-  for (const app of ['frqtl', 'other']) {
+  for (const app of [SHOW(), 'other']) {
     const r = world().build(app);
     assert.equal(r.code, 0, r.err);
     assert.deepEqual(throughLines(r.html), [THROUGH_TEXT]);
@@ -409,7 +464,7 @@ test('through-line: an unknown source, an extra key or a bare string refuses; a 
 // roster: the through-line is on exactly the two pages the CEO approved (#130), every other #proof page leaves it empty.
 const THROUGH_PAGES = ['egpt-frqtl', 'egpt-courantgroup'];
 test('through-line: the real specs fill it on egpt-frqtl and egpt-courantgroup only; every other #proof page renders it empty', () => {
-  const real = fs.readdirSync(REAL_SRC).filter(f => f.endsWith('.json') && !['template.json', 'exhibits.json'].includes(f)).map(f => f.slice(0, -5));
+  const real = fs.readdirSync(REAL_SRC).filter(f => f.endsWith('.json') && f !== 'template.json').map(f => f.slice(0, -5));
   const proofPages = real.filter(a => JSON.parse(fs.readFileSync(path.join(REAL_SRC, `${a}.json`), 'utf8')).sections.some(s => s.use === 'proof'));
   assert.ok(THROUGH_PAGES.every(a => proofPages.includes(a)) && proofPages.length > THROUGH_PAGES.length, `#proof pages: ${proofPages.join(', ')}`);
   const T = fs.mkdtempSync(path.join(os.tmpdir(), 'frontpage-real-'));

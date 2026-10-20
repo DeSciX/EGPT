@@ -21,7 +21,9 @@
  *   <a class="tile"; every slot is filled from the showcase roster (renderExhibits), and a page
  *   whose slot does not end up holding one tile per roster row is a build failure. A tile carries the
  *   row's tile line (TILE_LINE) and its still's alt (row.still.alt); tiles past the template's first
- *   desktop row (gridColumns(): the .grid rule's repeat(N,1fr)) load lazily;
+ *   desktop row (gridColumns(): the .grid rule's repeat(N,1fr)) load lazily. A tile's href is the roster's
+ *   showcaseUrl(row), or showcaseHref(row) (relative) iff the spec's self_host is SHOWCASE_SITE.origin; the
+ *   showcase app's spec must declare that self_host and no other app's may (a drift names both);
  * - the template owns zero through-line text: its #proof carries exactly one EMPTY
  *   <… data-showcase-throughline></…>. A spec that declares "through_line": {"source": "served-roster"}
  *   gets it filled with the served roster's SHOWCASE_THROUGH_LINE (plain text); a spec that does not
@@ -330,10 +332,10 @@ function renderShelves(html, file) {
 
 // ---------------------------------------------------------------- the showcase roster: the one owner of the tiles
 // The rows are the pinned @descix/frqtl-web package's ./registry export (FRAQTL's showcase roster, the release
-// egpt-frqtl serves), imported by package name in main(); site-src/frontpage/exhibits.json names the app whose
-// spec's self_host the tiles link. Read on the first data-exhibits slot only: a page without one never needs the
-// package. The rows are ferried as exported (EXHIBITS) and a still is named by the roster's own sceneKey; nothing
-// here re-enumerates a row's fields.
+// egpt-frqtl serves), imported by package name in main(). Read on the first data-exhibits slot only: a page without
+// one never needs the package. The rows are ferried as exported (EXHIBITS), a still is named by the roster's own
+// sceneKey and a tile's link is written by the roster's own showcaseHref/showcaseUrl, whose site is SHOWCASE_SITE;
+// nothing here re-enumerates a row's fields or types a link.
 const ROSTER_PKG = '@descix/frqtl-web';
 const ROSTER_EXPORT = `${ROSTER_PKG}/registry`;
 let rosterModule = null; // { X } | { err }, set by main() before the page is assembled
@@ -342,9 +344,6 @@ const STILLS = path.join(SRC, STILLS_DIR);
 let roster = null;
 function loadRoster() {
   if (roster) return roster;
-  const cfgPath = frontpageFile('exhibits.json');
-  if (!fs.existsSync(cfgPath)) die(`data-exhibits slot, but ${cfgPath} does not exist`);
-  const cfg = JSON.parse(readFrontpage('exhibits.json', 'utf8'));
   if (!rosterModule) die('roster read before main() imported it');
   const { err } = rosterModule;
   if (err) {
@@ -357,10 +356,17 @@ function loadRoster() {
   const X = rosterModule.X;
   const release = `${ROSTER_PKG}@${require(`${ROSTER_PKG}/package.json`).version}`;
   if (!Array.isArray(X.EXHIBITS) || !X.EXHIBITS.length || typeof X.sceneKey !== 'function') die(`roster unreadable: ${ROSTER_EXPORT} (${release}) exports no EXHIBITS rows / sceneKey`);
-  const appSpec = frontpageFile(`${cfg.app}.json`);
-  if (!fs.existsSync(appSpec)) die(`exhibits.json app ${cfg.app} has no spec ${appSpec} (its self_host is where the tiles link)`);
-  const origin = JSON.parse(readFrontpage(`${cfg.app}.json`, 'utf8')).self_host;
-  if (!/^https:\/\/[^/]+$/.test(origin || '')) die(`${appSpec} self_host ${JSON.stringify(origin)} is not an https origin; the tiles link the GYM there`);
+  // The link writer and its site: a pin that predates them refuses here, naming the export it lacks.
+  const lacks = ['showcaseHref', 'showcaseUrl'].filter(n => typeof X[n] !== 'function');
+  const site = X.SHOWCASE_SITE;
+  if (!site || typeof site.app !== 'string' || typeof site.origin !== 'string') lacks.push('SHOWCASE_SITE');
+  if (lacks.length) die(`roster unreadable: ${ROSTER_EXPORT} (${release}) exports no ${lacks.join(', ')} — the tile link writer; pin ${ROSTER_PKG} exactly to the release egpt-frqtl serves (package.json), then npm ci`);
+  // The self_host rule: a page links its tiles relatively iff it is served at SHOWCASE_SITE.origin, and the one app
+  // served there is SHOWCASE_SITE.app. A spec on either side of that alone is a drift, refused naming both.
+  if ((app === site.app) !== (spec.self_host === site.origin)) {
+    die(`${app}.json self_host ${JSON.stringify(spec.self_host)} vs the roster's SHOWCASE_SITE ${JSON.stringify(site)} (${release}): ` +
+      (app === site.app ? `${app} is the showcase app, so its spec's self_host must be ${site.origin}` : `${app} is not ${site.app}, so its spec's self_host may not be ${site.origin}`));
+  }
   const stills = new Map(X.EXHIBITS.map(r => [r, `${X.sceneKey({ kind: r.kind, id: r.id, modeId: r.mode })}.png`]));
   // a still is present iff its row declares one (row.still): declared + missing, or present + undeclared, fails
   const onDisk = fs.existsSync(frontpageFile(STILLS_DIR)) ? fs.readdirSync(frontpageFile(STILLS_DIR)).filter(f => f.endsWith('.png')) : [];
@@ -377,7 +383,7 @@ function loadRoster() {
   for (const r of X.EXHIBITS) {
     if (r.still && (typeof r.still.alt !== 'string' || !r.still.alt.trim())) die(`roster row ${r.id} declares a still without its alt text (still.alt, roster ${release}) — a tile never ships alt=""`);
   }
-  return (roster = { rows: X.EXHIBITS, stills, origin, release, X });
+  return (roster = { rows: X.EXHIBITS, stills, site, release, X });
 }
 // The tile's one-line caption is the row's published short sentence (CEO #129: "approve: tile line stays,
 // captions on the card"); what/why/how are the GYM card's. Required on every row: a roster served without it
@@ -396,22 +402,17 @@ function throughLine() {
   if (!p.every(s => typeof s === 'string' && s.length)) die(`the roster's SHOWCASE_THROUGH_LINE (${release}) holds a non-string or empty segment; the through-line is plain text — the page has no link renderer`);
   return p.join('');
 }
-// The ONE writer of a tile's link: the GYM of the roster's app, absolute; on the app's own page (its spec's
-// self_host is that origin) the relative form, which stays on the site (no target/rel).
-const GYM = 'app.html?preset=compare';
-function tileHref(row) {
-  const { origin } = loadRoster();
-  if (row.kind !== 'rung') die(`roster row ${row.id}: kind ${JSON.stringify(row.kind)} has no GYM link — a tile is a walk-through rung (the GYM refuses ?experiment=)`);
-  const q = `&walkthrough=${encodeURIComponent(row.id)}${row.mode ? `&mode=${encodeURIComponent(row.mode)}` : ''}`;
-  return spec.self_host === origin ? { href: GYM + q, rel: '' } : { href: `${origin}/${GYM}${q}`, rel: ' target="_blank" rel="noopener"' };
-}
 // <div … data-exhibits></div> (empty) is filled with one tile per roster row, in roster order.
 function renderExhibits(html) {
   return html.replace(/<div\b([^>]*)\bdata-exhibits\b([^>]*)>\s*<\/div>/g, (m, a, b) => {
-    const { rows, stills } = loadRoster();
+    const { rows, stills, site, X } = loadRoster();
     const eager = gridColumns();
+    // The tile's link, from the roster's writer: relative on the showcase site's own page (it stays on the site, no
+    // target/rel), else absolute on SHOWCASE_SITE.origin in a new tab.
+    const self = spec.self_host === site.origin;
     const tiles = rows.map((r, i) => {
-      const { href, rel } = tileHref(r);
+      const href = self ? X.showcaseHref(r) : X.showcaseUrl(r);
+      const rel = self ? '' : ' target="_blank" rel="noopener"';
       const lazy = i >= eager ? ' loading="lazy" decoding="async"' : '';
       const img = r.still ? `<img src="images/${esc(stills.get(r))}" alt="${esc(r.still.alt)}"${lazy}>` : '';
       return `    <a class="tile${img ? '' : ' dark'}" href="${esc(href)}"${rel}>${img}<span class="cap"><b>${esc(r.title)}</b><span>${esc(tileLine(r))}</span><i>Open live ↗</i></span></a>`;
