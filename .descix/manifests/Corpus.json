@@ -401,7 +401,9 @@
       "tier": 1,
       "doc_class": "code",
       "doc_type": "documentation",
-      "syncignore": []
+      "syncignore": [
+        "tests"
+      ]
     },
     {
       "path": "scripts",
@@ -409,7 +411,9 @@
       "tier": 1,
       "doc_class": "code",
       "doc_type": "documentation",
-      "syncignore": []
+      "syncignore": [
+        "test"
+      ]
     },
     {
       "path": "tools",
@@ -425,7 +429,9 @@
       "tier": 1,
       "doc_class": "code",
       "doc_type": "documentation",
-      "syncignore": []
+      "syncignore": [
+        "handoff"
+      ]
     }
   ]
 }
