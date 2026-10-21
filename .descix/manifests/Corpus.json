@@ -167,7 +167,7 @@
       "path": "08_LEAN",
       "ref": "main",
       "tier": 1,
-      "doc_class": "paper",
+      "doc_class": "proof",
       "doc_type": "documentation",
       "syncignore": [
         "*.pdf",
@@ -183,7 +183,7 @@
       "path": "09_DEBATE",
       "ref": "main",
       "tier": 1,
-      "doc_class": "paper",
+      "doc_class": "debate-record",
       "doc_type": "documentation",
       "syncignore": [
         "*.docx"
@@ -206,7 +206,7 @@
       "path": "11_PATENT",
       "ref": "main",
       "tier": 1,
-      "doc_class": "paper",
+      "doc_class": "patent",
       "doc_type": "documentation",
       "syncignore": [
         "*.pdf"

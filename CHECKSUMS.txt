@@ -1,9 +1,9 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 973 files, 164646404 bytes.
+# 973 files, 164646413 bytes.
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
-1a1a88548a90952841055fd7dbf9ba10d7c705d74e504dee0e26b655a3e5caf2  .descix/manifests/Corpus.json
+1087401df0b746057b8b177657ba4a7490392e74ba108a4c52ed7851d0041c6f  .descix/manifests/Corpus.json
 ce3f19f50fdaa41a04a9c7bd82e6ec7f4c7d33d349f26a31dc73750b793ecf8b  .descix/manifests/Sources.json
 23b3b6a6fd68b3b146dab43c5b740cb5a234cb8dbedb26721f6f549a29db9a3a  .descix/manifests/site.json
 dabe8dc137684fdc9fe48c72bd98a6b7b24d66168c20eab878f6e8d64a664c45  .descix/rollback/egpt-site-index-2026-09-27.html
