@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
       - run: node scripts/generate-site.js
       - name: kb/LIBRARY_SETUP.md is committed as the build writes it
-        run: git diff --exit-code -- kb/LIBRARY_SETUP.md
+        run: git ls-files --error-unmatch kb/LIBRARY_SETUP.md && test -z "$(git status --porcelain -- kb/LIBRARY_SETUP.md)"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

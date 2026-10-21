@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 973 files, 164646413 bytes.
+# 973 files, 164646480 bytes.
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
 1087401df0b746057b8b177657ba4a7490392e74ba108a4c52ed7851d0041c6f  .descix/manifests/Corpus.json
@@ -10,7 +10,7 @@ dabe8dc137684fdc9fe48c72bd98a6b7b24d66168c20eab878f6e8d64a664c45  .descix/rollba
 85d6730f680648936deed892996418d4ca00a5a58dc87d8a5d51446db4c00095  .descix/rollback/egpt-site-index-2026-10-02.html
 ee18dbf31c89ef874896f5665efeb5622a16edb89b7f0f7c4439344fe21599b2  .descix/workspace.json
 332807933b94a3b6fad9d5502bdf5a6b86e893d4ea4d16ec5d1b5847e3149d93  .gitattributes
-336c28ed32a8c508693bb9c8d7e06d437b309be2e7ca37aa76bda3c6f56cbaf4  .github/workflows/pages.yml
+acd2082c085fb44b5a986671a63ac8323b79e41aba9b2d2ead5dcbe03342fdbd  .github/workflows/pages.yml
 04c6dd344d13a90c964863014a36b111b4a1908e237c988a3a941e44357637c1  .github/workflows/render.yml
 a7f92997bcd8050fe75160eb45ce4cbff2f885c3da42fd5227d6d155928120f6  .gitignore
 bfa7a14296c5fb9d314b217546cae74e639d04e7a53b6facf2cea33094154b20  00_OUTPUTS/AI_Agents_Meaning_and_Obedient_Risk_Summary.docx
