@@ -11,6 +11,10 @@
  * Hand-editing a generated file is drift by definition — CI overwrites it on the next run.
  * Edit the template.
  *
+ * The librarian persona (templates/assets/system_instructions.md.tmpl -> assets/system_instructions.md) also
+ * carries {{LIBRARIAN_*}} placeholders: its shelves, folders, reading lists, journal and course are copies of the
+ * site data, filled by scripts/lib/librarian-persona.js from the files that own them, never typed into the template.
+ *
  * FAIL LOUD: a missing or malformed DESCIX_ORIGIN throws. There is no default and no
  * fallback — a wrong origin silently baked into a published plugin is far worse than a
  * failed build, and every user who connects to it must later re-authenticate (connectors
@@ -20,6 +24,7 @@
 import { readFile, writeFile, mkdir, readdir, stat } from 'node:fs/promises';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import persona from './lib/librarian-persona.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TEMPLATES = join(ROOT, 'templates');
@@ -95,7 +100,7 @@ for (const tmpl of templates) {
 
     // Unknown {{PLACEHOLDER}} tokens are a template bug, not something to paper over:
     // an unsubstituted token would ship verbatim into a published install string.
-    const KNOWN = new Set([TOKEN, 'LISTING_DESCRIPTION']);
+    const KNOWN = new Set([TOKEN, 'LISTING_DESCRIPTION', ...persona.PLACEHOLDERS]);
     const unknown = [...body.matchAll(/\{\{\s*([A-Z0-9_]+)\s*\}\}/g)]
         .map((m) => m[1])
         .filter((name) => !KNOWN.has(name));
@@ -124,6 +129,8 @@ for (const tmpl of templates) {
             : listingDescription;
         rendered = rendered.replaceAll(/\{\{\s*LISTING_DESCRIPTION\s*\}\}/g, value);
     }
+
+    rendered = persona.fill(rendered, ROOT);
 
     await mkdir(dirname(out), { recursive: true });
     await writeFile(out, rendered);

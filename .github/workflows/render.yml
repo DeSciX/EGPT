@@ -15,6 +15,12 @@ on:
     paths:
       - 'templates/**'
       - 'scripts/render.mjs'
+      - 'scripts/lib/librarian-persona.js'
+      - 'site-src/shelves.json'
+      - 'site-src/_meta.json'
+      - 'site-src/spine.json'
+      - 'site-src/issues/**'
+      - 'journal/**/*.md'
       - '.github/workflows/render.yml'
   workflow_dispatch:
   repository_dispatch:
