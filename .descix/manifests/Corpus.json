@@ -10,6 +10,10 @@
       "doc_class": "primary-source",
       "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
       "doc_type": "documentation",
+      "lint_exempt": [
+        "jsonl-working-log"
+      ],
+      "exempt_reason": "quotes.jsonl is the published quotation corpus, one record per line: public record by intent, not a working log.",
       "syncignore": []
     },
     {
@@ -176,7 +180,9 @@
         "*.js",
         "*.mjs",
         "*.sh",
-        "*.c"
+        "*.c",
+        "Archive",
+        "PPNP/Dev"
       ]
     },
     {
@@ -186,7 +192,11 @@
       "doc_class": "debate-record",
       "doc_type": "documentation",
       "syncignore": [
-        "*.docx"
+        "*.docx",
+        "session_transcript",
+        "debate_log.jsonl",
+        "maxi-memories/build/*.jsonl",
+        "archive"
       ]
     },
     {
@@ -231,7 +241,9 @@
       "tier": 1,
       "doc_class": "guide",
       "doc_type": "documentation",
-      "syncignore": []
+      "syncignore": [
+        "bedtime_stories/The_Room_Where_It_Happened.md"
+      ]
     },
     {
       "path": "14_COURANT_GROUP",
@@ -240,7 +252,8 @@
       "doc_class": "guide",
       "doc_type": "documentation",
       "syncignore": [
-        "*.pdf"
+        "*.pdf",
+        "Business_Plan.md"
       ]
     },
     {
@@ -258,7 +271,10 @@
       "doc_class": "paper",
       "doc_type": "documentation",
       "syncignore": [
-        "*.wav"
+        "*.wav",
+        "2026-10/lets-build-a-better-ai-company.md",
+        "2026-10/standing-on-the-shoulders-of-giants.md",
+        "2026-10/the-line-of-succession.md"
       ]
     },
     {
