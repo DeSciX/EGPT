@@ -1,7 +1,7 @@
 {
   "kb_name": "Corpus",
   "publish_tier": "P",
-  "_purpose": "The whole text of the collection: the quotation corpus and its indexes, every numbered folder of the library, guide/, the journal and its issue file, the root documents, and kb/LIBRARY_SETUP.md (the library's shelves, reading lists, folders, books and journal contents, written by the site build from site-src/). Sourced from the folders at `ref`; nothing is copied into kb/. The sync takes text files only (the CLI's processable extensions); PDF, DOCX, HTML, images and audio stay on the site and in the repository, and each source's syncignore names the ones it holds, with code and build files. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). Every primary-source carries the license basis stated in Copyright_Fair-use_Memo.md.",
+  "_purpose": "The whole text of the repository: the quotation corpus and its indexes, every numbered folder of the library, guide/, the journal and its issue file, the root documents, the site, plugin, service and build code, and kb/LIBRARY_SETUP.md (the library's shelves, reading lists, folders, books and journal contents, written by the site build from site-src/). Sourced from the folders at `ref`; nothing is copied into kb/. The sync takes text files only (the CLI's processable extensions); PDF, DOCX, HTML, images and audio stay on the site and in the repository, and each source's syncignore names the ones it holds and the files the CLI's deny list names that are left out. A nested source owns its subtree (the deepest source wins), so 05_CORPUS and site-src add only what their sub-sources do not hold. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). Every primary-source carries the license basis stated in Copyright_Fair-use_Memo.md.",
   "sources": [
     {
       "path": "05_CORPUS/corpus",
@@ -154,6 +154,10 @@
       "doc_class": "primary-source",
       "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
       "doc_type": "documentation",
+      "lint_exempt": [
+        "debate-context-header"
+      ],
+      "exempt_reason": "The file opens with an @[debate_context] header: it is a published key document of the proof record, included by intent as it stands, not a debate prompt awaiting a reviewer-edited copy.",
       "syncignore": [
         "*.pdf",
         "*.png"
@@ -173,14 +177,12 @@
       "tier": 1,
       "doc_class": "proof",
       "doc_type": "documentation",
+      "lint_exempt": [
+        "debate-context-header"
+      ],
+      "exempt_reason": "The file opens with an @[debate_context] header: it is a published key document of the proof record, included by intent as it stands, not a debate prompt awaiting a reviewer-edited copy.",
       "syncignore": [
         "*.pdf",
-        "lake-manifest.json",
-        "*.py",
-        "*.js",
-        "*.mjs",
-        "*.sh",
-        "*.c",
         "Archive",
         "PPNP/Dev"
       ]
@@ -282,6 +284,146 @@
       "ref": "main",
       "tier": 1,
       "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "05_CORPUS",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/lake-manifest.json",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/EGPT/lake-manifest.json",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/EGPT/restore.py",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/EGPT/sync_from_mathlib.sh",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/EGPT/sync_to_mathlib.sh",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/EGPT/scripts",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN/EGPT/extraction/prototype",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "CLAUDE.md",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "lint_exempt": [
+        "active-draft-marker"
+      ],
+      "exempt_reason": "The match is the journal procedure naming the article statuses (`status: draft | stub | ready`); the file is the assistant's standing instructions, not a draft.",
+      "syncignore": []
+    },
+    {
+      "path": "CHECKSUMS.txt",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "kb/README.md",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "plugins",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "templates",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "microservice",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "scripts",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "tools",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "site-src",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "code",
       "doc_type": "documentation",
       "syncignore": []
     }
