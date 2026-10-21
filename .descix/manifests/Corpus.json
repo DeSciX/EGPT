@@ -1,10 +1,19 @@
 {
   "kb_name": "Corpus",
   "publish_tier": "P",
-  "_purpose": "The quotation corpus and the two indexes that resolve a citation: every record verbatim with its SHA-256, the corpus README, and RECORD_INDEX.md. Sourced from the evidence folders at `ref`; nothing is copied into kb/. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). 05_CORPUS/corpus carries the license basis stated in Copyright_Fair-use_Memo.md.",
+  "_purpose": "The whole text of the collection: the quotation corpus and its indexes, every numbered folder of the library, guide/, the journal and its issue file, the root documents, and kb/LIBRARY_SETUP.md (the library's shelves, reading lists, folders, books and journal contents, written by the site build from site-src/). Sourced from the folders at `ref`; nothing is copied into kb/. The sync takes text files only (the CLI's processable extensions); PDF, DOCX, HTML, images and audio stay on the site and in the repository, and each source's syncignore names the ones it holds, with code and build files. publish_tier P: the CLI runs its deny lint before any walk and fails the sync on a hit; every source carries a doc_class (proposed here; the author decides). Every primary-source carries the license basis stated in Copyright_Fair-use_Memo.md.",
   "sources": [
     {
       "path": "05_CORPUS/corpus",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "primary-source",
+      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "05_CORPUS/sources",
       "ref": "main",
       "tier": 1,
       "doc_class": "primary-source",
@@ -38,6 +47,222 @@
     },
     {
       "path": "URLS.md",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "README.md",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "Copyright_Fair-use_Memo.md",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "kb/LIBRARY_SETUP.md",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "guide",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.png"
+      ]
+    },
+    {
+      "path": "00_OUTPUTS",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.docx",
+        "*.pdf",
+        "*.tsv"
+      ]
+    },
+    {
+      "path": "01_TRIAL",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "02_VON_NEUMANN",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "primary-source",
+      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf",
+        "*.png"
+      ]
+    },
+    {
+      "path": "03_ULAM",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "primary-source",
+      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf"
+      ]
+    },
+    {
+      "path": "04_ROTA",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "primary-source",
+      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf",
+        "*.png",
+        "*.html"
+      ]
+    },
+    {
+      "path": "06_LEAN_MATHLIB",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "primary-source",
+      "license_basis": "Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf",
+        "*.png"
+      ]
+    },
+    {
+      "path": "07_LETTERS",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "08_LEAN",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf",
+        "lake-manifest.json",
+        "*.py",
+        "*.js",
+        "*.mjs",
+        "*.sh",
+        "*.c"
+      ]
+    },
+    {
+      "path": "09_DEBATE",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.docx"
+      ]
+    },
+    {
+      "path": "10_PAPERS",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf",
+        "*.png",
+        "*.docx",
+        "*.bib"
+      ]
+    },
+    {
+      "path": "11_PATENT",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf"
+      ]
+    },
+    {
+      "path": "12_SINGULARITY",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "primary-source",
+      "license_basis": "The author's own conversations with GPT-5.6 Sol, as shared at the share links named in 12_SINGULARITY/README.md (lines 15 and 19), and the reports compiled at his direction (README.md, 00_OUTPUTS entry). Fair use under 17 U.S.C. § 107 for scholarship and research, as set out in Copyright_Fair-use_Memo.md (27 September 2026); the author's determination that everything in this repository is deemed fair use under that memorandum. The amount of any particular source displayed is reserved per source there; works not reproduced are listed in URLS.md.",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.docx",
+        "*.png",
+        "*.html"
+      ]
+    },
+    {
+      "path": "13_MAXI",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "14_COURANT_GROUP",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.pdf"
+      ]
+    },
+    {
+      "path": "15_GAME_THEORY",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
+    },
+    {
+      "path": "journal",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "paper",
+      "doc_type": "documentation",
+      "syncignore": [
+        "*.wav"
+      ]
+    },
+    {
+      "path": "site-src/issues",
       "ref": "main",
       "tier": 1,
       "doc_class": "guide",

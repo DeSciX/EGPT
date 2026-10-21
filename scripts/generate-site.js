@@ -23,6 +23,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { execFileSync } = require('child_process');
+const { PAGE: SETUP_PAGE, renderLibrarySetup } = require('./lib/library-setup');
 
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'site-src');
@@ -479,4 +480,19 @@ if (!DRY) {
 if (!DRY && fs.existsSync(path.join(SRC, 'issues'))) execFileSync('node', [path.join(__dirname, 'build-journal.js'), '--out', OUT], { cwd: ROOT, stdio: 'inherit' });
 // the front page: index.html + images/, from the Courant template and site-src/frontpage/egpt.json
 execFileSync('node', [path.join(__dirname, 'build-frontpage.js'), 'egpt', '--out', OUT, ...(DRY ? ['--dry-run'] : [])], { cwd: ROOT, stdio: 'inherit' });
-console.log(`${DRY ? '[dry-run] ' : ''}site/: library.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas, ${spines.length} reading lists (${spines.reduce((n, s) => n + s.stops.length, 0)} stops)`);
+// the library's setup as text for the knowledge base (kb/LIBRARY_SETUP.md, tracked): rendered from the
+// metadata validated above and the issues build-journal.js resolved, so it cannot drift from the site.
+// The build rewrites it; a build that changes it leaves it to commit, with CHECKSUMS.txt after it.
+let setupNote = '';
+if (!DRY) {
+  const issuesOut = path.join(OUT, 'issues');
+  const issues = fs.existsSync(issuesOut) ? fs.readdirSync(issuesOut).filter(f => f.endsWith('.json')).sort()
+    .map(f => readJSON(path.join(issuesOut, f))) : [];
+  const page = renderLibrarySetup({ site: meta.site, ideas: meta.ideas, modules, spines, books, shelves, issues, titleOf });
+  const dest = path.join(ROOT, SETUP_PAGE);
+  const before = fs.existsSync(dest) ? fs.readFileSync(dest, 'utf8') : null;
+  if (before !== page) fs.writeFileSync(dest, page);
+  setupNote = before === page ? `; ${SETUP_PAGE} unchanged`
+    : `; ${SETUP_PAGE} ${before === null ? 'written' : 'REWRITTEN'}: commit it, then python3 tools/build_checksums.py --write`;
+}
+console.log(`${DRY ? '[dry-run] ' : ''}site/: library.html (${Math.round(Buffer.byteLength(html) / 1024)} KB) + ${bundle.length} collection files (${(bytes / 1048576).toFixed(1)} MB) from HEAD ${sha}; ${modules.length} modules, ${Object.keys(meta.ideas).length} ideas, ${spines.length} reading lists (${spines.reduce((n, s) => n + s.stops.length, 0)} stops)${setupNote}`);
