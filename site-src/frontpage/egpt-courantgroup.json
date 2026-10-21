@@ -1,5 +1,4 @@
 {
-  "_purpose": "The egpt-courantgroup app's front page (https://egpt-courantgroup.descix.net/, courantgroup.com forwards there): Cowork's Courant Group page, every section verbatim from the pinned template (template.json, page template/index.html), the proof grid filled from the showcase roster with absolute links to the egpt-frqtl GYM. Generated here, written into the egpt-courantgroup checkout's site/ (node scripts/build-frontpage.js egpt-courantgroup --out ../egpt-courantgroup/site), committed and uploaded from that repository; its share.json and images/share/ are authored there, so this spec has no share block.",
   "title": "Courant Group, LLC — Meet Maxi, robotic AI with true imagination",
   "description": "Courant Group licenses Maxi, the imagining AI, and FRQTL, the physics engine that doesn't know any physics equations. Generalized Artificial Physical Intelligence, licensed for robotics, chips and platforms.",
   "brand": "template",

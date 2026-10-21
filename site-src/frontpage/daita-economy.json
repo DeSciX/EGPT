@@ -1,5 +1,4 @@
 {
-  "_purpose": "The daita-economy app: DeSciX.net's anonymous home. The page is a placeholder for now: Cowork's Courant page verbatim from the pinned template commit, plus the login component, a login button that shows Powch and, on login, redirects to the platform dashboard (the PWA). The DeSciX.net content (the flywheel first, the pools, pointers to the four sites) replaces the placeholder later.",
   "title": "DeSciX — Courant Group (placeholder front page)",
   "description": "DeSciX front page, placeholder: the Courant Group page. Log in with Powch to reach the platform.",
   "brand": "template",
@@ -9,8 +8,7 @@
   "login": true,
   "sections": [
     {
-      "file": "daita-economy/quests.html",
-      "_note": "DRAFT layout by the assisting model, 1 October 2026. Every row is an example and says so; the quest data plane and its verbs are the platform's design and are not wired. The one bounty with a figure is the author's own example, in his words: never reword it."
+      "file": "daita-economy/quests.html"
     },
     {
       "use": "gapi"
@@ -57,7 +55,6 @@
     "template_scripts": true
   },
   "share": {
-    "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload. One block per app: what a share card and a browser tab show for this site.",
     "site": "descix.net",
     "title": "DeSciX — The Decentralized Science Exchange",
     "description": "DeSciX gives open source an economic model: researchers and creators share in the value their contributions create.",

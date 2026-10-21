@@ -1,5 +1,4 @@
 {
-  "_purpose": "The egpt-godsworld app's front page (godsworld.ai → egpt-godsworld.descix.net). The page leads with Maxi and addresses people who build new VLA recipes and earn tokens for them; it carries no SDK or recipe-builder call to action beyond one alpha line. Maxi's Lab lives at app.html on the same site; the root forwards any query-string load there.",
   "title": "Gods World — Meet Maxi, robotic AI with true imagination",
   "description": "Maxi builds a scene, changes it, runs it forward, watches what happens and learns from what it watched. Talk to Maxi and watch its imagination.",
   "brand": {
@@ -126,11 +125,9 @@
     "modules": [
       "app-assets/maxi-host-view.js"
     ],
-    "import_map": true,
-    "_note": "The page declares its host view once, through the app's own module app-assets/maxi-host-view.js, which calls the host-view declarer of @descix/frqtl-web; there is no inline view call. \"import_map\": true leaves an empty import-map block at the end of the head; the app repository's scripts/gen-import-maps.mjs fills it with the map that resolves @descix/frqtl-web to the version the app vendors, so a rebuilt page is current again after one run of that script."
+    "import_map": true
   },
   "share": {
-    "_note": "DRAFT by the assisting model, 1 October 2026, for the author's eye before upload. One block per app: what a share card and a browser tab show for this site.",
     "site": "godsworld.ai",
     "title": "Gods World — Maxi's Lab",
     "description": "Maxi builds a scene, changes it, runs it forward, watches what happens and learns from what it watched. Talk to Maxi and watch its imagination.",

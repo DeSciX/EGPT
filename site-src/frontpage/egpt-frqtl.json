@@ -1,5 +1,4 @@
 {
-  "_purpose": "The egpt-frqtl app's front page (frqtl.com → egpt-frqtl.descix.net): CEO words recorded Unkamon d3d9a7c ('promote the Impossible Things, Running first… users promoting the simulations or building new ones… in order to gain tokens') under 055c907 (no SDK CTA; one alpha line). The IDE lives at app.html on the same site; the root forwards any query-string load there. The #proof tiles are generated from the showcase roster (exhibits.json) and open the GYM. On the CEO's request #proof sits above the hero (egpt-frqtl 66cc446) and opens with his paragraph (egpt-frqtl f8249d7, carried here byte-for-byte); generic Open STUDIO/FAT buttons stay bare. On the CEO's words of 13 October 2026 the AI section (Maxi) follows Quantum (#proof, then the hero) and the products section is the page's own fragment without the Maxi card.",
   "title": "FRQTL — Impossible things, running",
   "description": "FRQTL, the physics engine that doesn't know any physics equations: the double slit, a sun, a mirror loop, a blackbody, a half-adder, a big bang, an atom, all computed live in your tab. Open STUDIO.",
   "brand": {
@@ -177,8 +176,6 @@
     "sdk": true,
     "modules": [
       "app-assets/host-view.js"
-    ],
-    "_note": "The page asks the DeSciX host for full screen through the one shared declarer, app-assets/host-view.js (egpt-frqtl c4e340b, the FRAQTL orchestrator's change on the CEO's words; ruling in egpt-frqtl-notes/architect-review-host-view-fullscreen.md §6). No inline view call."
-  },
-  "_share": "The share card (share.json, images/share/) is owned by the egpt-frqtl repository (site/, 4fbb010) and uploaded from its own workspace; one site, one repo (the author, 2026-10-02, record Unkamon cf95b6e)."
+    ]
+  }
 }

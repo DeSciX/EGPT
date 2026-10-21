@@ -29,6 +29,7 @@
  *   gets it filled with the served roster's SHOWCASE_THROUGH_LINE (plain text); a spec that does not
  *   declares nothing and its marker stays empty. The assembled page is checked either way: every marker
  *   holds exactly the served text (declared) or nothing (undeclared); an unknown source fails.
+ * A spec is data: any key starting with "_", at any depth, refuses, naming the file and every key path.
  * The spec places the hero with a {"hero": true} entry in its sections (absent: right after the nav).
  * A spec whose scripts ask for "import_map": true gets the app's two empty import-map marker lines last in the
  *   head, for the app's own generator to fill; asked without scripts.modules, it fails.
@@ -168,6 +169,17 @@ const unent = s => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt
 const specPath = frontpageFile(`${app}.json`);
 if (!fs.existsSync(specPath)) die(`no spec: ${specPath}`);
 const spec = JSON.parse(readFrontpage(`${app}.json`, 'utf8'));
+// A spec is data: a key starting with "_" (a comment) is refused at any depth, naming every key path. Notes about a
+// spec live in git history, never in the spec.
+{
+  const found = [];
+  const walk = (v, at) => {
+    if (Array.isArray(v)) v.forEach((x, i) => walk(x, `${at}${i}.`));
+    else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) { if (k.startsWith('_')) found.push(at + k); walk(x, `${at}${k}.`); }
+  };
+  walk(spec, '');
+  if (found.length) die(`${path.relative(ROOT, specPath).split(path.sep).join('/')} carries comment keys (a key starting with "_"): ${found.join(', ')}; a spec is data — delete them (a note about a spec lives in git history)`);
+}
 for (const k of ['title', 'description', 'brand', 'nav', 'hero', 'sections', 'footer', 'scripts']) if (!(k in spec)) die(`spec lacks ${k}`);
 // "through_line": a DECLARED choice per spec, never a default (declared on egpt-frqtl and egpt-courantgroup,
 // above the grid-note). Absent: the template's marker stays empty.
