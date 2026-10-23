@@ -1,0 +1,74 @@
+{
+ "entries": [
+  {
+   "speaker": "John von Neumann",
+   "quote": "I need not tell you how much I regret that this means that I cannot join you at Tech, especially since I am sure that without the decisive encouragement that I received from you and from the Tech authorities I would have hardly had the perseverance and the strength of conviction which are the minimum requirements in this project. On the other hand, I hope that we shall work together in the field just the same.",
+   "work": "Letter to Norbert Wiener, 20 November 1945, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.277",
+   "date": "20 November 1945",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "Our thoughts - I mean yours and Pitts' and mine - were so far mainly focused on the subject of neurology, and more specifically on the human nervous system, and there primarily on the central nervous system. Thus, in trying to understand the function of automata and the general principles governing them, we selected for prompt action the most complicated object under the sun - literally.",
+   "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.278",
+   "date": "29 November 1946",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "Besides the system is not even purely digital (i.e. neural): It is intimately connected to a very complex analogy (i.e. humoral or hormonal) system, and, almost every feedback loop goes through both sectors, if not through the \"outside\" world (i.e. the world outside the epidermis or within the digestive system) as well.",
+   "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.279",
+   "date": "29 November 1946",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "I feel that we have to turn to simpler systems.",
+   "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.279",
+   "date": "29 November 1946",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "Now the less-than-cellular organisms of the virus or bacteriophage type do possess the decisive traits of any living organism: They are self-reproductive and they are able to orient themselves in an unorganized milieu, to move towards food, to appropriate it and to use it. Consequently a \"true\" understanding of these organisms may be the first relevant step forward and possibly the greatest step that may at all be required.",
+   "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.280",
+   "date": "29 November 1946",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "I would, however, put on \"true\" understanding the most stringent interpretation possible: That is, understanding the organism in the exacting sense in which one may want to understand a detailed drawing of a machine - i.e. finding out where every individual nut and bolt is located, etc.",
+   "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.280",
+   "date": "29 November 1946",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "John von Neumann",
+   "quote": "I hope you will not misinterpret the anti-neurological tirade at the beginning of this letter. Of course I am greatly interested in that approach and I have the greatest respect for the important results that have been obtained in that field, and in our border area with it. I certainly hope that these efforts will continue.",
+   "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+   "locus": "p.282",
+   "date": "29 November 1946",
+   "source_url": "",
+   "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+   "theme": "cybernetics"
+  }
+ ]
+}

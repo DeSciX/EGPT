@@ -1,0 +1,14 @@
+{
+ "entries": [
+  {
+   "speaker": "John von Neumann",
+   "quote": "(A machine that performs an arithmetical operation every 20 microseconds, and works on a single problem 48 hours, represents a rather extreme case. Yet even here only N ~ 10^10!) However, another circumstance supervenes. The operations performed in the course of the calculation may amplify errors that were introduced by earlier operations. This can cover any numerical gulf very quickly. The ratio used above, 1:10^3 to 1:10^12, is 10^9, yet 425 successive operations each of which increases an error by 5 per cent only, will account for it!",
+   "work": "The Computer and the Brain, 2nd ed., foreword by Ray Kurzweil (New Haven: Yale University Press, 2012; the Silliman Lectures text of 1958), Part 1, \"Reasons for the High (Digital) Precision Requirements\"",
+   "locus": "p.28",
+   "date": "1955-1956 (written); 1958 (published)",
+   "source_url": "",
+   "file": "",
+   "theme": "cybernetics"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "entries": [
+  {
+   "speaker": "Norbert Wiener",
+   "quote": "Information is information, not matter or energy. No materialism which does not admit this can survive at the present day.",
+   "work": "Cybernetics: or Control and Communication in the Animal and the Machine (New York: John Wiley & Sons; Paris: Hermann et Cie; Cambridge, Mass.: The Technology Press, 1948), ch. V, \"Computing Machines and the Nervous System\"; text layer of the thirteenth printing (April 1957), archive.org",
+   "locus": "p.155",
+   "date": "1948",
+   "source_url": "https://archive.org/details/cybernetics-norbert-wiener",
+   "file": "",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "Norbert Wiener",
+   "quote": "This idea occurred at about the same time to several writers, among them the statistician R. A. Fisher, Dr. Shannon of the Bell Telephone Laboratories, and the author. Fisher's motive in studying this subject is to be found in classical statistical theory; that of Shannon in the problem of coding information; and that of the author in the problem of noise and message in electrical filters.",
+   "work": "Cybernetics: or Control and Communication in the Animal and the Machine (1948), Introduction; text layer of the thirteenth printing (April 1957), archive.org",
+   "locus": "pp.17-18",
+   "date": "1948",
+   "source_url": "https://archive.org/details/cybernetics-norbert-wiener",
+   "file": "",
+   "theme": "cybernetics"
+  },
+  {
+   "speaker": "Norbert Wiener",
+   "quote": "We again see that the message is a transmitted pattern, which acquires its meaning by being a selection from a large number of possible patterns, The amount of meaning can be measured. It turns out that the less probable a message is, the more meaning it carries, which is entirely reasonable from the standpoint of our common sense.",
+   "work": "The Human Use of Human Beings: Cybernetics and Society (London: Eyre and Spottiswoode, 1950), ch. I, \"What is Cybernetics?\"; text layer, archive.org",
+   "locus": "p.8",
+   "date": "1950",
+   "source_url": "https://archive.org/details/the-human-use-of-human-beings",
+   "file": "",
+   "theme": "cybernetics"
+  }
+ ]
+}
