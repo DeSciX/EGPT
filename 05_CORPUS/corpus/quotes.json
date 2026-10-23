@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 400,
+ "count": 431,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -2624,6 +2624,64 @@
    ],
    "quote_sha256": "c83f517cee2102538ecc61f21b35b9964574fe96649db47d873ccafb04b1f25c",
    "embed_text": "J. J. O'Connor and E. F. Robertson | “Gian-Carlo Rota (1932 - 1999),” biography, MacTutor History of Mathematics, University of St Andrews | May 2000 | Rota was also a consultant with the Rand Corporation from 1966 to 1971 and with the Brookhaven National Laboratory from 1969 to 1973."
+  },
+  {
+   "id": "q-clay-blair-jr-clay-blair-jr-passin-30b7a89e",
+   "quote": "For more than a year Von Neumann had known he was going to die. But until the illness was far advanced he continued to devote himself to serving the government as a member of the Atomic Energy Commission, to which he was appointed in 1954. A telephone by his bed connected directly with his AEC office. On several occasions he was taken downtown in a limousine to attend commission meetings in a wheelchair. At Walter Reed, where he was moved early last spring, an Air Force officer, Lieut. Colonel Vincent Ford, worked full time assisting him. Eight airmen, all cleared for top secret material, were assigned to help on a 24-hour basis. His work for the Air Force and other government departments continued. Cabinet members and military officials continually came for his advice, and on one occasion Secretary of Defense Charles Wilson, Air Force Secretary Donald Quarles and most of the top Air Force brass gathered in Von Neumann's suite to consult his judgment while there was still time. So relentlessly did Von Neumann pursue his official duties that he risked neglecting the treatise which was to form the capstone of his work on the scientific specialty, computing machines, to which he had devoted many recent years.",
+   "speaker": {
+    "name": "Clay Blair Jr.",
+    "role": "author",
+    "sort": "jr., clay blair",
+    "as_given": "Clay Blair Jr."
+   },
+   "source": {
+    "work": "Clay Blair Jr., \"Passing of a Great Mind,\" Life, 25 February 1957",
+    "locus": "p.89",
+    "date": "25 February 1957",
+    "file": "",
+    "url": "https://pdf.stafforini.com/blair-1957-passing-of-great.pdf"
+   },
+   "restored": "",
+   "years": [
+    1957
+   ],
+   "themes": [
+    "von neumann"
+   ],
+   "collections": [
+    "blair_life_1957"
+   ],
+   "quote_sha256": "30b7a89ec353dbc1d2d3af011ce79524835cd2f0cd924d5e8b13ab422ab75e3d",
+   "embed_text": "Clay Blair Jr. | Clay Blair Jr., \"Passing of a Great Mind,\" Life, 25 February 1957 | p.89 | 25 February 1957 | For more than a year Von Neumann had known he was going to die. But until the illness was far advanced he continued to devote himself to serving the government as a member of the Atomic Energy Commission, to which he was appointed in 1954. A telephone by his bed connected directly with his AEC office. On several occasions he was taken downtown in a limousine to attend commission meetings in a wheelchair. At Walter Reed, where he was moved early last spring, an Air Force officer, Lieut. Colonel Vincent Ford, worked full time assisting him. Eight airmen, all cleared for top secret material, were assigned to help on a 24-hour basis. His work for the Air Force and other government departments continued. Cabinet members and military officials continually came for his advice, and on one occasion Secretary of Defense Charles Wilson, Air Force Secretary Donald Quarles and most of the top Air Force brass gathered in Von Neumann's suite to consult his judgment while there was still time. So relentlessly did Von Neumann pursue his official duties that he risked neglecting the treatise which was to form the capstone of his work on the scientific specialty, computing machines, to which he had devoted many recent years."
+  },
+  {
+   "id": "q-clay-blair-jr-clay-blair-jr-passin-55dba9a4",
+   "quote": "A hard-boiled strategist, he was one of the few scientists to advocate preventive war, and in 1950 he was remarking, \"If you say why not bomb them tomorrow, I say why not today? If you say today at 5 o'clock, I say why not 1 o'clock?\"",
+   "speaker": {
+    "name": "Clay Blair Jr.",
+    "role": "author",
+    "sort": "jr., clay blair",
+    "as_given": "Clay Blair Jr."
+   },
+   "source": {
+    "work": "Clay Blair Jr., \"Passing of a Great Mind,\" Life, 25 February 1957",
+    "locus": "p.96",
+    "date": "25 February 1957",
+    "file": "",
+    "url": "https://pdf.stafforini.com/blair-1957-passing-of-great.pdf"
+   },
+   "restored": "",
+   "years": [
+    1957
+   ],
+   "themes": [
+    "von neumann"
+   ],
+   "collections": [
+    "blair_life_1957"
+   ],
+   "quote_sha256": "55dba9a4393b9eb8942b5ac62064a31f118f835fadf4bfd05aa032fdcdf6fabe",
+   "embed_text": "Clay Blair Jr. | Clay Blair Jr., \"Passing of a Great Mind,\" Life, 25 February 1957 | p.96 | 25 February 1957 | A hard-boiled strategist, he was one of the few scientists to advocate preventive war, and in 1950 he was remarking, \"If you say why not bomb them tomorrow, I say why not today? If you say today at 5 o'clock, I say why not 1 o'clock?\""
   },
   {
    "id": "q-karcini-mehrban-ng-robots-need-more-tha-6a0d80f8",
@@ -10279,6 +10337,209 @@
    "embed_text": "John von Neumann | Letter to Kurt Gödel, trans. W. Sieg, in Kurt Gödel, Collected Works, Vol. V | Berlin | 12 January 1931 | Clearly I cannot prove that every intuitionistically correct construction of arithmetic is formalizable in A or M or even in Z -- for intuitionism is undefined and undefinable. But is it not a fact, that not a single construction of the kind mentioned is known that cannot be formalized in A, and that no living logician is in the position of naming such [a construction]? Or am I wrong, and you know an effective intuitionistic arithmetic construction whose formalization in A creates difficulties? If that, to my utmost surprise, should be the case, then the formalization should certainly work in M or Z!"
   },
   {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-f4d61bc1",
+   "quote": "I need not tell you how much I regret that this means that I cannot join you at Tech, especially since I am sure that without the decisive encouragement that I received from you and from the Tech authorities I would have hardly had the perseverance and the strength of conviction which are the minimum requirements in this project. On the other hand, I hope that we shall work together in the field just the same.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 20 November 1945, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.277",
+    "date": "20 November 1945",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1945
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "f4d61bc190d5306be3b826217395570b8362be49099e6d8bd21d5937d0d8cad7",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 20 November 1945, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.277 | 20 November 1945 | I need not tell you how much I regret that this means that I cannot join you at Tech, especially since I am sure that without the decisive encouragement that I received from you and from the Tech authorities I would have hardly had the perseverance and the strength of conviction which are the minimum requirements in this project. On the other hand, I hope that we shall work together in the field just the same."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-e6a7b99d",
+   "quote": "Our thoughts - I mean yours and Pitts' and mine - were so far mainly focused on the subject of neurology, and more specifically on the human nervous system, and there primarily on the central nervous system. Thus, in trying to understand the function of automata and the general principles governing them, we selected for prompt action the most complicated object under the sun - literally.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.278",
+    "date": "29 November 1946",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1946
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "e6a7b99d9ad80d4e509b77e03f410e62e0cca37c55f7e79fc3551b0bf3c3001c",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.278 | 29 November 1946 | Our thoughts - I mean yours and Pitts' and mine - were so far mainly focused on the subject of neurology, and more specifically on the human nervous system, and there primarily on the central nervous system. Thus, in trying to understand the function of automata and the general principles governing them, we selected for prompt action the most complicated object under the sun - literally."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-c9814858",
+   "quote": "Besides the system is not even purely digital (i.e. neural): It is intimately connected to a very complex analogy (i.e. humoral or hormonal) system, and, almost every feedback loop goes through both sectors, if not through the \"outside\" world (i.e. the world outside the epidermis or within the digestive system) as well.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.279",
+    "date": "29 November 1946",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1946
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "c9814858778dcc23226f18640100970ff84d4880453ea757704ca8bfebff5066",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.279 | 29 November 1946 | Besides the system is not even purely digital (i.e. neural): It is intimately connected to a very complex analogy (i.e. humoral or hormonal) system, and, almost every feedback loop goes through both sectors, if not through the \"outside\" world (i.e. the world outside the epidermis or within the digestive system) as well."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-540fa24a",
+   "quote": "I feel that we have to turn to simpler systems.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.279",
+    "date": "29 November 1946",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1946
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "540fa24a62498a8a34ee70b04fec59972c6dc0a0608f9cba2e0250d6f8659412",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.279 | 29 November 1946 | I feel that we have to turn to simpler systems."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-b8f80b2a",
+   "quote": "Now the less-than-cellular organisms of the virus or bacteriophage type do possess the decisive traits of any living organism: They are self-reproductive and they are able to orient themselves in an unorganized milieu, to move towards food, to appropriate it and to use it. Consequently a \"true\" understanding of these organisms may be the first relevant step forward and possibly the greatest step that may at all be required.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.280",
+    "date": "29 November 1946",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1946
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "b8f80b2a7bdfc860ea9649586c230d6ce553fe286b8d157049192b4b5fc6bfed",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.280 | 29 November 1946 | Now the less-than-cellular organisms of the virus or bacteriophage type do possess the decisive traits of any living organism: They are self-reproductive and they are able to orient themselves in an unorganized milieu, to move towards food, to appropriate it and to use it. Consequently a \"true\" understanding of these organisms may be the first relevant step forward and possibly the greatest step that may at all be required."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-6e4863d7",
+   "quote": "I would, however, put on \"true\" understanding the most stringent interpretation possible: That is, understanding the organism in the exacting sense in which one may want to understand a detailed drawing of a machine - i.e. finding out where every individual nut and bolt is located, etc.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.280",
+    "date": "29 November 1946",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1946
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "6e4863d79f9df3f76f7f3282d2283ead24430e74e2f6cd0ab4faa0a558c47270",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.280 | 29 November 1946 | I would, however, put on \"true\" understanding the most stringent interpretation possible: That is, understanding the organism in the exacting sense in which one may want to understand a detailed drawing of a machine - i.e. finding out where every individual nut and bolt is located, etc."
+  },
+  {
+   "id": "q-john-von-neumann-letter-to-norbert-wi-3dc43931",
+   "quote": "I hope you will not misinterpret the anti-neurological tirade at the beginning of this letter. Of course I am greatly interested in that approach and I have the greatest respect for the important results that have been obtained in that field, and in our border area with it. I certainly hope that these efforts will continue.",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\"",
+    "locus": "p.282",
+    "date": "29 November 1946",
+    "file": "02_VON_NEUMANN/von_Neumann_Selected_Letters.pdf",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1946
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "von_neumann_to_wiener"
+   ],
+   "quote_sha256": "3dc439310aa5f7f04eaefb38e6307fa9becd7646cef9736dbaaf68d51df5512e",
+   "embed_text": "John von Neumann | Letter to Norbert Wiener, 29 November 1946, in John von Neumann: Selected Letters, ed. Miklós Rédei, History of Mathematics vol. 27 (Providence: American Mathematical Society; London Mathematical Society, 2005), \"Letters to N. Wiener\" | p.282 | 29 November 1946 | I hope you will not misinterpret the anti-neurological tirade at the beginning of this letter. Of course I am greatly interested in that approach and I have the greatest respect for the important results that have been obtained in that field, and in our border area with it. I certainly hope that these efforts will continue."
+  },
+  {
    "id": "q-john-von-neumann-letter-to-p-a-m-dira-ad76c57e",
    "quote": "It should be perhaps desirable, to have operators X, Y, Z which have discrete (point) spectra, in order to avoid the difficulties connected with the point electron (in electrodynamics).",
    "speaker": {
@@ -10572,6 +10833,37 @@
    ],
    "quote_sha256": "1c4e401e9ea239bc8a345162d771af2f64ff8971a5dc611fd8e980550417cb0d",
    "embed_text": "John von Neumann | The Computer and the Brain (Yale University Press, 1958) | pp. 69–70 (chapter 'Control of the Functioning of a Machine') | 1958 | First of all, let me introduce a term which is needed in the present context. A system of logical instructions that an automaton can carry out and which causes the automaton to perform some organized task is called a code. By logical orders, I mean things like nerve pulses appearing on the appropriate axons, in fact anything that induces a digital logical system, like the nervous system, to function in a reproducible, purposive manner."
+  },
+  {
+   "id": "q-john-von-neumann-the-computer-and-the-c5e04d42",
+   "quote": "(A machine that performs an arithmetical operation every 20 microseconds, and works on a single problem 48 hours, represents a rather extreme case. Yet even here only N ~ 10^10!) However, another circumstance supervenes. The operations performed in the course of the calculation may amplify errors that were introduced by earlier operations. This can cover any numerical gulf very quickly. The ratio used above, 1:10^3 to 1:10^12, is 10^9, yet 425 successive operations each of which increases an error by 5 per cent only, will account for it!",
+   "speaker": {
+    "name": "John von Neumann",
+    "role": "author",
+    "sort": "von neumann, john",
+    "as_given": "John von Neumann"
+   },
+   "source": {
+    "work": "The Computer and the Brain, 2nd ed., foreword by Ray Kurzweil (New Haven: Yale University Press, 2012; the Silliman Lectures text of 1958), Part 1, \"Reasons for the High (Digital) Precision Requirements\"",
+    "locus": "p.28",
+    "date": "1955-1956 (written); 1958 (published)",
+    "file": "",
+    "url": ""
+   },
+   "restored": "",
+   "years": [
+    1955,
+    1956,
+    1958
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "catb_precision"
+   ],
+   "quote_sha256": "c5e04d42d7df4077facbbeab98a2238a30010c65849ef59720c44da3d7444dae",
+   "embed_text": "John von Neumann | The Computer and the Brain, 2nd ed., foreword by Ray Kurzweil (New Haven: Yale University Press, 2012; the Silliman Lectures text of 1958), Part 1, \"Reasons for the High (Digital) Precision Requirements\" | p.28 | 1955-1956 (written); 1958 (published) | (A machine that performs an arithmetical operation every 20 microseconds, and works on a single problem 48 hours, represents a rather extreme case. Yet even here only N ~ 10^10!) However, another circumstance supervenes. The operations performed in the course of the calculation may amplify errors that were introduced by earlier operations. This can cover any numerical gulf very quickly. The ratio used above, 1:10^3 to 1:10^12, is 10^9, yet 425 successive operations each of which increases an error by 5 per cent only, will account for it!"
   },
   {
    "id": "q-john-von-neumann-the-computer-and-the-34dc857a",
@@ -11590,6 +11882,615 @@
    ],
    "quote_sha256": "c1b14dae4d92bff2b4c0e5adf860290bddd55e87ebcaa409ba68f11cb4b81e62",
    "embed_text": "Eric Weinstein | Eric Weinstein, in “Eric Weinstein: The State of American Science, Breakthrough Coverups, and the Danger of Physics,” All-In Podcast | c. 49:06, answering David Friedberg | 26 August 2026 | I'm not saying that I know that that's true. My point was, I tried to be careful."
+  },
+  {
+   "id": "q-norbert-wiener-cybernetics-or-contr-292a1877",
+   "quote": "This idea occurred at about the same time to several writers, among them the statistician R. A. Fisher, Dr. Shannon of the Bell Telephone Laboratories, and the author. Fisher's motive in studying this subject is to be found in classical statistical theory; that of Shannon in the problem of coding information; and that of the author in the problem of noise and message in electrical filters.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Cybernetics: or Control and Communication in the Animal and the Machine (1948), Introduction; text layer of the thirteenth printing (April 1957), archive.org",
+    "locus": "pp.17-18",
+    "date": "1948",
+    "file": "",
+    "url": "https://archive.org/details/cybernetics-norbert-wiener"
+   },
+   "restored": "",
+   "years": [
+    1948
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "wiener_books"
+   ],
+   "quote_sha256": "292a1877a6d197ee29db80002e0fecd443ee66fe66746c7f906f35fde12e3cea",
+   "embed_text": "Norbert Wiener | Cybernetics: or Control and Communication in the Animal and the Machine (1948), Introduction; text layer of the thirteenth printing (April 1957), archive.org | pp.17-18 | 1948 | This idea occurred at about the same time to several writers, among them the statistician R. A. Fisher, Dr. Shannon of the Bell Telephone Laboratories, and the author. Fisher's motive in studying this subject is to be found in classical statistical theory; that of Shannon in the problem of coding information; and that of the author in the problem of noise and message in electrical filters."
+  },
+  {
+   "id": "q-norbert-wiener-cybernetics-or-contr-21d6c1b9",
+   "quote": "Information is information, not matter or energy. No materialism which does not admit this can survive at the present day.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Cybernetics: or Control and Communication in the Animal and the Machine (New York: John Wiley & Sons; Paris: Hermann et Cie; Cambridge, Mass.: The Technology Press, 1948), ch. V, \"Computing Machines and the Nervous System\"; text layer of the thirteenth printing (April 1957), archive.org",
+    "locus": "p.155",
+    "date": "1948",
+    "file": "",
+    "url": "https://archive.org/details/cybernetics-norbert-wiener"
+   },
+   "restored": "",
+   "years": [
+    1948
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "wiener_books"
+   ],
+   "quote_sha256": "21d6c1b914f496dd215fd270fa17b039d42420b517882997f72e23ea5e5c0809",
+   "embed_text": "Norbert Wiener | Cybernetics: or Control and Communication in the Animal and the Machine (New York: John Wiley & Sons; Paris: Hermann et Cie; Cambridge, Mass.: The Technology Press, 1948), ch. V, \"Computing Machines and the Nervous System\"; text layer of the thirteenth printing (April 1957), archive.org | p.155 | 1948 | Information is information, not matter or energy. No materialism which does not admit this can survive at the present day."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-837cd0a5",
+   "quote": "This is very interesting to me. In my prediction theory I start from a series with a correlation and I build a series which is equivalent; each is the past linear function of the past of the other. In addition, however, in my new series the choices are completely independent, whereas in my earlier series the series are partially dependent. In fact, the way I built the linear prediction theory was by the reduction of my dependent choices to independent choices. My method has some parallelisms to this. Excuse me for interrupting.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.129; Pias Complete Transactions p.252",
+    "date": "1950-03-23",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "837cd0a58daa162fdf3ddb5f65d8b7b3f87f4856ad67efa849e992e7885005b1",
+   "embed_text": "Norbert Wiener | Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.129; Pias Complete Transactions p.252 | 1950-03-23 | This is very interesting to me. In my prediction theory I start from a series with a correlation and I build a series which is equivalent; each is the past linear function of the past of the other. In addition, however, in my new series the choices are completely independent, whereas in my earlier series the series are partially dependent. In fact, the way I built the linear prediction theory was by the reduction of my dependent choices to independent choices. My method has some parallelisms to this. Excuse me for interrupting."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-9ae5b5fc",
+   "quote": "There should be ways, I think, of sorting this out. That would be more absolute, like codings. I think there would be a reduction of the choices to completely independent choices. That could be worked out.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.131; Pias Complete Transactions p.253",
+    "date": "1950-03-23",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "9ae5b5fcd3c5e78de7ede56045c9c254ee904e399fba323d5e5bbfe36fdf6446",
+   "embed_text": "Norbert Wiener | Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.131; Pias Complete Transactions p.253 | 1950-03-23 | There should be ways, I think, of sorting this out. That would be more absolute, like codings. I think there would be a reduction of the choices to completely independent choices. That could be worked out."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-7430d50b",
+   "quote": "To do it is difficult, because you would need more complete tables.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.131; Pias Complete Transactions p.253",
+    "date": "1950-03-23",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "7430d50b13c9cc7f33eedc033c91e108e1332654dbe6ba6a25840bac81be4ad8",
+   "embed_text": "Norbert Wiener | Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.131; Pias Complete Transactions p.253 | 1950-03-23 | To do it is difficult, because you would need more complete tables."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-7c56754d",
+   "quote": "Very extensive tables.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.131; Pias Complete Transactions p.253",
+    "date": "1950-03-23",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "7c56754d2542af715de1d7a2a28e05ab61910c8110f6ed34d7ff6fb894792258",
+   "embed_text": "Norbert Wiener | Discussion following Claude E. Shannon, \"The Redundancy of English,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.131; Pias Complete Transactions p.253 | 1950-03-23 | Very extensive tables."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-57ee9c79",
+   "quote": "In other words, it is only an analogue that is preserved from each region. Everything else is mutilated terribly; you figured out how much of the information should be in from the frequency range, and the amplitude range preserved by this is less than one-tenth in many cases.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.90; Pias Complete Transactions p.226",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "57ee9c79e655a86f9234bbe0aea49a01f024bc722aa18320d08243867f34eb48",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.90; Pias Complete Transactions p.226 | March 23-24, 1950 | In other words, it is only an analogue that is preserved from each region. Everything else is mutilated terribly; you figured out how much of the information should be in from the frequency range, and the amplitude range preserved by this is less than one-tenth in many cases."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-acf1191c",
+   "quote": "The best thing we have done with that was a vocabulary of 12 words, a run of 80 with six errors. That is obviously not enough. But that simply shows there is enough basis for discrimination to warrant going much further. There is one thing that I want to say about this from the general point of view of communication engineering, and that is that the measurements that Mr. Shannon and I have of an amount of information going over a line really need a certain comment. In view of this we have been measuring the maximum amount of information going over the line which is recoverable by any sort of terminal apparatus. Now that is very relevant if we have our terminal apparatus at our disposal. In the kind of situation we have here, concerning error with the skin receiver or anything else of the sort, the relevant amount of information is the amount that will get through both the transmission line and through what we may call the phonetic translation, translating oscillation into phonemes or their equivalent for the skin or any other sense. This information will give us no more information than we had in the beginning. There is still the maximum amount of information recoverable from this. In general, from the second law of dynamics, it would give us less information that we put in.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.91-92; Pias Complete Transactions p.226",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "acf1191c2ef3277965b72f43b77bcf5946b1e6c5be9c10ab93b790c6e988cc69",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.91-92; Pias Complete Transactions p.226 | March 23-24, 1950 | The best thing we have done with that was a vocabulary of 12 words, a run of 80 with six errors. That is obviously not enough. But that simply shows there is enough basis for discrimination to warrant going much further. There is one thing that I want to say about this from the general point of view of communication engineering, and that is that the measurements that Mr. Shannon and I have of an amount of information going over a line really need a certain comment. In view of this we have been measuring the maximum amount of information going over the line which is recoverable by any sort of terminal apparatus. Now that is very relevant if we have our terminal apparatus at our disposal. In the kind of situation we have here, concerning error with the skin receiver or anything else of the sort, the relevant amount of information is the amount that will get through both the transmission line and through what we may call the phonetic translation, translating oscillation into phonemes or their equivalent for the skin or any other sense. This information will give us no more information than we had in the beginning. There is still the maximum amount of information recoverable from this. In general, from the second law of dynamics, it would give us less information that we put in."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-7a252e8f",
+   "quote": "This is just the reason why this hearing aid we are working on is so promising. Of course that is because obviously it would be impossible to do much on the skip if we had to get all the information of 7,000 cycles through. When you come to 250 cycles, there is nothing at all ridiculous in having, we will say, ten or even five recorders on different parts of the skin, each getting about 50 cycles’ worth of through. Fifty cycles isn’t an awful lot. The skin can discriminate at that rate fairly well, and the result is that it is perfectly possible to build an automatic skin receiver for vibrations that one can be trained to read.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.91; Pias Complete Transactions p.226",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "7a252e8f184f1bf6485b828a6fdd03f681b6893abe4e6749c9ce01e769441f09",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.91; Pias Complete Transactions p.226 | March 23-24, 1950 | This is just the reason why this hearing aid we are working on is so promising. Of course that is because obviously it would be impossible to do much on the skip if we had to get all the information of 7,000 cycles through. When you come to 250 cycles, there is nothing at all ridiculous in having, we will say, ten or even five recorders on different parts of the skin, each getting about 50 cycles’ worth of through. Fifty cycles isn’t an awful lot. The skin can discriminate at that rate fairly well, and the result is that it is perfectly possible to build an automatic skin receiver for vibrations that one can be trained to read."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-ab29b302",
+   "quote": "In the translation from the phonemes to semantic understanding, the words not only have to be heard but also understood, and again there is some further reduction. We really have another stage of translation that may either replace the one I have mentioned or be put on top of it, particularly when we observe animals or observe people, that is, the behavioral translation. In other words, we have what we consider the amount of information, the original theory being that we have the maximum amount of information; but as we have just said, the amount of information received and usable by the particular receiving apparatus is terribly pruned. The interesting thing is that this same sort of pruning not only comes up in speech; it also occurs with language in machines. There are many cases where we talk to a machine and listen to a machine. I am considering, for example, the remote-control substations for hydraulic power, where the power dispatcher has to get messages to the machine and where the machine has to inform the power dispatcher about significant facts. Now there again you have the same translation problem. You must distinguish the language as it goes over the line with the amount of information going over the line, with the language as it exerts itself as behavior. There again you have the second law of thermodynamics cutting the information that you received; of course it is not good design to have it clipped too heavily, because it means a bad use of the line; but in most cases there is still probably a very appreciable amount of particulate information.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.92-93; Pias Complete Transactions p.227",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "ab29b3027cf08033b9082da4212b1f4064ea4a69bb3e34fa9400ba0743a10bcb",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.92-93; Pias Complete Transactions p.227 | March 23-24, 1950 | In the translation from the phonemes to semantic understanding, the words not only have to be heard but also understood, and again there is some further reduction. We really have another stage of translation that may either replace the one I have mentioned or be put on top of it, particularly when we observe animals or observe people, that is, the behavioral translation. In other words, we have what we consider the amount of information, the original theory being that we have the maximum amount of information; but as we have just said, the amount of information received and usable by the particular receiving apparatus is terribly pruned. The interesting thing is that this same sort of pruning not only comes up in speech; it also occurs with language in machines. There are many cases where we talk to a machine and listen to a machine. I am considering, for example, the remote-control substations for hydraulic power, where the power dispatcher has to get messages to the machine and where the machine has to inform the power dispatcher about significant facts. Now there again you have the same translation problem. You must distinguish the language as it goes over the line with the amount of information going over the line, with the language as it exerts itself as behavior. There again you have the second law of thermodynamics cutting the information that you received; of course it is not good design to have it clipped too heavily, because it means a bad use of the line; but in most cases there is still probably a very appreciable amount of particulate information."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-5f9a2b79",
+   "quote": "Yes.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.92; Pias Complete Transactions p.227",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "5f9a2b795615ba6a3d5455fd5624d773fbca5bcd16249c421fd37411dc9837da",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.92; Pias Complete Transactions p.227 | March 23-24, 1950 | Yes."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-b4b4c1c7",
+   "quote": "Less than that.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.92; Pias Complete Transactions p.227",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "b4b4c1c73227486a61ec0390809b2f45e01263a847180847629be498dd711362",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.92; Pias Complete Transactions p.227 | March 23-24, 1950 | Less than that."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-da0b736b",
+   "quote": "There is also another translation.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.92; Pias Complete Transactions p.227",
+    "date": "March 23-24, 1950",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "da0b736b3d0dac1645bcf403623a019283d0485a28751f96cac89bf53cfd0ba5",
+   "embed_text": "Norbert Wiener | Discussion following J. C. R. Licklider, \"The Manner in Which and Extent to Which Speech Can Be Distorted and Remain Intelligible,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Seventh Conference, March 23-24, 1950, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1951); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.92; Pias Complete Transactions p.227 | March 23-24, 1950 | There is also another translation."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-97ba5263",
+   "quote": "This dimensional analysis has come out clearly in our information because Dr. McCulloch has brought out that the thing we have been discussing here has not been energy but information on the one hand or the rate of transmitting information on the other. We have made in these meetings a dimensional analysis of information. The dimensions of our problem which do not change particularly have been shown to be a negative logarithm of a probability, a zero logarithm. The dimensional analysis is not enough. We have seen the same sort of quantity in a more general sense than dimensions of entropy.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.101; Pias Complete Transactions p.90",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "97ba526321d8d8be8104c2e50ade3458a661176045b65362b251f9e9397cadd5",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.101; Pias Complete Transactions p.90 | March 24-25, 1949 | This dimensional analysis has come out clearly in our information because Dr. McCulloch has brought out that the thing we have been discussing here has not been energy but information on the one hand or the rate of transmitting information on the other. We have made in these meetings a dimensional analysis of information. The dimensions of our problem which do not change particularly have been shown to be a negative logarithm of a probability, a zero logarithm. The dimensional analysis is not enough. We have seen the same sort of quantity in a more general sense than dimensions of entropy."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-5acd5b93",
+   "quote": "Using that way of expressing an entropy, probability of information is also the logarithm of it but the sign is reversed. However, that does not change anything analogous. The point I am making is that the real difficulty here lies in the fact that the quantities we are dealing with are essentially dimensionless.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.101; Pias Complete Transactions p.91",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "5acd5b93b39cb2a86335420233552c9b4cfcc66fc9167edcb2b3a652970205b9",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.101; Pias Complete Transactions p.91 | March 24-25, 1949 | Using that way of expressing an entropy, probability of information is also the logarithm of it but the sign is reversed. However, that does not change anything analogous. The point I am making is that the real difficulty here lies in the fact that the quantities we are dealing with are essentially dimensionless."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-8f79df47",
+   "quote": "The thing I am saying is that, dimensionally, energy is a very bad idea. By dimensional analysis we know that they are talking in the wrong terms in bringing energy here. It does not correspond to energy in physics.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.102; Pias Complete Transactions p.91",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "8f79df4722c70c72e8ba84023722d92f86f271e50ee9d780bfc885e54b82c728",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.102; Pias Complete Transactions p.91 | March 24-25, 1949 | The thing I am saying is that, dimensionally, energy is a very bad idea. By dimensional analysis we know that they are talking in the wrong terms in bringing energy here. It does not correspond to energy in physics."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-ea9043cb",
+   "quote": "What I am saying is we have come to the conclusion that the notion of entropy, strictly as it occurs in physics, is transferrable to the study of information except for a negative factor Now that does not fit into the ordinary dimensional analysis language. There is a semantic problem here and a difficult one, but the dimensional analysis alone will not handle this particular semantic problem.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.102; Pias Complete Transactions p.91",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "ea9043cb677e69eec4329ad931e6a63e5ffb4dcf36cbb6347ad7fb544db66ec4",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.102; Pias Complete Transactions p.91 | March 24-25, 1949 | What I am saying is we have come to the conclusion that the notion of entropy, strictly as it occurs in physics, is transferrable to the study of information except for a negative factor Now that does not fit into the ordinary dimensional analysis language. There is a semantic problem here and a difficult one, but the dimensional analysis alone will not handle this particular semantic problem."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-a4385d6f",
+   "quote": "I still say in the discussion of a system and any means of communication, I am including in this hormonal or humeral, there is a very fundamental and measurable idea that I am trying to get over. That is information which is measured in numbers of decisions, between two alternatives, which otherwise were equally probable. That is a perfectly definite quantity, and we can and do determine it in communicating sys-",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.105-106; Pias Complete Transactions p.93",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "a4385d6f69e576c399362a060cdd8cf8dd75b1d2ca8ca7b7cf2c096f5d90ee17",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.105-106; Pias Complete Transactions p.93 | March 24-25, 1949 | I still say in the discussion of a system and any means of communication, I am including in this hormonal or humeral, there is a very fundamental and measurable idea that I am trying to get over. That is information which is measured in numbers of decisions, between two alternatives, which otherwise were equally probable. That is a perfectly definite quantity, and we can and do determine it in communicating sys-"
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-b7182cb8",
+   "quote": "Dimensional analysis is extremely important in training. The only thing I wanted to say is that in that branch of physics which is closest to psychology the main concept – entropy – is a rate per time. The main concept of entropy happens to be dimensionless. It is a concept which can go over directly from the study of the nervous system to the study of the machine; it is a perfectly good physical notion, and it is a perfectly good biological notion. The notions in that field are the significant notions. Here the point is that it is not the classical physics of energy, that is, the relevant physics, but rather the physics of information. That physics is being developed very rapidly. We have a good language for it and we can state things precisely in it. This is now one of the things we are pushing very hard at Massachusetts Institute of Technology.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.106-107; Pias Complete Transactions p.94",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "b7182cb89a43bc096b942cc3457b6fe5ebb9a0a87f518ae58d2dd5804ecf141b",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.106-107; Pias Complete Transactions p.94 | March 24-25, 1949 | Dimensional analysis is extremely important in training. The only thing I wanted to say is that in that branch of physics which is closest to psychology the main concept – entropy – is a rate per time. The main concept of entropy happens to be dimensionless. It is a concept which can go over directly from the study of the nervous system to the study of the machine; it is a perfectly good physical notion, and it is a perfectly good biological notion. The notions in that field are the significant notions. Here the point is that it is not the classical physics of energy, that is, the relevant physics, but rather the physics of information. That physics is being developed very rapidly. We have a good language for it and we can state things precisely in it. This is now one of the things we are pushing very hard at Massachusetts Institute of Technology."
+  },
+  {
+   "id": "q-norbert-wiener-discussion-following-c29ca269",
+   "quote": "In other words, there are two quantities that can be distinguished, both psychological and engineering entropy and rate of transfer.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016)",
+    "locus": "original Transactions pagination p.106; Pias Complete Transactions p.94",
+    "date": "March 24-25, 1949",
+    "file": "",
+    "url": "https://hostb.org/116X/Cybernetics.%20The%20Macy%20Conferences%201946-1953.%20The%20Complete%20Transactions%202016.pdf"
+   },
+   "restored": "",
+   "years": [
+    1949
+   ],
+   "themes": [
+    "macy"
+   ],
+   "collections": [
+    "wiener_macy"
+   ],
+   "quote_sha256": "c29ca2696df209edc3e910e9a83abf5c578a50c8e18d197b01917e827cbb5da2",
+   "embed_text": "Norbert Wiener | Discussion following Lawrence S. Kubie, \"The Neurotic Potential and Human Adaptation,\" in Cybernetics: Circular Causal and Feedback Mechanisms in Biological and Social Systems: Transactions of the Sixth Conference, March 24-25, 1949, ed. Heinz von Foerster (New York: Josiah Macy, Jr. Foundation, 1950); text as reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946-1953: The Complete Transactions (Zurich-Berlin: diaphanes, 2003/2016) | original Transactions pagination p.106; Pias Complete Transactions p.94 | March 24-25, 1949 | In other words, there are two quantities that can be distinguished, both psychological and engineering entropy and rate of transfer."
+  },
+  {
+   "id": "q-norbert-wiener-the-human-use-of-hum-4e9bbf7f",
+   "quote": "We again see that the message is a transmitted pattern, which acquires its meaning by being a selection from a large number of possible patterns, The amount of meaning can be measured. It turns out that the less probable a message is, the more meaning it carries, which is entirely reasonable from the standpoint of our common sense.",
+   "speaker": {
+    "name": "Norbert Wiener",
+    "role": "author",
+    "sort": "wiener, norbert",
+    "as_given": "Norbert Wiener"
+   },
+   "source": {
+    "work": "The Human Use of Human Beings: Cybernetics and Society (London: Eyre and Spottiswoode, 1950), ch. I, \"What is Cybernetics?\"; text layer, archive.org",
+    "locus": "p.8",
+    "date": "1950",
+    "file": "",
+    "url": "https://archive.org/details/the-human-use-of-human-beings"
+   },
+   "restored": "",
+   "years": [
+    1950
+   ],
+   "themes": [
+    "cybernetics"
+   ],
+   "collections": [
+    "wiener_books"
+   ],
+   "quote_sha256": "4e9bbf7fac74be6547eb8a063b27d24b504a656581c47240823df7080462fc84",
+   "embed_text": "Norbert Wiener | The Human Use of Human Beings: Cybernetics and Society (London: Eyre and Spottiswoode, 1950), ch. I, \"What is Cybernetics?\"; text layer, archive.org | p.8 | 1950 | We again see that the message is a transmitted pattern, which acquires its meaning by being a selection from a large number of possible patterns, The amount of meaning can be measured. It turns out that the less probable a message is, the more meaning it carries, which is entirely reasonable from the standpoint of our common sense."
   }
  ]
 }

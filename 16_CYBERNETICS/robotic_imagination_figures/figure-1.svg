@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="background:#1B2026;color:#EDEEEA" viewBox="0 0 880 428" role="img" aria-label="A shared 2018 to 2026 time axis. Above it, language models climb a staircase of named generations from GPT-1 to reasoning models. Below it, robotics releases sit on a single flat line, each marked with a question mark, because no metric orders them into generations.">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.92">
+          <polyline points="90,250 184,250 184,212 279,212 279,174 468,174 468,136 562,136 562,98 656,98 656,60 845,60"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="90" cy="250" r="4"/><circle cx="184" cy="212" r="4"/><circle cx="279" cy="174" r="4"/>
+          <circle cx="468" cy="136" r="4"/><circle cx="562" cy="98" r="4"/><circle cx="656" cy="60" r="4"/>
+        </g>
+        <g font-family="'Courier Prime',monospace" font-size="12" fill="currentColor">
+          <text x="94" y="240">GPT-1</text>
+          <text x="188" y="202">GPT-2</text>
+          <text x="283" y="164">GPT-3</text>
+          <text x="472" y="126">ChatGPT</text>
+          <text x="566" y="88">GPT-4</text>
+          <text x="660" y="50">reasoning models</text>
+        </g>
+        <text x="90" y="30" font-family="'Courier Prime',monospace" font-size="11" letter-spacing="1.6" fill="currentColor" opacity="0.62">LANGUAGE</text>
+
+        <line x1="90" y1="292" x2="845" y2="292" stroke="currentColor" stroke-width="1" opacity="0.42"/>
+        <g stroke="currentColor" stroke-width="1" opacity="0.42">
+          <line x1="90" y1="292" x2="90" y2="298"/><line x1="184" y1="292" x2="184" y2="298"/>
+          <line x1="279" y1="292" x2="279" y2="298"/><line x1="373" y1="292" x2="373" y2="298"/>
+          <line x1="468" y1="292" x2="468" y2="298"/><line x1="562" y1="292" x2="562" y2="298"/>
+          <line x1="656" y1="292" x2="656" y2="298"/><line x1="751" y1="292" x2="751" y2="298"/>
+          <line x1="845" y1="292" x2="845" y2="298"/>
+        </g>
+        <g font-family="'Courier Prime',monospace" font-size="11" fill="currentColor" opacity="0.62" text-anchor="middle">
+          <text x="90" y="313">2018</text><text x="184" y="313">2019</text><text x="279" y="313">2020</text>
+          <text x="373" y="313">2021</text><text x="468" y="313">2022</text><text x="562" y="313">2023</text>
+          <text x="656" y="313">2024</text><text x="751" y="313">2025</text><text x="845" y="313">2026</text>
+        </g>
+
+        <line x1="90" y1="368" x2="845" y2="368" stroke="currentColor" stroke-width="1.6" opacity="0.92"/>
+        <g fill="currentColor">
+          <circle cx="468" cy="368" r="4"/><circle cx="562" cy="368" r="4"/><circle cx="656" cy="368" r="4"/>
+          <circle cx="751" cy="368" r="4"/><circle cx="845" cy="368" r="4"/>
+        </g>
+        <g font-family="'Courier Prime',monospace" font-size="17" font-weight="700" fill="#EBA84A" text-anchor="middle">
+          <text x="468" y="352">?</text><text x="562" y="352">?</text><text x="656" y="352">?</text>
+          <text x="751" y="352">?</text><text x="845" y="352">?</text>
+        </g>
+        <g stroke="currentColor" stroke-width="1" opacity="0.45">
+          <line x1="562" y1="372" x2="562" y2="398"/><line x1="751" y1="372" x2="751" y2="398"/>
+        </g>
+        <g font-family="'Courier Prime',monospace" font-size="11" fill="currentColor" opacity="0.8">
+          <text x="468" y="391" text-anchor="middle">RT-1</text>
+          <text x="562" y="409" text-anchor="middle">RT-2</text>
+          <text x="656" y="391" text-anchor="middle">OpenVLA · π0</text>
+          <text x="751" y="409" text-anchor="middle">π0.5 · GR 1.5</text>
+          <text x="845" y="391" text-anchor="end">π0.7 · GR 2</text>
+        </g>
+        <text x="90" y="338" font-family="'Courier Prime',monospace" font-size="11" letter-spacing="1.6" fill="currentColor" opacity="0.62">ROBOTICS</text>
+      </svg>

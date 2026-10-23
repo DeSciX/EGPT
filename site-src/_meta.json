@@ -250,6 +250,12 @@
       "label": "15_GAME_THEORY/",
       "name": "The token economy",
       "line": "The documents of the token economy, in order."
+    },
+    {
+      "dir": "16_CYBERNETICS",
+      "label": "16_CYBERNETICS/",
+      "name": "Cybernetics",
+      "line": "The Macy transcripts, and the author's report on robotic imagination."
     }
   ],
   "landing": {

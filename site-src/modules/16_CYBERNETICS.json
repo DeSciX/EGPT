@@ -1,0 +1,26 @@
+{
+  "title": "the Macy transcripts, and the author's report on robotic imagination",
+  "description_from": {
+    "file": "16_CYBERNETICS/README.md",
+    "startsWith": "The documents behind the question"
+  },
+  "primary_ideas": [
+    "ID1"
+  ],
+  "highlights": [
+    {
+      "file": "README.md",
+      "label": "The documents"
+    },
+    {
+      "file": "robotic_imagination.html",
+      "label": "Robotic Imagination, an industry report, August 2026"
+    },
+    {
+      "file": "Pias_Cybernetics_Macy_Conferences_1946-1953_Complete_Transactions_2016.pdf",
+      "label": "The Macy Conferences 1946–1953, the complete transactions"
+    }
+  ],
+  "subsections": "auto",
+  "entry": "README.md"
+}

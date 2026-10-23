@@ -14,7 +14,7 @@
  *   in the named file at HEAD of this repository (a quotation the collection does not hold
  *   cannot be on the page); a <div data-cut-src …> is filled from the held file itself and
  *   gated block by block (see renderCut);
- * - every href to library.html#<path> must name a file tracked at HEAD (no dead deep links);
+ * - every href (or a slide's data-href) to library.html#<path> must name a file tracked at HEAD (no dead deep links);
  * - every images/<name> the page uses must come from the template commit or the spec, or be a tile
  *   still from site-src/frontpage/exhibits/;
  * - the template owns zero tiles: it must carry a <div … data-exhibits></div> slot and no hand
@@ -455,9 +455,24 @@ function gateFragment(html, file) {
     gated++;
   }
   for (const m of html.matchAll(/<(blockquote|q)\b(?![^>]*data-src=)[^>]*>/g)) die(`${file}: a <${m[1]}> without data-src (every quotation names its held file)`);
-  for (const m of html.matchAll(/href="library\.html#([^"]+)"/g)) {
+  for (const m of html.matchAll(/(?:href|data-href)="library\.html#([^"]+)"/g)) {
     const why = deadLink(decodeURIComponent(m[1]));
     if (why) die(`${file}: ${why}`);
+  }
+  // the jumbotron (teleprompter.js): every slide owns its library address and its dwell, the
+  // reflection's roll owns its own address, and the fixed library link starts on the first slide's
+  if (/id="jumbo-stage"/.test(html)) {
+    const slides = [...html.matchAll(/<figure\b[^>]*class="slide\b[^"]*"[^>]*>/g)].map(m => m[0]);
+    if (!slides.length) die(`${file}: a jumbotron with no slides`);
+    const attr = (tag, k) => (tag.match(new RegExp(` ${k}="([^"]*)"`)) || [])[1];
+    slides.forEach((t, i) => {
+      if (!/^library\.html#/.test(attr(t, 'data-href') || '')) die(`${file}: slide ${i} needs data-href="library.html#…" (its address in the library)`);
+      if (!/^\d+$/.test(attr(t, 'data-dwell') || '')) die(`${file}: slide ${i} needs data-dwell="<ms>"`);
+    });
+    const roll = (html.match(/<div\b[^>]*id="tp-roll"[^>]*>/) || [])[0];
+    if (roll && !/^library\.html#/.test(attr(roll, 'data-href') || '')) die(`${file}: #tp-roll needs data-href="library.html#…" (the reflection's address)`);
+    const open = (html.match(/<a\b[^>]*class="tp-open"[^>]*>/) || [])[0];
+    if (open && attr(open, 'href') !== attr(slides[0], 'data-href')) die(`${file}: .tp-open starts on the first slide's address (${attr(slides[0], 'data-href')}), not ${attr(open, 'href')}`);
   }
   return html;
 }
@@ -586,7 +601,7 @@ ${sdk ? `<script src="${sdk.name}"></script>\n` : ''}${scripts.map(s => `<script
 `;
 
   // every library deep link on the page, reused sections included, names a file tracked at HEAD
-  for (const m of html.matchAll(/href="(?:library\.html|https:\/\/egpt\.descix\.net\/)#([^"]+)"/g)) {
+  for (const m of html.matchAll(/(?:href|data-href)="(?:library\.html|https:\/\/egpt\.descix\.net\/)#([^"]+)"/g)) {
     const why = deadLink(decodeURIComponent(m[1]));
     if (why) die(why);
   }

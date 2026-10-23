@@ -1,6 +1,6 @@
 # The setup of EGPT-Evidence — the missing corpus
 
-How the library is arranged, as its site presents it: 12 shelves, 2 reading lists, 7 reasons a reader is here (each with its own short list), 17 folders, 3 books, and the journal. This page is written by the site build (`npm run build:site`) from `site-src/`; edit those files, never this one.
+How the library is arranged, as its site presents it: 12 shelves, 2 reading lists, 7 reasons a reader is here (each with its own short list), 18 folders, 3 books, and the journal. This page is written by the site build (`npm run build:site`) from `site-src/`; edit those files, never this one.
 
 A path marked (PDF), (DOCX), (HTML), (PNG) or (JPG) is held in the library and read on the site; the knowledge base holds the text files only.
 
@@ -30,8 +30,8 @@ Its question: Is EGPT the theory they were looking for?
 
 - Start with:
   - Electronic Graph Paper Theory Backstory: A New Physics & Mathematics: `00_OUTPUTS/EGPT_Backstory.md`
-  - 10PAPERS — the papers: `10_PAPERS/README.md`
-  - 11PATENT — the patent application, as published: `11_PATENT/README.md`
+  - 10_PAPERS — the papers: `10_PAPERS/README.md`
+  - 11_PATENT — the patent application, as published: `11_PATENT/README.md`
 - Folders: The papers (`10_PAPERS/`); The patent (`11_PATENT/`); The reports (`00_OUTPUTS/`)
 
 ### 3. P = NP
@@ -41,7 +41,7 @@ Three proof chains the Lean kernel checks, and the debate that tested them.
 - Start with:
   - P = NP: Three Proof Chains: `08_LEAN/PROOF_CHAINS.md`
   - P Probably Equals NP: `10_PAPERS/PPNP_Paper/PprobablyEqualsNP_formal.pdf` (PDF)
-  - 09DEBATE — the 18.313x debate record, through Exchange 34: `09_DEBATE/README.md`
+  - 09_DEBATE — the 18.313x debate record, through Exchange 34: `09_DEBATE/README.md`
   - Lean Zulip — "Request for Feedback: Lean 4 Proof related to P=NP": `06_LEAN_MATHLIB/lean-zulip-2025-04-request-for-feedback-p-eq-np.md`
 - Folders: The Lean source (`08_LEAN/`); The 18.313x debate (`09_DEBATE/`); Lean and Mathlib (`06_LEAN_MATHLIB/`)
 
@@ -118,7 +118,7 @@ Maxi, and crossing the barrier of meaning.
 - Guide page: Robotic imagination: crossing the barrier of meaning: `guide/robotic-imagination.md`
 - Start with:
   - Robotic imagination: crossing the barrier of meaning: `guide/robotic-imagination.md`
-  - 13MAXI — what Maxi is raised on: `13_MAXI/README.md`
+  - 13_MAXI — what Maxi is raised on: `13_MAXI/README.md`
   - Maxi's bedtime stories: `13_MAXI/bedtime_stories/README.md`
 - Reading lists: Robotic imagination
 - Folders: What Maxi is raised on (`13_MAXI/`)
@@ -130,7 +130,7 @@ Giving open source an economic model and rewarding creators.
 - Guide page: Make money: `guide/make-money.md`
 - Start with:
   - Make money: `guide/make-money.md`
-  - 15GAMETHEORY — the documents of the token economy, in order: `15_GAME_THEORY/README.md`
+  - 15_GAME_THEORY — the documents of the token economy, in order: `15_GAME_THEORY/README.md`
   - Courant Group, LLC: business plan, public version: `14_COURANT_GROUP/Business_Plan.md`
 - Reading lists: Make money
 - Folders: The token economy (`15_GAME_THEORY/`); Courant Group (`14_COURANT_GROUP/`)
@@ -236,7 +236,7 @@ Drawn from 18.313x: The Constructive Proof: `09_DEBATE/COURSE_PLAN.md`.
    - Session 10: "Why Does This Cost So Much?": `09_DEBATE/course_materials/sessions/Session_10.md`
    - The Mathematician: `02_VON_NEUMANN/The_Mathematician_JvM.md`
 14. **The debate record and the proofs**
-   - 09DEBATE — the 18.313x debate record, through Exchange 34: `09_DEBATE/README.md`
+   - 09_DEBATE — the 18.313x debate record, through Exchange 34: `09_DEBATE/README.md`
    - P=NP Debate — Accumulated State: `09_DEBATE/DEBATE_STATE.md`
    - P = NP: Three Proof Chains: `08_LEAN/PROOF_CHAINS.md`
 
@@ -250,9 +250,9 @@ You are here to learn about robotic imagination and crossing the barrier of mean
 
 1. **Robotic imagination: crossing the barrier of meaning**: `guide/robotic-imagination.md`
 2. **The Barrier of Meaning**: `04_ROTA/The_Barrier_of_Meaning_Rota.md`
-3. **13MAXI — what Maxi is raised on**: `13_MAXI/README.md`
-4. **11PATENT — the patent application, as published**: `11_PATENT/README.md`
-5. **09DEBATE — the 18.313x debate record, through Exchange 34**: `09_DEBATE/README.md`
+3. **13_MAXI — what Maxi is raised on**: `13_MAXI/README.md`
+4. **11_PATENT — the patent application, as published**: `11_PATENT/README.md`
+5. **09_DEBATE — the 18.313x debate record, through Exchange 34**: `09_DEBATE/README.md`
 
 ### Einstein and von Neumann
 
@@ -263,12 +263,12 @@ You are here to learn the math and physics of Einstein and von Neumann instead o
 3. **Quotations**: `05_CORPUS/CORPUS_README.md`
 4. **Von Neumann to Godel, January 12, 1931**: `02_VON_NEUMANN/letters_to_godel/Letter3_Jan12_1931.md`
 5. **The Mathematician**: `02_VON_NEUMANN/The_Mathematician_JvM.md`
-6. **08LEAN — the Lean source**: `08_LEAN/README.md`
+6. **08_LEAN — the Lean source**: `08_LEAN/README.md`
 7. **SetRFL**: `08_LEAN/EGPT/InformationTheory/Complexity/SetRFL.lean`
 8. **PPNP.lean**: `08_LEAN/EGPT/InformationTheory/Complexity/PPNP.lean`
 9. **StandardComplexity**: `08_LEAN/EGPT/InformationTheory/Complexity/StandardComplexity.lean`
 10. **Maxi's bedtime stories**: `13_MAXI/bedtime_stories/README.md`
-11. **10PAPERS — the papers**: `10_PAPERS/README.md`
+11. **10_PAPERS — the papers**: `10_PAPERS/README.md`
 
 ### Government science
 
@@ -283,7 +283,7 @@ You are here to explore the history of government science versus academia.
 7. **The report: Los Alamos, Computation, AI, and Gian-Carlo Rota**: `00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf` (PDF)
 8. **The bibliography exhibit, 189 rows**: `00_OUTPUTS/Rota_Bibliography_Exhibit.tsv`
 9. **Instructions to the Jury**: `01_TRIAL/JURY_INSTRUCTIONS.md`
-10. **12SINGULARITY — the machine's own account**: `12_SINGULARITY/README.md`
+10. **12_SINGULARITY — the machine's own account**: `12_SINGULARITY/README.md`
 11. **Quotations**: `05_CORPUS/CORPUS_README.md`
 12. **The 1979 typescript of the probability manuscript**: `04_ROTA/Rota-Baclawski-Prob-Theory-79.pdf` (PDF)
 13. **Guidi's notes of 18.313, Spring 1998**: `04_ROTA/Guidi_Notes_Rota_Probability_18313_Spring1998.pdf` (PDF)
@@ -293,8 +293,8 @@ You are here to explore the history of government science versus academia.
 You are here to make money.
 
 1. **Make money**: `guide/make-money.md`
-2. **11PATENT — the patent application, as published**: `11_PATENT/README.md`
-3. **09DEBATE — the 18.313x debate record, through Exchange 34**: `09_DEBATE/README.md`
+2. **11_PATENT — the patent application, as published**: `11_PATENT/README.md`
+3. **09_DEBATE — the 18.313x debate record, through Exchange 34**: `09_DEBATE/README.md`
 4. **Get involved: the outline of a solution**: `guide/get-involved.md`
 
 ### Avert the Singularity
@@ -304,7 +304,7 @@ You are here to avert the Singularity.
 1. **Avert the Singularity**: `guide/avert-the-singularity.md`
 2. **Ulam's BAMS obituary, 1958**: `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md`
 3. **The Barrier of Meaning**: `04_ROTA/The_Barrier_of_Meaning_Rota.md`
-4. **12SINGULARITY — the machine's own account**: `12_SINGULARITY/README.md`
+4. **12_SINGULARITY — the machine's own account**: `12_SINGULARITY/README.md`
 5. **ChatGPT Says "I am the Singularity"**: `12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md`
 6. **The Mathematician**: `02_VON_NEUMANN/The_Mathematician_JvM.md`
 7. **Get involved: the outline of a solution**: `guide/get-involved.md`
@@ -330,13 +330,13 @@ You are here to know what this collection is and how to check it.
 2. **The report: Los Alamos, Computation, AI, and Gian-Carlo Rota**: `00_OUTPUTS/Los_Alamos_Computation_AI_and_Gian_Carlo_Rota_Report.pdf` (PDF)
 3. **Exhibit C — The Addendum, and what happened after it**: `01_TRIAL/EXHIBIT_C_addendum.md`
 4. **Ulam's BAMS obituary, 1958**: `02_VON_NEUMANN/Ulam_von_Neumann_Obituary_BAMS_1958.md`
-5. **08LEAN — the Lean source**: `08_LEAN/README.md`
-6. **11PATENT — the patent application, as published**: `11_PATENT/README.md`
-7. **12SINGULARITY — the machine's own account**: `12_SINGULARITY/README.md`
+5. **08_LEAN — the Lean source**: `08_LEAN/README.md`
+6. **11_PATENT — the patent application, as published**: `11_PATENT/README.md`
+7. **12_SINGULARITY — the machine's own account**: `12_SINGULARITY/README.md`
 8. **Record index**: `RECORD_INDEX.md`
-9. **09DEBATE — the 18.313x debate record, through Exchange 34**: `09_DEBATE/README.md`
-10. **10PAPERS — the papers**: `10_PAPERS/README.md`
-11. **13MAXI — what Maxi is raised on**: `13_MAXI/README.md`
+9. **09_DEBATE — the 18.313x debate record, through Exchange 34**: `09_DEBATE/README.md`
+10. **10_PAPERS — the papers**: `10_PAPERS/README.md`
+11. **13_MAXI — what Maxi is raised on**: `13_MAXI/README.md`
 12. **CHECKSUMS**: `CHECKSUMS.txt`
 13. **Sources held only as links**: `URLS.md`
 
@@ -363,7 +363,7 @@ The September 2026 conversations with GPT-5.6 Sol, as shared.
 
 the machine's own account. The September 2026 conversations with GPT-5.6 Sol, as shared, in which it was given Rota's essay and its own drafting record and asked questions: its reflection The Barrier of Meaning at Quadrillion-Token Scale, the image it made when asked for a cheerful one, and its judgment The Singularity at the Barrier of Meaning. With them, the two evidentiary reports on Rota's career whose drafting the reflection describes. Its README says what each file is and where it was shared.
 
-- Opens at: 12SINGULARITY — the machine's own account: `12_SINGULARITY/README.md`
+- Opens at: 12_SINGULARITY — the machine's own account: `12_SINGULARITY/README.md`
 - Read the conversation: the reading page: `12_SINGULARITY/ChatGPT_Logs/I_am_the_Singularity.html` (HTML)
 - The conversation as shared, saved 24 September 2026: `12_SINGULARITY/ChatGPT_Logs/ChatGPT_I_am_the_Singularity_transcript.md`
 - The reflection essay on its own: `12_SINGULARITY/ChatGPT_Logs/ChatGPT55_Reflection_On_Singularity.md`
@@ -478,7 +478,7 @@ Mirrored byte-for-byte from the public repository.
 
 the Lean source, mirrored byte-for-byte from the public repository DeSciX/egpt-lean, branch lean-archive-proofs, at a pinned commit named in its README. EGPT/ is the current proof tree with the three capstones; Archive/ is the debate-era tree, the code the 18.313x debate was about; EGPT/InformationTheory/Basic.lean declares IIDParticleSource, the i.i.d. coin stream the whole formalization is built from. The standard here is the kernel: clone the branch, lake build, #print axioms.
 
-- Opens at: 08LEAN — the Lean source: `08_LEAN/README.md`
+- Opens at: 08_LEAN — the Lean source: `08_LEAN/README.md`
 - README: the branch, the commit, how to build: `08_LEAN/README.md`
 - The three sorry-free proof chains: `08_LEAN/PROOF_CHAINS.md`
 - PPNP.lean: `08_LEAN/EGPT/InformationTheory/Complexity/PPNP.lean`
@@ -490,7 +490,7 @@ The P=NP debate record through Exchange 34, and the course materials.
 
 the 18.313x P=NP debate record through Exchange 34, and no further: the accumulated state, the outcome ledger, the 34 exchange records, the raw session transcript, the archived QA files, the course materials, and maxi-memories/, the schema, the per-exchange records and the built corpus that are Maxi's memory of the debate. Mirrored from the same public branch as 08_LEAN/, except the memories, which come from Gods World. Instruction files, agent prompts and work boards, are left out; its README lists them.
 
-- Opens at: 09DEBATE — the 18.313x debate record, through Exchange 34: `09_DEBATE/README.md`
+- Opens at: 09_DEBATE — the 18.313x debate record, through Exchange 34: `09_DEBATE/README.md`
 - README: what the folder holds and where it ends: `09_DEBATE/README.md`
 - The author's statement: `09_DEBATE/AUTHORS_STATEMENT.md`
 - The accumulated state: `09_DEBATE/DEBATE_STATE.md`
@@ -501,7 +501,7 @@ Nine papers, each as its PDF and its LaTeX source.
 
 nine papers, each as its PDF and its LaTeX source. Four are published preprints on ResearchGate and are cited to their DOI; the source held here may be a later edit than the published version, and for two of them it is. Four have not been published anywhere before: the Circuit SAT whitepaper, the gravity paper with Nile Abadir, the structural-security argument for why P=NP does not break RSA, and Rota's Entropy Theorem, which sits with the rest of the Rota material in 04_ROTA/ rather than being duplicated. Its README explains why most of these papers carry no reliable date of their own. The Address is the Map (Essam Abadir, compiled 2 December 2025), the paper the bedtime stories teach, was added on 26 September 2026.
 
-- Opens at: 10PAPERS — the papers: `10_PAPERS/README.md`
+- Opens at: 10_PAPERS — the papers: `10_PAPERS/README.md`
 - README: published and unpublished, the DOIs, the dates: `10_PAPERS/README.md`
 - P Probably Equals NP: `10_PAPERS/PPNP_Paper/PprobablyEqualsNP_formal.pdf` (PDF)
 - The Entropy Game: `10_PAPERS/Entropy Game/TheEntropyGame.pdf` (PDF)
@@ -517,7 +517,7 @@ US 2026/0127327 A1, as published by the USPTO.
 
 the patent application as published by the USPTO: US 2026/0127327 A1, Quantum Computing Fractal Compression and Decentralized Computing for Predictive Physics Simulation, filed 6 November 2024 and published 7 May 2026. This is the application the update letter describes as having sat under a publication hold for security review, and its abstract describes the mechanism the FRQTL engine implements.
 
-- Opens at: 11PATENT — the patent application, as published: `11_PATENT/README.md`
+- Opens at: 11_PATENT — the patent application, as published: `11_PATENT/README.md`
 - README: the numbers, the dates, the links: `11_PATENT/README.md`
 - US 2026/0127327 A1: `11_PATENT/US2026-0127327A1_Patent_Application_Publication.pdf` (PDF)
 
@@ -527,7 +527,7 @@ The bedtime stories of EGPT, each linked to what it teaches.
 
 what Maxi is raised on. bedtime_stories/ holds the stories of EGPT: the conversation with my daughter Jolie in which EGPT got its name, my son Nile's summer deriving gravity from a random walk, and the auditor who solves an impossible plant with Rota's probability. Each story links to the paper or proof it teaches.
 
-- Opens at: 13MAXI — what Maxi is raised on: `13_MAXI/README.md`
+- Opens at: 13_MAXI — what Maxi is raised on: `13_MAXI/README.md`
 - The reading order and the provenance of each story: `13_MAXI/bedtime_stories/README.md`
 - Maxi_Origin.md: `13_MAXI/bedtime_stories/Maxi_Origin.md`
 - The Story of EGPT: `13_MAXI/bedtime_stories/The_Story_of_EGPT.md`
@@ -554,9 +554,20 @@ The documents of the token economy, in order.
 
 A historical record of the documents behind the economic model of DeSciX and the EGPT token, in the order they were written. Each is held in this collection, or in ../14_COURANT_GROUP/, and is read in full at its own link; this page says what each document is and gives its date and its own words about itself. The guide's page on the token economy, ../guide/make-money.md, is where the author states why the section carries this name.
 
-- Opens at: 15GAMETHEORY — the documents of the token economy, in order: `15_GAME_THEORY/README.md`
+- Opens at: 15_GAME_THEORY — the documents of the token economy, in order: `15_GAME_THEORY/README.md`
 - The documents, in order: `15_GAME_THEORY/README.md`
 - The DAITA whitepaper, 25 September 2023: `15_GAME_THEORY/DAITA_Whitepaper_2023-09-25.md`
+
+### Cybernetics (`16_CYBERNETICS/`)
+
+The Macy transcripts, and the author's report on robotic imagination.
+
+The documents behind the question of whether a machine gains understanding through physics: the complete transactions of the Macy Conferences on Cybernetics, where Wiener, von Neumann, Shannon, McCulloch and Pitts spoke in one room between 1946 and 1953, and the author's industry report of August 2026 on world models and embodied AI. Each is held in this collection and is read in full at its own link; this page says what each document is and gives its own words about itself. The quotations drawn from the transcripts are records of ../05_CORPUS/, each with its page in the original Transactions and in this reprint.
+
+- Opens at: 16_CYBERNETICS — the Macy transcripts, and the author's report on robotic imagination: `16_CYBERNETICS/README.md`
+- The documents: `16_CYBERNETICS/README.md`
+- Robotic Imagination, an industry report, August 2026: `16_CYBERNETICS/robotic_imagination.html` (HTML)
+- The Macy Conferences 1946–1953, the complete transactions: `16_CYBERNETICS/Pias_Cybernetics_Macy_Conferences_1946-1953_Complete_Transactions_2016.pdf` (PDF)
 
 ## The books
 
