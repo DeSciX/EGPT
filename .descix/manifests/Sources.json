@@ -93,6 +93,14 @@
       "doc_class": "guide",
       "doc_type": "documentation",
       "syncignore": []
+    },
+    {
+      "path": "16_CYBERNETICS",
+      "ref": "main",
+      "tier": 1,
+      "doc_class": "guide",
+      "doc_type": "documentation",
+      "syncignore": []
     }
   ]
 }
