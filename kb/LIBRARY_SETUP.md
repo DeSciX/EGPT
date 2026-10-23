@@ -1,6 +1,6 @@
 # The setup of EGPT-Evidence — the missing corpus
 
-How the library is arranged, as its site presents it: 12 shelves, 2 reading lists, 7 reasons a reader is here (each with its own short list), 17 folders, 3 books, and the journal. This page is written by the site build (`npm run build:site`) from `site-src/`; edit those files, never this one.
+How the library is arranged, as its site presents it: 12 shelves, 2 reading lists, 7 reasons a reader is here (each with its own short list), 18 folders, 3 books, and the journal. This page is written by the site build (`npm run build:site`) from `site-src/`; edit those files, never this one.
 
 A path marked (PDF), (DOCX), (HTML), (PNG) or (JPG) is held in the library and read on the site; the knowledge base holds the text files only.
 
@@ -557,6 +557,17 @@ A historical record of the documents behind the economic model of DeSciX and the
 - Opens at: 15GAMETHEORY — the documents of the token economy, in order: `15_GAME_THEORY/README.md`
 - The documents, in order: `15_GAME_THEORY/README.md`
 - The DAITA whitepaper, 25 September 2023: `15_GAME_THEORY/DAITA_Whitepaper_2023-09-25.md`
+
+### Cybernetics (`16_CYBERNETICS/`)
+
+The Macy transcripts, and the author's report on robotic imagination.
+
+The documents behind the question of whether a machine gains understanding through physics: the complete transactions of the Macy Conferences on Cybernetics, where Wiener, von Neumann, Shannon, McCulloch and Pitts spoke in one room between 1946 and 1953, and the author's industry report of August 2026 on world models and embodied AI. Each is held in this collection and is read in full at its own link; this page says what each document is and gives its own words about itself. The quotations drawn from the transcripts are records of ../05_CORPUS/, each with its page in the original Transactions and in this reprint.
+
+- Opens at: 16CYBERNETICS — the Macy transcripts, and the author's report on robotic imagination: `16_CYBERNETICS/README.md`
+- The documents: `16_CYBERNETICS/README.md`
+- Robotic Imagination, an industry report, August 2026: `16_CYBERNETICS/robotic_imagination.html` (HTML)
+- The Macy Conferences 1946–1953, the complete transactions: `16_CYBERNETICS/Pias_Cybernetics_Macy_Conferences_1946-1953_Complete_Transactions_2016.pdf` (PDF)
 
 ## The books
 
