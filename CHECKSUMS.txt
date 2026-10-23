@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 1005 files, 178716133 bytes.
+# 1005 files, 178716164 bytes.
 d5d0160f87d374c775245779bc125cc070951ef404388faf05935ed29143be28  .beast/award-policy.md
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
@@ -762,7 +762,7 @@ f05a7f2930b93be56521144a09c35b460e1d12062e3a4d53535866e25b4ed506  journal/2026-1
 0349184ed306b9d83bded689d9ef704796231cebf987d2fc0ea5f86839b3f486  journal/2026-10/try-it-yourself.md
 8fcaca278777a87ec52b2325139bfcde9fc52dcf3ac88b3f839bd5adc6005b59  journal/2026-10/who-checked-the-proof.md
 bb84e6e11e54aa42b9c8a610cae0acc8cf3ab3faaa768aa0ebc1a60ebdff9f8f  journal/2026-10/who-gets-rich-when-openai-goes-public.md
-a3d187d847c26f704d3032b4528a9b5146626263fd2b2e72a431d39fffbd9e25  kb/LIBRARY_SETUP.md
+1150ee480e8a82720112fda7733a76ed04bbb7d2977680f2ed14bf23a18855d2  kb/LIBRARY_SETUP.md
 4fe81a2f5f4e6283d657c0364e02874d7e66d8a80e2cfd89568fa6053b6dc8b8  kb/README.md
 774a4de93db549c5fe7871843ac57fe3a571f50cad7e259f2e59355665802656  microservice/.gitignore
 6c26c58b998453070fdea983085c860e5a8f99cfebb711d4832e0892fad24b3f  microservice/Dockerfile
