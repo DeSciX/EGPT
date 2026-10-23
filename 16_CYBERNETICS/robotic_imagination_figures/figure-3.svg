@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="background:#1B2026;color:#EDEEEA" viewBox="0 0 860 575" role="img" aria-label="Two vertical loops side by side. Reconstructive Compression: observe, compress, remember, respond — the loop stays inside the compressed representation. Predictive Physics Compression: observe, construct, imagine, observe the imagined future, respond — the fourth step produces observations that were never recorded.">
+        <defs>
+          <marker id="arR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <polygon points="0,1 10,5 0,9" fill="#84A6DB"/>
+          </marker>
+          <marker id="arP" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <polygon points="0,1 10,5 0,9" fill="#EBA84A"/>
+          </marker>
+        </defs>
+
+        <text x="190" y="34" font-family="'Courier Prime',monospace" font-size="11.5" letter-spacing="1.7" fill="#84A6DB" text-anchor="middle">REC · RECONSTRUCTIVE COMPRESSION</text>
+        <text x="660" y="34" font-family="'Courier Prime',monospace" font-size="11.5" letter-spacing="1.7" fill="#EBA84A" text-anchor="middle">PPC · PREDICTIVE PHYSICS COMPRESSION</text>
+
+        <g stroke="#84A6DB" stroke-width="1.3" fill="none">
+          <rect x="60" y="67" width="260" height="46"/>
+          <rect x="60" y="162" width="260" height="46"/>
+          <rect x="60" y="257" width="260" height="46"/>
+          <rect x="60" y="352" width="260" height="46"/>
+        </g>
+        <g font-family="Newsreader, Georgia, serif" font-size="18" fill="#EDEEEA" text-anchor="middle">
+          <text x="190" y="96">Observe</text>
+          <text x="190" y="191">Compress</text>
+          <text x="190" y="286">Remember</text>
+          <text x="190" y="381">Respond</text>
+        </g>
+        <g stroke="#84A6DB" stroke-width="1.4" marker-end="url(#arR)" fill="none">
+          <line x1="190" y1="113" x2="190" y2="155"/>
+          <line x1="190" y1="208" x2="190" y2="250"/>
+          <line x1="190" y1="303" x2="190" y2="345"/>
+        </g>
+        <g font-family="'Courier Prime',monospace" font-size="10.5" fill="#84A6DB" opacity="0.95">
+          <text x="202" y="139">sensors</text>
+          <text x="202" y="234">compression</text>
+          <text x="202" y="329">retrieval</text>
+        </g>
+        <text x="190" y="440" font-family="Newsreader, Georgia, serif" font-size="15.5" font-style="italic" fill="#A7AFB8" text-anchor="middle">The loop never leaves</text>
+        <text x="190" y="462" font-family="Newsreader, Georgia, serif" font-size="15.5" font-style="italic" fill="#A7AFB8" text-anchor="middle">the compressed record.</text>
+
+        <line x1="430" y1="55" x2="430" y2="500" stroke="#3A434E" stroke-width="1"/>
+
+        <g stroke="#EBA84A" stroke-width="1.3" fill="none">
+          <rect x="530" y="67" width="260" height="46"/>
+          <rect x="530" y="162" width="260" height="46"/>
+          <rect x="530" y="257" width="260" height="46"/>
+          <rect x="530" y="352" width="260" height="46"/>
+          <rect x="530" y="447" width="260" height="46"/>
+        </g>
+        <rect x="530" y="352" width="260" height="46" fill="#EBA84A" opacity="0.13"/>
+        <g font-family="Newsreader, Georgia, serif" font-size="18" fill="#EDEEEA" text-anchor="middle">
+          <text x="660" y="96">Observe</text>
+          <text x="660" y="191">Construct</text>
+          <text x="660" y="286">Imagine</text>
+          <text x="660" y="381">Observe the imagined future</text>
+          <text x="660" y="476">Respond</text>
+        </g>
+        <g stroke="#EBA84A" stroke-width="1.4" marker-end="url(#arP)" fill="none">
+          <line x1="660" y1="113" x2="660" y2="155"/>
+          <line x1="660" y1="208" x2="660" y2="250"/>
+          <line x1="660" y1="303" x2="660" y2="345"/>
+          <line x1="660" y1="398" x2="660" y2="440"/>
+        </g>
+        <g font-family="'Courier Prime',monospace" font-size="10.5" fill="#EBA84A" opacity="0.95">
+          <text x="672" y="139">sensors</text>
+          <text x="672" y="234">infer a state</text>
+          <text x="672" y="329">run it forward</text>
+          <text x="672" y="424">look at it</text>
+        </g>
+        <text x="660" y="530" font-family="Newsreader, Georgia, serif" font-size="15.5" font-style="italic" fill="#EBA84A" text-anchor="middle">The loop makes new observations,</text>
+        <text x="660" y="552" font-family="Newsreader, Georgia, serif" font-size="15.5" font-style="italic" fill="#EBA84A" text-anchor="middle">then looks at them.</text>
+      </svg>
