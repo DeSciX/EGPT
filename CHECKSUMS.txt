@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 1005 files, 178715862 bytes.
+# 1005 files, 178715967 bytes.
 d5d0160f87d374c775245779bc125cc070951ef404388faf05935ed29143be28  .beast/award-policy.md
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
@@ -711,7 +711,7 @@ e255a863ac2fcf159f52a96f130cb13932760fa1ecce2ae0cfa1d90786f1ba88  Copyright_Fair
 a7fb6cbe1a3051094d583ddf297a31149475ef22599efcb527829898080c2c8b  README.md
 62747b95c0e7d6bf7f322c2401938be452c8d0964b84228799d279d8c277c16f  RECORD_INDEX.md
 b25e934a31b905c9195fb1524affde312f0f91a5fbc8654b8a3074c7679720fd  URLS.md
-bf7d3ef9c43297fc19b39a21c7cc985e0affa5dd874de1bd0813fa0fcc236af0  assets/system_instructions.md
+d7112d6e65729599e3c8f0ac980cec5e2c46583d1abe4f48edf3893b957c80d7  assets/system_instructions.md
 608064d34928541ec8ad3a90e3e700efd714c065fa24a507efcabf189e75948d  guide/README.md
 0e51790adee850a0cafc6529e3670f6dc1a9095ee89d235a0eaa164651a650cb  guide/about-this-collection.md
 363b5ce1d91beb100d81511129a1a5632d607b12112bbd92a191a93ff8aba546  guide/avert-the-singularity.md

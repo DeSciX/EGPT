@@ -185,6 +185,7 @@ The viewer's toolbar shows a shelf mark for every document: the folder's number 
 - 13_MAXI/ — What Maxi is raised on: the bedtime stories of EGPT, each linked to what it teaches.
 - 14_COURANT_GROUP/ — Courant Group: the business plan, public version, with its provenance.
 - 15_GAME_THEORY/ — The token economy: the documents of the token economy, in order.
+- 16_CYBERNETICS/ — Cybernetics: the Macy transcripts, and the author's report on robotic imagination.
 Outside the folders: README.md, RECORD_INDEX.md (from a report's endnote to the held file and its records), CHECKSUMS.txt (the SHA-256 of every held file), URLS.md (works cited but not held), Copyright_Fair-use_Memo.md, and journal/ (the journal).
 
 THE READING LISTS
