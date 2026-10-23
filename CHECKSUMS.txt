@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 1005 files, 178719995 bytes.
+# 1005 files, 178720295 bytes.
 d5d0160f87d374c775245779bc125cc070951ef404388faf05935ed29143be28  .beast/award-policy.md
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
@@ -706,7 +706,7 @@ cb231d838706ed57b5dd0f297cf6ba94d425c9b335342fafbfa28f80500c5eb7  16_CYBERNETICS
 3ca782372f94a220e026b5ffbc026094dffcb318b2064d5c2181894d8869652f  16_CYBERNETICS/robotic_imagination_figures/figure-6.png
 71d4e9c16e87484d90804e754bfbde658e3ff5aa51d95601051d1f499b2d6f36  16_CYBERNETICS/robotic_imagination_figures/figure-7-poster.jpg
 70d7011054871b6453a73c4f9465ada215b4398802e8341e47372d4e41681939  16_CYBERNETICS/robotic_imagination_figures/figure-7.mp4
-fa200b88b67f3bf1bef397825c2571695b71d13a5221ab56c87b74068a03c208  CLAUDE.md
+6277d2c4e7a50b96245ec5987316799d432488a2410d1da508112878e98db97f  CLAUDE.md
 e255a863ac2fcf159f52a96f130cb13932760fa1ecce2ae0cfa1d90786f1ba88  Copyright_Fair-use_Memo.md
 a7fb6cbe1a3051094d583ddf297a31149475ef22599efcb527829898080c2c8b  README.md
 62747b95c0e7d6bf7f322c2401938be452c8d0964b84228799d279d8c277c16f  RECORD_INDEX.md

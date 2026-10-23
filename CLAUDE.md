@@ -52,7 +52,7 @@ is listed for him with its source. In the library nothing is edited at all.
 
 ## Two tracks, and where work is staged
 
-EGPT-research stages; this repository publishes. Two tracks here:
+EGPT-research stages; this repository publishes. Content is written in EGPT-research first, then committed to the private dev twin (eabadir/EGPT-dev, remote `twin`), then published to this public repository and the PROD app; work in progress never goes to the public repository. Why: the public repository and PROD carry only what is ready to read. Two tracks here:
 
 - **The library**: the numbered folders, `guide/`, `05_CORPUS/`, the viewer and the reader.
   Verbatim sources, strict provenance, the machine-oriented citation form (record ids, SHA-256,
