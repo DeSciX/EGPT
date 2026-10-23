@@ -153,7 +153,8 @@ function titleOf(p) {
     let m = ext === 'md' && t.match(/^---\n[\s\S]*?^title:\s*"?(.+?)"?\s*$[\s\S]*?^---/m);
     if (!m && ext === 'md') m = t.match(/^#\s+(.+)$/m);
     if (!m && ext !== 'md') m = t.match(/<title>([^<]+)<\/title>/i);
-    if (m) return m[1].replace(/[*_`]/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').trim();
+    // emphasis markers go; an intraword underscore (16_CYBERNETICS, build_report) is a literal and stays
+    if (m) return m[1].replace(/[*`]/g, '').replace(/(^|[^\w])_{1,2}(?=\S)(.*?\S)_{1,2}(?!\w)/g, '$1$2').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').trim();
   }
   const mod = modules.find(x => p.startsWith(x.dir + '/'));
   const hl = mod && mod.highlights.find(h => `${mod.dir}/${h.file}` === p);

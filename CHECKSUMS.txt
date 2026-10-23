@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 1005 files, 178715967 bytes.
+# 1005 files, 178716133 bytes.
 d5d0160f87d374c775245779bc125cc070951ef404388faf05935ed29143be28  .beast/award-policy.md
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
@@ -827,7 +827,7 @@ ca62b4b6cabef46ff0e7f16eec1249f21a1fa8fcb4aec2c47074c53d521e880a  scripts/build-
 93080682339a76ce72c1e051c3f34d9a4a81cc6ed3655268400c19a4068613db  scripts/build-share-assets.js
 232ca5f66f0ba190dbc1588ae810ae345a608fbb0002335954b42a699ee52a90  scripts/build-singularity-page.js
 388f4dd60b39601e12145dbe62529d9f8c458470498b97bdc7f5d53786931498  scripts/build-trial-book.js
-38c58f15709890c0037ddf6e624e98bcdfb9fa15812bdbf1aa1c94e1d754b961  scripts/generate-site.js
+17bb340f7b29d74d45f4399599cb1c584bfd3816731fa10344ed615e4b460076  scripts/generate-site.js
 59386a0c6e69191ef5acebc5012e4ed83acd7889be56ece00df04ca18f01a5b2  scripts/ledger-to-timeline.js
 405f261d1a025e98d1e239fc2847392c6193ac8a62b3b1fa4e1ad8edf4d545c4  scripts/lib/librarian-persona.js
 eefc09820223832757d85f96fce575d28d678fb89f418221df8254123d10eb59  scripts/lib/library-setup.js
@@ -981,7 +981,7 @@ feabdf309770ed24bba31a5467836cdc8cf639c705af27d52b585b041bb8527b  site-src/site-
 0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594  site-src/site-assets/pdfjs.LICENSE.md
 e5069ac9d07d831e7f8a9388ac5b3fa20e2aba3f1e78c2574beb71e7fdbfa74b  site-src/site-assets/reader.js
 9bbd5058361e660e7555b4a6839db5275f76f9f2035d710a52484c2e49a9f299  site-src/site-assets/site.js
-08cb1b2a9685fc6408c0d0f638df8ce0816aeebcc95e60758b27af16da19a486  site-src/site-assets/style.css
+0f3c391ac65175b4217ad0a412248a7fe796acc44f8061382b6a0cc3f97909fd  site-src/site-assets/style.css
 ae929170d3b71d3f8e95dff597e4b633bcc0919520fdeb423ae901a3afcc0c21  site-src/site-assets/timeline.css
 14e52fb0279398a3bf3fbbcc9751c3e9ff2b7cde0ee96abb399e50b187a49e8e  site-src/site-assets/timeline.js
 d6d4a409f68c491c43d73131178b3d7aa43b4f3d919893feafa7effc2be13c85  site-src/spine.json
