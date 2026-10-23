@@ -1,6 +1,9 @@
-// The jumbotron is one panel. Until the reader presses Read or Teleprompt it carousels five
-// slides (the judgment with the original's screen capture, then four questions each answered
-// by a quotation: Einstein, von Neumann, Rota, Claude); hovering holds the carousel, the dots pick a slide. Read shows the
+// The jumbotron is one panel. Until the reader presses Read or Teleprompt it carousels its
+// slides (the judgment with the original's screen capture, then questions each answered by a
+// quotation); hovering holds the carousel, the dots (or the arrow keys on them) pick a slide.
+// Each slide carries its own library address (data-href) and dwell (data-dwell): a click on a
+// slide opens it, and "Read it in the library" follows the active slide, or the reflection's
+// address (the roll's data-href) while it is shown. Read shows the
 // reflection in the same panel, scrolled by hand; Teleprompt rolls it up the panel at a steady
 // pace, with pause, slower, faster and restart; Quotes goes back to the carousel. Reduced-motion
 // readers get no auto-advance and a still, scrollable text.
@@ -12,13 +15,16 @@
   var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // the carousel
-  var DWELL=[9000,9000,10000,10000,8000], cur=0, timer=0, hover=0, mode='carousel';
+  var open=jumbo.querySelector('.tp-open'), cur=0, timer=0, hover=0, mode='carousel';
+  function addr(){ return mode==='carousel'?slides[cur].getAttribute('data-href'):roll.getAttribute('data-href'); }
+  function follow(){ if(open)open.setAttribute('href',addr()); }
   function show(i){ cur=(i+slides.length)%slides.length;
     slides.forEach(function(s,k){s.classList.toggle('is-on',k===cur);});
-    dots.forEach(function(d,k){d.classList.toggle('is-on',k===cur);d.setAttribute('aria-selected',k===cur?'true':'false');}); }
+    dots.forEach(function(d,k){d.classList.toggle('is-on',k===cur);d.setAttribute('aria-selected',k===cur?'true':'false');});
+    follow(); }
   function tick(){ clearTimeout(timer); timer=0; if(still||mode!=='carousel'||hover)return;
-    timer=setTimeout(function(){show(cur+1);tick();},DWELL[cur]||9000); }
-  function setMode(m){ mode=m; jumbo.setAttribute('data-mode',m); stage.hidden=(m==='carousel');
+    timer=setTimeout(function(){show(cur+1);tick();},+slides[cur].getAttribute('data-dwell')); }
+  function setMode(m){ mode=m; jumbo.setAttribute('data-mode',m); stage.hidden=(m==='carousel'); follow();
     if(m==='carousel'){tick();} else {clearTimeout(timer);timer=0;} }
 
   // the teleprompter
@@ -35,6 +41,9 @@
 
   jumbo.addEventListener('click',function(e){
     var d=e.target.closest&&e.target.closest('[data-dot]'); if(d){ show(+d.getAttribute('data-dot')); tick(); return; }
+    // a click on the active slide, outside its own links, opens its address in the library
+    var s=e.target.closest&&e.target.closest('.slide.is-on');
+    if(s&&mode==='carousel'&&!e.target.closest('a,button')){ location.href=s.getAttribute('data-href'); return; }
     var b=e.target.closest&&e.target.closest('[data-tp]'); if(!b)return; var k=b.getAttribute('data-tp');
     if(k==='read'){ setMode('read'); playing=false; label(); stage.scrollTop=0; stage.focus({preventScroll:true}); }
     if(k==='tele'){ setMode('tele'); stage.scrollTop=0; playing=!still; label(); start(); stage.focus({preventScroll:true}); }
@@ -43,6 +52,9 @@
     if(k==='slower'&&si>0)si--; if(k==='faster'&&si<speeds.length-1)si++;
     if(k==='restart'){ stage.scrollTop=0; playing=true; label(); start(); }
   });
+  box.addEventListener('keydown',function(e){ var d=e.target.closest&&e.target.closest('[data-dot]'); if(!d)return;
+    var step=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!step)return; e.preventDefault();
+    show(cur+step); tick(); dots[cur].focus(); });
   box.addEventListener('mouseenter',function(){hover=1;hold=1;clearTimeout(timer);timer=0;});
   box.addEventListener('mouseleave',function(){hover=0;hold=0;last=0;tick();});
   stage.addEventListener('touchstart',function(){hold=1;},{passive:true});
