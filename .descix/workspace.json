@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "workspaceRoot": "/Users/essam/Code/EGPT-Evidence",
+  "workspaceRoot": ".",
   "type": "workspace",
   "env": {
     "environment": "PROD",

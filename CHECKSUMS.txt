@@ -1,6 +1,6 @@
 # SHA-256 of every file in this collection, by its path here.
 # Verify with:  shasum -a 256 -c CHECKSUMS.txt
-# 1005 files, 178720295 bytes.
+# 1005 files, 178720286 bytes.
 d5d0160f87d374c775245779bc125cc070951ef404388faf05935ed29143be28  .beast/award-policy.md
 a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarders.json
 8782667ea91fe6ff029233724658ecaf71854218d2197dddf00d8b53a5a82c79  .claude-plugin/marketplace.json
@@ -9,7 +9,7 @@ a93ed8f79e237693a2ec793187db0577a8bc8007c283a19522743cb27fef3440  .beast/awarder
 23b3b6a6fd68b3b146dab43c5b740cb5a234cb8dbedb26721f6f549a29db9a3a  .descix/manifests/site.json
 dabe8dc137684fdc9fe48c72bd98a6b7b24d66168c20eab878f6e8d64a664c45  .descix/rollback/egpt-site-index-2026-09-27.html
 85d6730f680648936deed892996418d4ca00a5a58dc87d8a5d51446db4c00095  .descix/rollback/egpt-site-index-2026-10-02.html
-ee18dbf31c89ef874896f5665efeb5622a16edb89b7f0f7c4439344fe21599b2  .descix/workspace.json
+2dfc8751fa3bbe8752f0499af1c08a6afe71f33a92a6afb033c83ba0bc0e8a4d  .descix/workspace.json
 332807933b94a3b6fad9d5502bdf5a6b86e893d4ea4d16ec5d1b5847e3149d93  .gitattributes
 d6353bc622e37062efd206c9f222fb54e446af7959150f429ab9e8afc7c22a71  .github/ISSUE_TEMPLATE/bounty.md
 acd2082c085fb44b5a986671a63ac8323b79e41aba9b2d2ead5dcbe03342fdbd  .github/workflows/pages.yml
@@ -706,7 +706,7 @@ cb231d838706ed57b5dd0f297cf6ba94d425c9b335342fafbfa28f80500c5eb7  16_CYBERNETICS
 3ca782372f94a220e026b5ffbc026094dffcb318b2064d5c2181894d8869652f  16_CYBERNETICS/robotic_imagination_figures/figure-6.png
 71d4e9c16e87484d90804e754bfbde658e3ff5aa51d95601051d1f499b2d6f36  16_CYBERNETICS/robotic_imagination_figures/figure-7-poster.jpg
 70d7011054871b6453a73c4f9465ada215b4398802e8341e47372d4e41681939  16_CYBERNETICS/robotic_imagination_figures/figure-7.mp4
-6277d2c4e7a50b96245ec5987316799d432488a2410d1da508112878e98db97f  CLAUDE.md
+316879c1af9d6da9255ab2d8fe61544bab77fb9b02beb85b306773abc274bab3  CLAUDE.md
 e255a863ac2fcf159f52a96f130cb13932760fa1ecce2ae0cfa1d90786f1ba88  Copyright_Fair-use_Memo.md
 a7fb6cbe1a3051094d583ddf297a31149475ef22599efcb527829898080c2c8b  README.md
 62747b95c0e7d6bf7f322c2401938be452c8d0964b84228799d279d8c277c16f  RECORD_INDEX.md
