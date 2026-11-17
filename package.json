@@ -1,6 +1,7 @@
 {
   "name": "egpt-evidence",
   "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "build:site": "node scripts/generate-site.js",
     "render": "node scripts/render.mjs"
