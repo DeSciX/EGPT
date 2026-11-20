@@ -14,13 +14,13 @@ committed. Stills in `cowork-timeline/`.
 | `journal/2026-10/the-line-of-succession.md`, `journal/2026-10/timelines/rota-succession.json`, `…/rota-succession.questions.json` | The ledger as an interactive article (see §4). |
 | `scripts/ledger-to-timeline.js`, `site-src/site-assets/timeline.js`, `timeline.css` | The converter and the component. |
 
-## 2. For the local agent: move the research into EGPT-research
+## 2. For the local agent: move the research into the research repository
 
 The author's instruction: "include instructions in a handback to the local agent to move the
 items into the EGPT-Research repo."
 
 1. Move `scratch/research/rota-succession-evidence-ledger.md` and `scratch/research/ledger/` into
-   EGPT-research, under the place that repository keeps evidence work (it has `evidence/` and
+   the research repository, under the place that repository keeps evidence work (it has `evidence/` and
    `quotations/`; you know which). Move the fifteen briefs with them, in a subfolder marked as
    superseded working papers.
 2. The timeline's two JSON files and the article stay in EGPT-Evidence under `journal/`; the
@@ -31,7 +31,7 @@ items into the EGPT-Research repo."
    left by the loss of von Neumann", Waterman on the Director's Fellows, the 1977 abstract's
    sentence on computational complexity, Klara's preface on the Silliman invitation, Rota on
    Walter Reed, the lattice passage at *Indiscrete Thoughts* p. 52, Schwartz on the ONR contract)
-   enter through the author's corpus pipeline in EGPT-research, each checked against the page.
+   enter through the author's corpus pipeline in the research repository, each checked against the page.
 
 ## 3. For the local agent: create the standing research assistant
 
@@ -48,7 +48,7 @@ pattern. Two sections are left for you, marked `LOCAL AGENT`:
   transcription is checked against the page image.
 - **Where things go**: the paths you chose in step 2.
 
-Install it where EGPT-research keeps its agents (`.claude/agents/`, beside
+Install it where the research repository keeps its agents (`.claude/agents/`, beside
 `quotation-researcher.md` and `evidence-curator.md`), and add a pointer in that repository's
 `CLAUDE.md`. If `quotation-researcher` already covers part of this, say which defers to which.
 

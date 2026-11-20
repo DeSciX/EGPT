@@ -77,7 +77,7 @@ tags and notes).
 
 ## Where things go
 
-<!-- LOCAL AGENT: fill in the paths chosen in EGPT-research for ledgers, briefs, transcriptions
+<!-- LOCAL AGENT: fill in the paths chosen in the research repository for ledgers, briefs, transcriptions
      and the sources-still-to-pull list. -->
 
 ## Working pattern

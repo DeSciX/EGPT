@@ -189,7 +189,7 @@ Proposed for the skill text (the seat's, the author's pass): the assistant cites
    shelf has no guide page until it exists.
 7. **The reader's own footer** on a cover ("About this book") is Cowork's wording.
 8. (Housekeeping, done.) A read-only `git status` from the sandbox left an empty `.git/index.lock`
-   behind; it was removed, as were the two staging archives Cowork made under `~/Code`. Nothing
+   behind; it was removed, as were the two staging archives Cowork made under the local code folder. Nothing
    else outside `site-src/`, `scripts/generate-site.js` and this hand-off's folder was written.
 
 ## Copy that is a draft
