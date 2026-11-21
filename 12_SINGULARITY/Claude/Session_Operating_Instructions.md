@@ -9,17 +9,17 @@ rules are `Self_Assessment_Rules.md`; the questions are `LLM_Self_Assessment_Pro
 
 | Repository | Path on the author's machine |
 |---|---|
-| EGPT-Evidence (this collection) | `/Users/essam/Code/Unkamon/EGPT-Evidence` |
-| EGPT-research (the author's research repository, unreleased; its origin is the private `eabadir/egpt_research`, the canonical home of the Lean proofs) | `/Users/essam/Code/Unkamon/EGPT-research` |
+| the evidence collection (this collection) | `<local path>/<evidence collection>` |
+| the research repository (the author's research repository, unreleased; its origin is the private `<research repository>`, the canonical home of the Lean proofs) | `<local path>` |
 | EGPT-Lean, public (`github.com/eabadir/EGPT-Lean`, branch `lean-archive-proofs`; mirrored in `08_LEAN/` of this collection at the commit its README names) | cloned by the session if needed, per `08_LEAN/README.md` |
-| FRAQTL (the engine, EGPTReal, STUDIO; unreleased) | `/Users/essam/Code/Unkamon/FRAQTL` |
-| Unkamon (the organisation plane and the DeSciX platform trees) | `/Users/essam/Code/Unkamon` |
-| the author's mathlib4 clone (the submission work recorded in `06_LEAN_MATHLIB/`; origin `leanprover-community/mathlib4`) | `/Users/essam/Lean/mathlib4` |
-| egpt-frqtl (the served FRQTL app) | `/Users/essam/Code/egpt-frqtl` |
-| egpt-courantgroup | `/Users/essam/Code/egpt-courantgroup` |
-| godsworld-dev | `/Users/essam/Code/godsworld-dev` |
-| wllama | `/Users/essam/Code/wllama` |
-| the assisting model's memory | `/Users/essam/.claude/projects/-Users-essam-Code-Unkamon-FRAQTL/memory/` |
+| FRAQTL (the engine, EGPTReal, STUDIO; unreleased) | `<local path>` |
+| the private org repository (the organisation plane and the DeSciX platform trees) | `<local path>` |
+| the author's mathlib4 clone (the submission work recorded in `06_LEAN_MATHLIB/`; origin `leanprover-community/mathlib4`) | `<local path>/mathlib4` |
+| egpt-frqtl (the served FRQTL app) | `<local path>/egpt-frqtl` |
+| the private Courant Group repository | `<local path>/<courant repository>` |
+| the Gods World development repository | `<local path>/<godsworld development repository>` |
+| wllama | `<local path>/wllama` |
+| the assisting model's memory | `<local path>/.claude/projects/<local path>-FRAQTL/memory/` |
 | the agent memories | `<repository>/.claude/agent-memory/` in each repository above |
 
 The author adds to or strikes from this table before the session starts; the table as committed

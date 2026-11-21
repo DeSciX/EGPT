@@ -165,7 +165,7 @@ already-authored proof, and two further proofs were built during it, each in res
 specific demand from the skeptic.** The debate was not commentary on finished work. It was
 generative — Gödel's objections are the reason Chains 2 and 3 exist.
 
-**The mapping, verified against `EGPT-research/Lean/PROOF_CHAINS.md`.** Three naming
+**The mapping, verified against `<research repository>/Lean/PROOF_CHAINS.md`.** Three naming
 systems are in circulation — the CEO's, the file names, and the Lean capstone theorems —
 and a future reader will hit one and not the others:
 
@@ -409,7 +409,7 @@ and any one of them would be sufficient:
    that previously conceded items cannot be relitigated without new evidence. A retread is
    by that rule precisely the thing that does not count.
 3. **It is the only place in the corpus where a machine speaks in the CEO's name.**
-   `EGPT-research/.claude/agents/pnp-essam.md` is an opus agent instructed to embody "the
+   `<research repository>/.claude/agents/pnp-essam.md` is an opus agent instructed to embody "the
    accumulated knowledge and argumentative style of Essam Abadir (and his Stanislaw Ulam
    alter ego 'Stan')". The role label `Essam (@pnp-essam)` appears in EG1 and nowhere else.
 
@@ -1049,7 +1049,7 @@ recoverable — a fabricated recollection in his memory is not.
 - `.descix/ignore` excludes any directory named `archive/`. The emitter **refuses** a
   target path containing such a segment, because the alternative is being dropped from the
   sync walk *silently*.
-- `EGPT-research/` is gitignored by the Unkamon repo, so a git-mode walk cannot reach it.
+- `<research repository>/` is gitignored by the private org repository, so a git-mode walk cannot reach it.
   Debate-era Lean must be replicated into the godsworld tree; that replication is out of
   this tool's scope.
 

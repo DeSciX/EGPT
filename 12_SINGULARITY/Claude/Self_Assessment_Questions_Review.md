@@ -130,7 +130,7 @@ the consequence the author asserts is Question 1(b) and 1(c), for the session.
 > clear.
 > - more or less for on 6 is accepted
 > - The premise should have settled this. I had ChatGPT put together a quick report on objective
-> data trends: /Users/essam/Code/Unkamon/EGPT-Evidence/12_SINGULARITY/Singularity_Concern_Report.md
+> data trends: `<local path>/<evidence collection>`/12_SINGULARITY/Singularity_Concern_Report.md
 >
 > Finally, and I think this is fair to ask because it is being stated up-front so that the model
 > knows it. The premise is that Singularity is the most important event concerning people now

@@ -154,7 +154,7 @@ Recorded here so a cold-start agent does not re-litigate them.
 | D1 | Target theorem = `Real.exp 1 > 2` | Simplest classical-over-ℝ theorem with a bit-exact rational witness. Verifiable by hand. |
 | D2 | Realizer registry (Coq `Extract Constant`) — NOT universal Beth-collapse | `AbadirCompletenessTheorem` is scope-restricted and not load-bearing for per-constant realizers. User preference: engineering over theorem-proving. |
 | D3 | C runtime = roll our own on top of `egpt_num` | Bit-exact, BigInt-backed, JS-parity-tested. No iRRAM/MPFR dependency. |
-| D4 | FFI lives in public FRAQTL `egpt_num` crate | Additive `#[no_mangle]` shim; no private math logic exposed. |
+| D4 | FFI lives in the engine's integer number crate (`egpt_num`) | Additive `#[no_mangle]` shim; no private math logic exposed. |
 | D5 | Branch for FFI work = `feat/egpt-num-cffi` in FRAQTL | Independent from Lean extraction branch so C-ABI can ship separately. |
 | D6 | Branch for Lean extraction = `feat/extraction-prototype` in the research repository | Keeps Lean-side deliverables private per user instruction. |
 | D7 | Phase 0 first (runtime alone, ~1–2 hrs), Phase 1 second (Lean meta-program) | Prove runtime half standalone before wiring extraction on top. |

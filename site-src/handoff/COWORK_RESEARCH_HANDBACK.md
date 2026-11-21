@@ -5,7 +5,7 @@ committed. Stills in `cowork-timeline/`.
 
 ## 1. What is on disk
 
-| Path (EGPT-Evidence) | What it is |
+| Path (the evidence collection) | What it is |
 |---|---|
 | `scratch/research/rota-succession-evidence-ledger.md` | The evidence ledger for the circumstantial case on Rota and von Neumann's succession: about 510 dated facts in five threads (A von Neumann, Courant, funding, the last year; B Fine Hall, Church, Nash, Schwartz; C Los Alamos, Ulam, Metropolis, 1979; D online pulls; E Yale, the Silliman Lectures, Walter Reed, lattice theory, co-presence 1950–59), each with its quotation and source, and a "Sources still to pull" list closing each thread. |
 | `scratch/research/ledger/A…E-*.md` | The five threads as separate files. |
@@ -17,13 +17,13 @@ committed. Stills in `cowork-timeline/`.
 ## 2. For the local agent: move the research into the research repository
 
 The author's instruction: "include instructions in a handback to the local agent to move the
-items into the EGPT-Research repo."
+items into the research repo."
 
 1. Move `scratch/research/rota-succession-evidence-ledger.md` and `scratch/research/ledger/` into
    the research repository, under the place that repository keeps evidence work (it has `evidence/` and
    `quotations/`; you know which). Move the fifteen briefs with them, in a subfolder marked as
    superseded working papers.
-2. The timeline's two JSON files and the article stay in EGPT-Evidence under `journal/`; the
+2. The timeline's two JSON files and the article stay in the evidence collection under `journal/`; the
    ledger is their source, so record the ledger's new path in
    `journal/2026-10/timelines/rota-succession.questions.json` if you want regeneration to be one
    command.

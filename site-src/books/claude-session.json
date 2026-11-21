@@ -300,7 +300,7 @@
      "message": 2,
      "who": "CLAUDE",
      "href": "12_SINGULARITY/Claude/Cowork_Session_10.01.2026.html#m2",
-     "opens": "**Housekeeping first, because it touched your disk.** A read-only `git status` I ran in EGPT-Evidence left an empty `.git/index.lock` behind"
+     "opens": "**Housekeeping first, because it touched your disk.** A read-only `git status` I ran in the evidence collection left an empty `.git/index.lo"
     },
     {
      "message": 3,
@@ -450,7 +450,7 @@
      "message": 27,
      "who": "ME",
      "href": "12_SINGULARITY/Claude/Cowork_Session_10.01.2026.html#m27",
-     "opens": "On the physics side: I believe the EGPT-Evidence repo has multiple investigations and recitations of where von Neumann explicitly aligned wi"
+     "opens": "On the physics side: I believe the evidence collection repo has multiple investigations and recitations of where von Neumann explicitly alig"
     },
     {
      "message": 28,
