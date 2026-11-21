@@ -1,8 +1,8 @@
 {
  "_note": "DRAFT for the author. The five questions, their wording and colours, and the rules that tag facts are Cowork's first pass from the author's list of 3 October 2026; change any of it. `overrides` sets a fact's tags by hand; `notes` are the author's annotations set into the timeline at a year.",
  "id": "rota-succession",
- "ledger": "../EGPT-research/evidence/research/rota-succession/ledger.md",
- "_ledger": "The ledger this timeline is generated from (moved into EGPT-research on 3 October 2026): node scripts/ledger-to-timeline.js <ledger> journal/2026-10/timelines/rota-succession.questions.json journal/2026-10/timelines/rota-succession.json",
+ "ledger": "evidence/research/rota-succession/ledger.md in the research repository",
+ "_ledger": "The ledger this timeline is generated from (moved into the research repository on 3 October 2026): node scripts/ledger-to-timeline.js <ledger> journal/2026-10/timelines/rota-succession.questions.json journal/2026-10/timelines/rota-succession.json",
  "title": "The Line of Succession",
  "dek": "From Fine Hall to the Director's Office: where von Neumann and Rota were, who they worked with, and who paid.",
  "author": "Essam Abadir",

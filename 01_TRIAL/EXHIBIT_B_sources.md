@@ -8,7 +8,7 @@ under them serve all three.
 - **Exhibit A**: the passage is in `EXHIBIT_A_report.md`, in this folder.
 - **opening**: the passage is quoted in `OPENING_STATEMENT.md`, which is not evidence; where a passage
   is marked this way, the words are the record's and the opening is where they appear in this folder.
-- **collection**: the passage is in neither. It is held elsewhere in EGPT-Evidence, at the file named,
+- **collection**: the passage is in neither. It is held elsewhere in the evidence collection, at the file named,
   or in the quotation corpus at `05_CORPUS/`, and is quoted here from there.
 
 Nothing quoted here has been altered. Page numbers for Ulam's memorial are the printed pages of

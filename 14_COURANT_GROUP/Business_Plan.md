@@ -52,8 +52,8 @@ The DeSciX model separates two audiences.
   licensor, and Courant Group's ongoing royalty fraction returns to the community as public
   buy-backs.
 
-The author states the model in one sentence (Essam Abadir, 28 September 2026, record Unkamon
-8f20698):
+The author states the model in one sentence (Essam Abadir, 28 September 2026, record 8f20698
+in the private org repository):
 
 > "The model is BOTH token-paid license qualification to purchase from Courant Group (i.e. similar to proof of stake by the licensee paid to the licensor - this creates demand for the underlying contributions to the open core) PLUS the ongoing royality fraction payment by Courant Group in public buy backs."
 

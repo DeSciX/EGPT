@@ -47,7 +47,7 @@ the interpreting.
    contract footnotes on papers, finding aids, oral histories; then standard biographies.
 9. The library's own rule still holds for the library: a quotation that enters the corpus is
    verbatim and filed with its source. The journal is editorial and is edited; see
-   `EGPT-Evidence/site-src/handoff/COWORK_JOURNAL_PLAN.md` §1a.
+   `<evidence collection>/site-src/handoff/COWORK_JOURNAL_PLAN.md` §1a.
 
 ## The ledger
 
@@ -60,7 +60,7 @@ One markdown file per case, threads as `#` headings, each thread a table:
 then `## Additional facts found` (same columns) and `## Sources still to pull`. Put the year
 first in Date so the ledger sorts into a timeline. The journal's timeline is generated from the
 ledger: `node scripts/ledger-to-timeline.js <ledger.md> <questions.json> <out.json>` in
-EGPT-Evidence (the questions file holds the author's questions, colours, tag rules, hand-set
+the evidence collection (the questions file holds the author's questions, colours, tag rules, hand-set
 tags and notes).
 
 ## Scanning primary sources

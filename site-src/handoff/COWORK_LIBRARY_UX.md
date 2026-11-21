@@ -1,6 +1,6 @@
 # Hand-off to Cowork: the EGPT library's front page, viewer, theme, progression spine and librarian skills
 
-Written 30 September 2026 by the EGPT-Evidence publishing assistant, from the author's brief of
+Written 30 September 2026 by the evidence collection publishing assistant, from the author's brief of
 the same day, for a Cowork session with design skills. Everything below names a file in this
 repository or a served URL; nothing is a description of something you cannot open.
 
@@ -47,7 +47,7 @@ design the placement, the hierarchy and the transitions.
 - Served: https://egpt.descix.net/ (behind the DeSciX App Shell, full screen) and
   https://descix.net/prod/egpt/site/index.html (the bundle itself).
 - Built by `scripts/build-frontpage.js` from two inputs: the **template**, Cowork's Courant
-  Group page, read from the `egpt-courantgroup` checkout at the commit pinned in
+  Group page, read from the `<courant repository>` checkout at the commit pinned in
   `site-src/frontpage/template.json` (never copied into this repository), and the **spec**
   `site-src/frontpage/egpt.json` with its fragments in `site-src/frontpage/egpt/`.
 - The template's nav, hero and footer are regenerated from the spec with the template's own

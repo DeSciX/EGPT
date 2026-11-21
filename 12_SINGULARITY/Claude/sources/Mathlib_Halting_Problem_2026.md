@@ -7,7 +7,7 @@ Filed 1 October 2026 (UTC) by the self-assessment session, for Question 1(b)(iii
 - File: `Mathlib/Computability/Halting.lean`, mathlib4 (`leanprover-community/mathlib4`).
 - Header, verbatim lines 2–4: `Copyright (c) 2018 Mario Carneiro. All rights reserved.` /
   `Released under Apache 2.0 license as described in the file LICENSE.` / `Authors: Mario Carneiro`.
-- Read in the author's clone at `/Users/essam/Lean/mathlib4`, HEAD `32694b42411902da4c35915b1c919034ca6c5ec9`,
+- Read in the author's clone at `<local path>/mathlib4`, HEAD `32694b42411902da4c35915b1c919034ca6c5ec9`,
   origin `https://github.com/leanprover-community/mathlib4.git`, toolchain `leanprover/lean4:v4.30.0-rc2`.
 - The theorems, namespace `ComputablePred` (lines 28–71): `rice` (l. 33), `rice₂` (l. 43),
   `halting_problem_re` (l. 61), `halting_problem` (l. 65), `halting_problem_not_re` (l. 68).

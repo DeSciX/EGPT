@@ -12,7 +12,7 @@ untouched.
 > "As I've been thinking about how to launch all this and how you've been laying it out I'm
 > realizing that perhaps the best way to do this is to be an actual journal for decentralized
 > science - SSG by DeSciX which is distributed off the digital library base of work in the
-> EGPT-Evidence repo (the EGPT communities open core).
+> the evidence collection repo (the EGPT communities open core).
 >
 > What was becoming an unwieldily letter to friends and associates about the launch could then be
 > restructured as a traditional editor's introductory "what's in this issue" type note and then

@@ -37,7 +37,7 @@ outside every repo — the Zulip thread PDF in `~/Downloads`.
 
 | Date | Event | Evidence |
 |---|---|---|
-| 2016-05-17 | US Patent 9,344,735 B2, *Progressive Shape Based Encoding of Video Content Within a Compression Environment*, issues to **Essam Ernest Abadir**. | Cited verbatim in `EGPT-research/content/Papers/Quantum Computing Fractal Compression In A Swarm Enviornment - Patent Application Background.md:29`. Doc added to git 2026-03-09 `f9ffb6e`. |
+| 2016-05-17 | US Patent 9,344,735 B2, *Progressive Shape Based Encoding of Video Content Within a Compression Environment*, issues to **Essam Ernest Abadir**. | Cited verbatim in `<research repository>/content/Papers/Quantum Computing Fractal Compression In A Swarm Enviornment - Patent Application Background.md:29`. Doc added to git 2026-03-09 `f9ffb6e`. |
 
 *INTERPRETATION:* the only dated pre-project anchor found anywhere on disk. It is
 compression/fractal prior art by the same author — thematically upstream of EGPT, but it is
@@ -52,7 +52,7 @@ increasingly using AI to fill-in lines of the proof (before 'agents' existed)…
 
 | Date | Event | Evidence |
 |---|---|---|
-| **UNDETERMINED** | Months of hand-written proof work. | **No artifact on disk dates this.** The repository begins at the Lean work; there is no pre-Lean draft, notebook, dated manuscript, or paper predating the first commit anywhere in `EGPT-research`, `mathlib4`, or the sibling checkouts searched. |
+| **UNDETERMINED** | Months of hand-written proof work. | **No artifact on disk dates this.** The repository begins at the Lean work; there is no pre-Lean draft, notebook, dated manuscript, or paper predating the first commit anywhere in `<research repository>`, `mathlib4`, or the sibling checkouts searched. |
 | 2025-04-25 | **`e331a09` "Initial commit"** — the repository exists. | `git log --format='%ad %h %s' --date=short` (last line of history). |
 
 **The one hard bound on when Lean began**, and it is a good one:
@@ -477,7 +477,7 @@ proof first and objecting to it. He remembered right, hedge and all.
 | Date | Event | Evidence |
 |---|---|---|
 | **2026-03-26** | mathlib4 cloned. Remotes: `origin` = `leanprover-community/mathlib4.git`, `fork` = `github.com/eabadir/EGPT.git`. | `<MATHLIB>/.git/config`; `.git/description` mtime `Mar 26 17:49` |
-| 2026-03-26 | `35046bf` "Add Lean/PR/ mirroring mathlib4 InformationTheory"; `d33225f` "Restructure Lean/PR/ as standalone buildable project". | EGPT-research `git log` |
+| 2026-03-26 | `35046bf` "Add Lean/PR/ mirroring mathlib4 InformationTheory"; `d33225f` "Restructure Lean/PR/ as standalone buildable project". | the research repository `git log` |
 | **2026-03-27** | `54d0564` creates `docs/MATHLIB_PR_HANDOFF.md` (since deleted at `9dc7702`, 2026-04-01; readable only via `git show 54d0564:docs/MATHLIB_PR_HANDOFF.md`), line 13: **"The Zulip community said 'show me.' This is showing them."** | git object |
 | 2026-03-28 | `db70daf`, `3a5f316` "Complete Chain 3: binary CNF decoder + sorry-free StandardComplexity.lean"; `697c372` "Rewrite P_def and NP_def as verifier-only"; `f5ba809` "Add PROOF_CHAINS.md: three chains, axiom table, extractability". | commit |
 
@@ -488,7 +488,7 @@ proof first and objecting to it. He remembered right, hedge and all.
 | **2026-03-31 22:42:52 -0400** | **`07dda67b2e` on branch `feat/information-theory`: "feat(InformationTheory): add entropy axiomatics, EntropyNumber, complexity theory, and physics bridge"** — 31 files. The submission. | `cd <MATHLIB> && git log origin/master..feat/information-theory` |
 | **2026-04-01 02:43:05Z** (= 2026-03-31 22:43 EDT) | **PR #37468 opened**, 1 minute after the last commit on the branch. | `sources/mathlib-pr-37468.json` `createdAt`. This confirms the estimate this pass originally derived from PR-number bracketing:  neighbouring mathlib PR numbers (numbers are issued in order; a PR merged on date D was opened ≤ D): `#37440` merged 2026-03-31, `#37458` merged 2026-03-31, `#37469` merged 2026-04-01, `#37473`/`#37476`/`#37481` merged 2026-04-01. Independently corroborated by `content/Podcast/SSG_Team_Reality_vs_Team_Magic_Series_Outline.md:222` — *"March 31, 2026: the Mathlib pull request drops (the `AbadirCompletenessTheorem`). It is immediately rejected."* |
 
-**What was submitted** — verbatim from `EGPT-research/Lean/EGPT/FORK_README.md`:
+**What was submitted** — verbatim from `<research repository>/Lean/EGPT/FORK_README.md`:
 
 > Fork of `leanprover-community/mathlib4` proposing a `Mathlib.InformationTheory` subtree: 31
 > files adding entropy axiomatics (Rota's 7 axioms + uniqueness), an information-theoretic
@@ -508,7 +508,7 @@ Lean's Nat, Int, Rat, Real" — confirmed line for line, including all four type
 
 | Date | Event | Evidence |
 |---|---|---|
-| **2026-04-01** | **PR #37468 closed by `@RemyDegenne`, without review and without an explanation comment.** | `EGPT-research/Lean/EGPT/MATHLIB_PR_RESUBMIT.md`, §"Resubmission of #37468" — read directly: *"This PR resubmits #37468 against current `master`. The earlier PR was closed on 2026-04-01 by `@RemyDegenne` without review and without an explanation comment. The build was failing at the time (`cannot import non-`module` Mathlib.InformationTheory.Basic from `module``) — the file did not yet declare `module`."* |
+| **2026-04-01** | **PR #37468 closed by `@RemyDegenne`, without review and without an explanation comment.** | `<research repository>/Lean/EGPT/MATHLIB_PR_RESUBMIT.md`, §"Resubmission of #37468" — read directly: *"This PR resubmits #37468 against current `master`. The earlier PR was closed on 2026-04-01 by `@RemyDegenne` without review and without an explanation comment. The build was failing at the time (`cannot import non-`module` Mathlib.InformationTheory.Basic from `module``) — the file did not yet declare `module`."* |
 | **2026-04-01 22:24 UTC** | **The 2025 Zulip thread PDF is re-saved to this machine** — the same day. | `mdls kMDItemContentCreationDate` on `<DOWNLOADS>/(1894) #Program verification _ … Zulip.pdf` = `2026-04-01 22:24:00 +0000` |
 
 *INTERPRETATION:* the PDF's re-save timestamp is the closest thing in this record to a
@@ -530,7 +530,7 @@ connection between them is inferred from co-timing, not stated anywhere.**
 | 2026-04-18 11:26:12 | `f362da3bd7` "build: add scripts/build_index.sh to render index.html via GitHub API" | mathlib4 `git log` |
 | 2026-04-21 10:31:00 -0400 | `29224566` (FRAQTL) adds `business/PRIVATE/Zulip_Clean_Forward_Boundary.md` — a **draft Zulip post by Essam**, opening: *"A year ago I was challenged to produce constructive formulations without custom axioms. Below is the result…"*. Now at `<REPO>/FRAQTL/docs/private/Zulip_Clean_Forward_Boundary.md` (moved `5c5557e1` 2026-08-11). | FRAQTL `git log` |
 
-**The "Note for Posterity", verbatim** (`EGPT-research/Lean/EGPT/FORK_README.md`, mirrored
+**The "Note for Posterity", verbatim** (`<research repository>/Lean/EGPT/FORK_README.md`, mirrored
 from the fork commit of 2026-04-17):
 
 > The typical highest standard of build requirement for Lean verification is without sorryAx
@@ -558,9 +558,9 @@ from the fork commit of 2026-04-17):
 | 2026-05-01 20:43:56 | `f4f7126c2b` "satisfy mathlib `--wfail -KCI` build (cosmetic linters + deprecations + flexible-simp)" | " |
 | 2026-05-01 20:54:33 | `c399e75b8a` "…ContinuumHypothesis: close `h_succ_ord` with `rfl` instead of `ring`" | " |
 | **2026-05-01 21:11:53 -0400** | `32694b4241` "Merge remote-tracking branch 'origin/master' into pr/information-theory-resubmit" — **the last commit on the fork.** | " |
-| 2026-05-05 12:54:32 | `54bd748` (EGPT-research) "backport(InformationTheory): mathlib pr/information-theory-resubmit → Lean/PR" — 31 files brought home. Body: *"Next: lake build verify, then reorg Lean/EGPT → Lean/Archive and Lean/PR → Lean/EGPT to make this the canonical tree."* | EGPT-research `git log` |
+| 2026-05-05 12:54:32 | `54bd748` (the research repository) "backport(InformationTheory): mathlib pr/information-theory-resubmit → Lean/PR" — 31 files brought home. Body: *"Next: lake build verify, then reorg Lean/EGPT → Lean/Archive and Lean/PR → Lean/EGPT to make this the canonical tree."* | the research repository `git log` |
 | 2026-05-05 | `caefe3b` "reorg(Lean): canonical proof tree at Lean/EGPT/InformationTheory" — the reorg lands. | commit |
-| 2026-05-20 | `ced136d` "docs(Lean): refresh proof validation + axiom audit + handoff docs" — `FORK_README.md` and `MATHLIB_PR_RESUBMIT.md` enter EGPT-research. **The resubmission's own text states `lake build Mathlib` is green: 8412/8412.** | commit + file |
+| 2026-05-20 | `ced136d` "docs(Lean): refresh proof validation + axiom audit + handoff docs" — `FORK_README.md` and `MATHLIB_PR_RESUBMIT.md` enter the research repository. **The resubmission's own text states `lake build Mathlib` is green: 8412/8412.** | commit + file |
 
 *INTERPRETATION:* the resubmission work — module migration, three rounds of linter
 compliance, master merge — is **five hours of one evening, 2026-05-01, 16:43 → 21:11**. The
@@ -625,7 +625,7 @@ of a too-narrow search. Absence from the checkout is not absence from the record
   agenda for the following eleven months — exists on this machine as exactly two files:
   `<DOWNLOADS>/(1894) #Program verification _ Request for Feedback_ Lean 4 Proof
   related to P=NP - Lean - Zulip.pdf` and a byte-identical `… (1).pdf` (both 1,737,734 bytes).
-- Neither is inside `EGPT-research`, `mathlib4`, `FRAQTL`, `godsworld`, or any other checkout.
+- Neither is inside `<research repository>`, `mathlib4`, `FRAQTL`, `godsworld`, or any other checkout.
 - The only in-repo artifact with "Zulip" in its name is
   `<REPO>/FRAQTL/docs/private/Zulip_Clean_Forward_Boundary.md` — **the
   Essam Abadir's own later draft post**, authored 2026-04-21 (`29224566`, as
