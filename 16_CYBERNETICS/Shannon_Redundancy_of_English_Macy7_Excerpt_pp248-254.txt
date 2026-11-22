@@ -1,0 +1,252 @@
+SOURCE EXCERPT — Q9(i)
+Claude E. Shannon, The Redundancy of English, Seventh Macy Conference, March 1950; published 1951.
+Reprinted in Claus Pias (ed.), Cybernetics: The Macy Conferences 1946–1953: The Complete Transactions (2003/2016).
+Original Transactions pp.123–129 and subsequent paragraph; reprint pp.248–252. Additional excerpt: reprint p.254, ideal predictor.
+Local source: 16_CYBERNETICS/Pias_Cybernetics_Macy_Conferences_1946-1953_Complete_Transactions_2016.pdf
+PDF SHA256: 1c8d75f48d1c36c416ef6ee0f63b710d1e1c8de61dfbda3a449dae12a371d082
+Extracted using pdftotext -layout; no wording corrected. Read 2026-10-30.
+
+»recognition.« Flashed words may register »organically« without specific visual recog-
+nition. A number of experiments have shown that emotionally toned words flashed
+tachitoscopically may arouse a specific bodily reaction, as indicated by a psychogal-
+vanic response; nevertheless the subject is unable to indicate the word flashed
+[McClary, R. A., and Lazarus, R. S.: Autonomic discrimination without awareness. J.
+Person. 18, 171 (1949)].
+   This situation is probably very similar to auditory speech. If you want to analyze the
+way people hear word patterns with reduced cues, we might take into account differ-
+ent levels of hearing. This might have a bearing on training to hear distorted speech.
+Licklider: Who were these people who responded to words they could not under-
+stand?
+Werner: These are normal subjects and the words used are, for instance, nasty words.
+Licklider: Why could they not understand them?
+Werner: They would not consciously recognize these words.
+Licklider: Normal people? |                                                                 [116]
+Werner: Normal people.
+Pitts: Why not?
+Licklider: Why could they not recognize the words?
+Werner: Because they flashed on too quickly. We are talking about the tachistoscopic
+method.
+Licklider: We are worried a little about the word »cannot« in that connection. Did
+not?
+Werner: »Did« not recognize under these conditions.
+Klüver: Concerning the time factor in emotions, some interesting data may be
+obtained by studying the reactions of monkeys to motion-picture films. I once used
+this technique in investigating the emotional behavior of monkeys belonging to differ-
+ent species [Klüver, H.: Behavior Mechanisms in Monkeys. Chicago: Univ. of Chi-
+cago Press (1933)]. The results were particularly enlightening in the case of a female
+Cebus monkey which responded in a variety of ways and always sat on my lap while
+looking at the films. The appearance of a python in one of the pictures always led to
+signs of extreme fear: she uttered various sounds, she defecated, urinated, and quickly
+disappeared into a corner of the laboratory from which the picture could not be seen.
+However, these fear reactions occurred only at certain speeds of projection. In other
+words, this technique may be used to demonstrate that emotional behavior is a func-
+tion of a certain number of frames per second.
+Stroud: Perhaps I am a little presumptuous here. Much of this discussion carries the
+implication that somehow, of necessity, a meaning comes from being presented with
+any stimulus pattern, and that somehow or other some necessary meaning should fol-
+low from it. The thing I wish to suggest is that any meaning is of the order of a
+hypothesis which can be tested on the basis of the available information. The length of
+time required to verify or reject or to examine a family of hypotheses is primarily a
+function of the number of alternatives, their degree or organization, and everything
+else. Thus, as Dr. Licklider pointed out, in a thousand-word vocabulary the probabil-
+ity, the amount of information required to accept or reject the hypothesis that this is a
+
+        2 44                               CYB ER NET I CS 1 9 5 0
+
+
+        particular word out of the thousand, is considerably greater than if the number of
+        alternatives is only fifty. I know that some time ago, and I am sure Dr. Klüver and oth-
+        ers could verify it, a great deal of experimentation was done on the tachistoscope pre-
+        sentations of words.You were merely asked if it was a certain word or not. Under these
+        circumstances very minimum amounts of information are required to accept or reject
+[117]   the typical. |
+           Another experiment that comes to mind is the case of a very low-level presentation
+        of the outline drawing of a banana.
+        Wiener: Oh, yes.
+        Stroud: If you present this to the subject, he does not see anything; but if you ask
+        him in which orientation the banana is, his responses as to whether it is horizontal or
+        vertical are well beyond the chance level. So in all of these considerations I prefer to
+        look at the problem as one of the amount of information required to accept some
+        hypothesis, as belonging to some hypothesis system, and to discard altogether the
+        notion that any response in the central nervous system of the man necessarily follows
+        from any particular stimulus configuration.
+        Frank: May we make one amendment? What I was suggesting was not a meaning as
+        conveyed by the stimulus.
+           What I was trying to suggest for consideration was that the individual listening or
+        hearing puts meaning into those situations out of his own past experience, which is a
+        little different process.
+        Stroud: Let us put it this way: He will never test hypotheses, ordinarily, of which he
+        is not here and now the master. To that extent you can say he puts the meaning there.
+        Frank: Yes.
+        Stroud: He will attempt to test and verify hypotheses of which he is the master on
+        the basis of the configuration of the sensory input he has available, but nothing neces-
+        sarily follows from any sensory input.
+        Frank: What I wanted to reemphasize was that the individual himself puts the mean-
+        ing into those sensory inputs and that therefore we get a clue to the great diversity of
+        what people hear out of the same speech.
+        Hutchinson: If he has many hypotheses, he will jam a lot more than if he is the mas-
+        ter of only one or two.
+        Stroud: Yes, in a sense. There are other things about hypotheses, the flexibility of this
+        indexing. A typical sort of situation in a training program is one in which you take
+        some chap who is going to see a class of information that he never saw before, pre-
+        sented in a way he never saw before, and from which he is to draw conclusions he
+        never thought of drawing. This is a very typical sort of Navy problem. Before he real-
+        izes it, we cram down his throat all the possible hypotheses he is expected to test. It is
+        relatively easy to show he can test, but he tests at a slow pace because he is badly orga-
+        nized. As he becomes better organized, he can, with neither more nor less informa-
+[118]   tion, test with greater speed. When I say | »neither more nor less,« I am neglecting the
+        time dimension. He has less by the amount of lesser time that is required for him to
+        test all these factors. It is necessary, then, to consider both the hypotheses and the
+        familial organizations and their accessibility, and perhaps, in another sense, if difficult
+        hypotheses, the length of time and the span of bits that he can hold while he is search-
+        ing for the right hypothesis.
+        Frank: Does that agree with the conception that the individual receives every experi-
+        ence with a readiness or certain expectations?
+        Stroud: It is impossible for me to believe, now that you ask me, that at any given
+        time you are not entertaining an expectation. This expectation may not be what one
+
+                      S P E E CH D I ST ORT I ON A ND I NT EL L I GI B I L I T Y       245
+
+
+might call highly concrete and specific. It may be merely the expectation that I will
+continue to speak in English and not suddenly change into pidgin English and Chi-
+nese. If I did change, I dare say even if you understood Chinese, I would become
+unintelligible until you started taking down my speech in the new set of hypotheses.
+Wiener: I have seen that happen very frequently, the change from a person who
+speaks perfectly correctly, to a person to whom even his own language would throw
+him completely off.
+Klüver: Titchener insisted that it is the business of a psychologist not to commit
+»stimulus-errors.« On the other hand, it may be argued that it is the business of psy-
+chology to determine all »stimulus-errors« that a psychologist or nonpsychologist pos-
+sibly can commit in dealing with a certain sensory input. In many situations our chief
+interest is really in the hypotheses, categories or principles in terms of which a man or
+an animal reacts to certain stimuli or certain stimulus constellations. Heterogeneous
+stimuli may often be equivalent in eliciting the »same« response, and it is the task of the
+psychologist to specify the factors responsible for such an equivalence [Klüver, H.: The
+study of personality and the method of equivalent and nonequivalent stimuli. Character
+and Personality, 5, 91 (1936)]. Obviously, sets of stimuli may be equivalent or non-
+equivalent for a thousand and one reasons. This does not relieve a psychologist of the
+obligation to determine, in a given situation, the particular factor or factors underlying
+particular forms of equivalence and nonequivalence.
+Stroud: This gets to be quite practical. Somebody asks what is the man’s acuity under
+certain conditions referring to visual, auditory, or other factors. I frankly come back at
+him, »You cannot say it that way.« Given a man with a certain set of hypotheses
+indexed in a certain way, what is the minimum amount of | information he requires             [119]
+for a decision among these alternatives?
+McCulloch: I should like to try one very simple experiment. This is a poem. Will
+anyone who recognizes it speak up?
+                  Til mi no on mounful monfer
+                  Fif is put an enty dreen
+                  Fur they sow as dred as slummer
+                  Wings ha na wha ha seen.
+Only one word is from the original, the tenth word.
+Wiener: The general rhythm is the same.
+Pitts: The degree to which the stimulus is equivalent is largely conventional in terms
+of the language.You know in a foreign language how the field of stimulus expands vis-
+ibly when you first begin to understand someone’s speech.You usually can understand
+a small number of people whose pronunciation happens to be particularly clear. For
+one reason or another, then, the number of people whom you can understand gradu-
+ally grows roughly according to the similarity of their articulation. The ways in which
+a given word may be mispronounced apparently are quite different, depending upon
+the word and depending upon the language; that is conventional, not phonetic. That, I
+imagine, is why, when apparently a parrot speaks a sentence imperfectly, it has such a
+sound, whereas when a man does, it is not the same field of equivalent with respect to
+the sentence.
+Wiener: A parrot has no phonemes.
+Pitts: He deforms words in a manner different from that of any possible speaker of
+the language.
+Wiener: He has no phonemes.
+Licklider: I should like to report just a couple of facts based on articulation-testing
+experience that bear out some of the things we have said. One of them is that when
+
+        2 46                               CYB ER NET I CS 1 9 5 0
+
+
+        you have a test crew at work, the crew likes to entertain itself. The listeners will read
+        magazines or books or even play cards if you let them, and they will be unhappy if you
+        don’t. We once tried to find out whether it mattered. Their scores were no lower when
+        they read books and wrote the words down nonchalantly (getting several items behind,
+        then catching up rapidly) than they were when we forced the listeners to devote full
+        attention to the job.You can argue, of course, that they were irritated at us in the latter
+        instance and therefore did not do as well as they could have done, but their perfor-
+        mance was better than I could achieve when I worked as hard as I could.
+        Wiener: It has something to do with the similar situation of children studying with
+[120]   the radio on. |
+        Licklider: I agree with Stroud about the hypotheses. I should emphasize, however,
+        that the hypotheses are not on the level of awareness; they are tested automatically.
+        After listening to recorded tests in which listeners heard the same sequence several
+        times, they were tested to see how well they could predict what was coming. We pre-
+        sented four words in the repeatedly heard sequence, then blanked out the fifth. The
+        listeners tried to guess or remember the word that followed the four they had heard. In
+        this, they had almost no success. Next we mixed the words of the test lists to which
+        the listeners had been exposed with an equal set of words of the same type, in fact,
+        with other words drawn at random from the same source. The listeners could tell with
+        high accuracy whether a word was from the old or from the new set. The listener
+        learns the vocabulary beautifully, but not the sequence in which the words appear.
+        Werner: May I ask one very general question? Distorted language may be of two
+        kinds: one in which there is a systematic change of which the subject, bye and bye,
+        may become aware and to which he may become adapted, and another where there is
+        no systematic change. Is the distortion you are dealing with of such kind that the sub-
+        ject will, so to speak, get adapted to the »key,« as it were. The speed and the amount of
+        recovery plausibly would depend on such an adaptation. I am interested in this angle
+        because some time ago I studied the effect of systematic changes in melodic relation-
+        ships on the appreciation of such relationships. I built what I called a micromelodic
+        system where the physical intervals between the tones were reduced to about one-
+        fifth, or less, of their conventional size, so that a complete scale spanning an octave
+        would come within the range of one whole tone on the ordinary scale [Musical
+        microscales and micromelodies. J. Psychol., 10, 149 (1940)].
+           We were able to train our subjects to recognize melodies within another range
+        because we maintained a melodic system whereby the relationship between the inter-
+        vals, though reduced, was identical with our ordinary diatonic scale. The question
+        actually is whether you have any evidence that your subjects accepted the distortion as
+        mere unsystematic changes or were able to adapt to a new frame of reference. In the
+        latter case, psychologically, we are no longer dealing with distortion.
+        Licklider: As I defined »distortion,« there had to be some relation preserved. I think
+        it is probably true, as you suggest, that the distortions that retain the most systematic
+[121]   relations are the least detrimental distortions, but I am not sure that that is entirely |
+        the reason. I cannot say. If you work with instantaneous sound pressures, any mono-
+        tonic transformation is going to leave you with intelligible speech. But that isn’t at all
+        amazing when you consider that you can dichotomize the scale of instantaneous pres-
+        sure and still have fair intelligibility.
+        Mead: Isn’t it related to learning? In the different cases is it true that the more system-
+        atic the order of distortion, the more rapidly your test crew will learn to distinguish.
+        Licklider: Let me quote the result of an experiment, a preliminary result. You can
+        measure the memory span for letters read in sequence from a book. The memory span
+        for these letters is very great. The subject remembers the words the letters spell, of
+
+                      S P E E CH D I ST ORT I ON A ND I NT EL L I GI B I L I T Y       247
+
+
+course, and the sentences the words form, so he remembers a lot of letters. Now a
+friend of mine, George Miller, thought it would be fun to test the memory span for
+letters with precisely the same conditional probability structure, but letters that did not
+make familiar words and sentences. He substituted one letter of the alphabet for
+another, choosing substitutes at random but always using the same substitute for any
+given letter. For the substitute sequences, the memory span was just about 6 or 8 let-
+ters. Mrs. Miller served as a subject. She practiced for about a month but could never
+improve her memory span for the substitute letters.
+Mead: She never got the system. She never got the clue to the system.
+Licklider: She was given the system. He told her what the substitutions were. It sim-
+ply did not help. She could not go through the translation process fast enough to let
+the meaning of the translated symbols help.
+Gerard: Do it in reverse. People may have intellectual information about a system,
+
+[Separate passage on the ideal predictor, reprint p.254]
+
+4. in no ist lat whey cratict froure birs grocid pondenome of demonstures of
+   the retagin is regiactiona of cre.
+5. representing and speedily is an good apt or come can different natural
+   here he the a in came the to of to expert gray come to furnishes the line
+   message had be these.
+6. the head and in frontal attack on an english writer that the character of
+   this point is therefore another method for the letters that the time of who
+   ever told the problem for an unexpected.
+In the first approximation we don’t introduce any statistics at all. The letters are chosen
+completely at random. The only property of English used lies in the fact that the letters
+are the twenty-seven letters of English, counting the space as an additional letter. Of
+course this produces merely a meaningless sequence of letters. The next step (2) is to
+introduce the probabilities of various letters. This is constructed essentially by putting
+all the letters of the alphabet in a hat, with more E’s than Z’s in proportion to their rel-
+ative frequency, and then drawing out letters at random. If you introduce probabilities
+for pairs of letters, you get something like Approximation 3. It looks a bit more like
+English, since the vowel consonant alternation is beginning to appear. In Approxima-

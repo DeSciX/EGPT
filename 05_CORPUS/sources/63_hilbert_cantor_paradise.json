@@ -1,0 +1,24 @@
+{
+ "entries": [
+  {
+   "speaker": "David Hilbert",
+   "quote": "Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können.",
+   "work": "quoted in Martin Meyries, “Was ist Unendlichkeit – und wenn ja, wie viele?”, arXiv:1310.4739 [math.HO] (17 Oct 2013), where it is given as from Hilbert (1926), i.e. “Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190, lecture delivered 4 June 1925, Münster",
+   "locus": "Vorbemerkung",
+   "date": "4 June 1925",
+   "theme": "cantor-paradise",
+   "file": "",
+   "source_url": "https://arxiv.org/abs/1310.4739"
+  },
+  {
+   "speaker": "David Hilbert",
+   "quote": "No one shall drive us out of the paradise which Cantor has created for us.",
+   "work": "“On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201",
+   "locus": "p. 191",
+   "date": "4 June 1925",
+   "theme": "cantor-paradise",
+   "file": "",
+   "source_url": "https://doi.org/10.1017/CBO9781139171519.010"
+  }
+ ]
+}
