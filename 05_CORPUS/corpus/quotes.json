@@ -1,6 +1,6 @@
 {
  "schema": "egpt.quotes/1",
- "count": 431,
+ "count": 444,
  "note": "Verbatim quotations with their citations. 'restored' holds the words an ellipsis removed, verbatim, and nothing else.",
  "records": [
   {
@@ -1047,6 +1047,35 @@
    "embed_text": "Nelson H. F. Beebe | Nelson H. F. Beebe, BibTeX bibliography ulam-stanislaw-m.bib, bibnet, netlib (Sandia mirror), version 2.71 of 29 August 2026 | entry Ulam:1948:SMP | 31 March 2007 | @InProceedings{Ulam:1948:SMP, author = \"Stanis{\\l}aw M. Ulam\", editor = \"????\", booktitle = \"{A.E.C. Information Meeting, Brookhaven National Laboratory, April 26-28, 1948}\", title = \"Statistical methods for problems involving equations of the diffusion type, ({Monte Carlo})\", publisher = \"????\", address = \"????\", pages = \"27--??\", year = \"1948\", LCCN = \"????\", bibdate = \"Sat Mar 31 16:03:22 2007\", bibsource = \"https://www.math.utah.edu/pub/bibnet/authors/u/ulam-stanislaw-m.bib\", note = \"BNL-17\", acknowledgement = ack-nhfb, }"
   },
   {
+   "id": "q-william-blackstone-commentaries-on-the--e269ecb8",
+   "quote": "An idiot, or natural fool, is one that hath had no understanding from his nativity; and therefore is by law presumed never likely to attain any.",
+   "speaker": {
+    "name": "William Blackstone",
+    "role": "author",
+    "sort": "blackstone, william",
+    "as_given": "William Blackstone"
+   },
+   "source": {
+    "work": "Commentaries on the Laws of England, Book the First (Oxford: Clarendon Press, 1765), Chapter the Eighth, \"Of the King's Revenue\"",
+    "locus": "Book I, ch. 8, section XVIII (the custody of idiots and lunatics), first sentence of the definition",
+    "date": "1765",
+    "file": "",
+    "url": "https://avalon.law.yale.edu/18th_century/blackstone_bk1ch8.asp"
+   },
+   "restored": "",
+   "years": [
+    1765
+   ],
+   "themes": [
+    "law of the idiot"
+   ],
+   "collections": [
+    "blackstone_idiot_natural_fool"
+   ],
+   "quote_sha256": "e269ecb84a5ccd29a5adeeccea2b190577fb83166a15977bf6e0ce7f2d12e152",
+   "embed_text": "William Blackstone | Commentaries on the Laws of England, Book the First (Oxford: Clarendon Press, 1765), Chapter the Eighth, \"Of the King's Revenue\" | Book I, ch. 8, section XVIII (the custody of idiots and lunatics), first sentence of the definition | 1765 | An idiot, or natural fool, is one that hath had no understanding from his nativity; and therefore is by law presumed never likely to attain any."
+  },
+  {
    "id": "q-rodney-brooks-why-todays-humanoids-549e59a6",
    "quote": "collecting just visual data is not collecting the right data. There is so much more going into human dexterity that visual data completely leaves out.",
    "speaker": {
@@ -1335,6 +1364,35 @@
    ],
    "quote_sha256": "643a3613798e807c5f66055dacd4251ed3ee06b81f4005bc60bf76ef59c5835d",
    "embed_text": "Michael Creutz | Michael Creutz, “Monte Carlo study of quantized SU(2) gauge theory,” Physical Review D 21, no. 8, 2308 | abstract | 15 April 1980 | Using Monte Carlo techniques, we evaluate path integrals for pure SU(2) gauge fields. Wilson's regularization procedure on a lattice of up to 10⁴ sites controls ultraviolet divergences. Our renormalization prescription, based on confinement, is to hold fixed the string tension, the coefficient of the asymptotic linear potential between sources in the fundamental representation of the gauge group. Upon reducing the cutoff, we observe a logarithmic decrease of the bare coupling constant in a manner consistent with the perturbative renormalization-group prediction. This supports the coexistence of confinement and asymptotic freedom for quantized non-Abelian gauge fields."
+  },
+  {
+   "id": "q-emil-du-bois-reymo-uber-die-grenzen-des-ed131ca6",
+   "quote": "Gegenüber den Räthseln der Körperwelt ist der Naturforscher längst gewöhnt, mit männlicher Entsagung sein ‘Ignoramus’ auszusprechen. Im Rückblick auf die durchlaufene siegreiche Bahn trägt ihn dabei das stille Bewusstsein, dass, wo er jetzt nicht weiss, er wenigstens unter Umständen wissen könnte, und dereinst vielleicht wissen wird. Gegenüber dem Räthsel aber, was Materie und Kraft seien, und wie sie zu denken vermögen, muss er ein für allemal zu dem viel schwerer abzugebenden Wahrspruch sich entschliessen: ‘Ignorabimus’.",
+   "speaker": {
+    "name": "Emil du Bois-Reymond",
+    "role": "author",
+    "sort": "du bois-reymond, emil",
+    "as_given": "Emil du Bois-Reymond"
+   },
+   "source": {
+    "work": "Über die Grenzen des Naturerkennens. Die sieben Welträthsel. Zwei Vorträge (Leipzig: Veit & Comp., 1898), des ersten Vortrages achte, der zwei Vorträge vierte Auflage; the lecture “Über die Grenzen des Naturerkennens,” delivered in the second general session of the 45. Versammlung Deutscher Naturforscher und Aerzte, Leipzig",
+    "locus": "p. 51 (closing sentences of the lecture)",
+    "date": "14 August 1872",
+    "file": "",
+    "url": "https://archive.org/details/ueberdiegrenzend00dubouoft"
+   },
+   "restored": "",
+   "years": [
+    1872
+   ],
+   "themes": [
+    "ignorabimus"
+   ],
+   "collections": [
+    "du_bois_reymond_ignorabimus"
+   ],
+   "quote_sha256": "ed131ca6e5734d79d354c0f2827aa3d9d77684a92fc31c60768e8b276e057673",
+   "embed_text": "Emil du Bois-Reymond | Über die Grenzen des Naturerkennens. Die sieben Welträthsel. Zwei Vorträge (Leipzig: Veit & Comp., 1898), des ersten Vortrages achte, der zwei Vorträge vierte Auflage; the lecture “Über die Grenzen des Naturerkennens,” delivered in the second general session of the 45. Versammlung Deutscher Naturforscher und Aerzte, Leipzig | p. 51 (closing sentences of the lecture) | 14 August 1872 | Gegenüber den Räthseln der Körperwelt ist der Naturforscher längst gewöhnt, mit männlicher Entsagung sein ‘Ignoramus’ auszusprechen. Im Rückblick auf die durchlaufene siegreiche Bahn trägt ihn dabei das stille Bewusstsein, dass, wo er jetzt nicht weiss, er wenigstens unter Umständen wissen könnte, und dereinst vielleicht wissen wird. Gegenüber dem Räthsel aber, was Materie und Kraft seien, und wie sie zu denken vermögen, muss er ein für allemal zu dem viel schwerer abzugebenden Wahrspruch sich entschliessen: ‘Ignorabimus’."
   },
   {
    "id": "q-freeman-dyson-quoted-by-jim-holt-h-7ec7b4ee",
@@ -2595,6 +2653,238 @@
    ],
    "quote_sha256": "437c4e447445a032e3eb0d46691f5008eae4bf09f437a2286001ee5a6d2c10c3",
    "embed_text": "Steve J. Heims | The Cybernetics Group (Cambridge, MA: MIT Press, 1991) | pp.76-77 | 1991 (book); describing the 1950 Seventh Conference session | The succeeding paper, a report by communication engineer Claude Shannon, on a \"recently developed method of estimating the amount of redundancy in printed English,\" neatly avoided all consideration of human characteristics, just as his famous definition of \"information\" had. In Shannon's analysis of printed English the statistical frequency of letter combinations is fundamental, but the \"meaning\" of a message is taken to be irrelevant."
+  },
+  {
+   "id": "q-david-hilbert-quoted-in-james-t-sm-930dfc90",
+   "quote": "We must not believe those, who today with philosophical bearing and deliberative tone prophesy the fall of culture and accept the ignorabimus. For us there is no ignorabimus, and in my opinion none whatever in natural science. In opposition to the foolish ignorabimus I offer our answer: We must know, We will know.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "reported",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "quoted in James T. Smith, “Hilbert’s 1930 Radio Address” (San Francisco State University, 4 September 2004), English translation by James T. Smith of the radio excerpt of Naturerkennen und Logik, address to the Gesellschaft Deutscher Naturforscher und Ärzte, Königsberg (radio excerpt)",
+    "locus": "p. 2",
+    "date": "8 September 1930",
+    "file": "",
+    "url": "https://www.cs.auckland.ac.nz/~cristian/talks/more/incompl_talk/HilbertRadio.pdf"
+   },
+   "restored": "",
+   "years": [
+    1930
+   ],
+   "themes": [
+    "ignorabimus"
+   ],
+   "collections": [
+    "hilbert_wir_muessen_wissen"
+   ],
+   "quote_sha256": "930dfc9019eb35dcfe3087c3f99fc9bb1813a580217208a348a7c665b59d1f2a",
+   "embed_text": "David Hilbert | quoted in James T. Smith, “Hilbert’s 1930 Radio Address” (San Francisco State University, 4 September 2004), English translation by James T. Smith of the radio excerpt of Naturerkennen und Logik, address to the Gesellschaft Deutscher Naturforscher und Ärzte, Königsberg (radio excerpt) | p. 2 | 8 September 1930 | We must not believe those, who today with philosophical bearing and deliberative tone prophesy the fall of culture and accept the ignorabimus. For us there is no ignorabimus, and in my opinion none whatever in natural science. In opposition to the foolish ignorabimus I offer our answer: We must know, We will know."
+  },
+  {
+   "id": "q-david-hilbert-quoted-in-james-t-sm-c8e0de03",
+   "quote": "Wir dürfen nicht denen glauben, die heute mit philosophischer Miene und überlegenem Tone den Kulturuntergang prophezeien und sich in dem Ignorabimus gefallen. Für uns gibt es kein Ignorabimus, und meiner Meinung nach auch für die Naturwissenschaft überhaupt nicht. Statt des törichten Ignorabimus heiße im Gegenteil unsere Lösung: Wir müssen wissen, Wir werden wissen.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "reported",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "quoted in James T. Smith, “Hilbert’s 1930 Radio Address” (San Francisco State University, 4 September 2004), German transcription of the radio excerpt of Naturerkennen und Logik, address to the Gesellschaft Deutscher Naturforscher und Ärzte, Königsberg (radio excerpt)",
+    "locus": "p. 1",
+    "date": "8 September 1930",
+    "file": "",
+    "url": "https://www.cs.auckland.ac.nz/~cristian/talks/more/incompl_talk/HilbertRadio.pdf"
+   },
+   "restored": "",
+   "years": [
+    1930
+   ],
+   "themes": [
+    "ignorabimus"
+   ],
+   "collections": [
+    "hilbert_wir_muessen_wissen"
+   ],
+   "quote_sha256": "c8e0de035ee5eb0f913310759e2e35c1fba7c9c459c9051f9d0f2e4078f9f944",
+   "embed_text": "David Hilbert | quoted in James T. Smith, “Hilbert’s 1930 Radio Address” (San Francisco State University, 4 September 2004), German transcription of the radio excerpt of Naturerkennen und Logik, address to the Gesellschaft Deutscher Naturforscher und Ärzte, Königsberg (radio excerpt) | p. 1 | 8 September 1930 | Wir dürfen nicht denen glauben, die heute mit philosophischer Miene und überlegenem Tone den Kulturuntergang prophezeien und sich in dem Ignorabimus gefallen. Für uns gibt es kein Ignorabimus, und meiner Meinung nach auch für die Naturwissenschaft überhaupt nicht. Statt des törichten Ignorabimus heiße im Gegenteil unsere Lösung: Wir müssen wissen, Wir werden wissen."
+  },
+  {
+   "id": "q-david-hilbert-quoted-in-martin-mey-1e534c09",
+   "quote": "Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "reported",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "quoted in Martin Meyries, “Was ist Unendlichkeit – und wenn ja, wie viele?”, arXiv:1310.4739 [math.HO] (17 Oct 2013), where it is given as from Hilbert (1926), i.e. “Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190, lecture delivered 4 June 1925, Münster",
+    "locus": "Vorbemerkung",
+    "date": "4 June 1925",
+    "file": "",
+    "url": "https://arxiv.org/abs/1310.4739"
+   },
+   "restored": "",
+   "years": [
+    1925
+   ],
+   "themes": [
+    "cantor-paradise"
+   ],
+   "collections": [
+    "hilbert_cantor_paradise"
+   ],
+   "quote_sha256": "1e534c0923c225b1e61ff6d68f2280081b7242461904daad3520702dcd069e90",
+   "embed_text": "David Hilbert | quoted in Martin Meyries, “Was ist Unendlichkeit – und wenn ja, wie viele?”, arXiv:1310.4739 [math.HO] (17 Oct 2013), where it is given as from Hilbert (1926), i.e. “Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190, lecture delivered 4 June 1925, Münster | Vorbemerkung | 4 June 1925 | Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können."
+  },
+  {
+   "id": "q-david-hilbert-mathematical-problem-a0f30b48",
+   "quote": "This conviction of the solvability of every mathematical problem is a powerful incentive to the worker. We hear within us the perpetual call: There is the problem. Seek its solution. You can find it by pure reason, for in mathematics there is no ignorabimus.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "author",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "“Mathematical Problems,” lecture to the International Congress of Mathematicians, Paris, 1900; trans. Mary Winton Newson, Bulletin of the American Mathematical Society 8 (1902), pp. 437–479",
+    "locus": "Introduction",
+    "date": "1900",
+    "file": "",
+    "url": "https://mathcs.clarku.edu/~djoyce/hilbert/problems.html"
+   },
+   "restored": "",
+   "years": [
+    1900
+   ],
+   "themes": [
+    "ignorabimus"
+   ],
+   "collections": [
+    "hilbert_wir_muessen_wissen"
+   ],
+   "quote_sha256": "a0f30b48b15cc9f1b37ef23961d22b049c7da868a5c84ad0fbcb0d940da2b349",
+   "embed_text": "David Hilbert | “Mathematical Problems,” lecture to the International Congress of Mathematicians, Paris, 1900; trans. Mary Winton Newson, Bulletin of the American Mathematical Society 8 (1902), pp. 437–479 | Introduction | 1900 | This conviction of the solvability of every mathematical problem is a powerful incentive to the worker. We hear within us the perpetual call: There is the problem. Seek its solution. You can find it by pure reason, for in mathematics there is no ignorabimus."
+  },
+  {
+   "id": "q-david-hilbert-mathematical-problem-7dec5200",
+   "quote": "But above all I wish to designate the following as the most important among the numerous questions which can be asked with regard to the axioms: To prove that they are not contradictory, that is, that a definite number of logical steps based upon them can never lead to contradictory results.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "author",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "“Mathematical Problems,” lecture to the International Congress of Mathematicians, Paris, 1900; trans. Mary Winton Newson, Bulletin of the American Mathematical Society 8 (1902), pp. 437–479",
+    "locus": "Problem 2, “The compatibility of the arithmetical axioms”",
+    "date": "1900",
+    "file": "",
+    "url": "https://mathcs.clarku.edu/~djoyce/hilbert/problems.html"
+   },
+   "restored": "",
+   "years": [
+    1900
+   ],
+   "themes": [
+    "hilbert-program"
+   ],
+   "collections": [
+    "hilbert_program_aim_and_dating"
+   ],
+   "quote_sha256": "7dec5200195953947026a4e2dd87616d2d1df63cba05032676177e99eefaf437",
+   "embed_text": "David Hilbert | “Mathematical Problems,” lecture to the International Congress of Mathematicians, Paris, 1900; trans. Mary Winton Newson, Bulletin of the American Mathematical Society 8 (1902), pp. 437–479 | Problem 2, “The compatibility of the arithmetical axioms” | 1900 | But above all I wish to designate the following as the most important among the numerous questions which can be asked with regard to the axioms: To prove that they are not contradictory, that is, that a definite number of logical steps based upon them can never lead to contradictory results."
+  },
+  {
+   "id": "q-david-hilbert-on-the-infinite-uber-bfaf5aa0",
+   "quote": "The goal of my theory is to establish once and for all the certitude of mathematical methods.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "author",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "“On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201",
+    "locus": "p. 184",
+    "date": "4 June 1925",
+    "file": "",
+    "url": "https://doi.org/10.1017/CBO9781139171519.010"
+   },
+   "restored": "",
+   "years": [
+    1925
+   ],
+   "themes": [
+    "hilbert-program"
+   ],
+   "collections": [
+    "hilbert_program_aim_and_dating"
+   ],
+   "quote_sha256": "bfaf5aa07c96932a21cf8d9789401d9bee02a370348b9c72969a74912430baee",
+   "embed_text": "David Hilbert | “On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201 | p. 184 | 4 June 1925 | The goal of my theory is to establish once and for all the certitude of mathematical methods."
+  },
+  {
+   "id": "q-david-hilbert-on-the-infinite-uber-ef6b7edc",
+   "quote": "No one shall drive us out of the paradise which Cantor has created for us.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "author",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "“On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201",
+    "locus": "p. 191",
+    "date": "4 June 1925",
+    "file": "",
+    "url": "https://doi.org/10.1017/CBO9781139171519.010"
+   },
+   "restored": "",
+   "years": [
+    1925
+   ],
+   "themes": [
+    "cantor-paradise"
+   ],
+   "collections": [
+    "hilbert_cantor_paradise"
+   ],
+   "quote_sha256": "ef6b7edc3e8ca01393bed37d26d2346324f39fd1dd6901f4d0aaad1ada7b5d0e",
+   "embed_text": "David Hilbert | “On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201 | p. 191 | 4 June 1925 | No one shall drive us out of the paradise which Cantor has created for us."
+  },
+  {
+   "id": "q-david-hilbert-on-the-infinite-uber-93427b44",
+   "quote": "An example of the kind of fundamental questions which can be so handled is the thesis that every mathematical problem is solvable. We are all convinced that it really is so. In fact one of the principal attractions of tackling a mathematical problem is that we always hear this cry within us: There is the problem, find the answer; you can find it just by thinking, for there is no ignorabimus in mathematics.",
+   "speaker": {
+    "name": "David Hilbert",
+    "role": "author",
+    "sort": "hilbert, david",
+    "as_given": "David Hilbert"
+   },
+   "source": {
+    "work": "“On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201",
+    "locus": "p. 200",
+    "date": "4 June 1925",
+    "file": "",
+    "url": "https://doi.org/10.1017/CBO9781139171519.010"
+   },
+   "restored": "",
+   "years": [
+    1925
+   ],
+   "themes": [
+    "ignorabimus"
+   ],
+   "collections": [
+    "hilbert_wir_muessen_wissen"
+   ],
+   "quote_sha256": "93427b44a80662658282991e965c39c61383f8788d676fd99679bbb56f1b236d",
+   "embed_text": "David Hilbert | “On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201 | p. 200 | 4 June 1925 | An example of the kind of fundamental questions which can be so handled is the thesis that every mathematical problem is solvable. We are all convinced that it really is so. In fact one of the principal attractions of tackling a mathematical problem is that we always hear this cry within us: There is the problem, find the answer; you can find it just by thinking, for there is no ignorabimus in mathematics."
   },
   {
    "id": "q-j-j-o-connor-and-e-gian-carlo-rota-1932-c83f517c",
@@ -5901,6 +6191,35 @@
    ],
    "quote_sha256": "864507c14ce50834ad987ddd350b0977ebc51a9885758eef08368556b02065c6",
    "embed_text": "Gian-Carlo Rota | Introduction to Probability Theory, Second Preliminary Edition (Baclawski, Rota & Billey), Chapter VIII: Entropy and Information | chapter opening | c. 1992–93 | That probability is closely connected with information should come as no surprise after problems such as exercise V.5 (the jailer paradox). What entropy does is to make this connection precise. In section 1, we discuss entropy for finite-valued random variables. In the next section we give a dramatic application of the law of large numbers to information theory: the Shannon Coding Theorem. Finally in section 3, we turn to the case of continuous random variables and prove that essentially all the interesting distributions we have seen in probability theory may be defined by entropy considerations."
+  },
+  {
+   "id": "q-gian-carlo-rota-preface-in-mark-kac--c2a3a63c",
+   "quote": "In mathematics, as anywhere today, it is becoming more difficult to tell the truth. To be sure, our store of accurate facts is more plentiful now than it has ever been, and the minutest details of history are being thoroughly recorded. Scientists, PR-men and scholars vie with each other in publishing excruciatingly definitive accounts of all that happens on the natural, political and historical scenes. Unfortunately, telling the truth is not quite the same thing as reciting a rosary of facts. José Ortega y Gasset, in an admirable lesson summarized by Antonio Machado's three-line poem, prophetically warned us that the reason people so often lie is that they lack imagination: they don't realize that the truth, too, is a matter of invention. Sometime, in a future that is knocking at our door, we shall have to retrain ourselves or our children to properly tell the truth. The exercise will be particularly painful in mathematics. The enrapturing discoveries of our field systematically conceal, like footprints erased in the sand, the analogical train of thought that is the authentic life of mathematics. Shocking as it may be to a conservative logician, the day will come when currently vague concepts such as motivation and purpose will be made formal and accepted as constituents of a revamped logic, where they will at last be allotted the equal status they deserve, side-by-side with axioms and theorems. Until that day, however, the truths of mathematics will make only fleeting appearances, like shameful confessions whispered to a priest, to a psychiatrist, or to a wife.",
+   "speaker": {
+    "name": "Gian-Carlo Rota",
+    "role": "author",
+    "sort": "rota, gian-carlo",
+    "as_given": "Gian-Carlo Rota"
+   },
+   "source": {
+    "work": "Preface, in Mark Kac, Gian-Carlo Rota and Jacob T. Schwartz, Discrete Thoughts: Essays on Mathematics, Science, and Philosophy, revised and corrected edition with the assistance of Peter Renz (Boston: Birkhäuser, 1992); first edition Boston: Birkhäuser, 1986",
+    "locus": "pp. ix–x",
+    "date": "7 February 1985",
+    "file": "",
+    "url": "https://doi.org/10.1007/978-0-8176-4775-9"
+   },
+   "restored": "",
+   "years": [
+    1985
+   ],
+   "themes": [
+    "telling the truth in mathematics"
+   ],
+   "collections": [
+    "rota_discrete_thoughts_preface"
+   ],
+   "quote_sha256": "c2a3a63c3a235cc770e9c861ead70d45ceda3009609c0d9c2070ad643e8f7ab8",
+   "embed_text": "Gian-Carlo Rota | Preface, in Mark Kac, Gian-Carlo Rota and Jacob T. Schwartz, Discrete Thoughts: Essays on Mathematics, Science, and Philosophy, revised and corrected edition with the assistance of Peter Renz (Boston: Birkhäuser, 1992); first edition Boston: Birkhäuser, 1986 | pp. ix–x | 7 February 1985 | In mathematics, as anywhere today, it is becoming more difficult to tell the truth. To be sure, our store of accurate facts is more plentiful now than it has ever been, and the minutest details of history are being thoroughly recorded. Scientists, PR-men and scholars vie with each other in publishing excruciatingly definitive accounts of all that happens on the natural, political and historical scenes. Unfortunately, telling the truth is not quite the same thing as reciting a rosary of facts. José Ortega y Gasset, in an admirable lesson summarized by Antonio Machado's three-line poem, prophetically warned us that the reason people so often lie is that they lack imagination: they don't realize that the truth, too, is a matter of invention. Sometime, in a future that is knocking at our door, we shall have to retrain ourselves or our children to properly tell the truth. The exercise will be particularly painful in mathematics. The enrapturing discoveries of our field systematically conceal, like footprints erased in the sand, the analogical train of thought that is the authentic life of mathematics. Shocking as it may be to a conservative logician, the day will come when currently vague concepts such as motivation and purpose will be made formal and accepted as constituents of a revamped logic, where they will at last be allotted the equal status they deserve, side-by-side with axioms and theorems. Until that day, however, the truths of mathematics will make only fleeting appearances, like shameful confessions whispered to a priest, to a psychiatrist, or to a wife."
   },
   {
    "id": "q-gian-carlo-rota-ulam-and-rota-discus-ce27cb40",
@@ -12491,6 +12810,64 @@
    ],
    "quote_sha256": "4e9bbf7fac74be6547eb8a063b27d24b504a656581c47240823df7080462fc84",
    "embed_text": "Norbert Wiener | The Human Use of Human Beings: Cybernetics and Society (London: Eyre and Spottiswoode, 1950), ch. I, \"What is Cybernetics?\"; text layer, archive.org | p.8 | 1950 | We again see that the message is a transmitted pattern, which acquires its meaning by being a selection from a large number of possible patterns, The amount of meaning can be measured. It turns out that the less probable a message is, the more meaning it carries, which is entirely reasonable from the standpoint of our common sense."
+  },
+  {
+   "id": "q-richard-zach-richard-zach-hilbert-939958f0",
+   "quote": "In the early 1920s, the German mathematician David Hilbert (1862–1943) put forward a new proposal for the foundation of classical mathematics which has come to be known as Hilbert’s Program. It calls for a formalization of all of mathematics in axiomatic form, together with a proof that this axiomatization of mathematics is consistent. The consistency proof itself was to be carried out using only what Hilbert called “finitary” methods.",
+   "speaker": {
+    "name": "Richard Zach",
+    "role": "author",
+    "sort": "zach, richard",
+    "as_given": "Richard Zach"
+   },
+   "source": {
+    "work": "Richard Zach, “Hilbert’s Program,” Stanford Encyclopedia of Philosophy (first published 31 July 2003; substantive revision 29 September 2023)",
+    "locus": "opening paragraph",
+    "date": "29 September 2023",
+    "file": "",
+    "url": "https://plato.stanford.edu/entries/hilbert-program/"
+   },
+   "restored": "",
+   "years": [
+    2023
+   ],
+   "themes": [
+    "hilbert-program"
+   ],
+   "collections": [
+    "hilbert_program_aim_and_dating"
+   ],
+   "quote_sha256": "939958f0e5696a5be3e375de84ca37754ee5008c10ca46ace72d79b6e4ae8ca8",
+   "embed_text": "Richard Zach | Richard Zach, “Hilbert’s Program,” Stanford Encyclopedia of Philosophy (first published 31 July 2003; substantive revision 29 September 2023) | opening paragraph | 29 September 2023 | In the early 1920s, the German mathematician David Hilbert (1862–1943) put forward a new proposal for the foundation of classical mathematics which has come to be known as Hilbert’s Program. It calls for a formalization of all of mathematics in axiomatic form, together with a proof that this axiomatization of mathematics is consistent. The consistency proof itself was to be carried out using only what Hilbert called “finitary” methods."
+  },
+  {
+   "id": "q-richard-zach-richard-zach-hilbert-3d531d0a",
+   "quote": "Although Hilbert proposed his program in this form only in 1921, various facets of it are rooted in foundational work of his going back until around 1900, when he first pointed out the necessity of giving a direct consistency proof of analysis.",
+   "speaker": {
+    "name": "Richard Zach",
+    "role": "author",
+    "sort": "zach, richard",
+    "as_given": "Richard Zach"
+   },
+   "source": {
+    "work": "Richard Zach, “Hilbert’s Program,” Stanford Encyclopedia of Philosophy (first published 31 July 2003; substantive revision 29 September 2023)",
+    "locus": "opening paragraph",
+    "date": "29 September 2023",
+    "file": "",
+    "url": "https://plato.stanford.edu/entries/hilbert-program/"
+   },
+   "restored": "",
+   "years": [
+    2023
+   ],
+   "themes": [
+    "hilbert-program"
+   ],
+   "collections": [
+    "hilbert_program_aim_and_dating"
+   ],
+   "quote_sha256": "3d531d0ac8152c2e6428b0dd31d38ea64d1dec7a56dc00c149435653a7dbb84f",
+   "embed_text": "Richard Zach | Richard Zach, “Hilbert’s Program,” Stanford Encyclopedia of Philosophy (first published 31 July 2003; substantive revision 29 September 2023) | opening paragraph | 29 September 2023 | Although Hilbert proposed his program in this form only in 1921, various facets of it are rooted in foundational work of his going back until around 1900, when he first pointed out the necessity of giving a direct consistency proof of analysis."
   }
  ]
 }

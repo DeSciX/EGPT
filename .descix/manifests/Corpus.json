@@ -215,7 +215,8 @@
       "doc_class": "patent",
       "doc_type": "documentation",
       "syncignore": [
-        "*.pdf"
+        "*.pdf",
+        "Quantum Computing Fractal Compression In A Swarm Enviornment - Patent Application Background.md"
       ]
     },
     {

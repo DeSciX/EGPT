@@ -1,0 +1,44 @@
+{
+ "entries": [
+  {
+   "speaker": "David Hilbert",
+   "quote": "The goal of my theory is to establish once and for all the certitude of mathematical methods.",
+   "work": "“On the infinite” (“Über das Unendliche,” Mathematische Annalen 95 (1926), pp. 161–190), lecture delivered 4 June 1925 to the Westphalian Mathematical Society, Münster; trans. Erna Putnam and Gerald J. Massey, in Paul Benacerraf and Hilary Putnam (eds.), Philosophy of Mathematics: Selected Readings (Cambridge University Press), pp. 183–201",
+   "locus": "p. 184",
+   "date": "4 June 1925",
+   "theme": "hilbert-program",
+   "file": "",
+   "source_url": "https://doi.org/10.1017/CBO9781139171519.010"
+  },
+  {
+   "speaker": "David Hilbert",
+   "quote": "But above all I wish to designate the following as the most important among the numerous questions which can be asked with regard to the axioms: To prove that they are not contradictory, that is, that a definite number of logical steps based upon them can never lead to contradictory results.",
+   "work": "“Mathematical Problems,” lecture to the International Congress of Mathematicians, Paris, 1900; trans. Mary Winton Newson, Bulletin of the American Mathematical Society 8 (1902), pp. 437–479",
+   "locus": "Problem 2, “The compatibility of the arithmetical axioms”",
+   "date": "1900",
+   "theme": "hilbert-program",
+   "file": "",
+   "source_url": "https://mathcs.clarku.edu/~djoyce/hilbert/problems.html"
+  },
+  {
+   "speaker": "Richard Zach",
+   "quote": "In the early 1920s, the German mathematician David Hilbert (1862–1943) put forward a new proposal for the foundation of classical mathematics which has come to be known as Hilbert’s Program. It calls for a formalization of all of mathematics in axiomatic form, together with a proof that this axiomatization of mathematics is consistent. The consistency proof itself was to be carried out using only what Hilbert called “finitary” methods.",
+   "work": "Richard Zach, “Hilbert’s Program,” Stanford Encyclopedia of Philosophy (first published 31 July 2003; substantive revision 29 September 2023)",
+   "locus": "opening paragraph",
+   "date": "29 September 2023",
+   "theme": "hilbert-program",
+   "file": "",
+   "source_url": "https://plato.stanford.edu/entries/hilbert-program/"
+  },
+  {
+   "speaker": "Richard Zach",
+   "quote": "Although Hilbert proposed his program in this form only in 1921, various facets of it are rooted in foundational work of his going back until around 1900, when he first pointed out the necessity of giving a direct consistency proof of analysis.",
+   "work": "Richard Zach, “Hilbert’s Program,” Stanford Encyclopedia of Philosophy (first published 31 July 2003; substantive revision 29 September 2023)",
+   "locus": "opening paragraph",
+   "date": "29 September 2023",
+   "theme": "hilbert-program",
+   "file": "",
+   "source_url": "https://plato.stanford.edu/entries/hilbert-program/"
+  }
+ ]
+}

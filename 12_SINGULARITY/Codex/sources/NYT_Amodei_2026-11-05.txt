@@ -1,0 +1,501 @@
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+
+
+ The Making of Anthropic’s C.E.O.
+ Some call him a doomer. Others see him as a responsible technologist. Here’s
+ how Dario Amodei’s thinking on artificial intelligence was shaped.
+
+          Listen · 19:52 min
+
+
+
+
+ By Ryan Mac, Kalley Huang, Cade Metz and Georgia Gee
+ Ryan Mac, Kalley Huang and Cade Metz reported from San Francisco, and Georgia Gee from New York.
+ Published Nov. 5, 2026        Updated Nov. 6, 2026
+
+
+ One night in 2007, Dario Amodei regaled a friend who was visiting him at Princeton
+ University with his thoughts on “The Singularity Is Near,” a 2005 treatise by the
+ computer scientist Ray Kurzweil.
+
+ Dr. Amodei had just read the book, in which Mr. Kurzweil predicted that artificial
+ intelligence would eventually surpass the human brain in a moment known as the
+ Singularity. As he twisted his hair with his fingers, Dr. Amodei told his friend, Colin
+ Heckman, that the milestone could happen within their lifetimes.
+
+ “He became obsessed,” said Mr. Heckman, who went to high school with Dr.
+ Amodei in San Francisco. “He said A.I. had to be built right, or we’re going to be
+ done.”
+
+ Dr. Amodei, then 24 and a doctoral student in physics, was in a period of soaking up
+ information. He had become absorbed in the obscure blogs “Accelerating Future”
+ and “Overcoming Bias,” where writers discussed A.I.’s potential to wipe out
+ humanity. And he had delved into the online forums of GiveWell, an organization
+ that aimed to maximize the effectiveness of charitable giving, where intellectuals
+ debated how to make the most money for philanthropy.
+
+ These books, blogs and online communities have influenced Dr. Amodei to this day,
+ according to interviews with more than two dozen of his classmates, friends,
+ teachers and colleagues. They help explain the ideas that drive the 43-year-old
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           1/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ chief executive of Anthropic, a company that is set to conduct one of the world’s
+ largest public listings this month, and offer an understanding of how the man at the
+ forefront of the A.I. revolution actually thinks about A.I.
+
+ At the heart of Dr. Amodei’s worldview, his friends and colleagues said, are two
+ interwoven philosophies that share an uncompromising belief that mathematical
+ reasoning can change the future of humanity.
+
+ One is “rationalism,” which aims to apply dispassionate thinking to the world.
+ Espoused by people like Eliezer Yudkowsky, a self-taught A.I. researcher, it argues
+ that A.I. will become powerful enough to destroy society. The other is “effective
+ altruism,” which evolved alongside rationalism and seeks to maximize social good
+ with mathematical precision.
+
+ These schools of thought fused for Dr. Amodei into an unyielding conviction that
+ A.I. could be so dangerous that only he and like-minded technologists could be
+ entrusted with building it. That catalyzed his stated efforts to create A.I. before
+ people without concerns about the safety of humanity did, and spurred a desire to
+ control the technology, his friends and colleagues said.
+
+ With A.I., “the benefits will only be achieved if we build the technology in the right
+ way, and — so long as we use the time we gain well — it is worth taking unusually
+ deliberate care to get it right,” Dr. Amodei wrote in a September essay that called
+ for a slowdown in the technology’s development.
+
+ These ideas formed the foundation for Anthropic, which Dr. Amodei established in
+ 2021 with his sister, Daniela Amodei, and five others who spent time around
+ rationalist and effective altruist communities. And as the company sprouted, their
+ views — which Dr. Amodei has pushed vocally and relentlessly — have become
+ increasingly prominent.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           2/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+
+
+                                    Daniela Amodei, a co-founder of Anthropic, in its San
+                                    Francisco office in 2023. She is close with her brother, Dario
+                                    Amodei, the company’s chief executive. Marissa Leshnov for The
+                                    New York Times
+
+
+
+
+ Dr. Amodei has weighed in on geopolitical debates and said the United States
+ should restrict chip sales to China to limit that nation from competing in A.I. He has
+ proclaimed that A.I. should be regulated to stop the technology from going rogue.
+ And in disputes with the Department of Defense, he has declared that the
+ technology should not be used for the mass surveillance of Americans or deployed
+ in autonomous weapons.
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           3/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ “He actually sees that there’s a huge existential risk on the table here,” said Nathan
+ Avery, who ran high school cross-country with Dr. Amodei and had many deep
+ conversations with him over the years, though they have drifted apart. “And he
+ needs to put himself in a position to do something about it.”
+
+ Dr. Amodei, a billionaire whose net worth is set to grow with Anthropic’s public
+ offering, declined through a company representative to be interviewed.
+
+ His thinking has won him supporters, especially among some who work in A.I.
+ safety and who say Dr. Amodei is developing A.I. responsibly. It has also made him
+ enemies in Silicon Valley and Washington, with critics — including Meta’s Mark
+ Zuckerberg and Nvidia’s Jensen Huang — attacking him for being a “doomer” and
+ trying to centralize power in A.I. In September, the Defense Department posted on
+ social media: “Americanism, not effective altruism.”
+
+ Dr. Amodei, who appears to be aware that his ideas have riled others, has tried to
+ publicly differentiate his beliefs from rationalism and effective altruism. In 2023, he
+ told The New York Times’s “Hard Fork” podcast that he did not consider himself to
+ be an effective altruist.
+
+ “I’m sympathetic to a number of the ideas,” he said, but against “dividing people up
+ into tribes.”
+
+
+ ‘Dario, Lighten Up!’
+ Dr. Amodei and his younger sister Daniela grew up in San Francisco’s Mission
+ District. Their father, Riccardo Amodei, was a leather craftsman, and their mother,
+ Elena Engel, managed public library renovations. The couple separated in 1991,
+ according to divorce filings.
+
+ By eighth grade at Lawton Alternative School, Dr. Amodei stood out. In 1997, he and
+ a peer were voted “Most Likely to Succeed” and were pictured in their yearbook
+ holding dollar bills.
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           4/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ At Lowell High School, San Francisco’s top public high school, Dr. Amodei was a
+ voracious learner who took classes at the University of California, Berkeley. He
+ pondered ideas like utilitarianism, which argues that people should maximize
+ happiness for the most living beings, and worried about issues like the Y2K bug
+ and its potential to ruin the world’s computers, classmates said.
+
+
+
+
+                Dr. Amodei was a voracious learner at Lowell High School in San Francisco. Jason Henry
+                for The New York Times
+
+
+
+
+ Richard Shapiro, then a physics teacher at Lowell, said Dr. Amodei had frequently
+ thought he underperformed on tests. “I’d yell at him, ‘Dario, lighten up!’” Mr.
+ Shapiro said.
+
+ In 2001, Dr. Amodei enrolled at the California Institute of Technology in Pasadena,
+ but often returned to San Francisco to see friends and family. On one trip, he went
+ with Mr. Avery and Mr. Heckman to a sushi restaurant, where they debated
+ utilitarianism. Dr. Amodei was a vegetarian but argued it was fine to eat crabs
+ because they are invertebrates.
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           5/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ During the meal, Mr. Heckman presented a thought experiment: If someone
+ started killing as many chickens as possible, when would it make sense to kill that
+ person to prevent more chickens from dying? Dr. Amodei chuckled, then said that
+ “there was some number of chickens that would outweigh a human in the
+ utilitarian sense,” Mr. Avery recalled.
+
+ Mr. Amodei, who has said he is an atheist, had strong convictions, his friends said.
+ In 2003, he drove Mr. Avery and others to protests in San Francisco against the U.S.
+ invasion of Iraq.
+
+ The next year, Dr. Amodei transferred to Stanford University, in the heart of Silicon
+ Valley. The move brought him closer to Ms. Amodei, who was in high school
+ nearby.
+
+ “We always wanted to save the world together,” he said of his sister on a 2023
+ podcast.
+
+
+ The Finiteness of Time
+ After graduating from Stanford in 2006, Dr. Amodei joined a physics doctoral
+ program at Princeton, eventually focusing on applying physics to biology and
+ computational neuroscience. That year, his father, who suffered from hepatitis C,
+ died. Dr. Amodei threw himself into researching retina cells and became interested
+ in developing technology to accelerate scientific progress.
+
+ Jade Wang, who dated Dr. Amodei and started a science discussion group with him,
+ said they had often talked about how scientists who dedicated their lives to
+ studying one disease would have a greater impact developing technology or
+ methods for their entire field. He cited his father, who died before the discovery of a
+ drug that made most hepatitis C cases treatable, she said.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           6/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+
+
+     Ray Kurzweil, author of “The Singularity Is Near.” Dr. Amodei was intrigued by Mr. Kurzweil's writings
+     on artificial intelligence. Tony Luong for The New York Times
+
+
+
+ By then, Dr. Amodei was embracing the writings of Mr. Kurzweil and Mr.
+ Yudkowsky, a leader of the rationalists. He was especially intrigued by Mr.
+ Kurzweil’s idea that advanced technologies would let humans exist beyond natural
+ limits, a belief known as transhumanism.
+
+ During Mr. Heckman’s 2007 visit to Princeton, Dr. Amodei told him that the
+ Singularity would happen by 2040 and that humans might someday meld their
+ minds with machines. “We would over time become the new superintelligent A.I. or
+ A.I.-human hybrid,” Dr. Amodei said, according to Mr. Heckman.
+
+ Dr. Amodei became so fascinated by this thinking that he encouraged his friends
+ and sister to attend the annual conference of Mr. Yudkowsky’s Singularity Institute.
+ (The group is now called the Machine Intelligence Research Institute.)
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           7/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ Mr. Yudkowsky was “one of the deepest thinkers I have ever encountered” and
+ “explicitly trying to bring about a singularity that will be beneficial to humanity,”
+ Dr. Amodei told friends in a 2008 email seen by The Times.
+
+ In an email to The Times, Mr. Yudkowsky said Dr. Amodei “does not currently ask
+ or take my advice and I do not remember any time when he did.”
+
+
+
+
+     Dr. Amodei also embraced the writings of Eliezer Yudkowsky, above, a self-taught A.I. researcher who
+     argues that the technology will become powerful enough to destroy society. Jason Henry for The New York Times,
+     Loren Elliott for The New York Times.
+
+
+
+
+ Around then, Dr. Amodei also began corresponding with Elon Musk, who had
+ founded the rocket company SpaceX. Dr. Amodei told friends that he admired the
+ tech mogul and had considered working for him, but he never did at the space
+ start-up, two people with knowledge of the men’s communications said.
+
+ In 2008, Dr. Amodei came across GiveWell while reading the blog of the economist
+ Tyler Cowen, who posted that the organization offered “interesting tips” on
+ charities. Dr. Amodei became active on GiveWell’s email lists and forums, where he
+ discussed an effective altruist approach to philanthropy and science.
+
+ In 2010, he wrote that he was “considering a career in finance, which would allow
+ me to give away more money than I currently do,” according to an email seen by
+ The Times.
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           8/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ In a blog post for GiveWell that year, Dr. Amodei discussed a decision to give away
+ $10,000. He was choosing to donate to either the Stop TB Partnership, which
+ focused on preventing adult tuberculosis, or VillageReach, which helped vaccinate
+ children in African villages.
+
+ The Stop TB Partnership, Dr. Amodei wrote, was superior in “cost-effectiveness”
+ because it served adults and “adults are capable of deeper and more meaningful
+ experiences” than infants. “I think an adult death is perhaps 2 or 3 times worse
+ than an infant’s death,” he added.
+
+ Dr. Amodei ultimately changed his mind after considering how the groups
+ executed their missions and deeming VillageReach to be more effective.
+
+ In 2011, he started postdoctoral work at Stanford studying cancer cells. In his
+ personal life, he experimented with anti-aging supplements, maintained a strict
+ swimming regimen and became interested in caloric reduction, which was shown
+ in some studies to prolong the lives of lab mice, his friends said.
+
+ “He would often talk about the finiteness of time and how it was the one
+ nonrenewable resource,” Mr. Avery said, adding that Dr. Amodei was “ruthless with
+ his time.”
+
+ That was compounded by a diagnosis for testicular cancer in 2014, two people who
+ know him said. Dr. Amodei underwent chemotherapy and made a full recovery.
+
+ By then, he had become close to Holden Karnofsky, a GiveWell founder. GiveWell
+ had started working with Good Ventures, the philanthropy of the Facebook co-
+ founder Dustin Moskovitz and his wife, Cari Tuna, who finance effective altruist
+ causes. Dr. Amodei began advising the partnership, GiveWell Labs, on life sciences
+ funding.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           9/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+
+
+                Holden Karnofsky, right, a founder of GiveWell, in 2012. Dr. Amodei became active on
+                the online forums of GiveWell, which aimed to maximize the effectiveness of charitable
+                giving. Marilynn K. Yee/The New York Times
+
+
+
+ At the time, Mr. Karnofsky was dating Ms. Amodei. The couple moved into a group
+ house in San Francisco, which eventually included Dr. Amodei; Jared Kaplan, a
+ theoretical physicist; and Christopher Olah, a college dropout who had been
+ tutored in math by Dr. Amodei.
+
+ The housemates discussed Mr. Yudkowsky’s essays and explored rationalism and
+ effective altruism, three people who visited the home said. They also attended
+ Burning Man, the annual counterculture gathering in the Nevada desert,
+ sometimes dressing up in animal costumes.
+
+ Dr. Kaplan and Mr. Olah later co-founded Anthropic with Dr. Amodei and Ms.
+ Amodei. In 2025, Mr. Karnofsky also started working for the company.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           10/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+ An A.I. Revival
+ In the early 2010s, advancements in machine learning — computer algorithms that
+ learn to perform tasks on their own by analyzing data — led to new investments by
+ tech companies in A.I.
+
+ One company that jumped in was the Chinese internet giant Baidu, which opened a
+ lab in Sunnyvale, Calif., and hired an A.I. pioneer, Andrew Ng, from Google as chief
+ scientist. Dr. Amodei joined Baidu in 2014 and quickly became known for staying
+ overnight at the office and sharing his opinions.
+
+
+
+
+                Andrew Ng, an A.I. pioneer who worked at Google and Baidu. Dr. Amodei joined Baidu
+                for a time to work on the technology. Jim Wilson/The New York Times
+
+
+
+ “Dario argued very aggressively at pretty much every opportunity,” said Gregory
+ Diamos, a researcher who worked with Dr. Amodei at Baidu.
+
+ Even in the early days of this A.I. period, Dr. Amodei was struck by the
+ technology’s potential dangers. He told colleagues in 2015 that A.I. could soon
+ match or exceed the abilities of the human brain, so companies developing it
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           11/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ should not shy away from the possibility of its going awry, Dr. Diamos recalled.
+
+ That same year, Dr. Amodei joined a Google A.I. lab called Google Brain, where he
+ focused on A.I. safety. He and five other researchers — including his housemate Mr.
+ Olah — published a 2016 paper, “Concrete Problems in A.I. Safety,” which laid out
+ how the technology could misbehave if it was wrongly developed.
+
+ In 2016, Dr. Amodei joined a new A.I. effort: a nonprofit called OpenAI. He led its
+ safety team and another team that studied “scaling laws,” or the idea that A.I.
+ models become more capable as they are trained with more data.
+
+ (The Times has sued OpenAI and Microsoft, claiming copyright infringement of
+ news content related to A.I. systems. The two companies have denied those
+ claims.)
+
+
+ Building OpenAI
+ At OpenAI, Dr. Amodei’s beliefs on the correct way to develop A.I. hardened, seven
+ people who worked with him said. He became more vocal about A.I.’s power and
+ potential harms and acted to infuse the technology’s development with his
+ thinking.
+
+ Three days after Donald J. Trump was elected president in November 2016, for
+ instance, Dr. Amodei wrote in OpenAI’s internal messaging app that he was
+ concerned the United States was sliding toward authoritarianism. He said he was
+ “not comfortable conducting research on militarily powerful technologies in an
+ authoritarian country,” according to messages seen by The Times.
+
+ Dr. Amodei also wrote that the investor Peter Thiel, who had donated $1.25 million
+ to Mr. Trump’s campaign, was “morally worthy of condemnation” for that support
+ and that OpenAI should no longer accept his money, according to internal
+ messages. (Founders Fund, a venture capital firm started by Mr. Thiel, later
+ invested in Anthropic.)
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           12/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ Dr. Amodei also helped arrange a deal between OpenAI and funders who aligned
+ with his thinking. In 2017, he connected OpenAI to the philanthropy run by Mr.
+ Karnofsky, for which Dr. Amodei was a technical adviser, three people familiar with
+ the arrangement said.
+
+ Mr. Karnofsky’s organization, now known as Coefficient Giving, donated $30
+ million to OpenAI. Mr. Karnofsky also joined OpenAI’s board.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           13/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+
+
+     Dr. Amodei, top right, at OpenAI in 2017 and Ms. Amodei, bottom right, at OpenAI in 2019. Christie Hemm
+     Klok for The New York Times, Carlos Chavarria for The New York Times
+
+
+
+
+ Later that year, Mr. Karnofsky and Ms. Amodei married. At their wedding, guests
+ received stuffed animals and were rewarded for arranging “the most romantic
+ hookups between the different characters,” according to the couple’s wedding
+ website.
+
+ Dr. Amodei wore a panda head to the wedding, where the dress code for the
+ reception was “silly formal.” In a photo viewed by The Times, he appeared in
+ costume alongside Mr. Olah, who wore a giraffe head, and Cami Clark, a woman Dr.
+ Amodei was dating. He and Ms. Clark married in 2022.
+
+ In 2018, Daniela Amodei joined OpenAI, eventually becoming vice president of
+ safety and policy. Some employees soon raised questions about the siblings’
+ growing influence.
+
+ That December, Joshua Achiam, an OpenAI researcher, told Sam Altman, the chief
+ executive, that it would be unwise to name Dr. Amodei the company’s chief ethics
+ officer, three people with knowledge of the discussions said. Mr. Achiam cited the
+ Amodeis’ increasing power and said A.I. oversight should be shared by people with
+ different perspectives.
+
+ When Mr. Achiam insisted that an outside expert be named chief ethics officer, Dr.
+ Amodei confronted him. Dr. Amodei raised his voice and said no one was better
+ suited for the position than him, the people said.
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           14/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+ In 2018, Dr. Amodei and Ms. Amodei took over a company project called GPT, short
+ for generative pre-trained transformer. They explored a safety technique that
+ aimed to teach A.I. to perform tasks with human instruction, six people who
+ worked at the company said.
+
+ This approach — pushing A.I. closer to potential dangers and then testing it with
+ safety techniques — would come to define Dr. Amodei’s career.
+
+ Greg Brockman, OpenAI’s president, tried to help with GPT. But Dr. Amodei and
+ Ms. Amodei resisted, two people with knowledge of the company said. Dr. Amodei
+ repeatedly told Mr. Altman that if he did not keep Mr. Brockman away from the
+ work, he would leave, the people said.
+
+ For Mr. Altman, the ultimatums went too far, a person with knowledge of his
+ thinking said. He refused the Amodeis’ demands.
+
+ In December 2020, Dr. Amodei, Ms. Amodei and other colleagues quit OpenAI.
+ Four weeks later, they started Anthropic.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           15/16
+11/7/26, 12:01 AM                                     What Shaped Anthropic CEO Dario Amodei’s Thinking on A.I. - The New York Times
+
+
+
+
+     Dr. Amodei and Ms. Amodei onstage with Anthropic’s chief product officer, Ami Vora, left, at the
+     company’s developer conference in May in San Francisco. Don Feria/Associated Press
+
+
+
+ Ryan Mac is a Times reporter who covers corporate accountability across the global technology industry.
+
+ Kalley Huang is a Times reporter in San Francisco, covering Apple and the technology industry.
+
+ Cade Metz is a Times reporter who writes about artificial intelligence, driverless cars, robotics, virtual reality
+ and other emerging areas of technology.
+
+ Georgia Gee is a news researcher and runs The New York Times tips line.
+
+
+
+
+https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html                                                           16/16
+
